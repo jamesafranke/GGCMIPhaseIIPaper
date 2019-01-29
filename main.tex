@@ -148,7 +148,7 @@ Crop yield emulators have been proposed and implemented by many studies \citep[e
 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment is an attempt to expand upon previous process-based crop modeling studies by running globally gridded crop models over a set of uniform input dimensions as opposed to RCP climate scenarios in order to test the sensitivity to yield drivers within and across models. GGCMI is a multi-model exercise conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP, \citep{ROSENZWEIG2013, Rosenzweig2014}), which brings together major global crop simulation models from different research organizations around the world under a framework similar to the Climate Model Intercomparison Project \citep[CMIP,~][]{Taylor2012, Eyring2016}. The GGCMI analysis framework builds on the AgMIP Coordinated Climate-Crop Modeling Project \citep[C3MP,~][]{ruane2014, mcdermid2015}, and will contribute to the AgMIP Coordinated Global and Regional Assessments \citep[CGRA,~][]{ruane2018, rosenzweig2018}. 
 
-The GGCMI Phase II project develops global simulations of yields of multiple major crops under scenarios that sample a uniform parameter space. Overall goals include understanding where highest-yield regions may shift under climate change, exploring future adaptive management strategies, understanding how interacting parameters affect crop yields, quantifying uncertainties, and testing strategies for producing lightweight statistical emulations of the more detailed process-based models. In the remainder of this paper, we describe the GGCMI Phase II experiments, present initial overall results, and release the simulation output dataset for public use. We also present a climatological-mean yield emulator as a distillation of the dataset and as a potential tool for impact assessments.
+The GGCMI Phase II project develops global simulations of yields of major crops under scenarios that sample a uniform parameter space. Overall goals include understanding where highest-yield regions may shift under climate change, exploring future adaptive management strategies, understanding how interacting parameters affect crop yields, quantifying uncertainties, and testing strategies for producing lightweight statistical emulations of the more detailed process-based models. In the remainder of this paper, we describe the GGCMI Phase II experiments, present initial overall results, and release the simulation output dataset for public use. We also present a climatological-mean yield emulator as a distillation of the dataset and as a potential tool for impact assessments.
 
 \section{Materials and Methods}
 \label{S:2}
@@ -200,6 +200,10 @@ Each model is run at 0.5 degree spatial resolution and covers all currently cult
 Participating modeling groups provide simulations at any of four initially specified levels of participation, so the number of simulations varies by model, with some sampling only a part of the experiment variable space. Most modeling groups simulate all five crops in the protocol, but some omitted one or more. Table \ref{table:models} provides details of coverage for each model. Note that the three models that provide less than 50 simulations are excluded from the emulator analysis. 
 
 All models produce as output, crop yields (tons ha$^{-1}$ year$^{-1}$) for each 0.5 degree grid cell. Because both yields and yield changes vary substantially across models and across grid-cells, we primarily analyze relative change from a baseline. We take as the baseline the scenario with historical climatology (i.e.\ T and P changes of 0). C of 360 ppm, and applied N at 200 kg ha$^-1$.  We show absolute yields in some cases to illustrate geographic differences in yields for a single model. 
+
+\subsection{Simulation model validation approach}
+Simulation model validation for phase II attempts to recreate the validation methods used in \citet{muller_global_2017} for the first phase of the GGCMI project. In this case however, the models are not run on the best approximation of management levels (namely nitrogen application level) by country as with phase I. As the goals of this phase of the project are focused on understanding the sensitivity in \textit{change} in yield to changes in input drivers, and not to simulate historical yields as accurately 
+
 
 \subsection{Climatological emulator design}
 \begin{figure}[!h]
@@ -290,7 +294,7 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
    \label{fig:regression_iowa}
 \end{figure*}
 
-\subsection{Simulation Model Validation}
+\subsection{Simulation model validation results}
 %%%%%%%%%%%%%%
 %%Needs Work%%
 %%%%%%%%%%%%%%
@@ -300,8 +304,6 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
     \caption{Time series correlation coefficients between simulated crop yield and FAO data at the country level. The heatmaps illustrate Pearson r correlation between detrended simulation mean yield at the country level compared to the detrended FAO data for the top producing countries fore each crop type with continuous FAO data over the 1980-2010 period. Top panels indicate two example cases: US maize (a good case), and rice for India (mixed case). }
     \label{fig:simulation_val}
 \end{figure*}
-
-Simulation model validation for phase II attempts to recreate the validation methods used in \citet{muller_global_2017} for the first phase of the GGCMI project. In this case however, the models are not run on the best approximation of management levels (namely nitrogen application level) by country as with phase I. As the goals of this phase of the project are focused on understanding the sensitivity in \textit{change} in yield to changes in input drivers, and not to simulate historical yields as accurately 
 
 It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially true in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage.
 
