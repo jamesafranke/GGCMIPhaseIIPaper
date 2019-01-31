@@ -302,11 +302,11 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
 \begin{figure*}[!htb]
     \centering
     \includegraphics[width=0.8\linewidth]{Phase_II_Validation.pdf}
-    \caption{Time series correlation coefficients between simulated crop yield and FAO data at the country level. The heatmaps illustrate Pearson r correlation between detrended simulation mean yield at the country level compared to the detrended FAO data for the top producing countries fore each crop type with continuous FAO data over the 1980-2010 period. Top panels indicate two example cases: US maize (a good case), and rice for India (mixed case). }
+    \caption{Time series correlation coefficients between simulated crop yield and FAO data at the country level. The heatmaps illustrate Pearson r correlation between detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1980-2010 period. Top panels indicate two example cases: US maize (a good case), and rice for India (mixed case).}
     \label{fig:simulation_val}
 \end{figure*}
 
-It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially applicable in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage.
+Figure \ref{fig:simulation_val} shows the time series correlation between the simulation models and It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially applicable in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage. There is less year-to-year variability in rice yields (partially due to the percent of irrigated cultivation), since the Pearson r metric is scale invariant, it will necessarily score the rice models more poorly. Soy is qualitatively the easiest crop to represent, which is likely due to the invariance of the response to nitrogen application, both in the case that 
 
 
 \subsection{Emulator performance}
