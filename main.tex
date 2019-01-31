@@ -160,18 +160,18 @@ GGCMI Phase II is the continuation of a multi-model comparison exercise begun in
     \begin{tabular}{p{7cm} | p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} | p{1.5cm}}
         \hline
         \textbf{Model (Key Citations)} & \textbf{Maize} & \textbf{Soy} & \textbf{Rice} & \textbf{Winter Wheat} & \textbf{Spring Wheat} & \textbf{N Dim.} & \textbf{Simulations per Crop}\\\hline \hline
-        {\textbf{APSIM-UGOE}, \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {Yes} & {37}\\ \hline
-        {\textbf{CARAIB}, \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {No} & {224}\\ \hline
-        {\textbf{EPIC-IIASA}, \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {35}\\ \hline
-        {\textbf{EPIC-TAMU}, \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\\hline
-        {\textbf{JULES*}, \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {No} & {224}\\\hline
-        {\textbf{GEPIC}, \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {384}\\\hline
-        {\textbf{LPJ-GUESS}, \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {Yes} & {672}\\\hline
-        {\textbf{LPJmL}, \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
+        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {Yes} & {37}\\ \hline
+        {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {No} & {224}\\ \hline
+        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {35}\\ \hline
+        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\\hline
+        {\textbf{JULES*},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {No} & {224}\\\hline
+        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {384}\\\hline
+        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {Yes} & {672}\\\hline
+        {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
         {\textbf{ORCHIDEE-crop}, \citet{Valade2013}} & {X} & {--} & {X} & {--} & {X} & {Yes} & {33}\\ \hline
-        {\textbf{pDSSAT}, \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
-        {\textbf{PEPIC}, \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {130}\\ \hline
-        {\textbf{PROMET*}, \citet{MAUSER2009362, Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {Yes\dag} & {239}\\ \hline \hline
+        {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
+        {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {130}\\ \hline
+        {\textbf{PROMET*},       \citet{MAUSER2009362, Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {Yes\dag} & {239}\\ \hline \hline
         {Totals} & {12} & {10} & {11} & {9} & {12} & {--} & {3993 (maize)}\\
         \hline
     \end{tabular}
@@ -234,15 +234,16 @@ We regress climatological-mean yields against a third-order polynomial in C, T, 
 The limited GGCMI variable sample space means that use of the full polynomial expression described above, which has 34 terms for the rain-fed case (12 for irrigated), can be problematic, and can lead to over-fitting and unstable parameter estimations. We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. In this procedure higher-order and interaction terms are added successively to the model; we then follow the reduction of the the aggregate mean squared error with increasing terms and eliminate those terms that do not contribute significant reductions. See supplemental documents for more details. We select terms by applying the feature selection process to the three models that provided the complete set of 672 rain-fed simulations (pDSSAT, EPIC-TAMU, and LPJmL); the resulting choice of terms is then applied for all emulators. 
 
 Feature importance is remarkably consistent across all three models and across all crops (see Figure \ref{fig:featureselection} in the supplemental material). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C.  Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and crops: 
+
 \begin{align}
     \label{eqn:features_final}
     Y\ = \ & K_{1} \\
-       + \ & K_{2}  C     + K_{3}  T     + K_{4} W      + K_{5} N   \nonumber \\
-       + \ & K_{6}  C^2   + K_{7}  T^2   + K_{8} W^2    + K_{9} N^2 \nonumber \\
+       + \ & K_{2}  C     + K_{3}  T     + K_{4} W      + K_{5}  N   \nonumber \\
+       + \ & K_{6}  C^2   + K_{7}  T^2   + K_{8} W^2    + K_{9}  N^2 \nonumber \\
        + \ & K_{10} C W   + K_{11} C N   + K_{12} T W   + K_{13} T N + K_{14} W N \nonumber \\ % lost 1 term, CT
-       + \ & K_{15} T^3   + K_{16} W^3   + K_{17} T W N   \nonumber \\ % lost 2 terms, C^3 and N^3
-       + \ & K_{18} T^2 W + K_{19} W^2 T + K_{20} W^2 N   \nonumber \\ % lost 2 terms, CWN and CTN
-       + \ & K_{21} N^2 C + K_{22} N^2 T + K_{23} N^2 W   \nonumber    % lose 6 terms: T^2N and T^2C, W^2C, 3 C^2 terms
+       + \ & K_{15} T^3   + K_{16} W^3   + K_{17} T W N  \nonumber \\ % lost 2 terms, C^3 and N^3
+       + \ & K_{18} T^2 W + K_{19} W^2 T + K_{20} W^2 N  \nonumber \\ % lost 2 terms, CWN and CTN
+       + \ & K_{21} N^2 C + K_{22} N^2 T + K_{23} N^2 W  \nonumber    % lose 6 terms: T^2N and T^2C, W^2C, 3 C^2 terms
 \end{align}
 
 To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. The Bayesian Ridge method is necessary to maintain a consistent functional form across all models, and locations as the linear least squares fails to provide a stable result in many cases. In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. Because we do not attempt to emulate models that provided less than 50 simulations, the lowest number of simulations emulated across the full parameter space is 130 (for the PEPIC model). We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
@@ -274,8 +275,7 @@ Here $F_{\: scn.}$ is the fractional change in a model's mean emulated or simula
 \section{Results}
 \label{S:3}
 \subsection{Simulation results}
-Crop models in the GGCMI ensemble show a broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. We illustrate this result for rain-fed maize in Figure \ref{fig:globesim}, which shows yields for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
-In warming scenarios, models show decreases in maize yield in the temperate, tropical, and arid regions that account for nearly three-quarters of global maize production. These impacts are robust for even moderate climate perturbations. In the temperate zone, even a 1 degree temperature rise with other variables held fixed leads to a median yield reduction that outweighs the variance across models. A 6 degree temperature rise results in median loss of $\sim$25\% of yields with a signal to noise of nearly three. A notable exception is the cold continental region, where models disagree strongly, extending even to the sign of impacts. Model simulations of other crops produce similar responses to warming, with robust yield losses in warmer locations and high inter-model variance in the cold continental regions (Figures \ref{fig:KGcrops_all}).
+Crop models in the GGCMI ensemble show a broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. We illustrate this result for rain-fed maize in Figure \ref{fig:globesim}, which shows yields for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}. In warming scenarios, models show decreases in maize yield in the temperate, tropical, and arid regions that account for nearly three-quarters of global maize production. These impacts are robust for even moderate climate perturbations. In the temperate zone, even a 1 degree temperature rise with other variables held fixed leads to a median yield reduction that outweighs the variance across models. A 6 degree temperature rise results in median loss of $\sim$25\% of yields with a signal to noise of nearly three. A notable exception is the cold continental region, where models disagree strongly, extending even to the sign of impacts. Model simulations of other crops produce similar responses to warming, with robust yield losses in warmer locations and high inter-model variance in the cold continental regions (Figures \ref{fig:KGcrops_all}).
 
 The effects of rainfall changes on maize yields are also as expected and are consistent across models. Increased rainfall mitigates the negative effect of higher temperatures, most strongly in arid regions. Decreased rainfall amplifies yield losses and also increases inter-model variance more strongly, suggesting that models have difficulty representing crop response to water stress.  We show only rain-fed maize here; see Figure \ref{fig:KGirr_all} for the irrigated case. As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is limiting.  
 
@@ -306,7 +306,7 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
     \label{fig:simulation_val}
 \end{figure*}
 
-It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially true in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage.
+It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially applicable in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage.
 
 
 \subsection{Emulator performance}
