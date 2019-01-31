@@ -144,7 +144,7 @@ Nevertheless, process-based models are necessary for understanding the global fu
 
 Statistical emulation of crop simulations offers the possibility of combining some advantageous features of both statistical and process-based models. The statistical representation of complicated numerical simulation \citep[e.g.\ ][]{OHAGAN2006, OHAGAN2010}, in which simulation output acts as the training data for a statistical model, has been of increasing interest with the growth of simulation complexity and volume of output. Such emulators or ``surrogate models'' have been used in a variety of fields including hydrology \citep{Razavi2012}, engineering \citep{STORLIE2009}, environmental sciences \citep{RATTO2012}, and climate \citep{Castruccio14}. For agricultural impacts studies, emulation of process-based models allows exploring crop yields in regions outside ranges of current cultivation and with input variables outside historical precedents, in a lightweight, flexible form that is compatible with economic studies. 
 
-Crop yield emulators have been proposed and implemented by many studies \citep[e.g.\ ][]{Howden2005, raisen2006, Lobell2010, Iizumi2010, Ferrise2011, Holzkamper2012, RUANE2013a, Howden2005, Markowski2015}, and in the last several years multiple studies have developed emulators based on a variety of of simulation model outputs. Several studies analyzed a single crop model run on a RCP climate scenario set \citep[e.g.\ ][]{Oyebamiji15}. Multiple groups \citep[e.g.\ ][]{BLANC2015, BLANC2017, Ostberg2018}, constructed emulators for a 5-model intercomparison exercise performed as part of ISIMIP \citep{Warszawski3228}, the Inter-Sectoral Impacts Model Intercomparison Project and evaluated several different climate scenarios (over multiple climate model runs). Several other studies \citep[e.g.\ ][]{Moore2017, Mistry2017} utilize a hybrid simulation output and real-world data approach to develop and emulator or damage function. Additional recent studies have explored an impact response surface (aka.\ emulator when using simulated data) over an explict multivariate input simulation space (as opposed to specific RCP climate model runs), with a site-based approach (as opposed to a globally gridded model) across temperature, water, and CO$_2$ sampling \citep{snyder2018}, or with models for wheat across water and temperature dimensions for different sites in Europe \citep{FRONZEK20182}. 
+Crop yield emulators have been proposed and implemented by many studies \citep[e.g.\ ][]{Howden2005, raisen2006, Lobell2010, Iizumi2010, Ferrise2011, Holzkamper2012, RUANE2013a, Markowski2015}, and in the last several years multiple studies have developed emulators based on a variety of of simulation model outputs. Several studies analyzed a single crop model run on a RCP climate scenario set \citep[e.g.\ ][]{Oyebamiji15}. Multiple groups \citep[e.g.\ ][]{BLANC2015, BLANC2017, Ostberg2018}, constructed emulators for a 5-model intercomparison exercise performed as part of ISIMIP \citep{Warszawski3228}, the Inter-Sectoral Impacts Model Intercomparison Project and evaluated several different climate scenarios (over multiple climate model runs). Several other studies \citep[e.g.\ ][]{Moore2017, Mistry2017} utilize a hybrid simulation output and real-world data approach to develop and emulator or damage function. Additional recent studies have explored an impact response surface (aka.\ emulator when using simulated data) over an explict multivariate input simulation space (as opposed to specific RCP climate model runs), with a site-based approach (as opposed to a globally gridded model) across temperature, water, and CO$_2$ sampling \citep{snyder2018}, or with models for wheat across water and temperature dimensions for different sites in Europe \citep{FRONZEK20182}. 
 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment is an attempt to expand upon previous process-based crop modeling studies by running globally gridded crop models over a set of uniform input dimensions as opposed to RCP climate scenarios in order to test the sensitivity to yield drivers within and across models. GGCMI is a multi-model exercise conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP, \citep{ROSENZWEIG2013, Rosenzweig2014}), which brings together major global crop simulation models from different research organizations around the world under a framework similar to the Climate Model Intercomparison Project \citep[CMIP,~][]{Taylor2012, Eyring2016}. The GGCMI analysis framework builds on the AgMIP Coordinated Climate-Crop Modeling Project \citep[C3MP,~][]{ruane2014, mcdermid2015}, and will contribute to the AgMIP Coordinated Global and Regional Assessments \citep[CGRA,~][]{ruane2018, rosenzweig2018}. 
 
@@ -159,14 +159,14 @@ GGCMI Phase II is the continuation of a multi-model comparison exercise begun in
     \small \centering
     \begin{tabular}{p{7cm} | p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} | p{1.5cm}}
         \hline
-        \textbf{Model (Key Citations)} & \textbf{Maize} & \textbf{Soy} & \textbf{Rice} & \textbf{Winter Wheat} & \textbf{Spring Wheat} & \textbf{N Dim.} & \textbf{Simulations per Crop}\\\hline \hline
+        \textbf{Model (Key Citations)} & \textbf{Maize} & \textbf{Soy} & \textbf{Rice} & \textbf{Winter Wheat} & \textbf{Spring Wheat} & \textbf{N Dim.} & \textbf{Simulations per Crop}\\ \hline \hline
         {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {Yes} & {37}\\ \hline
         {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {No} & {224}\\ \hline
-        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {35}\\ \hline
-        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\\hline
-        {\textbf{JULES*},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {No} & {224}\\\hline
-        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {384}\\\hline
-        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {Yes} & {672}\\\hline
+        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {35}\\  \hline
+        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
+        {\textbf{JULES*},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {No} & {224}\\ \hline
+        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {384}\\ \hline
+        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {Yes} & {672}\\  \hline
         {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
         {\textbf{ORCHIDEE-crop}, \citet{Valade2013}} & {X} & {--} & {X} & {--} & {X} & {Yes} & {33}\\ \hline
         {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {Yes} & {672}\\ \hline
@@ -205,7 +205,7 @@ All models produce as output, crop yields (tons ha$^{-1}$ year$^{-1}$) for each 
 %%%%%%%%%%%%%%
 %%Needs Work%%
 %%%%%%%%%%%%%%
-Simulation model validation for phase II builds on the validation efforts presented in \citet{muller_global_2017} for the first phase of the GGCMI project. In this case however, the models are not run on the best approximation of management levels (namely nitrogen application level) by country as with phase I. As the goals of this phase of the project are focused on understanding the sensitivity in \textit{change} in yield to changes in input drivers --and not to simulate historical yields as accurately as possible-- no direct comparison to historical yield data can be made. Additionally, some models are not calibrated as they were in phase I of the project. 
+Simulation model validation for GGCMI phase II builds on the validation efforts presented in \citet{muller_global_2017} for the first phase. In this case however, the models are not run on the best approximation of management levels (namely nitrogen application level) by country as with phase I. As the goals of this phase of the project are focused on understanding the sensitivity in \textit{change} in yield to changes in input drivers --and not to simulate historical yields as accurately as possible-- no direct comparison to historical yield data can be made. Additionally, some models are not calibrated as they were in phase I of the project. 
 
 We evaluate the models here based on the response to year-to-year temperature and precipitation variability in the historical record. If the models can (somewhat) faithfully represent the the historical variability in yields (which, once detrended to account for changing management levels must be driven by differences in weather), then the models may provide some utility in understanding the impact on mean climatological shifts in temperature and precipitation. Specifically, we calculate a Pearson correlation coefficient between the detrended time series of simulations and FAO data for the period 1981-2009. Validating the response to CO$_2$ and Nitrogen applications is more difficult because real world data is not available outside of small greenhouse and field level trials.
 
@@ -225,9 +225,6 @@ We evaluate the models here based on the response to year-to-year temperature an
    \label{fig:globesim}
 \end{figure*}
 
-%%%%%%%%%%%%%%
-%%Needs Work%%
-%%%%%%%%%%%%%%
 The decision to first construct a climatological-mean yield emulator is driven by the target application for this analysis tool. Many impact modelers are not focused on the changes in the year-to-year variability in yields, but instead on the broad mean changes over the multi-decadal timescale. Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II data set. The regressors are the applied constant perturbations in temperature, water, nitrogen and CO$_2$, we aggregate the simulation outputs in the time dimension, and regress on the 30-year mean yields. (See Figure \ref{fig:yearly} for illustration.) The regression therefore omits information about yield responses to year-to-year climate perturbations, which are more complex. Emulating inter-annual yield variations would likely require considering statistical details of the historical climate time series, including changes in marginal distribution and temporal dependencies. (Future work should explore this.) The climatological emulation indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate itself, because we construct separate emulators for each grid cell. 
 
 We regress climatological-mean yields against a third-order polynomial in C, T, W, and N with interaction terms. The higher-order terms are necessary to capture any nonlinear responses, which are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). We include interaction terms (both linear and higher-order)  because past studies have shown them to be significant effects. For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance (C and N are fixed in these data). Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.\ ][]{AULAKH2005}, and between nitrogen and carbon dioxide \citep{Mitsuru92, Nakamura97}. We do not focus on comparing different model specifications in this study, and instead stick to a relatively simple parameterized specification that allows for some, albeit limited, coefficient interpretation.
@@ -445,393 +442,7 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 
 %- probably good to explain in more detail that simpler fitting methods can cause problems. Even just a sentence or two in the main manuscript to explain that your choice is better. If you wanted to put in the results of more methodological work, that could work too, either in the main paper or the supp docs. Part of the paper's message is that emulation is possible; it would make sense to explain that it is NOT possible to emulate well if you don't use the right approach.
 
-% notes from alex
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
-%% ---------------------------------
-%% This template should be used for copernicus.cls
-%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
-%% For further assistance please contact Copernicus Publications at: production@copernicus.org
-%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
-
-
-%% Please use the following documentclass and journal abbreviations for discussion papers and final revised papers.
-
-%% 2-column papers and discussion papers
-\documentclass[gmd, manuscript]{copernicus}
-
-%% Journal abbreviations (please use the same for discussion papers and final revised papers)
-
-
-% Advances in Geosciences (adgeo)
-% Advances in Radio Science (ars)
-% Advances in Science and Research (asr)
-% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
-% Annales Geophysicae (angeo)
-% Archives Animal Breeding (aab)
-% ASTRA Proceedings (ap)
-% Atmospheric Chemistry and Physics (acp)
-% Atmospheric Measurement Techniques (amt)
-% Biogeosciences (bg)
-% Climate of the Past (cp)
-% DEUQUA Special Publications (deuquasp)
-% Drinking Water Engineering and Science (dwes)
-% Earth Surface Dynamics (esurf)
-% Earth System Dynamics (esd)
-% Earth System Science Data (essd)
-% E&G Quaternary Science Journal (egqsj)
-% Fossil Record (fr)
-% Geographica Helvetica (gh)
-% Geoscientific Instrumentation, Methods and Data Systems (gi)
-% Geoscientific Model Development (gmd)
-% History of Geo- and Space Sciences (hgss)
-% Hydrology and Earth System Sciences (hess)
-% Journal of Micropalaeontology (jm)
-% Journal of Sensors and Sensor Systems (jsss)
-% Mechanical Sciences (ms)
-% Natural Hazards and Earth System Sciences (nhess)
-% Nonlinear Processes in Geophysics (npg)
-% Ocean Science (os)
-% Primate Biology (pb)
-% Proceedings of the International Association of Hydrological Sciences (piahs)
-% Scientific Drilling (sd)
-% SOIL (soil)
-% Solid Earth (se)
-% The Cryosphere (tc)
-% Web Ecology (we)
-% Wind Energy Science (wes)
-
-
-%% \usepackage commands included in the copernicus.cls:
-%\usepackage[german, english]{babel}
-%\usepackage{tabularx}
-%\usepackage{cancel}
-%\usepackage{multirow}
-%\usepackage{supertabular}
-%\usepackage{algorithmic}
-%\usepackage{algorithm}
-%\usepackage{amsthm}
-%\usepackage{float}
-%\usepackage{subfig}
-%\usepackage{rotating}
-
-
-\begin{document}
-
-\title{TEXT}
-
-
-% \Author[affil]{given_name}{surname}
-
-\Author[]{}{}
-\Author[]{}{}
-\Author[]{}{}
-
-\affil[]{ADDRESS}
-\affil[]{ADDRESS}
-
-%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
-
-
-
-\runningtitle{TEXT}
-
-\runningauthor{TEXT}
-
-\correspondence{NAME (EMAIL)}
-
-
-
-\received{}
-\pubdiscuss{} %% only important for two-stage journals
-\revised{}
-\accepted{}
-\published{}
-
-%% These dates will be inserted by Copernicus Publications during the typesetting process.
-
-
-\firstpage{1}
-
-\maketitle
-
-
-
-\begin{abstract}
-TEXT
-\end{abstract}
-
-
-\copyrightstatement{TEXT}
-
-
-\introduction  %% \introduction[modified heading if necessary]
-TEXT
-
-
-\section{HEADING}
-TEXT
-
-
-\subsection{HEADING}
-TEXT
-
-
-\subsubsection{HEADING}
-TEXT
-
-
-\conclusions  %% \conclusions[modified heading if necessary]
-TEXT
-
-%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
-%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
-
-\codeavailability{TEXT} %% use this section when having only software code available
-
-
-\dataavailability{TEXT} %% use this section when having only data sets available
-
-
-\codedataavailability{TEXT} %% use this section when having data sets and software code available
-
-
-\sampleavailability{TEXT} %% use this section when having geoscientific samples available
-
-
-\videosupplement{TEXT} %% use this section when having video supplements available
-
-
-\appendix
-\section{}    %% Appendix A
-
-\subsection{}     %% Appendix A1, A2, etc.
-
-
-\noappendix       %% use this to mark the end of the appendix section
-
-%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
-
-%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
-%% They will be correctly named automatically.
-
-%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
-%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
-
-\appendixfigures  %% needs to be added in front of appendix figures
-
-\appendixtables   %% needs to be added in front of appendix tables
-
-%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
-
-
-
-\authorcontribution{TEXT} %% this section is mandatory for the journals ACP and GMD. For all other journals it is strongly recommended to make use of this section
-
-\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
-
-\disclaimer{TEXT} %% optional section
-
-\begin{acknowledgements}
-TEXT
-\end{acknowledgements}
-
-
-
-
-%% REFERENCES
-
-%% The reference list is compiled as follows:
-
-\begin{thebibliography}{}
-
-\bibitem[AUTHOR(YEAR)]{LABEL1}
-REFERENCE 1
-
-\bibitem[AUTHOR(YEAR)]{LABEL2}
-REFERENCE 2
-
-\end{thebibliography}
-
-%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
-%% authors experienced with BibTeX only have to include the following two lines:
-%%
-%% \bibliographystyle{copernicus}
-%% \bibliography{example.bib}
-%%
-%% URLs and DOIs can be entered in your BibTeX file as:
-%%
-%% URL = {http://www.xyz.org/~jones/idx_g.htm}
-%% DOI = {10.5194/xyz}
-
-
-%% LITERATURE CITATIONS
-%%
-%% command                        & example result
-%% \citet{jones90}|               & Jones et al. (1990)
-%% \citep{jones90}|               & (Jones et al., 1990)
-%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
-%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
-%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
-%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
-%% \citeauthor{jones90}|          & Jones et al.
-%% \citeyear{jones90}|            & 1990
-
-
-
-%% FIGURES
-
-%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
-%% between bibliography and first table and/or figure as well as between each table and/or figure.
-
-
-%% ONE-COLUMN FIGURES
-
-%%f
-%\begin{figure}[t]
-%\includegraphics[width=8.3cm]{FILE NAME}
-%\caption{TEXT}
-%\end{figure}
-%
-%%% TWO-COLUMN FIGURES
-%
-%%f
-%\begin{figure*}[t]
-%\includegraphics[width=12cm]{FILE NAME}
-%\caption{TEXT}
-%\end{figure*}
-%
-%
-%%% TABLES
-%%%
-%%% The different columns must be seperated with a & command and should
-%%% end with \\ to identify the column brake.
-%
-%%% ONE-COLUMN TABLE
-%
-%%t
-%\begin{table}[t]
-%\caption{TEXT}
-%\begin{tabular}{column = lcr}
-%\tophline
-%
-%\middlehline
-%
-%\bottomhline
-%\end{tabular}
-%\belowtable{} % Table Footnotes
-%\end{table}
-%
-%%% TWO-COLUMN TABLE
-%
-%%t
-%\begin{table*}[t]
-%\caption{TEXT}
-%\begin{tabular}{column = lcr}
-%\tophline
-%
-%\middlehline
-%
-%\bottomhline
-%\end{tabular}
-%\belowtable{} % Table Footnotes
-%\end{table*}
-%
-%%% LANDSCAPE TABLE
-%
-%%t
-%\begin{sidewaystable*}[t]
-%\caption{TEXT}
-%\begin{tabular}{column = lcr}
-%\tophline
-%
-%\middlehline
-%
-%\bottomhline
-%\end{tabular}
-%\belowtable{} % Table Footnotes
-%\end{sidewaystable*}
-%
-%
-%%% MATHEMATICAL EXPRESSIONS
-%
-%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
-%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
-%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
-%%%
-%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
-%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
-%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
-%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
-%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
-%%% Vectors are identified in bold italic font using \vec{x}
-%%% Matrices are identified in bold roman font
-%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
-%%% The character * should not be applied as mutliplication sign
-%
-%
-%%% EQUATIONS
-%
-%%% Single-row equation
-%
-%\begin{equation}
-%
-%\end{equation}
-%
-%%% Multiline equation
-%
-%\begin{align}
-%& 3 + 5 = 8\\
-%& 3 + 5 = 8\\
-%& 3 + 5 = 8
-%\end{align}
-%
-%
-%%% MATRICES
-%
-%\begin{matrix}
-%x & y & z\\
-%x & y & z\\
-%x & y & z\\
-%\end{matrix}
-%
-%
-%%% ALGORITHM
-%
-%\begin{algorithm}
-%\caption{...}
-%\label{a1}
-%\begin{algorithmic}
-%...
-%\end{algorithmic}
-%\end{algorithm}
-%
-%
-%%% CHEMICAL FORMULAS AND REACTIONS
-%
-%%% For formulas embedded in the text, please use \chem{}
-%
-%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
-%
-%\begin{reaction}
-%%% \rightarrow should be used for normal (one-way) chemical reactions
-%%% \rightleftharpoons should be used for equilibria
-%%% \leftrightarrow should be used for resonance structures
-%\end{reaction}
-%
-%
-%%% PHYSICAL UNITS
-%%%
-%%% Please use \unit{} and apply the exponential notation
-
-
-\end{document}
-
-
