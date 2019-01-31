@@ -236,20 +236,18 @@ The limited GGCMI variable sample space means that use of the full polynomial ex
 Feature importance is remarkably consistent across all three models and across all crops (see Figure \ref{fig:featureselection} in the supplemental material). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C.  Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and crops: 
 \begin{align}
     \label{eqn:features_final}
-    Y\ = \ & K_{1}  \\
-     + \ & K_{2} C + K_{3}T + K_{4} W + K_{5} N \nonumber \\
-                  + \  & K_{6} C^2 + K_{7} T^2 + K_{8} W^2 + K_{9} N^2 \nonumber \\
-                  + \ & K_{10} C W + K_{11} C N + K_{12} T W + K_{13} T N + K_{14} W N \nonumber \\ % lost 1 term, CT
-                 + \  & K_{15} T^3 + K_{16} W^3 + K_{17} T W N \nonumber \\ % lost 2 terms here, C^3 and N^3
-                 %+ \ & \\ % lost  2 terms, CWN and CTN
-%                   below lose 6 terms: T^2N and T^2C, W^2C, 3 C^2 terms
-                 + \ & K_{18} T^{2} W + K_{19} W^2  T + K_{20} W^2 N \nonumber \\
-          + \ &  K_{21} N^2 C + K_{22} N^2  T + K_{23} N^2 W \nonumber
+    Y\ = \ & K_{1} \\
+       + \ & K_{2}  C     + K_{3}  T     + K_{4} W      + K_{5} N   \nonumber \\
+       + \ & K_{6}  C^2   + K_{7}  T^2   + K_{8} W^2    + K_{9} N^2 \nonumber \\
+       + \ & K_{10} C W   + K_{11} C N   + K_{12} T W   + K_{13} T N + K_{14} W N \nonumber \\ % lost 1 term, CT
+       + \ & K_{15} T^3   + K_{16} W^3   + K_{17} T W N   \nonumber \\ % lost 2 terms, C^3 and N^3
+       + \ & K_{18} T^2 W + K_{19} W^2 T + K_{20} W^2 N   \nonumber \\ % lost 2 terms, CWN and CTN
+       + \ & K_{21} N^2 C + K_{22} N^2 T + K_{23} N^2 W   \nonumber    % lose 6 terms: T^2N and T^2C, W^2C, 3 C^2 terms
 \end{align}
 
-To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. This provide much more stable performance than the standard linear least squares, and is necessary in some cases to provide a stable result. In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. Because we do not attempt to emulate models that provided less than 50 simulations, the lowest number of simulations emulated across the full parameter space is 130 (for the PEPIC model). We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
+To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. The Bayesian Ridge method is necessary to maintain a consistent functional form across all models, and locations as the linear least squares fails to provide a stable result in many cases. In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. Because we do not attempt to emulate models that provided less than 50 simulations, the lowest number of simulations emulated across the full parameter space is 130 (for the PEPIC model). We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 
-The resulting parameter matrices for all crop models are available on request, as are the raw simulation data and a Python application to emulate yields. The yield output for a single GGCMI model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$100 MB, a reduction by over two orders of magnitude.
+The resulting parameter matrices for all crop models are available on request, as are the raw simulation data and a Python application to emulate yields. The yield output for a single GGCMI model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$100 MB, a reduction by over two orders of magnitude. 
 
 \begin{figure*}[!htb]
 \centering
