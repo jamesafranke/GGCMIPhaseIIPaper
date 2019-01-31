@@ -310,10 +310,9 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
 \begin{figure*}[!htb]
     \centering
     \includegraphics[width=0.8\linewidth]{phase_II_em_val.png}
-    \caption{Distribution in historical yields (1981-2009) for maize for eight example high producing countries. }
+    \caption{Distribution in historical yields (1981-2009) for maize for eight example high producing countries. FAO, simulation (high nitrogen), and emulation. Emulated values are calculated based on the additive temperature anomaly or percentage precipitation anomaly from the 1980-2010 period in each year. Note: the emulator is designed to provide the mean change in yield under climatological mean shift in temperature (or precipitation). Applying it at the year to year level should be interpreted with caution.}
     \label{fig:sim_em_val}
 \end{figure*}
-
 
 Figure \ref{fig:simulation_val} shows the time series correlation between the simulation models and FOA data. The results are mixed, with many regions for rice and wheat being difficult to model. No single model is dominant, with each model providing near best-in-class performance in at least one location-crop combination. The presence of no vertical dark green color bars clearly illustrates the power of a multi-model intercomparison project like the one presented here. The ensemble mean yield is calculated across all `high' nitrogen application level model simulations and correlated with the FAO data (not the mean of the correlations). The ensemble mean does not beat the best model in each case, but shows positive correlation in over 75\% of the cases presented here.
 
@@ -321,7 +320,9 @@ Soy is qualitatively the easiest crop to represent (except in Argentina), which 
 
 It is important to note, much FAO data is at least one level of abstraction from ground truth. This is especially applicable in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. Partitioning of these contributions is impossible at this stage. There is less year-to-year variability in rice yields (partially due to the fraction of irrigated cultivation), since the Pearson r metric is scale invariant, it will tend to score the rice models more poorly than maize and soy. The pDSSAT model shows poor performance for rice in India (top right panel).
 
-One might suspect that the difference in performance between Pakistan (no successful models) and India (many successful models) for rice may lie in the FAO data and not the models themselves.
+\textit{One might suspect that the difference in performance between Pakistan (no successful models) and India (many successful models) for rice may lie in the FAO data and not the models themselves. What would be so different about rice production across these two countries that could explain this difference??}
+
+Figure \ref{fig:sim_em_val} shows the distribution across 
 
 \subsection{Emulator performance}
 Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. Emulation is only possible, however, when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form. In the GGCMI simulations, this condition largely but not always holds. 
