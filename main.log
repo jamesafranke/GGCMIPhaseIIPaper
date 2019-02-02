@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 JAN 2019 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 FEB 2019 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,10 +748,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 178.
-[4]
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 185.
-
+[4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [5]
@@ -853,11 +852,22 @@ Package pdftex.def Info: regression_model.png used on input line 291.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Phase_II_Validation.pdf, id=53, 432.61626pt x 538.01pt>
-File: Phase_II_Validation.pdf Graphic file (type pdf)
-<use Phase_II_Validation.pdf>
-Package pdftex.def Info: Phase_II_Validation.pdf used on input line 302.
-(pdftex.def)             Requested size: 417.6016pt x 519.35701pt.
+
+LaTeX Warning: File `Agfromet_validation.png' not found on input line 302.
+
+
+! Package pdftex.def Error: File `Agfromet_validation.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 ...h=0.8\linewidth]{Agfromet_validation.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: File `phase_II_em_val.png' not found on input line 309.
 
@@ -874,39 +884,6 @@ Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Runaway argument?
-{\protect \numberline {\csname the\@captype \endcsname }{\ignorespaces \ETC.
-! Paragraph ended before \addcontentsline was complete.
-<to be read again> 
-                   \par 
-l.312 ...evel should be interpreted with caution.}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Extra }, or forgotten \endgroup.
-\@caption ... the#1\endcsname }{\ignorespaces #2}}
-                                                  \begingroup \@parboxrestor...
-l.312 ...evel should be interpreted with caution.}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.314 \end{figure*}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 
 Underfull \vbox (badness 6173) has occurred while \output is active []
 
@@ -921,100 +898,101 @@ sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Phase_II_Validation.pdf>]
-
-LaTeX Warning: Reference `fig:carbon' on page 14 undefined on input line 332.
+LaTeX Warning: Reference `fig:carbon' on page 13 undefined on input line 330.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[14] <error_360.png, id=78, 2258.4375pt x 4968.5625pt>
+[14] <error_360.png, id=69, 2258.4375pt x 4968.5625pt>
 File: error_360.png Graphic file (type png)
 <use error_360.png>
-Package pdftex.def Info: error_360.png used on input line 338.
+Package pdftex.def Info: error_360.png used on input line 336.
 (pdftex.def)             Requested size: 252.0pt x 554.35242pt.
-<em_err.png, id=79, 265.08636pt x 561.82698pt>
+<em_err.png, id=70, 265.08636pt x 561.82698pt>
 File: em_err.png Graphic file (type png)
 <use em_err.png>
-Package pdftex.def Info: em_err.png used on input line 345.
+Package pdftex.def Info: em_err.png used on input line 343.
 (pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
 
-LaTeX Warning: Reference `fig:errorjules' on page 15 undefined on input line 35
-0.
+LaTeX Warning: Reference `fig:errorjules' on page 15 undefined on input line 34
+8.
 
 
 LaTeX Warning: Reference `fig:errorpromet' on page 15 undefined on input line 3
-50.
+48.
 
 
 LaTeX Warning: Reference `fig:temperature' on page 15 undefined on input line 3
-50.
+48.
+
+
+LaTeX Warning: Reference `fig:error810' on page 15 undefined on input line 350.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/error_360.png>]
 
-LaTeX Warning: Reference `fig:error810' on page 16 undefined on input line 352.
+LaTeX Warning: Reference `fig:temperature' on page 16 undefined on input line 3
+53.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 16 undefined on input line 353.
+
+
+<global_em_maize.png, id=75, 2710.125pt x 3161.8125pt>
+File: global_em_maize.png Graphic file (type png)
+<use global_em_maize.png>
+Package pdftex.def Info: global_em_maize.png used on input line 357.
+(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
+
+LaTeX Warning: Reference `fig:temperature' on page 16 undefined on input line 3
+58.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 16 undefined on input line 358.
 
 
 
 LaTeX Warning: Reference `fig:temperature' on page 16 undefined on input line 3
-55.
+58.
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 16 undefined on input line 355.
+LaTeX Warning: Reference `fig:nitrogen' on page 16 undefined on input line 358.
 
 
-[16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/em_err.png>] <global_em_m
-aize.png, id=88, 2710.125pt x 3161.8125pt>
-File: global_em_maize.png Graphic file (type png)
-<use global_em_maize.png>
-Package pdftex.def Info: global_em_maize.png used on input line 359.
-(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
-
-LaTeX Warning: Reference `fig:temperature' on page 17 undefined on input line 3
-60.
+[16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/em_err.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 17 undefined on input line 360.
-
-
-
-LaTeX Warning: Reference `fig:temperature' on page 17 undefined on input line 3
-60.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 17 undefined on input line 360.
-
-
-
-LaTeX Warning: Reference `fig:KGirr_all' on page 17 undefined on input line 371
+LaTeX Warning: Reference `fig:KGirr_all' on page 17 undefined on input line 369
 .
 
 
 LaTeX Warning: Reference `fig:KGirr_currentcult' on page 17 undefined on input 
-line 371.
+line 369.
 
 
 LaTeX Warning: Reference `fig:rice_currentcult' on page 17 undefined on input l
-ine 371.
+ine 369.
 
 
 LaTeX Warning: Reference `fig:winter_wheat_currentcult' on page 17 undefined on
- input line 371.
+ input line 369.
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 17 undefined on input line 371.
+LaTeX Warning: Reference `fig:nitrogen' on page 17 undefined on input line 369.
 
 
 
-Underfull \vbox (badness 6173) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1058,14 +1036,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Missing character: There is no Ã in font txr!
 Missing character: There is no © in font txr!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[22]
 Underfull \hbox (badness 1052) in paragraph at lines 1015--1024
 \OT1/txr/m/n/8 J. (2014).  The Inter-Sectoral Im-pact Model In-ter-com-par-i-so
 n Project
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22]
 Missing character: There is no Ã in font txr!
 Missing character: There is no ¼ in font txr!
 Missing character: There is no Ã in font txr!
@@ -1078,13 +1057,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4444 strings out of 492995
- 59781 string characters out of 6132704
- 157544 words of memory out of 5000000
- 7836 multiletter control sequences out of 15000+600000
+ 4440 strings out of 492995
+ 59666 string characters out of 6132704
+ 157706 words of memory out of 5000000
+ 7832 multiletter control sequences out of 15000+600000
  46913 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,2125b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,2125b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texl
@@ -1096,10 +1075,10 @@ ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
- pages, 9472570 bytes).
+ pages, 8843333 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
