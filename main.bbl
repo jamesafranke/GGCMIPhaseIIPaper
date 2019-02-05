@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{93}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -602,6 +602,17 @@
 \newblock {\it \bibinfo{journal}{Nature Communications}\/},  {\it
   \bibinfo{volume}{8}\/}.
 %Type = Article
+\bibitem[{Mueller et~al.(2012)Mueller, Gerber, Johnston, Ray, Ramankutty \&
+  A~Foley}]{Mueller2012}
+\bibinfo{author}{Mueller, N.}, \bibinfo{author}{Gerber, J.},
+  \bibinfo{author}{Johnston, M.}, \bibinfo{author}{Ray, D.},
+  \bibinfo{author}{Ramankutty, N.}, \& \bibinfo{author}{A~Foley, J.}
+  (\bibinfo{year}{2012}).
+\newblock \bibinfo{title}{Closing yield gaps through nutrient and water
+  management}.
+\newblock {\it \bibinfo{journal}{Nature}\/},  {\it \bibinfo{volume}{490}\/},
+  \bibinfo{pages}{254--7}.
+%Type = Article
 \bibitem[{M\"{u}ller et~al.(2017)M\"{u}ller, Elliott, Chryssanthacopoulos,
   Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde,
   Jones, Khabarov, Lawrence, Liu, Olin, Pugh, Ray, Reddy, Rosenzweig, Ruane,
@@ -764,6 +775,14 @@
   \bibinfo{pages}{485--533}).
 \newblock \bibinfo{address}{Cambridge, UK}: \bibinfo{publisher}{Cambridge
   University Press}.
+%Type = Misc
+\bibitem[{Portmann et~al.(2008)Portmann, Siebert, Bauer \&
+  Doell}]{Portmann2008}
+\bibinfo{author}{Portmann, F.}, \bibinfo{author}{Siebert, S.},
+  \bibinfo{author}{Bauer, C.}, \& \bibinfo{author}{Doell, P.}
+  (\bibinfo{year}{2008}).
+\newblock \bibinfo{title}{Global dataset of monthly growing areas of 26
+  irrigated crops}.
 %Type = Article
 \bibitem[{Portmann et~al.(2010)Portmann, Siebert \& Doell}]{Portmann2010}
 \bibinfo{author}{Portmann, F.}, \bibinfo{author}{Siebert, S.}, \&
@@ -773,6 +792,16 @@
   {D}ata {S}et for {A}gricultural and {H}ydrological {M}odeling}.
 \newblock {\it \bibinfo{journal}{Global Biogeochemical Cycles}\/},  {\it
   \bibinfo{volume}{24}\/}, \bibinfo{pages}{GB1011}.
+%Type = Article
+\bibitem[{Potter et~al.(2010)Potter, Ramankutty, Bennett \&
+  Donner}]{potter2010}
+\bibinfo{author}{Potter, P.}, \bibinfo{author}{Ramankutty, N.},
+  \bibinfo{author}{Bennett, E.}, \& \bibinfo{author}{Donner, S.}
+  (\bibinfo{year}{2010}).
+\newblock \bibinfo{title}{Characterizing the spatial patterns of global
+  fertilizer application and manure production}.
+\newblock {\it \bibinfo{journal}{Earth Interactions - EARTH INTERACT}\/},  {\it
+  \bibinfo{volume}{14}\/}. \DOIprefix\doi{10.1175/2010EI288.1}.
 %Type = Article
 \bibitem[{Pugh et~al.(2016)Pugh, M{\"u}ller, Elliott, Deryng, Folberth, Olin,
   Schmid \& Arneth}]{pugh_climate_2016}
@@ -935,6 +964,14 @@
   depicted by world maps of the {K}{\"o}ppen-{G}eiger climate classification}.
 \newblock {\it \bibinfo{journal}{Meteorologische Zeitschrift}\/},  {\it
   \bibinfo{volume}{19}\/}, \bibinfo{pages}{135--141}.
+%Type = Article
+\bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley \& Ramankutty}]{Sacks2010}
+\bibinfo{author}{Sacks, W.~J.}, \bibinfo{author}{Deryng, D.},
+  \bibinfo{author}{Foley, J.~A.}, \& \bibinfo{author}{Ramankutty, N.}
+  (\bibinfo{year}{2010}).
+\newblock \bibinfo{title}{Crop planting dates: an analysis of global patterns}.
+\newblock {\it \bibinfo{journal}{Global Ecology and Biogeography}\/},  {\it
+  \bibinfo{volume}{19}\/}, \bibinfo{pages}{607--620}.
 %Type = Article
 \bibitem[{Schauberger et~al.(2017)Schauberger, Archontoulis, Arneth, Balkovic,
   Ciais, Deryng, Elliott, Folberth, Khabarov, M{\"u}ller, A.~M.~Pugh, Rolinski,

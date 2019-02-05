@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,7 +798,7 @@ File: Agformet_validation.png Graphic file (type png)
 Package pdftex.def Info: Agformet_validation.png used on input line 294.
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4366) has occurred while \output is active []
 
 [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/baselinecomp_yield_3.png>]
 <Agformet_validation2.png, id=47, 291.82626pt x 259.16022pt>
@@ -806,7 +806,8 @@ File: Agformet_validation2.png Graphic file (type png)
 <use Agformet_validation2.png>
 Package pdftex.def Info: Agformet_validation2.png used on input line 309.
 (pdftex.def)             Requested size: 246.95892pt x 219.32233pt.
-<regression_areas.png, id=48, 5420.25pt x 2258.4375pt>
+[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>] 
+<regression_areas.png, id=52, 5420.25pt x 2258.4375pt>
 File: regression_areas.png Graphic file (type png)
 <use regression_areas.png>
 Package pdftex.def Info: regression_areas.png used on input line 319.
@@ -814,7 +815,7 @@ Package pdftex.def Info: regression_areas.png used on input line 319.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<regression_model.png, id=49, 5420.25pt x 2258.4375pt>
+<regression_model.png, id=53, 5420.25pt x 2258.4375pt>
 File: regression_model.png Graphic file (type png)
 <use regression_model.png>
 Package pdftex.def Info: regression_model.png used on input line 326.
@@ -822,7 +823,6 @@ Package pdftex.def Info: regression_model.png used on input line 326.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>]
 
 LaTeX Warning: Reference `fig:carbon' on page 10 undefined on input line 337.
 
@@ -852,37 +852,14 @@ LaTeX Warning: Reference `fig:temperature' on page 10 undefined on input line 3
 LaTeX Warning: Reference `fig:error810' on page 10 undefined on input line 357.
 
 
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation2.png>
+]
 
-LaTeX Warning: Reference `fig:temperature' on page 10 undefined on input line 3
+LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
 60.
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 10 undefined on input line 360.
-
-
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation2.png>
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<global_em_maize.png, id=60, 2710.125pt x 3161.8125pt>
-File: global_em_maize.png Graphic file (type png)
-<use global_em_maize.png>
-Package pdftex.def Info: global_em_maize.png used on input line 364.
-(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
-
-LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
-65.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 11 undefined on input line 365.
-
-
-
-LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
-65.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 11 undefined on input line 365.
+LaTeX Warning: Reference `fig:nitrogen' on page 11 undefined on input line 360.
 
 
 
@@ -891,7 +868,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </U
 sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>] [12 </Use
 rs/jamesfranke/Documents/GitHub/PhaseIIPaper/error_360.png> </Users/jamesfranke
-/Documents/GitHub/PhaseIIPaper/em_err.png>]
+/Documents/GitHub/PhaseIIPaper/em_err.png>] <global_em_maize.png, id=70, 2710.1
+25pt x 3161.8125pt>
+File: global_em_maize.png Graphic file (type png)
+<use global_em_maize.png>
+Package pdftex.def Info: global_em_maize.png used on input line 364.
+(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
+
+LaTeX Warning: Reference `fig:temperature' on page 13 undefined on input line 3
+65.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 365.
+
+
+
+LaTeX Warning: Reference `fig:temperature' on page 13 undefined on input line 3
+65.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 365.
+
+
 
 LaTeX Warning: Reference `fig:KGirr_all' on page 13 undefined on input line 376
 .
@@ -916,6 +914,9 @@ LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 376.
 sers/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no √ in font txr!
 Missing character: There is no ∂ in font txr!
+
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
 Missing character: There is no √ in font txr!
 Missing character: There is no ∂ in font txr!
 Missing character: There is no √ in font txr!
@@ -927,9 +928,6 @@ Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no Ω in font txr!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [14]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
@@ -946,28 +944,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Missing character: There is no √ in font txr!
 Missing character: There is no © in font txr!
 
-Underfull \hbox (badness 1052) in paragraph at lines 1015--1024
+Underfull \hbox (badness 1052) in paragraph at lines 1052--1061
 \OT1/txr/m/n/8 J. (2014).  The Inter-Sectoral Im-pact Model In-ter-com-par-i-so
 n Project
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16]
 Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no ± in font txr!
-) [16] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
+) [17
+
+] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4449 strings out of 492995
- 59918 string characters out of 6132704
- 166332 words of memory out of 5000000
- 7841 multiletter control sequences out of 15000+600000
+ 4453 strings out of 492995
+ 59968 string characters out of 6132704
+ 166865 words of memory out of 5000000
+ 7845 multiletter control sequences out of 15000+600000
  47042 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,2125b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,2125b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/20
@@ -978,11 +982,11 @@ mf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2017/texmf-dist
 urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (16
- pages, 10118628 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (17
+ pages, 10120202 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
