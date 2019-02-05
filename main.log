@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,115 +801,119 @@ Package pdftex.def Info: Agformet_validation.png used on input line 294.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/baselinecomp_yield_3.png>]
-<regression_areas.png, id=47, 5420.25pt x 2258.4375pt>
+<Agformet_validation2.png, id=47, 291.82626pt x 259.16022pt>
+File: Agformet_validation2.png Graphic file (type png)
+<use Agformet_validation2.png>
+Package pdftex.def Info: Agformet_validation2.png used on input line 309.
+(pdftex.def)             Requested size: 246.95892pt x 219.32233pt.
+<regression_areas.png, id=48, 5420.25pt x 2258.4375pt>
 File: regression_areas.png Graphic file (type png)
 <use regression_areas.png>
-Package pdftex.def Info: regression_areas.png used on input line 318.
+Package pdftex.def Info: regression_areas.png used on input line 319.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<regression_model.png, id=48, 5420.25pt x 2258.4375pt>
+<regression_model.png, id=49, 5420.25pt x 2258.4375pt>
 File: regression_model.png Graphic file (type png)
 <use regression_model.png>
-Package pdftex.def Info: regression_model.png used on input line 325.
+Package pdftex.def Info: regression_model.png used on input line 326.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>]
+
+LaTeX Warning: Reference `fig:carbon' on page 10 undefined on input line 337.
+
+<error_360.png, id=54, 2258.4375pt x 4968.5625pt>
+File: error_360.png Graphic file (type png)
+<use error_360.png>
+Package pdftex.def Info: error_360.png used on input line 343.
+(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
+<em_err.png, id=55, 265.08636pt x 561.82698pt>
+File: em_err.png Graphic file (type png)
+<use em_err.png>
+Package pdftex.def Info: em_err.png used on input line 350.
+(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
+
+LaTeX Warning: Reference `fig:errorjules' on page 10 undefined on input line 35
+5.
+
+
+LaTeX Warning: Reference `fig:errorpromet' on page 10 undefined on input line 3
+55.
+
+
+LaTeX Warning: Reference `fig:temperature' on page 10 undefined on input line 3
+55.
+
+
+LaTeX Warning: Reference `fig:error810' on page 10 undefined on input line 357.
+
+
+
+LaTeX Warning: Reference `fig:temperature' on page 10 undefined on input line 3
+60.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 10 undefined on input line 360.
+
+
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation2.png>
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<global_em_maize.png, id=60, 2710.125pt x 3161.8125pt>
+File: global_em_maize.png Graphic file (type png)
+<use global_em_maize.png>
+Package pdftex.def Info: global_em_maize.png used on input line 364.
+(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
+
+LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
+65.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 11 undefined on input line 365.
+
+
+
+LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
+65.
+
+
+LaTeX Warning: Reference `fig:nitrogen' on page 11 undefined on input line 365.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>]
-Underfull \vbox (badness 2269) has occurred while \output is active []
+[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </U
+sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>] [12 </Use
+rs/jamesfranke/Documents/GitHub/PhaseIIPaper/error_360.png> </Users/jamesfranke
+/Documents/GitHub/PhaseIIPaper/em_err.png>]
 
-
-LaTeX Warning: Reference `fig:carbon' on page 10 undefined on input line 336.
-
-
-Underfull \vbox (badness 2269) has occurred while \output is active []
-
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </U
-sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>] <error_36
-0.png, id=58, 2258.4375pt x 4968.5625pt>
-File: error_360.png Graphic file (type png)
-<use error_360.png>
-Package pdftex.def Info: error_360.png used on input line 342.
-(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
-<em_err.png, id=59, 265.08636pt x 561.82698pt>
-File: em_err.png Graphic file (type png)
-<use em_err.png>
-Package pdftex.def Info: em_err.png used on input line 349.
-(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
-
-LaTeX Warning: Reference `fig:errorjules' on page 11 undefined on input line 35
-4.
-
-
-LaTeX Warning: Reference `fig:errorpromet' on page 11 undefined on input line 3
-54.
-
-
-LaTeX Warning: Reference `fig:temperature' on page 11 undefined on input line 3
-54.
-
-
-LaTeX Warning: Reference `fig:error810' on page 11 undefined on input line 356.
-
-
-[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/error_360.png>]
-
-LaTeX Warning: Reference `fig:temperature' on page 12 undefined on input line 3
-59.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 12 undefined on input line 359.
-
-
-<global_em_maize.png, id=64, 2710.125pt x 3161.8125pt>
-File: global_em_maize.png Graphic file (type png)
-<use global_em_maize.png>
-Package pdftex.def Info: global_em_maize.png used on input line 363.
-(pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
-
-LaTeX Warning: Reference `fig:temperature' on page 12 undefined on input line 3
-64.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 12 undefined on input line 364.
-
-
-
-LaTeX Warning: Reference `fig:temperature' on page 12 undefined on input line 3
-64.
-
-
-LaTeX Warning: Reference `fig:nitrogen' on page 12 undefined on input line 364.
-
-
-[12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/em_err.png> </Users/james
-franke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>]
-
-LaTeX Warning: Reference `fig:KGirr_all' on page 13 undefined on input line 375
+LaTeX Warning: Reference `fig:KGirr_all' on page 13 undefined on input line 376
 .
 
 
 LaTeX Warning: Reference `fig:KGirr_currentcult' on page 13 undefined on input 
-line 375.
+line 376.
 
 
 LaTeX Warning: Reference `fig:rice_currentcult' on page 13 undefined on input l
-ine 375.
+ine 376.
 
 
 LaTeX Warning: Reference `fig:winter_wheat_currentcult' on page 13 undefined on
- input line 375.
+ input line 376.
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 375.
+LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 376.
 
 
-[13] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
+[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>] (/U
+sers/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no √ in font txr!
 Missing character: There is no ∂ in font txr!
 Missing character: There is no √ in font txr!
@@ -923,19 +927,22 @@ Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no Ω in font txr!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[14]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ì in font txr!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Missing character: There is no √ in font txr!
 Missing character: There is no © in font txr!
 
@@ -943,9 +950,6 @@ Underfull \hbox (badness 1052) in paragraph at lines 1015--1024
 \OT1/txr/m/n/8 J. (2014).  The Inter-Sectoral Im-pact Model In-ter-com-par-i-so
 n Project
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
@@ -957,13 +961,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4443 strings out of 492995
- 59763 string characters out of 6132704
- 166267 words of memory out of 5000000
- 7836 multiletter control sequences out of 15000+600000
+ 4449 strings out of 492995
+ 59918 string characters out of 6132704
+ 166332 words of memory out of 5000000
+ 7841 multiletter control sequences out of 15000+600000
  47042 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,2125b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,2125b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/20
@@ -975,10 +979,10 @@ urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (16
- pages, 10023489 bytes).
+ pages, 10118628 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
