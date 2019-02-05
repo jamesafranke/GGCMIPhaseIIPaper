@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,41 +792,46 @@ LaTeX Warning: Reference `fig:KGirr_all' on page 7 undefined on input line 284.
 LaTeX Warning: Reference `fig:wheatbaseline' on page 7 undefined on input line 
 286.
 
-[7] <regression_areas.png, id=42, 5420.25pt x 2258.4375pt>
-File: regression_areas.png Graphic file (type png)
-<use regression_areas.png>
-Package pdftex.def Info: regression_areas.png used on input line 290.
-(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<regression_model.png, id=43, 5420.25pt x 2258.4375pt>
-File: regression_model.png Graphic file (type png)
-<use regression_model.png>
-Package pdftex.def Info: regression_model.png used on input line 297.
-(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Agformet_validation.png, id=44, 632.79613pt x 617.33034pt>
+[7] <Agformet_validation.png, id=42, 632.79613pt x 617.33034pt>
 File: Agformet_validation.png Graphic file (type png)
 <use Agformet_validation.png>
-Package pdftex.def Info: Agformet_validation.png used on input line 308.
+Package pdftex.def Info: Agformet_validation.png used on input line 294.
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/baselinecomp_yield_3.png>]
+<regression_areas.png, id=47, 5420.25pt x 2258.4375pt>
+File: regression_areas.png Graphic file (type png)
+<use regression_areas.png>
+Package pdftex.def Info: regression_areas.png used on input line 318.
+(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<regression_model.png, id=48, 5420.25pt x 2258.4375pt>
+File: regression_model.png Graphic file (type png)
+<use regression_model.png>
+Package pdftex.def Info: regression_model.png used on input line 325.
+(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>]
 Underfull \vbox (badness 2269) has occurred while \output is active []
 
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </Us
-ers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>]
 
 LaTeX Warning: Reference `fig:carbon' on page 10 undefined on input line 336.
 
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>]
-<error_360.png, id=58, 2258.4375pt x 4968.5625pt>
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </U
+sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>] <error_36
+0.png, id=58, 2258.4375pt x 4968.5625pt>
 File: error_360.png Graphic file (type png)
 <use error_360.png>
 Package pdftex.def Info: error_360.png used on input line 342.
@@ -882,29 +887,29 @@ LaTeX Warning: Reference `fig:temperature' on page 12 undefined on input line 3
 LaTeX Warning: Reference `fig:nitrogen' on page 12 undefined on input line 364.
 
 
+[12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/em_err.png> </Users/james
+franke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>]
 
-LaTeX Warning: Reference `fig:KGirr_all' on page 12 undefined on input line 375
+LaTeX Warning: Reference `fig:KGirr_all' on page 13 undefined on input line 375
 .
 
 
-LaTeX Warning: Reference `fig:KGirr_currentcult' on page 12 undefined on input 
+LaTeX Warning: Reference `fig:KGirr_currentcult' on page 13 undefined on input 
 line 375.
 
 
-LaTeX Warning: Reference `fig:rice_currentcult' on page 12 undefined on input l
+LaTeX Warning: Reference `fig:rice_currentcult' on page 13 undefined on input l
 ine 375.
 
 
-LaTeX Warning: Reference `fig:winter_wheat_currentcult' on page 12 undefined on
+LaTeX Warning: Reference `fig:winter_wheat_currentcult' on page 13 undefined on
  input line 375.
 
 
-LaTeX Warning: Reference `fig:nitrogen' on page 12 undefined on input line 375.
+LaTeX Warning: Reference `fig:nitrogen' on page 13 undefined on input line 375.
 
 
-[12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/em_err.png>] [13 </Users/
-jamesfranke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>] (/Users/jamesfr
-anke/Documents/GitHub/PhaseIIPaper/main.bbl
+[13] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no Ã in font txr!
 Missing character: There is no ¶ in font txr!
 Missing character: There is no Ã in font txr!
@@ -954,11 +959,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4443 strings out of 492995
  59763 string characters out of 6132704
- 166043 words of memory out of 5000000
+ 166267 words of memory out of 5000000
  7836 multiletter control sequences out of 15000+600000
  47042 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,2125b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,2125b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/20
@@ -970,7 +975,7 @@ urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (16
- pages, 10023779 bytes).
+ pages, 10023489 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
