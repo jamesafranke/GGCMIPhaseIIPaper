@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2019 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,6 +665,22 @@ Missing character: There is no ô in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ô in font txr!
+
+LaTeX Warning: Optional argument of \twocolumn too tall on page 1.
+
+
+Overfull \vbox (17.2101pt too high) has occurred while \output is active []
+
+
+LaTeX Warning: Text page 1 contains only floats.
+
+
+Overfull \vbox (17.2101pt too high) has occurred while \output is active []
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 LaTeX Font Info:    Try loading font information for OT1+txss on input line 112
 .
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
@@ -675,15 +691,19 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] <croparea.png, id=13, 262.9022pt x 492.0784pt>
-File: croparea.png Graphic file (type png)
-<use croparea.png>
-Package pdftex.def Info: croparea.png used on input line 126.
+[2] <figures/croparea.png, id=16, 262.9022pt x 492.0784pt>
+File: figures/croparea.png Graphic file (type png)
+<use figures/croparea.png>
+Package pdftex.def Info: figures/croparea.png used on input line 126.
 (pdftex.def)             Requested size: 239.39923pt x 448.09988pt.
-[2 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/croparea.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 7064) has occurred while \output is active []
+
+[3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>] [4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 164--164
 []\OT1/txr/bx/n/9 Winter
  []
@@ -719,82 +739,123 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 180.
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 187.
-[3]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4] <hist_year.png, id=26, 358.4592pt x 357.9774pt>
-File: hist_year.png Graphic file (type png)
-<use hist_year.png>
-Package pdftex.def Info: hist_year.png used on input line 217.
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[6] <figures/hist_year.png, id=32, 358.4592pt x 357.9774pt>
+File: figures/hist_year.png Graphic file (type png)
+<use figures/hist_year.png>
+Package pdftex.def Info: figures/hist_year.png used on input line 217.
 (pdftex.def)             Requested size: 239.39923pt x 239.07889pt.
-<global_sim_CG.png, id=27, 4516.875pt x 1806.75pt>
-File: global_sim_CG.png Graphic file (type png)
-<use global_sim_CG.png>
-Package pdftex.def Info: global_sim_CG.png used on input line 224.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/global_sim_CG.png, id=33, 4516.875pt x 1806.75pt>
+File: figures/global_sim_CG.png Graphic file (type png)
+<use figures/global_sim_CG.png>
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 224.
 (pdftex.def)             Requested size: 495.8984pt x 198.35715pt.
-[5 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/hist_year.png>] [6 </Users
-/jamesfranke/Documents/GitHub/PhaseIIPaper/global_sim_CG.png>] <baselinecomp_yi
-eld_3.png, id=36, 527.42645pt x 347.47417pt>
-File: baselinecomp_yield_3.png Graphic file (type png)
-<use baselinecomp_yield_3.png>
-Package pdftex.def Info: baselinecomp_yield_3.png used on input line 259.
-(pdftex.def)             Requested size: 495.8984pt x 326.71059pt.
-[7] <Agformet_validation.png, id=42, 632.79613pt x 617.33034pt>
-File: Agformet_validation.png Graphic file (type png)
-<use Agformet_validation.png>
-Package pdftex.def Info: Agformet_validation.png used on input line 294.
-(pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 
-Underfull \vbox (badness 4366) has occurred while \output is active []
-
-[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/baselinecomp_yield_3.png>]
-<Agformet_validation2.png, id=47, 291.82626pt x 259.16022pt>
-File: Agformet_validation2.png Graphic file (type png)
-<use Agformet_validation2.png>
-Package pdftex.def Info: Agformet_validation2.png used on input line 309.
-(pdftex.def)             Requested size: 246.95892pt x 219.32233pt.
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation.png>] 
-<regression_areas.png, id=52, 5420.25pt x 2258.4375pt>
-File: regression_areas.png Graphic file (type png)
-<use regression_areas.png>
-Package pdftex.def Info: regression_areas.png used on input line 319.
-(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<regression_model.png, id=53, 5420.25pt x 2258.4375pt>
-File: regression_model.png Graphic file (type png)
-<use regression_model.png>
-Package pdftex.def Info: regression_model.png used on input line 326.
-(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<error_360.png, id=54, 2258.4375pt x 4968.5625pt>
-File: error_360.png Graphic file (type png)
-<use error_360.png>
-Package pdftex.def Info: error_360.png used on input line 343.
-(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
-<em_err.png, id=55, 265.08636pt x 561.82698pt>
-File: em_err.png Graphic file (type png)
-<use em_err.png>
-Package pdftex.def Info: em_err.png used on input line 350.
-(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Agformet_validation2.png>
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_areas.png> </U
-sers/jamesfranke/Documents/GitHub/PhaseIIPaper/regression_model.png>] [12 </Use
-rs/jamesfranke/Documents/GitHub/PhaseIIPaper/error_360.png> </Users/jamesfranke
-/Documents/GitHub/PhaseIIPaper/em_err.png>] <global_em_maize.png, id=70, 2710.1
-25pt x 3161.8125pt>
-File: global_em_maize.png Graphic file (type png)
-<use global_em_maize.png>
-Package pdftex.def Info: global_em_maize.png used on input line 364.
+[7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
+] <figures/baselinecomp_yield_3.png, id=43, 527.42645pt x 347.47417pt>
+File: figures/baselinecomp_yield_3.png Graphic file (type png)
+<use figures/baselinecomp_yield_3.png>
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 25
+9.
+(pdftex.def)             Requested size: 495.8984pt x 326.71059pt.
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+[9]
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yiel
+d_3.png>] <figures/Agformet_validation.png, id=52, 632.79613pt x 617.33034pt>
+File: figures/Agformet_validation.png Graphic file (type png)
+<use figures/Agformet_validation.png>
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 294
+.
+(pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
+on.png>] <figures/Agformet_validation2.png, id=60, 291.82626pt x 259.16022pt>
+File: figures/Agformet_validation2.png Graphic file (type png)
+<use figures/Agformet_validation2.png>
+Package pdftex.def Info: figures/Agformet_validation2.png used on input line 30
+9.
+(pdftex.def)             Requested size: 246.95892pt x 219.32233pt.
+<figures/regression_areas.png, id=61, 5420.25pt x 2258.4375pt>
+File: figures/regression_areas.png Graphic file (type png)
+<use figures/regression_areas.png>
+Package pdftex.def Info: figures/regression_areas.png used on input line 319.
+(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/regression_model.png, id=62, 5420.25pt x 2258.4375pt>
+File: figures/regression_model.png Graphic file (type png)
+<use figures/regression_model.png>
+Package pdftex.def Info: figures/regression_model.png used on input line 326.
+(pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
+on2.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
+png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
+.png>] <figures/error_360.png, id=73, 2258.4375pt x 4968.5625pt>
+File: figures/error_360.png Graphic file (type png)
+<use figures/error_360.png>
+Package pdftex.def Info: figures/error_360.png used on input line 343.
+(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
+<figures/em_err.png, id=74, 265.08636pt x 561.82698pt>
+File: figures/em_err.png Graphic file (type png)
+<use figures/em_err.png>
+Package pdftex.def Info: figures/em_err.png used on input line 350.
+(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png>] [
+16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>] <figu
+res/global_em_maize.png, id=83, 2710.125pt x 3161.8125pt>
+File: figures/global_em_maize.png Graphic file (type png)
+<use figures/global_em_maize.png>
+Package pdftex.def Info: figures/global_em_maize.png used on input line 364.
 (pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/global_em_maize.png>] (/U
-sers/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+[17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
+ng>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no √ in font txr!
 Missing character: There is no ∂ in font txr!
 Missing character: There is no √ in font txr!
@@ -808,7 +869,10 @@ Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no Ω in font txr!
-[14]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ì in font txr!
@@ -818,9 +882,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15]
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22]
 Missing character: There is no √ in font txr!
 Missing character: There is no © in font txr!
 
@@ -829,25 +903,21 @@ Underfull \hbox (badness 1052) in paragraph at lines 1052--1061
 n Project
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[16]
 Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no ± in font txr!
-) [17
+) [23
 
 ] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) ) 
 Here is how much of TeX's memory you used:
- 4455 strings out of 492995
- 60031 string characters out of 6132704
- 167018 words of memory out of 5000000
+ 4456 strings out of 492995
+ 60391 string characters out of 6132704
+ 159190 words of memory out of 5000000
  7849 multiletter control sequences out of 15000+600000
  45103 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,1976b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,1976b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texl
 ive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2017/texmf-di
@@ -859,11 +929,11 @@ nts/txsy.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8
 a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (17
- pages, 10119305 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
+ pages, 10122719 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
