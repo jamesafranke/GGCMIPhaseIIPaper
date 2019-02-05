@@ -24,7 +24,7 @@
 \bibliographystyle{model5-names.bst}
 \biboptions{authoryear, comma}
 \journal{Agricultural and Forest Meteorology}
-\doublespacing
+%\doublespacing
 
 \begin{document}
 \begin{frontmatter}
@@ -305,16 +305,9 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
 %%%%%%%%%%%%%%
 \begin{figure*}[!htb]
     \centering
-    \includegraphics[width=0.8\linewidth]{Agformet_validation.png}
+    \includegraphics[width=0.95\linewidth]{Agformet_validation.png}
     \caption{Time series correlation coefficients between simulated crop yield and FAO data at the country level. The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. The heatmaps illustrate the Pearson r correlation between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1980-2010 period. Models that provided different nitrogen application levels are shown with low, med, and high label (models that did not simulated different nitrogen levels are analogous to a high nitrogen application level). The ensemble mean yield is also correlated with the FAO data.}
     \label{fig:simulation_val}
-\end{figure*}
-
-\begin{figure*}[!htb]
-    \centering
-    \includegraphics[width=0.8\linewidth]{phase_II_em_val.png}
-    \caption{Distribution in historical yields (1981-2009) for maize for eight example high producing countries. FAO, simulation (high nitrogen), and emulation. Emulated values are calculated based on the additive temperature anomaly or percentage precipitation anomaly from the 1980-2010 period in each year. Note: the emulator is designed to provide the mean change in yield under climatological mean shift in temperature (or precipitation). Applying it at the year to year level should be interpreted with caution.}
-    \label{fig:sim_em_val}
 \end{figure*}
 
 Figure \ref{fig:simulation_val} shows the time series correlation between the simulation model yield and FOA yield data. The results are mixed, with many regions for rice and wheat being difficult to model. No single model is dominant, with each model providing near best-in-class performance in at least one location-crop combination. The presence of no vertical dark green color bars clearly illustrates the power of a multi-model intercomparison project like the one presented here. The ensemble mean yield is calculated across all `high' nitrogen application level model simulations and correlated with the FAO data (not the mean of the correlations). The ensemble mean does not beat the best model in each case, but shows positive correlation in over 75\% of the cases presented here.
@@ -325,7 +318,14 @@ FAO data is at least one level of abstraction from ground truth in many cases, e
 
 \textit{One may speculate that the difference in performance between Pakistan (no successful models) and India (many successful models) for rice may lie in the FAO data and not the models themselves. What would be so different about rice production across these two countries that could explain this difference??}
 
-Figure \ref{fig:sim_em_val} shows the distribution across historical maize yields for some high producing countries. The discrepancy between the simulations and FAO data is most evident in developing nations, where nitrogen application levels are far below the 200 kg ha$^-1$ applied in the simulations shown here (though the distributions are similar in those nations otherwise). 
+%\begin{figure*}[!htb]
+    %\centering
+    %\includegraphics[width=0.8\linewidth]{phase_II_em_val.png}
+    %\caption{Distribution in historical yields (1981-2009) for maize for eight example high producing countries. FAO, simulation (high nitrogen), and emulation. Emulated values are calculated based on the additive temperature anomaly or percentage precipitation anomaly from the 1980-2010 period in each year. Note: the emulator is designed to provide the mean change in yield under climatological mean shift in temperature (or precipitation). Applying it at the year to year level should be interpreted with caution.}
+    %\label{fig:sim_em_val}
+%\end{figure*}
+
+%Figure \ref{fig:sim_em_val} shows the distribution across historical maize yields for some high producing countries. The discrepancy between the simulations and FAO data is most evident in developing nations, where nitrogen application levels are far below the 200 kg ha$^-1$ applied in the simulations shown here (though the distributions are similar in those nations otherwise). 
 
 \subsection{Emulator performance}
 Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. Emulation is only possible, however, when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form. In the GGCMI simulations, this condition largely but not always holds. 
@@ -335,7 +335,7 @@ Each panel in Figure \ref{fig:regression} shows model yield output from scenario
 
 Crop yield responses generally follow similar functional forms across models, though with a spread in magnitude. Figure \ref{fig:regression_iowa} illustrates the inter-model diversity of yield responses to the same perturbations, even for a single crop and location (rain-fed maize in northern Iowa, the same location shown in the Figure \ref{fig:regression}). The differences make it important to construct emulators separately for each individual model, and the fidelity of emulation can also differ across models. This figure illustrates a common phenomenon, that models differ more in response to perturbations in CO$_2$ and nitrogen perturbations than to those in temperature or precipitation. (Compare also Figures \ref{fig:globesim} and \ref{fig:carbon}.) For this location and crop, CO$_2$ fertilization effects can range from $\sim$5--50\%, and nitrogen responses from nearly flat to a 60\% drop in the lowest-application simulation. 
 
-While the nitrogen dimension is important and uncertain, it is also the most problematic to emulate in this work because of its limited sampling. The GGCMI protocol specified only three nitrogen levels (10, 100 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. Steep and nonlinear declines in yield with lower nitrogen levels means that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. While there may be some reason to believe over-application of nitrogen at the wrong time in the growing season could lead to reduced yields, these features are almost certainly an artifact of under sampling.In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.\ ][]{Torsten77} as accurately as would be possible with a non-parametric model. 
+While the nitrogen dimension is important and uncertain, it is also the most problematic to emulate in this work because of its limited sampling. The GGCMI protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. Steep and nonlinear declines in yield with lower nitrogen levels means that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. While there may be some reason to believe over-application of nitrogen at the wrong time in the growing season could lead to reduced yields, these features are almost certainly an artifact of under sampling.In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.\ ][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 \begin{figure}[!p]
 \centering
@@ -380,10 +380,9 @@ We show that emulation of the output of these complex responses is possible even
 %%%%%%%%%%%%%%
 %%Needs Work%%
 %%%%%%%%%%%%%%
-We provide this simulation output dataset for further analysis by the community as we have only scratched the surface with this work. Each simulation run includes year to year variability in yields under different climate and management regimes. Some of the precipitation and temperature space has been lost due to the aggregation in the time dimension for the emulator presented here (i.e.\ the + 6 C simulation in the hottest year of the historical period compared to the coldest historical year, or precipitation perturbations in the driest historical year etc). Development of a year-to-year emulator or an emulator at different spatial scales may provide useful for some IAM applications. More exhaustive analysis of different statistical model specification for emulation will likely provide additional predictive skill over the specification provided here. The potentially richest area for further analysis is the interactions between input variable especially the Nitrogen and CO2 interactions with weather and with each other. Adaptation via growing season changes were also simulated and are available in the database, though this dimension was not presented or analyzed here.
+We provide this simulation output dataset for further analysis by the community as we have only scratched the surface with this work. Each simulation run includes year to year variability in yields under different climate and management regimes. Some of the precipitation and temperature space has been lost due to the aggregation in the time dimension for the emulator presented here (i.e.\ the + 6 C simulation in the hottest year of the historical period compared to the coldest historical year, or precipitation perturbations in the driest historical year etc). Development of a year-to-year emulator or an emulator at different spatial scales may provide useful for some IAM applications. More exhaustive analysis of different statistical model specification for emulation will likely provide additional predictive skill over the specification provided here. The potentially richest area for further analysis is the interactions between input variable especially the Nitrogen and CO2 interactions with weather and with each other. More robust quantification of the sensitivity to the input drivers (and there differences across models), as well as quantification in differences in uncertainty across input drivers. Adaptation via growing season changes were also simulated and are available in the database, though this dimension was not presented or analyzed here.
 
 The emulation approach presented here has some limitations. Because the GGCMI simulations apply uniform perturbations to historical climate inputs, they do not sample changes in higher order moments. The emulation therefore does not address the crop yield impacts of potential changes in climate variability. While some information could be extracted from consideration of year-over-year variability, more detailed simulations and analysis are likely necessary to diagnose the impact of changes in variance and sub-growing-season temporal effects. Additionally, the emulator is intended to provide the change in yield from a historical mean baseline value and should be used in conjunction with historical data (or data products) or a historical mean emulator (not presented here).
-
 
 % -- summing up paragrah --
 The future of food security is one of the larger challenges facing humanity at present. The development (and emulation) of multi-model ensembles such as GGCMI Phase II provides a way to begin to quantify uncertainties in crop responses to a range of potential climate inputs and explore the potential benefits of adaptive responses. Emulation also allow making state-of-the-art simulation results available to a wide research community as simple, computationally tractable tools that can be used by downstream modelers to understand the socioeconomic impacts of crop response to climate change. 
