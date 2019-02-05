@@ -77,6 +77,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/../PhaseIIPaper/supdocs/supdocs.aux
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 OUTPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
@@ -205,7 +206,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/croparea.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/croparea.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/croparea.png
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txmi.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
@@ -217,9 +217,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txb.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmb.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txbsy.tfm
