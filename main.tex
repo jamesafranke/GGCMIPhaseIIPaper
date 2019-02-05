@@ -18,7 +18,7 @@
 \usepackage{dblfloatfix}
 \usepackage{setspace}
 \usepackage{xr}
-\externaldocument{../paper/supdocs}
+\externaldocument{../supdocs/}
 %\usepackage[citecolor=blue]{hyperref}
 
 \bibliographystyle{model5-names.bst}
@@ -311,7 +311,7 @@ FAO data is at least one level of abstraction from ground truth in many cases, e
     \label{fig:sim_em_val}
 \end{figure}
 
-Figure \ref{fig:sim_em_val} shows the distribution across historical maize yields for some high producing countries. The discrepancy between the simulations and FAO data is most evident in developing nations, where nitrogen application levels are far below the 200 kg ha$^-1$ applied in the simulations shown here (though the distributions are similar in those nations otherwise). The distribution in historical yields is also calculated with the climatological-mean emulator by feeding it the historical (1981-2009) anomalies in growing season precipitation and temperature. The emulator typically faithfully shifts the distribution due to nitrogen application rates \citep[data from:][]{potter2010, Mueller2012}
+Figure \ref{fig:sim_em_val} shows the distribution across historical maize yields for some high producing countries. The discrepancy between the simulations and FAO data is most evident in developing nations, where nitrogen application levels are far below the 200 kg ha$^-1$ applied in the simulations shown here (though the distributions are similar in those nations otherwise). The distribution in historical yields is also calculated with the climatological-mean emulator by passing it the historical (1981-2009) anomalies in growing season precipitation and temperature, CO2 concentration of 360 ppm, and spatially varying nitrogen application rates \citep[data from:~][]{potter2010, Mueller2012}. The emulator distribution is shifted towards the FAO distribution in cases where the nitrogen levels are too high in the simulations, but this does not account for 
 
 
 \begin{figure*}[!h]
