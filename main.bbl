@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{94}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -330,6 +330,19 @@
   (\bibinfo{year}{1961}).
 \newblock {\it \bibinfo{title}{Agricultural production functions}\/}.
 \newblock \bibinfo{publisher}{Iowa State University Press}.
+%Type = Article
+\bibitem[{Holden et~al.(2014)Holden, Edwards, PH, Fraedrich, Lunkeit, E,
+  Labriet, Kanudia \& F}]{Holden2014}
+\bibinfo{author}{Holden, P.}, \bibinfo{author}{Edwards, N.},
+  \bibinfo{author}{PH, G.}, \bibinfo{author}{Fraedrich, K.},
+  \bibinfo{author}{Lunkeit, F.}, \bibinfo{author}{E, K.},
+  \bibinfo{author}{Labriet, M.}, \bibinfo{author}{Kanudia, A.}, \&
+  \bibinfo{author}{F, B.} (\bibinfo{year}{2014}).
+\newblock \bibinfo{title}{Plasim-entsem v1.0: A spatiotemporal emulator of
+  future climate change for impacts assessment}.
+\newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
+  \bibinfo{volume}{7}\/}, \bibinfo{pages}{433--451}.
+  \DOIprefix\doi{10.5194/gmd-7-433-2014}.
 %Type = Article
 \bibitem[{Holzk{\"a}mper et~al.(2012)Holzk{\"a}mper, Calanca \&
   Fuhrer}]{Holzkamper2012}
@@ -998,7 +1011,7 @@
 \newblock {\it \bibinfo{journal}{Proceedings of the National Academy of
   Sciences}\/},  {\it \bibinfo{volume}{106}\/}, \bibinfo{pages}{15594--15598}.
 %Type = Article
-\bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips \& Ruane}]{snyder2018}
+\bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips \& Ruane}]{Snyder2018}
 \bibinfo{author}{Snyder, A.}, \bibinfo{author}{Calvin, K.~V.},
   \bibinfo{author}{Phillips, M.}, \& \bibinfo{author}{Ruane, A.~C.}
   (\bibinfo{year}{2018}).

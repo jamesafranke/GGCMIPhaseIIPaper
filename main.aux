@@ -45,6 +45,7 @@
 \citation{JONES2017b}
 \citation{WOLF2002217}
 \citation{JAGTAP200273}
+\citation{Iizumi2010}
 \citation{ANGULO201332}
 \citation{Asseng2013}
 \citation{Asseng2015}
@@ -65,22 +66,26 @@
 \citation{STORLIE2009}
 \citation{RATTO2012}
 \citation{Castruccio14}
+\citation{Holden2014}
 \citation{Howden2005}
 \citation{raisen2006}
 \citation{Lobell2010}
-\citation{Iizumi2010}
 \citation{Ferrise2011}
 \citation{Holzkamper2012}
 \citation{RUANE2013a}
-\citation{Markowski2015}
 \citation{Oyebamiji15}
 \citation{BLANC2015}
 \citation{BLANC2017}
 \citation{Ostberg2018}
-\citation{Warszawski3228}
-\citation{Moore2017}
 \citation{Mistry2017}
-\citation{snyder2018}
+\citation{Warszawski3228}
+\citation{BLANC2015}
+\citation{BLANC2017}
+\citation{Ostberg2018}
+\citation{Mistry2017}
+\citation{Markowski2015}
+\citation{Pirttioja2015}
+\citation{Snyder2018}
 \citation{FRONZEK20182}
 \@LN@col{1}
 \@LN@col{2}
@@ -172,16 +177,16 @@
 \citation{MacKay91}
 \citation{scikit-learn}
 \@LN@col{1}
-\newlabel{eqn:features_final}{{1}{9}}
 \@LN@col{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Emulator evaluation}{9}}
-\citation{rubel2010}
+\newlabel{eqn:features_final}{{1}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of the spatial pattern of potential yields and potential yield changes in the GGCMI Phase II ensemble, for three major crops. Left column (a) shows multi-model mean climatological yields for the baseline scenario for (top--bottom) rain-fed maize, soy, and rice. (For wheat see Figure S11\hbox {} in the supplemental material.) White stippling indicates areas where these crops are not currently cultivated. Absence of cultivation aligns well with the lowest yield contour (0-2 ton ha$^{-1}$). Right column (b) shows the multi-model mean fractional yield change in the extreme T + 4 $^{\circ }$C scenario (with other inputs at baseline values). Areas without hatching or stippling are those where confidence in projections is high: the multi-model mean fractional change exceeds two standard deviations of the ensemble. ($\Delta > 2\sigma $). Hatching indicates areas of low confidence ($\Delta < 1 \sigma $), and stippling areas of medium confidence ($1 \sigma < \Delta < 2 \sigma $). Crop model results in cold areas, where yield impacts are on average positive, also have the highest uncertainty.}}{10}}
 \newlabel{fig:maizesoybaseline}{{4}{10}}
 \@LN@col{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Emulator evaluation}{10}}
 \newlabel{eqn:per_yield}{{2}{10}}
-\newlabel{eqn:error}{{3}{10}}
 \@LN@col{2}
+\newlabel{eqn:error}{{3}{10}}
+\citation{rubel2010}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{11}}
 \newlabel{S:3}{{3}{11}}
@@ -195,29 +200,27 @@
 \citation{potter2010}
 \citation{Mueller2012}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution in historical yields (1981-2009) for maize for eight example high producing countries. FAO, simulation (high nitrogen), and emulation. Emulated values are calculated based on the additive temperature anomaly or percentage precipitation anomaly from the 1981-2009 period in each year. Note: the emulator is designed to provide the mean change in yield under climatological mean shift in temperature (or precipitation). Applying it at the year to year level should be interpreted with caution.}}{13}}
-\newlabel{fig:sim_em_val}{{6}{13}}
 \@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Emulator performance}{13}}
 \citation{Torsten77}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Example illustrating spatial variations in yield response and emulation ability. We show rain-fed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. Legend includes hectares cultivated in each selected grid cell. Each panel shows variation along a single variable, with others held at baseline values. Dots show climatological mean yield, solid lines a simple polynomial fit across this 1D variation, and dashed lines the results of the full emulator of Equation 1\hbox {}. The climatological response is sufficiently smooth to be be represented by a simple polynomial. Because precipitation changes are imposed as multiplicative factors rather than additive offsets, locations with higher baseline precipitation have a larger absolute spread in inputs sampled than do drier locations (not visible here).}}{14}}
-\newlabel{fig:regression}{{7}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Example illustrating across-model variations in yield response. We show simulations and emulations from six models for rain-fed maize in the same Iowa location shown in Figure 7\hbox {}, with the same plot conventions. Models that did not simulate the nitrogen dimension are omitted for clarity. The inter-model standard deviation is larger for the perturbations in CO$_2$ and nitrogen than for those in temperature or precipitation illustrating that the sensitivity to weather is better constrained than to management at elevated CO$_2$. While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated and lead to emulation error.}}{14}}
-\newlabel{fig:regression_iowa}{{8}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example illustrating spatial variations in yield response and emulation ability. We show rain-fed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. Legend includes hectares cultivated in each selected grid cell. Each panel shows variation along a single variable, with others held at baseline values. Dots show climatological mean yield, solid lines a simple polynomial fit across this 1D variation, and dashed lines the results of the full emulator of Equation 1\hbox {}. The climatological response is sufficiently smooth to be be represented by a simple polynomial. Because precipitation changes are imposed as multiplicative factors rather than additive offsets, locations with higher baseline precipitation have a larger absolute spread in inputs sampled than do drier locations (not visible here).}}{14}}
+\newlabel{fig:regression}{{6}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Example illustrating across-model variations in yield response. We show simulations and emulations from six models for rain-fed maize in the same Iowa location shown in Figure 6\hbox {}, with the same plot conventions. Models that did not simulate the nitrogen dimension are omitted for clarity. The inter-model standard deviation is larger for the perturbations in CO$_2$ and nitrogen than for those in temperature or precipitation illustrating that the sensitivity to weather is better constrained than to management at elevated CO$_2$. While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated and lead to emulation error.}}{14}}
+\newlabel{fig:regression_iowa}{{7}{14}}
 \@LN@col{1}
 \@LN@col{2}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations 3\hbox {}, 2\hbox {}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares with $ e < 1$. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data. JULES did not simulate spring wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}}{15}}
-\newlabel{fig:error_360}{{9}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rain-fed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure 9\hbox {}.}}{16}}
-\newlabel{fig:error}{{10}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations 3\hbox {}, 2\hbox {}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares with $ e < 1$. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data. JULES did not simulate spring wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}}{15}}
+\newlabel{fig:error_360}{{8}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rain-fed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure 8\hbox {}.}}{16}}
+\newlabel{fig:error}{{9}{16}}
 \@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Emulator applications}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions and discussion}{16}}
+\newlabel{S:4}{{4}{16}}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Global emulated damages for maize on currently cultivated lands for the GGCMI models emulated, for uniform temperature shifts with other inputs held at baseline. (The damage function is created from aggregating up emulated values at the grid cell level, not from a regression of global mean yields.) Lines are emulations for rain-fed (solid) and irrigated (dashed) crops; for comparison, dots are the simulated values for the rain-fed case. For most models, irrigated crops show a sharper reduction than do rain-fed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift. (The exceptions are PROMET, JULES, and LPJmL.) For other crops and scenarios see Figures \nobreakspace  {}S16\hbox {}- S19\hbox {} in the supplemental material.}}{17}}
-\newlabel{fig:globe_em}{{11}{17}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions and discussion}{17}}
-\newlabel{S:4}{{4}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Global emulated damages for maize on currently cultivated lands for the GGCMI models emulated, for uniform temperature shifts with other inputs held at baseline. (The damage function is created from aggregating up emulated values at the grid cell level, not from a regression of global mean yields.) Lines are emulations for rain-fed (solid) and irrigated (dashed) crops; for comparison, dots are the simulated values for the rain-fed case. For most models, irrigated crops show a sharper reduction than do rain-fed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift. (The exceptions are PROMET, JULES, and LPJmL.) For other crops and scenarios see Figures \nobreakspace  {}S16\hbox {}- S19\hbox {} in the supplemental material.}}{17}}
+\newlabel{fig:globe_em}{{10}{17}}
 \@LN@col{2}
 \@LN@col{1}
 \@LN@col{2}
@@ -244,88 +247,89 @@
 \bibcite{Ferrise2011}{{18}{2011}{{Ferrise et~al.}}{{Ferrise, Moriondo \& Bindi}}}
 \bibcite{FOLBERTH201221}{{19}{2012}{{Folberth et~al.}}{{Folberth, Gaiser, Abbaspour, Schulin \& Yang}}}
 \bibcite{FAOSTAT}{{20}{2018}{{Food and Agriculture Organization of the United Nations}}{{}}}
+\bibcite{FRONZEK20182}{{21}{2018}{{Fronzek et~al.}}{{Fronzek, Pirttioja, Carter, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M{\"{u}}ller, Nendel, {\"{O}}zt{\"{u}}rk, Perego, Rodr{\'{i}}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao \& R{\"{o}}tter}}}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {section}{\numberline {6}References}{19}}
 \newlabel{S:6}{{6}{19}}
 \@LN@col{2}
-\bibcite{FRONZEK20182}{{21}{2018}{{Fronzek et~al.}}{{Fronzek, Pirttioja, Carter, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M{\"{u}}ller, Nendel, {\"{O}}zt{\"{u}}rk, Perego, Rodr{\'{i}}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao \& R{\"{o}}tter}}}
 \bibcite{Glotter14}{{22}{2014}{{Glotter et~al.}}{{Glotter, Elliott, McInerney, Best, Foster \& Moyer}}}
 \bibcite{Glotter15}{{23}{2015}{{Glotter et~al.}}{{Glotter, Moyer, Ruane \& Elliott}}}
 \bibcite{Hank2015}{{24}{2015}{{Hank et~al.}}{{Hank, Bach \& Mauser}}}
 \bibcite{He2016}{{25}{2016}{{He et~al.}}{{He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He \& Li}}}
 \bibcite{Heady57}{{26}{1957}{{Heady}}{{}}}
 \bibcite{Heady61}{{27}{1961}{{Heady \& Dillon}}{{}}}
-\bibcite{Holzkamper2012}{{28}{2012}{{Holzk{\"a}mper et~al.}}{{Holzk{\"a}mper, Calanca \& Fuhrer}}}
-\bibcite{HOLZWORTH2014327}{{29}{2014}{{Holzworth et~al.}}{{Holzworth, Huth, deVoil, Zurcher, Herrmann, McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall, Fainges, Bell, Peake, Poulton, Hochman, Thorburn, Gaydon, Dalgliesh, Rodriguez, Cox, Chapman, Doherty, Teixeira, Sharp, Cichota, Vogeler, Li, Wang, Hammer, Robertson, Dimes, Whitbread, Hunt, van Rees, McClelland, Carberry, Hargreaves, MacLeod, McDonald, Harsdorf, Wedgwood \& Keating}}}
-\bibcite{Howden2005}{{30}{2005}{{Howden \& Crimp}}{{}}}
-\bibcite{Iizumi2010}{{31}{2010}{{Iizumi et~al.}}{{Iizumi, Nishimori \& Yokozawa}}}
-\bibcite{Torsten77}{{32}{1977}{{Ingestad}}{{}}}
-\bibcite{Izaurralde06}{{33}{2006}{{Izaurralde et~al.}}{{Izaurralde, Williams, Mcgill, Rosenberg \& Quiroga~Jakas}}}
-\bibcite{JAGTAP200273}{{34}{2002}{{Jagtap \& Jones}}{{}}}
-\bibcite{JONES2003235}{{35}{2003}{{Jones et~al.}}{{Jones, Hoogenboom, Porter, Boote, Batchelor, Hunt, Wilkens, Singh, Gijsman \& Ritchie}}}
-\bibcite{JONES2017b}{{36}{2017}{{Jones et~al.}}{{Jones, Antle, Basso, Boote, Conant, Foster, Godfray, Herrero, Howitt, Janssen, Keating, Munoz-Carpena, Porter, Rosenzweig \& Wheeler}}}
-\bibcite{KEATING2003267}{{37}{2003}{{Keating et~al.}}{{Keating, Carberry, Hammer, Probert, Robertson, Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes, Silburn, Wang, Brown, Bristow, Asseng, Chapman, McCown, Freebairn \& Smith}}}
-\bibcite{Lindeskog2013}{{38}{2013}{{Lindeskog et~al.}}{{Lindeskog, Arneth, Bondeau, Waha, Seaquist, Olin \& Smith}}}
-\bibcite{LIU2007478}{{39}{2007}{{Liu et~al.}}{{Liu, Williams, Zehnder \& Yang}}}
-\bibcite{LIU2016164}{{40}{2016{a}}{{Liu et~al.}}{{Liu, Yang, Folberth, Wang, Luo \& Schulin}}}
-\bibcite{LIU2016}{{41}{2016{b}}{{Liu et~al.}}{{Liu, Yang, Liu, Azevedo, Wang, Xu, Abbaspour \& Schulin}}}
+\bibcite{Holden2014}{{28}{2014}{{Holden et~al.}}{{Holden, Edwards, PH, Fraedrich, Lunkeit, E, Labriet, Kanudia \& F}}}
+\bibcite{Holzkamper2012}{{29}{2012}{{Holzk{\"a}mper et~al.}}{{Holzk{\"a}mper, Calanca \& Fuhrer}}}
+\bibcite{HOLZWORTH2014327}{{30}{2014}{{Holzworth et~al.}}{{Holzworth, Huth, deVoil, Zurcher, Herrmann, McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall, Fainges, Bell, Peake, Poulton, Hochman, Thorburn, Gaydon, Dalgliesh, Rodriguez, Cox, Chapman, Doherty, Teixeira, Sharp, Cichota, Vogeler, Li, Wang, Hammer, Robertson, Dimes, Whitbread, Hunt, van Rees, McClelland, Carberry, Hargreaves, MacLeod, McDonald, Harsdorf, Wedgwood \& Keating}}}
+\bibcite{Howden2005}{{31}{2005}{{Howden \& Crimp}}{{}}}
+\bibcite{Iizumi2010}{{32}{2010}{{Iizumi et~al.}}{{Iizumi, Nishimori \& Yokozawa}}}
+\bibcite{Torsten77}{{33}{1977}{{Ingestad}}{{}}}
+\bibcite{Izaurralde06}{{34}{2006}{{Izaurralde et~al.}}{{Izaurralde, Williams, Mcgill, Rosenberg \& Quiroga~Jakas}}}
+\bibcite{JAGTAP200273}{{35}{2002}{{Jagtap \& Jones}}{{}}}
+\bibcite{JONES2003235}{{36}{2003}{{Jones et~al.}}{{Jones, Hoogenboom, Porter, Boote, Batchelor, Hunt, Wilkens, Singh, Gijsman \& Ritchie}}}
+\bibcite{JONES2017b}{{37}{2017}{{Jones et~al.}}{{Jones, Antle, Basso, Boote, Conant, Foster, Godfray, Herrero, Howitt, Janssen, Keating, Munoz-Carpena, Porter, Rosenzweig \& Wheeler}}}
+\bibcite{KEATING2003267}{{38}{2003}{{Keating et~al.}}{{Keating, Carberry, Hammer, Probert, Robertson, Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes, Silburn, Wang, Brown, Bristow, Asseng, Chapman, McCown, Freebairn \& Smith}}}
+\bibcite{Lindeskog2013}{{39}{2013}{{Lindeskog et~al.}}{{Lindeskog, Arneth, Bondeau, Waha, Seaquist, Olin \& Smith}}}
+\bibcite{LIU2007478}{{40}{2007}{{Liu et~al.}}{{Liu, Williams, Zehnder \& Yang}}}
+\bibcite{LIU2016164}{{41}{2016{a}}{{Liu et~al.}}{{Liu, Yang, Folberth, Wang, Luo \& Schulin}}}
+\bibcite{LIU2016}{{42}{2016{b}}{{Liu et~al.}}{{Liu, Yang, Liu, Azevedo, Wang, Xu, Abbaspour \& Schulin}}}
+\bibcite{Lobell2010}{{43}{2010}{{Lobell \& Burke}}{{}}}
+\bibcite{Lobell2007}{{44}{2007}{{Lobell \& Field}}{{}}}
 \@LN@col{1}
 \@LN@col{2}
-\bibcite{Lobell2010}{{42}{2010}{{Lobell \& Burke}}{{}}}
-\bibcite{Lobell2007}{{43}{2007}{{Lobell \& Field}}{{}}}
-\bibcite{MacKay91}{{44}{1991}{{MacKay}}{{}}}
-\bibcite{Markowski2015}{{45}{2015}{{Makowski et~al.}}{{Makowski, Asseng, Ewert, Bassu, Durand, Martre, Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote, Brisson, Cammarano, Challinor, Conijn \& Wolf}}}
-\bibcite{MAUSER2009362}{{46}{2015}{{Mauser \& Bach}}{{}}}
-\bibcite{MAUSER2015}{{47}{2009}{{Mauser et~al.}}{{Mauser, Klepper, Zabel, Delzeit, Hank, Putzenlechner \& Calzadilla}}}
-\bibcite{mcdermid2015}{{48}{2015}{{McDermid et~al.}}{{McDermid, Dileepkumar, Murthy, Nedumaran, Singh, Srinivasa, Gangwar, Subash, Ahmad, Zubair \& Nissanka}}}
-\bibcite{Mistry2017}{{49}{2017}{{Mistry et~al.}}{{Mistry, Wing \& De~Cian}}}
-\bibcite{Moore2017}{{50}{2017}{{Moore et~al.}}{{Moore, Baldos, Hertel \& Diaz}}}
-\bibcite{Mueller2012}{{51}{2012}{{Mueller et~al.}}{{Mueller, Gerber, Johnston, Ray, Ramankutty \& A~Foley}}}
-\bibcite{muller_global_2017}{{52}{2017}{{M\"{u}ller et~al.}}{{M\"{u}ller, Elliott, Chryssanthacopoulos, Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde, Jones, Khabarov, Lawrence, Liu, Olin, Pugh, Ray, Reddy, Rosenzweig, Ruane, Sakurai, Schmid, Skalsky, Song, Wang, de~Wit \& Yang}}}
-\bibcite{Nakamura97}{{53}{1997}{{Nakamura et~al.}}{{Nakamura, Osaki, Koike, Hanba, Wada \& Tadano}}}
-\bibcite{OHAGAN2006}{{54}{2006}{{O'Hagan}}{{}}}
-\bibcite{Olin2015}{{55}{2015}{{Olin et~al.}}{{Olin, Schurgers, Lindeskog, W{\r a}rlind, Smith, Bodin, Holm\'er \& Arneth}}}
-\bibcite{Mitsuru92}{{56}{1992}{{Osaki et~al.}}{{Osaki, Shinano \& Tadano}}}
-\bibcite{Osborne2015}{{57}{2015}{{Osborne et~al.}}{{Osborne, Gornall, Hooker, Williams, Wiltshire, Betts \& Wheeler}}}
-\bibcite{Ostberg2018}{{58}{2018}{{Ostberg et~al.}}{{Ostberg, Schewe, Childers \& Frieler}}}
-\bibcite{Oyebamiji15}{{59}{2015}{{Oyebamiji et~al.}}{{Oyebamiji, Edwards, Holden, Garthwaite, Schaphoff \& Gerten}}}
-\bibcite{scikit-learn}{{60}{2011}{{Pedregosa et~al.}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot \& Duchesnay}}}
-\bibcite{Pirttioja2015}{{61}{2015}{{Pirttioja et~al.}}{{Pirttioja, Carter, Fronzek, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M\"{u}ller, Nendel, \"{O}zt\"{u}rk, Perego, Rodr{\'{\i }}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao \& R\"{o}tter}}}
-\bibcite{porter2014}{{62}{2014}{{Porter et al.\ (IPCC)}}{{}}}
+\bibcite{MacKay91}{{45}{1991}{{MacKay}}{{}}}
+\bibcite{Markowski2015}{{46}{2015}{{Makowski et~al.}}{{Makowski, Asseng, Ewert, Bassu, Durand, Martre, Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote, Brisson, Cammarano, Challinor, Conijn \& Wolf}}}
+\bibcite{MAUSER2009362}{{47}{2015}{{Mauser \& Bach}}{{}}}
+\bibcite{MAUSER2015}{{48}{2009}{{Mauser et~al.}}{{Mauser, Klepper, Zabel, Delzeit, Hank, Putzenlechner \& Calzadilla}}}
+\bibcite{mcdermid2015}{{49}{2015}{{McDermid et~al.}}{{McDermid, Dileepkumar, Murthy, Nedumaran, Singh, Srinivasa, Gangwar, Subash, Ahmad, Zubair \& Nissanka}}}
+\bibcite{Mistry2017}{{50}{2017}{{Mistry et~al.}}{{Mistry, Wing \& De~Cian}}}
+\bibcite{Moore2017}{{51}{2017}{{Moore et~al.}}{{Moore, Baldos, Hertel \& Diaz}}}
+\bibcite{Mueller2012}{{52}{2012}{{Mueller et~al.}}{{Mueller, Gerber, Johnston, Ray, Ramankutty \& A~Foley}}}
+\bibcite{muller_global_2017}{{53}{2017}{{M\"{u}ller et~al.}}{{M\"{u}ller, Elliott, Chryssanthacopoulos, Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde, Jones, Khabarov, Lawrence, Liu, Olin, Pugh, Ray, Reddy, Rosenzweig, Ruane, Sakurai, Schmid, Skalsky, Song, Wang, de~Wit \& Yang}}}
+\bibcite{Nakamura97}{{54}{1997}{{Nakamura et~al.}}{{Nakamura, Osaki, Koike, Hanba, Wada \& Tadano}}}
+\bibcite{OHAGAN2006}{{55}{2006}{{O'Hagan}}{{}}}
+\bibcite{Olin2015}{{56}{2015}{{Olin et~al.}}{{Olin, Schurgers, Lindeskog, W{\r a}rlind, Smith, Bodin, Holm\'er \& Arneth}}}
+\bibcite{Mitsuru92}{{57}{1992}{{Osaki et~al.}}{{Osaki, Shinano \& Tadano}}}
+\bibcite{Osborne2015}{{58}{2015}{{Osborne et~al.}}{{Osborne, Gornall, Hooker, Williams, Wiltshire, Betts \& Wheeler}}}
+\bibcite{Ostberg2018}{{59}{2018}{{Ostberg et~al.}}{{Ostberg, Schewe, Childers \& Frieler}}}
+\bibcite{Oyebamiji15}{{60}{2015}{{Oyebamiji et~al.}}{{Oyebamiji, Edwards, Holden, Garthwaite, Schaphoff \& Gerten}}}
+\bibcite{scikit-learn}{{61}{2011}{{Pedregosa et~al.}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot \& Duchesnay}}}
+\bibcite{Pirttioja2015}{{62}{2015}{{Pirttioja et~al.}}{{Pirttioja, Carter, Fronzek, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M\"{u}ller, Nendel, \"{O}zt\"{u}rk, Perego, Rodr{\'{\i }}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao \& R\"{o}tter}}}
+\bibcite{porter2014}{{63}{2014}{{Porter et al.\ (IPCC)}}{{}}}
+\bibcite{Portmann2008}{{64}{2008}{{Portmann et~al.}}{{Portmann, Siebert, Bauer \& Doell}}}
+\bibcite{Portmann2010}{{65}{2010}{{Portmann et~al.}}{{Portmann, Siebert \& Doell}}}
 \@LN@col{1}
 \@LN@col{2}
-\bibcite{Portmann2008}{{63}{2008}{{Portmann et~al.}}{{Portmann, Siebert, Bauer \& Doell}}}
-\bibcite{Portmann2010}{{64}{2010}{{Portmann et~al.}}{{Portmann, Siebert \& Doell}}}
-\bibcite{potter2010}{{65}{2010}{{Potter et~al.}}{{Potter, Ramankutty, Bennett \& Donner}}}
-\bibcite{pugh_climate_2016}{{66}{2016}{{Pugh et~al.}}{{Pugh, M{\"u}ller, Elliott, Deryng, Folberth, Olin, Schmid \& Arneth}}}
-\bibcite{raisen2006}{{67}{2006}{{R\"ais\"anen \& Ruokolainen}}{{}}}
-\bibcite{RATTO2012}{{68}{2012}{{Ratto et~al.}}{{Ratto, Castelletti \& Pagano}}}
-\bibcite{Razavi2012}{{69}{2012}{{Razavi et~al.}}{{Razavi, Tolson \& Burn}}}
-\bibcite{Roberts2017}{{70}{2017}{{Roberts et~al.}}{{Roberts, Braun, R~Sinclair, B~Lobell \& Schlenker}}}
-\bibcite{Rosenzweig2014}{{71}{2014}{{Rosenzweig et~al.}}{{Rosenzweig, Elliott, Deryng, Ruane, M{\"u}ller, Arneth, Boote, Folberth, Glotter, Khabarov, Neumann, Piontek, Pugh, Schmid, Stehfest, Yang \& Jones}}}
-\bibcite{ROSENZWEIG2013}{{72}{2013}{{Rosenzweig et~al.}}{{Rosenzweig, Jones, Hatfield, Ruane, Boote, Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach, Baigorria \& Winter}}}
-\bibcite{rosenzweig2018}{{73}{2018}{{Rosenzweig et~al.}}{{Rosenzweig, Ruane, Antle, Elliott, Ashfaq, Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy, Mason-D'Croz, Contreras, M\"{u}ller, Perez-Dominguez, Phillips, Porter, Raymundo, Sands, Schleussner, Valdivia, Valin \& Wiebe}}}
-\bibcite{ruane2018}{{74}{2018}{{Ruane et~al.}}{{Ruane, Antle, Elliott, Folberth, Hoogenboom, Mason-D'Croz, M\"{u}ller, Porter, Phillips, Raymundo, Sands, Valdivia, White, Wiebe \& Rosenzweig}}}
-\bibcite{RUANE2013a}{{75}{2013}{{Ruane et~al.}}{{Ruane, Cecil, Horton, Gordon, McCollum, Brown, Killough, Goldberg, Greeley \& Rosenzweig}}}
-\bibcite{Ruane2015}{{76}{2015}{{Ruane et~al.}}{{Ruane, Goldberg \& Chryssanthacopoulos}}}
-\bibcite{ruane2014}{{77}{2014}{{Ruane et~al.}}{{Ruane, McDermid, Rosenzweig, Baigorria, Jones, Romero \& Cecil}}}
-\bibcite{rubel2010}{{78}{2010}{{Rubel \& Kottek}}{{}}}
-\bibcite{Sacks2010}{{79}{2010}{{Sacks et~al.}}{{Sacks, Deryng, Foley \& Ramankutty}}}
-\bibcite{Schauberger2017}{{80}{2017}{{Schauberger et~al.}}{{Schauberger, Archontoulis, Arneth, Balkovic, Ciais, Deryng, Elliott, Folberth, Khabarov, M{\"u}ller, A.~M.~Pugh, Rolinski, Schaphoff, Schmid, Wang, Schlenker \& Frieler}}}
-\bibcite{Schlenker2009}{{81}{2009}{{Schlenker \& Roberts}}{{}}}
-\bibcite{snyder2018}{{82}{2018}{{Snyder et~al.}}{{Snyder, Calvin, Phillips \& Ruane}}}
-\bibcite{STORLIE2009}{{83}{2009}{{Storlie et~al.}}{{Storlie, Swiler, Helton \& Sallaberry}}}
+\bibcite{potter2010}{{66}{2010}{{Potter et~al.}}{{Potter, Ramankutty, Bennett \& Donner}}}
+\bibcite{pugh_climate_2016}{{67}{2016}{{Pugh et~al.}}{{Pugh, M{\"u}ller, Elliott, Deryng, Folberth, Olin, Schmid \& Arneth}}}
+\bibcite{raisen2006}{{68}{2006}{{R\"ais\"anen \& Ruokolainen}}{{}}}
+\bibcite{RATTO2012}{{69}{2012}{{Ratto et~al.}}{{Ratto, Castelletti \& Pagano}}}
+\bibcite{Razavi2012}{{70}{2012}{{Razavi et~al.}}{{Razavi, Tolson \& Burn}}}
+\bibcite{Roberts2017}{{71}{2017}{{Roberts et~al.}}{{Roberts, Braun, R~Sinclair, B~Lobell \& Schlenker}}}
+\bibcite{Rosenzweig2014}{{72}{2014}{{Rosenzweig et~al.}}{{Rosenzweig, Elliott, Deryng, Ruane, M{\"u}ller, Arneth, Boote, Folberth, Glotter, Khabarov, Neumann, Piontek, Pugh, Schmid, Stehfest, Yang \& Jones}}}
+\bibcite{ROSENZWEIG2013}{{73}{2013}{{Rosenzweig et~al.}}{{Rosenzweig, Jones, Hatfield, Ruane, Boote, Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach, Baigorria \& Winter}}}
+\bibcite{rosenzweig2018}{{74}{2018}{{Rosenzweig et~al.}}{{Rosenzweig, Ruane, Antle, Elliott, Ashfaq, Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy, Mason-D'Croz, Contreras, M\"{u}ller, Perez-Dominguez, Phillips, Porter, Raymundo, Sands, Schleussner, Valdivia, Valin \& Wiebe}}}
+\bibcite{ruane2018}{{75}{2018}{{Ruane et~al.}}{{Ruane, Antle, Elliott, Folberth, Hoogenboom, Mason-D'Croz, M\"{u}ller, Porter, Phillips, Raymundo, Sands, Valdivia, White, Wiebe \& Rosenzweig}}}
+\bibcite{RUANE2013a}{{76}{2013}{{Ruane et~al.}}{{Ruane, Cecil, Horton, Gordon, McCollum, Brown, Killough, Goldberg, Greeley \& Rosenzweig}}}
+\bibcite{Ruane2015}{{77}{2015}{{Ruane et~al.}}{{Ruane, Goldberg \& Chryssanthacopoulos}}}
+\bibcite{ruane2014}{{78}{2014}{{Ruane et~al.}}{{Ruane, McDermid, Rosenzweig, Baigorria, Jones, Romero \& Cecil}}}
+\bibcite{rubel2010}{{79}{2010}{{Rubel \& Kottek}}{{}}}
+\bibcite{Sacks2010}{{80}{2010}{{Sacks et~al.}}{{Sacks, Deryng, Foley \& Ramankutty}}}
+\bibcite{Schauberger2017}{{81}{2017}{{Schauberger et~al.}}{{Schauberger, Archontoulis, Arneth, Balkovic, Ciais, Deryng, Elliott, Folberth, Khabarov, M{\"u}ller, A.~M.~Pugh, Rolinski, Schaphoff, Schmid, Wang, Schlenker \& Frieler}}}
+\bibcite{Schlenker2009}{{82}{2009}{{Schlenker \& Roberts}}{{}}}
+\bibcite{Snyder2018}{{83}{2018}{{Snyder et~al.}}{{Snyder, Calvin, Phillips \& Ruane}}}
+\bibcite{STORLIE2009}{{84}{2009}{{Storlie et~al.}}{{Storlie, Swiler, Helton \& Sallaberry}}}
+\bibcite{Taylor2012}{{85}{2012}{{Taylor et~al.}}{{Taylor, Stouffer \& Meehl}}}
+\bibcite{Tebaldi2008}{{86}{2008}{{Tebaldi \& Lobell}}{{}}}
 \@LN@col{1}
 \@LN@col{2}
-\bibcite{Taylor2012}{{84}{2012}{{Taylor et~al.}}{{Taylor, Stouffer \& Meehl}}}
-\bibcite{Tebaldi2008}{{85}{2008}{{Tebaldi \& Lobell}}{{}}}
-\bibcite{Valade2013}{{86}{2014}{{Valade et~al.}}{{Valade, Ciais, Vuichard, Viovy, Caubel, Huth, Marin \& Martiné}}}
-\bibcite{Warszawski3228}{{87}{2014}{{Warszawski et~al.}}{{Warszawski, Frieler, Huber, Piontek, Serdeczny \& Schewe}}}
-\bibcite{WHITE2011357}{{88}{2011}{{White et~al.}}{{White, Hoogenboom, Kimball \& Wall}}}
-\bibcite{Williams2017}{{89}{2017}{{Williams et~al.}}{{Williams, Gornall, Harper, Wiltshire, Hemming, Quaife, Arkebauer \& Scoby}}}
-\bibcite{Williams2015}{{90}{2015}{{Williams \& Falloon}}{{}}}
-\bibcite{wit58}{{91}{1957}{{de~Wit}}{{}}}
-\bibcite{WOLF2002217}{{92}{2002}{{Wolf \& Oijen}}{{}}}
-\bibcite{zhao2017}{{93}{2017}{{Zhao et~al.}}{{Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao, Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre, Müller, Peng, Peñuelas, Ruane, Wallach, Wang, Wu, Liu, Zhu, Zhu \& Asseng}}}
+\bibcite{Valade2013}{{87}{2014}{{Valade et~al.}}{{Valade, Ciais, Vuichard, Viovy, Caubel, Huth, Marin \& Martiné}}}
+\bibcite{Warszawski3228}{{88}{2014}{{Warszawski et~al.}}{{Warszawski, Frieler, Huber, Piontek, Serdeczny \& Schewe}}}
+\bibcite{WHITE2011357}{{89}{2011}{{White et~al.}}{{White, Hoogenboom, Kimball \& Wall}}}
+\bibcite{Williams2017}{{90}{2017}{{Williams et~al.}}{{Williams, Gornall, Harper, Wiltshire, Hemming, Quaife, Arkebauer \& Scoby}}}
+\bibcite{Williams2015}{{91}{2015}{{Williams \& Falloon}}{{}}}
+\bibcite{wit58}{{92}{1957}{{de~Wit}}{{}}}
+\bibcite{WOLF2002217}{{93}{2002}{{Wolf \& Oijen}}{{}}}
+\bibcite{zhao2017}{{94}{2017}{{Zhao et~al.}}{{Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao, Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre, Müller, Peng, Peñuelas, Ruane, Wallach, Wang, Wu, Liu, Zhu, Zhu \& Asseng}}}
 \@LN@col{1}
 \@LN@col{2}
