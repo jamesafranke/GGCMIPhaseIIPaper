@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{93}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -615,17 +615,6 @@
 \newblock {\it \bibinfo{journal}{Nature Communications}\/},  {\it
   \bibinfo{volume}{8}\/}.
 %Type = Article
-\bibitem[{Mueller et~al.(2012)Mueller, Gerber, Johnston, Ray, Ramankutty \&
-  A~Foley}]{Mueller2012}
-\bibinfo{author}{Mueller, N.}, \bibinfo{author}{Gerber, J.},
-  \bibinfo{author}{Johnston, M.}, \bibinfo{author}{Ray, D.},
-  \bibinfo{author}{Ramankutty, N.}, \& \bibinfo{author}{A~Foley, J.}
-  (\bibinfo{year}{2012}).
-\newblock \bibinfo{title}{Closing yield gaps through nutrient and water
-  management}.
-\newblock {\it \bibinfo{journal}{Nature}\/},  {\it \bibinfo{volume}{490}\/},
-  \bibinfo{pages}{254--7}.
-%Type = Article
 \bibitem[{M\"{u}ller et~al.(2017)M\"{u}ller, Elliott, Chryssanthacopoulos,
   Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde,
   Jones, Khabarov, Lawrence, Liu, Olin, Pugh, Ray, Reddy, Rosenzweig, Ruane,
@@ -806,16 +795,6 @@
 \newblock {\it \bibinfo{journal}{Global Biogeochemical Cycles}\/},  {\it
   \bibinfo{volume}{24}\/}, \bibinfo{pages}{GB1011}.
 %Type = Article
-\bibitem[{Potter et~al.(2010)Potter, Ramankutty, Bennett \&
-  Donner}]{potter2010}
-\bibinfo{author}{Potter, P.}, \bibinfo{author}{Ramankutty, N.},
-  \bibinfo{author}{Bennett, E.}, \& \bibinfo{author}{Donner, S.}
-  (\bibinfo{year}{2010}).
-\newblock \bibinfo{title}{Characterizing the spatial patterns of global
-  fertilizer application and manure production}.
-\newblock {\it \bibinfo{journal}{Earth Interactions - EARTH INTERACT}\/},  {\it
-  \bibinfo{volume}{14}\/}. \DOIprefix\doi{10.1175/2010EI288.1}.
-%Type = Article
 \bibitem[{Pugh et~al.(2016)Pugh, M{\"u}ller, Elliott, Deryng, Folberth, Olin,
   Schmid \& Arneth}]{pugh_climate_2016}
 \bibinfo{author}{Pugh, T.}, \bibinfo{author}{M{\"u}ller, C.},
@@ -843,6 +822,15 @@
   sensitivity analysis of complex environmental models}.
 \newblock {\it \bibinfo{journal}{Environmental Modelling \& Software}\/},  {\it
   \bibinfo{volume}{34}\/}, \bibinfo{pages}{1 -- 4}.
+%Type = Article
+\bibitem[{Ray et~al.(2012)Ray, Ramankutty, Mueller, West \& A~Foley}]{Ray2012}
+\bibinfo{author}{Ray, D.}, \bibinfo{author}{Ramankutty, N.},
+  \bibinfo{author}{Mueller, N.}, \bibinfo{author}{West, P.}, \&
+  \bibinfo{author}{A~Foley, J.} (\bibinfo{year}{2012}).
+\newblock \bibinfo{title}{Recent patterns of crop yield growth and stagnation}.
+\newblock {\it \bibinfo{journal}{Nature communications}\/},  {\it
+  \bibinfo{volume}{3}\/}, \bibinfo{pages}{1293}.
+  \DOIprefix\doi{10.1038/ncomms2296}.
 %Type = Article
 \bibitem[{Razavi et~al.(2012)Razavi, Tolson \& Burn}]{Razavi2012}
 \bibinfo{author}{Razavi, S.}, \bibinfo{author}{Tolson, B.~A.}, \&

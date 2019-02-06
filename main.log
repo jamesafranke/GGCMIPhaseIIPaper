@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,8 +774,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figures/baselinecomp_yield_3.png, id=43, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 26
-1.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 25
+7.
 (pdftex.def)             Requested size: 495.8984pt x 326.71059pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -787,7 +787,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 d_3.png>] <figures/Agformet_validation.png, id=52, 632.79613pt x 617.33034pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 296
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 292
 .
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 [11]
@@ -797,15 +797,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
-on.png>]
-
-LaTeX Warning: Reference `fig:sim_em_val' on page 13 undefined on input line 31
-6.
-
-<figures/regression_areas.png, id=60, 5420.25pt x 2258.4375pt>
+on.png>] <figures/regression_areas.png, id=60, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 321.
+Package pdftex.def Info: figures/regression_areas.png used on input line 315.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -813,15 +808,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/regression_model.png, id=61, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 328.
+Package pdftex.def Info: figures/regression_model.png used on input line 322.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 6173) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13]
+[13] <figures/error_360.png, id=66, 2258.4375pt x 4968.5625pt>
+File: figures/error_360.png Graphic file (type png)
+<use figures/error_360.png>
+Package pdftex.def Info: figures/error_360.png used on input line 339.
+(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
+<figures/em_err.png, id=67, 265.08636pt x 561.82698pt>
+File: figures/em_err.png Graphic file (type png)
+<use figures/em_err.png>
+Package pdftex.def Info: figures/em_err.png used on input line 346.
+(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -829,26 +834,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
 png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
-.png>] <figures/error_360.png, id=71, 2258.4375pt x 4968.5625pt>
-File: figures/error_360.png Graphic file (type png)
-<use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 345.
-(pdftex.def)             Requested size: 252.0pt x 554.35242pt.
-<figures/em_err.png, id=72, 265.08636pt x 561.82698pt>
-File: figures/em_err.png Graphic file (type png)
-<use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 352.
-(pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png>] <
-figures/global_em_maize.png, id=77, 2710.125pt x 3161.8125pt>
+.png>] [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.
+png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>] <fi
+gures/global_em_maize.png, id=78, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 366.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 360.
 (pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
-[16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -858,7 +851,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ng>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no √ in font txr!
 Missing character: There is no ∂ in font txr!
 Missing character: There is no √ in font txr!
@@ -868,10 +861,14 @@ Missing character: There is no ∂ in font txr!
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ì in font txr!
+[18]
 Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no Ω in font txr!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -894,41 +891,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[22]
 Missing character: There is no √ in font txr!
 Missing character: There is no © in font txr!
 
-Underfull \hbox (badness 1052) in paragraph at lines 1065--1074
+Underfull \hbox (badness 1052) in paragraph at lines 1053--1062
 \OT1/txr/m/n/8 J. (2014).  The Inter-Sectoral Im-pact Model In-ter-com-par-i-so
 n Project
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22]
 Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no ± in font txr!
 ) [23
 
-] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-
-LaTeX Warning: There were undefined references.
-
- )
+] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 153 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4452 strings out of 492995
- 60232 string characters out of 6132704
- 159622 words of memory out of 5000000
- 7846 multiletter control sequences out of 15000+600000
+ 4450 strings out of 492995
+ 60200 string characters out of 6132704
+ 159588 words of memory out of 5000000
+ 7844 multiletter control sequences out of 15000+600000
  45103 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,1989b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,1992b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/lo
@@ -941,7 +934,7 @@ t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
- pages, 10028861 bytes).
+ pages, 10026860 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
