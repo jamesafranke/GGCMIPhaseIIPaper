@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2019 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,32 +669,32 @@ Missing character: There is no ô in font txr!
 LaTeX Warning: Optional argument of \twocolumn too tall on page 1.
 
 
-Overfull \vbox (17.2101pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Warning: Text page 1 contains only floats.
 
 
-Overfull \vbox (17.2101pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 115
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 118
 .
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 115.
+(Font)              scaled to size 4.74998pt on input line 118.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [2] <figures/croparea.png, id=16, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 130.
+Package pdftex.def Info: figures/croparea.png used on input line 133.
 (pdftex.def)             Requested size: 239.39923pt x 448.09988pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -704,41 +704,41 @@ Underfull \vbox (badness 7064) has occurred while \output is active []
 
 [3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>] [4]
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []\OT1/txr/bx/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []\OT1/txr/bx/n/9 Spring
  []
 
 
-Overfull \hbox (2.83385pt too wide) in paragraph at lines 166--166
+Overfull \hbox (2.83385pt too wide) in paragraph at lines 169--169
 []\OT1/txr/bx/n/9 Simulations
  []
 
 Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 178.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 181.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 178.
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 181.
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 178.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 181.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 []\OT1/txr/m/n/9 3993
  []
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 182.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 189.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 192.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -787,7 +787,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 d_3.png>] <figures/Agformet_validation.png, id=52, 632.79613pt x 617.33034pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 292
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 289
 .
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 [11]
@@ -800,7 +800,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 on.png>] <figures/regression_areas.png, id=60, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 315.
+Package pdftex.def Info: figures/regression_areas.png used on input line 313.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -808,27 +808,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/regression_model.png, id=61, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 322.
+Package pdftex.def Info: figures/regression_model.png used on input line 320.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13] <figures/error_360.png, id=66, 2258.4375pt x 4968.5625pt>
+<figures/error_360.png, id=66, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 339.
+Package pdftex.def Info: figures/error_360.png used on input line 336.
 (pdftex.def)             Requested size: 252.0pt x 554.35242pt.
 <figures/em_err.png, id=67, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 346.
+Package pdftex.def Info: figures/em_err.png used on input line 343.
 (pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -839,10 +839,10 @@ png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>] <fi
 gures/global_em_maize.png, id=78, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 360.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 357.
 (pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
 [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6910) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -912,7 +912,7 @@ Missing character: There is no ± in font txr!
 ] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 153 ({)
+### simple group (level 1) entered at line 156 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  4450 strings out of 492995
@@ -934,7 +934,7 @@ t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
- pages, 10026860 bytes).
+ pages, 10026909 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
