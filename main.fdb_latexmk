@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1550265069 "main.aux" "main.bbl" "main" 1550265082
+["bibtex main"] 1550265069 "main.aux" "main.bbl" "main" 1550267081
   "bib.bib" 1549477474 58238 6bccc0a98636c86fb2543d3984d77706 ""
   "main.aux" 1550265082 28694 ea90f4bffd5c29fe8427b3484fa58bc9 ""
   "model5-names.bst.bst" 0 -1 0 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1550265069 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf" "main" 1550265082
+  "main.bbl"
+["pdflatex"] 1550265069 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf" "main" 1550267081
   "../PhaseIIPaper/supdocs/supdocs.aux" 1549392605 10592 1e42949921524fd8ad645b2a6c543796 ""
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux" 1550265082 28694 ea90f4bffd5c29fe8427b3484fa58bc9 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" 1550265055 77991 a4c89355451b4bc921d2948a2c743c25 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" 1550267052 77991 a4c89355451b4bc921d2948a2c743c25 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -126,15 +126,15 @@
   "main.aux" 1550265082 28694 ea90f4bffd5c29fe8427b3484fa58bc9 ""
   "main.bbl" 1550265069 64022 b0c2c906f644204d5a3966855f504cd0 "bibtex main"
   "main.spl" 1550265082 47 6437462e0cfcb8a89c7052d452378855 ""
-  "main.tex" 1550265055 77991 a4c89355451b4bc921d2948a2c743c25 ""
+  "main.tex" 1550267052 77991 a4c89355451b4bc921d2948a2c743c25 ""
   "natbib.sty" 1400598204 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "/Users/jamesfranke/Desktop/paper/main.log"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.log"
-  "main.spl"
-  "main.log"
   "main.out"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf"
-  "main.pdf"
-  "main.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.log"
+  "/Users/jamesfranke/Desktop/paper/main.log"
   "/Users/jamesfranke/Desktop/paper/main.pdf"
+  "main.spl"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf"
+  "main.aux"
+  "main.pdf"
+  "main.log"
