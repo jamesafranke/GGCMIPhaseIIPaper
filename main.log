@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 FEB 2019 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 FEB 2019 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,45 +702,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 7064) has occurred while \output is active []
 
-[3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>] [4]
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 []\OT1/txr/bx/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 []\OT1/txr/bx/n/9 Spring
  []
 
 
-Overfull \hbox (2.83385pt too wide) in paragraph at lines 170--170
+Overfull \hbox (2.83385pt too wide) in paragraph at lines 176--176
 []\OT1/txr/bx/n/9 Simulations
  []
 
 Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 182.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 188.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 182.
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 188.
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 182.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 188.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 []\OT1/txr/m/n/9 3993
  []
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 186.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 192.
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 193.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 199.
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -750,72 +748,66 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [6] <figures/hist_year.png, id=32, 358.4592pt x 357.9774pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 220.
+Package pdftex.def Info: figures/hist_year.png used on input line 230.
 (pdftex.def)             Requested size: 239.39923pt x 239.07889pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <figures/global_sim_CG.png, id=33, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 227.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 237.
 (pdftex.def)             Requested size: 495.8984pt x 198.35715pt.
-[7]
+[7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
+[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
-] <figures/baselinecomp_yield_3.png, id=46, 527.42645pt x 347.47417pt>
+[9] <figures/baselinecomp_yield_3.png, id=46, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 25
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 26
 8.
 (pdftex.def)             Requested size: 495.8984pt x 326.71059pt.
 [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yiel
-d_3.png>] <figures/Agformet_validation.png, id=55, 632.79613pt x 617.33034pt>
+<figures/Agformet_validation.png, id=51, 632.79613pt x 617.33034pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 290
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 300
 .
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
-<figures/regression_areas.png, id=56, 5420.25pt x 2258.4375pt>
+[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yiel
+d_3.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
+on.png>] <figures/regression_areas.png, id=60, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 316.
+Package pdftex.def Info: figures/regression_areas.png used on input line 326.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/regression_model.png, id=57, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=61, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 323.
+Package pdftex.def Info: figures/regression_model.png used on input line 333.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Underfull \vbox (badness 6173) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
-on.png>]
+[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -826,25 +818,27 @@ png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
 .png>] <figures/error_360.png, id=71, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 339.
+Package pdftex.def Info: figures/error_360.png used on input line 349.
 (pdftex.def)             Requested size: 252.0pt x 554.35242pt.
 <figures/em_err.png, id=72, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 346.
+Package pdftex.def Info: figures/em_err.png used on input line 356.
 (pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png>] [
-16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>] <figu
-res/global_em_maize.png, id=81, 2710.125pt x 3161.8125pt>
+[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png>] <
+figures/global_em_maize.png, id=77, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 360.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 370.
 (pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
+[16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 6173) has occurred while \output is active []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
 ng>]
@@ -868,11 +862,12 @@ Missing character: There is no Ω in font txr!
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ì in font txr!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -885,14 +880,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Missing character: There is no √ in font txr!
+Missing character: There is no © in font txr!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [22]
-Missing character: There is no √ in font txr!
-Missing character: There is no © in font txr!
-
-Underfull \hbox (badness 1052) in paragraph at lines 1053--1062
+Underfull \hbox (badness 1052) in paragraph at lines 1044--1053
 \OT1/txr/m/n/8 J. (2014).  The Inter-Sectoral Im-pact Model In-ter-com-par-i-so
 n Project
  []
@@ -901,22 +895,21 @@ Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no ± in font txr!
+) [23
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [23] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
+] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 157 ({)
+### simple group (level 1) entered at line 163 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4450 strings out of 492995
- 60200 string characters out of 6132704
- 159285 words of memory out of 5000000
- 7844 multiletter control sequences out of 15000+600000
+ 4449 strings out of 492995
+ 60191 string characters out of 6132704
+ 159748 words of memory out of 5000000
+ 7843 multiletter control sequences out of 15000+600000
  45103 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,2018b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,34p,1976b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/lo
@@ -929,7 +922,7 @@ t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
- pages, 10028671 bytes).
+ pages, 10027937 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream

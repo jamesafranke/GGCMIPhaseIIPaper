@@ -6,45 +6,45 @@ Database file #1: bib.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in Markowski2015
-You've used 93 entries,
+You've used 92 entries,
             3390 wiz_defined-function locations,
-            1293 strings with 33082 characters,
-and the built_in function-call counts, 110657 in all, are:
-= -- 7664
-> -- 8275
+            1286 strings with 32881 characters,
+and the built_in function-call counts, 109756 in all, are:
+= -- 7598
+> -- 8221
 < -- 30
-+ -- 8401
-- -- 2282
-* -- 12513
-:= -- 13349
-add.period$ -- 287
-call.type$ -- 93
-change.case$ -- 1232
-chr.to.int$ -- 92
-cite$ -- 94
-duplicate$ -- 5897
-empty$ -- 5419
-format.name$ -- 2571
-if$ -- 20286
++ -- 8349
+- -- 2267
+* -- 12408
+:= -- 13235
+add.period$ -- 283
+call.type$ -- 92
+change.case$ -- 1222
+chr.to.int$ -- 91
+cite$ -- 93
+duplicate$ -- 5840
+empty$ -- 5367
+format.name$ -- 2553
+if$ -- 20120
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1396
-newline$ -- 482
-num.names$ -- 376
-pop$ -- 4187
+missing$ -- 1384
+newline$ -- 477
+num.names$ -- 372
+pop$ -- 4157
 preamble$ -- 1
-purify$ -- 1132
+purify$ -- 1123
 quote$ -- 0
-skip$ -- 3308
+skip$ -- 3283
 stack$ -- 0
-substring$ -- 3119
-swap$ -- 5611
+substring$ -- 3096
+swap$ -- 5562
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 831
+type$ -- 822
 warning$ -- 1
-while$ -- 397
+while$ -- 393
 width$ -- 0
-write$ -- 1321
+write$ -- 1306
 (There was 1 warning)
