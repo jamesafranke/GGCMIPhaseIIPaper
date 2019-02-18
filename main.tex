@@ -154,11 +154,9 @@ Statistical emulation of crop simulations has been used to combine advantageous 
 
 In the past decade, many studies have developed emulators of crop yields from process-based models. Early studies proposing or describing potential emulators include \citet{Howden2005, raisen2006} and \citet{Lobell2010}. In an early application, \citet{Ferrise2011} used a Artificial Neural Net trained on simulation outputs to predict wheat yields in the Mediterranean. Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, \citet{Oyebamiji15} for the LPJmL model (for multiple crops, using multiple scenarios as a training set). In recent years, emulators have begun to be used in the context of multi-model intercomparisons, with \citet{BLANC2015, BLANC2017, Ostberg2018} and \citet{Mistry2017} using them to analyze the five crop models of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP) \citep{Warszawski3228} (for maize, soy, wheat, and rice). Approaches differ: \citet{BLANC2015} and \citet{BLANC2017} used local weather variables (and CO$_2$ values) and yields but emulate across soil types using historical simulations and a future climate scenario (RCP8.5 over multiple climate models); \citet{Ostberg2018} used global mean temperature change (and CO$_2$) as regressors but pattern-scale to emulate local yields using multiple climate scenarios; \citet{Mistry2017} used local weather and yields and a historical simulation and compare with data. 
 
-Recently efforts have been made to generate datasets that allow more systematic sampling of the input var
+Recently efforts have been made to generate datasets that allow more systematic sampling of the input varible space (the focus of this study): \citet{Markowski2015} for temperature, CO$_2$, and nitrogen, \citet{Pirttioja2015} and \citet{Snyder2018} for temperature, water, and CO$_2$, and \citep{FRONZEK20182} for temperature and water, with all studies simulating selected sites for a limited number of crops.
 
-Other studies have used the development of an emulators (or response surface) to analyze non-RCP crop model simulations that sampled a suite of climate (and management) perturbations (the focus of this study): \citet{Markowski2015} for temperature, CO$_2$, and nitrogen, \citet{Pirttioja2015} and \citet{Snyder2018} for temperature, water, and CO$_2$, and \citep{FRONZEK20182} for temperature and water, with all studies simulating selected sites for a limited number of crops.
-
-The use of limited input parameter space or restricted geographic scope impedes ability to build future projections or to understand interaction effects in global process-based crop models. 
+The use of limited input parameter space or restricted geographic scope may impede the ability to build future projections or to understand interaction effects in global process-based crop models. 
 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment seeks to provide a comprehensive global dataset to allow systematically exploring how process-based crop models for the major crop respond to the main climate and management drivers and their interactions. The experiment involves running a suite of process-based crop models across historical conditions perturbed by a set of defined input parameters, and was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) {\citep{Taylor2012, Eyring2016}. The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015} and will contribute to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
 
@@ -222,8 +220,6 @@ To verify the skill of the process-based models used, we repeat the validation e
 
 %We exactly replicate a portion of the validation process previously outlined in \citet{muller_global_2017}, namely we evaluate the models based on the response to year-to-year temperature and precipitation variability in the historical record. If the models can (somewhat) faithfully represent the the historical variability in yields (which, once detrended to account for changing management levels must be driven largely by differences in weather), then the models may provide some utility in understanding the impact on mean climatological shifts in temperature and precipitation. Specifically, we calculate a Pearson correlation coefficient between the detrended time series of simulations and FAO data \citep{FAOSTAT} for the period 1981-2009 at the national scale. The FAO data is detrended because much of the change in yield over this time period is due to intensification and changes in management \citep{Ray2012}. Validating the response to CO$_2$ and nitrogen applications is more difficult because real world data is not available outside of small greenhouse and field level trials.
 
-
-
 \subsection{Climatological-mean yield emulator design}
 \begin{figure}[!h]
 \centering
@@ -231,6 +227,14 @@ To verify the skill of the process-based models used, we repeat the validation e
    \caption{Example showing both climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows rain-fed maize for a grid cell in northern Iowa (a representative high-yield region) from the pDSSAT model, for the baseline climatology (1981-2010) and for scenarios with temperature shifted by (T) +3 and (T) +6 $^{\circ}$C, with other variables held at baseline values. Dashed vertical lines and black dots indicate the climatological mean yield.}
    \label{fig:yearly}
 \end{figure}
+
+\begin{figure}[!h]
+\centering
+   \includegraphics[width=0.95\linewidth]{figures/tempyearvclim.png}
+   \caption{Example showing both climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows rain-fed maize for a grid cell in northern Iowa (a representative high-yield region) from the pDSSAT model, for the baseline climatology (1981-2010) and for scenarios with temperature shifted by (T) +0 and (T) +6 $^{\circ}$C, with other variables held at baseline values for irrigated yields to control for precipitation effects. Dashed vertical lines and black dots indicate the climatological mean yield.}
+   \label{fig:yearvclim}
+\end{figure}
+
 
 \begin{figure*}[!b]
 \centering
