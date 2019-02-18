@@ -78,6 +78,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/../PhaseIIPaper/supdocs/supdocs.aux
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 OUTPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux

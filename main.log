@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 FEB 2019 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 FEB 2019 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,41 +519,56 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 Package xr Info: IMPORTING LABELS FROM ../PhaseIIPaper/supdocs/supdocs.aux on i
 nput line 21.
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 29.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 29.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 30.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 30.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 30.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 30.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 30.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -643,19 +658,19 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+txmia on input line 95.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 96.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 95.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 96.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
@@ -681,64 +696,67 @@ Overfull \vbox (15.1401pt too high) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 117
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 118
 .
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 117.
+(Font)              scaled to size 4.74998pt on input line 118.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [2] <figures/croparea.png, id=16, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 132.
+Package pdftex.def Info: figures/croparea.png used on input line 133.
 (pdftex.def)             Requested size: 239.39923pt x 448.09988pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 7064) has occurred while \output is active []
+Underfull \vbox (badness 2088) has occurred while \output is active []
 
 [3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>] [4]
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\OT1/txr/bx/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\OT1/txr/bx/n/9 Spring
  []
 
 
-Overfull \hbox (2.83385pt too wide) in paragraph at lines 174--174
+Overfull \hbox (2.83385pt too wide) in paragraph at lines 173--173
 []\OT1/txr/bx/n/9 Simulations
  []
 
 Missing character: There is no ƒ in font txr!
 Missing character: There is no ç in font txr!
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 186.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 185.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 186.
+(Font)              Font shape `OMS/txsy/bx/n' tried instead on input line 185.
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <9> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 186.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 185.
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 []\OT1/txr/m/n/9 3993
  []
 
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 190.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 197.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 196.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -748,12 +766,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [6] <figures/hist_year.png, id=32, 358.4592pt x 357.9774pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 226.
+Package pdftex.def Info: figures/hist_year.png used on input line 221.
 (pdftex.def)             Requested size: 239.39923pt x 239.07889pt.
 <figures/tempyearvclim.png, id=33, 324.7332pt x 338.866pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 233.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 228.
 (pdftex.def)             Requested size: 214.20154pt x 223.52814pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -761,10 +779,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/global_sim_CG.png, id=34, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 241.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 236.
 (pdftex.def)             Requested size: 495.8984pt x 198.35715pt.
 [7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5147) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -780,8 +798,8 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
 ] <figures/baselinecomp_yield_3.png, id=48, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 27
-2.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 26
+7.
 (pdftex.def)             Requested size: 495.8984pt x 326.71059pt.
 [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -793,13 +811,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 d_3.png>] <figures/Agformet_validation.png, id=57, 632.79613pt x 617.33034pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 304
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 299
 .
 (pdftex.def)             Requested size: 495.8984pt x 483.78587pt.
 <figures/regression_areas.png, id=58, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 330.
+Package pdftex.def Info: figures/regression_areas.png used on input line 315.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -807,7 +825,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/regression_model.png, id=59, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 337.
+Package pdftex.def Info: figures/regression_model.png used on input line 322.
 (pdftex.def)             Requested size: 495.8984pt x 206.5933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -830,12 +848,12 @@ png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
 .png>] <figures/error_360.png, id=73, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 353.
+Package pdftex.def Info: figures/error_360.png used on input line 338.
 (pdftex.def)             Requested size: 252.0pt x 554.35242pt.
 <figures/em_err.png, id=74, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 360.
+Package pdftex.def Info: figures/em_err.png used on input line 345.
 (pdftex.def)             Requested size: 239.39923pt x 507.39703pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -845,14 +863,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 res/global_em_maize.png, id=83, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 374.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 359.
 (pdftex.def)             Requested size: 239.39923pt x 279.29211pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6173) has occurred while \output is active []
 
 [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
 ng>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ô in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ¶ in font txr!
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
 
 [18] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
 Missing character: There is no √ in font txr!
@@ -905,22 +930,21 @@ Missing character: There is no √ in font txr!
 Missing character: There is no º in font txr!
 Missing character: There is no √ in font txr!
 Missing character: There is no ± in font txr!
+) [23
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [23] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
+] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 161 ({)
+### simple group (level 1) entered at line 160 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4455 strings out of 492995
- 60342 string characters out of 6132704
- 160048 words of memory out of 5000000
- 7848 multiletter control sequences out of 15000+600000
+ 4920 strings out of 492995
+ 65620 string characters out of 6132704
+ 171457 words of memory out of 5000000
+ 8306 multiletter control sequences out of 15000+600000
  45103 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,34p,1976b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,35p,1976b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/lo
@@ -933,7 +957,7 @@ t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (23
- pages, 10242112 bytes).
+ pages, 10242891 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
