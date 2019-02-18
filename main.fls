@@ -234,6 +234,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txbsy.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
@@ -245,11 +248,11 @@ INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yiel
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.png
