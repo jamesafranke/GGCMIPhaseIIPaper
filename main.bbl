@@ -1,4 +1,4 @@
-\begin{thebibliography}{96}
+\begin{thebibliography}{88}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -207,17 +207,6 @@
   {I}ntercomparison: data and modeling protocols for {P}hase 1 (v1.0)}.
 \newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
   \bibinfo{volume}{8}\/}, \bibinfo{pages}{261--277}.
-%Type = Article
-\bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer \&
-  Taylor}]{Eyring2016}
-\bibinfo{author}{Eyring, V.}, \bibinfo{author}{Bony, S.},
-  \bibinfo{author}{Meehl, G.~A.}, \bibinfo{author}{Senior, C.~A.},
-  \bibinfo{author}{Stevens, B.}, \bibinfo{author}{Stouffer, R.~J.}, \&
-  \bibinfo{author}{Taylor, K.~E.} (\bibinfo{year}{2016}).
-\newblock \bibinfo{title}{Overview of the coupled model intercomparison project
-  phase 6 (cmip6) experimental design and organization}.
-\newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
-  \bibinfo{volume}{9}\/}, \bibinfo{pages}{1937--1958}.
 %Type = Article
 \bibitem[{Ferrise et~al.(2011)Ferrise, Moriondo \& Bindi}]{Ferrise2011}
 \bibinfo{author}{Ferrise, R.}, \bibinfo{author}{Moriondo, M.}, \&
@@ -573,25 +562,6 @@
 \newblock \bibinfo{title}{Bayesian {I}nterpolation}.
 \newblock {\it \bibinfo{journal}{Neural Computation}\/},  {\it
   \bibinfo{volume}{4}\/}, \bibinfo{pages}{415--447}.
-%Type = Inbook
-\bibitem[{Makowski et~al.(2015)Makowski, Asseng, Ewert, Bassu, Durand, Martre,
-  Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote,
-  Brisson, Cammarano, Challinor, Conijn \& Wolf}]{Markowski2015}
-\bibinfo{author}{Makowski, D.}, \bibinfo{author}{Asseng, S.},
-  \bibinfo{author}{Ewert, F.}, \bibinfo{author}{Bassu, S.},
-  \bibinfo{author}{Durand, J.}, \bibinfo{author}{Martre, P.},
-  \bibinfo{author}{Adam, M.}, \bibinfo{author}{Aggarwal, P.},
-  \bibinfo{author}{Angulo, C.}, \bibinfo{author}{Baron, C.},
-  \bibinfo{author}{Basso, B.}, \bibinfo{author}{Bertuzzi, P.},
-  \bibinfo{author}{Biernath, C.}, \bibinfo{author}{Boogaard, H.},
-  \bibinfo{author}{Boote, K.}, \bibinfo{author}{Brisson, N.},
-  \bibinfo{author}{Cammarano, D.}, \bibinfo{author}{Challinor, A.},
-  \bibinfo{author}{Conijn, J.}, \& \bibinfo{author}{Wolf, J.}
-  (\bibinfo{year}{2015}).
-\newblock \bibinfo{title}{Statistical analysis of large simulated yield
-  datasets for studying climate effects}.
-\newblock (p. \bibinfo{pages}{1100}).
-\newblock \DOIprefix\doi{10.13140/RG.2.1.5173.8328}.
 %Type = Article
 \bibitem[{Mauser \& Bach(2015)}]{MAUSER2009362}
 \bibinfo{author}{Mauser, W.}, \& \bibinfo{author}{Bach, H.}
@@ -612,20 +582,6 @@
   future demand without the need for cropland expansion}.
 \newblock {\it \bibinfo{journal}{Nature Communications}\/},  {\it
   \bibinfo{volume}{6}\/}.
-%Type = Article
-\bibitem[{McDermid et~al.(2015)McDermid, Dileepkumar, Murthy, Nedumaran, Singh,
-  Srinivasa, Gangwar, Subash, Ahmad, Zubair \& Nissanka}]{mcdermid2015}
-\bibinfo{author}{McDermid, S.}, \bibinfo{author}{Dileepkumar, G.},
-  \bibinfo{author}{Murthy, K.}, \bibinfo{author}{Nedumaran, S.},
-  \bibinfo{author}{Singh, P.}, \bibinfo{author}{Srinivasa, C.},
-  \bibinfo{author}{Gangwar, B.}, \bibinfo{author}{Subash, N.},
-  \bibinfo{author}{Ahmad, A.}, \bibinfo{author}{Zubair, L.}, \&
-  \bibinfo{author}{Nissanka, S.} (\bibinfo{year}{2015}).
-\newblock \bibinfo{title}{Integrated assessments of the impacts of climate
-  change on agriculture: {A}n overview of {A}g{M}{I}{P} regional research in
-  {S}outh {A}sia}.
-\newblock {\it \bibinfo{journal}{Chapter in: Handbook of Climate Change and
-  Agroecosystems}\/},  (pp. \bibinfo{pages}{201--218}).
 %Type = Article
 \bibitem[{Mistry et~al.(2017)Mistry, Wing \& De~Cian}]{Mistry2017}
 \bibinfo{author}{Mistry, M.~N.}, \bibinfo{author}{Wing, I.~S.}, \&
@@ -897,64 +853,6 @@
 \newblock {\it \bibinfo{journal}{Proceedings of the National Academy of
   Sciences}\/},  {\it \bibinfo{volume}{111}\/}, \bibinfo{pages}{3268--3273}.
 %Type = Article
-\bibitem[{Rosenzweig et~al.(2013)Rosenzweig, Jones, Hatfield, Ruane, Boote,
-  Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach,
-  Baigorria \& Winter}]{ROSENZWEIG2013}
-\bibinfo{author}{Rosenzweig, C.}, \bibinfo{author}{Jones, J.},
-  \bibinfo{author}{Hatfield, J.}, \bibinfo{author}{Ruane, A.},
-  \bibinfo{author}{Boote, K.}, \bibinfo{author}{Thorburn, P.},
-  \bibinfo{author}{Antle, J.}, \bibinfo{author}{Nelson, G.},
-  \bibinfo{author}{Porter, C.}, \bibinfo{author}{Janssen, S.},
-  \bibinfo{author}{Asseng, S.}, \bibinfo{author}{Basso, B.},
-  \bibinfo{author}{Ewert, F.}, \bibinfo{author}{Wallach, D.},
-  \bibinfo{author}{Baigorria, G.}, \& \bibinfo{author}{Winter, J.}
-  (\bibinfo{year}{2013}).
-\newblock \bibinfo{title}{The {A}gricultural {M}odel {I}ntercomparison and
-  {I}mprovement {P}roject ({A}g{MIP}): {P}rotocols and pilot studies}.
-\newblock {\it \bibinfo{journal}{Agricultural and Forest Meteorology}\/},  {\it
-  \bibinfo{volume}{170}\/}, \bibinfo{pages}{166 -- 182}.
-%Type = Article
-\bibitem[{Rosenzweig et~al.(2018)Rosenzweig, Ruane, Antle, Elliott, Ashfaq,
-  Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy,
-  Mason-D'Croz, Contreras, M\"{u}ller, Perez-Dominguez, Phillips, Porter,
-  Raymundo, Sands, Schleussner, Valdivia, Valin \& Wiebe}]{rosenzweig2018}
-\bibinfo{author}{Rosenzweig, C.}, \bibinfo{author}{Ruane, A.~C.},
-  \bibinfo{author}{Antle, J.}, \bibinfo{author}{Elliott, J.},
-  \bibinfo{author}{Ashfaq, M.}, \bibinfo{author}{Chatta, A.~A.},
-  \bibinfo{author}{Ewert, F.}, \bibinfo{author}{Folberth, C.},
-  \bibinfo{author}{Hathie, I.}, \bibinfo{author}{Havlik, P.},
-  \bibinfo{author}{Hoogenboom, G.}, \bibinfo{author}{Lotze-Campen, H.},
-  \bibinfo{author}{MacCarthy, D.~S.}, \bibinfo{author}{Mason-D'Croz, D.},
-  \bibinfo{author}{Contreras, E.~M.}, \bibinfo{author}{M\"{u}ller, C.},
-  \bibinfo{author}{Perez-Dominguez, I.}, \bibinfo{author}{Phillips, M.},
-  \bibinfo{author}{Porter, C.}, \bibinfo{author}{Raymundo, R.~M.},
-  \bibinfo{author}{Sands, R.~D.}, \bibinfo{author}{Schleussner, C.-F.},
-  \bibinfo{author}{Valdivia, R.~O.}, \bibinfo{author}{Valin, H.}, \&
-  \bibinfo{author}{Wiebe, K.} (\bibinfo{year}{2018}).
-\newblock \bibinfo{title}{Coordinating {A}g{M}{I}{P} data and models across
-  global and regional scales for 1.5${^\circ}${C} and 2.0${^\circ}${C}
-  assessments}.
-\newblock {\it \bibinfo{journal}{Philosophical Transactions of the Royal
-  Society of London A: Mathematical, Physical and Engineering Sciences}\/},
-  {\it \bibinfo{volume}{376}\/}.
-%Type = Article
-\bibitem[{Ruane et~al.(2018)Ruane, Antle, Elliott, Folberth, Hoogenboom,
-  Mason-D'Croz, M\"{u}ller, Porter, Phillips, Raymundo, Sands, Valdivia, White,
-  Wiebe \& Rosenzweig}]{ruane2018}
-\bibinfo{author}{Ruane, A.~C.}, \bibinfo{author}{Antle, J.},
-  \bibinfo{author}{Elliott, J.}, \bibinfo{author}{Folberth, C.},
-  \bibinfo{author}{Hoogenboom, G.}, \bibinfo{author}{Mason-D'Croz, D.},
-  \bibinfo{author}{M\"{u}ller, C.}, \bibinfo{author}{Porter, C.},
-  \bibinfo{author}{Phillips, M.~M.}, \bibinfo{author}{Raymundo, R.~M.},
-  \bibinfo{author}{Sands, R.}, \bibinfo{author}{Valdivia, R.~O.},
-  \bibinfo{author}{White, J.~W.}, \bibinfo{author}{Wiebe, K.}, \&
-  \bibinfo{author}{Rosenzweig, C.} (\bibinfo{year}{2018}).
-\newblock \bibinfo{title}{Biophysical and economic implications for agriculture
-  of +1.5$^\circ$ and +2.0$^\circ${C} global warming using {A}g{M}{I}{P}
-  {C}oordinated {G}lobal and {R}egional {A}ssessments}.
-\newblock {\it \bibinfo{journal}{Climate Research}\/},  {\it
-  \bibinfo{volume}{76}\/}, \bibinfo{pages}{17--39}.
-%Type = Article
 \bibitem[{Ruane et~al.(2013)Ruane, Cecil, Horton, Gordon, McCollum, Brown,
   Killough, Goldberg, Greeley \& Rosenzweig}]{RUANE2013a}
 \bibinfo{author}{Ruane, A.~C.}, \bibinfo{author}{Cecil, L.~D.},
@@ -975,19 +873,6 @@
   Merged products for gap-filling and historical climate series estimation}.
 \newblock {\it \bibinfo{journal}{Agric. Forest Meteorol.}\/},  {\it
   \bibinfo{volume}{200}\/}, \bibinfo{pages}{233--248}.
-%Type = Article
-\bibitem[{Ruane et~al.(2014)Ruane, McDermid, Rosenzweig, Baigorria, Jones,
-  Romero \& Cecil}]{ruane2014}
-\bibinfo{author}{Ruane, A.~C.}, \bibinfo{author}{McDermid, S.},
-  \bibinfo{author}{Rosenzweig, C.}, \bibinfo{author}{Baigorria, G.~A.},
-  \bibinfo{author}{Jones, J.~W.}, \bibinfo{author}{Romero, C.~C.}, \&
-  \bibinfo{author}{Cecil, L.~D.} (\bibinfo{year}{2014}).
-\newblock \bibinfo{title}{Carbon-temperature-water change analysis for peanut
-  production under climate change: A prototype for the agmip coordinated
-  climate-crop modeling project (c3mp)}.
-\newblock {\it \bibinfo{journal}{Glob. Change Biol.}\/},  {\it
-  \bibinfo{volume}{20}\/}, \bibinfo{pages}{394--407}.
-  \DOIprefix\doi{10.1111/gcb.12412}.
 %Type = Article
 \bibitem[{Rubel \& Kottek(2010)}]{rubel2010}
 \bibinfo{author}{Rubel, F.}, \& \bibinfo{author}{Kottek, M.}
@@ -1049,14 +934,6 @@
   models}.
 \newblock {\it \bibinfo{journal}{Reliability Engineering \& System Safety}\/},
   {\it \bibinfo{volume}{94}\/}, \bibinfo{pages}{1735 -- 1763}.
-%Type = Article
-\bibitem[{Taylor et~al.(2012)Taylor, Stouffer \& Meehl}]{Taylor2012}
-\bibinfo{author}{Taylor, K.~E.}, \bibinfo{author}{Stouffer, R.~J.}, \&
-  \bibinfo{author}{Meehl, G.~A.} (\bibinfo{year}{2012}).
-\newblock \bibinfo{title}{An overview of {C}{M}{I}{P}5 and the experiment
-  design}.
-\newblock {\it \bibinfo{journal}{Bulletin of the American Meteorological
-  Society}\/},  {\it \bibinfo{volume}{93}\/}, \bibinfo{pages}{485--498}.
 %Type = Article
 \bibitem[{Tebaldi \& Lobell(2008)}]{Tebaldi2008}
 \bibinfo{author}{Tebaldi, C.}, \& \bibinfo{author}{Lobell, D.~B.}

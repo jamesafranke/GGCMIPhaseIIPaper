@@ -93,12 +93,12 @@ Environmental Sciences, Peking University, Beijing, China}
 \cortext[cor1]{Corresponding author at: 4734 S Ellis, Chicago, IL 60637, United States. email: jfranke@uchicago.edu}
 
 \begin{abstract}
-Concerns about food security under climate change have motivated efforts to better understand the future changes in yields by using detailed process-based models in agronomic sciences.
+{\color{blue} Concerns about food security under climate change have motivated efforts to better understand the future changes in yields by using detailed process-based models in agronomic sciences.
 Process-based models differ on many details affecting yields and considerable uncertainty remains in future yield projections.
 Phase II of the Global Gridded Crop Model Intercomparison (GGCMI), an activity of the Agricultural Model Intercomparison and Improvement Project (AgMIP), consists of a large simulation set with perturbations in atmospheric CO$_2$ concentrations, temperature, precipitation, and applied nitrogen inputs and constitutes a data-rich basis of projected yield changes across twelve models and five crops (maize, soy, rice, spring wheat, and winter wheat) using global gridded simulations.
 In this paper we present the simulation output database from Phase II of the GGCMI effort, a targeted experiment aimed at understanding the sensitivity to and interaction between multiple climate variables (as well as management) on yields, and illustrate some initial summary results from the model intercomparison project.
 We also present the construction of a simple ``emulator’’ or statistical representation of the simulated 30-year mean climatological output in each location for each crop and model.
-The emulator captures the response of the process-based models in a lightweight, computationally tractable form that facilitates model comparison as well as potential applications in subsequent modeling efforts such as integrated assessment. 
+The emulator captures the response of the process-based models in a lightweight, computationally tractable form that facilitates model comparison as well as potential applications in subsequent modeling efforts such as integrated assessment.}
 
 %Results of these models are often used to inform subsequent model-based analyses in agricultural economics and integrated assessment, but the computational requirements of process-based models sometimes hamper the ability to utilize these models in existing impact assessment frameworks at high resolutions globally. 
 %Models robustly produce yield responses that are nonlinear and sensitive to interactions across the input variables. 
@@ -163,11 +163,11 @@ In the past decade, many studies have developed emulators of crop yields from pr
 
 ine 115  limitations of all existing studies, reason for parameter sweep - key paragraph. don't be negative as on line 131, don't end on negative. blame datasets, not authors of papers
 
-Systematic parameter sweep offers advantages over analyses on small number of realistic scenario in which climate varies over time. 
+A systematic parameter sweep offers advantages over analyses on small number of realistic scenario in which climate varies over time. 
 
-- allows distinction between year over year and climatological changes, which can be different. 
+It allows highlighting the distinction between year-over-year and climatological changes, which can be different. 
 
-- removes correlation of key variables which makes them difficult to disentangle in realistic scenarios
+- removes correlation of the key variables which makes them difficult to disentangle in realistic scenarios
 
 - provides fully stationary simulations 
 
@@ -267,8 +267,8 @@ To verify the skill of the process-based models used, we repeat the validation e
 
 \begin{figure}[!h]
 \centering
-   \includegraphics[width=0.85\linewidth]{figures/tempyearvclim.png}
-   \caption{Example showing simple temperature relationship developed from year-to-year values vs. climatological mean values. Figure shows irrigated maize for four adjacent grid cell in northern Iowa (a representative high-yield region) from the pDSSAT model, for the baseline climatology (1981-2010) and for scenarios with temperature shifted (T) +6 $^{\circ}$C, with other variables held at baseline values. Irrigated yields are shown to control for precipitation effects. Blue and red lines indicate total least squares linear regression across each temperature scenario. Black dots indicate the climatological mean yield values for each climatological temperature scenario.}
+   \includegraphics[width=0.9\linewidth]{figures/tempyearvclim.png}
+   \caption{Example showing temperature relationship developed from year-to-year values vs. climatological mean values. Figure shows irrigated maize for nine adjacent grid cell in northern Iowa (a representative high-yield region) from the pDSSAT model, for the baseline climatology (1981-2010) and for scenarios with temperature shifted (T) +6 $^{\circ}$C, with other variables held at baseline values. Irrigated yields are shown to control for precipitation effects. Blue and red lines indicate total least squares linear regression across each temperature scenario. Black ringed points indicate the climatological mean yield values for each climatological temperature scenario in the study (T-1, +0, +1, +2, +3, +4, +6 [K]). Short colored lines indicate slope of best fit (TLS) for year-to-year relationship at each climatalogical mean value. Bold black line indicates the fit (OLS) through the climatalogical mean values.}
    \label{fig:yearvclim}
 \end{figure}
 
@@ -352,7 +352,6 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
 Soy is qualitatively the easiest crop to represent (except in Argentina), which is likely due in part to the invariance of the response to nitrogen application (soy fixes atmospheric nitrogen very efficiently). Comparison to the FAO data is therefore easier than the other crops because the nitrogen application levels do not matter. US maize has the best performance across models, with nearly every model representing the historical variability to a reasonable extent. Especially good example years for US maize are 1983, 1988, and 2004 (top left panel of Figure \ref{fig:simulation_val}), where every model gets the direction of the anomaly compared to surrounding years correct. 1983 and 1988 are famously bad years for US maize along with 2012 (not shown). US maize is possibly both the most uniformly industrialized (in terms of management practices) crop and the one with the best data collection in the historical period of all the cases presented here.
 
 The FAO data is at least one level of abstraction from ground truth in many cases, especially in developing countries. The failure of models to represent the year-to-year variability in rice in some countries in southeast Asia is likely partly due to model failure and partly due to lack of data. It is possible to speculate that the difference in performance between Pakistan (no successful models) and India (many successful models) for rice may reside at least in part in the FAO data and not the models themselves. The same might apply to Bangladesh and India for rice. Partitioning of these contributions is impossible at this stage. Additionally, there is less year-to-year variability in rice yields (partially due to the fraction of irrigated cultivation). Since the Pearson r metric is scale invariant, it will tend to score the rice models more poorly than maize and soy. An example of very poor performance can be seen with the pDSSAT model for rice in India (top right panel of Figure \ref{fig:simulation_val}).}
-
 
 \begin{figure*}[!h]
 \centering
