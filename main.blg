@@ -2,54 +2,49 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: model5-names.bst.bst
-Case mismatch error between cite keys snyder2018 and Snyder2018
----line 159 of file main.aux
- : \citation{snyder2018
- :                     }
-I'm skipping whatever remains of this command
 Database file #1: bib.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in Markowski2015
-You've used 92 entries,
+You've used 96 entries,
             3390 wiz_defined-function locations,
-            1286 strings with 32881 characters,
-and the built_in function-call counts, 109756 in all, are:
-= -- 7598
-> -- 8221
+            1316 strings with 33962 characters,
+and the built_in function-call counts, 113107 in all, are:
+= -- 7868
+> -- 8393
 < -- 30
-+ -- 8349
-- -- 2267
-* -- 12408
-:= -- 13235
-add.period$ -- 283
-call.type$ -- 92
-change.case$ -- 1222
-chr.to.int$ -- 91
-cite$ -- 93
-duplicate$ -- 5840
-empty$ -- 5367
-format.name$ -- 2553
-if$ -- 20120
++ -- 8509
+- -- 2315
+* -- 12797
+:= -- 13667
+add.period$ -- 301
+call.type$ -- 96
+change.case$ -- 1258
+chr.to.int$ -- 95
+cite$ -- 97
+duplicate$ -- 6057
+empty$ -- 5572
+format.name$ -- 2613
+if$ -- 20744
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1384
-newline$ -- 477
-num.names$ -- 372
-pop$ -- 4157
+missing$ -- 1427
+newline$ -- 497
+num.names$ -- 388
+pop$ -- 4258
 preamble$ -- 1
-purify$ -- 1123
+purify$ -- 1155
 quote$ -- 0
-skip$ -- 3283
+skip$ -- 3371
 stack$ -- 0
-substring$ -- 3096
-swap$ -- 5562
+substring$ -- 3212
+swap$ -- 5738
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 822
+type$ -- 858
 warning$ -- 1
-while$ -- 393
+while$ -- 411
 width$ -- 0
-write$ -- 1306
-(There was 1 error message)
+write$ -- 1368
+(There was 1 warning)
