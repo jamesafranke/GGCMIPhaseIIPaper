@@ -5,44 +5,46 @@ The style file: model5-names.bst.bst
 Database file #1: bib.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 88 entries,
+Warning--empty booktitle in Markowski2015
+You've used 96 entries,
             3390 wiz_defined-function locations,
-            1271 strings with 30639 characters,
-and the built_in function-call counts, 100244 in all, are:
-= -- 7003
-> -- 7257
-< -- 28
-+ -- 7321
-- -- 2003
-* -- 11346
-:= -- 12172
-add.period$ -- 275
-call.type$ -- 88
-change.case$ -- 1114
-chr.to.int$ -- 87
-cite$ -- 88
-duplicate$ -- 5456
-empty$ -- 5067
-format.name$ -- 2277
-if$ -- 18395
+            1316 strings with 33962 characters,
+and the built_in function-call counts, 113107 in all, are:
+= -- 7868
+> -- 8393
+< -- 30
++ -- 8509
+- -- 2315
+* -- 12797
+:= -- 13667
+add.period$ -- 301
+call.type$ -- 96
+change.case$ -- 1258
+chr.to.int$ -- 95
+cite$ -- 97
+duplicate$ -- 6057
+empty$ -- 5572
+format.name$ -- 2613
+if$ -- 20744
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1269
-newline$ -- 456
-num.names$ -- 356
-pop$ -- 3730
+missing$ -- 1427
+newline$ -- 497
+num.names$ -- 388
+pop$ -- 4258
 preamble$ -- 1
-purify$ -- 1019
+purify$ -- 1155
 quote$ -- 0
-skip$ -- 2952
+skip$ -- 3371
 stack$ -- 0
-substring$ -- 2961
-swap$ -- 5096
-text.length$ -- 5
+substring$ -- 3212
+swap$ -- 5738
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 789
-warning$ -- 0
-while$ -- 376
+type$ -- 858
+warning$ -- 1
+while$ -- 411
 width$ -- 0
-write$ -- 1254
+write$ -- 1368
+(There was 1 warning)

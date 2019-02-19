@@ -251,9 +251,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
