@@ -162,6 +162,7 @@
 \citation{rubel2010}
 \citation{Portmann2010}
 \citation{Ruane2016}
+\citation{Glotter14}
 \citation{Leeds2015}
 \citation{poppick2016}
 \citation{Won16}
@@ -215,8 +216,8 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Time series correlation coefficients between simulated crop yield and FAO data \citep  {FAOSTAT} at the country level. The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1980-2010 period. Models that provided different nitrogen application levels are shown with low, med, and high label (models that did not simulated different nitrogen levels are analogous to a high nitrogen application level). The ensemble mean yield is also correlated with the FAO data (not the mean of the correlations). Wheat contains both spring wheat and winter wheat simulations.}}{13}}
 \newlabel{fig:simulation_val}{{6}{13}}
 \@LN@col{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Emulator performance}{13}}
 \@LN@col{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Emulator performance}{13}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Example illustrating spatial variations in yield response and emulation ability. We show rain-fed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. Legend includes hectares cultivated in each selected grid cell. Each panel shows variation along a single variable, with others held at baseline values. Dots show climatological mean yield, solid lines a simple polynomial fit across this 1D variation, and dashed lines the results of the full emulator of Equation 1\hbox {}. The climatological response is sufficiently smooth to be be represented by a simple polynomial. Because precipitation changes are imposed as multiplicative factors rather than additive offsets, locations with higher baseline precipitation have a larger absolute spread in inputs sampled than do drier locations (not visible here).}}{14}}
 \newlabel{fig:regression}{{7}{14}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Example illustrating across-model variations in yield response. We show simulations and emulations from six models for rain-fed maize in the same Iowa location shown in Figure 7\hbox {}, with the same plot conventions. Models that did not simulate the nitrogen dimension are omitted for clarity. The inter-model standard deviation is larger for the perturbations in CO$_2$ and nitrogen than for those in temperature or precipitation illustrating that the sensitivity to weather is better constrained than to management at elevated CO$_2$. While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated and lead to emulation error.}}{14}}
@@ -225,11 +226,11 @@
 \@LN@col{2}
 \citation{Torsten77}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations 3\hbox {}, 2\hbox {}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares with $ e < 1$. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data. JULES did not simulate spring wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}}{15}}
-\newlabel{fig:error_360}{{9}{15}}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations 3\hbox {}, 2\hbox {}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares with $ e < 1$. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data. JULES did not simulate spring wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}}{16}}
+\newlabel{fig:error_360}{{9}{16}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rain-fed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure 9\hbox {}.}}{16}}
 \newlabel{fig:error}{{10}{16}}
-\@LN@col{2}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Emulator applications}{17}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions and discussion}{17}}
@@ -251,13 +252,13 @@
 \bibcite{Castruccio14}{{9}{2014}{{Castruccio et~al.}}{{Castruccio, McInerney, Stein, Liu~Crouch, Jacob \& Moyer}}}
 \bibcite{Challinor2014}{{10}{2014}{{Challinor et~al.}}{{Challinor, Watson, Lobell, Howden, Smith \& Chhetri}}}
 \bibcite{Won16}{{11}{2016}{{Chang et~al.}}{{Chang, Stein, Wang, Kotamarthi \& Moyer}}}
-\bibcite{OHAGAN2010}{{12}{2009}{{Conti et~al.}}{{Conti, Gosling, Oakley \& O'Hagan}}}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Acknowledgments}{19}}
 \newlabel{S:5}{{5}{19}}
 \@LN@col{2}
 \@writefile{toc}{\contentsline {section}{\numberline {6}References}{19}}
 \newlabel{S:6}{{6}{19}}
+\bibcite{OHAGAN2010}{{12}{2009}{{Conti et~al.}}{{Conti, Gosling, Oakley \& O'Hagan}}}
 \bibcite{Duncan72}{{13}{1972}{{Duncan}}{{}}}
 \bibcite{Duncan67}{{14}{1967}{{Duncan et~al.}}{{Duncan, Loomis, Williams \& Hanau}}}
 \bibcite{Dury2011}{{15}{2011}{{Dury et~al.}}{{Dury, Hambuckers, Warnant, Henrot, Favre, Ouberdous \& Fran{\c {c}}ois}}}
@@ -325,9 +326,9 @@
 \bibcite{Roberts2017}{{73}{2017}{{Roberts et~al.}}{{Roberts, Braun, R~Sinclair, B~Lobell \& Schlenker}}}
 \bibcite{Rosenzweig2014}{{74}{2014}{{Rosenzweig et~al.}}{{Rosenzweig, Elliott, Deryng, Ruane, M{\"u}ller, Arneth, Boote, Folberth, Glotter, Khabarov, Neumann, Piontek, Pugh, Schmid, Stehfest, Yang \& Jones}}}
 \bibcite{ROSENZWEIG2013}{{75}{2013}{{Rosenzweig et~al.}}{{Rosenzweig, Jones, Hatfield, Ruane, Boote, Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach, Baigorria \& Winter}}}
-\bibcite{rosenzweig2018}{{76}{2018}{{Rosenzweig et~al.}}{{Rosenzweig, Ruane, Antle, Elliott, Ashfaq, Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy, Mason-D'Croz, Contreras, M\"{u}ller, Perez-Dominguez, Phillips, Porter, Raymundo, Sands, Schleussner, Valdivia, Valin \& Wiebe}}}
 \@LN@col{1}
 \@LN@col{2}
+\bibcite{rosenzweig2018}{{76}{2018}{{Rosenzweig et~al.}}{{Rosenzweig, Ruane, Antle, Elliott, Ashfaq, Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy, Mason-D'Croz, Contreras, M\"{u}ller, Perez-Dominguez, Phillips, Porter, Raymundo, Sands, Schleussner, Valdivia, Valin \& Wiebe}}}
 \bibcite{Ruane2016}{{77}{2016}{{Ruane et~al.}}{{Ruane, I.~Hudson, Asseng, Camarrano, Ewert, Martre, J.~Boote, Thorburn, Aggarwal, Angulo, Basso, Bertuzzi, Biernath, Brisson, Challinor, Doltra, Gayler, Goldberg, Grant \& Wolf}}}
 \bibcite{ruane2018}{{78}{2018}{{Ruane et~al.}}{{Ruane, Antle, Elliott, Folberth, Hoogenboom, Mason-D'Croz, M\"{u}ller, Porter, Phillips, Raymundo, Sands, Valdivia, White, Wiebe \& Rosenzweig}}}
 \bibcite{RUANE2013a}{{79}{2013}{{Ruane et~al.}}{{Ruane, Cecil, Horton, Gordon, McCollum, Brown, Killough, Goldberg, Greeley \& Rosenzweig}}}
