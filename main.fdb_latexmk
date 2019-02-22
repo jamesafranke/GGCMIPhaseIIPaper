@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1550601767 "main.aux" "main.bbl" "main" 1550601781
-  "bib.bib" 1550536312 60803 17651d61fb9cd3474df52e50124a5c52 ""
+["bibtex main"] 1550856639 "main.aux" "main.bbl" "main" 1550856639
+  "bib.bib" 1550846646 62295 432b6b9ff52a65b8b48418e6b0cd52e1 ""
   "main.aux" 1550601780 30453 0cef4afa284180e014cf84fe7238726f ""
   "model5-names.bst.bst" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1550601767 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf" "main" 1550601781
+["pdflatex"] 1550601767 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf" "main" 1550856639
   "../PhaseIIPaper/supdocs/supdocs.aux" 1549392605 10592 1e42949921524fd8ad645b2a6c543796 ""
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux" 1550601780 30453 0cef4afa284180e014cf84fe7238726f ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" 1550601752 74986 8db57764f72b345c7c562a06c512bbab ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.tex" 1550621517 74986 8db57764f72b345c7c562a06c512bbab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -127,17 +127,17 @@
   "figures/regression_model.png" 1548711578 773966 4be42e90c75592a8fa8400e3845f4c3f ""
   "figures/tempyearvclim.png" 1550594385 514146 24dacb1b0afca8a0785d2de001962137 ""
   "main.aux" 1550601780 30453 0cef4afa284180e014cf84fe7238726f ""
-  "main.bbl" 1550601767 66898 b42ce0e169b8edc192598bf86937a568 "bibtex main"
+  "main.bbl" 1550856639 66898 b42ce0e169b8edc192598bf86937a568 "bibtex main"
   "main.spl" 1550601780 47 6437462e0cfcb8a89c7052d452378855 ""
-  "main.tex" 1550601752 74986 8db57764f72b345c7c562a06c512bbab ""
+  "main.tex" 1550621517 74986 8db57764f72b345c7c562a06c512bbab ""
   "natbib.sty" 1400598204 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "main.aux"
-  "main.pdf"
-  "/Users/jamesfranke/Desktop/paper/main.log"
-  "main.spl"
-  "main.log"
-  "/Users/jamesfranke/Desktop/paper/main.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.log"
+  "/Users/jamesfranke/Desktop/paper/main.log"
   "main.out"
+  "main.spl"
+  "main.pdf"
+  "/Users/jamesfranke/Desktop/paper/main.pdf"
+  "main.aux"
+  "main.log"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf"
