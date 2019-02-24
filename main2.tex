@@ -23,6 +23,7 @@
 \externaldocument{../PhaseIIPaper/supdocs/supdocs}
 %\usepackage[citecolor=blue]{hyperref}
 \usepackage{xcolor}
+\usepackage{enumitem}
 
 \bibliographystyle{model5-names.bst}
 \biboptions{authoryear, comma}
@@ -195,7 +196,7 @@ In this paper we describe a new comprehensive dataset designed to expand the par
 The experimental protocol involves over 700 different parameter combinations for each model and crop, with simulations providing near-global coverage at a half degree spatial resolution. The experiment was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) \citep{Taylor2012, Eyring2016}. The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015} and will contribute to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
 GGCMI Phase II is designed to allow addressing goals such as understanding where highest-yield regions may shift under climate change; exploring future adaptive management strategies; understanding how interacting input drivers affect crop yield; quantifying uncertainties across models and major drivers; and testing strategies for producing lightweight emulators of process-based models. In this paper, we describe the GGCMI Phase II experiments, present initial results, and demonstrate that it is tractable to emulation.
 
-\section{Simulation - Methods}
+\section{Simulation -- Methods}
 \label{S:2}
 
 
@@ -232,8 +233,8 @@ In most cases, historical daily climate inputs are taken from the 0.5 degree NAS
  
 The guiding scientific rationale of GGCMI Phase II is to provide a comprehensive, systematic evaluation of the response of process-based crop models to different values for carbon dioxide, temperature, water, and applied nitrogen (collectively known as ``CTWN'').
 The dataset is designed to allow researchers to:
-\begin{itemize}
-  \setlength\itemsep{0.3mm}
+\begin{itemize}[noitemsep]
+%  \setlength\itemsep{0.1mm}
     \item Enhance understanding of how models work by characterizing their sensitivity to input climate and nitrogen drivers.
     \item Study the interactions between climate variables and nitrogen inputs in driving modeled yield impacts. 
     \item Explore differences in crop response to warming across the Earth's climate regions.
@@ -241,7 +242,7 @@ The dataset is designed to allow researchers to:
     \item Illustrate differences in potential adaptation via growing season changes. 
 \end{itemize}
 
-
+\vspace{-0.05in}
 The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 672 simulations for rain-fed agriculture and an additional 84 for irrigated (Table \ref{table:inputs}). For irrigated simulations, soil water is held at either field capacity or, for those models that include water-log damage, at maximum beneficial level. Temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature time series for each grid cell used as inputs. Precipitation perturbations are applied as fractional changes at the grid cell level, and carbon dioxide and nitrogen levels are specified as discrete values applied uniformly over all grid cells. Note that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with higher temperatures. An additional, identical set of scenarios (at the same C, T, W, and N levels) not shown or analyzed here simulate adaptive agronomy under climate change by varying the growing season for crop production. The resulting GGCMI data set captures a distribution of crop responses over the potential space of future climate conditions.
 
 The 12 models included in GGCMI Phase II are all mechanistic process-based crop models that are widely used in impacts assessments (Table \ref{table:models}). Although some models share a common base (e.g.\ LPJmL and LPJ-GUESS and the EPIC models), they have subsequently developed independently. (For more details on model genealogy, see Figure S1 in \citet{Rosenzweig2014}.) Differences in model structure mean that several key factors are not standardized across the experiment, including secondary soil nutrients, carry-over effects across growing years including residue management and soil moisture, and the extent of simulated area for different crops. %Growing seasons are identical across models.  
@@ -265,7 +266,7 @@ All models produce as output crop yields (tons ha$^{-1}$ year$^{-1}$) for each 0
 
 
 \label{S:3}
-\section{Simulation results}
+\section{Simulation -- Results}
 
 \begin{figure*}[!ht]
 \centering
@@ -278,16 +279,16 @@ Crop models in the GGCMI ensemble show broadly consistent responses to climate a
 
 
 
-The effects of rainfall changes on maize yields are also as expected and are consistent across models. Increased rainfall mitigates the negative effect of higher temperatures, most strongly in arid regions. Decreased rainfall amplifies yield losses and also increases inter-model variance more strongly, suggesting that models have difficulty representing crop response to water stress.  We show only rain-fed maize here; see Figure \ref{fig:KGirr_all} for the irrigated case. As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is limiting.  
+The effects of rainfall changes on maize yields shown in  Figure \ref{fig:globesim} are also as expected and are consistent across models. Increased rainfall mitigates the negative effect of higher temperatures, most strongly in arid regions. Decreased rainfall amplifies yield losses and also increases inter-model variance more strongly, suggesting that models have difficulty representing crop response to {\color{red} water stress XX - see reviewer comments?}.  We show only rain-fed maize here; see Figure \ref{fig:KGirr_all} for the irrigated case. As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is limiting.  
 
 
 
-Mapping the distribution of baseline yields and yield changes shows the geographic dependencies that underlie these results. Figure \ref{fig:maizesoybaseline} shows baseline and changes in the T+4 scenario for rain-fed maize, soy, and rice in the multi-model ensemble mean, with locations of model agreement marked. Absolute yield potentials are have strong spatial variation, with much of the Earth's surface area unsuitable for any given crop. In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes. For wheat crops see Figure \ref{fig:wheatbaseline}; wheat projections are both more uncertain and show fewer areas of increased yield in the inter-model mean. 
+Mapping the distribution of baseline yields and yield changes shows the geographic dependencies that underlie these results. Figure \ref{fig:maizesoybaseline} shows baseline and changes in the T+4 scenario for rain-fed maize, soy, and rice in the multi-model ensemble mean, with locations of model agreement marked. Absolute yield potentials show strong spatial variation, with much of the Earth's surface area unsuitable for any given crop. In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes. For wheat crops see Figure \ref{fig:wheatbaseline}; wheat projections are both more uncertain and show fewer areas of increased yield in the inter-model mean. 
 
 
 
 
-\subsection{Emulation - Methods}
+\section{Emulation -- Methods}
 
 As part of our demonstration of the properties of the GGCMI Phase II dataset, we construct an emulator of 30-year climatological mean yields. This approach is made possible by the structured set of simulations involving systematic perturbations. %; training sets consisting of realistic, non-stationary scenarios generaly necessitate emulation at the annual level. %Annual emulation is required when the input training set consists of non-stationary projections of evolving yields (such as an RCP climate model run). 
 %To demonstrate the utility of a climatological emulation approach, we use the 
@@ -311,7 +312,7 @@ Note that the GGCMI Phase II datasets do not capture one climatological factor, 
 \begin{figure}[th!]
 \centering
    \includegraphics[width=0.95\linewidth]{figures/hist_year.png}
-   \caption{Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows rain-fed maize for a representative high-yield region (a single grid cell in northern Iowa) from the pDSSAT model, for the baseline climatology (1981-2010) and for scenarios with temperature shifted by T+3 and T+6 K, with other variables held at baseline values.  The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested as a larger variance in annual yields at T+6. In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines / black dots).}
+   \caption{Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows rain-fed maize for one of the high-yield grid cells of Figure \ref{fig:yearvclim} (in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (green) and for scenarios with temperature shifted by T+3 (black) and T+6 K (brlown), with other variables held at baseline values.  The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields. In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines / black dots).}
    \label{fig:yearly}
 \end{figure}
 
@@ -338,7 +339,10 @@ We therefore reduce the number of terms through a feature selection cross-valida
 \begin{figure*}[!hb]
 \centering
     \includegraphics[width=0.95\linewidth]{figures/regression_areas.png}
-    \caption{Example illustrating spatial variations in yield response and emulation ability. We show rain-fed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. Legend includes hectares cultivated in each selected grid cell. Each panel shows variation along a single variable, with others held at baseline values. Dots show climatological mean yield, solid lines a simple polynomial fit across this 1D variation, and dashed lines the results of the full emulator of Equation \ref{eqn:features_final}. The climatological response is sufficiently smooth to be be represented by a simple polynomial. Because precipitation changes are imposed as multiplicative factors rather than additive offsets, locations with higher baseline precipitation have a larger absolute spread in inputs sampled than do drier locations (not visible here).}
+    \caption{Illustration of spatial variations in yield response and emulation ability. We show rain-fed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. Legend includes hectares cultivated in each selected grid cell. Each panel shows variation along a single variable, with others held at baseline values. Dots show climatological mean yields  
+%solid lines a simple polynomial fit across this 1D variation, 
+and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. In general the climatological response surface is sufficiently smooth that it can be represented with the sampled variable space by the simple polynomial used in this work. Extrapolation can however produce misleading results. Nitrogen fits may not be realistic at intermediate values given limited sampling. For more detailed emulator assessment, see Appendix {\color{red} XX}. %Note that because precipitation changes are imposed as multiplicative factors rather than additive offsets, locations with higher baseline precipitation have a larger absolute spread in inputs sampled than do drier locations (not visible here).
+}
    \label{fig:regression}
 \end{figure*}
 
@@ -363,24 +367,32 @@ The resulting parameter matrices for all crop model emulators are available on r
 \begin{figure*}[!!h]
 \centering
     \includegraphics[width=0.95\linewidth]{figures/regression_model.png}
-    \caption{Example illustrating across-model variations in yield response. We show simulations and emulations from six models for rain-fed maize in the same Iowa location shown in Figure \ref{fig:regression}, with the same plot conventions. Models that did not simulate the nitrogen dimension are omitted for clarity. The inter-model standard deviation is larger for the perturbations in CO$_2$ and nitrogen than for those in temperature or precipitation illustrating that the sensitivity to weather is better constrained than to management at elevated CO$_2$. While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated and lead to emulation error.}
+    \caption{Illustration of across-model variations in yield response. Figures shows simulations and emulations from six models for rain-fed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. Models that do not simulate the nitrogen dimension are omitted for clarity. Note that models are uncalibrated, increasing spread in absolute yields.  %The inter-model standard deviation is larger for the perturbations in CO$_2$ and nitrogen than for those in temperature or precipitation illustrating that the sensitivity to weather is better constrained than to management at elevated CO$_2$. 
+While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated (e.g.\  LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. For more detailed emulator assessment, see Appendix {\color{red} XX}. As in Figure \ref{fig:regression}, extrapolation out of the sample space is problematic. 
+}
    \label{fig:regression_iowa}
 \end{figure*}
 
 
 \section{Emulation -- Results}
 
-Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. Emulation is only possible, however, when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form. In the GGCMI simulations, this condition largely holds. %but not always holds. 
-Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. Figure \ref{fig:regression} illustrates the geographic diversity of responses even in high-yield areas for a single crop and model (rain-fed maize in pDSSAT for various high-cultivation areas).  This heterogeneity supports the choice of emulating at the grid cell level. 
+Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. Emulation is only possible  when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI simulations. 
+Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. We show illustrations of emulation fidelity in this section; for more detailed discussion see Appendix {\color{red} XX}.
 
-Each panel in Figure \ref{fig:regression} shows model yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels; in all cases yields evolve smoothly across the space sampled. For reference we show the results of the full emulation fitted across the parameter space. The polynomial fit readily captures the climatological response to perturbations.
+Crop yield responses are geographically diverse, even in high-yield and high-cultivation areas  
+Figure \ref{fig:regression} illustrates geographic diversity for a single crop and model (rain-fed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
+Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
+Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological response to perturbations.
+Crop yield responses generally follow similar functional forms across models, though with a large spread in magnitude likely due to the lack of calibration. Figure \ref{fig:regression_iowa} illustrates inter-model diversity for a single crop and location (rain-fed maize in northern Iowa, also shown in Figure \ref{fig:regression}). %The differences make it important to construct emulators separately for each individual model, and 
+Differences in response shape can lead to  differences in the fidelity of emulation, though comparison here is complicated by the different sampling regimes across models. Note that models are most similar in their responses to temperature perturbations. 
+%This figure illustrates a common phenomenon, that models differ more in response to perturbations in CO$_2$ and nitrogen perturbations than to those in temperature or precipitation. (Compare also Figures \ref{fig:globesim} and \ref{fig:carbon}.) 
+For this location and crop, CO$_2$ fertilization effects can range from $\sim$5--50\%, and nitrogen responses from nearly flat to a 60\% drop in the lowest-application simulation. 
 
-Crop yield responses generally follow similar functional forms across models, though with a spread in magnitude. Figure \ref{fig:regression_iowa} illustrates the inter-model diversity of yield responses to the same perturbations, even for a single crop and location (rain-fed maize in northern Iowa, the same location shown in the Figure \ref{fig:regression}). The differences make it important to construct emulators separately for each individual model, and the fidelity of emulation can also differ across models. This figure illustrates a common phenomenon, that models differ more in response to perturbations in CO$_2$ and nitrogen perturbations than to those in temperature or precipitation. (Compare also Figures \ref{fig:globesim} and \ref{fig:carbon}.) For this location and crop, CO$_2$ fertilization effects can range from $\sim$5--50\%, and nitrogen responses from nearly flat to a 60\% drop in the lowest-application simulation. 
-
-While the nitrogen dimension is important and uncertain, it is also the most problematic to emulate in this work because of its limited sampling. The GGCMI protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. Steep and nonlinear declines in yield with lower nitrogen levels means that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. While there may be some reason to believe over-application of nitrogen at the wrong time in the growing season could lead to reduced yields, these features are almost certainly an artifact of undersampling. In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
+While the nitrogen dimension is important, it is also the most problematic to emulate in this work because of its limited sampling. The GGCMI protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. While it is possible that over-application of nitrogen at the wrong time in the growing season could lead to reduced yields, these features are almost certainly an artifact of undersampling. In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 %\subsection{Emulator applications}
-Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications. Emulators provide a easy way to compare a ensembles of climate or impacts projections. They also provide a means for generating continuous damage functions. As an example, we show a damage function constructed from 4D emulations for aggregated yield at the global scale, for maize on currently cultivated land, with simulated values shown for comparison. (Figure \ref{fig:globe_em};  see Figures \ref{fig:temperature}- \ref{fig:nitrogen} in the supplemental material for other crops and dimensions.) The emulated values closely match simulations even at this aggregation level. Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly. The global coverage of the GGCMI simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation mask, to develop damage functions for any climate scenario and any geopolitical or geographic level.
+The emulation fidelity demonstrated here is sufficient to allow using emulated response surfaces to compare model responses and derive insight about impacts projections. 
+Becaus the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures \ref{fig:temperature}- \ref{fig:nitrogen} for other crops and dimensions). The emulated values closely match simulations even at this aggregation level. Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly. The global coverage of the GGCMI simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level.
 
 \begin{figure}[!htb]
     \centering
@@ -414,7 +426,7 @@ The future of food security is one of the larger challenges facing humanity at p
 \label{S:5}
 We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF).  C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. P.F. and K.W. were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). A.S.\ was supported by the Office of Science of the U.S. Department of Energy as part of the Multi-sector Dynamics Research Program Area. Computing resources were provided by the University of Chicago Research Computing Center (RCC). S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions).
 
-\section{Appendix: Simulations - Assessment}
+\section{Appendix: Simulations -- Assessment}
 The GGCMI Phase II simulations are designed for evaluating changes in yield but not absolute yields, since they omit detailed calibrations.
 To provide some validation of the skill of the process-based models used, we repeat the validation exercises of \citet{muller_global_2017} for GGCMI Phase I. The \citet{muller_global_2017} procedure evaluates response to year-to-year temperature and precipitation variations in a control run driven by historical climate and compares it to detrended historical yields from the FAO \citep{FAOSTAT} by calculating the Pearson correlation coefficient.  The procedure offers no means of assessing CO$_2$ fertilization, since CO$_2$ has been relatively constant over the historical data collection period. Nitrogen introduces some uncertainty into the analysis, since the GGCMI Phase II runs impose fixed, uniform nitrogen application levels that are not realistic for individual countries. % and nitrogen data are limited for many countries regardless. 
 We evaluate up to three control runs for each model, since some modeling groups provide historical runs for three different nitrogen levels. %The Phase II simulations also do not reproduce realistic nitrogen application levels for individual countries, since nitrogen is one of the parameters systematically varied.
@@ -448,7 +460,7 @@ The FAO data is at least one level of abstraction from ground truth in many case
    \label{fig:error}
 \end{figure}
 
-\section{Appendix: Emulation - Assessment}
+\section{Appendix: Emulation -- Assessment}
 
 Because no general criteria exist for defining an acceptable model emulator, we develop a metric of emulator performance specific to GGCMI. For a multi-model comparison exercise like GGCMI, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. We define the normalized error $e$ for each scenario as the difference between the fractional yield change from the emulator and that in the original simulation, divided by the standard deviation of the multi-model spread (Equations \ref{eqn:per_yield} and  \ref{eqn:error}):
 
