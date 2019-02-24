@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{94}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -975,6 +975,37 @@
   depicted by world maps of the {K}{\"o}ppen-{G}eiger climate classification}.
 \newblock {\it \bibinfo{journal}{Meteorologische Zeitschrift}\/},  {\it
   \bibinfo{volume}{19}\/}, \bibinfo{pages}{135--141}.
+%Type = Article
+\bibitem[{Ruiz-Ramos et~al.(2018)Ruiz-Ramos, Ferrise, Rodríguez, Lorite,
+  Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano,
+  Chen, Dumont, Ewert, Gaiser, Hlavinka, Hoffmann, Höhn, Jurecka, Kersebaum,
+  Krzyszczak, Lana, Mechiche-Alami, Minet, Montesino, Nendel, Porter, Ruget,
+  Semenov, Steinmetz, Stratonovitch, Supit, Tao, Trnka, de~Wit \&
+  Rötter}]{RUIZRAMOS2018}
+\bibinfo{author}{Ruiz-Ramos, M.}, \bibinfo{author}{Ferrise, R.},
+  \bibinfo{author}{Rodríguez, A.}, \bibinfo{author}{Lorite, I.},
+  \bibinfo{author}{Bindi, M.}, \bibinfo{author}{Carter, T.},
+  \bibinfo{author}{Fronzek, S.}, \bibinfo{author}{Palosuo, T.},
+  \bibinfo{author}{Pirttioja, N.}, \bibinfo{author}{Baranowski, P.},
+  \bibinfo{author}{Buis, S.}, \bibinfo{author}{Cammarano, D.},
+  \bibinfo{author}{Chen, Y.}, \bibinfo{author}{Dumont, B.},
+  \bibinfo{author}{Ewert, F.}, \bibinfo{author}{Gaiser, T.},
+  \bibinfo{author}{Hlavinka, P.}, \bibinfo{author}{Hoffmann, H.},
+  \bibinfo{author}{Höhn, J.}, \bibinfo{author}{Jurecka, F.},
+  \bibinfo{author}{Kersebaum, K.}, \bibinfo{author}{Krzyszczak, J.},
+  \bibinfo{author}{Lana, M.}, \bibinfo{author}{Mechiche-Alami, A.},
+  \bibinfo{author}{Minet, J.}, \bibinfo{author}{Montesino, M.},
+  \bibinfo{author}{Nendel, C.}, \bibinfo{author}{Porter, J.},
+  \bibinfo{author}{Ruget, F.}, \bibinfo{author}{Semenov, M.},
+  \bibinfo{author}{Steinmetz, Z.}, \bibinfo{author}{Stratonovitch, P.},
+  \bibinfo{author}{Supit, I.}, \bibinfo{author}{Tao, F.},
+  \bibinfo{author}{Trnka, M.}, \bibinfo{author}{de~Wit, A.}, \&
+  \bibinfo{author}{Rötter, R.} (\bibinfo{year}{2018}).
+\newblock \bibinfo{title}{Adaptation response surfaces for managing wheat under
+  perturbed climate and co2 in a mediterranean environment}.
+\newblock {\it \bibinfo{journal}{Agricultural Systems}\/},  {\it
+  \bibinfo{volume}{159}\/}, \bibinfo{pages}{260 -- 274}.
+  \DOIprefix\doi{doi.org/10.1016/j.agsy.2017.01.009}.
 %Type = Article
 \bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley \& Ramankutty}]{Sacks2010}
 \bibinfo{author}{Sacks, W.~J.}, \bibinfo{author}{Deryng, D.},

@@ -10,45 +10,45 @@ I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in Markowski2015
-You've used 93 entries,
+You've used 94 entries,
             3390 wiz_defined-function locations,
-            1293 strings with 33375 characters,
-and the built_in function-call counts, 111935 in all, are:
-= -- 7737
-> -- 8440
+            1299 strings with 34121 characters,
+and the built_in function-call counts, 115604 in all, are:
+= -- 7969
+> -- 8846
 < -- 30
-+ -- 8581
-- -- 2327
-* -- 12661
-:= -- 13483
-add.period$ -- 286
-call.type$ -- 93
-change.case$ -- 1247
-chr.to.int$ -- 92
-cite$ -- 94
-duplicate$ -- 5927
-empty$ -- 5436
-format.name$ -- 2616
-if$ -- 20512
++ -- 9017
+- -- 2438
+* -- 13091
+:= -- 13890
+add.period$ -- 290
+call.type$ -- 94
+change.case$ -- 1289
+chr.to.int$ -- 93
+cite$ -- 95
+duplicate$ -- 6048
+empty$ -- 5525
+format.name$ -- 2730
+if$ -- 21170
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1411
-newline$ -- 482
-num.names$ -- 376
-pop$ -- 4249
+missing$ -- 1455
+newline$ -- 487
+num.names$ -- 380
+pop$ -- 4407
 preamble$ -- 1
-purify$ -- 1147
+purify$ -- 1188
 quote$ -- 0
-skip$ -- 3353
+skip$ -- 3474
 stack$ -- 0
-substring$ -- 3125
-swap$ -- 5670
+substring$ -- 3163
+swap$ -- 5847
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 831
+type$ -- 840
 warning$ -- 1
-while$ -- 397
+while$ -- 401
 width$ -- 0
-write$ -- 1320
+write$ -- 1335
 (There was 1 error message)
