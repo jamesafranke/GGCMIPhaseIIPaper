@@ -161,7 +161,7 @@ For example, if year-over-year yield variations are driven predominantly by vari
 Systematic parameter sweeps have begun to be used in crop modeling, with %literature in the context of emulation and model improvement. 
 early efforts in 2015 \citep{Markowski2015, Pirttioja2015}, and several recent studies in 2018 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. All three studies sample multiple perturbations to % XX check this !! - JF DONE
 temperature and precipitation (with \citet{Snyder2018} and \citet{RUIZRAMOS2018} adding CO$_2$ as well), in 132, 99 and approximatly 220 different combinations, respectively, and take advantage of the structured training set to construct emulators of climatological mean yields, omitting year-over-year variations. %All three studies are limited in other aspects, 
-The main limitation in these stydies is of geogphaic extext with each study focusing on a limited number of sites, and \citet{FRONZEK20182} and \citet{RUIZRAMOS2018} simulat only wheat (over several models), while \citet{Snyder2018} analyzes four crops but with a single model (GCAM). 
+The main limitation in these stydies is geogphaic extext, with each study focusing on a limited number of sites, and \citet{FRONZEK20182} and \citet{RUIZRAMOS2018} simulat only wheat (over several models), while \citet{Snyder2018} analyzes four crops but with a single model (GCAM). 
 
 \begin{figure}[!ht]
 \centering
@@ -244,7 +244,7 @@ For example, maize is sown in March in Spain, in July in Indonesia, and in Decem
 
 \begin{figure*}[!!hb]
 \centering
-   \includegraphics[width=0.95\linewidth]{figures/global_sim_CG.png}
+   \includegraphics[width=0.99\linewidth]{figures/global_sim_CG.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions (\cite{rubel2010}). We show responses of a single crop (rain-fed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels (rain-fed (rf) -20\%, rain-fed (0), and rain-fed +20\%), with CO$_2$ and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. The figure shows all modeled land area; see Figure \ref{fig:KGirr_currentcult} in the supplemental material for only currently-cultivated land. Panel text gives the percentage of rain-fed maize presently cultivated in each climate zone \citep[data from][]{Portmann2010}. Box-and-whiskers plots show distribution across models, with median marked. Box edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). Whiskers extend to maximum and minimum of simulations but are limited at 1.5$\cdot$IQR; otherwise the outlier is shown. Models generally agree in most climate regions (other than cold continental), with projected changes larger than inter-model variance. Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. Inter-model variance increases in the case where precipitation is reduced, suggesting uncertainty in model response to water limitation. The right panel with global changes shows yield responses to an globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios with the same global mean change.}
    \label{fig:globesim}
 \end{figure*}
@@ -294,7 +294,7 @@ Note that the GGCMI Phase II datasets do not capture one climatological factor, 
 \begin{figure}[th!]
 \centering
    \includegraphics[width=0.95\linewidth]{figures/hist_year.png}
-   \caption{Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows rain-fed maize for one of the high-yield grid cells of Figure \ref{fig:yearvclim} (in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (green) and for scenarios with temperature shifted by T+3 (black) and T+6 K (brlown), with other variables held at baseline values.  The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields. In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines / black dots).}
+   \caption{Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. Figure shows irragated maize for nine adjacent high-yield grid cells of Figure \ref{fig:yearvclim} (in northern Iowa, same as Figure \ref{fig:yearvclim}) from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for scenarios with temperature shifted by T+3 (orange) and T+6 K (red), with other variables held at baseline values. The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields. In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines).}
    \label{fig:yearly}
 \end{figure}
 
