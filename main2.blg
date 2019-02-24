@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main2.aux
+The style file: model5-names.bst.bst
+Database file #1: bib.bib.bib
+Repeated entry---line 597 of file bib.bib.bib
+ : @article{Asseng2013
+ :                    ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty booktitle in Markowski2015
+You've used 93 entries,
+            3390 wiz_defined-function locations,
+            1293 strings with 33375 characters,
+and the built_in function-call counts, 111935 in all, are:
+= -- 7737
+> -- 8440
+< -- 30
++ -- 8581
+- -- 2327
+* -- 12661
+:= -- 13483
+add.period$ -- 286
+call.type$ -- 93
+change.case$ -- 1247
+chr.to.int$ -- 92
+cite$ -- 94
+duplicate$ -- 5927
+empty$ -- 5436
+format.name$ -- 2616
+if$ -- 20512
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1411
+newline$ -- 482
+num.names$ -- 376
+pop$ -- 4249
+preamble$ -- 1
+purify$ -- 1147
+quote$ -- 0
+skip$ -- 3353
+stack$ -- 0
+substring$ -- 3125
+swap$ -- 5670
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 831
+warning$ -- 1
+while$ -- 397
+width$ -- 0
+write$ -- 1320
+(There was 1 error message)
