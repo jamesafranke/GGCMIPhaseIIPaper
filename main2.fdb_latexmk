@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main2"] 1551033057 "main2.aux" "main2.bbl" "main2" 1551033562
+["bibtex main2"] 1551033057 "main2.aux" "main2.bbl" "main2" 1551033595
   "bib.bib" 1551029525 62295 432b6b9ff52a65b8b48418e6b0cd52e1 ""
   "main2.aux" 1551033070 30870 f16644a6d566f38255482e624108baa5 ""
   "model5-names.bst.bst" 0 -1 0 ""
   (generated)
-  "main2.blg"
   "main2.bbl"
-["pdflatex"] 1551033057 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf" "main2" 1551033562
+  "main2.blg"
+["pdflatex"] 1551033057 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf" "main2" 1551033595
   "../PhaseIIPaper/supdocs/supdocs.aux" 1549392605 10592 1e42949921524fd8ad645b2a6c543796 ""
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.aux" 1551033070 30870 f16644a6d566f38255482e624108baa5 ""
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" 1551033562 79571 144892ef4d0c7584411f968358d29ab7 ""
@@ -135,8 +135,8 @@
   "main2.tex" 1551033562 79571 144892ef4d0c7584411f968358d29ab7 ""
   "natbib.sty" 1400598204 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "main2.aux"
   "main2.pdf"
+  "main2.aux"
   "main2.spl"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf"
   "main2.log"
