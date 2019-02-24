@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{98}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -131,6 +131,15 @@
   and adaptation}.
 \newblock {\it \bibinfo{journal}{Nature Climate Change}\/},  {\it
   \bibinfo{volume}{4}\/}, \bibinfo{pages}{287 -- 291}.
+%Type = Article
+\bibitem[{Chang et~al.(2016)Chang, Stein, Wang, Kotamarthi \& Moyer}]{Won16}
+\bibinfo{author}{Chang, W.}, \bibinfo{author}{Stein, M.},
+  \bibinfo{author}{Wang, J.}, \bibinfo{author}{Kotamarthi, V.}, \&
+  \bibinfo{author}{Moyer, E.} (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{Changes in spatio-temporal precipitation patterns in
+  changing climate conditions}.
+\newblock {\it \bibinfo{journal}{Journal of Climate}\/},  {\it
+  \bibinfo{volume}{29}\/}. \DOIprefix\doi{10.1175/JCLI-D-15-0844.1}.
 %Type = Article
 \bibitem[{Conti et~al.(2009)Conti, Gosling, Oakley \& O'Hagan}]{OHAGAN2010}
 \bibinfo{author}{Conti, S.}, \bibinfo{author}{Gosling, J.~P.},
@@ -303,6 +312,16 @@
   {C}entral {E}urope}.
 \newblock {\it \bibinfo{journal}{Remote Sensing}\/},  {\it
   \bibinfo{volume}{7}\/}, \bibinfo{pages}{3934--3965}.
+%Type = Article
+\bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer \& Sriver}]{Haugen2018}
+\bibinfo{author}{Haugen, M.}, \bibinfo{author}{Stein, M.},
+  \bibinfo{author}{Moyer, E.}, \& \bibinfo{author}{Sriver, R.}
+  (\bibinfo{year}{2018}).
+\newblock \bibinfo{title}{Estimating changes in temperature distributions in a
+  large ensemble of climate simulations using quantile regression}.
+\newblock {\it \bibinfo{journal}{Journal of Climate}\/},  {\it
+  \bibinfo{volume}{31}\/}, \bibinfo{pages}{8573--8588}.
+  \DOIprefix\doi{10.1175/JCLI-D-17-0782.1}.
 %Type = Article
 \bibitem[{He et~al.(2016)He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He \&
   Li}]{He2016}
@@ -479,6 +498,17 @@
   farming systems simulation}.
 \newblock {\it \bibinfo{journal}{European Journal of Agronomy}\/},  {\it
   \bibinfo{volume}{18}\/}, \bibinfo{pages}{267 -- 288}.
+%Type = Article
+\bibitem[{Leeds et~al.(2015)Leeds, Moyer \& Stein}]{Leeds2015}
+\bibinfo{author}{Leeds, W.~B.}, \bibinfo{author}{Moyer, E.~J.}, \&
+  \bibinfo{author}{Stein, M.~L.} (\bibinfo{year}{2015}).
+\newblock \bibinfo{title}{Simulation of future climate under changing temporal
+  covariance structures}.
+\newblock {\it \bibinfo{journal}{Advances in Statistical Climatology,
+  Meteorology and Oceanography}\/},  {\it \bibinfo{volume}{1}\/},
+  \bibinfo{pages}{1--14}. \URLprefix
+  \url{https://www.adv-stat-clim-meteorol-oceanogr.net/1/1/2015/}.
+  \DOIprefix\doi{10.5194/ascmo-1-1-2015}.
 %Type = Article
 \bibitem[{Lindeskog et~al.(2013)Lindeskog, Arneth, Bondeau, Waha, Seaquist,
   Olin \& Smith}]{Lindeskog2013}
@@ -764,6 +794,16 @@
   response surfaces}.
 \newblock {\it \bibinfo{journal}{Climate Research}\/},  {\it
   \bibinfo{volume}{65}\/}, \bibinfo{pages}{87--105}.
+%Type = Article
+\bibitem[{Poppick et~al.(2016)Poppick, McInerney, Moyer \& Stein}]{poppick2016}
+\bibinfo{author}{Poppick, A.}, \bibinfo{author}{McInerney, D.~J.},
+  \bibinfo{author}{Moyer, E.~J.}, \& \bibinfo{author}{Stein, M.~L.}
+  (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{Temperatures in transient climates: Improved methods
+  for simulations with evolving temporal covariances}.
+\newblock {\it \bibinfo{journal}{Ann. Appl. Stat.}\/},  {\it
+  \bibinfo{volume}{10}\/}, \bibinfo{pages}{477--505}. \URLprefix
+  \url{https://doi.org/10.1214/16-AOAS903}. \DOIprefix\doi{10.1214/16-AOAS903}.
 %Type = Incollection
 \bibitem[{{Porter et al.\ (IPCC)}(2014)}]{porter2014}
 \bibinfo{author}{{Porter et al.\ (IPCC)}} (\bibinfo{year}{2014}).
