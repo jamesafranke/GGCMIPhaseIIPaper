@@ -1,4 +1,4 @@
-\begin{thebibliography}{98}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -442,6 +442,15 @@
 \newblock {\it \bibinfo{journal}{Ecological Modelling}\/},  {\it
   \bibinfo{volume}{192}\/}, \bibinfo{pages}{362--384}.
 %Type = Article
+\bibitem[{J.~Boote et~al.(2013)J.~Boote, Jones, White, Asseng \&
+  Lizaso}]{Boote13}
+\bibinfo{author}{J.~Boote, K.}, \bibinfo{author}{Jones, J.},
+  \bibinfo{author}{White, J.}, \bibinfo{author}{Asseng, S.}, \&
+  \bibinfo{author}{Lizaso, J.} (\bibinfo{year}{2013}).
+\newblock \bibinfo{title}{Putting mechanisms into crop production models.}
+\newblock {\it \bibinfo{journal}{Plant, cell & environment}\/},  {\it
+  \bibinfo{volume}{36}\/}. \DOIprefix\doi{10.1111/pce.12119}.
+%Type = Article
 \bibitem[{Jagtap \& Jones(2002)}]{JAGTAP200273}
 \bibinfo{author}{Jagtap, S.~S.}, \& \bibinfo{author}{Jones, J.~W.}
   (\bibinfo{year}{2002}).
@@ -498,6 +507,18 @@
   farming systems simulation}.
 \newblock {\it \bibinfo{journal}{European Journal of Agronomy}\/},  {\it
   \bibinfo{volume}{18}\/}, \bibinfo{pages}{267 -- 288}.
+%Type = Article
+\bibitem[{Leakey et~al.(2009)Leakey, Bernacchi, Ainsworth, Ort, Long \&
+  Rogers}]{leaky09}
+\bibinfo{author}{Leakey, A. D.~B.}, \bibinfo{author}{Bernacchi, C.~J.},
+  \bibinfo{author}{Ainsworth, E.~A.}, \bibinfo{author}{Ort, D.~R.},
+  \bibinfo{author}{Long, S.~P.}, \& \bibinfo{author}{Rogers, A.}
+  (\bibinfo{year}{2009}).
+\newblock \bibinfo{title}{{Elevated CO2 effects on plant carbon, nitrogen, and
+  water relations: six important lessons from FACE}}.
+\newblock {\it \bibinfo{journal}{Journal of Experimental Botany}\/},  {\it
+  \bibinfo{volume}{60}\/}, \bibinfo{pages}{2859--2876}.
+  \DOIprefix\doi{10.1093/jxb/erp096}.
 %Type = Article
 \bibitem[{Leeds et~al.(2015)Leeds, Moyer \& Stein}]{Leeds2015}
 \bibinfo{author}{Leeds, W.~B.}, \bibinfo{author}{Moyer, E.~J.}, \&
