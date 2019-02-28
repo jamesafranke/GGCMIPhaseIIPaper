@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 FEB 2019 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 FEB 2019 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,61 +874,8 @@ File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
 Package pdftex.def Info: figures/error_360.png used on input line 382.
 (pdftex.def)             Requested size: 252.0pt x 554.35242pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.383 ...grading for hotter and wetter scenarios.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.383 ...grading for hotter and wetter scenarios.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.383 ...grading for hotter and wetter scenarios.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.383 ...grading for hotter and wetter scenarios.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 3635) in paragraph at lines 383--383
-[]\OT1/txr/m/n/8 Figure 10: As-sess-ment of em-u-la-tor per-for-mance over cur-
-rently cul-
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 383--383
-\OT1/txr/m/n/8 ti-vated ar-eas based on nor-mal-ized er-ror (Equa-tions 3[], 2[
-]). We show
- []
-
-
-Overfull \hbox (427.15373pt too wide) in paragraph at lines 383--383
-\OT1/txr/m/n/8 ('area$[]\OML/txmi/m/it/8 rac[]\OT1/txr/m/n/8 )\OML/txmi/m/it/8 
-foreachcropwithnormalizedarea$\OT1/txr/m/n/8 e$\OML/txmi/m/it/8 lessthat\OT1/tx
-r/m/n/8 1\OML/txmi/m/it/8 indicatingthetheerrorbetweentheemulationandsimulation
-lessthatonestandarddeviationoftheensemblesimulationspread:Ofthe\OT1/txr/m/n/8 7
-56\OML/txmi/m/it/8 scenarioswiththeseCO$$[]$
- []
-
-
-LaTeX Warning: Float too large for page by 5.9604pt on input line 385.
+LaTeX Warning: Float too large for page by 17.0924pt on input line 385.
 
 <figures/em_err.png, id=78, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
@@ -1063,7 +1010,7 @@ urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf (2
-4 pages, 10214544 bytes).
+4 pages, 10214293 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
