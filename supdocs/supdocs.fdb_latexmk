@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex supdocs"] 1551386390 "supdocs.aux" "supdocs.bbl" "supdocs" 1551393851
+["bibtex supdocs"] 1551397601 "supdocs.aux" "supdocs.bbl" "supdocs" 1551397622
   "bib.bib" 1551384957 64470 686fa8ba5afcb42edfe9cfbdad9a15d7 ""
-  "supdocs.aux" 1551393851 11351 6aef7e5e9de6ddc1bd8027bc60b07b2e ""
+  "supdocs.aux" 1551397622 11766 f396fcd8eb49b70b30207e5a3250410f ""
   (generated)
   "supdocs.blg"
   "supdocs.bbl"
-["pdflatex"] 1551393831 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf" "supdocs" 1551393851
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.aux" 1551393851 11351 6aef7e5e9de6ddc1bd8027bc60b07b2e ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" 1551393831 17501 a5ba3eef27b9486e645a1b50d157319c ""
+["pdflatex"] 1551397601 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf" "supdocs" 1551397622
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.aux" 1551397622 11766 f396fcd8eb49b70b30207e5a3250410f ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" 1551397578 17919 e7a773adc3f0aff59bf33253817faa05 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -126,6 +126,7 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "em_CTWN_all_crops.png" 1551397199 894442 21fed3de1cf12bcbc4a5e0057fa1f2d8 ""
   "s_carbon.png" 1548711579 1253351 d4202260943ec9edc2d052e8dd138b3a ""
   "s_croparea.png" 1548711579 1836882 c759f1c413c2f303652a5482c2e13036 ""
   "s_croparea_irr.png" 1548711579 1784259 63f3086fe505caccb87ed82b080ed322 ""
@@ -143,14 +144,14 @@
   "s_temp.png" 1548711579 1574560 934808047cb19d244194cf59101601b3 ""
   "s_water.png" 1548711579 950488 336173e38ea7b4fe8290e88725decbea ""
   "s_wheat_baseline.png" 1548711579 2578265 51806be7c808731fad7b67ccf674aaaf ""
-  "supdocs.aux" 1551393851 11351 6aef7e5e9de6ddc1bd8027bc60b07b2e ""
-  "supdocs.bbl" 1551386390 0 d41d8cd98f00b204e9800998ecf8427e "bibtex supdocs"
-  "supdocs.tex" 1551393831 17501 a5ba3eef27b9486e645a1b50d157319c ""
-  "supdocs.toc" 1551393851 247 e1ef248db810b61d39cca46e0b96843d ""
+  "supdocs.aux" 1551397622 11766 f396fcd8eb49b70b30207e5a3250410f ""
+  "supdocs.bbl" 1551397601 0 d41d8cd98f00b204e9800998ecf8427e "bibtex supdocs"
+  "supdocs.tex" 1551397578 17919 e7a773adc3f0aff59bf33253817faa05 ""
+  "supdocs.toc" 1551397622 247 e1ef248db810b61d39cca46e0b96843d ""
   (generated)
-  "supdocs.toc"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf"
   "supdocs.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.log"
-  "supdocs.log"
+  "supdocs.toc"
   "supdocs.pdf"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf"
+  "supdocs.log"
