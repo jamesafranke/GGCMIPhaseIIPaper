@@ -22,27 +22,58 @@
 \usepackage{dblfloatfix}
 \usepackage{multirow}
 \usepackage{graphicx}
-\externaldocument{../PhaseIIPaper/main}
 
+\externaldocument{../PhaseIIPaper/main}
+%\biboptions{authoryear, comma}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \centering{\bf {\large Supplemental Material} \\
-{\Large The GGCMI Phase II experiment: global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}}\\
+{\Large The GGCMI Phase II experiment: simulating and emulating global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}}\\
+
 \vspace{3mm}
-\centering{James Franke$^{1, 2}$, Joshua Elliott$^{2, 3}$, Christoph M\"{u}ller$^4$, Alexander Ruane$^5$, Abigail Snyder$^6$,\\ Jonas J\"{a}germeyr$^{3, 2, 4, 5}$, Juraj Balkovic$^{7, 8}$, Philippe Ciais$^{9, 10}$, Marie Dury$^11$, Pete Falloon$^12$,\\ Christian Folberth$^7$, Louis Fran{\c{c}}ois$^11$, Tobias Hank$^13$, Munir Hoffmann$^14$, Cesar Izaurralde$^{15, 16}$,\\ Ingrid Jacquemin$^11$, Curtis Jones$^15$, Nikolay Khabarov$^7$, Marian Koch$^14$, Michelle Li$^{2, 17}$, Wenfeng Liu$^{18, 9}$,\\ Stefan Olin$^19$, Meridel Phillips$^{5, 20}$, Thomas Pugh$^{21, 22}$, Ashwan Reddy$^15$, Xuhui Wang$^{9, 10}$, Karina Williams$^12$,\\ Florian Zabel$^13$, and Elisabeth Moyer$^{1, 2}$\\
+
+\centering{James Franke$^{1, 2}$, 
+Joshua Elliott$^{2, 3}$, 
+Christoph M\"{u}ller$^4$, 
+Alexander Ruane$^5$, 
+Abigail Snyder$^6$,\\ 
+Jonas J\"{a}germeyr$^{3, 2, 4, 5}$, 
+Juraj Balkovic$^{7, 8}$, 
+Philippe Ciais$^{9, 10}$, 
+Marie Dury$^{11}$, 
+Pete Falloon$^{12}$,\\ 
+Christian Folberth$^7$, 
+Louis Fran{\c{c}}ois$^{11}$, 
+Tobias Hank$^{13}$, 
+Munir Hoffmann$^{14}$, 
+Cesar Izaurralde$^{15, 16}$,\\ 
+Ingrid Jacquemin$^11$, 
+Curtis Jones$^{15}$, 
+Nikolay Khabarov$^7$, 
+Marian Koch$^{14}$, 
+Michelle Li$^{2, 17}$, 
+Wenfeng Liu$^{18, 9}$,\\ 
+Stefan Olin$^{19}$, 
+Meridel Phillips$^{5, 20}$, 
+Thomas Pugh$^{21, 22}$, 
+Ashwan Reddy$^{15}$, 
+Xuhui Wang$^{9, 10}$,\\ 
+Karina Williams$^{12}$, 
+Florian Zabel$^{13}$, 
+and Elisabeth Moyer$^{1, 2}$\\
 ~\\}
+
 \centering{
 {\small 1. Department of the Geophysical Sciences, University of Chicago, Chicago, IL, USA}\\
 {\small 2. Center for Robust Decision-making on Climate and Energy Policy, University of Chicago, Chicago, IL, USA}\\
-{\small 3.Department of Computer Science, University of Chicago, Chicago, IL, USA}\\
+{\small 3. Department of Computer Science, University of Chicago, Chicago, IL, USA}\\
 {\small 4. Potsdam Institute for Climate Impact Research, Leibniz Association (Member), Potsdam, Germany}\\
 {\small 5. NASA Goddard Institute for Space Studies, New York, NY, United States}\\
 {\small 6. Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA}\\
 {\small 7. Ecosystem Services and Mgm. Prg., International Institute for Applied Systems Analysis, Laxenburg, Austria}\\
 {\small 8. Department of Soil Science, Comenius University in Bratislava, Bratislava, Slovak Republic}\\
-{\small 9. Laboratoire des Sciences du Climat et de l'Environnement,
-CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}\\
+{\small 9. Laboratoire des Sciences du Climat et de l'Environnement,CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}\\
 {\small 10. Sino-French Institute of Earth System Sciences, Peking University, Beijing, China}\\
 {\small 11. Unit{\'{e}} de Mod{\'{e}}lisation du Climat et des Cycles Biog\'eochimiques, University of Li\`ege, Belgium}\\
 {\small 12. Met Office Hadley Centre, Exeter, United Kingdom}\\
@@ -53,15 +84,15 @@ CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}\\
 {\small 17. {Department of Statistics, University of Chicago, Chicago, IL, USA}\\
 {\small 18. EAWAG, Swiss Federal Institute of Aquatic Science and Technology,   D\"{u}bendorf, Switzerland}\\
 {\small 19. Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}\\
-{\small 20. Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
-{\small 21. Karlsruhe Institute of Technology, IMK-IFU, 82467 Garmisch-Partenkirchen, Germany}
-{\small 22 School of Geography, Earth and Environmental Science, University of Birmingham, Birmingham, UK}}
+{\small 20. Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}\\
+{\small 21. Karlsruhe Institute of Technology, IMK-IFU, 82467 Garmisch-Partenkirchen, Germany}\\
+{\small 22. School of Geography, Earth and Environmental Science, University of Birmingham, Birmingham, UK}}
 
 \tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\modulolinenumbers[1]
+\modulolinenumbers[2]
 \linenumbers
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -153,14 +184,6 @@ The CO$_2$ response is generally subject to large uncertainties (not evident in 
 \section{Emulator fits and performance}
 Additional Emulator performance figures for reference. PROMET and JULES shown because these two models are the most-difficult to emulate.
 
-%\begin{figure}[h!]
-%\includegraphics[width=\textwidth]{supdocs/s_Jules_soy.png}\\
-%\caption{} \label{fig:julessoy} \end{figure}
-
-%\begin{figure}[h!]
-%\includegraphics[width=\textwidth]{supdocs/s_promet_rice.png}\\
-%\caption{} \label{fig:prometrice} \end{figure}
-
 \begin{figure}[h!]
 \centering
 \begin{minipage}{.45\textwidth}
@@ -196,7 +219,6 @@ Additional Emulator performance figures for reference. PROMET and JULES shown be
 \end{minipage}
 \end{figure}
 
-
 \clearpage
 \section{Emulator results}
 Example damage functions over the the four dimensions included in the study. All crops shown and split by KG climate regions. 
@@ -224,5 +246,8 @@ Example damage functions over the the four dimensions included in the study. All
 \caption{Multi-model ensemble spread in sensitivity to changes in the nitrogen dimension. 5\% median and 95\% emulated damage function for currently cultivated areas. Irrigated and rain-fed crops shown. PROMET and JULES removed from ensemble. All other covariates held constant. Soy shows the lowest sensitivity to Nitrogen as expected. Irrigated crops are more sensitive to low Nitrogen}
 \label{fig:nitrogen}
 \end{figure}
+
+\clearpage
+\bibliography{bib.bib}
 
 \end{document}

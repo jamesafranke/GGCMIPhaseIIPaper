@@ -1,4 +1,4 @@
 \contentsline {section}{\numberline {1}Methods}{2}
-\contentsline {section}{\numberline {2}Simulation results}{4}
-\contentsline {section}{\numberline {3}Emulator fits and performance}{8}
-\contentsline {section}{\numberline {4}Emulator results}{11}
+\contentsline {section}{\numberline {2}Simulation results}{5}
+\contentsline {section}{\numberline {3}Emulator fits and performance}{9}
+\contentsline {section}{\numberline {4}Emulator results}{12}

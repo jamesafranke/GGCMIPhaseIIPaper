@@ -1,16 +1,5 @@
 %% This is file `elsarticle-template-1-num.tex', Copyright 2009 Elsevier Ltd
-%% This file is part of the 'Elsarticle Bundle'.
-%% ---------------------------------------------
-%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn for a final journal layout:
-%% \documentclass[preprint,12pt]{elsarticle}
-%% \documentclass[preprint,review,12pt]{elsarticle}
-%% \documentclass[final,1p,times]{elsarticle}
-%% \documentclass[final,1p,times,twocolumn]{elsarticle}
-%% \documentclass[final,3p,times]{elsarticle}
-%% \documentclass[final,5p,times]{elsarticle}
-%% \documentclass[final,5p,times,twocolumn]{elsarticle}
-
-\documentclass[preprint, 5p, times, twocolumn]{elsarticle}
+\documentclass[preprint, 5p, times, twocolumn]{elsarticle}  %[final, 5p, times, twocolumn]
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -33,7 +22,7 @@
 
 \title{The GGCMI Phase II experiment: simulating and emulating global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}
 
-\author[1,2]{James Franke\corref{cor1}}
+\author[1,2]{James Franke \corref{cor1}}
 \author[2,3]{Joshua Elliott}
 \author[4]{Christoph M\"{u}ller}
 \author[5]{Alexander Ruane}
@@ -71,10 +60,8 @@
 \address[6]{Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA}
 \address[7]{Ecosystem Services and Management Program, International Institute for Applied Systems Analysis, Laxenburg, Austria}
 \address[8]{Department of Soil Science, Faculty of Natural Sciences, Comenius University in Bratislava, Bratislava, Slovak Republic}
-\address[9]{Laboratoire des Sciences du Climat et de l'Environnement,
-CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}
-\address[10]{Sino-French Institute of Earth System Sciences, College of Urban and
-Environmental Sciences, Peking University, Beijing, China}
+\address[9]{Laboratoire des Sciences du Climat et de l'Environnement, CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}
+\address[10]{Sino-French Institute of Earth System Sciences, College of Urban and Environmental Sciences, Peking University, Beijing, China}
 \address[11]{Unit{\'{e}} de Mod{\'{e}}lisation du Climat et des Cycles Biog\'eochimiques, UR SPHERES, Institut d'Astrophysique et de G\'eophysique, University of Li\`ege, Belgium}
 \address[12]{Met Office Hadley Centre, Exeter, United Kingdom}
 \address[13]{Department of Geography, Ludwig-Maximilians-Universit\"{a}t, Munich, Germany}
@@ -144,10 +131,6 @@ In the past decade, multiple studies have developed emulators of process-based c
 An alternative approach is to construct a training set of multiple stationary scenarios in which parameters are systematically varied. Such a ``parameter sweep'' offers several advantages for emulation over scenarios in which climate evolves over time.  First, it allows separating the effects of different variables that impact yields but that are highly correlated in realistic future scenarios (e.g.\ CO$_2$ and temperature). Second, it allows making a distinction between year-over-year yield variations and climatological changes, which may involve different responses to the particular climate regressors used \citep[e.g.][]{Ruane2016}. For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing season, and long-term climate changes are driven predominantly by shifts in means, then regressing on the mean growing season temperature will produce different yield responses at annual vs.\ climatological timescales.  
 
 Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2015 \citep{Markowski2015, Pirttioja2015}, and several recent studies in 2018 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. All three studies sample multiple perturbations to temperature and precipitation (with \citet{Snyder2018} and \citet{RUIZRAMOS2018} adding CO$_2$ as well), in 132, 99 and 220 different combinations, respectively, and take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. All are limited in some respects and focus on a limited number of sites. \citet{FRONZEK20182} and \citet{RUIZRAMOS2018} simulate only wheat (over many models) and \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) for agricultural impacts experiments with the GCAM \citep{calvin2019} model.
-
-%based on site-specific crop model sensitivity tests from the C3MP project \citep{mcdermid2015}.
-%Both studies are limited in other aspects, however: both simulate only a handful of individual sites, and \citet{FRONZEK20182} simulates only wheat (over several models), while \citet{Snyder2018} analyzes four crops but with a single model (GCAM). 
-%  t also removes the correlation between the key variables driving yields which may prove difficult to disentangle in RCP climate model runs and it provides fully stationary simulations. %A parameter sweep across the major drivers 
 
 \begin{table*}[!hb]
     \small \centering
@@ -258,21 +241,9 @@ Mapping the distribution of baseline yields and yield changes shows the geograph
 
 As part of our demonstration of the properties of the GGCMI Phase II dataset, we construct an emulator of 30-year climatological mean yields. This approach is made possible by the structured set of simulations involving systematic perturbations. In the GGCMI Phase II dataset, the year-over-year responses are generally quantitatively distinct from (and larger than) climatological mean responses. In the example of Figure \ref{fig:yearvclim}, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. The stronger year-over-year response under warmer conditions also manifests as a wider distribution of yields (Figure \ref{fig:yearly}). As discussed previously, year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariants, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
 
-%associated with interannual variability is be different from that associated with long-term CO2-driven changes 
-%shows that the year-over-year yield response to individual factors in GGCMI Phase II do in fact often exceed the climatological-mean response . 
-%training sets consisting of realistic, non-stationary scenarios generaly necessitate emulation at the annual level. %Annual emulation is required when the input training set consists of non-stationary projections of evolving yields (such as an RCP climate model run). 
-%To demonstrate the utility of a climatological emulation approach, we use th
-%XXX --- save this for the discussion ---- For methods to generate adjust historical climate data inclusive of distributional and temporal dependence changes, see \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}). Emulation approaches are an area of active ongoing study and one of the goals of the GGCMI Phase II dataset is to facilitate these research efforts. 
-
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).  We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. (We aggregate the entire 30-year run in each case to improve signal to noise ration in our model.) The higher-order terms are necessary to capture any nonlinear responses, which are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). We include interaction terms (both linear and higher-order) because past studies have shown them to be significant effects. For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance. (C and N are fixed in these data.) Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and carbon dioxide \citep{Mitsuru92, Nakamura97}. To avoid over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rain-fed case) to 23 terms.
 
 We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametrization that allows for some interpretation of coefficients. Some prior studies have used more complex functional forms and larger numbers of parameters, e.g.\ 39 in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across a large region in a panel regression. The simple functional form used here allows emulation at the grid cell level. The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate itself. We hold the statistical specification constant across all crops and models to facilitate parameter by parameter simulation model comparison.
-
-%{\color{red} The relatively simple functional form used here allows emulation at grid-cell level with low noise? how do you quantify this? maybe add table of parameters like stefan said?} We do not aggregate in space since the emulation is not computationally demanding even at the half-degree grid cell resolution globally. 
-%We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametrization that allows for some interpretation of coefficients. Some prior studies have used more complex functional forms and larger numbers of parameters, e.g.\ 39 in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across a large region in a panel regression.  The simpler functional form used here allows emulation at grid-cell level {\color{red} with low noise? how do you quantify this?}. The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate itself. 
-%We do not aggregate in space since the emulation is not computationally demanding  even at the half-degree grid cell resolution 
-%The regression therefore omits information about yield responses to year-to-year climate perturbations, which are more complex. Emulating inter-annual yield variations would likely require considering statistical details of the historical climate time series, including changes in marginal distribution and temporal dependencies. (Future work should explore this). 
-%Crop yields in process based models do not respond to the mean growing season temperature, they respond the the full distribution in temperature over the growing season (or, specifically the exact temperature time series). Much of the variance is left unexplained if one tries to fit a statistical model between yields and some aggregate temperature variable (mean growing season temperature, monthly temperature etc.).
 
 \subsection{Feature selection procedure}
 Although the GGCMI Phase II sampled variable space is large, it is still sufficiently limited that use of the full polynomial expression described above can be problematic. We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. In this procedure higher-order and interaction terms are added successively to the regression model; we then follow the reduction of the the aggregate mean squared error with increasing terms and eliminate those terms that do not contribute significant reductions. See supplemental documents for more details. We select terms by applying the feature selection process to the three models that provided the complete set of 672 rain-fed simulations (pDSSAT, EPIC-TAMU, and LPJmL); the resulting choice of terms is then applied for all emulators. 
@@ -336,11 +307,7 @@ Second, the GGCMI Phase II simulations allow understanding the way that climate-
 
 Third, we show that even the relatively limited GGCMI Phase II sampling space allows emulation of the climatological response of crop models with a relatively simple reduced-form statistical model. The systematic parameter sampling in the GGCMI Phase II procedure provides information on the influence of multiple interacting factors in a way that single projections cannot, and emulating the resulting response surface then produces a tool that can aid in both physical interpretation of the process-based models and in assessment of agricultural impacts under arbitrary climate scenarios. Emulating the climatological response isolates long-term impacts from any confounding factors that complicate year-over-year changes, and the use of simple functional forms offer the possibility of physical interpretation of parameter values. We anticipate that systematic parameter sampling will become the norm in future crop model intercomparison exercises.
 
-%Care should be taken in applying relationships developed at the yearly level to shifts in the mean climatology. 
-
 While the GGCMI Phase II database should offer the foundation for multiple future studies, several cautions need to be noted. Because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections unless in used in conjunction with historical data (or data products). Because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample changes in higher order moments, and cannot address the additional crop yield impacts of potential changes in climate variability. Although distributional changes in model projections are fairly uncertain at present, follow-on experiments may wish to consider them. Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes not only in temperature and precipitation means but in their marginal distributions or temporal dependence (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}). The ranges for input perturbations for the historical climatology were selected to represent the range of potential future climatological changes. Using the emulator to extrapolate beyond these ranges (Table \ref{table:inputs}) may lead to misinterpretations. 
-
-%Emulation approaches are an area of active ongoing study and one of the goals of the GGCMI Phase II dataset is to facilitate these research efforts. 
 
 %--- Probably still NEEDS EDIT --
 {\color{blue}
@@ -402,16 +369,12 @@ This metric implies that emulation is generally satisfactory, with several disti
 This assessment procedure is relatively forgiving for several reason. First, each emulation is evaluated against the simulation actually used to train the emulator. Had we used a spline interpolation the error would necessarily be zero. Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. Where models differ more widely, the standard for emulators becomes less stringent. This effect is readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure \ref{fig:error810}) because models disagree on the magnitude of CO$_2$ fertilization. The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. More rigorous emulator assessments that may be preformed in future work include: testing other statistical specifications including non-parametric models, cross-validation procedures where the emulator is trained on some portion of data and tested on a held-out portion, and calculating standard error on emulator parameters.
 
 %Because the inter-model spread is large, normalized errors tend to be small. That is, any failures of emulation are small relative to inter-model uncertainty. 
-
 %In general, widening the inter-model spread leads to an apparent increase in emulator skill.
 
 \singlespacing
 \section{References}
 \label{S:6}
 
-%% \appendix
-%% \section{}
-%% \label{}
 %% References
 %% Following citation commands can be used in the body text:
 %% Usage of \cite is as follows:
@@ -425,5 +388,4 @@ This assessment procedure is relatively forgiving for several reason. First, eac
 %% References with bibTeX database:
 %% Authors are advised to submit their bibtex database files. They are requested to list a bibtex style file in the manuscript if they do not want to use model1-num-names.bst.
 \end{document}
-%% End of file `elsarticle-template-1-num.tex'.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
