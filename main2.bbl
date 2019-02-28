@@ -1,4 +1,4 @@
-\begin{thebibliography}{104}
+\begin{thebibliography}{99}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -462,15 +462,6 @@
 \newblock {\it \bibinfo{journal}{Ecological Modelling}\/},  {\it
   \bibinfo{volume}{192}\/}, \bibinfo{pages}{362--384}.
 %Type = Article
-\bibitem[{J.~Boote et~al.(2013)J.~Boote, Jones, White, Asseng \&
-  Lizaso}]{Boote13}
-\bibinfo{author}{J.~Boote, K.}, \bibinfo{author}{Jones, J.},
-  \bibinfo{author}{White, J.}, \bibinfo{author}{Asseng, S.}, \&
-  \bibinfo{author}{Lizaso, J.} (\bibinfo{year}{2013}).
-\newblock \bibinfo{title}{Putting mechanisms into crop production models.}
-\newblock {\it \bibinfo{journal}{Plant, cell & environment}\/},  {\it
-  \bibinfo{volume}{36}\/}. \DOIprefix\doi{10.1111/pce.12119}.
-%Type = Article
 \bibitem[{Jagtap \& Jones(2002)}]{JAGTAP200273}
 \bibinfo{author}{Jagtap, S.~S.}, \& \bibinfo{author}{Jones, J.~W.}
   (\bibinfo{year}{2002}).
@@ -527,18 +518,6 @@
   farming systems simulation}.
 \newblock {\it \bibinfo{journal}{European Journal of Agronomy}\/},  {\it
   \bibinfo{volume}{18}\/}, \bibinfo{pages}{267 -- 288}.
-%Type = Article
-\bibitem[{Leakey et~al.(2009)Leakey, Bernacchi, Ainsworth, Ort, Long \&
-  Rogers}]{leaky09}
-\bibinfo{author}{Leakey, A. D.~B.}, \bibinfo{author}{Bernacchi, C.~J.},
-  \bibinfo{author}{Ainsworth, E.~A.}, \bibinfo{author}{Ort, D.~R.},
-  \bibinfo{author}{Long, S.~P.}, \& \bibinfo{author}{Rogers, A.}
-  (\bibinfo{year}{2009}).
-\newblock \bibinfo{title}{{Elevated CO2 effects on plant carbon, nitrogen, and
-  water relations: six important lessons from FACE}}.
-\newblock {\it \bibinfo{journal}{Journal of Experimental Botany}\/},  {\it
-  \bibinfo{volume}{60}\/}, \bibinfo{pages}{2859--2876}.
-  \DOIprefix\doi{10.1093/jxb/erp096}.
 %Type = Article
 \bibitem[{Leeds et~al.(2015)Leeds, Moyer \& Stein}]{Leeds2015}
 \bibinfo{author}{Leeds, W.~B.}, \bibinfo{author}{Moyer, E.~J.}, \&
@@ -911,16 +890,6 @@
 \newblock {\it \bibinfo{journal}{Water Resources Research}\/},  {\it
   \bibinfo{volume}{48}\/}.
 %Type = Article
-\bibitem[{Rezaei et~al.(2018)Rezaei, Siebert, Hüging \& Ewert}]{Rezaei2018}
-\bibinfo{author}{Rezaei, E.}, \bibinfo{author}{Siebert, S.},
-  \bibinfo{author}{Hüging, H.}, \& \bibinfo{author}{Ewert, F.}
-  (\bibinfo{year}{2018}).
-\newblock \bibinfo{title}{Climate change effect on wheat phenology depends on
-  cultivar change}.
-\newblock {\it \bibinfo{journal}{Scientific Reports}\/},  {\it
-  \bibinfo{volume}{8}\/}, \bibinfo{pages}{4891}.
-  \DOIprefix\doi{10.1038/s41598-018-23101-2}.
-%Type = Article
 \bibitem[{Roberts et~al.(2017)Roberts, Braun, R~Sinclair, B~Lobell \&
   Schlenker}]{Roberts2017}
 \bibinfo{author}{Roberts, M.}, \bibinfo{author}{Braun, N.},
@@ -1131,36 +1100,6 @@
 \newblock {\it \bibinfo{journal}{Proceedings of the National Academy of
   Sciences}\/},  {\it \bibinfo{volume}{106}\/}, \bibinfo{pages}{15594--15598}.
 %Type = Article
-\bibitem[{Simona et~al.(2014)Simona, Nadine, Jean-Louis, Kenneth, Jon, W.,
-  Cynthia, C., Myriam, Christian, Bruno, Christian, Hendrik, Sjaak, Marc,
-  Delphine, Giacomo, Sebastian, Patricio, Jerry, Steven, Cesar, Raymond, R.,
-  Christian, Soo-Hyung, S., David, Christoph, Claas, Eckart, Virginia,
-  Federico, Iurii, Fulu, Edmar, Dennis \& Katharina}]{Bassu2014}
-\bibinfo{author}{Simona, B.}, \bibinfo{author}{Nadine, B.},
-  \bibinfo{author}{Jean-Louis, D.}, \bibinfo{author}{Kenneth, B.},
-  \bibinfo{author}{Jon, L.}, \bibinfo{author}{W., J.~J.},
-  \bibinfo{author}{Cynthia, R.}, \bibinfo{author}{C., R.~A.},
-  \bibinfo{author}{Myriam, A.}, \bibinfo{author}{Christian, B.},
-  \bibinfo{author}{Bruno, B.}, \bibinfo{author}{Christian, B.},
-  \bibinfo{author}{Hendrik, B.}, \bibinfo{author}{Sjaak, C.},
-  \bibinfo{author}{Marc, C.}, \bibinfo{author}{Delphine, D.},
-  \bibinfo{author}{Giacomo, S.}, \bibinfo{author}{Sebastian, G.},
-  \bibinfo{author}{Patricio, G.}, \bibinfo{author}{Jerry, H.},
-  \bibinfo{author}{Steven, H.}, \bibinfo{author}{Cesar, I.},
-  \bibinfo{author}{Raymond, J.}, \bibinfo{author}{R., K.~A.},
-  \bibinfo{author}{Christian, K.~K.}, \bibinfo{author}{Soo-Hyung, K.},
-  \bibinfo{author}{S., K.~N.}, \bibinfo{author}{David, M.},
-  \bibinfo{author}{Christoph, M.}, \bibinfo{author}{Claas, N.},
-  \bibinfo{author}{Eckart, P.}, \bibinfo{author}{Virginia, P.~M.},
-  \bibinfo{author}{Federico, S.}, \bibinfo{author}{Iurii, S.},
-  \bibinfo{author}{Fulu, T.}, \bibinfo{author}{Edmar, T.},
-  \bibinfo{author}{Dennis, T.}, \& \bibinfo{author}{Katharina, W.}
-  (\bibinfo{year}{2014}).
-\newblock \bibinfo{title}{How do various maize crop models vary in their
-  responses to climate change factor{?}}
-\newblock {\it \bibinfo{journal}{Global Change Biology}\/},  {\it
-  \bibinfo{volume}{20}\/}, \bibinfo{pages}{2301--2320}.
-%Type = Article
 \bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips \& Ruane}]{Snyder2018}
 \bibinfo{author}{Snyder, A.}, \bibinfo{author}{Calvin, K.~V.},
   \bibinfo{author}{Phillips, M.}, \& \bibinfo{author}{Ruane, A.~C.}
@@ -1209,26 +1148,6 @@
   and parameter values}.
 \newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
   \bibinfo{volume}{7}\/}, \bibinfo{pages}{1225--1245}.
-%Type = Article
-\bibitem[{Wang et~al.(2017)Wang, Martre, Zhao, Ewert, Maiorano, Rötter,
-  A.~Kimball, Ottman, W.~Wall, White, Reynolds, D.~Alderman, Aggarwal, Anothai,
-  Basso, Biernath, Cammarano, Challinor, De~Sanctis \& Asseng}]{Wang2017}
-\bibinfo{author}{Wang, E.}, \bibinfo{author}{Martre, P.},
-  \bibinfo{author}{Zhao, Z.}, \bibinfo{author}{Ewert, F.},
-  \bibinfo{author}{Maiorano, A.}, \bibinfo{author}{Rötter, R.~P.},
-  \bibinfo{author}{A.~Kimball, B.}, \bibinfo{author}{Ottman, M.},
-  \bibinfo{author}{W.~Wall, G.}, \bibinfo{author}{White, J.},
-  \bibinfo{author}{Reynolds, M.}, \bibinfo{author}{D.~Alderman, P.},
-  \bibinfo{author}{Aggarwal, P.}, \bibinfo{author}{Anothai, J.},
-  \bibinfo{author}{Basso, B.}, \bibinfo{author}{Biernath, C.},
-  \bibinfo{author}{Cammarano, D.}, \bibinfo{author}{Challinor, A.},
-  \bibinfo{author}{De~Sanctis, G.}, \& \bibinfo{author}{Asseng, S.}
-  (\bibinfo{year}{2017}).
-\newblock \bibinfo{title}{The uncertainty of crop yield projections is reduced
-  by improved temperature response functions}.
-\newblock {\it \bibinfo{journal}{Nature Plants}\/},  {\it
-  \bibinfo{volume}{3}\/}, \bibinfo{pages}{17102}.
-  \DOIprefix\doi{10.1038/nplants.2017.102}.
 %Type = Article
 \bibitem[{Warszawski et~al.(2014)Warszawski, Frieler, Huber, Piontek, Serdeczny
   \& Schewe}]{Warszawski3228}
