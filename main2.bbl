@@ -41,7 +41,6 @@
 \newblock \bibinfo{title}{Rising temperatures reduce global wheat production}.
 \newblock {\it \bibinfo{journal}{Nature Climate Change}\/},  {\it
   \bibinfo{volume}{5}\/}, \bibinfo{pages}{143--147}.
-  \DOIprefix\doi{10.1038/nclimate2470}.
 %Type = Article
 \bibitem[{Asseng et~al.(2013)Asseng, Ewert, Rosenzweig, Jones, Hatfield, Ruane,
   J.~Boote, Thorburn, Rötter, Cammarano, Brisson, Basso, Martre, Aggarwal,
@@ -61,7 +60,6 @@
   change}.
 \newblock {\it \bibinfo{journal}{Nature Climate Change}\/},  {\it
   \bibinfo{volume}{3}\/}, \bibinfo{pages}{827–832}.
-  \DOIprefix\doi{10.1038/nclimate1916}.
 %Type = Article
 \bibitem[{Aulakh \& Malhi(2005)}]{AULAKH2005}
 \bibinfo{author}{Aulakh, M.~S.}, \& \bibinfo{author}{Malhi, S.~S.}
@@ -128,7 +126,6 @@
   water, land, climate, and economic systems}.
 \newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
   \bibinfo{volume}{12}\/}, \bibinfo{pages}{677--698}.
-  \DOIprefix\doi{10.5194/gmd-12-677-2019}.
 %Type = Article
 \bibitem[{Castruccio et~al.(2014)Castruccio, McInerney, Stein, Liu~Crouch,
   Jacob \& Moyer}]{Castruccio14}
@@ -159,7 +156,7 @@
 \newblock \bibinfo{title}{Changes in spatio-temporal precipitation patterns in
   changing climate conditions}.
 \newblock {\it \bibinfo{journal}{Journal of Climate}\/},  {\it
-  \bibinfo{volume}{29}\/}. \DOIprefix\doi{10.1175/JCLI-D-15-0844.1}.
+  \bibinfo{volume}{29}\/}.
 %Type = Article
 \bibitem[{Conti et~al.(2009)Conti, Gosling, Oakley \& O'Hagan}]{OHAGAN2010}
 \bibinfo{author}{Conti, S.}, \bibinfo{author}{Gosling, J.~P.},
@@ -341,7 +338,6 @@
   large ensemble of climate simulations using quantile regression}.
 \newblock {\it \bibinfo{journal}{Journal of Climate}\/},  {\it
   \bibinfo{volume}{31}\/}, \bibinfo{pages}{8573--8588}.
-  \DOIprefix\doi{10.1175/JCLI-D-17-0782.1}.
 %Type = Article
 \bibitem[{He et~al.(2016)He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He \&
   Li}]{He2016}
@@ -381,7 +377,6 @@
   future climate change for impacts assessment}.
 \newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
   \bibinfo{volume}{7}\/}, \bibinfo{pages}{433--451}.
-  \DOIprefix\doi{10.5194/gmd-7-433-2014}.
 %Type = Article
 \bibitem[{Holzk{\"a}mper et~al.(2012)Holzk{\"a}mper, Calanca \&
   Fuhrer}]{Holzkamper2012}
@@ -526,9 +521,7 @@
   covariance structures}.
 \newblock {\it \bibinfo{journal}{Advances in Statistical Climatology,
   Meteorology and Oceanography}\/},  {\it \bibinfo{volume}{1}\/},
-  \bibinfo{pages}{1--14}. \URLprefix
-  \url{https://www.adv-stat-clim-meteorol-oceanogr.net/1/1/2015/}.
-  \DOIprefix\doi{10.5194/ascmo-1-1-2015}.
+  \bibinfo{pages}{1--14}.
 %Type = Article
 \bibitem[{Lindeskog et~al.(2013)Lindeskog, Arneth, Bondeau, Waha, Seaquist,
   Olin \& Smith}]{Lindeskog2013}
@@ -611,7 +604,6 @@
 \newblock \bibinfo{title}{Statistical analysis of large simulated yield
   datasets for studying climate effects}.
 \newblock (p. \bibinfo{pages}{1100}).
-\newblock \DOIprefix\doi{10.13140/RG.2.1.5173.8328}.
 %Type = Article
 \bibitem[{Mauser \& Bach(2015)}]{MAUSER2009362}
 \bibinfo{author}{Mauser, W.}, \& \bibinfo{author}{Bach, H.}
@@ -822,8 +814,7 @@
 \newblock \bibinfo{title}{Temperatures in transient climates: Improved methods
   for simulations with evolving temporal covariances}.
 \newblock {\it \bibinfo{journal}{Ann. Appl. Stat.}\/},  {\it
-  \bibinfo{volume}{10}\/}, \bibinfo{pages}{477--505}. \URLprefix
-  \url{https://doi.org/10.1214/16-AOAS903}. \DOIprefix\doi{10.1214/16-AOAS903}.
+  \bibinfo{volume}{10}\/}, \bibinfo{pages}{477--505}.
 %Type = Incollection
 \bibitem[{{Porter et al.\ (IPCC)}(2014)}]{porter2014}
 \bibinfo{author}{{Porter et al.\ (IPCC)}} (\bibinfo{year}{2014}).
@@ -1026,7 +1017,6 @@
   climate-crop modeling project (c3mp)}.
 \newblock {\it \bibinfo{journal}{Glob. Change Biol.}\/},  {\it
   \bibinfo{volume}{20}\/}, \bibinfo{pages}{394--407}.
-  \DOIprefix\doi{10.1111/gcb.12412}.
 %Type = Article
 \bibitem[{Rubel \& Kottek(2010)}]{rubel2010}
 \bibinfo{author}{Rubel, F.}, \& \bibinfo{author}{Kottek, M.}
@@ -1065,7 +1055,6 @@
   perturbed climate and co2 in a mediterranean environment}.
 \newblock {\it \bibinfo{journal}{Agricultural Systems}\/},  {\it
   \bibinfo{volume}{159}\/}, \bibinfo{pages}{260 -- 274}.
-  \DOIprefix\doi{doi.org/10.1016/j.agsy.2017.01.009}.
 %Type = Article
 \bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley \& Ramankutty}]{Sacks2010}
 \bibinfo{author}{Sacks, W.~J.}, \bibinfo{author}{Deryng, D.},
@@ -1107,7 +1096,8 @@
 \newblock \bibinfo{title}{A crop yield change emulator for use in gcam and
   similar models: Persephone v1.0}.
 \newblock {\it \bibinfo{journal}{Geoscientific Model Development
-  Discussions}\/},  {\it \bibinfo{volume}{2018}\/}, \bibinfo{pages}{1--42}.
+  Discussions}\/},  (pp. \bibinfo{pages}{1--42}).
+\newblock \bibinfo{note}{In Open Review}.
 %Type = Article
 \bibitem[{Storlie et~al.(2009)Storlie, Swiler, Helton \&
   Sallaberry}]{STORLIE2009}

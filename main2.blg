@@ -3,7 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main2.aux
 The style file: model5-names.bst.bst
 Database file #1: bib.bib.bib
-Repeated entry---line 654 of file bib.bib.bib
+Repeated entry---line 656 of file bib.bib.bib
  : @article{Asseng2013
  :                    ,
 I'm skipping whatever remains of this entry
@@ -12,43 +12,43 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty booktitle in Markowski2015
 You've used 99 entries,
             3390 wiz_defined-function locations,
-            1335 strings with 35659 characters,
-and the built_in function-call counts, 121256 in all, are:
-= -- 8392
+            1323 strings with 35333 characters,
+and the built_in function-call counts, 121104 in all, are:
+= -- 8339
 > -- 9248
-< -- 30
+< -- 31
 + -- 9421
 - -- 2549
-* -- 13749
-:= -- 14584
-add.period$ -- 312
+* -- 13699
+:= -- 14552
+add.period$ -- 300
 call.type$ -- 99
-change.case$ -- 1351
+change.case$ -- 1352
 chr.to.int$ -- 98
 cite$ -- 100
-duplicate$ -- 6354
-empty$ -- 5801
+duplicate$ -- 6362
+empty$ -- 5805
 format.name$ -- 2856
-if$ -- 22208
+if$ -- 22167
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 1526
 newline$ -- 512
 num.names$ -- 400
-pop$ -- 4602
+pop$ -- 4631
 preamble$ -- 1
 purify$ -- 1245
 quote$ -- 0
-skip$ -- 3635
+skip$ -- 3641
 stack$ -- 0
-substring$ -- 3315
-swap$ -- 6136
-text.length$ -- 7
+substring$ -- 3320
+swap$ -- 6128
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 885
 warning$ -- 1
-while$ -- 424
+while$ -- 425
 width$ -- 0
-write$ -- 1412
+write$ -- 1400
 (There was 1 error message)
