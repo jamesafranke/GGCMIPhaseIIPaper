@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main2"] 1551455709 "main2.aux" "main2.bbl" "main2" 1551455722
+["bibtex main2"] 1551730700 "main2.aux" "main2.bbl" "main2" 1551730712
   "bib.bib" 1551384957 64470 686fa8ba5afcb42edfe9cfbdad9a15d7 ""
-  "main2.aux" 1551455722 47805 8cd1b68a7220af4a5abf386a544adf12 ""
+  "main2.aux" 1551730712 47549 09447bbafffac9cad2c6ce4c3fdce60d ""
   "model5-names.bst.bst" 0 -1 0 ""
   (generated)
-  "main2.bbl"
   "main2.blg"
-["pdflatex"] 1551455709 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf" "main2" 1551455722
+  "main2.bbl"
+["pdflatex"] 1551730700 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf" "main2" 1551730712
   "../PhaseIIPaper/supdocs/supdocs.aux" 1551397622 11766 f396fcd8eb49b70b30207e5a3250410f ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.aux" 1551455722 47805 8cd1b68a7220af4a5abf386a544adf12 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" 1551455695 72701 4349b4fb13b542a24040cb6babeb0310 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.aux" 1551730712 47549 09447bbafffac9cad2c6ce4c3fdce60d ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.tex" 1551730686 72702 337f128c429fb0eaa996a906b8364153 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -127,15 +127,15 @@
   "figures/regression_areas.png" 1548711578 951185 a16e7aa164c2040128d965a5bda17157 ""
   "figures/regression_model.png" 1548711578 773966 4be42e90c75592a8fa8400e3845f4c3f ""
   "figures/tempyearvclim.png" 1551034582 514260 a4cbc67c9ff15e728b3d72a863a328dc ""
-  "main2.aux" 1551455722 47805 8cd1b68a7220af4a5abf386a544adf12 ""
-  "main2.bbl" 1551455709 69465 a7a22393199eb21f1ab4b5c1921181a6 "bibtex main2"
-  "main2.spl" 1551455722 47 6437462e0cfcb8a89c7052d452378855 ""
-  "main2.tex" 1551455695 72701 4349b4fb13b542a24040cb6babeb0310 ""
+  "main2.aux" 1551730712 47549 09447bbafffac9cad2c6ce4c3fdce60d ""
+  "main2.bbl" 1551730700 69465 a7a22393199eb21f1ab4b5c1921181a6 "bibtex main2"
+  "main2.spl" 1551730712 47 6437462e0cfcb8a89c7052d452378855 ""
+  "main2.tex" 1551730686 72702 337f128c429fb0eaa996a906b8364153 ""
   "natbib.sty" 1400598204 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.log"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf"
-  "main2.spl"
   "main2.pdf"
-  "main2.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf"
   "main2.aux"
+  "main2.spl"
+  "main2.log"
