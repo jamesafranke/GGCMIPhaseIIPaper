@@ -177,9 +177,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
 OUTPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main2.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
@@ -203,6 +200,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/ot1txss.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txss.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxphvr.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxss.tfm
@@ -226,9 +226,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/txbsy.tfm
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txb.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmb.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
@@ -240,6 +237,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield_3.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield_3.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield_3.png

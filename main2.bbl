@@ -1,4 +1,4 @@
-\begin{thebibliography}{99}
+\begin{thebibliography}{101}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -1015,7 +1015,7 @@
 \newblock \bibinfo{title}{Carbon-temperature-water change analysis for peanut
   production under climate change: A prototype for the agmip coordinated
   climate-crop modeling project (c3mp)}.
-\newblock {\it \bibinfo{journal}{Glob. Change Biol.}\/},  {\it
+\newblock {\it \bibinfo{journal}{Glob. Change Biology}\/},  {\it
   \bibinfo{volume}{20}\/}, \bibinfo{pages}{394--407}.
 %Type = Article
 \bibitem[{Rubel \& Kottek(2010)}]{rubel2010}
@@ -1081,6 +1081,44 @@
 \newblock {\it \bibinfo{journal}{Nature Communications}\/},  {\it
   \bibinfo{volume}{8}\/}, \bibinfo{pages}{13931}.
 %Type = Article
+\bibitem[{Schewe et~al.(2019)Schewe, Gosling, Reyer, Zhao, Ciais, Elliott,
+  Francois, Huber, Lotze, Seneviratne, van Vliet, Vautard, Wada, Breuer,
+  Büchner, Carozza, Chang, Coll, Deryng, de~Wit, Eddy, Folberth, Frieler,
+  Friend, Gerten, Gudmundsson, Hanasaki, Ito, Khabarov, Kim, Lawrence,
+  Morfopoulos, Müller, Müller~Schmied, Orth, Ostberg, Pokhrel, Pugh, Sakurai,
+  Satoh, Schmid, Stacke, Steenbeek, Steinkamp, Tang, Tian, Tittensor, Volkholz,
+  Wang \& Warszawski}]{schewe2019}
+\bibinfo{author}{Schewe, J.}, \bibinfo{author}{Gosling, S.~N.},
+  \bibinfo{author}{Reyer, C.}, \bibinfo{author}{Zhao, F.},
+  \bibinfo{author}{Ciais, P.}, \bibinfo{author}{Elliott, J.},
+  \bibinfo{author}{Francois, L.}, \bibinfo{author}{Huber, V.},
+  \bibinfo{author}{Lotze, H.~K.}, \bibinfo{author}{Seneviratne, S.~I.},
+  \bibinfo{author}{van Vliet, M. T.~H.}, \bibinfo{author}{Vautard, R.},
+  \bibinfo{author}{Wada, Y.}, \bibinfo{author}{Breuer, L.},
+  \bibinfo{author}{Büchner, M.}, \bibinfo{author}{Carozza, D.~A.},
+  \bibinfo{author}{Chang, J.}, \bibinfo{author}{Coll, M.},
+  \bibinfo{author}{Deryng, D.}, \bibinfo{author}{de~Wit, A.},
+  \bibinfo{author}{Eddy, T.~D.}, \bibinfo{author}{Folberth, C.},
+  \bibinfo{author}{Frieler, K.}, \bibinfo{author}{Friend, A.~D.},
+  \bibinfo{author}{Gerten, D.}, \bibinfo{author}{Gudmundsson, L.},
+  \bibinfo{author}{Hanasaki, N.}, \bibinfo{author}{Ito, A.},
+  \bibinfo{author}{Khabarov, N.}, \bibinfo{author}{Kim, H.},
+  \bibinfo{author}{Lawrence, P.}, \bibinfo{author}{Morfopoulos, C.},
+  \bibinfo{author}{Müller, C.}, \bibinfo{author}{Müller~Schmied, H.},
+  \bibinfo{author}{Orth, R.}, \bibinfo{author}{Ostberg, S.},
+  \bibinfo{author}{Pokhrel, Y.}, \bibinfo{author}{Pugh, T. A.~M.},
+  \bibinfo{author}{Sakurai, G.}, \bibinfo{author}{Satoh, Y.},
+  \bibinfo{author}{Schmid, E.}, \bibinfo{author}{Stacke, T.},
+  \bibinfo{author}{Steenbeek, J.}, \bibinfo{author}{Steinkamp, J.},
+  \bibinfo{author}{Tang, Q.}, \bibinfo{author}{Tian, H.},
+  \bibinfo{author}{Tittensor, D.~P.}, \bibinfo{author}{Volkholz, J.},
+  \bibinfo{author}{Wang, X.}, \& \bibinfo{author}{Warszawski, L.}
+  (\bibinfo{year}{2019}).
+\newblock \bibinfo{title}{State-of-the-art global models underestimate impacts
+  from climate extremes}.
+\newblock {\it \bibinfo{journal}{Nature Communications}\/},  {\it
+  \bibinfo{volume}{10}\/}, \bibinfo{pages}{1005--}.
+%Type = Article
 \bibitem[{Schlenker \& Roberts(2009)}]{Schlenker2009}
 \bibinfo{author}{Schlenker, W.}, \& \bibinfo{author}{Roberts, M.~J.}
   (\bibinfo{year}{2009}).
@@ -1089,14 +1127,25 @@
 \newblock {\it \bibinfo{journal}{Proceedings of the National Academy of
   Sciences}\/},  {\it \bibinfo{volume}{106}\/}, \bibinfo{pages}{15594--15598}.
 %Type = Article
+\bibitem[{Sippel et~al.(2015)Sippel, Zscheischler, Heimann, Otto, Peters \&
+  Mahecha}]{Sippel2015}
+\bibinfo{author}{Sippel, S.}, \bibinfo{author}{Zscheischler, J.},
+  \bibinfo{author}{Heimann, M.}, \bibinfo{author}{Otto, F. E.~L.},
+  \bibinfo{author}{Peters, J.}, \& \bibinfo{author}{Mahecha, M.~D.}
+  (\bibinfo{year}{2015}).
+\newblock \bibinfo{title}{Quantifying changes in climate variability and
+  extremes: Pitfalls and their overcoming}.
+\newblock {\it \bibinfo{journal}{Geophysical Research Letters}\/},  {\it
+  \bibinfo{volume}{42}\/}, \bibinfo{pages}{9990--9998}.
+%Type = Article
 \bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips \& Ruane}]{Snyder2018}
 \bibinfo{author}{Snyder, A.}, \bibinfo{author}{Calvin, K.~V.},
   \bibinfo{author}{Phillips, M.}, \& \bibinfo{author}{Ruane, A.~C.}
   (\bibinfo{year}{2018}).
 \newblock \bibinfo{title}{A crop yield change emulator for use in gcam and
   similar models: Persephone v1.0}.
-\newblock {\it \bibinfo{journal}{Geoscientific Model Development
-  Discussions}\/},  (pp. \bibinfo{pages}{1--42}).
+\newblock {\it \bibinfo{journal}{Accepted for publication in Geoscientific
+  Model Development}\/},  (pp. \bibinfo{pages}{1--42}).
 \newblock \bibinfo{note}{In open review}.
 %Type = Article
 \bibitem[{Storlie et~al.(2009)Storlie, Swiler, Helton \&
@@ -1125,19 +1174,6 @@
   impacts on global crop yields}.
 \newblock {\it \bibinfo{journal}{Geophysical Research Letters}\/},  {\it
   \bibinfo{volume}{35}\/}.
-%Type = Article
-\bibitem[{Valade et~al.(2014)Valade, Ciais, Vuichard, Viovy, Caubel, Huth,
-  Marin \& Martiné}]{Valade2013}
-\bibinfo{author}{Valade, A.}, \bibinfo{author}{Ciais, P.},
-  \bibinfo{author}{Vuichard, N.}, \bibinfo{author}{Viovy, N.},
-  \bibinfo{author}{Caubel, A.}, \bibinfo{author}{Huth, N.},
-  \bibinfo{author}{Marin, F.}, \& \bibinfo{author}{Martiné, J.~F.}
-  (\bibinfo{year}{2014}).
-\newblock \bibinfo{title}{Modeling sugarcane yield with a process-based model
-  from site to continental scale: {U}ncertainties arising from model structure
-  and parameter values}.
-\newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
-  \bibinfo{volume}{7}\/}, \bibinfo{pages}{1225--1245}.
 %Type = Article
 \bibitem[{Warszawski et~al.(2014)Warszawski, Frieler, Huber, Piontek, Serdeczny
   \& Schewe}]{Warszawski3228}
@@ -1193,6 +1229,28 @@
   changes in climate and co2}.
 \newblock {\it \bibinfo{journal}{Agricultural and Forest Meteorology}\/},  {\it
   \bibinfo{volume}{112}\/}, \bibinfo{pages}{217 -- 231}.
+%Type = Article
+\bibitem[{Wu et~al.(2016)Wu, Vuichard, Ciais, Viovy, de~Noblet-Ducoudr\'e,
+  Wang, Magliulo, Wattenbach, Vitale, Di~Tommasi, Moors, Jans, Elbers, Ceschia,
+  Tallec, Bernhofer, Gr\"unwald, Moureaux, Manise, Ligne, Cellier, Loubet,
+  Larmanou \& Ripoche}]{Wu2016}
+\bibinfo{author}{Wu, X.}, \bibinfo{author}{Vuichard, N.},
+  \bibinfo{author}{Ciais, P.}, \bibinfo{author}{Viovy, N.},
+  \bibinfo{author}{de~Noblet-Ducoudr\'e, N.}, \bibinfo{author}{Wang, X.},
+  \bibinfo{author}{Magliulo, V.}, \bibinfo{author}{Wattenbach, M.},
+  \bibinfo{author}{Vitale, L.}, \bibinfo{author}{Di~Tommasi, P.},
+  \bibinfo{author}{Moors, E.~J.}, \bibinfo{author}{Jans, W.},
+  \bibinfo{author}{Elbers, J.}, \bibinfo{author}{Ceschia, E.},
+  \bibinfo{author}{Tallec, T.}, \bibinfo{author}{Bernhofer, C.},
+  \bibinfo{author}{Gr\"unwald, T.}, \bibinfo{author}{Moureaux, C.},
+  \bibinfo{author}{Manise, T.}, \bibinfo{author}{Ligne, A.},
+  \bibinfo{author}{Cellier, P.}, \bibinfo{author}{Loubet, B.},
+  \bibinfo{author}{Larmanou, E.}, \& \bibinfo{author}{Ripoche, D.}
+  (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{{ORCHIDEE}-{CROP} (v0), a new process-based agro-land
+  surface model: model description and evaluation over europe}.
+\newblock {\it \bibinfo{journal}{Geoscientific Model Development}\/},  {\it
+  \bibinfo{volume}{9}\/}, \bibinfo{pages}{857--873}.
 %Type = Article
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,
