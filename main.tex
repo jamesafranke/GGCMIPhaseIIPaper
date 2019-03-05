@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %% Please use the following documentclass and journal abbreviations for discussion papers and final revised papers.
 %% 2-column papers and discussion papers
-\documentclass[esd, manuscript]{copernicus} %final manuscript
+\documentclass[esd, final]{copernicus} %final manuscript
 %% \usepackage commands included in the copernicus.cls:
 %\usepackage[german, english]{babel}
 %\usepackage{tabularx}
@@ -264,7 +264,9 @@ We do not focus on comparing different functional forms in this study, and inste
 \subsection{Feature selection procedure}
 Although the GGCMI Phase II sampled variable space is large, it is still sufficiently limited that use of the full polynomial expression described above can be problematic. We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. In this procedure higher-order and interaction terms are added successively to the regression model; we then follow the reduction of the aggregate mean squared error with increasing terms and eliminate those terms that do not contribute significant reductions. See section 1 in the supplemental documents for more details. We select terms by applying the feature selection process to three example models that provided the complete set of 672 rain-fed simulations (pDSSAT, EPIC-TAMU, and LPJmL); the resulting choice of terms is then applied for all emulators and all crops.
 
-Feature importance is remarkably consistent across all three models and across all crops (see Figure \ref{fig:featureselection} in the supplemental material). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C. Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and rain-fed crops. (The regressions for irrigated crops do not contain the W terms and the models that do not sample the nitrogen levels omit the N terms).
+Feature importance is remarkably consistent across all three models and across all crops (see Figure %\ref{fig:featureselection} in the 
+supplemental material). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C. Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and rain-fed crops. (The regressions for irrigated crops do not contain the W terms and the models that do not sample the nitrogen levels omit the N terms).
+
 
 \begin{align}
     \label{eqn:features_final}
@@ -334,20 +336,17 @@ Third, we show that the GGCMI Phase II input parameter sweep allows emulation of
 While the GGCMI Phase II database should offer the foundation for multiple future studies, several cautions need to be noted. Because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections unless in used in conjunction with historical data (or data products). Because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample changes in seasonal variability, and cannot address the additional crop yield impacts of potential {\color{red}changes in climate variability}. Although distributional changes in climate model projections are fairly uncertain at present {\color{red} citation needed}, follow-on experiments may wish to consider them. Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes not only in temperature and precipitation means but in their marginal distributions or temporal dependence (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}). The ranges for input perturbations for the historical climatology were selected to represent the range of potential future climatological changes. Using the emulator to extrapolate beyond these ranges (Table \ref{table:inputs}) may lead to misinterpretations. 
 
 %--- Probably still NEEDS EDIT --
-Finally, the GGCMI Phase II output dataset invites a broad range of potential future avenues of analysis. A major target area of research is studying the simulation models themselves including: a detailed examination of interaction terms between the major input drivers, a robust quantification of the sensitivity of different models to the input drivers, and comparisons with field-level experimental data. The parameter space tested in GGCMI Phase II may allow investigations into yield variability and response to extremes under changing management and CO$_2$ levels and allow the study of geographic shifts in optimal growing regions for different crops. The output dataset also contains additional runs and variables not analyzed or shown here. Simulations include several which allowed adaptation to climate changes by altering growing seasons, and additional out variables include above ground biomass, LAI, and root biomass (as many as 25 output variables for some models). Emulation studies that are possible include a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. The development of multi-model ensembles such as GGCMI Phase II provides a way to begin to better understand crop responses to a range of potential climate inputs, improve process based models, and explore the potential benefits of adaptive responses included shifting growing season, cultivar types and cultivar geographic extent.}
+Finally, the GGCMI Phase II output dataset invites a broad range of potential future avenues of analysis. A major target area of research is studying the simulation models themselves including: a detailed examination of interaction terms between the major input drivers, a robust quantification of the sensitivity of different models to the input drivers, and comparisons with field-level experimental data. The parameter space tested in GGCMI Phase II may allow investigations into yield variability and response to extremes under changing management and CO$_2$ levels and allow the study of geographic shifts in optimal growing regions for different crops. Emulation studies that are possible include a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. The development of multi-model ensembles such as GGCMI Phase II provides a way to begin to better understand crop responses to a range of potential climate inputs, improve process based models, and explore the potential benefits of adaptive responses included shifting growing season, cultivar types and cultivar geographic extent.}
 
+%The output dataset also contains additional runs and variables not analyzed or shown here. Simulations include several which allowed adaptation to climate changes by altering growing seasons, and additional out variables include above ground biomass, LAI, and root biomass (as many as 25 output variables for some models). 
 %Emulation also allow making state-of-the-art simulation results available to a wide research community as simple, computationally tractable tools that can be used by downstream modelers to understand the socioeconomic impacts of crop response to climate change.   
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\codedataavailability{The resulting parameter matrices for all crop model emulators are available on request {\color{red} give location?}, as are the raw simulation data and a Python application to emulate yields.}
+\codedataavailability{The resulting parameter matrices for all crop model emulators are available on request {\color{red} give location?}, as are the raw simulation data.}
 
 \appendix
 \section{}
-\subsection{Simulations -- Assessment}     %% Appendix A1, A2, etc.
+\subsection{Simulations -- Assessment}
 \label{A:1}
 
 \begin{figure*}[t]
@@ -398,9 +397,9 @@ This metric implies that emulation is generally satisfactory, with several disti
 This assessment procedure is relatively forgiving for several reason. First, each emulation is evaluated against the simulation actually used to train the emulator. Had we used a spline interpolation the error would necessarily be zero. Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. Where models differ more widely, the standard for emulators becomes less stringent. This effect is readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure \ref{fig:error810}) because models disagree on the magnitude of CO$_2$ fertilization. The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models, cross-validation procedures where the emulator is trained on some portion of data and tested on a held-out portion, and calculating standard error on emulator parameters.
 \noappendix %% use this to mark the end of the appendix section
 
-\Authorcontribution{J.E., C.M, and A.R. designed the research. C.M., J.J., J.B, P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z. performed the simulations. J.F., J.J., A.S, and M.L. performed the analysis and J.F. and E.M. prepared the manuscript.}
+\authorcontribution{J.E., C.M, A.R. and J.F. designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z. performed the simulations. J.F., J.J., A.S, and M.L. performed the analysis and J.F. and E.M. prepared the manuscript.}
 
-\competinginterests{The authors declare no competing interests.} %% this section is mandatory even if you declare that no competing interests are present
+\competinginterests{The authors declare no competing interests.}
 
 \begin{acknowledgements}
 We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF).  C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. P.F. and K.W. were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). A.S.\ was supported by the Office of Science of the U.S. Department of Energy as part of the Multi-sector Dynamics Research Program Area. S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). Computing resources were provided by the University of Chicago Research Computing Center (RCC).
@@ -412,24 +411,6 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 
 
 \end{document}
-
-
-
-%%
-%% URLs and DOIs can be entered in your BibTeX file as:
-%%
-%% URL = {http://www.xyz.org/~jones/idx_g.htm}
-%% DOI = {10.5194/xyz}
-
-
-%% REFERENCES
-%% The reference list is compiled as follows:
-%\begin{thebibliography}{}
-%\bibitem[AUTHOR(YEAR)]{LABEL1}
-%REFERENCE 1
-%\bibitem[AUTHOR(YEAR)]{LABEL2}
-%REFERENCE 2
-%\end{thebibliography}
 
 %% LITERATURE CITATIONS
 %%
@@ -443,14 +424,8 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %% \citeauthor{jones90}|          & Jones et al.
 %% \citeyear{jones90}|            & 1990
 
-%% FIGURES
-
-%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
-%% between bibliography and first table and/or figure as well as between each table and/or figure.
-
 
 %% ONE-COLUMN FIGURES
-
 %%f
 %\begin{figure}[t]
 %\includegraphics[width=8.3cm]{FILE NAME}
@@ -501,22 +476,6 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %\belowtable{} % Table Footnotes
 %\end{table*}
 %
-%%% LANDSCAPE TABLE
-%
-%%t
-%\begin{sidewaystable*}[t]
-%\caption{TEXT}
-%\begin{tabular}{column = lcr}
-%\tophline
-%
-%\middlehline
-%
-%\bottomhline
-%\end{tabular}
-%\belowtable{} % Table Footnotes
-%\end{sidewaystable*}
-%
-%
 %%% MATHEMATICAL EXPRESSIONS
 %
 %%% All papers typeset by Copernicus Publications follow the math typesetting regulations
@@ -549,41 +508,4 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %& 3 + 5 = 8\\
 %& 3 + 5 = 8
 %\end{align}
-%
-%
-%%% MATRICES
-%
-%\begin{matrix}
-%x & y & z\\
-%x & y & z\\
-%x & y & z\\
-%\end{matrix}
-%
-%
-%%% ALGORITHM
-%
-%\begin{algorithm}
-%\caption{...}
-%\label{a1}
-%\begin{algorithmic}
-%...
-%\end{algorithmic}
-%\end{algorithm}
-%
-%
-%%% CHEMICAL FORMULAS AND REACTIONS
-%
-%%% For formulas embedded in the text, please use \chem{}
-%
-%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
-%
-%\begin{reaction}
-%%% \rightarrow should be used for normal (one-way) chemical reactions
-%%% \rightleftharpoons should be used for equilibria
-%%% \leftrightarrow should be used for resonance structures
-%\end{reaction}
-%
-%
-%%% PHYSICAL UNITS
-%%%
-%%% Please use \unit{} and apply the exponential notation
+
