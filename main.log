@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1065,318 +1065,17 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 4.74998pt on input line 98.
 
-Package natbib Warning: Citation `Rosenzweig2014' on page 2 undefined on input 
-line 102.
-
-
-Package natbib Warning: Citation `Schauberger2017' on page 2 undefined on input
- line 102.
-
-
-Package natbib Warning: Citation `porter2014' on page 2 undefined on input line
- 102.
-
-
-Package natbib Warning: Citation `Heady57' on page 2 undefined on input line 10
-4.
-
-
-Package natbib Warning: Citation `Heady61' on page 2 undefined on input line 10
-4.
-
-
-Package natbib Warning: Citation `wit58' on page 2 undefined on input line 104.
-
-
-
-Package natbib Warning: Citation `Duncan67' on page 2 undefined on input line 1
-04.
-
-
-Package natbib Warning: Citation `Duncan72' on page 2 undefined on input line 1
-04.
-
-
-Package natbib Warning: Citation `Rosenzweig2014' on page 2 undefined on input 
-line 104.
-
-
-Package natbib Warning: Citation `Lobell2010' on page 2 undefined on input line
- 106.
-
-
-Package natbib Warning: Citation `Moore2017' on page 2 undefined on input line 
-106.
-
-
-Package natbib Warning: Citation `Roberts2017' on page 2 undefined on input lin
-e 106.
-
-
-Package natbib Warning: Citation `zhao2017' on page 2 undefined on input line 1
-06.
-
-
-Package natbib Warning: Citation `Elliott2015' on page 2 undefined on input lin
-e 106.
-
-
-Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
-put line 106.
-
-
-Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
-put line 108.
-
-
-Package natbib Warning: Citation `Glotter14' on page 2 undefined on input line 
-108.
-
-
-Package natbib Warning: Citation `Glotter15' on page 2 undefined on input line 
-108.
-
-
-Package natbib Warning: Citation `schewe2019' on page 2 undefined on input line
- 108.
-
-
-Package natbib Warning: Citation `JONES2017b' on page 2 undefined on input line
- 108.
-
-
-Package natbib Warning: Citation `WOLF2002217' on page 2 undefined on input lin
-e 108.
-
-
-Package natbib Warning: Citation `JAGTAP200273' on page 2 undefined on input li
-ne 108.
-
-
-Package natbib Warning: Citation `Iizumi2010' on page 2 undefined on input line
- 108.
-
-
-Package natbib Warning: Citation `ANGULO201332' on page 2 undefined on input li
-ne 108.
-
-
-Package natbib Warning: Citation `Asseng2013' on page 2 undefined on input line
- 108.
-
-
-Package natbib Warning: Citation `Asseng2015' on page 2 undefined on input line
- 108.
-
-
-Package natbib Warning: Citation `Challinor2014' on page 2 undefined on input l
-ine 108.
-
-
-Package natbib Warning: Citation `WHITE2011357' on page 2 undefined on input li
-ne 108.
-
-
-Package natbib Warning: Citation `pugh_climate_2016' on page 2 undefined on inp
-ut line 110.
-
-
-Package natbib Warning: Citation `Roberts2017' on page 2 undefined on input lin
-e 110.
-
-
-Package natbib Warning: Citation `OHAGAN2006' on page 2 undefined on input line
- 112.
-
-
-Package natbib Warning: Citation `OHAGAN2010' on page 2 undefined on input line
- 112.
-
-
-Package natbib Warning: Citation `Razavi2012' on page 2 undefined on input line
- 112.
-
-
-Package natbib Warning: Citation `STORLIE2009' on page 2 undefined on input lin
-e 112.
-
-
-Package natbib Warning: Citation `RATTO2012' on page 2 undefined on input line 
-112.
-
-
-Package natbib Warning: Citation `Castruccio14' on page 2 undefined on input li
-ne 112.
-
-
-Package natbib Warning: Citation `Holden2014' on page 2 undefined on input line
- 112.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [2
 
-]
-
-Package natbib Warning: Citation `Howden2005' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `raisen2006' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Lobell2010' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Ferrise2011' on page 3 undefined on input lin
-e 114.
-
-
-Package natbib Warning: Citation `Holzkamper2012' on page 3 undefined on input 
-line 114.
-
-
-Package natbib Warning: Citation `RUANE2013a' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Oyebamiji15' on page 3 undefined on input lin
-e 114.
-
-
-Package natbib Warning: Citation `BLANC2015' on page 3 undefined on input line 
-114.
-
-
-Package natbib Warning: Citation `BLANC2017' on page 3 undefined on input line 
-114.
-
-
-Package natbib Warning: Citation `Ostberg2018' on page 3 undefined on input lin
-e 114.
-
-
-Package natbib Warning: Citation `Mistry2017' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Warszawski3228' on page 3 undefined on input 
-line 114.
-
-
-Package natbib Warning: Citation `BLANC2015' on page 3 undefined on input line 
-114.
-
-
-Package natbib Warning: Citation `BLANC2017' on page 3 undefined on input line 
-114.
-
-
-Package natbib Warning: Citation `Ostberg2018' on page 3 undefined on input lin
-e 114.
-
-
-Package natbib Warning: Citation `Mistry2017' on page 3 undefined on input line
- 114.
-
-
-Package natbib Warning: Citation `Ruane2016' on page 3 undefined on input line 
-116.
-
-
-Package natbib Warning: Citation `ruane2014' on page 3 undefined on input line 
-118.
-
-
-Package natbib Warning: Citation `Markowski2015' on page 3 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `Pirttioja2015' on page 3 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `FRONZEK20182' on page 3 undefined on input li
-ne 118.
-
-
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `FRONZEK20182' on page 3 undefined on input li
-ne 118.
-
-
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 118.
-
-
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `calvin2019' on page 3 undefined on input line
- 118.
-
-
-Package natbib Warning: Citation `ROSENZWEIG2013' on page 3 undefined on input 
-line 120.
-
-
-Package natbib Warning: Citation `Rosenzweig2014' on page 3 undefined on input 
-line 120.
-
-
-Package natbib Warning: Citation `Taylor2012' on page 3 undefined on input line
- 120.
-
-
-Package natbib Warning: Citation `Eyring2016' on page 3 undefined on input line
- 120.
-
-
-Package natbib Warning: Citation `ruane2014' on page 3 undefined on input line 
-120.
-
-
-Package natbib Warning: Citation `mcdermid2015' on page 3 undefined on input li
-ne 120.
-
-
-Package natbib Warning: Citation `ruane2018' on page 3 undefined on input line 
-120.
-
-
-Package natbib Warning: Citation `rosenzweig2018' on page 3 undefined on input 
-line 120.
-
-<figures/croparea.png, id=21, 262.9022pt x 492.0784pt>
+] [3] <figures/croparea.png, id=255, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 <use figures/croparea.png>
 Package pdftex.def Info: figures/croparea.png used on input line 130.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 131.
-
-Package natbib Warning: Citation `Portmann2010' on page 3 undefined on input li
-ne 131.
-
 Runaway argument?
 {\@firstoffive }\fi .
 ! Paragraph ended before \Hy@setref@link was complete.
@@ -1412,32 +1111,11 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-Package natbib Warning: Citation `Elliott2015' on page 3 undefined on input lin
-e 149.
-
-
-Package natbib Warning: Citation `muller_global_2017' on page 3 undefined on in
-put line 149.
-
-
-Package natbib Warning: Citation `FAOSTAT' on page 3 undefined on input line 14
-9.
-
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 152.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-
-Package natbib Warning: Citation `Ruane2015' on page 3 undefined on input line 
-152.
-
-
-Package natbib Warning: Citation `Elliott2015' on page 3 undefined on input lin
-e 152.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []|\T1/ptm/b/n/9 Winter
  []
@@ -1452,140 +1130,24 @@ Overfull \hbox (2.83324pt too wide) in paragraph at lines 156--156
 []|\T1/ptm/b/n/9 Simulations
  []
 
-
-Package natbib Warning: Citation `KEATING2003267' on page 3 undefined on input 
-line 157.
-
-
-Package natbib Warning: Citation `HOLZWORTH2014327' on page 3 undefined on inpu
-t line 157.
-
-
-Package natbib Warning: Citation `Dury2011' on page 3 undefined on input line 1
-58.
-
-
-Package natbib Warning: Citation `Pirttioja2015' on page 3 undefined on input l
-ine 158.
-
-
-Package natbib Warning: Citation `BALKOVIC2014' on page 3 undefined on input li
-ne 159.
-
-
-Package natbib Warning: Citation `Izaurralde06' on page 3 undefined on input li
-ne 160.
-
-
-Package natbib Warning: Citation `Osborne2015' on page 3 undefined on input lin
-e 161.
-
-
-Package natbib Warning: Citation `Williams2015' on page 3 undefined on input li
-ne 161.
-
-
-Package natbib Warning: Citation `Williams2017' on page 3 undefined on input li
-ne 161.
-
-
-Package natbib Warning: Citation `LIU2007478' on page 3 undefined on input line
- 162.
-
-
-Package natbib Warning: Citation `FOLBERTH201221' on page 3 undefined on input 
-line 162.
-
-
-Package natbib Warning: Citation `Lindeskog2013' on page 3 undefined on input l
-ine 163.
-
-
-Package natbib Warning: Citation `Olin2015' on page 3 undefined on input line 1
-63.
-
-
-Package natbib Warning: Citation `von_Bloh_implementing_2018' on page 3 undefin
-ed on input line 164.
-
-
-Package natbib Warning: Citation `Wu2016' on page 3 undefined on input line 165
-.
-
-
-Package natbib Warning: Citation `Elliott2014b' on page 3 undefined on input li
-ne 166.
-
-
-Package natbib Warning: Citation `JONES2003235' on page 3 undefined on input li
-ne 166.
-
-
-Package natbib Warning: Citation `LIU2016164' on page 3 undefined on input line
- 167.
-
-
-Package natbib Warning: Citation `LIU2016' on page 3 undefined on input line 16
-7.
-
 LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `TS1/ptm/b/n' tried instead on input line 168.
-
-Package natbib Warning: Citation `MAUSER2009362' on page 3 undefined on input l
-ine 168.
-
-
-Package natbib Warning: Citation `Hank2015' on page 3 undefined on input line 1
-68.
-
-
-Package natbib Warning: Citation `MAUSER2015' on page 3 undefined on input line
- 168.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 []|\T1/ptm/m/n/9 3993
  []
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package natbib Warning: Citation `Sacks2010' on page 4 undefined on input line 
-189.
-
-
-Package natbib Warning: Citation `Portmann2008' on page 4 undefined on input li
-ne 189.
-
-
-Package natbib Warning: Citation `Portmann2010' on page 4 undefined on input li
-ne 189.
-
-
-Package natbib Warning: Citation `Rosenzweig2014' on page 4 undefined on input 
-line 189.
-
-
-Package natbib Warning: Citation `Elliott2015' on page 4 undefined on input lin
-e 189.
-
-
-Package natbib Warning: Citation `muller_global_2017' on page 4 undefined on in
-put line 189.
-
 [4 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/global_sim_CG.png, id=42, 4516.875pt x 1806.75pt>
+[5] <figures/global_sim_CG.png, id=371, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
 Package pdftex.def Info: figures/global_sim_CG.png used on input line 196.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
-
-Package natbib Warning: Citation `rubel2010' on page 5 undefined on input line 
-197.
-
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material for only currently-\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
@@ -1611,15 +1173,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[5]
-
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 209.
-
-<figures/baselinecomp_yield_3.png, id=49, 527.42645pt x 347.47417pt>
+<figures/baselinecomp_yield_3.png, id=378, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 21
@@ -1638,10 +1192,6 @@ My plan is to forget the whole thing and hope for the best.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `rubel2010' on page 6 undefined on input line 
-223.
 
 Runaway argument?
 {\@firstoffive }\fi ). 
@@ -1676,7 +1226,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<figures/tempyearvclim.png, id=53, 322.9666pt x 333.0844pt>
+<figures/tempyearvclim.png, id=384, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
 Package pdftex.def Info: figures/tempyearvclim.png used on input line 238.
@@ -1684,7 +1234,7 @@ Package pdftex.def Info: figures/tempyearvclim.png used on input line 238.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/hist_year.png, id=54, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=385, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
 Package pdftex.def Info: figures/hist_year.png used on input line 245.
@@ -1692,56 +1242,15 @@ Package pdftex.def Info: figures/hist_year.png used on input line 245.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package natbib Warning: Citation `Ruane2016' on page 6 undefined on input line 
-250.
-
-
-Package natbib Warning: Citation `Glotter14' on page 6 undefined on input line 
-250.
-
-[6 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
-]
-
-Package natbib Warning: Citation `Schlenker2009' on page 7 undefined on input l
-ine 252.
-
-
-Package natbib Warning: Citation `He2016' on page 7 undefined on input line 252
-.
-
-
-Package natbib Warning: Citation `Lobell2007' on page 7 undefined on input line
- 252.
-
-
-Package natbib Warning: Citation `Tebaldi2008' on page 7 undefined on input lin
-e 252.
-
-
-Package natbib Warning: Citation `AULAKH2005' on page 7 undefined on input line
- 252.
-
-
-Package natbib Warning: Citation `Mitsuru92' on page 7 undefined on input line 
-252.
-
-
-Package natbib Warning: Citation `Nakamura97' on page 7 undefined on input line
- 252.
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package natbib Warning: Citation `BLANC2015' on page 7 undefined on input line 
-254.
-
-
-Package natbib Warning: Citation `BLANC2017' on page 7 undefined on input line 
-254.
-
-
+[7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield_3
+.png>]
 Underfull \hbox (badness 2173) in paragraph at lines 254--255
 []\T1/ptm/m/n/10 We do not fo-cus on com-par-ing dif-fer-ent func-tional
  []
@@ -1749,65 +1258,29 @@ Underfull \hbox (badness 2173) in paragraph at lines 254--255
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield
-_3.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-LaTeX Warning: Reference `eqn:features_final' on page 8 undefined on input line
- 261.
-
-
+[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png>
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
 Overfull \hbox (0.51535pt too wide) in paragraph at lines 272--272
 [] 
  []
 
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png>
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
-
-Package natbib Warning: Citation `MacKay91' on page 9 undefined on input line 2
-74.
-
-
-Package natbib Warning: Citation `scikit-learn' on page 9 undefined on input li
-ne 274.
-
-<figures/regression_areas.png, id=87, 5420.25pt x 2258.4375pt>
+<figures/regression_areas.png, id=457, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
 Package pdftex.def Info: figures/regression_areas.png used on input line 284.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `eqn:features_final' on page 9 undefined on input line
- 285.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/regression_model.png, id=88, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=459, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
 Package pdftex.def Info: figures/regression_model.png used on input line 291.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `fig:regression' on page 9 undefined on input line 293
-.
-
-
-LaTeX Warning: Reference `fig:regression' on page 9 undefined on input line 293
-.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/global_em_maize.png, id=89, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=462, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
 Package pdftex.def Info: figures/global_em_maize.png used on input line 299.
@@ -1826,29 +1299,7 @@ My plan is to forget the whole thing and hope for the best.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:regression' on page 9 undefined on input line 306
-.
-
-
-LaTeX Warning: Reference `fig:regression' on page 9 undefined on input line 306
-.
-
-
-LaTeX Warning: Reference `fig:regression_iowa' on page 9 undefined on input lin
-e 306.
-
-
-LaTeX Warning: Reference `fig:regression' on page 9 undefined on input line 306
-.
-
-
-Package natbib Warning: Citation `Torsten77' on page 9 undefined on input line 
-308.
-
-
-LaTeX Warning: Reference `fig:globe_em' on page 9 undefined on input line 310.
-
+[9]
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} for other crops and dimensi\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
@@ -1861,1068 +1312,593 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-! Package array Error:  Illegal pream-token (o): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.315 \begin{tabular}{column = lcccccccccc}
-                                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-! Package array Error:  Illegal pream-token (u): `c' used.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.315 \begin{tabular}{column = lcccccccccc}
-                                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (=): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.315 \begin{tabular}{column = lcccccccccc}
-                                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
+png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
+.png>]
+Runaway argument?
+{\@firstoffive }\fi ). For example, uncertainty in the response to CO\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
-                   n
-l.317 ...}&{\textbf{Maize}}& {} &{\textbf{Soy}}& {
-                                                  } &{\textbf{Rice}}& {} &{\...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+                   \par 
+l.320 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-! Illegal unit of measure (pt inserted).
+Runaway argument?
+{\@firstoffive }\fi --\ref {fig:KGirr_currentcult}). The same behavio\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
-                   n
-l.317 ...}&{\textbf{Maize}}& {} &{\textbf{Soy}}& {
-                                                  } &{\textbf{Rice}}& {} &{\...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+                   \par 
+l.322 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
-Overfull \hbox (4.5pt too wide) in paragraph at lines 317--317
-[]\T1/ptm/m/n/9 n| 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
+ng>] <figures/Agformet_validation.png, id=510, 632.79613pt x 617.33034pt>
+File: figures/Agformet_validation.png Graphic file (type png)
+<use figures/Agformet_validation.png>
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 346
+.
+(pdftex.def)             Requested size: 455.24408pt x 444.11955pt.
+<figures/error_360.png, id=524, 2258.4375pt x 4968.5625pt>
+File: figures/error_360.png Graphic file (type png)
+<use figures/error_360.png>
+Package pdftex.def Info: figures/error_360.png used on input line 361.
+(pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
+Runaway argument?
+{\@firstoffive }\fi ). JULES did not simulate spring wheat and LPJ-GU\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.362 ...grading for hotter and wetter scenarios.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/em_err.png, id=527, 265.08636pt x 561.82698pt>
+File: figures/em_err.png Graphic file (type png)
+<use figures/em_err.png>
+Package pdftex.def Info: figures/em_err.png used on input line 368.
+(pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Runaway argument?
+{\@firstoffive }\fi ). 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.386 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[12]
+Runaway argument?
+{\@firstoffive }\fi --\ref {fig:errorpromet}). Normalized errors for \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.388 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Runaway argument?
+{\@firstoffive }\fi ) because models disagree on the magnitude of CO$\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.390 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
+on.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png> </
+Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
+Underfull \hbox (badness 7777) in paragraph at lines 419--420
+[]\T1/ptm/m/n/9 We thank Michael Stein and Kevin
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.317 ...} &{\textbf{Rice}}& {} &{\textbf{W_Wheat}
-                                                  }& {} &{\textbf{S_Wheat}}&...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.317 ...} &{\textbf{Rice}}& {} &{\textbf{W_Wheat}
-                                                  }& {} &{\textbf{S_Wheat}}&...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.317 ... &{\textbf{Rice}}& {} &{\textbf{W_Wheat}}
-                                                  & {} &{\textbf{S_Wheat}}& ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten $.
-<inserted text> }
-                 
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.317 ...&{\textbf{Rice}}& {} &{\textbf{W_Wheat}}&
-                                                   {} &{\textbf{S_Wheat}}& {...
-(That makes 100 errors; please try again.) 
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
+[]\T1/ptm/m/n/9 Angulo, C., Röt-ter, R., Lock, R., En-ders, A., Fronzek,
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 12--16
+\T1/ptm/m/n/9 S., and Ew-ert, F.: Im-pli-ca-tion of crop model cal-i-bra-
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 12--16
+\T1/ptm/m/n/9 tion strate-gies for as-sess-ing re-gional im-pacts of cli-mate
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 12--16
+\T1/ptm/m/n/9 change in Eu-rope, Agric. For. Me-te-o-rol., 170, 32 -- 46,
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 20--26
+\T1/ptm/m/n/9 der cli-mate change, Na-ture Cli-mate Change, 3, 827^^U832,
+ []
+
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 47--52
+[]\T1/ptm/m/n/9 Balkovi£, J., van der Velde, M., Skalský, R., Xiong, W.,
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 47--52
+\T1/ptm/m/n/9 Fol-berth, C., Khabarov, N., Smirnov, A., Mueller, N. D.,
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 47--52
+\T1/ptm/m/n/9 path-ways, Global and Plan-e-tary Change, 122, 107 -- 121,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+[]\T1/ptm/m/n/9 Blanc, E.: Sta-tis-ti-cal em-u-la-tors of maize, rice, soy-bean
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+\T1/ptm/m/n/9 and wheat yields from global grid-ded crop mod-els,
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 54--57
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 236, 145 -- 161,
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 59--62
+[]\T1/ptm/m/n/9 Blanc, E. and Sul-tan, B.: Em-u-lat-ing maize yields from
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 59--62
+\T1/ptm/m/n/9 cul-tural and For-est Me-te-o-rol-ogy, 214-215, 134 -- 147,
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 87--90
+[]\T1/ptm/m/n/9 Chang, W., Stein, M., Wang, J., Ko-ta-marthi, V., and Moyer,
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 87--90
+\T1/ptm/m/n/9 E.: Changes in Spatio-temporal Pre-cip-i-ta-tion Pat-terns in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+\T1/ptm/m/n/9 Chang-ing Cli-mate Con-di-tions, Jour-nal of Cli-mate, 29,
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 120--124
+\T1/ptm/m/n/9 jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 120--124
+\T1/ptm/m/n/9 par-al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tor
+s
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15]
+Underfull \hbox (badness 1205) in paragraph at lines 128--134
+\T1/ptm/m/n/9 T., Iza-u-r-ralde, R. C., Mueller, N. D., Ray, D. K., Rosen-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 184--188
+[]\T1/ptm/m/n/9 Glotter, M., El-liott, J., McIn-er-ney, D., Best, N., Fos-ter, 
+I.,
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 184--188
+\T1/ptm/m/n/9 and Moyer, E. J.: Eval-u-at-ing the util-ity of dy-nam-i-cal
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 184--188
+\T1/ptm/m/n/9 of the Na-tional Academy of Sci-ences, 111, 8776--8781,
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 203--207
+[]\T1/ptm/m/n/9 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Es-ti-mat-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 203--207
+\T1/ptm/m/n/9 ing changes in tem-per-a-ture dis-tri-bu-tions in a large en-sem-
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 275--279
+[]\T1/ptm/m/n/9 Izaurralde, R., Williams, J., Mcgill, W., Rosen-berg, N.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--279
+\T1/ptm/m/n/9 and Quiroga Jakas, M.: Sim-u-lat-ing soil C dy-nam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--279
+\T1/ptm/m/n/9 ics with EPIC: Model de-scrip-tion and test-ing against
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--279
+\T1/ptm/m/n/9 long-term data, Eco-log-i-cal Mod-elling, 192, 362--384,
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 307--314
+\T1/ptm/m/n/9 M., Holz-worth, D., Huth, N., Har-g-reaves, J., Meinke, H.,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 336--340
+[]\T1/ptm/m/n/9 Liu, W., Yang, H., Fol-berth, C., Wang, X., Luo, Q., and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--340
+\T1/ptm/m/n/9 Schulin, R.: Global in-ves-ti-ga-tion of im-pacts of PET
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--340
+\T1/ptm/m/n/9 meth-ods on sim-u-lat-ing crop-water re-la-tions for maize,
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 336--340
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 221, 164 -- 175,
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 349--352
+[]\T1/ptm/m/n/9 Lobell, D. B. and Burke, M. B.: On the use of sta-tis-ti-cal
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 349--352
+\T1/ptm/m/n/9 mod-els to pre-dict crop yield re-sponses to cli-mate change,
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 349--352
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 150, 1443 -- 1452,
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 365--371
+\T1/ptm/m/n/9 Ef-fects, p. 1100, https://doi.org/[]10.13140/RG.2.1.5173.8328[],
+
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 380--384
+[]\T1/ptm/m/n/9 Mauser, W., Klep-per, G., Zabel, F., Delzeit, R., Hank, T.,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 380--384
+\T1/ptm/m/n/9 Putzen-lech-ner, B., and Calzadilla, A.: Global biomass pro-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 380--384
+\T1/ptm/m/n/9 duc-tion po-ten-tials ex-ceed ex-pected fu-ture de-mand with-out
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 400--403
+[]\T1/ptm/m/n/9 Moore, F. C., Bal-dos, U., Her-tel, T., and Diaz, D.: New
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 400--403
+\T1/ptm/m/n/9 sci-ence of cli-mate change im-pacts on agri-cul-ture im-plies
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 400--403
+\T1/ptm/m/n/9 higher so-cial cost of car-bon, Na-ture Com-mu-ni-ca-tions, 8,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
+Underfull \hbox (badness 3514) in paragraph at lines 408--416
+[]\T1/ptm/m/n/9 Müller, C., El-liott, J., Chrys-san-tha-copou-los, J., Ar-neth,
+ A.,
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 444--448
+[]\T1/ptm/m/n/9 Osborne, T., Gor-nall, J., Hooker, J., Williams, K., Wilt-shire
+,
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 444--448
+\T1/ptm/m/n/9 A., Betts, R., and Wheeler, T.: JULES-crop: a parametri-
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 444--448
+\T1/ptm/m/n/9 sa-tion of crops in the Joint UK Land En-vi-ron-ment Sim-
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 444--448
+\T1/ptm/m/n/9 u-la-tor, Geo-sci-en-tific Model De-vel-op-ment, 8, 1139--1155,
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 451--454
+\T1/ptm/m/n/9 in crop yields and their vari-abil-ity at dif-fer-ent lev-els
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 451--454
+\T1/ptm/m/n/9 of global warm-ing, Earth Sys-tem Dy-nam-ics, 9, 479--496,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 550--556
+\T1/ptm/m/n/9 As-seng, S., Basso, B., Ew-ert, F., Wal-lach, D., Baig-or-ria,
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 550--556
+\T1/ptm/m/n/9 ies, Agri-cul-tural and For-est Me-te-o-rol-ogy, 170, 166 -- 182,
+
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 560--566
+\T1/ptm/m/n/9 C., Ar-neth, A., Boote, K. J., Fol-berth, C., Glot-ter, M.,
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 560--566
+\T1/ptm/m/n/9 Khabarov, N., Neu-mann, K., Pi-o-ntek, F., Pugh, T. A. M.,
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 560--566
+\T1/ptm/m/n/9 Schmid, E., Ste-hfest, E., Yang, H., and Jones, J. W.: As-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18]
+Underfull \hbox (badness 3525) in paragraph at lines 571--580
+[]\T1/ptm/m/n/9 Rosenzweig, C., Ru-ane, A. C., An-tle, J., El-liott, J., Ash-
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 571--580
+\T1/ptm/m/n/9 A: Math-e-mat-i-cal, Phys-i-cal and En-gi-neer-ing Sci-ences, 376
+,
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 601--606
+\T1/ptm/m/n/9 Jones, J. W., Romero, C. C., and Ce-cil, L. D.: Carbon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--613
+[]\T1/ptm/m/n/9 Ruane, A. C., Gold-berg, R., and Chrys-san-tha-copou-los,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--613
+\T1/ptm/m/n/9 J.: Cli-mate forc-ing datasets for agri-cul-tural mod-el-ing:
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 609--613
+\T1/ptm/m/n/9 Merged prod-ucts for gap-filling and his-tor-i-cal cli-mate se-
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 609--613
+\T1/ptm/m/n/9 ries es-ti-ma-tion, Agric. For-est Me-te-o-rol., 200, 233--248,
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 649--652
+[]\T1/ptm/m/n/9 Sacks, W. J., Deryng, D., Fo-ley, J. A., and Ra-mankutty,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--652
+\T1/ptm/m/n/9 N.: Crop plant-ing dates: an anal-y-sis of global pat-
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 649--652
+\T1/ptm/m/n/9 terns, Global Ecol-ogy and Bio-geog-ra-phy, 19, 607--620,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--707
+[]\T1/ptm/m/n/9 Taylor, K. E., Stouf-fer, R. J., and Meehl, G. A.: An
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 704--707
+\T1/ptm/m/n/9 Overview of CMIP5 and the Ex-per-i-ment De-sign, Bul-letin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--707
+\T1/ptm/m/n/9 of the Amer-i-can Me-te-o-ro-log-i-cal So-ci-ety, 93, 485--498,
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 709--712
+\T1/ptm/m/n/9 Re-search Let-ters, 35, https://doi.org/[]10.1029/2008GL033423[],
+
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 729--732
+[]\T1/ptm/m/n/9 White, J. W., Hoogen-boom, G., Kim-ball, B. A., and Wall,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
+Underfull \hbox (badness 2671) in paragraph at lines 748--751
+[]\T1/ptm/m/n/9 Wolf, J. and Oi-jen, M.: Mod-elling the de-pen-dence of Eu-
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 748--751
+\T1/ptm/m/n/9 ro-pean potato yields on changes in cli-mate and CO2,
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 748--751
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 112, 217 -- 231,
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 756--763
+\T1/ptm/m/n/9 lec, T., Bern-hofer, C., Grün-wald, T., Moureaux, C., Man-
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 756--763
+\T1/ptm/m/n/9 agro-land sur-face model: model de-scrip-tion and eval-u-a-tion
+ []
+
+) [20
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 427.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
+ )
+(\end occurred when \ifx on line 389 was incomplete)
+(\end occurred when \ifx on line 387 was incomplete)
+(\end occurred when \ifx on line 385 was incomplete)
+(\end occurred when \ifx on line 362 was incomplete)
+(\end occurred when \ifx on line 321 was incomplete)
+(\end occurred when \ifx on line 319 was incomplete)
+(\end occurred when \ifx on line 310 was incomplete)
+(\end occurred when \ifx on line 300 was incomplete)
+(\end occurred when \ifx on line 227 was incomplete)
+(\end occurred when \ifx on line 225 was incomplete)
+(\end occurred when \ifx on line 223 was incomplete)
+(\end occurred when \ifx on line 219 was incomplete)
+(\end occurred when \ifx on line 204 was incomplete)
+(\end occurred when \ifx on line 197 was incomplete)
+(\end occurred when \ifx on line 131 was incomplete) 
 Here is how much of TeX's memory you used:
- 10698 strings out of 492995
- 151814 string characters out of 6132704
- 321161 words of memory out of 5000000
- 14009 multiletter control sequences out of 15000+600000
+ 10904 strings out of 492995
+ 154827 string characters out of 6132704
+ 333812 words of memory out of 5000000
+ 14074 multiletter control sequences out of 15000+600000
  46783 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,40p,2109b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,2114b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (20
+ pages, 10178742 bytes).
+PDF statistics:
+ 795 PDF objects out of 1000 (max. 8388607)
+ 727 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
