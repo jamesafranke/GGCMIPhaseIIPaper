@@ -14,6 +14,8 @@
 %\usepackage{float}
 %\usepackage{subfig}
 %\usepackage{rotating}
+\usepackage{xr}
+\externaldocument{../PhaseIIPaper/supdocs/supdocs}
 
 \begin{document}
 \title{The GGCMI Phase II experiment: simulating and emulating global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}
@@ -365,14 +367,14 @@ Some models do show particular strength for particular crops. For example, the E
 \label{A:2}
 \begin{figure}[h]
 \centering
-    \includegraphics[width=6cm]{figures/error_360.png}
+    \includegraphics[width=7cm]{figures/error_360.png}
     \caption{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure \ref{fig:numbersims}). JULES did not simulate spring wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}
    \label{fig:error_360}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=6cm]{figures/em_err.png}
+    \includegraphics[width=7cm]{figures/em_err.png}
     \caption{Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rain-fed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure \ref{fig:error_360}.}
    \label{fig:error}
 \end{figure}

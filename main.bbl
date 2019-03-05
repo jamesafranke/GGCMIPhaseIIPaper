@@ -1,4 +1,4 @@
-\begin{thebibliography}{101}
+\begin{thebibliography}{100}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -21,7 +21,8 @@ Asseng, S., Ewert, F., Rosenzweig, C., Jones, J., Hatfield, J., Ruane, A.,
   J.~Boote, K., Thorburn, P., Rötter, R.~P., Cammarano, D., Brisson, N.,
   Basso, B., Martre, P., Aggarwal, P., Angulo, C., Bertuzzi, P., Biernath, C.,
   Challinor, A., Doltra, J., and Wolf, J.: Uncertainty in simulating wheat
-  yields under climate change, Nature Climate Change, 3, 827–832, 2013.
+  yields under climate change, Nature Climate Change, 3, 827–832,
+  \doi{10.1038/nclimate1916}, 2013.
 
 \bibitem[{Asseng et~al.(2015)Asseng, Ewert, Martre, Rötter, B.~Lobell,
   Cammarano, A.~Kimball, Ottman, W.~Wall, White, Reynolds, D.~Alderman, Prasad,
@@ -64,7 +65,7 @@ Calvin, K., Patel, P., Clarke, L., Asrar, G., Bond-Lamberty, B., Cui, R.~Y.,
   R., Iyer, G., Kyle, P., Kim, S., Link, R., McJeon, H., Smith, S.~J., Snyder,
   A., Waldhoff, S., and Wise, M.: GCAM v5.1: representing the linkages between
   energy, water, land, climate, and economic systems, Geoscientific Model
-  Development, 12, 677--698, 2019.
+  Development, 12, 677--698, \doi{10.5194/gmd-12-677-2019}, 2019.
 
 \bibitem[{Castruccio et~al.(2014)Castruccio, McInerney, Stein, Liu~Crouch,
   Jacob, and Moyer}]{Castruccio14}
@@ -215,7 +216,7 @@ Heady, E.~O. and Dillon, J.~L.: Agricultural production functions, Iowa State
 Holden, P., Edwards, N., PH, G., Fraedrich, K., Lunkeit, F., E, K., Labriet,
   M., Kanudia, A., and F, B.: PLASIM-ENTSem v1.0: A spatiotemporal emulator of
   future climate change for impacts assessment, Geoscientific Model
-  Development, 7, 433--451, 2014.
+  Development, 7, 433--451, \doi{10.5194/gmd-7-433-2014}, 2014.
 
 \bibitem[{Holzk{\"a}mper et~al.(2012)Holzk{\"a}mper, Calanca, and
   Fuhrer}]{Holzkamper2012}
@@ -609,7 +610,8 @@ Ruiz-Ramos, M., Ferrise, R., Rodríguez, A., Lorite, I., Bindi, M., Carter, T.,
   F., Semenov, M., Steinmetz, Z., Stratonovitch, P., Supit, I., Tao, F., Trnka,
   M., de~Wit, A., and Rötter, R.: Adaptation response surfaces for managing
   wheat under perturbed climate and CO2 in a Mediterranean environment,
-  Agricultural Systems, 159, 260 -- 274, 2018.
+  Agricultural Systems, 159, 260 -- 274, \doi{10.1016/j.agsy.2017.01.009},
+  2018.
 
 \bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley, and Ramankutty}]{Sacks2010}
 Sacks, W.~J., Deryng, D., Foley, J.~A., and Ramankutty, N.: Crop planting
@@ -642,19 +644,13 @@ Schewe, J., Gosling, S.~N., Reyer, C., Zhao, F., Ciais, P., Elliott, J.,
   Sakurai, G., Satoh, Y., Schmid, E., Stacke, T., Steenbeek, J., Steinkamp, J.,
   Tang, Q., Tian, H., Tittensor, D.~P., Volkholz, J., Wang, X., and Warszawski,
   L.: State-of-the-art global models underestimate impacts from climate
-  extremes, Nature Communications, 10, 1005--, 2019.
+  extremes, Nature Communications, 10, 1005--,
+  \doi{10.1038/s41467-019-08745-6}, 2019.
 
 \bibitem[{Schlenker and Roberts(2009)}]{Schlenker2009}
 Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   damages to {U}.{S}. crop yields under climate change, Proceedings of the
   National Academy of Sciences, 106, 15\,594--15\,598, 2009.
-
-\bibitem[{Sippel et~al.(2015)Sippel, Zscheischler, Heimann, Otto, Peters, and
-  Mahecha}]{Sippel2015}
-Sippel, S., Zscheischler, J., Heimann, M., Otto, F. E.~L., Peters, J., and
-  Mahecha, M.~D.: Quantifying changes in climate variability and extremes:
-  Pitfalls and their overcoming, Geophysical Research Letters, 42, 9990--9998,
-  2015.
 
 \bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
 Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
@@ -725,7 +721,7 @@ Wu, X., Vuichard, N., Ciais, P., Viovy, N., de~Noblet-Ducoudr\'e, N., Wang, X.,
   Moureaux, C., Manise, T., Ligne, A., Cellier, P., Loubet, B., Larmanou, E.,
   and Ripoche, D.: {ORCHIDEE}-{CROP} (v0), a new process-based agro-land
   surface model: model description and evaluation over Europe, Geoscientific
-  Model Development, 9, 857--873, 2016.
+  Model Development, 9, 857--873, \doi{10.5194/gmd-9-857-2016}, 2016.
 
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,

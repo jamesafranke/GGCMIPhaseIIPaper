@@ -164,6 +164,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/../PhaseIIPaper/supdocs/supdocs.aux
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux
 OUTPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux

@@ -3,50 +3,50 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: copernicus.bst
 Database file #1: bib.bib.bib
-Repeated entry---line 689 of file bib.bib.bib
+Repeated entry---line 697 of file bib.bib.bib
  : @article{Asseng2013
  :                    ,
 I'm skipping whatever remains of this entry
 Warning--missing publisher in Markowski2015
-You've used 101 entries,
+You've used 100 entries,
             2811 wiz_defined-function locations,
-            1640 strings with 40236 characters,
-and the built_in function-call counts, 137812 in all, are:
-= -- 13971
-> -- 8580
+            1639 strings with 40127 characters,
+and the built_in function-call counts, 136561 in all, are:
+= -- 13827
+> -- 8523
 < -- 31
-+ -- 3418
-- -- 2765
-* -- 9566
-:= -- 15037
-add.period$ -- 101
-call.type$ -- 101
-change.case$ -- 1124
-chr.to.int$ -- 100
-cite$ -- 304
-duplicate$ -- 11976
-empty$ -- 5868
-format.name$ -- 3078
-if$ -- 27053
++ -- 3391
+- -- 2747
+* -- 9503
+:= -- 14917
+add.period$ -- 100
+call.type$ -- 100
+change.case$ -- 1116
+chr.to.int$ -- 99
+cite$ -- 301
+duplicate$ -- 11853
+empty$ -- 5815
+format.name$ -- 3057
+if$ -- 26806
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1611
-newline$ -- 312
-num.names$ -- 406
-pop$ -- 6168
+missing$ -- 1598
+newline$ -- 309
+num.names$ -- 402
+pop$ -- 6065
 preamble$ -- 1
-purify$ -- 1123
+purify$ -- 1115
 quote$ -- 0
-skip$ -- 7193
+skip$ -- 7141
 stack$ -- 0
-substring$ -- 4770
-swap$ -- 10600
+substring$ -- 4713
+swap$ -- 10495
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 903
+type$ -- 894
 warning$ -- 1
-while$ -- 523
+while$ -- 518
 width$ -- 0
-write$ -- 1117
+write$ -- 1112
 (There was 1 error message)
