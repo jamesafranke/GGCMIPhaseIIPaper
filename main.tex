@@ -389,25 +389,33 @@ This metric implies that emulation is generally satisfactory, with several disti
 This assessment procedure is relatively forgiving for several reason. First, each emulation is evaluated against the simulation actually used to train the emulator. Had we used a spline interpolation the error would necessarily be zero. Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. Where models differ more widely, the standard for emulators becomes less stringent. This effect is readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure \ref{fig:error810}) because models disagree on the magnitude of CO$_2$ fertilization. The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models, cross-validation procedures where the emulator is trained on some portion of data and tested on a held-out portion, and calculating standard error on emulator parameters.
 
 \begin{table*}[t]
-\caption{Mean squared error aggregated by cultaivation area for each crop. BR and LM shows the values for the Baysian Ridge and OLS models repsectimly. 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The percentage use does not represent uniform number of samples in each location or in each model.} 
+\caption{Mean squared error aggregated by cultivation area for each crop. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The percentage does not represent uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
 \label{table:MSE}
-\begin{tabular}{l | ll | ll | ll | ll | ll} 
+{\footnotesize
+\begin{tabular}{l | ll|ll | ll|ll | ll|ll | ll|ll | ll|ll} 
 \hline
-\textbf{Model} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
-
-{}                   & BR  & LM     & BR  & LM    & BR  & LM    & BR  & LM    & BR  & LM  \\ \hline
-\textbf{CARAIB}      & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{EPIC-TAMU}   & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{JULES}       & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{GEPIC}       & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{LPJ-GUESS}   & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{LPJmL}       & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{pDSSAT}      & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{PEPIC}       & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\ \hline
-\textbf{PROMET}      & xxx & xxx    & xxx & xxx   & xxx & xxx   & xxx & xxx   & xxx & xxx \\
-\hline
+{} & \multicolumn{4}{c|}{\textbf{Maize}} & \multicolumn{4}{c|}{\textbf{Soy}}& \multicolumn{4}{c |}{\textbf{Rice}} & \multicolumn{4}{c |}{\textbf{W. Wheat}} & \multicolumn{4}{c}{\textbf{S. Wheat}} \\ \hline
+{} & \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} \\
+%%
+\textbf{Model} & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM \\ \hline
+\textbf{CARAIB}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{EPIC-TAMU} & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  \\ \hline
+\textbf{JULES}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{GEPIC}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{LPJ-GUESS} & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{LPJmL}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{pDSSAT}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{PEPIC}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
+\textbf{PROMET}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\
+\hline}
 \end{tabular}
 \end{table*}
+
+Th
 
 \noappendix %% use this to mark the end of the appendix section
 
