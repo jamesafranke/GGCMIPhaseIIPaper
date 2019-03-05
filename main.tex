@@ -391,31 +391,25 @@ This assessment procedure is relatively forgiving for several reason. First, eac
 \begin{table*}[t]
 \caption{Mean squared error aggregated by cultivation area for each crop. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The percentage does not represent uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
 \label{table:MSE}
-{\footnotesize
-\begin{tabular}{l | ll|ll | ll|ll | ll|ll | ll|ll | ll|ll} 
+\begin{tabular}{l | ll | ll | ll | ll| ll} 
 \hline
-{} & \multicolumn{4}{c|}{\textbf{Maize}} & \multicolumn{4}{c|}{\textbf{Soy}}& \multicolumn{4}{c |}{\textbf{Rice}} & \multicolumn{4}{c |}{\textbf{W. Wheat}} & \multicolumn{4}{c}{\textbf{S. Wheat}} \\ \hline
-{} & \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} \\
+{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
 %%
-\textbf{Model} & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM \\ \hline
-\textbf{CARAIB}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{EPIC-TAMU} & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  \\ \hline
-\textbf{JULES}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{GEPIC}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{LPJ-GUESS} & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{LPJmL}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{pDSSAT}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{PEPIC}     & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\ \hline
-\textbf{PROMET}    & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx  & xxx & xxx \\
-\hline}
+\textbf{Model} & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  \\ \hline
+\textbf{CARAIB}    & --- & ---  & --- & ---       & 0.093 & 0.098  & 0.032 & 0.031  & 0.047 & 0.048 \\ \hline
+\textbf{EPIC-TAMU} & 0.014 & 0.109  & ---  & ---  & 0.018 & 0.070  & 0.039 & 0.042  & 0.063 & {\color{red}8e19}  \\ \hline
+\textbf{JULES}     & --- & ---  & --- & ---       & 0.196 & 0.197  & NA    & NA     & 0.431 & 0.453 \\ \hline
+\textbf{GEPIC}     & 0.099 & 0.107  & --- & ---   & 0.090 & 0.105  & 0.071 & 0.080  & 0.051 & 0.056 \\ \hline
+\textbf{LPJ-GUESS} & --- & ---  & NA & NA         & NA    & NA     & 0.025 & 0.025  & NA    & NA    \\ \hline
+\textbf{LPJmL}     & --- & ---  & --- & ---       & 0.024 & 0.025  & 0.031 & 0.032  & 0.043 & 0.044 \\ \hline
+\textbf{pDSSAT}    & 0.068 & 0.070  & --- & ---   & 0.212 & 0.201  & 0.065 & 0.062  & 0.012 & 0.012 \\ \hline
+\textbf{PEPIC}     & --- & ---  & --- & ---       & 0.053 & {\color{red}1e22} & 0.078 & {\color{red}1e22}  & 0.023 & {\color{red}6e19}  \\ \hline
+\textbf{PROMET}    & --- & ---  & --- & ---       & 0.283 & 0.370  & 0.195 & 0.206  & 1.061 & 1.292 \\ \hline
 \end{tabular}
 \end{table*}
 
-Th
+
+The root mean squared error for 
 
 \noappendix %% use this to mark the end of the appendix section
 
@@ -530,4 +524,32 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %& 3 + 5 = 8\\
 %& 3 + 5 = 8
 %\end{align}
+
+
+\begin{table*}[t]
+\caption{Mean squared error aggregated by cultivation area for each crop. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The percentage does not represent uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
+\label{table:MSE}
+{\fontsize{8}{8}\selectfont
+\begin{tabular}{l | ll|ll | ll|ll | ll|ll | ll|ll | ll|ll} 
+\hline
+{} & \multicolumn{4}{c|}{\textbf{Maize}} & \multicolumn{4}{c|}{\textbf{Soy}}& \multicolumn{4}{c |}{\textbf{Rice}} & \multicolumn{4}{c |}{\textbf{W. Wheat}} & \multicolumn{4}{c}{\textbf{S. Wheat}} \\
+{} & \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
+     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c}{\textbf{IR}} \\
+%%
+\textbf{Model} & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM \\ \hline
+\textbf{CARAIB}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{EPIC-TAMU} & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & {\color{red}1e16} & ---  & --- & ---  \\ \hline
+\textbf{JULES}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{GEPIC}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & 9e-6 & 1e-5 \\ \hline
+\textbf{LPJ-GUESS} & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{LPJmL}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{pDSSAT}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{PEPIC}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
+\textbf{PROMET}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\
+\hline}
+\end{tabular}
+\end{table*}
 

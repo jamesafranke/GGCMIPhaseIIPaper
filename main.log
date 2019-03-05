@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,46 +1425,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png> </
 Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
-! Misplaced \crcr.
-\endarray ->\crcr 
-                  \egroup \egroup \@arrayright \gdef \@preamble {}
-l.415 \end{tabular}
-                   
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten $.
-\endarray ->\crcr \egroup \egroup 
-                                  \@arrayright \gdef \@preamble {}
-l.415 \end{tabular}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Overfull \hbox (73.56912pt too wide) in paragraph at lines 395--416
- []$[]$ 
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.416 \end{table*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 7777) in paragraph at lines 427--428
+Underfull \hbox (badness 7777) in paragraph at lines 421--422
 []\T1/ptm/m/n/9 We thank Michael Stein and Kevin
  []
 
@@ -1686,9 +1647,6 @@ Underfull \hbox (badness 2042) in paragraph at lines 380--384
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[17]
 Underfull \hbox (badness 3333) in paragraph at lines 400--403
 []\T1/ptm/m/n/9 Moore, F. C., Bal-dos, U., Her-tel, T., and Diaz, D.: New
  []
@@ -1704,6 +1662,9 @@ Underfull \hbox (badness 2698) in paragraph at lines 400--403
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
 Underfull \hbox (badness 3514) in paragraph at lines 408--416
 []\T1/ptm/m/n/9 Müller, C., El-liott, J., Chrys-san-tha-copou-los, J., Ar-neth,
  A.,
@@ -1809,9 +1770,6 @@ Underfull \hbox (badness 7064) in paragraph at lines 609--613
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 4391) in paragraph at lines 649--652
 []\T1/ptm/m/n/9 Sacks, W. J., Deryng, D., Fo-ley, J. A., and Ra-mankutty,
  []
@@ -1825,6 +1783,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 649--652
 Underfull \hbox (badness 7064) in paragraph at lines 649--652
 \T1/ptm/m/n/9 terns, Global Ecol-ogy and Bio-geog-ra-phy, 19, 607--620,
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 704--707
@@ -1883,12 +1844,12 @@ Underfull \hbox (badness 1603) in paragraph at lines 756--763
 ) [20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 435.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 429.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
  )
 (\end occurred when \ifx on line 389 was incomplete)
 (\end occurred when \ifx on line 387 was incomplete)
@@ -1908,7 +1869,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
 Here is how much of TeX's memory you used:
  10904 strings out of 492995
  154827 string characters out of 6132704
- 336873 words of memory out of 5000000
+ 333873 words of memory out of 5000000
  14074 multiletter control sequences out of 15000+600000
  46783 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1931,7 +1892,7 @@ m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (20
- pages, 10179371 bytes).
+ pages, 10179091 bytes).
 PDF statistics:
  795 PDF objects out of 1000 (max. 8388607)
  727 compressed objects within 8 object streams
