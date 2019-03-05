@@ -3,44 +3,49 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: copernicus.bst
 Database file #1: bib.bib.bib
-Repeated entry---line 697 of file bib.bib.bib
+Repeated entry---line 719 of file bib.bib.bib
  : @article{Asseng2013
  :                    ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 739 of file bib.bib.bib
+ : 
+ : %doi = {10.1038/nclimate2470}
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--missing publisher in Markowski2015
 You've used 100 entries,
             2811 wiz_defined-function locations,
-            1639 strings with 40127 characters,
-and the built_in function-call counts, 136561 in all, are:
-= -- 13827
+            1673 strings with 40957 characters,
+and the built_in function-call counts, 137029 in all, are:
+= -- 13862
 > -- 8523
 < -- 31
 + -- 3391
 - -- 2747
-* -- 9503
-:= -- 14917
+* -- 9608
+:= -- 14952
 add.period$ -- 100
 call.type$ -- 100
 change.case$ -- 1116
 chr.to.int$ -- 99
 cite$ -- 301
-duplicate$ -- 11853
-empty$ -- 5815
+duplicate$ -- 11939
+empty$ -- 5901
 format.name$ -- 3057
-if$ -- 26806
+if$ -- 26927
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 1598
 newline$ -- 309
 num.names$ -- 402
-pop$ -- 6065
+pop$ -- 5944
 preamble$ -- 1
 purify$ -- 1115
 quote$ -- 0
-skip$ -- 7141
+skip$ -- 7106
 stack$ -- 0
 substring$ -- 4713
-swap$ -- 10495
+swap$ -- 10616
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
@@ -48,5 +53,5 @@ type$ -- 894
 warning$ -- 1
 while$ -- 518
 width$ -- 0
-write$ -- 1112
-(There was 1 error message)
+write$ -- 1147
+(There were 2 error messages)

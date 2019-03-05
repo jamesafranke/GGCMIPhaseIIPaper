@@ -50,12 +50,12 @@ Balkovič, J., van~der Velde, M., Skalský, R., Xiong, W., Folberth, C.,
 \bibitem[{Blanc(2017)}]{BLANC2017}
 Blanc, E.: Statistical emulators of maize, rice, soybean and wheat yields from
   global gridded crop models, Agricultural and Forest Meteorology, 236, 145 --
-  161, 2017.
+  161, \doi{10.1016/j.agrformet.2016.12.022}, 2017.
 
 \bibitem[{Blanc and Sultan(2015)}]{BLANC2015}
 Blanc, E. and Sultan, B.: Emulating maize yields from global gridded crop
   models using statistical estimates, Agricultural and Forest Meteorology,
-  214-215, 134 -- 147, 2015.
+  214-215, 134 -- 147, \doi{10.1016/j.agrformet.2015.08.256}, 2015.
 
 \bibitem[{Calvin et~al.(2019)Calvin, Patel, Clarke, Asrar, Bond-Lamberty, Cui,
   Di~Vittorio, Dorheim, Edmonds, Hartin, Hejazi, Horowitz, Iyer, Kyle, Kim,
@@ -83,11 +83,12 @@ Challinor, A., Watson, J., Lobell, D., Howden, S., Smith, D., and Chhetri, N.:
 \bibitem[{Chang et~al.(2016)Chang, Stein, Wang, Kotamarthi, and Moyer}]{Won16}
 Chang, W., Stein, M., Wang, J., Kotamarthi, V., and Moyer, E.: Changes in
   Spatio-temporal Precipitation Patterns in Changing Climate Conditions,
-  Journal of Climate, 29, 2016.
+  Journal of Climate, 29, \doi{10.1175/JCLI-D-15-0844.1}, 2016.
 
 \bibitem[{Conti et~al.(2009)Conti, Gosling, Oakley, and O'Hagan}]{OHAGAN2010}
 Conti, S., Gosling, J.~P., Oakley, J.~E., and O'Hagan, A.: Gaussian process
-  emulation of dynamic computer codes, Biometrika, 96, 663--676, 2009.
+  emulation of dynamic computer codes, Biometrika, 96, 663--676,
+  \doi{10.1093/biomet/asp028}, 2009.
 
 \bibitem[{de~Wit(1957)}]{wit58}
 de~Wit, C.: Transpiration and crop yields, Verslagen van Landbouwkundige
@@ -100,7 +101,8 @@ Duncan, W.: S{IMCOT}: a simulation of cotton growth and yield, in: Proceedings
 
 \bibitem[{Duncan et~al.(1967)Duncan, Loomis, Williams, and Hanau}]{Duncan67}
 Duncan, W., Loomis, R., Williams, W., and Hanau, R.: A model for simulating
-  photosynthesis in plant communities, Hilgardia, pp. 181--205, 1967.
+  photosynthesis in plant communities, Hilgardia, pp. 181--205,
+  \doi{10.3733/hilg.v38n04p181}, 1967.
 
 \bibitem[{Dury et~al.(2011)Dury, Hambuckers, Warnant, Henrot, Favre, Ouberdous,
   and Fran{\c{c}}ois}]{Dury2011}
@@ -136,7 +138,8 @@ Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
 \bibitem[{Ferrise et~al.(2011)Ferrise, Moriondo, and Bindi}]{Ferrise2011}
 Ferrise, R., Moriondo, M., and Bindi, M.: Probabilistic assessments of climate
   change impacts on durum wheat in the Mediterranean region, Natural Hazards
-  and Earth System Sciences, 11, 1293--1302, 2011.
+  and Earth System Sciences, 11, 1293--1302, \doi{10.5194/nhess-11-1293-2011},
+  2011.
 
 \bibitem[{Folberth et~al.(2012)Folberth, Gaiser, Abbaspour, Schulin, and
   Yang}]{FOLBERTH201221}
@@ -192,7 +195,8 @@ Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
 \bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
   temperature distributions in a large ensemble of climate simulations using
-  quantile regression, Journal of Climate, 31, 8573--8588, 2018.
+  quantile regression, Journal of Climate, 31, 8573--8588,
+  \doi{10.1175/JCLI-D-17-0782.1}, 2018.
 
 \bibitem[{He et~al.(2016)He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He,
   and Li}]{He2016}
@@ -222,7 +226,7 @@ Holden, P., Edwards, N., PH, G., Fraedrich, K., Lunkeit, F., E, K., Labriet,
   Fuhrer}]{Holzkamper2012}
 Holzk{\"a}mper, A., Calanca, P., and Fuhrer, J.: Statistical crop models:
   {P}redicting the effects of temperature and precipitation changes, Climate
-  Research, 51, 11--21, 2012.
+  Research, 51, 11--21, \doi{10.3354/cr01057}, 2012.
 
 \bibitem[{Holzworth et~al.(2014)Holzworth, Huth, deVoil, Zurcher, Herrmann,
   McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall,
@@ -252,7 +256,7 @@ Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
 Iizumi, T., Nishimori, M., and Yokozawa, M.: Diagnostics of Climate Model
   Biases in Summer Temperature and Warm-Season Insolation for the Simulation of
   Regional Paddy Rice Yield in Japan, Journal of Applied Meteorology and
-  Climatology, 49, 574--591, 2010.
+  Climatology, 49, 574--591, \doi{10.1175/2009JAMC2225.1}, 2010.
 
 \bibitem[{Ingestad(1977)}]{Torsten77}
 Ingestad, T.: Nitrogen and {P}lant {G}rowth; {M}aximum {E}fficiency of
@@ -283,7 +287,7 @@ Jones, J.~W., Antle, J.~M., Basso, B., Boote, K.~J., Conant, R.~T., Foster, I.,
   Munoz-Carpena, R., Porter, C.~H., Rosenzweig, C., and Wheeler, T.~R.: Toward
   a new generation of agricultural system data, models, and knowledge products:
   State of agricultural systems science, Agricultural Systems, 155, 269 -- 288,
-  2017.
+  \doi{doi.org/10.1016/j.agsy.2016.09.021}, 2017.
 
 \bibitem[{Keating et~al.(2003)Keating, Carberry, Hammer, Probert, Robertson,
   Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes,
@@ -299,7 +303,8 @@ Keating, B., Carberry, P., Hammer, G., Probert, M., Robertson, M., Holzworth,
 \bibitem[{Leeds et~al.(2015)Leeds, Moyer, and Stein}]{Leeds2015}
 Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
   under changing temporal covariance structures, Advances in Statistical
-  Climatology, Meteorology and Oceanography, 1, 1--14, 2015.
+  Climatology, Meteorology and Oceanography, 1, 1--14,
+  \doi{10.5194/ascmo-1-1-2015}, 2015.
 
 \bibitem[{Lindeskog et~al.(2013)Lindeskog, Arneth, Bondeau, Waha, Seaquist,
   Olin, and Smith}]{Lindeskog2013}
@@ -330,7 +335,7 @@ Liu, W., Yang, H., Liu, J., Azevedo, L.~B., Wang, X., Xu, Z., Abbaspour, K.~C.,
 \bibitem[{Lobell and Burke(2010)}]{Lobell2010}
 Lobell, D.~B. and Burke, M.~B.: On the use of statistical models to predict
   crop yield responses to climate change, Agricultural and Forest Meteorology,
-  150, 1443 -- 1452, 2010.
+  150, 1443 -- 1452, \doi{10.1016/j.agrformet.2010.07.008}, 2010.
 
 \bibitem[{Lobell and Field(2007)}]{Lobell2007}
 Lobell, D.~B. and Field, C.~B.: Global scale climate-crop yield relationships
@@ -338,7 +343,8 @@ Lobell, D.~B. and Field, C.~B.: Global scale climate-crop yield relationships
   014\,002, 2007.
 
 \bibitem[{MacKay(1991)}]{MacKay91}
-MacKay, D.: Bayesian {I}nterpolation, Neural Computation, 4, 415--447, 1991.
+MacKay, D.: Bayesian {I}nterpolation, Neural Computation, 4, 415--447,
+  \doi{10.1162/neco.1992.4.3.415}, 1991.
 
 \bibitem[{Makowski et~al.(2015)Makowski, Asseng, Ewert, Bassu, Durand, Martre,
   Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote,
@@ -347,7 +353,8 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
   M., Aggarwal, P., Angulo, C., Baron, C., Basso, B., Bertuzzi, P., Biernath,
   C., Boogaard, H., Boote, K., Brisson, N., Cammarano, D., Challinor, A.,
   Conijn, J., and Wolf, J.: Statistical Analysis of Large Simulated Yield
-  Datasets for Studying Climate Effects, p. 1100, 2015.
+  Datasets for Studying Climate Effects, p. 1100,
+  \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
 \bibitem[{Mauser and Bach(2015)}]{MAUSER2009362}
 Mauser, W. and Bach, H.: {P}{R}{O}{M}{E}{T} - {L}arge scale distributed
@@ -378,7 +385,7 @@ Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
 \bibitem[{Moore et~al.(2017)Moore, Baldos, Hertel, and Diaz}]{Moore2017}
 Moore, F.~C., Baldos, U., Hertel, T., and Diaz, D.: New science of climate
   change impacts on agriculture implies higher social cost of carbon, Nature
-  Communications, 8, 2017.
+  Communications, 8, \doi{10.1038/s41467-017-01792-x}, 2017.
 
 \bibitem[{M\"{u}ller et~al.(2017)M\"{u}ller, Elliott, Chryssanthacopoulos,
   Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde,
@@ -390,7 +397,8 @@ M\"{u}ller, C., Elliott, J., Chryssanthacopoulos, J., Arneth, A., Balkovic, J.,
   Pugh, T. A.~M., Ray, D.~K., Reddy, A., Rosenzweig, C., Ruane, A.~C., Sakurai,
   G., Schmid, E., Skalsky, R., Song, C.~X., Wang, X., de~Wit, A., and Yang, H.:
   Global gridded crop model evaluation: benchmarking, skills, deficiencies and
-  implications, Geoscientific Model Development, 10, 1403--1422, 2017.
+  implications, Geoscientific Model Development, 10, 1403--1422,
+  \doi{10.5194/gmd-10-1403-2017}, 2017.
 
 \bibitem[{Nakamura et~al.(1997)Nakamura, Osaki, Koike, Hanba, Wada, and
   Tadano}]{Nakamura97}
@@ -400,7 +408,8 @@ Nakamura, T., Osaki, M., Koike, T., Hanba, Y.~T., Wada, E., and Tadano, T.:
 
 \bibitem[{O'Hagan(2006)}]{OHAGAN2006}
 O'Hagan, A.: Bayesian analysis of computer code outputs: A tutorial,
-  Reliability Engineering \& System Safety, 91, 1290 -- 1300, 2006.
+  Reliability Engineering \& System Safety, 91, 1290 -- 1300,
+  \doi{10.1016/j.ress.2005.11.025}, 2006.
 
 \bibitem[{Olin et~al.(2015)Olin, Schurgers, Lindeskog, W{\aa}rlind, Smith,
   Bodin, Holm\'er, and Arneth}]{Olin2015}
@@ -425,13 +434,13 @@ Osborne, T., Gornall, J., Hooker, J., Williams, K., Wiltshire, A., Betts, R.,
   Frieler}]{Ostberg2018}
 Ostberg, S., Schewe, J., Childers, K., and Frieler, K.: Changes in crop yields
   and their variability at different levels of global warming, Earth System
-  Dynamics, 9, 479--496, 2018.
+  Dynamics, 9, 479--496, \doi{10.5194/esd-9-479-2018}, 2018.
 
 \bibitem[{Oyebamiji et~al.(2015)Oyebamiji, Edwards, Holden, Garthwaite,
   Schaphoff, and Gerten}]{Oyebamiji15}
 Oyebamiji, O.~K., Edwards, N.~R., Holden, P.~B., Garthwaite, P.~H., Schaphoff,
   S., and Gerten, D.: Emulating global climate change impacts on crop yields,
-  Statistical Modelling, 15, 499--525, 2015.
+  Statistical Modelling, 15, 499--525, \doi{10.1177/1471082X14568248}, 2015.
 
 \bibitem[{Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel,
   Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
@@ -466,7 +475,7 @@ Pirttioja, N., Carter, T., Fronzek, S., Bindi, M., Hoffmann, H., Palosuo, T.,
   Stein}]{poppick2016}
 Poppick, A., McInerney, D.~J., Moyer, E.~J., and Stein, M.~L.: Temperatures in
   transient climates: Improved methods for simulations with evolving temporal
-  covariances, Ann. Appl. Stat., 10, 477--505, 2016.
+  covariances, Ann. Appl. Stat., 10, 477--505, \doi{10.1214/16-AOAS903}, 2016.
 
 \bibitem[{{Porter et al.\ (IPCC)}(2014)}]{porter2014}
 {Porter et al.\ (IPCC)}: Food security and food production systems. {C}limate
@@ -479,7 +488,7 @@ Poppick, A., McInerney, D.~J., Moyer, E.~J., and Stein, M.~L.: Temperatures in
 \bibitem[{Portmann et~al.(2008)Portmann, Siebert, Bauer, and
   Doell}]{Portmann2008}
 Portmann, F., Siebert, S., Bauer, C., and Doell, P.: Global dataset of monthly
-  growing areas of 26 irrigated crops, 2008.
+  growing areas of 26 irrigated crops, \doi{-}, 2008.
 
 \bibitem[{Portmann et~al.(2010)Portmann, Siebert, and Doell}]{Portmann2010}
 Portmann, F., Siebert, S., and Doell, P.: {MIRCA}2000 - {G}lobal {M}onthly
@@ -492,28 +501,31 @@ Portmann, F., Siebert, S., and Doell, P.: {MIRCA}2000 - {G}lobal {M}onthly
 Pugh, T., M{\"u}ller, C., Elliott, J., Deryng, D., Folberth, C., Olin, S.,
   Schmid, E., and Arneth, A.: Climate analogues suggest limited potential for
   intensification of production on current croplands under climate change,
-  Nature Communications, 7, 12\,608, 2016.
+  Nature Communications, 7, 12\,608, \doi{10.1038/ncomms12608}, 2016.
 
 \bibitem[{R\"ais\"anen and Ruokolainen(2006)}]{raisen2006}
 R\"ais\"anen, J. and Ruokolainen, L.: Probabilistic forecasts of near-term
   climate change based on a resampling ensemble technique, Tellus A: Dynamic
-  Meteorology and Oceanography, 58, 461--472, 2006.
+  Meteorology and Oceanography, 58, 461--472,
+  \doi{10.1111/j.1600-0870.2006.00189.x}, 2006.
 
 \bibitem[{Ratto et~al.(2012)Ratto, Castelletti, and Pagano}]{RATTO2012}
 Ratto, M., Castelletti, A., and Pagano, A.: Emulation techniques for the
   reduction and sensitivity analysis of complex environmental models,
-  Environmental Modelling \& Software, 34, 1 -- 4, 2012.
+  Environmental Modelling \& Software, 34, 1 -- 4,
+  \doi{10.1016/j.envsoft.2011.11.003}, 2012.
 
 \bibitem[{Razavi et~al.(2012)Razavi, Tolson, and Burn}]{Razavi2012}
 Razavi, S., Tolson, B.~A., and Burn, D.~H.: Review of surrogate modeling in
-  water resources, Water Resources Research, 48, 2012.
+  water resources, Water Resources Research, 48, \doi{10.1029/2011WR011527},
+  2012.
 
 \bibitem[{Roberts et~al.(2017)Roberts, Braun, R~Sinclair, B~Lobell, and
   Schlenker}]{Roberts2017}
 Roberts, M., Braun, N., R~Sinclair, T., B~Lobell, D., and Schlenker, W.:
   Comparing and combining process-based crop models and statistical models with
   some implications for climate change, Environmental Research Letters, 12,
-  2017.
+  \doi{10.1088/1748-9326/aa7f33.}, 2017.
 
 \bibitem[{Rosenzweig et~al.(2013)Rosenzweig, Jones, Hatfield, Ruane, Boote,
   Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach,
@@ -532,7 +544,7 @@ Rosenzweig, C., Elliott, J., Deryng, D., Ruane, A.~C., M{\"u}ller, C., Arneth,
   Piontek, F., Pugh, T. A.~M., Schmid, E., Stehfest, E., Yang, H., and Jones,
   J.~W.: Assessing agricultural risks of climate change in the 21st century in
   a global gridded crop model intercomparison, Proceedings of the National
-  Academy of Sciences, 111, 3268--3273, 2014.
+  Academy of Sciences, 111, 3268--3273, \doi{10.1073/pnas.1222463110}, 2014.
 
 \bibitem[{Rosenzweig et~al.(2018)Rosenzweig, Ruane, Antle, Elliott, Ashfaq,
   Chatta, Ewert, Folberth, Hathie, Havlik, Hoogenboom, Lotze-Campen, MacCarthy,
@@ -564,7 +576,7 @@ Ruane, A.~C., Cecil, L.~D., Horton, R.~M., Gordon, R., McCollum, R., Brown, D.,
   Killough, B., Goldberg, R., Greeley, A.~P., and Rosenzweig, C.: Climate
   change impact uncertainties for maize in Panama: Farm information, climate
   projections, and yield sensitivities, Agricultural and Forest Meteorology,
-  170, 132 -- 145, 2013.
+  170, 132 -- 145, \doi{10.1016/j.agrformet.2011.10.015}, 2013.
 
 \bibitem[{Ruane et~al.(2014)Ruane, McDermid, Rosenzweig, Baigorria, Jones,
   Romero, and Cecil}]{ruane2014}
@@ -572,7 +584,7 @@ Ruane, A.~C., McDermid, S., Rosenzweig, C., Baigorria, G.~A., Jones, J.~W.,
   Romero, C.~C., and Cecil, L.~D.: Carbon-temperature-water change analysis for
   peanut production under climate change: A prototype for the AgMIP Coordinated
   Climate-Crop Modeling Project (C3MP), Glob. Change Biology, 20, 394--407,
-  2014.
+  \doi{10.1111/gcb.12412}, 2014.
 
 \bibitem[{Ruane et~al.(2015)Ruane, Goldberg, and
   Chryssanthacopoulos}]{Ruane2015}
@@ -594,7 +606,8 @@ Ruane, A.~C., Antle, J., Elliott, J., Folberth, C., Hoogenboom, G.,
 \bibitem[{Rubel and Kottek(2010)}]{rubel2010}
 Rubel, F. and Kottek, M.: Observed and projected climate shifts 1901-2100
   depicted by world maps of the {K}{\"o}ppen-{G}eiger climate classification,
-  Meteorologische Zeitschrift, 19, 135--141, 2010.
+  Meteorologische Zeitschrift, 19, 135--141, \doi{10.1127/0941-2948/2010/0430},
+  2010.
 
 \bibitem[{Ruiz-Ramos et~al.(2018)Ruiz-Ramos, Ferrise, Rodríguez, Lorite,
   Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano,
@@ -616,7 +629,7 @@ Ruiz-Ramos, M., Ferrise, R., Rodríguez, A., Lorite, I., Bindi, M., Carter, T.,
 \bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley, and Ramankutty}]{Sacks2010}
 Sacks, W.~J., Deryng, D., Foley, J.~A., and Ramankutty, N.: Crop planting
   dates: an analysis of global patterns, Global Ecology and Biogeography, 19,
-  607--620, 2010.
+  607--620, \doi{10.1029/2009GB003765}, 2010.
 
 \bibitem[{Schauberger et~al.(2017)Schauberger, Archontoulis, Arneth, Balkovic,
   Ciais, Deryng, Elliott, Folberth, Khabarov, M{\"u}ller, A.~M.~Pugh, Rolinski,
@@ -650,20 +663,22 @@ Schewe, J., Gosling, S.~N., Reyer, C., Zhao, F., Ciais, P., Elliott, J.,
 \bibitem[{Schlenker and Roberts(2009)}]{Schlenker2009}
 Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   damages to {U}.{S}. crop yields under climate change, Proceedings of the
-  National Academy of Sciences, 106, 15\,594--15\,598, 2009.
+  National Academy of Sciences, 106, 15\,594--15\,598,
+  \doi{10.1073/pnas.0906865106}, 2009.
 
 \bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
 Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
-  emulator for use in GCAM and similar models: Persephone v1.0, Accepted for
-  publication in Geoscientific Model Development, pp. 1--42, in open review,
-  2018.
+  emulator for use in GCAM and similar models:Persephone v1.0, Accepted for
+  publication in Geoscientific Model Development, pp. 1--42,
+  \doi{10.5194/gmd-2018-195}, in open review, 2018.
 
 \bibitem[{Storlie et~al.(2009)Storlie, Swiler, Helton, and
   Sallaberry}]{STORLIE2009}
 Storlie, C.~B., Swiler, L.~P., Helton, J.~C., and Sallaberry, C.~J.:
   Implementation and evaluation of nonparametric regression procedures for
   sensitivity analysis of computationally demanding models, Reliability
-  Engineering \& System Safety, 94, 1735 -- 1763, 2009.
+  Engineering \& System Safety, 94, 1735 -- 1763,
+  \doi{10.1016/j.ress.2009.05.007}, 2009.
 
 \bibitem[{Taylor et~al.(2012)Taylor, Stouffer, and Meehl}]{Taylor2012}
 Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A.: An Overview of {C}{M}{I}{P}5
@@ -692,7 +707,7 @@ Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
   Wall}]{WHITE2011357}
 White, J.~W., Hoogenboom, G., Kimball, B.~A., and Wall, G.~W.: Methodologies
   for simulating impacts of climate change on crop production, Field Crops
-  Research, 124, 357 -- 368, 2011.
+  Research, 124, 357 -- 368, \doi{10.1016/j.fcr.2011.07.001}, 2011.
 
 \bibitem[{Williams et~al.(2017)Williams, Gornall, Harper, Wiltshire, Hemming,
   Quaife, Arkebauer, and Scoby}]{Williams2017}
