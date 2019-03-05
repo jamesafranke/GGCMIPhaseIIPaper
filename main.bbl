@@ -12,7 +12,7 @@
 Angulo, C., Rötter, R., Lock, R., Enders, A., Fronzek, S., and Ewert, F.:
   Implication of crop model calibration strategies for assessing regional
   impacts of climate change in Europe, Agric. For. Meteorol., 170, 32 -- 46,
-  2013.
+  \doi{10.1016/j.agrformet.2012.11.017}, 2013.
 
 \bibitem[{Asseng et~al.(2013)Asseng, Ewert, Rosenzweig, Jones, Hatfield, Ruane,
   J.~Boote, Thorburn, Rötter, Cammarano, Brisson, Basso, Martre, Aggarwal,
@@ -32,20 +32,23 @@ Asseng, S., Ewert, F., Martre, P., Rötter, R.~P., B.~Lobell, D., Cammarano,
   D., A.~Kimball, B., Ottman, M., W.~Wall, G., White, J., Reynolds, M.,
   D.~Alderman, P., Prasad, P. V.~V., Aggarwal, P., Anothai, J., Basso, B.,
   Biernath, C., Challinor, A., De~Sanctis, G., and Zhu, Y.: Rising temperatures
-  reduce global wheat production, Nature Climate Change, 5, 143--147, 2015.
+  reduce global wheat production, Nature Climate Change, 5, 143--147,
+  \doi{10.1038/nclimate2470}, 2015.
 
 \bibitem[{Aulakh and Malhi(2005)}]{AULAKH2005}
 Aulakh, M.~S. and Malhi, S.~S.: Interactions of {N}itrogen with {O}ther
   {N}utrients and {W}ater: {E}ffect on {C}rop {Y}ield and {Q}uality, {N}utrient
   {U}se {E}fficiency, {C}arbon {S}equestration, and {E}nvironmental
-  {P}ollution, Advances in Agronomy, 86, 341 -- 409, 2005.
+  {P}ollution, Advances in Agronomy, 86, 341 -- 409,
+  \doi{10.1016/S0065-2113(05)86007-9}, 2005.
 
 \bibitem[{Balkovič et~al.(2014)Balkovič, van~der Velde, Skalský, Xiong,
   Folberth, Khabarov, Smirnov, Mueller, and Obersteiner}]{BALKOVIC2014}
 Balkovič, J., van~der Velde, M., Skalský, R., Xiong, W., Folberth, C.,
   Khabarov, N., Smirnov, A., Mueller, N.~D., and Obersteiner, M.: Global wheat
   production potentials and management flexibility under the representative
-  concentration pathways, Global and Planetary Change, 122, 107 -- 121, 2014.
+  concentration pathways, Global and Planetary Change, 122, 107 -- 121,
+  \doi{10.1016/j.gloplacha.2014.08.010}, 2014.
 
 \bibitem[{Blanc(2017)}]{BLANC2017}
 Blanc, E.: Statistical emulators of maize, rice, soybean and wheat yields from
@@ -72,13 +75,13 @@ Calvin, K., Patel, P., Clarke, L., Asrar, G., Bond-Lamberty, B., Cui, R.~Y.,
 Castruccio, S., McInerney, D.~J., Stein, M.~L., Liu~Crouch, F., Jacob, R.~L.,
   and Moyer, E.~J.: Statistical {E}mulation of {C}limate {M}odel {P}rojections
   {B}ased on {P}recomputed {GCM} {R}uns, Journal of Climate, 27, 1829--1844,
-  2014.
+  \doi{10.1175/JCLI-D-13-00099.1}, 2014.
 
 \bibitem[{Challinor et~al.(2014)Challinor, Watson, Lobell, Howden, Smith, and
   Chhetri}]{Challinor2014}
 Challinor, A., Watson, J., Lobell, D., Howden, S., Smith, D., and Chhetri, N.:
   A meta-analysis of crop yield under climate change and adaptation, Nature
-  Climate Change, 4, 287 -- 291, 2014.
+  Climate Change, 4, 287 -- 291, \doi{10.1038/nclimate2153}, 2014.
 
 \bibitem[{Chang et~al.(2016)Chang, Stein, Wang, Kotamarthi, and Moyer}]{Won16}
 Chang, W., Stein, M., Wang, J., Kotamarthi, V., and Moyer, E.: Changes in
@@ -109,14 +112,15 @@ Duncan, W., Loomis, R., Williams, W., and Hanau, R.: A model for simulating
 Dury, M., Hambuckers, A., Warnant, P., Henrot, A., Favre, E., Ouberdous, M.,
   and Fran{\c{c}}ois, L.: {Responses of European forest ecosystems to 21st
   century climate: assessing changes in interannual variability and fire
-  intensity}, iForest - Biogeosciences and Forestry, pp. 82--99, 2011.
+  intensity}, iForest - Biogeosciences and Forestry, pp. 82--99,
+  \doi{10.3832/ifor0572-004}, 2011.
 
 \bibitem[{Elliott et~al.(2014)Elliott, Kelly, Chryssanthacopoulos, Glotter,
   Jhunjhnuwala, Best, Wilde, and Foster}]{Elliott2014b}
 Elliott, J., Kelly, D., Chryssanthacopoulos, J., Glotter, M., Jhunjhnuwala, K.,
   Best, N., Wilde, M., and Foster, I.: The parallel system for integrating
   impact models and sectors (p{S}{I}{M}{S}), Environmental Modelling and
-  Software, 62, 509--516, 2014.
+  Software, 62, 509--516, \doi{10.1016/j.envsoft.2014.04.008}, 2014.
 
 \bibitem[{Elliott et~al.(2015)Elliott, M\"uller, Deryng, Chryssanthacopoulos,
   Boote, B\"uchner, Foster, Glotter, Heinke, Iizumi, Izaurralde, Mueller, Ray,
@@ -126,14 +130,14 @@ Elliott, J., M\"uller, C., Deryng, D., Chryssanthacopoulos, J., Boote, K.~J.,
   R.~C., Mueller, N.~D., Ray, D.~K., Rosenzweig, C., Ruane, A.~C., and
   Sheffield, J.: The {G}lobal {G}ridded {C}rop {M}odel {I}ntercomparison: data
   and modeling protocols for {P}hase 1 (v1.0), Geoscientific Model Development,
-  8, 261--277, 2015.
+  8, 261--277, \doi{10.5194/gmd-2016-207}, 2015.
 
 \bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
   and Taylor}]{Eyring2016}
 Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
   R.~J., and Taylor, K.~E.: Overview of the Coupled Model Intercomparison
   Project Phase 6 (CMIP6) experimental design and organization, Geoscientific
-  Model Development, 9, 1937--1958, 2016.
+  Model Development, 9, 1937--1958, \doi{10.5194/gmdd-8-10539-2015}, 2016.
 
 \bibitem[{Ferrise et~al.(2011)Ferrise, Moriondo, and Bindi}]{Ferrise2011}
 Ferrise, R., Moriondo, M., and Bindi, M.: Probabilistic assessments of climate
@@ -146,7 +150,8 @@ Ferrise, R., Moriondo, M., and Bindi, M.: Probabilistic assessments of climate
 Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   Regionalization of a large-scale crop growth model for sub-{S}aharan
   {A}frica: {M}odel setup, evaluation, and estimation of maize yields,
-  Agriculture, Ecosystems \& Environment, 151, 21 -- 33, 2012.
+  Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
+  \doi{10.1016/j.agee.2012.01.026}, 2012.
 
 \bibitem[{{Food and Agriculture Organization of the United
   Nations}(2018)}]{FAOSTAT}
@@ -171,26 +176,28 @@ Fronzek, S., Pirttioja, N., Carter, T.~R., Bindi, M., Hoffmann, H., Palosuo,
   Slawinski, C., Stratonovitch, P., Supit, I., Waha, K., Wang, E., Wu, L.,
   Zhao, Z., and R{\"{o}}tter, R.~P.: Classifying multi-model wheat yield impact
   response surfaces showing sensitivity to temperature and precipitation
-  change, Agricultural Systems, 159, 209--224, 2018.
+  change, Agricultural Systems, 159, 209--224,
+  \doi{10.1016/j.agsy.2017.08.004}, 2018.
 
 \bibitem[{Glotter et~al.(2014)Glotter, Elliott, McInerney, Best, Foster, and
   Moyer}]{Glotter14}
 Glotter, M., Elliott, J., McInerney, D., Best, N., Foster, I., and Moyer,
   E.~J.: Evaluating the utility of dynamical downscaling in agricultural
   impacts projections, Proceedings of the National Academy of Sciences, 111,
-  8776--8781, 2014.
+  8776--8781, \doi{10.1073/pnas.1314787111}, 2014.
 
 \bibitem[{Glotter et~al.(2015)Glotter, Moyer, Ruane, and Elliott}]{Glotter15}
 Glotter, M., Moyer, E., Ruane, A., and Elliott, J.: Evaluating the
   {S}ensitivity of {A}gricultural {M}odel {P}erformance to {D}ifferent
   {C}limate {I}nputs, Journal of Applied Meteorology and Climatology, 55,
-  151113145618\,001, 2015.
+  151113145618\,001, \doi{10.1175/JAMC-D-15-0120.1}, 2015.
 
 \bibitem[{Hank et~al.(2015)Hank, Bach, and Mauser}]{Hank2015}
 Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
   {H}ydro-{A}groecological {M}odel for {F}ield-{S}cale {S}imulation of
   {H}eterogeneous {C}rop {G}rowth and {Y}ield: {A}pplication for {W}heat in
-  {C}entral {E}urope, Remote Sensing, 7, 3934--3965, 2015.
+  {C}entral {E}urope, Remote Sensing, 7, 3934--3965, \doi{10.3390/rs70403934},
+  2015.
 
 \bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
@@ -205,7 +212,7 @@ He, W., Yang, J., Zhou, W., Drury, C., Yang, X., D.~Reynolds, W., Wang, H., He,
   and nitrogen leaching to precipitation, management practices and soil
   hydraulic properties in semi-arid and humid regions of {C}anada using the
   {D}{S}{S}{A}{T} model, Nutrient Cycling in Agroecosystems, 106, 201--215,
-  2016.
+  \doi{10.1007/s10705-016-9800-3}, 2016.
 
 \bibitem[{Heady(1957)}]{Heady57}
 Heady, E.~O.: An {E}conometric {I}nvestigation of the {T}echnology of
@@ -245,12 +252,13 @@ Holzworth, D.~P., Huth, N.~I., deVoil, P.~G., Zurcher, E.~J., Herrmann, N.~I.,
   McClelland, T., Carberry, P.~S., Hargreaves, J.~N., MacLeod, N., McDonald,
   C., Harsdorf, J., Wedgwood, S., and Keating, B.~A.: {A}{P}{S}{I}{M} –
   {E}volution towards a new generation of agricultural systems simulation,
-  Environmental Modelling and Software, 62, 327 -- 350, 2014.
+  Environmental Modelling and Software, 62, 327 -- 350,
+  \doi{doi.org/10.1016/j.envsoft.2014.07.009}, 2014.
 
 \bibitem[{Howden and Crimp(2005)}]{Howden2005}
 Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
   Australia's wheat industry, Modelling and Simulation Society of Australia and
-  New Zealand, pp. 505--511, 2005.
+  New Zealand, pp. 505--511, \doi{-}, 2005.
 
 \bibitem[{Iizumi et~al.(2010)Iizumi, Nishimori, and Yokozawa}]{Iizumi2010}
 Iizumi, T., Nishimori, M., and Yokozawa, M.: Diagnostics of Climate Model
@@ -266,18 +274,21 @@ Ingestad, T.: Nitrogen and {P}lant {G}rowth; {M}aximum {E}fficiency of
   Quiroga~Jakas}]{Izaurralde06}
 Izaurralde, R., Williams, J., Mcgill, W., Rosenberg, N., and Quiroga~Jakas, M.:
   Simulating soil {C} dynamics with {E}{P}{I}{C}: Model description and testing
-  against long-term data, Ecological Modelling, 192, 362--384, 2006.
+  against long-term data, Ecological Modelling, 192, 362--384,
+  \doi{10.1016/j.ecolmodel.2005.07.010}, 2006.
 
 \bibitem[{Jagtap and Jones(2002)}]{JAGTAP200273}
 Jagtap, S.~S. and Jones, J.~W.: Adaptation and evaluation of the
   {CROPGRO}-soybean model to predict regional yield and production,
-  Agriculture, Ecosystems \& Environment, 93, 73 -- 85, 2002.
+  Agriculture, Ecosystems \& Environment, 93, 73 -- 85,
+  \doi{10.1016/S0167-8809(01)00358-9}, 2002.
 
 \bibitem[{Jones et~al.(2003)Jones, Hoogenboom, Porter, Boote, Batchelor, Hunt,
   Wilkens, Singh, Gijsman, and Ritchie}]{JONES2003235}
 Jones, J., Hoogenboom, G., Porter, C., Boote, K., Batchelor, W., Hunt, L.,
   Wilkens, P., Singh, U., Gijsman, A., and Ritchie, J.: The {DSSAT} cropping
-  system model, European Journal of Agronomy, 18, 235 -- 265, 2003.
+  system model, European Journal of Agronomy, 18, 235 -- 265,
+  \doi{10.1016/S1161-0301(02)00107-7}, 2003.
 
 \bibitem[{Jones et~al.(2017)Jones, Antle, Basso, Boote, Conant, Foster,
   Godfray, Herrero, Howitt, Janssen, Keating, Munoz-Carpena, Porter,
@@ -298,7 +309,8 @@ Keating, B., Carberry, P., Hammer, G., Probert, M., Robertson, M., Holzworth,
   K., Snow, V., Dimes, J., Silburn, M., Wang, E., Brown, S., Bristow, K.,
   Asseng, S., Chapman, S., McCown, R., Freebairn, D., and Smith, C.: An
   overview of {A}{P}{S}{I}{M}, a model designed for farming systems simulation,
-  European Journal of Agronomy, 18, 267 -- 288, 2003.
+  European Journal of Agronomy, 18, 267 -- 288,
+  \doi{10.1016/S1161-0301(02)00108-9}, 2003.
 
 \bibitem[{Leeds et~al.(2015)Leeds, Moyer, and Stein}]{Leeds2015}
 Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
@@ -311,26 +323,27 @@ Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
 Lindeskog, M., Arneth, A., Bondeau, A., Waha, K., Seaquist, J., Olin, S., and
   Smith, B.: Implications of accounting for land use in simulations of
   ecosystem carbon cycling in {A}frica, Earth System Dynamics, 4, 385--407,
-  2013.
+  \doi{10.5194/esd-4-385-2013}, 2013.
 
 \bibitem[{Liu et~al.(2007)Liu, Williams, Zehnder, and Yang}]{LIU2007478}
 Liu, J., Williams, J.~R., Zehnder, A.~J., and Yang, H.: {G}{E}{P}{I}{C} -
   modelling wheat yield and crop water productivity with high resolution on a
-  global scale, Agricultural Systems, 94, 478 -- 493, 2007.
+  global scale, Agricultural Systems, 94, 478 -- 493,
+  \doi{10.1016/j.agsy.2006.11.019}, 2007.
 
 \bibitem[{Liu et~al.(2016{\natexlab{a}})Liu, Yang, Folberth, Wang, Luo, and
   Schulin}]{LIU2016164}
 Liu, W., Yang, H., Folberth, C., Wang, X., Luo, Q., and Schulin, R.: Global
   investigation of impacts of {PET} methods on simulating crop-water relations
   for maize, Agricultural and Forest Meteorology, 221, 164 -- 175,
-  2016{\natexlab{a}}.
+  \doi{10.1016/j.agrformet.2016.02.017}, 2016{\natexlab{a}}.
 
 \bibitem[{Liu et~al.(2016{\natexlab{b}})Liu, Yang, Liu, Azevedo, Wang, Xu,
   Abbaspour, and Schulin}]{LIU2016}
 Liu, W., Yang, H., Liu, J., Azevedo, L.~B., Wang, X., Xu, Z., Abbaspour, K.~C.,
   and Schulin, R.: Global assessment of nitrogen losses and trade-offs with
   yields from major crop cultivations, Science of The Total Environment, 572,
-  526 -- 537, 2016{\natexlab{b}}.
+  526 -- 537, \doi{10.1016/j.scitotenv.2016.08.093}, 2016{\natexlab{b}}.
 
 \bibitem[{Lobell and Burke(2010)}]{Lobell2010}
 Lobell, D.~B. and Burke, M.~B.: On the use of statistical models to predict
@@ -340,7 +353,7 @@ Lobell, D.~B. and Burke, M.~B.: On the use of statistical models to predict
 \bibitem[{Lobell and Field(2007)}]{Lobell2007}
 Lobell, D.~B. and Field, C.~B.: Global scale climate-crop yield relationships
   and the impacts of recent warming, Environmental Research Letters, 2,
-  014\,002, 2007.
+  014\,002, \doi{10.1088/1748-9326/2/1/014002}, 2007.
 
 \bibitem[{MacKay(1991)}]{MacKay91}
 MacKay, D.: Bayesian {I}nterpolation, Neural Computation, 4, 415--447,
@@ -359,14 +372,15 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
 \bibitem[{Mauser and Bach(2015)}]{MAUSER2009362}
 Mauser, W. and Bach, H.: {P}{R}{O}{M}{E}{T} - {L}arge scale distributed
   hydrological modelling to study the impact of climate change on the water
-  flows of mountain watersheds, Journal of Hydrology, 376, 362 -- 377, 2015.
+  flows of mountain watersheds, Journal of Hydrology, 376, 362 -- 377,
+  \doi{10.1016/j.jhydrol.2009.07.046}, 2015.
 
 \bibitem[{Mauser et~al.(2009)Mauser, Klepper, Zabel, Delzeit, Hank,
   Putzenlechner, and Calzadilla}]{MAUSER2015}
 Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
   and Calzadilla, A.: Global biomass production potentials exceed expected
   future demand without the need for cropland expansion, Nature Communications,
-  6, 2009.
+  6, \doi{10.1038/ncomms9946}, 2009.
 
 \bibitem[{McDermid et~al.(2015)McDermid, Dileepkumar, Murthy, Nedumaran, Singh,
   Srinivasa, Gangwar, Subash, Ahmad, Zubair, and Nissanka}]{mcdermid2015}
@@ -380,7 +394,7 @@ McDermid, S., Dileepkumar, G., Murthy, K., Nedumaran, S., Singh, P., Srinivasa,
 Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
   responsiveness of crop yields: {U}{S} evidence and implications for the
   agricultural impacts of climate change, Environmental Research Letters, 12,
-  2017.
+  \doi{10.1088/1748-9326/aa788c}, 2017.
 
 \bibitem[{Moore et~al.(2017)Moore, Baldos, Hertel, and Diaz}]{Moore2017}
 Moore, F.~C., Baldos, U., Hertel, T., and Diaz, D.: New science of climate
@@ -404,7 +418,8 @@ M\"{u}ller, C., Elliott, J., Chryssanthacopoulos, J., Arneth, A., Balkovic, J.,
   Tadano}]{Nakamura97}
 Nakamura, T., Osaki, M., Koike, T., Hanba, Y.~T., Wada, E., and Tadano, T.:
   Effect of {C}{O}2 enrichment on carbon and nitrogen interaction in wheat and
-  soybean, Soil Science and Plant Nutrition, 43, 789--798, 1997.
+  soybean, Soil Science and Plant Nutrition, 43, 789--798,
+  \doi{10.1080/00380768.1997.10414645}, 1997.
 
 \bibitem[{O'Hagan(2006)}]{OHAGAN2006}
 O'Hagan, A.: Bayesian analysis of computer code outputs: A tutorial,
@@ -421,14 +436,15 @@ Olin, S., Schurgers, G., Lindeskog, M., W{\aa}rlind, D., Smith, B., Bodin, P.,
 
 \bibitem[{Osaki et~al.(1992)Osaki, Shinano, and Tadano}]{Mitsuru92}
 Osaki, M., Shinano, T., and Tadano, T.: Carbon-nitrogen interaction in field
-  crop production, Soil Science and Plant Nutrition, 38, 553--564, 1992.
+  crop production, Soil Science and Plant Nutrition, 38, 553--564,
+  \doi{10.1007/BF00025019}, 1992.
 
 \bibitem[{Osborne et~al.(2015)Osborne, Gornall, Hooker, Williams, Wiltshire,
   Betts, and Wheeler}]{Osborne2015}
 Osborne, T., Gornall, J., Hooker, J., Williams, K., Wiltshire, A., Betts, R.,
   and Wheeler, T.: {J}{U}{L}{E}{S}-crop: a parametrisation of crops in the
   {J}oint {UK} {L}and {E}nvironment {S}imulator, Geoscientific Model
-  Development, 8, 1139--1155, 2015.
+  Development, 8, 1139--1155, \doi{10.5194/gmd-8-1139-2015}, 2015.
 
 \bibitem[{Ostberg et~al.(2018)Ostberg, Schewe, Childers, and
   Frieler}]{Ostberg2018}
@@ -469,7 +485,7 @@ Pirttioja, N., Carter, T., Fronzek, S., Bindi, M., Hoffmann, H., Palosuo, T.,
   Waha, K., Wang, E., Wu, L., Zhao, Z., and R\"{o}tter, R.: Temperature and
   precipitation effects on wheat yield across a {E}uropean transect: a crop
   model ensemble analysis using impact response surfaces, Climate Research, 65,
-  87--105, 2015.
+  87--105, \doi{10.3354/cr01322}, 2015.
 
 \bibitem[{Poppick et~al.(2016)Poppick, McInerney, Moyer, and
   Stein}]{poppick2016}
@@ -494,7 +510,8 @@ Portmann, F., Siebert, S., Bauer, C., and Doell, P.: Global dataset of monthly
 Portmann, F., Siebert, S., and Doell, P.: {MIRCA}2000 - {G}lobal {M}onthly
   {I}rrigated and {R}ainfed Crop {A}reas around the {Y}ear 2000: {A} {N}ew
   {H}igh-{R}esolution {D}ata {S}et for {A}gricultural and {H}ydrological
-  {M}odeling, Global Biogeochemical Cycles, 24, GB1011, 2010.
+  {M}odeling, Global Biogeochemical Cycles, 24, GB1011,
+  \doi{10.1029/2008GB003435}, 2010.
 
 \bibitem[{Pugh et~al.(2016)Pugh, M{\"u}ller, Elliott, Deryng, Folberth, Olin,
   Schmid, and Arneth}]{pugh_climate_2016}
@@ -534,7 +551,8 @@ Rosenzweig, C., Jones, J., Hatfield, J., Ruane, A., Boote, K., Thorburn, P.,
   Antle, J., Nelson, G., Porter, C., Janssen, S., Asseng, S., Basso, B., Ewert,
   F., Wallach, D., Baigorria, G., and Winter, J.: The {A}gricultural {M}odel
   {I}ntercomparison and {I}mprovement {P}roject ({A}g{MIP}): {P}rotocols and
-  pilot studies, Agricultural and Forest Meteorology, 170, 166 -- 182, 2013.
+  pilot studies, Agricultural and Forest Meteorology, 170, 166 -- 182,
+  \doi{10.1016/j.agrformet.2012.09.011}, 2013.
 
 \bibitem[{Rosenzweig et~al.(2014)Rosenzweig, Elliott, Deryng, Ruane,
   M{\"u}ller, Arneth, Boote, Folberth, Glotter, Khabarov, Neumann, Piontek,
@@ -558,7 +576,7 @@ Rosenzweig, C., Ruane, A.~C., Antle, J., Elliott, J., Ashfaq, M., Chatta,
   Wiebe, K.: Coordinating {A}g{M}{I}{P} data and models across global and
   regional scales for 1.5${^\circ}${C} and 2.0${^\circ}${C} assessments,
   Philosophical Transactions of the Royal Society of London A: Mathematical,
-  Physical and Engineering Sciences, 376, 2018.
+  Physical and Engineering Sciences, 376, \doi{10.1098/rsta.2016.0455}, 2018.
 
 \bibitem[{Ruane et~al.(2016)Ruane, I.~Hudson, Asseng, Camarrano, Ewert, Martre,
   J.~Boote, Thorburn, Aggarwal, Angulo, Basso, Bertuzzi, Biernath, Brisson,
@@ -568,7 +586,7 @@ Ruane, A., I.~Hudson, N., Asseng, S., Camarrano, D., Ewert, F., Martre, P.,
   P., Biernath, C., Brisson, N., Challinor, A., Doltra, J., Gayler, S.,
   Goldberg, R., Grant, R., and Wolf, J.: Multi-wheat-model ensemble responses
   to interannual climate variability, Environmental Modelling and Software, 81,
-  86--101, 2016.
+  86--101, \doi{10.1016/j.envsoft.2016.03.008}, 2016.
 
 \bibitem[{Ruane et~al.(2013)Ruane, Cecil, Horton, Gordon, McCollum, Brown,
   Killough, Goldberg, Greeley, and Rosenzweig}]{RUANE2013a}
@@ -591,7 +609,7 @@ Ruane, A.~C., McDermid, S., Rosenzweig, C., Baigorria, G.~A., Jones, J.~W.,
 Ruane, A.~C., Goldberg, R., and Chryssanthacopoulos, J.: Climate forcing
   datasets for agricultural modeling: Merged products for gap-filling and
   historical climate series estimation, Agric. Forest Meteorol., 200, 233--248,
-  2015.
+  \doi{10.1016/j.agrformet.2014.09.016}, 2015.
 
 \bibitem[{Ruane et~al.(2018)Ruane, Antle, Elliott, Folberth, Hoogenboom,
   Mason-D'Croz, M\"{u}ller, Porter, Phillips, Raymundo, Sands, Valdivia, White,
@@ -601,7 +619,8 @@ Ruane, A.~C., Antle, J., Elliott, J., Folberth, C., Hoogenboom, G.,
   R.~M., Sands, R., Valdivia, R.~O., White, J.~W., Wiebe, K., and Rosenzweig,
   C.: Biophysical and economic implications for agriculture of +1.5$^\circ$ and
   +2.0$^\circ${C} global warming using {A}g{M}{I}{P} {C}oordinated {G}lobal and
-  {R}egional {A}ssessments, Climate Research, 76, 17--39, 2018.
+  {R}egional {A}ssessments, Climate Research, 76, 17--39,
+  \doi{10.3354/cr01520}, 2018.
 
 \bibitem[{Rubel and Kottek(2010)}]{rubel2010}
 Rubel, F. and Kottek, M.: Observed and projected climate shifts 1901-2100
@@ -638,7 +657,8 @@ Schauberger, B., Archontoulis, S., Arneth, A., Balkovic, J., Ciais, P., Deryng,
   D., Elliott, J., Folberth, C., Khabarov, N., M{\"u}ller, C., A.~M.~Pugh, T.,
   Rolinski, S., Schaphoff, S., Schmid, E., Wang, X., Schlenker, W., and
   Frieler, K.: Consistent negative response of {US} crops to high temperatures
-  in observations and crop models, Nature Communications, 8, 13\,931, 2017.
+  in observations and crop models, Nature Communications, 8, 13\,931,
+  \doi{10.1038/ncomms13931}, 2017.
 
 \bibitem[{Schewe et~al.(2019)Schewe, Gosling, Reyer, Zhao, Ciais, Elliott,
   Francois, Huber, Lotze, Seneviratne, van Vliet, Vautard, Wada, Breuer,
@@ -683,25 +703,26 @@ Storlie, C.~B., Swiler, L.~P., Helton, J.~C., and Sallaberry, C.~J.:
 \bibitem[{Taylor et~al.(2012)Taylor, Stouffer, and Meehl}]{Taylor2012}
 Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A.: An Overview of {C}{M}{I}{P}5
   and the Experiment Design, Bulletin of the American Meteorological Society,
-  93, 485--498, 2012.
+  93, 485--498, \doi{10.1175/BAMS-D-11-00094.1}, 2012.
 
 \bibitem[{Tebaldi and Lobell(2008)}]{Tebaldi2008}
 Tebaldi, C. and Lobell, D.~B.: Towards probabilistic projections of climate
-  change impacts on global crop yields, Geophysical Research Letters, 35, 2008.
+  change impacts on global crop yields, Geophysical Research Letters, 35,
+  \doi{10.1029/2008GL033423}, 2008.
 
 \bibitem[{von Bloh et~al.(2018)von Bloh, Schaphoff, M\"uller, Rolinski, Waha,
   and Zaehle}]{von_Bloh_implementing_2018}
 von Bloh, W., Schaphoff, S., M\"uller, C., Rolinski, S., Waha, K., and Zaehle,
   S.: Implementing the {N}itrogen cycle into the dynamic global vegetation,
   hydrology and crop growth model {LPJ}m{L} (version 5.0), Geoscientific Model
-  Development, 11, 2789--2812, 2018.
+  Development, 11, 2789--2812, \doi{10.5194/gmd-11-2789-2018}, 2018.
 
 \bibitem[{Warszawski et~al.(2014)Warszawski, Frieler, Huber, Piontek,
   Serdeczny, and Schewe}]{Warszawski3228}
 Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
   J.: The {I}nter-{S}ectoral {I}mpact {M}odel {I}ntercomparison {P}roject
   ({ISI{\textendash}MIP}): {P}roject framework, Proceedings of the National
-  Academy of Sciences, 111, 3228--3232, 2014.
+  Academy of Sciences, 111, 3228--3232, \doi{10.1073/pnas.1312330110}, 2014.
 
 \bibitem[{White et~al.(2011)White, Hoogenboom, Kimball, and
   Wall}]{WHITE2011357}
@@ -714,17 +735,19 @@ White, J.~W., Hoogenboom, G., Kimball, B.~A., and Wall, G.~W.: Methodologies
 Williams, K., Gornall, J., Harper, A., Wiltshire, A., Hemming, D., Quaife, T.,
   Arkebauer, T., and Scoby, D.: Evaluation of {J}{U}{L}{E}{S}-crop performance
   against site observations of irrigated maize from {M}ead, {N}ebraska,
-  Geoscientific Model Development, 10, 1291--1320, 2017.
+  Geoscientific Model Development, 10, 1291--1320,
+  \doi{10.5194/gmd-10-1291-2017}, 2017.
 
 \bibitem[{Williams and Falloon(2015)}]{Williams2015}
 Williams, K.~E. and Falloon, P.~D.: Sources of interannual yield variability in
   {J}{U}{L}{E}{S}-crop and implications for forcing with seasonal weather
-  forecasts, Geoscientific Model Development, 8, 3987--3997, 2015.
+  forecasts, Geoscientific Model Development, 8, 3987--3997,
+  \doi{10.5194/gmd-8-3987-2015}, 2015.
 
 \bibitem[{Wolf and Oijen(2002)}]{WOLF2002217}
 Wolf, J. and Oijen, M.: Modelling the dependence of European potato yields on
   changes in climate and CO2, Agricultural and Forest Meteorology, 112, 217 --
-  231, 2002.
+  231, \doi{10.1016/S0168-1923(02)00061-8}, 2002.
 
 \bibitem[{Wu et~al.(2016)Wu, Vuichard, Ciais, Viovy, de~Noblet-Ducoudr\'e,
   Wang, Magliulo, Wattenbach, Vitale, Di~Tommasi, Moors, Jans, Elbers, Ceschia,
@@ -748,6 +771,6 @@ Zhao, C., Liu, B., Piao, S., Wang, X., Lobell, D.~B., Huang, Y., Huang, M.,
   Peñuelas, J., Ruane, A.~C., Wallach, D., Wang, T., Wu, D., Liu, Z., Zhu, Y.,
   Zhu, Z., and Asseng, S.: Temperature increase reduces global yields of major
   crops in four independent estimates, Proc. Natl. Acad. Sci., 114, 9326--9331,
-  2017.
+  \doi{10.1073/pnas.1701762114}, 2017.
 
 \end{thebibliography}
