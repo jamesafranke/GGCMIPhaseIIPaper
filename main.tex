@@ -4,16 +4,8 @@
 \documentclass[esd, final]{copernicus} %final manuscript
 %% \usepackage commands included in the copernicus.cls:
 %\usepackage[german, english]{babel}
-%\usepackage{tabularx}
-%\usepackage{cancel}
-%\usepackage{multirow}
-%\usepackage{supertabular}
-%\usepackage{algorithmic}
-%\usepackage{algorithm}
-%\usepackage{amsthm}
-%\usepackage{float}
-%\usepackage{subfig}
-%\usepackage{rotating}
+%\usepackage{tabularx}, \usepackage{cancel}, \usepackage{multirow}, \usepackage{supertabular}, \usepackage{algorithmic}
+%\usepackage{algorithm}, \usepackage{amsthm}, \usepackage{float}, \usepackage{subfig}, \usepackage{rotating}
 \usepackage{xr}
 \externaldocument{../PhaseIIPaper/supdocs/supdocs}
 
@@ -267,7 +259,6 @@ Although the GGCMI Phase II sampled variable space is large, it is still suffici
 %\ref{fig:featureselection}
 
 Feature importance is remarkably consistent across all three models and across all crops (see Figure S4  in the supplemental material). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C. Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and rain-fed crops. (The regressions for irrigated crops do not contain the W terms and the models that do not sample the nitrogen levels omit the N terms).
-
 
 \begin{align}
     \label{eqn:features_final}
