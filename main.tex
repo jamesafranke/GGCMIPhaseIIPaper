@@ -348,7 +348,7 @@ Finally, the GGCMI Phase II output dataset invites a broad range of potential fu
     \label{fig:simulation_val}
 \end{figure*}
 
-The \citet{muller_global_2017} procedure evaluates response to year-to-year temperature and precipitation variations in a control run driven by historical climate and compares it to detrended historical yields from the FAO \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. The procedure offers no means of assessing CO$_2$ fertilization, since CO$_2$ has been relatively constant over the historical data collection period. Nitrogen introduces some uncertainty into the analysis, since the GGCMI Phase II runs impose fixed, uniform nitrogen application levels that are not realistic for individual countries. We evaluate up to three control runs for each model, since some modeling groups provide historical runs for three different nitrogen levels. 
+The \citet{muller_global_2017} procedure evaluates response to year-to-year temperature and precipitation variations in a control run driven by historical climate and compares it to detrended historical yields from the FAO \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. The procedure is sensitive to the detrending method and the area mask used to aggregate yields. Here we use a liner trend removal and the MICRA area mask. The procedure offers no means of assessing CO$_2$ fertilization, since CO$_2$ has been relatively constant over the historical data collection period. Nitrogen introduces some uncertainty into the analysis, since the GGCMI Phase II runs impose fixed, uniform nitrogen application levels that are not realistic for individual countries. We evaluate up to three control runs for each model, since some modeling groups provide historical runs for three different nitrogen levels. 
 
 Results are similar to those of GGCMI Phase I, with reasonable fidelity at capturing year-over-year variation, with differences by region and crop stronger than difference between models. (That is, Figure \ref{fig:simulation_val} shows more similarity in horizontal than vertical bars.) No single model is dominant, with each model providing near best-in-class performance in at least one location-crop combination. For example, maize in the United States is consistently well-simulated while maize in Mexico is problematic (mean Pearson correlation coefficients of 0.55 and -0.04, respectively). In some cases, especially in the developing world, low correlation coefficients may indicate not model failure but problems in FAO yield data. For example, models have greater apparent skill for rice in India than in the neighboring Pakistan and Bangladesh; this difference may be implausible as solely a model effect. In general, correlation coefficients in GGCMI Phase II are slightly below those of Phase I, likely because of unrealistic nitrogen levels and lack of country level calibration in some models. (Compare Figure \ref{fig:simulation_val} to \citet{muller_global_2017} Figures 1--4 and 6.) Note that in this methodology, simulations of crops with low year-to-year variability such as irrigated rice and wheat will tend to score more poorly than those with higher variability.
 
@@ -408,7 +408,7 @@ This assessment procedure is relatively forgiving for several reason. First, eac
 \end{tabular}
 \end{table*}
 
-The root mean squared error for 
+The mean absolute error as 
 
 \noappendix %% use this to mark the end of the appendix section
 
@@ -423,7 +423,6 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 \bibliographystyle{copernicus}
 \bibliography{bib.bib}
-
 
 \end{document}
 
