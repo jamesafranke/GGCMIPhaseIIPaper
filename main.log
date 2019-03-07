@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 MAR 2019 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1391,6 +1391,8 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Runaway argument?
 {\@firstoffive }\fi --\ref {fig:errorpromet}). Normalized errors for \ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
@@ -1405,6 +1407,8 @@ My plan is to forget the whole thing and hope for the best.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
+on.png>]
 Runaway argument?
 {\@firstoffive }\fi ) because models disagree on the magnitude of CO$\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
@@ -1419,13 +1423,53 @@ My plan is to forget the whole thing and hope for the best.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
-on.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png> </
 Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
-Underfull \hbox (badness 7777) in paragraph at lines 421--422
+! Missing $ inserted.
+<inserted text> 
+                $
+l.414 winter_
+             wheat,PROMET,0.085,0.087
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.415 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.417 spring_
+             wheat,JULES,2.379,2.392
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.420 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (217.71492pt too wide) in paragraph at lines 416--420
+[]\T1/ptm/m/n/10 maize, JULES spring$[]\OML/cmm/m/it/10 heat; JULES; \OT1/cmr/m
+/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 379\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 
+2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 392\OML/cmm/m/it/10 rice; JULES; \OT1/cmr/m/
+n/10 446\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 675\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
+ 457\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 395\OML/cmm/m/it/10 soy; JULES; \OT1/cmr/
+m/n/10 19\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 674\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
+0 19\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 622$ 
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 430--431
 []\T1/ptm/m/n/9 We thank Michael Stein and Kevin
  []
 
@@ -1511,6 +1555,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--90
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[15]
 Underfull \hbox (badness 3780) in paragraph at lines 120--124
 \T1/ptm/m/n/9 jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The
  []
@@ -1522,9 +1569,6 @@ s
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15]
 Underfull \hbox (badness 1205) in paragraph at lines 128--134
 \T1/ptm/m/n/9 T., Iza-u-r-ralde, R. C., Mueller, N. D., Ray, D. K., Rosen-
  []
@@ -1647,6 +1691,9 @@ Underfull \hbox (badness 2042) in paragraph at lines 380--384
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
 Underfull \hbox (badness 3333) in paragraph at lines 400--403
 []\T1/ptm/m/n/9 Moore, F. C., Bal-dos, U., Her-tel, T., and Diaz, D.: New
  []
@@ -1662,9 +1709,6 @@ Underfull \hbox (badness 2698) in paragraph at lines 400--403
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[17]
 Underfull \hbox (badness 3514) in paragraph at lines 408--416
 []\T1/ptm/m/n/9 Müller, C., El-liott, J., Chrys-san-tha-copou-los, J., Ar-neth,
  A.,
@@ -1770,6 +1814,9 @@ Underfull \hbox (badness 7064) in paragraph at lines 609--613
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 4391) in paragraph at lines 649--652
 []\T1/ptm/m/n/9 Sacks, W. J., Deryng, D., Fo-ley, J. A., and Ra-mankutty,
  []
@@ -1783,9 +1830,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 649--652
 Underfull \hbox (badness 7064) in paragraph at lines 649--652
 \T1/ptm/m/n/9 terns, Global Ecol-ogy and Bio-geog-ra-phy, 19, 607--620,
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 704--707
@@ -1809,14 +1853,14 @@ Underfull \hbox (badness 1297) in paragraph at lines 709--712
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
 Underfull \hbox (badness 2221) in paragraph at lines 729--732
 []\T1/ptm/m/n/9 White, J. W., Hoogen-boom, G., Kim-ball, B. A., and Wall,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[19]
 Underfull \hbox (badness 2671) in paragraph at lines 748--751
 []\T1/ptm/m/n/9 Wolf, J. and Oi-jen, M.: Mod-elling the de-pen-dence of Eu-
  []
@@ -1844,12 +1888,12 @@ Underfull \hbox (badness 1603) in paragraph at lines 756--763
 ) [20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 429.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
  )
 (\end occurred when \ifx on line 389 was incomplete)
 (\end occurred when \ifx on line 387 was incomplete)
@@ -1869,11 +1913,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
 Here is how much of TeX's memory you used:
  10904 strings out of 492995
  154827 string characters out of 6132704
- 333873 words of memory out of 5000000
+ 333925 words of memory out of 5000000
  14074 multiletter control sequences out of 15000+600000
  46783 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,2114b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,2114b,666s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
@@ -1892,7 +1936,7 @@ m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (20
- pages, 10179091 bytes).
+ pages, 10186558 bytes).
 PDF statistics:
  795 PDF objects out of 1000 (max. 8388607)
  727 compressed objects within 8 object streams
