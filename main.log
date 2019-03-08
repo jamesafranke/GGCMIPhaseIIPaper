@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 MAR 2019 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAR 2019 09:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1346,12 +1346,12 @@ My plan is to forget the whole thing and hope for the best.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
-ng>] <figures/Agformet_validation.png, id=510, 632.79613pt x 617.33034pt>
+ng>] <figures/Agformet_validation.png, id=510, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
 Package pdftex.def Info: figures/Agformet_validation.png used on input line 346
 .
-(pdftex.def)             Requested size: 455.24408pt x 444.11955pt.
+(pdftex.def)             Requested size: 455.24408pt x 444.52542pt.
 <figures/error_360.png, id=524, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
@@ -1425,51 +1425,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png> </
 Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.414 winter_
-             wheat,PROMET,0.085,0.087
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.415 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.417 spring_
-             wheat,JULES,2.379,2.392
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.420 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (217.71492pt too wide) in paragraph at lines 416--420
-[]\T1/ptm/m/n/10 maize, JULES spring$[]\OML/cmm/m/it/10 heat; JULES; \OT1/cmr/m
-/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 379\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 
-2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 392\OML/cmm/m/it/10 rice; JULES; \OT1/cmr/m/
-n/10 446\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 675\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
- 457\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 395\OML/cmm/m/it/10 soy; JULES; \OT1/cmr/
-m/n/10 19\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 674\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
-0 19\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 622$ 
- []
-
-
-Underfull \hbox (badness 7777) in paragraph at lines 430--431
+Underfull \hbox (badness 7777) in paragraph at lines 419--420
 []\T1/ptm/m/n/9 We thank Michael Stein and Kevin
  []
 
@@ -1888,12 +1844,12 @@ Underfull \hbox (badness 1603) in paragraph at lines 756--763
 ) [20
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 437.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 426.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
  )
 (\end occurred when \ifx on line 389 was incomplete)
 (\end occurred when \ifx on line 387 was incomplete)
@@ -1936,7 +1892,7 @@ m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (20
- pages, 10186558 bytes).
+ pages, 10167257 bytes).
 PDF statistics:
  795 PDF objects out of 1000 (max. 8388607)
  727 compressed objects within 8 object streams

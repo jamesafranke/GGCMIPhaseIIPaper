@@ -395,30 +395,19 @@ This assessment procedure is relatively forgiving for several reason. First, eac
 \hline
 {} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
 %%
-\textbf{Model}     & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  & BR  & LM  \\ \hline
-\textbf{CARAIB}    & 0.10 & 0.12  & 0.59 & 0.63       & 0.59 & 0.64 & 0.09 & 0.10  & 0.16 & 0.17 \\ \hline
-\textbf{EPIC-TAMU} & 0.16 & 0.17  & 0.18 & 0.25     & 0.15 & 0.15  & 0.08 & 0.09  & 0.15 & {\color{red}1e6} \\ \hline
-\textbf{JULES}     & -- & --  & -- & --       & 0.20 & 0.20  & NA    & NA     & 0.43 & 0.45 \\ \hline
-\textbf{GEPIC}     & 1.19 & 1.331  & 0.42 & 0.49     & 1.00 & 1.12  & 0.14 & 0.15  & 0.10 & 0.11 \\ \hline
-\textbf{LPJ-GUESS} & 0.13 & 0.134  & NA & NA            & NA    & NA     & 0.30 & 0.30  & NA    & NA    \\ \hline
-\textbf{LPJmL}     & --- & ---  & --- & ---             & -- & --  & 0.79 & 0.80  & -- & -- \\ \hline
-\textbf{pDSSAT}    & 0.21 & 0.22  & 2.24 & 2.24    & 0.31 & 0.33  & 0.07 & 0.07  & 0.10 & 0.11 \\ \hline
-\textbf{PEPIC}     & 0.08 & {\color{red}2e9}  & 0.06 & {\color{red}6e8} & 0.08 & {\color{red}3e10} & 0.20 & {\color{red}4e10}  & 0.08 & {\color{red}1e9} \\ \hline
-\textbf{PROMET}    & 0.19 & 0.19  & 0.34 & 0.34       & 0.24 & 0.26  & 0.08 & 0.09  & 0.16 & 0.17 \\ \hline
+\textbf{Model}     & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM  \\ \hline
+\textbf{CARAIB}    & 0.10 & 0.12 & 0.59 & 0.63 & 0.59 & 0.64 & 0.09 & 0.10 & 0.16 & 0.17 \\ \hline
+\textbf{EPIC-TAMU} & 0.16 & 0.17 & 0.18 & 0.25 & 0.15 & 0.15 & 0.08 & 0.09 & 0.15 & {\color{red}1e6} \\ \hline
+\textbf{JULES}     & ---- & ---- & ---- & ---- & 0.20 & 0.20 & NA   & NA   & 0.43 & 0.45 \\ \hline
+\textbf{GEPIC}     & 1.19 & 1.33 & 0.42 & 0.49 & 1.00 & 1.12 & 0.14 & 0.15 & 0.10 & 0.11 \\ \hline
+\textbf{LPJ-GUESS} & 0.13 & 0.13 & NA   & NA   & NA   & NA   & 0.30 & 0.30 & NA   & NA    \\ \hline
+\textbf{LPJmL}     & ---- & ---- & ---- & ---- & ---- & ---- & 0.79 & 0.80 & ---- & ---- \\ \hline
+\textbf{pDSSAT}    & 0.21 & 0.22 & 2.24 & 2.24 & 0.31 & 0.33 & 0.07 & 0.07 & 0.10 & 0.11 \\ \hline
+\textbf{PROMET}    & 0.19 & 0.19 & 0.34 & 0.34 & 0.24 & 0.26 & 0.08 & 0.09 & 0.16 & 0.17 \\ \hline
+\textbf{PEPIC}     & 0.08 & {\color{red}2e9}   & 0.06 & {\color{red}6e8} & 0.08 & {\color{red}3e10} & 0.20 & {\color{red}4e10}  & 0.08 & {\color{red}1e9} \\ \hline
+
 \end{tabular}
 \end{table*}
-
-
-
-
-winter_wheat,PROMET,0.085,0.087
-
-maize, JULES
-spring_wheat,JULES,2.379,2.392
-rice,JULES,446.675,457.395
-soy,JULES,19.674,19.622
-
-
 
 \noappendix %% use this to mark the end of the appendix section
 
@@ -532,6 +521,30 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %& 3 + 5 = 8\\
 %& 3 + 5 = 8
 %\end{align}
+
+
+
+\begin{table*}[t]
+\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 5-fold stratified kfold 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The 80-20 percent does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
+\label{table:MSE}
+\begin{tabular}{l | ll | ll | ll | ll| ll} 
+\hline
+{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
+%%
+\textbf{Model}     & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM  \\ \hline
+\textbf{CARAIB}    & 0.10 & 0.12 & 0.59 & 0.63 & 0.59 & 0.64 & 0.09 & 0.10 & 0.16 & 0.17 \\ \hline
+\textbf{EPIC-TAMU} & 0.16 & 0.17 & 0.18 & 0.25 & 0.15 & 0.15 & 0.08 & 0.09 & 0.15 & {\color{red}1e6} \\ \hline
+\textbf{JULES}     & ---- & ---- & ---- & ---- & 0.20 & 0.20 & NA   & NA   & 0.43 & 0.45 \\ \hline
+\textbf{GEPIC}     & 1.19 & 1.33 & 0.42 & 0.49 & 1.00 & 1.12 & 0.14 & 0.15 & 0.10 & 0.11 \\ \hline
+\textbf{LPJ-GUESS} & 0.13 & 0.13 & NA   & NA   & NA   & NA   & 0.30 & 0.30 & NA   & NA    \\ \hline
+\textbf{LPJmL}     & ---- & ---- & ---- & ---- & ---- & ---- & 0.79 & 0.80 & ---- & ---- \\ \hline
+\textbf{pDSSAT}    & 0.21 & 0.22 & 2.24 & 2.24 & 0.31 & 0.33 & 0.07 & 0.07 & 0.10 & 0.11 \\ \hline
+\textbf{PROMET}    & 0.19 & 0.19 & 0.34 & 0.34 & 0.24 & 0.26 & 0.08 & 0.09 & 0.16 & 0.17 \\ \hline
+\textbf{PEPIC}     & 0.08 & {\color{red}2e9}   & 0.06 & {\color{red}6e8} & 0.08 & {\color{red}3e10} & 0.20 & {\color{red}4e10}  & 0.08 & {\color{red}1e9} \\ \hline
+
+\end{tabular}
+\end{table*}
+
 
 
 \begin{table*}[t]
