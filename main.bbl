@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{101}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -276,6 +276,11 @@ Izaurralde, R., Williams, J., Mcgill, W., Rosenberg, N., and Quiroga~Jakas, M.:
   Simulating soil {C} dynamics with {E}{P}{I}{C}: Model description and testing
   against long-term data, Ecological Modelling, 192, 362--384,
   \doi{10.1016/j.ecolmodel.2005.07.010}, 2006.
+
+\bibitem[{J\"{a}germeyr and Frieler(2018)}]{Jag2018}
+J\"{a}germeyr, J. and Frieler, K.: Spatial variations in crop growing seasons
+  pivotal to reproduce global fluctuations in maize and wheat yields, Science
+  Advances, 4, 4517, \doi{10.1126/sciadv.aat4517}, 2018.
 
 \bibitem[{Jagtap and Jones(2002)}]{JAGTAP200273}
 Jagtap, S.~S. and Jones, J.~W.: Adaptation and evaluation of the
