@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex supdocs"] 1551793721 "supdocs.aux" "supdocs.bbl" "supdocs" 1551793743
+["bibtex supdocs"] 1551793721 "supdocs.aux" "supdocs.bbl" "supdocs" 1552314350
   "bib.bib" 1551384957 64470 686fa8ba5afcb42edfe9cfbdad9a15d7 ""
-  "supdocs.aux" 1551793743 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
+  "supdocs.aux" 1552314350 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
   (generated)
   "supdocs.blg"
   "supdocs.bbl"
-["pdflatex"] 1551793721 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf" "supdocs" 1551793743
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.aux" 1551793743 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" 1551479196 17948 e6df1d06c3058cd117dcdc0a011b4fbc ""
+["pdflatex"] 1552314328 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf" "supdocs" 1552314350
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.aux" 1552314350 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.tex" 1551795692 17947 42a4574c71cae2f48a43f6b9c7e526c5 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -145,14 +145,14 @@
   "s_temp.png" 1548711579 1574560 934808047cb19d244194cf59101601b3 ""
   "s_water.png" 1548711579 950488 336173e38ea7b4fe8290e88725decbea ""
   "s_wheat_baseline.png" 1548711579 2578265 51806be7c808731fad7b67ccf674aaaf ""
-  "supdocs.aux" 1551793743 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
+  "supdocs.aux" 1552314350 11788 a9133a7662a2ff3895737b4ae0a5e59b ""
   "supdocs.bbl" 1551793721 0 d41d8cd98f00b204e9800998ecf8427e "bibtex supdocs"
-  "supdocs.tex" 1551479196 17948 e6df1d06c3058cd117dcdc0a011b4fbc ""
-  "supdocs.toc" 1551793743 247 0240046f07d6f5a2b47afad3ae4ddecf ""
+  "supdocs.tex" 1551795692 17947 42a4574c71cae2f48a43f6b9c7e526c5 ""
+  "supdocs.toc" 1552314350 247 0240046f07d6f5a2b47afad3ae4ddecf ""
   (generated)
-  "supdocs.pdf"
-  "supdocs.toc"
   "supdocs.log"
+  "supdocs.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.log"
+  "supdocs.toc"
   "supdocs.aux"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdocs.pdf"

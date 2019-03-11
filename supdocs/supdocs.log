@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 MAR 2019 07:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,7 +967,7 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 )
 
 Package xr Warning: 
-No file ../PhaseIIPaper/main2.aux
+No file ../PhaseIIPaper/main.aux
 LABELS NOT IMPORTED.
  on input line 26.
 
@@ -1549,7 +1549,7 @@ LaTeX Warning: There were undefined references.
 ### bottom level 
 Here is how much of TeX's memory you used:
  15883 strings out of 492995
- 305924 string characters out of 6132704
+ 305923 string characters out of 6132704
  335968 words of memory out of 5000000
  19219 multiletter control sequences out of 15000+600000
  12319 words of font info for 49 fonts, out of 8000000 for 9000

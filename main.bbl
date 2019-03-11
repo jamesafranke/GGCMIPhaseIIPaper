@@ -1,4 +1,4 @@
-\begin{thebibliography}{101}
+\begin{thebibliography}{102}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -178,6 +178,13 @@ Fronzek, S., Pirttioja, N., Carter, T.~R., Bindi, M., Hoffmann, H., Palosuo,
   response surfaces showing sensitivity to temperature and precipitation
   change, Agricultural Systems, 159, 209--224,
   \doi{10.1016/j.agsy.2017.08.004}, 2018.
+
+\bibitem[{G.~Lakshminarayan et~al.(1997)G.~Lakshminarayan, Gassman, Bouzaher,
+  and Izaurralde}]{Lakshminarayan97}
+G.~Lakshminarayan, P., Gassman, P., Bouzaher, A., and Izaurralde, R.:
+  Metamodeling Approach to Evaluate Agricultural Policy Impact on Soil
+  Degradation in Western Canada (A), Canadian Journal of Agricultural
+  Economics, 44, \doi{10.1111/j.1744-7976.1996.tb00151.x}, 1997.
 
 \bibitem[{Glotter et~al.(2014)Glotter, Elliott, McInerney, Best, Foster, and
   Moyer}]{Glotter14}

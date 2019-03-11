@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 MAR 2019 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,20 +810,7 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-\c@mv@sans=\count127
-\c@mv@sansbold=\count128
-LaTeX Font Info:    Overwriting symbol font `operators' in version `sansbold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 1827.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `sansbold'
-(Font)                  OML/cmm/m/it --> OML/cmm/b/it on input line 1828.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `sansbold'
-(Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 1829.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `sansbold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 1830.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sansbold'
-(Font)                  OT1/cmr/m/it --> OT1/cmr/bx/it on input line 1831.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/pifont.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/upzd.fd
@@ -884,18 +871,17 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen153
-\Hy@linkcounter=\count129
-\Hy@pagecounter=\count130
+\Hy@linkcounter=\count127
+\Hy@pagecounter=\count128
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count131
+\Hy@SavedSpaceFactor=\count129
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `final' set `true' on input line 4374.
 Package hyperref Info: Option `bookmarks' set `false' on input line 4374.
 Package hyperref Info: Hyper figures OFF on input line 4498.
 Package hyperref Info: Link nesting OFF on input line 4503.
@@ -904,10 +890,10 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4757.
-\c@Hy@tempcnt=\count132
+\c@Hy@tempcnt=\count130
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen154
-\Fld@menulength=\count133
+\Fld@menulength=\count131
 \Field@Width=\dimen155
 \Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -919,17 +905,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count134
-\c@Item=\count135
-\c@Hfootnote=\count136
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count137
-\c@bookmark@seq@number=\count138
+\Fld@listcount=\count135
+\c@bookmark@seq@number=\count136
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -937,11 +923,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
-\c@reaction=\count139
+\c@reaction=\count137
 \tabularwidth=\dimen157
 Package color Info: Redefining color textcol on input line 2486.
 Package color Info: Redefining color bgcol on input line 2486.
 Package color Info: Redefining color barcol on input line 2486.
+Package color Info: Redefining color textcol on input line 2490.
+Package color Info: Redefining color bgcol on input line 2491.
+Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 9.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
@@ -977,16 +966,16 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 12.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
+\scratchcounter=\count138
 \scratchdimen=\dimen158
 \scratchbox=\box37
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count143
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen159
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks38
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1013,21 +1002,13 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count144
 )
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 83.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 83.
 LaTeX Font Info:    Try loading font information for U+msa on input line 83.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1038,50 +1019,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 83.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 90.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 83.
+(Font)              scaled to size 8.54997pt on input line 90.
+[1
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 99.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 99.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 99.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 99.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[2
-
-] [3] <figures/croparea.png, id=262, 262.9022pt x 492.0784pt>
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+[4] <figures/croparea.png, id=251, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 131.
+Package pdftex.def Info: figures/croparea.png used on input line 133.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
 Runaway argument?
 {\@firstoffive }\fi .
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.132 ...ted crops, see Figure \ref{fig:irrarea}.}
+l.134 ...ted crops, see Figure \ref{fig:irrarea}.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1093,26 +1052,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.146 ...d nitrogen (N)}& {10, 60, \textbf{200|} &
+l.148 ...d nitrogen (N)}& {10, 60, \textbf{200|} &
                                                    {kg ha$^{-1}$}\\ \bottomh...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (2.25343pt too wide) in paragraph at lines 139--148
-$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--148
+Underfull \hbox (badness 10000) in paragraph at lines 141--150
 
  []
 
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.148 \end{table}
+l.150 \end{table}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1120,52 +1074,47 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 153.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 155.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []|\T1/ptm/b/n/9 Spring
  []
 
 
-Overfull \hbox (2.83324pt too wide) in paragraph at lines 157--157
+Overfull \hbox (2.83324pt too wide) in paragraph at lines 159--159
 []|\T1/ptm/b/n/9 Simulations
  []
 
 LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 169.
+(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 171.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 []|\T1/ptm/m/n/9 3993
  []
 
 
-Underfull \vbox (badness 2970) has occurred while \output is active []
+LaTeX Warning: Float too large for page by 0.4064pt on input line 175.
 
-
-Underfull \vbox (badness 2012) has occurred while \output is active []
-
-[4 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[5] <figures/global_sim_CG.png, id=378, 4516.875pt x 1806.75pt>
+[5] [6 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
+<figures/global_sim_CG.png, id=337, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 197.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 199.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 Runaway argument?
-{\@firstoffive }\fi  in the supplemental material for only currently-\ETC.
+{\@firstoffive }\fi  in the supplemental material for currently-culti\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.198 ...f) maize currently grown in each region.}
+l.200 ...ons of more realistic climate scenarios.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1179,24 +1128,24 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.207 
+l.211 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<figures/baselinecomp_yield_3.png, id=385, 527.42645pt x 347.47417pt>
+[7] <figures/baselinecomp_yield_3.png, id=353, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 22
-0.
+4.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material.) White stippling i\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.221 ...tive, also have the highest uncertainty.}
+l.225 ...tive, also have the highest uncertainty.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1210,18 +1159,20 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.226 
+l.230 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
+[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
+]
 Runaway argument?
 {\@firstoffive }\fi  for the irrigated case. As expected, irrigated c\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.228 
+l.232 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1232,74 +1183,55 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.230 
+l.234 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<figures/tempyearvclim.png, id=391, 322.9666pt x 333.0844pt>
+[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield
+_3.png>] <figures/tempyearvclim.png, id=379, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 240.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 244.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/hist_year.png, id=392, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=380, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 247.
+Package pdftex.def Info: figures/hist_year.png used on input line 251.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield_3
-.png>]
-Underfull \hbox (badness 2173) in paragraph at lines 256--257
-[]\T1/ptm/m/n/10 We do not fo-cus on com-par-ing dif-fer-ent func-tional
- []
-
-[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png>
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>]
-Overfull \hbox (0.51535pt too wide) in paragraph at lines 274--274
-[] 
- []
-
-<figures/regression_areas.png, id=464, 5420.25pt x 2258.4375pt>
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
+>] [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>
+] [12] <figures/regression_areas.png, id=438, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 286.
+Package pdftex.def Info: figures/regression_areas.png used on input line 290.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/regression_model.png, id=466, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=440, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 293.
+Package pdftex.def Info: figures/regression_model.png used on input line 297.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/global_em_maize.png, id=469, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=443, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 301.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 305.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} in the supplemental materia\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.302 ...:nitrogen} in the supplemental material.}
+l.306 ...:nitrogen} in the supplemental material.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1308,38 +1240,26 @@ My plan is to forget the whole thing and hope for the best.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 6658) has occurred while \output is active []
-
-[9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
-png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model
-.png>]
+[13]
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} for other crops and dimensi\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.316 
+l.320 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+[14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
+png>]
 Runaway argument?
-{\@firstoffive }\fi ). For example, uncertainty in the response to CO\ETC.
+{\@firstoffive }\fi ). Across geographic regions, projections are mos\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.325 
+l.329 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1350,30 +1270,34 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.327 
+l.331 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.p
-ng>] <figures/Agformet_validation.png, id=513, 632.50703pt x 617.61942pt>
+[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model.
+png>] [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_m
+aize.png>] <figures/Agformet_validation.png, id=491, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 351
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 368
 .
 (pdftex.def)             Requested size: 455.24408pt x 444.52542pt.
-<figures/error_360.png, id=527, 2258.4375pt x 4968.5625pt>
+
+LaTeX Warning: Float too large for page by 26.00276pt on input line 371.
+
+[17] <figures/error_360.png, id=518, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 366.
+Package pdftex.def Info: figures/error_360.png used on input line 383.
 (pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
 Runaway argument?
 {\@firstoffive }\fi ). JULES did not simulate spring wheat and LPJ-GU\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.367 ...grading for hotter and wetter scenarios.}
+l.384 ...grading for hotter and wetter scenarios.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1382,46 +1306,32 @@ My plan is to forget the whole thing and hope for the best.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/em_err.png, id=530, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=521, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 373.
+Package pdftex.def Info: figures/em_err.png used on input line 390.
 (pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[12]
-Underfull \vbox (badness 4060) has occurred while \output is active []
 
 Runaway argument?
 {\@firstoffive }\fi ). 
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.391 
+l.408 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validati
-on.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/error_360.png> </
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/em_err.png>]
+[18]
 Runaway argument?
 {\@firstoffive }\fi --\ref {fig:errorpromet}). Normalized errors for \ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.393 
+l.410 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1432,480 +1342,112 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.395 
+l.412 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-Underfull \hbox (badness 7777) in paragraph at lines 424--425
-[]\T1/ptm/m/n/9 We thank Michael Stein and Kevin
- []
-
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
-[]\T1/ptm/m/n/9 Angulo, C., Röt-ter, R., Lock, R., En-ders, A., Fronzek,
- []
-
-
-Underfull \hbox (badness 6575) in paragraph at lines 12--16
-\T1/ptm/m/n/9 S., and Ew-ert, F.: Im-pli-ca-tion of crop model cal-i-bra-
- []
-
-
-Underfull \hbox (badness 4205) in paragraph at lines 12--16
-\T1/ptm/m/n/9 tion strate-gies for as-sess-ing re-gional im-pacts of cli-mate
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 12--16
-\T1/ptm/m/n/9 change in Eu-rope, Agric. For. Me-te-o-rol., 170, 32 -- 46,
- []
-
-
-Underfull \hbox (badness 2359) in paragraph at lines 20--26
-\T1/ptm/m/n/9 der cli-mate change, Na-ture Cli-mate Change, 3, 827^^U832,
- []
-
-
-Underfull \hbox (badness 3942) in paragraph at lines 47--52
-[]\T1/ptm/m/n/9 Balkovi£, J., van der Velde, M., Skalský, R., Xiong, W.,
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 47--52
-\T1/ptm/m/n/9 Fol-berth, C., Khabarov, N., Smirnov, A., Mueller, N. D.,
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 47--52
-\T1/ptm/m/n/9 path-ways, Global and Plan-e-tary Change, 122, 107 -- 121,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-[]\T1/ptm/m/n/9 Blanc, E.: Sta-tis-ti-cal em-u-la-tors of maize, rice, soy-bean
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-\T1/ptm/m/n/9 and wheat yields from global grid-ded crop mod-els,
- []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 54--57
-\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 236, 145 -- 161,
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 59--62
-[]\T1/ptm/m/n/9 Blanc, E. and Sul-tan, B.: Em-u-lat-ing maize yields from
- []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 59--62
-\T1/ptm/m/n/9 cul-tural and For-est Me-te-o-rol-ogy, 214-215, 134 -- 147,
- []
-
-
-Underfull \hbox (badness 1199) in paragraph at lines 87--90
-[]\T1/ptm/m/n/9 Chang, W., Stein, M., Wang, J., Ko-ta-marthi, V., and Moyer,
- []
-
-
-Underfull \hbox (badness 5189) in paragraph at lines 87--90
-\T1/ptm/m/n/9 E.: Changes in Spatio-temporal Pre-cip-i-ta-tion Pat-terns in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
-\T1/ptm/m/n/9 Chang-ing Cli-mate Con-di-tions, Jour-nal of Cli-mate, 29,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15]
-Underfull \hbox (badness 3780) in paragraph at lines 120--124
-\T1/ptm/m/n/9 jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 120--124
-\T1/ptm/m/n/9 par-al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tor
-s
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 128--134
-\T1/ptm/m/n/9 T., Iza-u-r-ralde, R. C., Mueller, N. D., Ray, D. K., Rosen-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 184--188
-[]\T1/ptm/m/n/9 Glotter, M., El-liott, J., McIn-er-ney, D., Best, N., Fos-ter, 
-I.,
- []
-
-
-Underfull \hbox (badness 6204) in paragraph at lines 184--188
-\T1/ptm/m/n/9 and Moyer, E. J.: Eval-u-at-ing the util-ity of dy-nam-i-cal
- []
-
-
-Underfull \hbox (badness 4013) in paragraph at lines 184--188
-\T1/ptm/m/n/9 of the Na-tional Academy of Sci-ences, 111, 8776--8781,
- []
-
-
-Underfull \hbox (badness 1831) in paragraph at lines 203--207
-[]\T1/ptm/m/n/9 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Es-ti-mat-
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 203--207
-\T1/ptm/m/n/9 ing changes in tem-per-a-ture dis-tri-bu-tions in a large en-sem-
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-[]\T1/ptm/m/n/9 Izaurralde, R., Williams, J., Mcgill, W., Rosen-berg, N.,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-\T1/ptm/m/n/9 and Quiroga Jakas, M.: Sim-u-lat-ing soil C dy-nam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-\T1/ptm/m/n/9 ics with EPIC: Model de-scrip-tion and test-ing against
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-\T1/ptm/m/n/9 long-term data, Eco-log-i-cal Mod-elling, 192, 362--384,
- []
-
-
-Underfull \hbox (badness 7451) in paragraph at lines 281--284
-[]\T1/ptm/m/n/9 Jägermeyr, J. and Frieler, K.: Spa-tial vari-a-tions in crop
- []
-
-
-Underfull \hbox (badness 4582) in paragraph at lines 281--284
-\T1/ptm/m/n/9 grow-ing sea-sons piv-otal to re-pro-duce global fluc-tu-a-tions
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 281--284
-\T1/ptm/m/n/9 in maize and wheat yields, Sci-ence Ad-vances, 4, 4517,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 312--319
-\T1/ptm/m/n/9 M., Holz-worth, D., Huth, N., Har-g-reaves, J., Meinke, H.,
- []
-
-
-Underfull \hbox (badness 3158) in paragraph at lines 341--345
-[]\T1/ptm/m/n/9 Liu, W., Yang, H., Fol-berth, C., Wang, X., Luo, Q., and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--345
-\T1/ptm/m/n/9 Schulin, R.: Global in-ves-ti-ga-tion of im-pacts of PET
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--345
-\T1/ptm/m/n/9 meth-ods on sim-u-lat-ing crop-water re-la-tions for maize,
+[19] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl [20] [21]
+Underfull \hbox (badness 2253) in paragraph at lines 120--124
+[]\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
+M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
  []
 
 
-Underfull \hbox (badness 7064) in paragraph at lines 341--345
-\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 221, 164 -- 175,
+Underfull \hbox (badness 4391) in paragraph at lines 120--124
+\T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (p
+SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 354--357
-[]\T1/ptm/m/n/9 Lobell, D. B. and Burke, M. B.: On the use of sta-tis-ti-cal
+Underfull \hbox (badness 1152) in paragraph at lines 203--208
+[]\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
+pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 354--357
-\T1/ptm/m/n/9 mod-els to pre-dict crop yield re-sponses to cli-mate change,
+Underfull \hbox (badness 1635) in paragraph at lines 203--208
+\T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
+r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
-
-Underfull \hbox (badness 3219) in paragraph at lines 354--357
-\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 150, 1443 -- 1452,
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 370--376
-\T1/ptm/m/n/9 Ef-fects, p. 1100, https://doi.org/[]10.13140/RG.2.1.5173.8328[],
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[17]
-Underfull \hbox (badness 2894) in paragraph at lines 385--389
-[]\T1/ptm/m/n/9 Mauser, W., Klep-per, G., Zabel, F., Delzeit, R., Hank, T.,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 385--389
-\T1/ptm/m/n/9 Putzen-lech-ner, B., and Calzadilla, A.: Global biomass pro-
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 385--389
-\T1/ptm/m/n/9 duc-tion po-ten-tials ex-ceed ex-pected fu-ture de-mand with-out
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 405--408
-[]\T1/ptm/m/n/9 Moore, F. C., Bal-dos, U., Her-tel, T., and Diaz, D.: New
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 405--408
-\T1/ptm/m/n/9 sci-ence of cli-mate change im-pacts on agri-cul-ture im-plies
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 405--408
-\T1/ptm/m/n/9 higher so-cial cost of car-bon, Na-ture Com-mu-ni-ca-tions, 8,
- []
-
-
-Underfull \hbox (badness 3514) in paragraph at lines 413--421
-[]\T1/ptm/m/n/9 Müller, C., El-liott, J., Chrys-san-tha-copou-los, J., Ar-neth,
- A.,
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 449--453
-[]\T1/ptm/m/n/9 Osborne, T., Gor-nall, J., Hooker, J., Williams, K., Wilt-shire
-,
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 449--453
-\T1/ptm/m/n/9 A., Betts, R., and Wheeler, T.: JULES-crop: a parametri-
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 449--453
-\T1/ptm/m/n/9 sa-tion of crops in the Joint UK Land En-vi-ron-ment Sim-
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 449--453
-\T1/ptm/m/n/9 u-la-tor, Geo-sci-en-tific Model De-vel-op-ment, 8, 1139--1155,
- []
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 456--459
-\T1/ptm/m/n/9 in crop yields and their vari-abil-ity at dif-fer-ent lev-els
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 456--459
-\T1/ptm/m/n/9 of global warm-ing, Earth Sys-tem Dy-nam-ics, 9, 479--496,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[18]
-Underfull \hbox (badness 2150) in paragraph at lines 555--561
-\T1/ptm/m/n/9 As-seng, S., Basso, B., Ew-ert, F., Wal-lach, D., Baig-or-ria,
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 555--561
-\T1/ptm/m/n/9 ies, Agri-cul-tural and For-est Me-te-o-rol-ogy, 170, 166 -- 182,
-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 565--571
-\T1/ptm/m/n/9 C., Ar-neth, A., Boote, K. J., Fol-berth, C., Glot-ter, M.,
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 565--571
-\T1/ptm/m/n/9 Khabarov, N., Neu-mann, K., Pi-o-ntek, F., Pugh, T. A. M.,
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 565--571
-\T1/ptm/m/n/9 Schmid, E., Ste-hfest, E., Yang, H., and Jones, J. W.: As-
- []
-
-
-Underfull \hbox (badness 3525) in paragraph at lines 576--585
-[]\T1/ptm/m/n/9 Rosenzweig, C., Ru-ane, A. C., An-tle, J., El-liott, J., Ash-
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 576--585
-\T1/ptm/m/n/9 A: Math-e-mat-i-cal, Phys-i-cal and En-gi-neer-ing Sci-ences, 376
-,
- []
-
-
-Underfull \hbox (badness 1960) in paragraph at lines 606--611
-\T1/ptm/m/n/9 Jones, J. W., Romero, C. C., and Ce-cil, L. D.: Carbon-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--618
-[]\T1/ptm/m/n/9 Ruane, A. C., Gold-berg, R., and Chrys-san-tha-copou-los,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--618
-\T1/ptm/m/n/9 J.: Cli-mate forc-ing datasets for agri-cul-tural mod-el-ing:
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 614--618
-\T1/ptm/m/n/9 Merged prod-ucts for gap-filling and his-tor-i-cal cli-mate se-
- []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 614--618
-\T1/ptm/m/n/9 ries es-ti-ma-tion, Agric. For-est Me-te-o-rol., 200, 233--248,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 4391) in paragraph at lines 654--657
-[]\T1/ptm/m/n/9 Sacks, W. J., Deryng, D., Fo-ley, J. A., and Ra-mankutty,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--657
-\T1/ptm/m/n/9 N.: Crop plant-ing dates: an anal-y-sis of global pat-
- []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 654--657
-\T1/ptm/m/n/9 terns, Global Ecol-ogy and Bio-geog-ra-phy, 19, 607--620,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 709--712
-[]\T1/ptm/m/n/9 Taylor, K. E., Stouf-fer, R. J., and Meehl, G. A.: An
+[22]
+Underfull \hbox (badness 1490) in paragraph at lines 234--238
+\T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
+-pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
  []
 
-
-Underfull \hbox (badness 1681) in paragraph at lines 709--712
-\T1/ptm/m/n/9 Overview of CMIP5 and the Ex-per-i-ment De-sign, Bul-letin
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 709--712
-\T1/ptm/m/n/9 of the Amer-i-can Me-te-o-ro-log-i-cal So-ci-ety, 93, 485--498,
- []
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 714--717
-\T1/ptm/m/n/9 Re-search Let-ters, 35, https://doi.org/[]10.1029/2008GL033423[],
-
- []
-
-
-Underfull \hbox (badness 2221) in paragraph at lines 734--737
-[]\T1/ptm/m/n/9 White, J. W., Hoogen-boom, G., Kim-ball, B. A., and Wall,
+[23]
+Underfull \hbox (badness 1147) in paragraph at lines 355--359
+[]\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
+b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 753--756
-[]\T1/ptm/m/n/9 Wolf, J. and Oi-jen, M.: Mod-elling the de-pen-dence of Eu-
+Underfull \hbox (badness 1424) in paragraph at lines 355--359
+\T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
+-va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-
-Underfull \hbox (badness 5711) in paragraph at lines 753--756
-\T1/ptm/m/n/9 ro-pean potato yields on changes in cli-mate and CO2,
+[24]
+Underfull \hbox (badness 1292) in paragraph at lines 522--527
+\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
+i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
-
 
-Underfull \hbox (badness 7064) in paragraph at lines 753--756
-\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 112, 217 -- 231,
+[25]
+Underfull \hbox (badness 1005) in paragraph at lines 548--551
+[]\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
+gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
  []
 
-
-Underfull \hbox (badness 1418) in paragraph at lines 761--768
-\T1/ptm/m/n/9 lec, T., Bern-hofer, C., Grün-wald, T., Moureaux, C., Man-
+[26]
+Underfull \hbox (badness 3735) in paragraph at lines 734--738
+[]\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
+ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 761--768
-\T1/ptm/m/n/9 agro-land sur-face model: model de-scrip-tion and eval-u-a-tion
+Underfull \hbox (badness 2707) in paragraph at lines 734--738
+\T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
+ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
-
-) [20
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+[27]) [28] [29] [30 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/A
+gformet_validation.png>] [31 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/
+figures/error_360.png>] [32 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/f
+igures/em_err.png>] [33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 431.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 448.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  )
-(\end occurred when \ifx on line 394 was incomplete)
-(\end occurred when \ifx on line 392 was incomplete)
-(\end occurred when \ifx on line 390 was incomplete)
-(\end occurred when \ifx on line 367 was incomplete)
-(\end occurred when \ifx on line 326 was incomplete)
-(\end occurred when \ifx on line 324 was incomplete)
-(\end occurred when \ifx on line 315 was incomplete)
-(\end occurred when \ifx on line 302 was incomplete)
+(\end occurred when \ifx on line 411 was incomplete)
+(\end occurred when \ifx on line 409 was incomplete)
+(\end occurred when \ifx on line 407 was incomplete)
+(\end occurred when \ifx on line 384 was incomplete)
+(\end occurred when \ifx on line 330 was incomplete)
+(\end occurred when \ifx on line 328 was incomplete)
+(\end occurred when \ifx on line 319 was incomplete)
+(\end occurred when \ifx on line 306 was incomplete)
+(\end occurred when \ifx on line 233 was incomplete)
+(\end occurred when \ifx on line 231 was incomplete)
 (\end occurred when \ifx on line 229 was incomplete)
-(\end occurred when \ifx on line 227 was incomplete)
 (\end occurred when \ifx on line 225 was incomplete)
-(\end occurred when \ifx on line 221 was incomplete)
-(\end occurred when \ifx on line 206 was incomplete)
-(\end occurred when \ifx on line 198 was incomplete)
-(\end occurred when \ifx on line 132 was incomplete) 
+(\end occurred when \ifx on line 210 was incomplete)
+(\end occurred when \ifx on line 200 was incomplete)
+(\end occurred when \ifx on line 134 was incomplete) 
 Here is how much of TeX's memory you used:
- 10906 strings out of 492995
- 154848 string characters out of 6132704
- 335252 words of memory out of 5000000
- 14075 multiletter control sequences out of 15000+600000
- 46783 words of font info for 65 fonts, out of 8000000 for 9000
+ 10920 strings out of 492995
+ 154961 string characters out of 6132704
+ 346690 words of memory out of 5000000
+ 14069 multiletter control sequences out of 15000+600000
+ 43114 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,2115b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1946b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
@@ -1919,15 +1461,15 @@ sfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (20
- pages, 10168778 bytes).
+m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (33
+ pages, 10161042 bytes).
 PDF statistics:
- 804 PDF objects out of 1000 (max. 8388607)
- 736 compressed objects within 8 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 751 compressed objects within 8 object streams
+ 171 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
