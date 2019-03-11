@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,6 +939,18 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 Package xr Info: IMPORTING LABELS FROM ../PhaseIIPaper/supdocs/supdocs.aux on i
 nput line 10.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
+Runaway argument?
+{{2}{4}{Simulation -- Meth 
+! File ended while scanning use of \@newl@bel.
+<inserted text> 
+                \par 
+l.12 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1182,10 +1194,6 @@ Package natbib Warning: Citation `Holden2014' on page 3 undefined on input line
  113.
 
 
-Package natbib Warning: Citation `Lakshminarayan97' on page 3 undefined on inpu
-t line 115.
-
-
 Package natbib Warning: Citation `Howden2005' on page 3 undefined on input line
  117.
 
@@ -1396,48 +1404,47 @@ put line 152.
 Package natbib Warning: Citation `FAOSTAT' on page 4 undefined on input line 15
 2.
 
-[4]
 
 Package lineno Warning: Linenumber reference failed, 
 (lineno)                rerun to get it right.
 
-[5 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
+[4]
 Runaway argument?
 {Models included in GGCMI Phase II and the number of C, T, W, and N s\ETC.
 ! Paragraph ended before \caption@prepareanchor was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `table:inputs' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:inputs' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Ruane2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Ruane2015' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `table:models' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:models' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Sacks2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Sacks2010' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Portmann2008' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `Portmann2008' on page 5 undefined on input li
+ne 409.
 
 
-Package natbib Warning: Citation `Portmann2010' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `Portmann2010' on page 5 undefined on input li
+ne 409.
 
 
-Package natbib Warning: Citation `Elliott2015' on page 6 undefined on input lin
-e 420.
+Package natbib Warning: Citation `Elliott2015' on page 5 undefined on input lin
+e 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1446,48 +1453,52 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/global_sim_CG.png, id=39, 4516.875pt x 1806.75pt>
+<figures/global_sim_CG.png, id=32, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 420.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 409.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
-Package natbib Warning: Citation `rubel2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `rubel2010' on page 5 undefined on input line 
+409.
 
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material for currently-culti\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `table:models' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:models' on page 5 undefined on input line 409.
+
+
+LaTeX Warning: Reference `fig:crop_area' on page 5 undefined on input line 409.
+
 
 Runaway argument?
 {\@firstoffive }\fi  in the Supplemental Material for irrigated crops\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1496,70 +1507,70 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/baselinecomp_yield_3.png, id=41, 527.42645pt x 347.47417pt>
+<figures/baselinecomp_yield_3.png, id=33, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 42
-0.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 40
+9.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material.) White stippling i\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globesim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `rubel2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `rubel2010' on page 5 undefined on input line 
+409.
 
 Runaway argument?
 {\@firstoffive }\fi ). 
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globesim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi  for the irrigated case. As expected, irrigated c\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:maizesoybaseline' on page 6 undefined on input li
-ne 420.
+LaTeX Warning: Reference `fig:maizesoybaseline' on page 5 undefined on input li
+ne 409.
 
 Runaway argument?
 {\@firstoffive }\fi ; wheat projections are more uncertain, possibly \ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1572,15 +1583,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/tempyearvclim.png, id=42, 322.9666pt x 333.0844pt>
+<figures/tempyearvclim.png, id=34, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 420.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
 
 ! LaTeX Error: Not in outer par mode.
@@ -1589,86 +1600,86 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/hist_year.png, id=43, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=35, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 420.
+Package pdftex.def Info: figures/hist_year.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearly' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearly' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Ruane2016' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Ruane2016' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Glotter14' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Glotter14' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Schlenker2009' on page 6 undefined on input l
-ine 420.
+Package natbib Warning: Citation `Schlenker2009' on page 5 undefined on input l
+ine 409.
 
 
-Package natbib Warning: Citation `He2016' on page 6 undefined on input line 420
+Package natbib Warning: Citation `He2016' on page 5 undefined on input line 409
 .
 
 
-Package natbib Warning: Citation `Lobell2007' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Lobell2007' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `Tebaldi2008' on page 6 undefined on input lin
-e 420.
+Package natbib Warning: Citation `Tebaldi2008' on page 5 undefined on input lin
+e 409.
 
 
-Package natbib Warning: Citation `AULAKH2005' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `AULAKH2005' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `Mitsuru92' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Mitsuru92' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Nakamura97' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Nakamura97' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `BLANC2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `BLANC2015' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `BLANC2017' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `BLANC2017' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `eqn:features_final' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `eqn:features_final' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `MacKay91' on page 6 undefined on input line 4
-20.
+Package natbib Warning: Citation `MacKay91' on page 5 undefined on input line 4
+09.
 
 
-Package natbib Warning: Citation `scikit-learn' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `scikit-learn' on page 5 undefined on input li
+ne 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1677,19 +1688,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/regression_areas.png, id=44, 5420.25pt x 2258.4375pt>
+<figures/regression_areas.png, id=36, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 420.
+Package pdftex.def Info: figures/regression_areas.png used on input line 409.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `eqn:features_final' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `eqn:features_final' on page 5 undefined on input line
+ 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1698,22 +1709,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/regression_model.png, id=45, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=37, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 420.
+Package pdftex.def Info: figures/regression_model.png used on input line 409.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
@@ -1723,56 +1734,56 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/global_em_maize.png, id=46, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=38, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 420.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} in the supplemental materia\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression_iowa' on page 6 undefined on input lin
-e 420.
+LaTeX Warning: Reference `fig:regression_iowa' on page 5 undefined on input lin
+e 409.
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-Package natbib Warning: Citation `Torsten77' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Torsten77' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `fig:globe_em' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globe_em' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} for other crops and dimensi\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1783,44 +1794,44 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globe_em' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globe_em' on page 5 undefined on input line 409.
+
+
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 Runaway argument?
-{\@firstoffive }\fi --\ref {fig:KGirr_currentcult}). The same behavio\ETC.
+{\@firstoffive }\fi ). The effect results from geographic differences\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `table:inputs' on page 6 undefined on input line 420.
+Package natbib Warning: Citation `Leeds2015' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Leeds2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `poppick2016' on page 5 undefined on input lin
+e 409.
 
 
-Package natbib Warning: Citation `poppick2016' on page 6 undefined on input lin
-e 420.
-
-
-Package natbib Warning: Citation `Won16' on page 6 undefined on input line 420.
+Package natbib Warning: Citation `Won16' on page 5 undefined on input line 409.
 
 
 
-Package natbib Warning: Citation `Haugen2018' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Haugen2018' on page 5 undefined on input line
+ 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1829,48 +1840,48 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/Agformet_validation.png, id=47, 632.50703pt x 617.61942pt>
+<figures/Agformet_validation.png, id=39, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 420
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 409
 .
 (pdftex.def)             Requested size: 455.24408pt x 444.52542pt.
 
-Package natbib Warning: Citation `FAOSTAT' on page 6 undefined on input line 42
-0.
+Package natbib Warning: Citation `FAOSTAT' on page 5 undefined on input line 40
+9.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
-Package natbib Warning: Citation `FAOSTAT' on page 6 undefined on input line 42
-0.
+Package natbib Warning: Citation `FAOSTAT' on page 5 undefined on input line 40
+9.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -1879,21 +1890,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/error_360.png, id=48, 2258.4375pt x 4968.5625pt>
+<figures/error_360.png, id=40, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 420.
+Package pdftex.def Info: figures/error_360.png used on input line 409.
 (pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
 
-LaTeX Warning: Reference `eqn:error' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:error' on page 5 undefined on input line 409.
 
 
-LaTeX Warning: Reference `eqn:per_yield' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:per_yield' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -1901,7 +1912,7 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1914,40 +1925,40 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/em_err.png, id=49, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=41, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 420.
+Package pdftex.def Info: figures/em_err.png used on input line 409.
 (pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `eqn:per_yield' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:per_yield' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `eqn:error' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:error' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi ). 
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -1955,14 +1966,14 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -1970,7 +1981,7 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1983,7 +1994,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1991,7 +2002,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I'm guessing that you meant to end an alignment here.
 
@@ -2000,7 +2011,7 @@ Runaway argument?
 ! Paragraph ended before \caption@@@addcontentsline was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2013,7 +2024,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2025,7 +2036,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2037,7 +2048,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2049,7 +2060,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2061,7 +2072,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2073,7 +2084,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2085,7 +2096,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2097,7 +2108,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2109,7 +2120,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2121,7 +2132,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2133,7 +2144,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2145,7 +2156,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2157,36 +2168,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `table:inputs' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:inputs' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Ruane2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Ruane2015' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `table:models' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:models' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Sacks2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Sacks2010' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Portmann2008' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `Portmann2008' on page 5 undefined on input li
+ne 409.
 
 
-Package natbib Warning: Citation `Portmann2010' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `Portmann2010' on page 5 undefined on input li
+ne 409.
 
 
-Package natbib Warning: Citation `Elliott2015' on page 6 undefined on input lin
-e 420.
+Package natbib Warning: Citation `Elliott2015' on page 5 undefined on input lin
+e 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2195,47 +2206,51 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 420.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 409.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
-Package natbib Warning: Citation `rubel2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `rubel2010' on page 5 undefined on input line 
+409.
 
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material for currently-culti\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `table:models' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `table:models' on page 5 undefined on input line 409.
+
+
+LaTeX Warning: Reference `fig:crop_area' on page 5 undefined on input line 409.
+
 
 Runaway argument?
 {\@firstoffive }\fi  in the Supplemental Material for irrigated crops\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2244,69 +2259,69 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 42
-0.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 40
+9.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material.) White stippling i\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globesim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `rubel2010' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `rubel2010' on page 5 undefined on input line 
+409.
 
 Runaway argument?
 {\@firstoffive }\fi ). 
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globesim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi  for the irrigated case. As expected, irrigated c\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:maizesoybaseline' on page 6 undefined on input li
-ne 420.
+LaTeX Warning: Reference `fig:maizesoybaseline' on page 5 undefined on input li
+ne 409.
 
 Runaway argument?
 {\@firstoffive }\fi ; wheat projections are more uncertain, possibly \ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2319,14 +2334,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 420.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
 
 ! LaTeX Error: Not in outer par mode.
@@ -2335,85 +2350,85 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 420.
+Package pdftex.def Info: figures/hist_year.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearvclim' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearvclim' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `fig:yearly' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:yearly' on page 5 undefined on input line 409.
 
 
-Package natbib Warning: Citation `Ruane2016' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Ruane2016' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Glotter14' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Glotter14' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Schlenker2009' on page 6 undefined on input l
-ine 420.
+Package natbib Warning: Citation `Schlenker2009' on page 5 undefined on input l
+ine 409.
 
 
-Package natbib Warning: Citation `He2016' on page 6 undefined on input line 420
+Package natbib Warning: Citation `He2016' on page 5 undefined on input line 409
 .
 
 
-Package natbib Warning: Citation `Lobell2007' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Lobell2007' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `Tebaldi2008' on page 6 undefined on input lin
-e 420.
+Package natbib Warning: Citation `Tebaldi2008' on page 5 undefined on input lin
+e 409.
 
 
-Package natbib Warning: Citation `AULAKH2005' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `AULAKH2005' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `Mitsuru92' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Mitsuru92' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Nakamura97' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Nakamura97' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `BLANC2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `BLANC2015' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `BLANC2017' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `BLANC2017' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `eqn:features_final' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `eqn:features_final' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `MacKay91' on page 6 undefined on input line 4
-20.
+Package natbib Warning: Citation `MacKay91' on page 5 undefined on input line 4
+09.
 
 
-Package natbib Warning: Citation `scikit-learn' on page 6 undefined on input li
-ne 420.
+Package natbib Warning: Citation `scikit-learn' on page 5 undefined on input li
+ne 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2422,18 +2437,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 420.
+Package pdftex.def Info: figures/regression_areas.png used on input line 409.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `eqn:features_final' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `eqn:features_final' on page 5 undefined on input line
+ 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2442,21 +2457,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 420.
+Package pdftex.def Info: figures/regression_model.png used on input line 409.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
@@ -2466,55 +2481,55 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 420.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 409.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} in the supplemental materia\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-LaTeX Warning: Reference `fig:regression_iowa' on page 6 undefined on input lin
-e 420.
+LaTeX Warning: Reference `fig:regression_iowa' on page 5 undefined on input lin
+e 409.
 
 
-LaTeX Warning: Reference `fig:regression' on page 6 undefined on input line 420
+LaTeX Warning: Reference `fig:regression' on page 5 undefined on input line 409
 .
 
 
-Package natbib Warning: Citation `Torsten77' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `Torsten77' on page 5 undefined on input line 
+409.
 
 
-LaTeX Warning: Reference `fig:globe_em' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globe_em' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} for other crops and dimensi\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2525,44 +2540,44 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:globe_em' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:globe_em' on page 5 undefined on input line 409.
+
+
+LaTeX Warning: Reference `fig:globesim' on page 5 undefined on input line 409.
 
 Runaway argument?
-{\@firstoffive }\fi --\ref {fig:KGirr_currentcult}). The same behavio\ETC.
+{\@firstoffive }\fi ). The effect results from geographic differences\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `table:inputs' on page 6 undefined on input line 420.
+Package natbib Warning: Citation `Leeds2015' on page 5 undefined on input line 
+409.
 
 
-Package natbib Warning: Citation `Leeds2015' on page 6 undefined on input line 
-420.
+Package natbib Warning: Citation `poppick2016' on page 5 undefined on input lin
+e 409.
 
 
-Package natbib Warning: Citation `poppick2016' on page 6 undefined on input lin
-e 420.
-
-
-Package natbib Warning: Citation `Won16' on page 6 undefined on input line 420.
+Package natbib Warning: Citation `Won16' on page 5 undefined on input line 409.
 
 
 
-Package natbib Warning: Citation `Haugen2018' on page 6 undefined on input line
- 420.
+Package natbib Warning: Citation `Haugen2018' on page 5 undefined on input line
+ 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2571,47 +2586,47 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 420
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 409
 .
 (pdftex.def)             Requested size: 455.24408pt x 444.52542pt.
 
-Package natbib Warning: Citation `FAOSTAT' on page 6 undefined on input line 42
-0.
+Package natbib Warning: Citation `FAOSTAT' on page 5 undefined on input line 40
+9.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
-Package natbib Warning: Citation `FAOSTAT' on page 6 undefined on input line 42
-0.
+Package natbib Warning: Citation `FAOSTAT' on page 5 undefined on input line 40
+9.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
-LaTeX Warning: Reference `fig:simulation_val' on page 6 undefined on input line
- 420.
+LaTeX Warning: Reference `fig:simulation_val' on page 5 undefined on input line
+ 409.
 
 
-Package natbib Warning: Citation `muller_global_2017' on page 6 undefined on in
-put line 420.
+Package natbib Warning: Citation `muller_global_2017' on page 5 undefined on in
+put line 409.
 
 
 ! LaTeX Error: Not in outer par mode.
@@ -2620,20 +2635,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 420.
+Package pdftex.def Info: figures/error_360.png used on input line 409.
 (pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
 
-LaTeX Warning: Reference `eqn:error' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:error' on page 5 undefined on input line 409.
 
 
-LaTeX Warning: Reference `eqn:per_yield' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:per_yield' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -2641,7 +2656,7 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2654,39 +2669,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 420.
+Package pdftex.def Info: figures/em_err.png used on input line 409.
 (pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `eqn:per_yield' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:per_yield' on page 5 undefined on input line 409.
 
 
 
-LaTeX Warning: Reference `eqn:error' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `eqn:error' on page 5 undefined on input line 409.
 
 Runaway argument?
 {\@firstoffive }\fi ). 
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -2694,14 +2709,14 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
+l.409 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
                                                    \\
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-LaTeX Warning: Reference `fig:error_360' on page 6 undefined on input line 420.
+LaTeX Warning: Reference `fig:error_360' on page 5 undefined on input line 409.
 
 
 Runaway argument?
@@ -2709,14 +2724,4 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.420 ...icolumn{2}{c |}{} & \multicolumn{2}{c}{}}
-                                                   \\
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immedi
+l.409 ...icolumn{2}{c |}{} & \multicolumn
