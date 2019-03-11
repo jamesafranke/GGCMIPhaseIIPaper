@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1052,7 +1052,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.148 ...d nitrogen (N)}& {10, 60, \textbf{200|} &
+l.148 ...ed nitrogen (N)}& {10, 60, \textbf{200} &
                                                    {kg ha$^{-1}$}\\ \bottomh...
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1089,19 +1089,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--159
  []
 
 
-Overfull \hbox (2.83324pt too wide) in paragraph at lines 159--159
-[]|\T1/ptm/b/n/9 Simulations
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]|\T1/ptm/b/n/9 Rainfed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/ptm/b/n/9 sims. per
  []
 
 LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `TS1/ptm/b/n' tried instead on input line 171.
 
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
-[]|\T1/ptm/m/n/9 3993
+[]|\T1/ptm/m/n/9 3993 (e.g.
  []
 
 
-LaTeX Warning: Float too large for page by 0.4064pt on input line 175.
+LaTeX Warning: Float too large for page by 16.14384pt on input line 175.
 
 [5] [6 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
 <figures/global_sim_CG.png, id=337, 4516.875pt x 1806.75pt>
@@ -1443,11 +1448,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
 Here is how much of TeX's memory you used:
  10920 strings out of 492995
  154961 string characters out of 6132704
- 346690 words of memory out of 5000000
+ 346843 words of memory out of 5000000
  14069 multiletter control sequences out of 15000+600000
  43114 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1946b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1945b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
@@ -1466,7 +1471,7 @@ m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 /local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (33
- pages, 10161042 bytes).
+ pages, 10160904 bytes).
 PDF statistics:
  832 PDF objects out of 1000 (max. 8388607)
  751 compressed objects within 8 object streams
