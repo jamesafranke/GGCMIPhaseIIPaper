@@ -7,7 +7,7 @@
 %\usepackage{tabularx}, \usepackage{cancel}, \usepackage{multirow}, \usepackage{supertabular}, \usepackage{algorithmic}
 %\usepackage{algorithm}, \usepackage{amsthm}, \usepackage{float}, \usepackage{subfig}, \usepackage{rotating}
 \usepackage{xr}
-%\externaldocument{../PhaseIIPaper/supdocs/supdocs}
+\externaldocument{../PhaseIIPaper/supdocs/supdocs}
 
 \begin{document}
 \title{The GGCMI Phase II experiment: simulating and emulating global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}
@@ -136,20 +136,15 @@ In this paper we describe a new comprehensive dataset designed to expand the par
 \end{figure}
 
 \begin{table}[t]
-\caption{GGCMI Phase II input variable test levels. Temperature and precipitation values indicate the perturbations from the historical climatology and are selected to represent reasonable ranges for potential climate changes in the medium term.  W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. One model provided simulations at the T + 5 level.}}
+\caption{GGCMI Phase II input variable test levels. Temperature and precipitation values indicate the perturbations from the historical climatology and are selected to represent reasonable ranges for potential climate changes in the medium term.  W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. One model provided simulations at the T + 5 level.}
 \label{table:inputs} 
     \begin{tabular}{lcc} 
         \tophline \vspace{1mm}
         \textbf{Input variable} & \textbf{Tested range} & \textbf{Unit} \\ \middlehline \vspace{1mm}
-
         CO$_2$ (C) & \textbf{360}, 510, 660, 810 & ppm\\ \middlehline \vspace{1mm}
-
         Temperature (T) & -1, \textbf{0}, 1, 2, 3, 4, 6} & $^{\circ}$C\\ \middlehline \vspace{1mm}
-
         Precipitation (W) & -50, -30, -20, -10, \textbf{0}, & \% \\
-
         {} & 10, 20, 30, (and W$_{inf}$) & {} \\ \middlehline \vspace{1mm}
-
         Applied nitrogen (N) & 10, 60, \textbf{200} & kg ha$^{-1}$ \\ \bottomhline
     \end{tabular}\\
 \end{table}
@@ -303,8 +298,7 @@ To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \cite
 \begin{figure*}[h]
 \centering
     \includegraphics[width=16cm]{figures/regression_model.png}
-    \caption{Illustration of across-model variations in yield response. Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. Models that do not simulate the nitrogen dimension are omitted for clarity. Note that models are uncalibrated, increasing spread in absolute yields.
-While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated (e.g.\  LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. For more detailed emulator assessment, see Appendix B. As in Figure \ref{fig:regression}, extrapolation out of the sample space is potentially problematic.}
+    \caption{Illustration of across-model variations in yield response. Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. Models that do not simulate the nitrogen dimension are omitted for clarity. Note that models are uncalibrated, increasing spread in absolute yields. While most model responses can readily emulated with a simple polynomial, some response surfaces are more complicated (e.g.\  LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. For more detailed emulator assessment, see Appendix B. As in Figure \ref{fig:regression}, extrapolation out of the sample space is potentially problematic.}
    \label{fig:regression_iowa}
 \end{figure*}
 
@@ -343,14 +337,13 @@ Third, we show that the GGCMI Phase II climatological crop yield response can be
 
 While the GGCMI Phase II database should offer the foundation for multiple future studies, several cautions need to be noted. Emulating these responses allows estimating agricultural impacts under arbitrary climate scenarios, but extrapolating should be avoided. Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections unless used in conjunction with historical data (or data products). Finally, the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs and they do not sample potential changes in climate variability. Although such changes in climate are uncertain and poorly characterized {\color{red} citation needed}, follow-up experiments may wish to consider them. Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes not only in temperature and precipitation means but in their marginal distributions or temporal dependence (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}).
 
-{\color{blue}
-The GGCMI Phase II output dataset invites a broad range of potential future avenues of analysis. A major target area of research is studying the simulation models themselves including: a detailed examination of interaction terms between the major input drivers, a robust quantification of the sensitivity of different models to the input drivers, and comparisons with field-level experimental data. The parameter space tested in GGCMI Phase II may allow investigations into yield variability and response to extremes under changing management and CO$_2$ levels and allow the study of geographic shifts in optimal growing regions for different crops. Emulation studies that are possible include a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. The development of multi-model ensembles such as GGCMI Phase II provides a way to begin to better understand crop responses to a range of potential climate inputs, improve process based models, and explore the potential benefits of adaptive responses included shifting growing period, cultivar types and cultivar geographic extent.}
+The GGCMI Phase II output dataset invites a broad range of potential future avenues of analysis. A major target area of research is studying the simulation models themselves including: a detailed examination of interaction terms between the major input drivers, a robust quantification of the sensitivity of different models to the input drivers, and comparisons with field-level experimental data. The parameter space tested in GGCMI Phase II may allow investigations into yield variability and response to extremes under changing management and CO$_2$ levels and allow the study of geographic shifts in optimal growing regions for different crops. Emulation studies that are possible include a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. The development of multi-model ensembles such as GGCMI Phase II provides a way to begin to better understand crop responses to a range of potential climate inputs, improve process based models, and explore the potential benefits of adaptive responses included shifting growing period, cultivar types and cultivar geographic extent.
 
 %The output dataset also contains additional runs and variables not analyzed or shown here. Simulations include several which allowed adaptation to climate changes by altering growing seasons, and additional out variables include above ground biomass, LAI, and root biomass (as many as 25 output variables for some models). 
 %Emulation also allow making state-of-the-art simulation results available to a wide research community as simple, computationally tractable tools that can be used by downstream modelers to understand the socioeconomic impacts of crop response to climate change.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\codedataavailability{The resulting parameter matrices for all crop model emulators are available on {\color{red} give location?}, as are the raw simulation yield outputs. {\color{red} Code to run the emulator is available upon request to the author.}}
+\codedataavailability{The resulting parameter matrices for all crop model emulators are available on {\color{red} location}, as are the raw simulation yield outputs. {\color{red} Code to run the emulator is available upon request to the author.}}
 
 \appendix
 \section{}
@@ -404,6 +397,23 @@ This metric implies that emulation is generally satisfactory, with several disti
 
 This assessment procedure is relatively forgiving for several reasons. First, each emulation is evaluated against the simulation actually used to train the emulator. Had we used a spline interpolation the error would necessarily be zero. Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. Where models differ more widely, the standard for emulators becomes less stringent. This effect is readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure \ref{fig:error810}) because models disagree on the magnitude of CO$_2$ fertilization. The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models, cross-validation procedures where the emulator is trained on some portion of data and tested on a held-out portion, and calculating standard error on emulator parameters.
 
+\noappendix %% use this to mark the end of the appendix section
+
+\authorcontribution{J.E., C.M, A.R. and J.F. designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z. performed the simulations. J.F., J.J., A.S, and M.L. performed the analysis and J.F. and E.M. prepared the manuscript.}
+
+\competinginterests{The authors declare no competing interests.}
+
+\begin{acknowledgements}
+We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF).  C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. P.F. and K.W. were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). A.S.\ was supported by the Office of Science of the U.S. Department of Energy as part of the Multi-sector Dynamics Research Program Area. S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). This is paper number 35 of the Birmingham Institute of Forest Research. Computing resources were provided by the University of Chicago Research Computing Center (RCC).
+\end{acknowledgements}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+\bibliographystyle{copernicus}
+\bibliography{bib.bib}
+
+\end{document}
+
+
 \begin{table*}[t]
 \caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 5-fold stratified kfold 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The 80-20 percent does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
 \label{table:MSE}
@@ -427,21 +437,6 @@ This assessment procedure is relatively forgiving for several reasons. First, ea
 \end{tabular}
 \end{table*}
 
-\noappendix %% use this to mark the end of the appendix section
-
-\authorcontribution{J.E., C.M, A.R. and J.F. designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z. performed the simulations. J.F., J.J., A.S, and M.L. performed the analysis and J.F. and E.M. prepared the manuscript.}
-
-\competinginterests{The authors declare no competing interests.}
-
-\begin{acknowledgements}
-We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF).  C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. P.F. and K.W. were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). A.S.\ was supported by the Office of Science of the U.S. Department of Energy as part of the Multi-sector Dynamics Research Program Area. S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). This is paper number 35 of the Birmingham Institute of Forest Research. Computing resources were provided by the University of Chicago Research Computing Center (RCC).
-\end{acknowledgements}
-
-%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
-\bibliographystyle{copernicus}
-\bibliography{bib.bib}
-
-\end{document}
 
 %% LITERATURE CITATIONS
 %%
