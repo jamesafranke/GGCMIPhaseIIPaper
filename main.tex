@@ -7,7 +7,7 @@
 %\usepackage{tabularx}, \usepackage{cancel}, \usepackage{multirow}, \usepackage{supertabular}, \usepackage{algorithmic}
 %\usepackage{algorithm}, \usepackage{amsthm}, \usepackage{float}, \usepackage{subfig}, \usepackage{rotating}
 \usepackage{xr}
-\externaldocument{../PhaseIIPaper/supdocs/supdocs}
+%\externaldocument{../PhaseIIPaper/supdocs/supdocs}
 
 \begin{document}
 \title{The GGCMI Phase II experiment: simulating and emulating global crop yield responses to changes in carbon dioxide, temperature, water, and nitrogen levels}
@@ -81,12 +81,12 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-{\color{blue} Concerns about food security under climate change have motivated efforts to better understand the future changes in yields by using detailed process-based models in agronomic sciences.
+Concerns about food security under climate change have motivated efforts to better understand the future changes in yields by using detailed process-based models in agronomic sciences.
 Process-based crop models differ on many details affecting yields and considerable uncertainty remains in future yield projections.
 Phase II of the Global Gridded Crop Model Intercomparison (GGCMI), an activity of the Agricultural Model Intercomparison and Improvement Project (AgMIP), consists of a large simulation set with perturbations in atmospheric CO$_2$ concentrations, temperature, precipitation, and applied nitrogen inputs and constitutes a data-rich basis of projected yield changes across twelve models and five crops (maize, soy, rice, spring wheat, and winter wheat) using global gridded simulations.
 In this paper we present the simulation output database from Phase II of the GGCMI effort, a targeted experiment aimed at understanding the sensitivity to and interaction between multiple climate variables (as well as management) on yields, and illustrate some initial summary results from the model intercomparison project.
 We also present the construction of a simple ``emulator'' or statistical representation of the simulated 30-year mean climatological output in each location for each crop and model.
-The emulator captures the mean-climatological response of the process-based models in a lightweight, computationally tractable form that facilitates model comparison as well as potential applications in subsequent modeling efforts such as integrated assessment.}
+The emulator captures the mean-climatological response of the process-based models in a lightweight, computationally tractable form that facilitates model comparison as well as potential applications in subsequent modeling efforts such as integrated assessment.
 
 %Results of these models are often used to inform subsequent model-based analyses in agricultural economics and integrated assessment, but the computational requirements of process-based models sometimes hamper the ability to utilize these models in existing impact assessment frameworks at high resolutions globally. 
 %Models robustly produce yield responses that are nonlinear and sensitive to interactions across the input variables. 
@@ -145,7 +145,7 @@ In this paper we describe a new comprehensive dataset designed to expand the par
         {Temperature (T)} & {-1, \textbf{0}, 1, 2, 3, 4, 6} & {$^{\circ}$C}\\ \middlehline \vspace{1mm}
         {Precipitation (W)} & {-50, -30, -20, -10, \textbf{0},} & {\%} \\
         {}& {10, 20, 30, (and W$_{inf}$)} & {}\\ \middlehline \vspace{1mm}
-        {Applied nitrogen (N)}& {10, 60, \textbf{200} & {kg ha$^{-1}$}\\ \bottomhline
+        {Applied nitrogen (N)}& {10, 60, \textbf{200}} & {kg ha$^{-1}$}\\ \bottomhline
     \end{tabular}\\
 \end{table}
 
