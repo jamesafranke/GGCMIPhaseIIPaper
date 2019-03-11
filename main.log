@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 MAR 2019 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,52 +1074,44 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 155.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 158.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []|\T1/ptm/b/n/9 Spring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-[]|\T1/ptm/b/n/9 Rainfed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-\T1/ptm/b/n/9 sims. per
+Overfull \hbox (2.83324pt too wide) in paragraph at lines 162--162
+[]|\T1/ptm/b/n/9 Simulations
  []
 
 LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 171.
+(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 174.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-[]|\T1/ptm/m/n/9 3993 (e.g.
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+[]|\T1/ptm/m/n/9 5240 (e.g.
  []
 
-
-LaTeX Warning: Float too large for page by 16.14384pt on input line 175.
-
 [5] [6 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png>]
-<figures/global_sim_CG.png, id=337, 4516.875pt x 1806.75pt>
+[7] <figures/global_sim_CG.png, id=367, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 199.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 202.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material for currently-culti\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.200 ...ons of more realistic climate scenarios.}
+l.203 ...ons of more realistic climate scenarios.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1133,24 +1125,24 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.211 
+l.214 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[7] <figures/baselinecomp_yield_3.png, id=353, 527.42645pt x 347.47417pt>
+[8] <figures/baselinecomp_yield_3.png, id=380, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 22
-4.
+7.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 Runaway argument?
 {\@firstoffive }\fi  in the supplemental material.) White stippling i\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.225 ...tive, also have the highest uncertainty.}
+l.228 ...tive, also have the highest uncertainty.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1164,20 +1156,20 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.230 
+l.233 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
+[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png>
 ]
 Runaway argument?
 {\@firstoffive }\fi  for the irrigated case. As expected, irrigated c\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.232 
+l.235 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1188,55 +1180,55 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.234 
+l.237 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yield
-_3.png>] <figures/tempyearvclim.png, id=379, 322.9666pt x 333.0844pt>
+[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecomp_yiel
+d_3.png>] <figures/tempyearvclim.png, id=406, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 244.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 247.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
-<figures/hist_year.png, id=380, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=407, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 251.
+Package pdftex.def Info: figures/hist_year.png used on input line 254.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
->] [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>
-] [12] <figures/regression_areas.png, id=438, 5420.25pt x 2258.4375pt>
+[11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
+>] [12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>
+] [13] <figures/regression_areas.png, id=467, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 290.
+Package pdftex.def Info: figures/regression_areas.png used on input line 293.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/regression_model.png, id=440, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=469, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 297.
+Package pdftex.def Info: figures/regression_model.png used on input line 300.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/global_em_maize.png, id=443, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=472, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 305.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 308.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} in the supplemental materia\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.306 ...:nitrogen} in the supplemental material.}
+l.309 ...:nitrogen} in the supplemental material.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1245,26 +1237,26 @@ My plan is to forget the whole thing and hope for the best.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
+[14]
 Runaway argument?
 {\@firstoffive }\fi - \ref {fig:nitrogen} for other crops and dimensi\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.320 
+l.323 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
+[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_areas.
 png>]
 Runaway argument?
 {\@firstoffive }\fi ). Across geographic regions, projections are mos\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.329 
+l.332 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1275,34 +1267,34 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.331 
+l.334 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model.
-png>] [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_m
-aize.png>] <figures/Agformet_validation.png, id=491, 632.50703pt x 617.61942pt>
+[16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model.
+png>] [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_m
+aize.png>] <figures/Agformet_validation.png, id=518, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 368
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 371
 .
 (pdftex.def)             Requested size: 455.24408pt x 444.52542pt.
 
-LaTeX Warning: Float too large for page by 26.00276pt on input line 371.
+LaTeX Warning: Float too large for page by 26.00276pt on input line 374.
 
-[17] <figures/error_360.png, id=518, 2258.4375pt x 4968.5625pt>
+[18] <figures/error_360.png, id=545, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 383.
+Package pdftex.def Info: figures/error_360.png used on input line 386.
 (pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
 Runaway argument?
 {\@firstoffive }\fi ). JULES did not simulate spring wheat and LPJ-GU\ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.384 ...grading for hotter and wetter scenarios.}
+l.387 ...grading for hotter and wetter scenarios.}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1311,10 +1303,10 @@ My plan is to forget the whole thing and hope for the best.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/em_err.png, id=521, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=548, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 390.
+Package pdftex.def Info: figures/em_err.png used on input line 393.
 (pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1324,19 +1316,19 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.408 
+l.411 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[18]
+[19]
 Runaway argument?
 {\@firstoffive }\fi --\ref {fig:errorpromet}). Normalized errors for \ETC.
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.410 
+l.413 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1347,13 +1339,13 @@ Runaway argument?
 ! Paragraph ended before \Hy@setref@link was complete.
 <to be read again> 
                    \par 
-l.412 
+l.415 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[19] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl [20] [21]
+[20] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.bbl [21] [22]
 Underfull \hbox (badness 2253) in paragraph at lines 120--124
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
@@ -1377,13 +1369,13 @@ Underfull \hbox (badness 1635) in paragraph at lines 203--208
 r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
-[22]
+[23]
 Underfull \hbox (badness 1490) in paragraph at lines 234--238
 \T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
 -pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
  []
 
-[23]
+[24]
 Underfull \hbox (badness 1147) in paragraph at lines 355--359
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
@@ -1395,64 +1387,64 @@ Underfull \hbox (badness 1424) in paragraph at lines 355--359
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-[24]
+[25]
 Underfull \hbox (badness 1292) in paragraph at lines 522--527
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[25]
+[26]
 Underfull \hbox (badness 1005) in paragraph at lines 548--551
 []\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
 gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
  []
 
-[26]
-Underfull \hbox (badness 3735) in paragraph at lines 734--738
+[27]
+Underfull \hbox (badness 3735) in paragraph at lines 727--731
 []\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
 ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 734--738
+Underfull \hbox (badness 2707) in paragraph at lines 727--731
 \T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
-[27]) [28] [29] [30 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/A
-gformet_validation.png>] [31 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/
-figures/error_360.png>] [32 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/f
-igures/em_err.png>] [33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
+[28]) [29] [30 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agform
+et_validation.png>] [31 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figur
+es/error_360.png>] [32 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figure
+s/em_err.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 451.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 451.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 448.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 451.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 451.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 451.
  )
-(\end occurred when \ifx on line 411 was incomplete)
-(\end occurred when \ifx on line 409 was incomplete)
-(\end occurred when \ifx on line 407 was incomplete)
-(\end occurred when \ifx on line 384 was incomplete)
-(\end occurred when \ifx on line 330 was incomplete)
-(\end occurred when \ifx on line 328 was incomplete)
-(\end occurred when \ifx on line 319 was incomplete)
-(\end occurred when \ifx on line 306 was incomplete)
-(\end occurred when \ifx on line 233 was incomplete)
-(\end occurred when \ifx on line 231 was incomplete)
-(\end occurred when \ifx on line 229 was incomplete)
-(\end occurred when \ifx on line 225 was incomplete)
-(\end occurred when \ifx on line 210 was incomplete)
-(\end occurred when \ifx on line 200 was incomplete)
+(\end occurred when \ifx on line 414 was incomplete)
+(\end occurred when \ifx on line 412 was incomplete)
+(\end occurred when \ifx on line 410 was incomplete)
+(\end occurred when \ifx on line 387 was incomplete)
+(\end occurred when \ifx on line 333 was incomplete)
+(\end occurred when \ifx on line 331 was incomplete)
+(\end occurred when \ifx on line 322 was incomplete)
+(\end occurred when \ifx on line 309 was incomplete)
+(\end occurred when \ifx on line 236 was incomplete)
+(\end occurred when \ifx on line 234 was incomplete)
+(\end occurred when \ifx on line 232 was incomplete)
+(\end occurred when \ifx on line 228 was incomplete)
+(\end occurred when \ifx on line 213 was incomplete)
+(\end occurred when \ifx on line 203 was incomplete)
 (\end occurred when \ifx on line 134 was incomplete) 
 Here is how much of TeX's memory you used:
- 10920 strings out of 492995
- 154961 string characters out of 6132704
- 346843 words of memory out of 5000000
- 14069 multiletter control sequences out of 15000+600000
+ 10919 strings out of 492995
+ 154944 string characters out of 6132704
+ 321386 words of memory out of 5000000
+ 14070 multiletter control sequences out of 15000+600000
  43114 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1945b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1945b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
@@ -1470,11 +1462,11 @@ m/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (33
- pages, 10160904 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (32
+ pages, 10159747 bytes).
 PDF statistics:
- 832 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 824 PDF objects out of 1000 (max. 8388607)
+ 744 compressed objects within 8 object streams
+ 169 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,45 +8,45 @@ Repeated entry---line 737 of file bib.bib.bib
  :                    ,
 I'm skipping whatever remains of this entry
 Warning--missing publisher in Markowski2015
-You've used 102 entries,
+You've used 101 entries,
             2811 wiz_defined-function locations,
-            1735 strings with 42656 characters,
-and the built_in function-call counts, 138599 in all, are:
-= -- 14026
-> -- 8583
+            1727 strings with 42392 characters,
+and the built_in function-call counts, 137531 in all, are:
+= -- 13894
+> -- 8553
 < -- 32
-+ -- 3415
-- -- 2765
-* -- 9853
-:= -- 15156
-add.period$ -- 102
-call.type$ -- 102
-change.case$ -- 1126
-chr.to.int$ -- 101
-cite$ -- 307
-duplicate$ -- 12055
-empty$ -- 5980
-format.name$ -- 3083
-if$ -- 27226
++ -- 3399
+- -- 2756
+* -- 9789
+:= -- 15059
+add.period$ -- 101
+call.type$ -- 101
+change.case$ -- 1121
+chr.to.int$ -- 100
+cite$ -- 304
+duplicate$ -- 11940
+empty$ -- 5926
+format.name$ -- 3071
+if$ -- 27014
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1617
-newline$ -- 315
-num.names$ -- 410
-pop$ -- 5950
+missing$ -- 1607
+newline$ -- 312
+num.names$ -- 406
+pop$ -- 5910
 preamble$ -- 1
-purify$ -- 1125
+purify$ -- 1120
 quote$ -- 0
-skip$ -- 7110
+skip$ -- 7038
 stack$ -- 0
-substring$ -- 4743
-swap$ -- 10746
+substring$ -- 4691
+swap$ -- 10643
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 912
+type$ -- 903
 warning$ -- 1
-while$ -- 526
+while$ -- 520
 width$ -- 0
-write$ -- 1220
+write$ -- 1208
 (There was 1 error message)

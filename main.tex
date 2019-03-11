@@ -152,24 +152,27 @@ In this paper we describe a new comprehensive dataset designed to expand the par
 GGCMI Phase II is the continuation of a multi-model comparison exercise begun in 2014. The initial Phase I compared harmonized yields of 21 models for 19 crops over a 31-year historical (1980-2010) scenario with a primary goal of model evaluation \citep{Elliott2015, muller_global_2017}. Phase II compares simulations of 12 models for 5 crops (maize, rice, soybean, spring wheat, and winter wheat) over the same historical time series (1980-2010) used in Phase I, but with individual climate or management inputs adjusted from their historical values. The reduced set of crops includes the three major global cereals and the major legume and accounts for over 50\% of human calories (in 2016, nearly 3.5 billion tons or 32\% of total global crop production by weight \citep{FAOSTAT}. 
 
 \begin{table*}[t]
-\caption{Models included in GGCMI Phase II and the number of C, T, W, and N simulations that each performs for rainfed crops (``Simulations per Crop''), with 672 as the maximum for rainfed crops. ``N-Dim.'' indicates whether the simulations include varying nitrogen levels. Two models provide only one nitrogen level, and \dag PROMET provides only two of the three nitrogen levels (and so is not emulated across the nitrogen dimension). All models provide the same set of simulations across all modeled crops, but some omit individual crops. (For example, APSIM does not simulate winter wheat.) Irrigated simulations are provided at the level of the other covariates for each model, i.e.\ an additional 84 simulations for fully-sampled models. Simulations are nearly global but their geographic extent can vary, even for different crops in an individual model, since some simulations omit regions far outside the currently cultivated area. In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (marked with *) require sub-daily input data and use alternative sources. See \citet{Elliott2015} for additional details on crop model setup for intercomparison. } 
+\caption{Models included in GGCMI Phase II and the number of C, T, W, and N simulations that each performs, with 756 as the maximum. ``N-Dim.'' indicates whether the simulations include varying nitrogen levels. Two models provide only one nitrogen level, and \dag PROMET provides only two of the three nitrogen levels. All models provide the same set of simulations across all modeled crops, but some omit individual crops. (For example, APSIM does not simulate winter wheat.) 
+%Irrigated simulations are provided at the level of the other covariates for each model, i.e.\ an additional 84 simulations for fully-sampled models. 
+%Simulations are nearly global but their geographic extent can vary, even for different crops in an individual model, since some simulations omit regions far outside the currently cultivated area. In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (marked with *) require sub-daily input data and use alternative sources. 
+Models marked with * require sub-daily weather input data and so do not utilize the AgMERRA reanalysis dataset. See \citet{Elliott2015} for additional details on crop model setup for intercomparison.} 
 \label{table:models}
 	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.5cm}}
         \tophline
-        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Rainfed sims. per crop}}\\ \middlehline
-        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {37}\\ \middlehline
-        {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {224}\\ \middlehline
-        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {35}\\  \middlehline
-        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {672}\\ \middlehline
-        {\textbf{JULES*},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {224}\\ \middlehline
-        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {384}\\ \middlehline
-        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {672}\\  \middlehline
-        {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {672}\\ \middlehline
+        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Simulations per crop}}\\ \middlehline
+        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44}\\ \middlehline
+        {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252}\\ \middlehline
+        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39}\\  \middlehline
+        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765}\\ \middlehline
+        {\textbf{JULES*},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252}\\ \middlehline
+        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430}\\ \middlehline
+        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756}\\  \middlehline
+        {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756}\\ \middlehline
         {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--} & {X} & {--} & {X} & {X} & {33}\\ \middlehline
         {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {672}\\ \middlehline
-        {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {130}\\ \middlehline
-        {\textbf{PROMET*\dag},   \citet{MAUSER2009362, Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X\dag} & {239}\\ \middlehline
-        {Totals} & {12} & {10} & {11} & {9} & {12} & {10} & {3993 (e.g.\ maize)}\\
+        {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149}\\ \middlehline
+        {\textbf{PROMET*\dag},   \citet{MAUSER2009362, Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X\dag} & {261}\\ \middlehline
+        {Totals} & {12} & {10} & {11} & {9} & {12} & {10} & {5240 (e.g.\ maize)}\\
         \bottomhline
     \end{tabular}
 \end{table*}
