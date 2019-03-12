@@ -133,7 +133,7 @@ In this paper we describe a new comprehensive dataset designed to expand the par
 \end{figure}
 
 \begin{table}[t]
-\caption{GGCMI Phase II input variable test levels. Temperature and precipitation values indicate the perturbations from the historical climatology and are selected to represent reasonable ranges for potential climate changes in the medium term.  W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination level.}
+\caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
 \label{table:inputs} 
     \begin{tabular}{lcc} 
         \tophline \vspace{1mm}
@@ -174,7 +174,7 @@ GGCMI Phase II is the continuation of a multi-model comparison exercise begun in
     \end{tabular}
 \end{table*}
 
-The guiding scientific rationale of GGCMI Phase II is to provide a comprehensive, systematic evaluation of the response of process-based crop models to carbon dioxide, temperature, water, and applied nitrogen (collectively known as ``CTWN'').
+The guiding scientific rationale of GGCMI Phase II is to provide a comprehensive, systematic evaluation of the response of process-based crop models to carbon dioxide, temperature, water, and applied nitrogen (collectively referred to as ``CTWN'').
 The dataset is designed to allow researchers to:
 \begin{itemize}
     \item Enhance understanding of how models work by characterizing their sensitivity to input climate and nitrogen drivers.
@@ -185,7 +185,7 @@ The dataset is designed to allow researchers to:
 \end{itemize}
 \vspace{-0.05in}
 
-The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 672 simulations for rainfed agriculture and an additional 84 for irrigated (Table \ref{table:inputs}). For irrigated simulations, limitations from actual water supply are not considered so that plants are optimally supplied with water. Temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature time series for each grid cell. Precipitation perturbations are applied as fractional changes at the grid cell level, and carbon dioxide and nitrogen levels are specified as discrete values applied uniformly over all grid cells. In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (JULES and PROMET) require sub-daily input data and use alternative sources. Note that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with higher temperatures. The resulting GGCMI Phase II dataset captures a distribution of crop responses over the potential space of future climate conditions.
+The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 672 simulations for rainfed agriculture and an additional 84 for irrigated (Table \ref{table:inputs}). For irrigated simulations, limitations from actual water supply are not considered. Temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature time series for each grid cell. Precipitation perturbations are applied as fractional changes at the grid cell level, and carbon dioxide and nitrogen levels are specified as discrete values applied uniformly over all grid cells. Limits for the climate variable perturbations are selected to represent reasonable ranges for potential climate changes in the medium term. In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (JULES and PROMET) require sub-daily input data and use alternative sources. Note that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with higher temperatures. The resulting GGCMI Phase II dataset captures a distribution of crop responses over the potential space of future climate conditions.
 
 %An additional, identical set of scenarios (at the same C, T, W, and N levels) not shown or analyzed here simulate adaptive agronomy under climate change by varying the growing season. (For more details on model genealogy, see Figure S1 in \citet{Rosenzweig2014}.)
 
@@ -331,7 +331,7 @@ Third, we show that the GGCMI Phase II climatological crop yield response can be
 %We anticipate that systematic parameter sampling will become the norm in future crop model intercomparison exercises.
 %The ranges for input perturbations for the historical climatology were selected to represent the range of potential future climatological changes. Using the emulator to extrapolate beyond these ranges (Table \ref{table:inputs}) may lead to misinterpretations. 
 
-While the GGCMI Phase II database should offer the foundation for multiple future studies, several cautions need to be noted. Emulating these responses allows estimating agricultural impacts under arbitrary climate scenarios, but extrapolating should be avoided. Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections unless used in conjunction with historical data (or data products). Finally, the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs and they do not sample potential changes in climate variability. Although such changes in climate are uncertain and poorly characterized {\color{red} citation needed}, follow-up experiments may wish to consider them. Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes not only in temperature and precipitation means but in their marginal distributions or temporal dependence (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}).
+While the GGCMI Phase II database should offer the foundation for multiple future studies, several cautions need to be noted. Emulating these responses allows estimating agricultural impacts under arbitrary climate scenarios, but extrapolating should be avoided. Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections unless used in conjunction with historical data (or data products). Finally, the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs and they do not sample potential changes in climate variability. Although such changes in climate are uncertain and remain poorly characterized \citep[e.g.][]{Alexande2006, Kodra2014}, follow-up experiments may wish to consider them. Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes not only in temperature and precipitation means but in their marginal distributions or temporal dependence (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}).
 
 The GGCMI Phase II output dataset invites a broad range of potential future avenues of analysis. A major target area of research is studying the simulation models themselves including: a detailed examination of interaction terms between the major input drivers, a robust quantification of the sensitivity of different models to the input drivers, and comparisons with field-level experimental data. The parameter space tested in GGCMI Phase II may allow investigations into yield variability and response to extremes under changing management and CO$_2$ levels and allow the study of geographic shifts in optimal growing regions for different crops. Emulation studies that are possible include a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. The development of multi-model ensembles such as GGCMI Phase II provides a way to begin to better understand crop responses to a range of potential climate inputs, improve process based models, and explore the potential benefits of adaptive responses included shifting growing period, cultivar types and cultivar geographic extent.
 
@@ -406,16 +406,16 @@ We also provide a more stringent test of emulator performance; a three-fold cros
 %%
 %{Hectares [\%]} & \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{}& \multicolumn{2}{c |}{} & \multicolumn{2}{c |}{} & \multicolumn{2}{c}{}} \\
 
-\textbf{Model}     & Raw [\%]& AW [\%]& Raw [\%]& AW [\%]& Raw [\%]& AW [\%]& Raw [\%]& AW [\%]& Raw [\%]& AW [\%]\\ \hline
+\textbf{Model}     & Raw[\%]& AW[\%]& Raw[\%]& AW[\%]& Raw[\%]& AW[\%]& Raw[\%]& AW[\%]& Raw[\%]& AW[\%]\\ \hline
 \textbf{CARAIB}    & 6.0 & 0.00 & 23.7 & 0.02 & 35.0 & 0.03 & 4.4 & 0.01 & 23.16 & 0.02 \\ \hline
 \textbf{EPIC-TAMU} & 5.8 & 0.00 & 10.0 & 0.01 & 3.8 & 0.00 & 5.1 & 0.01 & 12.0* & 0.01*  \\ \hline
-\textbf{JULES}     & 405.0 & 0.11 & 13.1 & 0.01 & -- & -- & NA   & NA   & 41.7 & 0.04 \\ \hline
-\textbf{GEPIC}     & 9.9 & 0.00 & 6.5 & 0.00 & 8.0 & 0.01 & 10.0 & 0.01 & 8.6 & 0.01 \\ \hline
+\textbf{JULES}     & 405.0 & 0.11 & 13.1 & 0.01 & -- & --  & NA   & NA   & 41.7 & 0.04 \\ \hline
+\textbf{GEPIC}     & 9.9 & 0.00 & 6.5 & 0.00 & 8.0 & 0.01  & 10.0 & 0.01 & 8.6 & 0.01 \\ \hline
 \textbf{LPJ-GUESS} & 3.6 & 0.00 & NA   & NA   & NA   & NA   & 17.3 & 0.02 & 55.72 & 0.05    \\ \hline
-\textbf{LPJmL}     & ---- & ---- & ---- & ---- & ---- & ---- & 10.1 & 0.01 & ---- & ---- \\ \hline
+\textbf{LPJmL}     & ---- & ---- & ---- & ---- & --- & --- & 10.1 & 0.01 & ---- & ---- \\ \hline
 \textbf{pDSSAT}    & 7.7 & 0.00  & 61.0 & 0.05 & 5.5 & 0.01 & 5.7 & 0.01 & 7.9 & 0.01 \\ \hline
 \textbf{PROMET}    & 23.5 & 0.01 & 14.2 & 0.00 & 14.0 & 0.01 & 5.9 & 0.01 & 11.1 & 0.01 \\ \hline
-\textbf{PEPIC}     & 5.8* & 0.00*  & 3.68* & 0.00* & 4.1 & 0.00* & 14.2* & 0.02* & 5.7*  & 0.00* \\ \hline
+\textbf{PEPIC}     & 5.8* & 0.00* & 3.68* & 0.00* & 4.1* & 0.00* & 14.2* & 0.02* & 5.7*  & 0.00* \\ \hline
 
 \end{tabular}
 \end{table*}

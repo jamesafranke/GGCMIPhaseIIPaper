@@ -1,4 +1,4 @@
-\begin{thebibliography}{102}
+\begin{thebibliography}{104}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -6,6 +6,17 @@
   \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
   \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Alexander et~al.(2006)Alexander, Zhang, Peterson, Caesar, BA, Tank,
+  Haylock, Collins, Trewin, Rahimzadeh, Tagipour, Rupa~Kumar, Revadekar,
+  Griffiths, Vincent, B.~Stephenson, Burn, Aguilar, Brunet, and
+  L.~Vazquez-Aguirre}]{Alexande2006}
+Alexander, L., Zhang, X., Peterson, T., Caesar, J., BA, G., Tank, A., Haylock,
+  M., Collins, D., Trewin, B., Rahimzadeh, F., Tagipour, A., Rupa~Kumar, K.,
+  Revadekar, J., Griffiths, G., Vincent, L., B.~Stephenson, D., Burn, J.,
+  Aguilar, E., Brunet, M., and L.~Vazquez-Aguirre, J.: Global Observed Changes
+  in Daily Climate Extremes of Temperature and Precipitation, Journal of
+  Geophysical Research, 111, \doi{10.1029/2005JD006290}, 2006.
 
 \bibitem[{Angulo et~al.(2013)Angulo, Rötter, Lock, Enders, Fronzek, and
   Ewert}]{ANGULO201332}
@@ -316,6 +327,11 @@ Keating, B., Carberry, P., Hammer, G., Probert, M., Robertson, M., Holzworth,
   overview of {A}{P}{S}{I}{M}, a model designed for farming systems simulation,
   European Journal of Agronomy, 18, 267 -- 288,
   \doi{10.1016/S1161-0301(02)00108-9}, 2003.
+
+\bibitem[{Kodra and Ganguly(2014)}]{Kodra2014}
+Kodra, E. and Ganguly, A.: Asymmetry of projected increases in extreme
+  temperature distributions, Scientific reports, 4, 5884,
+  \doi{10.1038/srep05884}, 2014.
 
 \bibitem[{Leeds et~al.(2015)Leeds, Moyer, and Stein}]{Leeds2015}
 Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
