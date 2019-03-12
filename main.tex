@@ -398,24 +398,22 @@ This assessment procedure is relatively forgiving for several reasons. First, ea
 We also provide a more stringent test of emulator performance; a three-fold cross validation. Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). We normalize the error in each grid cell by dividing by the yield in that grid cell the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}).
 
 \begin{table*}[t]
-\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells). Area weighted mean (`AWM') shows the values mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `Med' shows the unweighted median grid cell value. 3-fold stratified k-fold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
+\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells). Area weighted mean (`WM') shows the values mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `Md' shows the unweighted median grid cell value. 3-fold stratified k-fold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
 \label{table:ASE}
 \begin{tabular}{l | cc | cc | cc | cc | cc} 
 \hline
 {} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{S. Wheat}} & \multicolumn{2}{c}{\textbf{W. Wheat}} \\
-%%
-%{Hectares [\%]} & \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{}& \multicolumn{2}{c |}{} & \multicolumn{2}{c |}{} & \multicolumn{2}{c}{}} \\
 
 \textbf{Model}     & WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%) & Md (\%) \\ \hline
-\textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03 & 2.95 & 0.02 & 4.4 & 2.36 & 0.01 \\ \hline
-\textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00 & 3.35 & 6.82* & 0.01* & 3.51 & 0.01  \\ \hline
-\textbf{JULES}     & 0.11  & 6.13  & 0.01  & 10.2 & 0.01 & 6.97 & 0.04 & 15.1  & NA   & NA  \\ \hline
-\textbf{GEPIC}     & 0.00  & 5.78  & 0.00  & 3.75 & 0.01 & 5.64 & 0.01 & 6.76  & 0.01 & 7.01 \\ \hline
-\textbf{LPJ-GUESS} & 0.00  & 1.78  & NA    & NA   & NA   & NA   & 0.05 & 6.22 & 3.35 & 0.02 \\ \hline
-\textbf{LPJmL}     & 0.00  & 9.44  & 0.00  & 3.25  & 0.01 & 8.37 & 0.01 & 9.83 & 0.01 & 4.98 \\ \hline
-\textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01 & 3.97 & 0.01 & 2.97 & 0.01 & 4.67 \\ \hline
-\textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01 & 9.85 & 0.01 & 7.04 & 0.01 & 11.1\\ \hline
-\textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80*  & 0.00* & 2.89* & 0.00* & 4.83* & 3.68* & 0.02* \\ \hline
+\textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03  & 2.95  & 0.02  & 4.40  & 0.01  & 2.36  \\ \hline
+\textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00  & 3.35  & 6.82* & 0.01* & 0.01  & 3.51  \\ \hline
+\textbf{JULES}     & 0.11  & 6.13  & 0.01  & 10.2  & 0.01  & 6.97  & 0.04  & 15.1  & NA    & NA    \\ \hline
+\textbf{GEPIC}     & 0.00  & 5.78  & 0.00  & 3.75  & 0.01  & 5.64  & 0.01  & 6.76  & 0.01  & 7.01  \\ \hline
+\textbf{LPJ-GUESS} & 0.00  & 1.78  & NA    & NA    & NA    & NA    & 0.05  & 6.22  & 0.02  & 3.35  \\ \hline
+\textbf{LPJmL}     & 0.00  & 9.44  & 0.00  & 3.25  & 0.01  & 8.37  & 0.01  & 9.83  & 0.01  & 4.98  \\ \hline
+\textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01  & 3.97  & 0.01  & 2.97  & 0.01  & 4.67  \\ \hline
+\textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01  & 9.85  & 0.01  & 7.04  & 0.01  & 3.68   \\ \hline
+\textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80* & 0.00* & 2.89* & 0.00* & 4.83* & 0.02* & 6.70*  \\ \hline
 
 \end{tabular}
 \end{table*}
@@ -532,62 +530,3 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %& 3 + 5 = 8\\
 %& 3 + 5 = 8
 %\end{align}
-
-
-
-
-
-
-
-
-
-\begin{table*}[t]
-\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 5-fold stratified kfold 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The 80-20 percent does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
-\label{table:MSE}
-\begin{tabular}{l | ll | ll | ll | ll| ll} 
-\hline
-{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
-%%
-\textbf{Model}     & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM   & BR   & LM  \\ \hline
-\textbf{CARAIB}    & 0.10 & 0.12 & 0.59 & 0.63 & 0.59 & 0.64 & 0.09 & 0.10 & 0.16 & 0.17 \\ \hline
-\textbf{EPIC-TAMU} & 0.16 & 0.17 & 0.18 & 0.25 & 0.15 & 0.15 & 0.08 & 0.09 & 0.15 & {\color{red}1e6} \\ \hline
-\textbf{JULES}     & ---- & ---- & ---- & ---- & 0.20 & 0.20 & NA   & NA   & 0.43 & 0.45 \\ \hline
-\textbf{GEPIC}     & 1.19 & 1.33 & 0.42 & 0.49 & 1.00 & 1.12 & 0.14 & 0.15 & 0.10 & 0.11 \\ \hline
-\textbf{LPJ-GUESS} & 0.13 & 0.13 & NA   & NA   & NA   & NA   & 0.30 & 0.30 & NA   & NA    \\ \hline
-\textbf{LPJmL}     & ---- & ---- & ---- & ---- & ---- & ---- & 0.79 & 0.80 & ---- & ---- \\ \hline
-\textbf{pDSSAT}    & 0.21 & 0.22 & 2.24 & 2.24 & 0.31 & 0.33 & 0.07 & 0.07 & 0.10 & 0.11 \\ \hline
-\textbf{PROMET}    & 0.19 & 0.19 & 0.34 & 0.34 & 0.24 & 0.26 & 0.08 & 0.09 & 0.16 & 0.17 \\ \hline
-\textbf{PEPIC}     & 0.08 & {\color{red}2e9}   & 0.06 & {\color{red}6e8} & 0.08 & {\color{red}3e10} & 0.20 & {\color{red}4e10}  & 0.08 & {\color{red}1e9} \\ \hline
-
-\end{tabular}
-\end{table*}
-
-
-
-\begin{table*}[t]
-\caption{Mean squared error aggregated by cultivation area for each crop. BR and LM shows the values for the Bayesian Ridge and ordinary least squares models respectively. 80-20 cross validation scheme utilized where the model is trained on 80\% of the data and validated on the held-out 20\%, repeated 5 times to cover all the training data for each model in each location. The percentage does not represent uniform number of samples in each location or in each model because simulation sampling is heterogeneous.} 
-\label{table:MSE}
-{\fontsize{8}{8}\selectfont
-\begin{tabular}{l | ll|ll | ll|ll | ll|ll | ll|ll | ll|ll} 
-\hline
-{} & \multicolumn{4}{c|}{\textbf{Maize}} & \multicolumn{4}{c|}{\textbf{Soy}}& \multicolumn{4}{c |}{\textbf{Rice}} & \multicolumn{4}{c |}{\textbf{W. Wheat}} & \multicolumn{4}{c}{\textbf{S. Wheat}} \\
-{} & \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c|}{\textbf{IR}} &
-     \multicolumn{2}{c|}{\textbf{RF}} & \multicolumn{2}{c}{\textbf{IR}} \\
-%%
-\textbf{Model} & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM  & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM   & BR  & LM \\ \hline
-\textbf{CARAIB}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{EPIC-TAMU} & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & {\color{red}1e16} & ---  & --- & ---  \\ \hline
-\textbf{JULES}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{GEPIC}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & 9e-6 & 1e-5 \\ \hline
-\textbf{LPJ-GUESS} & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{LPJmL}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{pDSSAT}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{PEPIC}     & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\ \hline
-\textbf{PROMET}    & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- & --- & ---  & --- & ---  & --- & ---  & --- & ---  & --- & --- \\
-\hline}
-\end{tabular}
-\end{table*}
-
