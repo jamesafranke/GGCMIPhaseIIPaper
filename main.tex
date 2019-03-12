@@ -398,24 +398,24 @@ This assessment procedure is relatively forgiving for several reasons. First, ea
 We also provide a more stringent test of emulator performance; a three-fold cross validation. Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). We normalize the error in each grid cell by dividing by the yield in that grid cell the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}).
 
 \begin{table*}[t]
-\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. Only includes grid cells with at least 1 \% of surface area cultivated with a specific crop. `Raw' and `AW' shows the values for the grid cells weighted evenly and weighted by hectares grown in each grid cell \citep{Portmann2010}. 3-fold stratified kfold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
+\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells). Area weighted mean (`AWM') shows the values mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `Med' shows the unweighted median grid cell value. 3-fold stratified k-fold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
 \label{table:ASE}
 \begin{tabular}{l | cc | cc | cc | cc | cc} 
 \hline
-{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{W. Wheat}} & \multicolumn{2}{c}{\textbf{S. Wheat}} \\
+{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{S. Wheat}} & \multicolumn{2}{c}{\textbf{W. Wheat}} \\
 %%
 %{Hectares [\%]} & \multicolumn{2}{c|}{} & \multicolumn{2}{c|}{}& \multicolumn{2}{c |}{} & \multicolumn{2}{c |}{} & \multicolumn{2}{c}{}} \\
 
-\textbf{Model}     & Raw[ (\%) & AW (\%) & Raw (\%)& AW (\%)& Raw (\%)& AW (\%)& Raw (\%)& AW (\%)& Raw (\%)& AW (\%)\\ \hline
-\textbf{CARAIB}    & 6.0 & 0.00 & 23.7 & 0.02 & 35.0 & 0.03 & 4.4 & 0.01 & 23.16 & 0.02 \\ \hline
-\textbf{EPIC-TAMU} & 5.8 & 0.00 & 10.0 & 0.01 & 3.8 & 0.00 & 5.1 & 0.01 & 12.0* & 0.01*  \\ \hline
-\textbf{JULES}     & 405.0 & 0.11 & 13.1 & 0.01 & -- & --  & NA   & NA   & 41.7 & 0.04 \\ \hline
-\textbf{GEPIC}     & 9.9 & 0.00 & 6.5 & 0.00 & 8.0 & 0.01  & 10.0 & 0.01 & 8.6 & 0.01 \\ \hline
-\textbf{LPJ-GUESS} & 3.6 & 0.00 & NA   & NA   & NA   & NA   & 17.3 & 0.02 & 55.72 & 0.05    \\ \hline
-\textbf{LPJmL}     & ---- & ---- & ---- & ---- & --- & --- & 10.1 & 0.01 & ---- & ---- \\ \hline
-\textbf{pDSSAT}    & 7.7 & 0.00  & 61.0 & 0.05 & 5.5 & 0.01 & 5.7 & 0.01 & 7.9 & 0.01 \\ \hline
-\textbf{PROMET}    & 23.5 & 0.01 & 14.2 & 0.00 & 14.0 & 0.01 & 5.9 & 0.01 & 11.1 & 0.01 \\ \hline
-\textbf{PEPIC}     & 5.8* & 0.00* & 3.68* & 0.00* & 4.1* & 0.00* & 14.2* & 0.02* & 5.7*  & 0.00* \\ \hline
+\textbf{Model}     & WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%) & Md (\%) \\ \hline
+\textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03 & 2.95 & 0.02 & 4.4 & 2.36 & 0.01 \\ \hline
+\textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00 & 3.35 & 6.82* & 0.01* & 3.51 & 0.01  \\ \hline
+\textbf{JULES}     & 0.11  & 6.13  & 0.01  & 10.2 & 0.01 & 6.97 & 0.04 & 15.1  & NA   & NA  \\ \hline
+\textbf{GEPIC}     & 0.00  & 5.78  & 0.00  & 3.75 & 0.01 & 5.64 & 0.01 & 6.76  & 0.01 & 7.01 \\ \hline
+\textbf{LPJ-GUESS} & 0.00  & 1.78  & NA    & NA   & NA   & NA   & 0.05 & 6.22 & 3.35 & 0.02 \\ \hline
+\textbf{LPJmL}     & 0.00  & 9.44  & 0.00  & 3.25  & 0.01 & 8.37 & 0.01 & 9.83 & 0.01 & 4.98 \\ \hline
+\textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01 & 3.97 & 0.01 & 2.97 & 0.01 & 4.67 \\ \hline
+\textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01 & 9.85 & 0.01 & 7.04 & 0.01 & 11.1\\ \hline
+\textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80*  & 0.00* & 2.89* & 0.00* & 4.83* & 3.68* & 0.02* \\ \hline
 
 \end{tabular}
 \end{table*}
