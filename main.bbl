@@ -1,4 +1,4 @@
-\begin{thebibliography}{104}
+\begin{thebibliography}{103}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -390,18 +390,12 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
   Datasets for Studying Climate Effects, p. 1100,
   \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
-\bibitem[{Mauser and Bach(2015)}]{MAUSER2009362}
-Mauser, W. and Bach, H.: {P}{R}{O}{M}{E}{T} - {L}arge scale distributed
-  hydrological modelling to study the impact of climate change on the water
-  flows of mountain watersheds, Journal of Hydrology, 376, 362 -- 377,
-  \doi{10.1016/j.jhydrol.2009.07.046}, 2015.
-
-\bibitem[{Mauser et~al.(2009)Mauser, Klepper, Zabel, Delzeit, Hank,
+\bibitem[{Mauser et~al.(2015)Mauser, Klepper, Zabel, Delzeit, Hank,
   Putzenlechner, and Calzadilla}]{MAUSER2015}
 Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
   and Calzadilla, A.: Global biomass production potentials exceed expected
   future demand without the need for cropland expansion, Nature Communications,
-  6, \doi{10.1038/ncomms9946}, 2009.
+  6, \doi{10.1038/ncomms9946}, 2015.
 
 \bibitem[{McDermid et~al.(2015)McDermid, Dileepkumar, Murthy, Nedumaran, Singh,
   Srinivasa, Gangwar, Subash, Ahmad, Zubair, and Nissanka}]{mcdermid2015}
