@@ -377,7 +377,7 @@ Some models do show particular strength for particular crops. For example, the E
    \label{fig:error}
 \end{figure}
 
-No general criteria exist for defining an acceptable crop model emulator. For a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. We define the normalized error $e$ for each scenario as the difference between the fractional yield change from the emulator and that in the original simulation, divided by the standard deviation of the multi-model spread (Equations \ref{eqn:per_yield} and  \ref{eqn:error}):
+No general criteria exist for defining an acceptable crop model emulator, so we present two different metrics. For a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. We define the normalized error $e$ for each scenario as the difference between the fractional yield change from the emulator and that in the original simulation, divided by the standard deviation of the multi-model spread (Equations \ref{eqn:per_yield} and  \ref{eqn:error}):
 
 \begin{equation}
     \label{eqn:per_yield}
@@ -398,12 +398,11 @@ This assessment procedure is relatively forgiving for several reasons. First, ea
 We also provide a more stringent test of emulator performance; a three-fold cross validation. Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). We normalize the error in each grid cell by dividing by the yield in that grid cell the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}).
 
 \begin{table*}[t]
-\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells). Area weighted mean (`WM') shows the values mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `Md' shows the unweighted median grid cell value. 3-fold stratified k-fold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
+\caption{Mean absolute error as a percentage of baseline yield for the cross-validation process. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). Area weighted mean (`WM') shows the values mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `Md' shows the unweighted median grid cell value. 3-fold stratified k-fold cross validation scheme utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third. The split does not represent a uniform number of samples in each location or in each model because simulation sampling is heterogeneous. * indicates cases where the OLS linear model is unstable.} 
 \label{table:ASE}
 \begin{tabular}{l | cc | cc | cc | cc | cc} 
 \hline
 {} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{S. Wheat}} & \multicolumn{2}{c}{\textbf{W. Wheat}} \\
-
 \textbf{Model}     & WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%)& Md (\%)& WM (\%) & Md (\%) \\ \hline
 \textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03  & 2.95  & 0.02  & 4.40  & 0.01  & 2.36  \\ \hline
 \textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00  & 3.35  & 0.01* & 6.82* & 0.01  & 3.51  \\ \hline
@@ -414,7 +413,6 @@ We also provide a more stringent test of emulator performance; a three-fold cros
 \textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01  & 3.97  & 0.01  & 2.97  & 0.01  & 4.67  \\ \hline
 \textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01  & 9.85  & 0.01  & 7.04  & 0.01  & 3.68   \\ \hline
 \textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80* & 0.00* & 2.89* & 0.00* & 4.83* & 0.02* & 6.70*  \\ \hline
-
 \end{tabular}
 \end{table*}
 
