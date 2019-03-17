@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 MAR 2019 09:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 MAR 2019 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,29 +1061,29 @@ Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 21
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 [8] [9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.
 png>] [10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/baselinecom
-p_yield_3.png>] <figures/tempyearvclim.png, id=404, 322.9666pt x 333.0844pt>
+p_yield_3.png>] <figures/tempyearvclim.png, id=403, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 <use figures/tempyearvclim.png>
 Package pdftex.def Info: figures/tempyearvclim.png used on input line 239.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
-<figures/hist_year.png, id=405, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=404, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 <use figures/hist_year.png>
 Package pdftex.def Info: figures/hist_year.png used on input line 246.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/tempyearvclim.png
 >] [12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/hist_year.png>
-] [13] <figures/regression_areas.png, id=465, 5420.25pt x 2258.4375pt>
+] [13] <figures/regression_areas.png, id=464, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 <use figures/regression_areas.png>
 Package pdftex.def Info: figures/regression_areas.png used on input line 285.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
-<figures/regression_model.png, id=467, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=466, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 <use figures/regression_model.png>
 Package pdftex.def Info: figures/regression_model.png used on input line 292.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
-<figures/global_em_maize.png, id=470, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=469, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
 Package pdftex.def Info: figures/global_em_maize.png used on input line 299.
@@ -1091,26 +1091,26 @@ Package pdftex.def Info: figures/global_em_maize.png used on input line 299.
 [14] [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_a
 reas.png>] [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regres
 sion_model.png>] [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/
-global_em_maize.png>] [18] <figures/Agformet_validation.png, id=536, 632.50703p
+global_em_maize.png>] [18] <figures/Agformet_validation.png, id=535, 632.50703p
 t x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 347
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 346
 .
 (pdftex.def)             Requested size: 426.79134pt x 416.74318pt.
-<figures/error_360.png, id=550, 2258.4375pt x 4968.5625pt>
+<figures/error_360.png, id=549, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 364.
+Package pdftex.def Info: figures/error_360.png used on input line 363.
 (pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
-<figures/em_err.png, id=553, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=552, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 371.
+Package pdftex.def Info: figures/em_err.png used on input line 370.
 (pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
 [19] [20]
 ! Misplaced alignment tab character &.
-l.422 ...life Research and 634 Extension, Texas A&
+l.421 ...life Research and 634 Extension, Texas A&
                                                   M University. This is pape...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1195,21 +1195,21 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
 et_validation.png>] [32 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figur
 es/error_360.png>] [33 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figure
 s/em_err.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 429.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 428.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
  10900 strings out of 492995
  154578 string characters out of 6132704
- 322152 words of memory out of 5000000
+ 322174 words of memory out of 5000000
  14050 multiletter control sequences out of 15000+600000
  46196 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1918b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1948b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1229,10 +1229,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (33
- pages, 10181037 bytes).
+ pages, 10181391 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 759 compressed objects within 8 object streams
+ 840 PDF objects out of 1000 (max. 8388607)
+ 758 compressed objects within 8 object streams
  172 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
