@@ -199,9 +199,6 @@ INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_ar
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_KG_crops_all.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_KG_crops_all.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_KG_crops_all.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
-INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG.png
@@ -233,6 +230,9 @@ INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_si
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_sim_CG_area_weight.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_sim_CG_area_weight.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_sim_CG_area_weight.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
+INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.png
