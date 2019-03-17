@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 MAR 2019 09:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 MAR 2019 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,7 +972,35 @@ No file ../PhaseIIPaper/main.aux
 LABELS NOT IMPORTED.
  on input line 25.
 
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux)
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+
+LaTeX Warning: Label `fig:maizeCG' multiply defined.
+
+)
 \openout1 = `supdoc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1173,239 +1201,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 area_irr.png, id=11, 261.778pt x 490.9542pt>
 File: s_croparea_irr.png Graphic file (type png)
 <use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 108.
+Package pdftex.def Info: s_croparea_irr.png used on input line 106.
 (pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
 <s_croparea.png, id=13, 262.9022pt x 492.0784pt>
 File: s_croparea.png Graphic file (type png)
 <use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 117.
+Package pdftex.def Info: s_croparea.png used on input line 115.
 (pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
 <s_how_many_simulations.png, id=14, 3613.5pt x 2258.4375pt>
 File: s_how_many_simulations.png Graphic file (type png)
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 126.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 124.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_maize_sim_CG_area_weight.png, id=15, 4516.875pt x 1806.75pt>
-File: s_maize_sim_CG_area_weight.png Graphic file (type png)
-<use s_maize_sim_CG_area_weight.png>
-Package pdftex.def Info: s_maize_sim_CG_area_weight.png used on input line 133.
-
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_wheat_baseline.png, id=16, 1099.10625pt x 504.88625pt>
-File: s_wheat_baseline.png Graphic file (type png)
-<use s_wheat_baseline.png>
-Package pdftex.def Info: s_wheat_baseline.png used on input line 140.
-(pdftex.def)             Requested size: 469.75502pt x 215.78717pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_sim_KG_crops_all.png, id=17, 5420.25pt x 2258.4375pt>
-File: s_sim_KG_crops_all.png Graphic file (type png)
-<use s_sim_KG_crops_all.png>
-Package pdftex.def Info: s_sim_KG_crops_all.png used on input line 148.
-(pdftex.def)             Requested size: 469.75502pt x 195.70366pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_sim_KG_irr_all.png, id=18, 4516.875pt x 1806.75pt>
-File: s_sim_KG_irr_all.png Graphic file (type png)
-<use s_sim_KG_irr_all.png>
-Package pdftex.def Info: s_sim_KG_irr_all.png used on input line 156.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_rice_sim_CG_area_weight.png, id=19, 4516.875pt x 1806.75pt>
-File: s_rice_sim_CG_area_weight.png Graphic file (type png)
-<use s_rice_sim_CG_area_weight.png>
-Package pdftex.def Info: s_rice_sim_CG_area_weight.png used on input line 163.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_soy_sim_CG_area_weight.png, id=20, 4516.875pt x 1806.75pt>
-File: s_soy_sim_CG_area_weight.png Graphic file (type png)
-<use s_soy_sim_CG_area_weight.png>
-Package pdftex.def Info: s_soy_sim_CG_area_weight.png used on input line 170.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_winter_wheat_sim_CG_area_weight.png, id=21, 4516.875pt x 1806.75pt>
-File: s_winter_wheat_sim_CG_area_weight.png Graphic file (type png)
-<use s_winter_wheat_sim_CG_area_weight.png>
-Package pdftex.def Info: s_winter_wheat_sim_CG_area_weight.png used on input li
-ne 177.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_feature_selection.png, id=22, 708.8884pt x 272.0564pt>
-File: s_feature_selection.png Graphic file (type png)
-<use s_feature_selection.png>
-Package pdftex.def Info: s_feature_selection.png used on input line 185.
-(pdftex.def)             Requested size: 469.75502pt x 180.28424pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_temp.png, id=23, 4516.875pt x 4516.875pt>
-File: s_temp.png Graphic file (type png)
-<use s_temp.png>
-Package pdftex.def Info: s_temp.png used on input line 208.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_water.png, id=24, 4516.875pt x 4516.875pt>
-File: s_water.png Graphic file (type png)
-<use s_water.png>
-Package pdftex.def Info: s_water.png used on input line 215.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_carbon.png, id=25, 4516.875pt x 4516.875pt>
-File: s_carbon.png Graphic file (type png)
-<use s_carbon.png>
-Package pdftex.def Info: s_carbon.png used on input line 222.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_nitrogen.png, id=26, 4516.875pt x 4516.875pt>
-File: s_nitrogen.png Graphic file (type png)
-<use s_nitrogen.png>
-Package pdftex.def Info: s_nitrogen.png used on input line 229.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<em_CTWN_all_crops.png, id=27, 4516.875pt x 4516.875pt>
-File: em_CTWN_all_crops.png Graphic file (type png)
-<use em_CTWN_all_crops.png>
-Package pdftex.def Info: em_CTWN_all_crops.png used on input line 236.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_em_err_JULES.png, id=28, 266.09814pt x 559.94797pt>
-File: s_em_err_JULES.png Graphic file (type png)
-<use s_em_err_JULES.png>
-Package pdftex.def Info: s_em_err_JULES.png used on input line 246.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_em_err_PROMET.png, id=29, 266.09814pt x 559.94797pt>
-File: s_em_err_PROMET.png Graphic file (type png)
-<use s_em_err_PROMET.png>
-Package pdftex.def Info: s_em_err_PROMET.png used on input line 254.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_error_360_total.png, id=30, 2258.4375pt x 4968.5625pt>
-File: s_error_360_total.png Graphic file (type png)
-<use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png used on input line 265.
-(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
-<s_error_810.png, id=31, 2258.4375pt x 4968.5625pt>
-File: s_error_810.png Graphic file (type png)
-<use s_error_810.png>
-Package pdftex.def Info: s_error_810.png used on input line 274.
-(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
-
-LaTeX Warning: Reference `fig:error' on page 2 undefined on input line 275.
-
-
-LaTeX Warning: Reference `eqn:error' on page 2 undefined on input line 275.
-
-
-LaTeX Warning: Reference `eqn:per_yield' on page 2 undefined on input line 275.
-
-
-
-LaTeX Warning: Reference `fig:error' on page 2 undefined on input line 275.
-
-
-LaTeX Warning: Reference `eqn:error' on page 2 undefined on input line 275.
-
-
-LaTeX Warning: Reference `eqn:per_yield' on page 2 undefined on input line 275.
-
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1413,57 +1224,327 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [2
 
  </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea_irr.png> 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea.png>]
+</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea.png>] [3 <
+/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulations
+.png>] <s_maize_sim_CG_area_weight_rf.png, id=25, 4516.875pt x 1806.75pt>
+File: s_maize_sim_CG_area_weight_rf.png Graphic file (type png)
+<use s_maize_sim_CG_area_weight_rf.png>
+Package pdftex.def Info: s_maize_sim_CG_area_weight_rf.png used on input line 1
+33.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-LaTeX Warning: Text page 3 contains only floats.
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
-[3 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulat
-ions.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim
-_CG_area_weight.png>] [4 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supd
-ocs/s_wheat_baseline.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/sup
-docs/s_sim_KG_crops_all.png>] [5 </Users/jamesfranke/Documents/GitHub/PhaseIIPa
-per/supdocs/s_sim_KG_irr_all.png> </Users/jamesfranke/Documents/GitHub/PhaseIIP
-aper/supdocs/s_rice_sim_CG_area_weight.png>] [6 </Users/jamesfranke/Documents/G
-itHub/PhaseIIPaper/supdocs/s_soy_sim_CG_area_weight.png> </Users/jamesfranke/Do
-cuments/GitHub/PhaseIIPaper/supdocs/s_winter_wheat_sim_CG_area_weight.png>] [7 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.p
-ng>] [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_temp.png>] 
-[9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_water.png>] [10 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_carbon.png>] [11 </
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_nitrogen.png>] [12 </
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/em_CTWN_all_crops.png>]
-[13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_JULES.pn
-g> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_PROMET.pn
-g>] [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_360_t
-otal.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_810
-.png>] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.bbl) (/
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux)
+ []
+
+<s_sim_KG_crops_all.png, id=26, 5420.25pt x 2258.4375pt>
+File: s_sim_KG_crops_all.png Graphic file (type png)
+<use s_sim_KG_crops_all.png>
+Package pdftex.def Info: s_sim_KG_crops_all.png used on input line 140.
+(pdftex.def)             Requested size: 469.75502pt x 195.70366pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+[4
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_
+weight_rf.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_
+KG_crops_all.png>] <s_wheat_baseline.png, id=32, 1099.10625pt x 504.88625pt>
+File: s_wheat_baseline.png Graphic file (type png)
+<use s_wheat_baseline.png>
+Package pdftex.def Info: s_wheat_baseline.png used on input line 149.
+(pdftex.def)             Requested size: 469.75502pt x 215.78717pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+[5
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
+>] <s_maize_sim_CG.png, id=37, 4516.875pt x 1806.75pt>
+File: s_maize_sim_CG.png Graphic file (type png)
+<use s_maize_sim_CG.png>
+Package pdftex.def Info: s_maize_sim_CG.png used on input line 159.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+<s_maize_sim_CG_area_weight.png, id=38, 4516.875pt x 1806.75pt>
+File: s_maize_sim_CG_area_weight.png Graphic file (type png)
+<use s_maize_sim_CG_area_weight.png>
+Package pdftex.def Info: s_maize_sim_CG_area_weight.png used on input line 167.
+
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[6
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG.png> 
+</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_w
+eight.png>] <s_soy_sim_CG.png, id=44, 4516.875pt x 1806.75pt>
+File: s_soy_sim_CG.png Graphic file (type png)
+<use s_soy_sim_CG.png>
+Package pdftex.def Info: s_soy_sim_CG.png used on input line 177.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+<s_soy_sim_CG_area_weight.png, id=45, 4516.875pt x 1806.75pt>
+File: s_soy_sim_CG_area_weight.png Graphic file (type png)
+<use s_soy_sim_CG_area_weight.png>
+Package pdftex.def Info: s_soy_sim_CG_area_weight.png used on input line 185.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+[7
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_soy_sim_CG.png> </
+Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_soy_sim_CG_area_weigh
+t.png>] <s_rice_sim_CG.png, id=52, 4516.875pt x 1806.75pt>
+File: s_rice_sim_CG.png Graphic file (type png)
+<use s_rice_sim_CG.png>
+Package pdftex.def Info: s_rice_sim_CG.png used on input line 195.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+<s_rice_sim_CG_area_weight.png, id=53, 4516.875pt x 1806.75pt>
+File: s_rice_sim_CG_area_weight.png Graphic file (type png)
+<use s_rice_sim_CG_area_weight.png>
+Package pdftex.def Info: s_rice_sim_CG_area_weight.png used on input line 203.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+[8
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_rice_sim_CG.png> <
+/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_rice_sim_CG_area_wei
+ght.png>] <s_winter_wheat_sim_CG.png, id=59, 4516.875pt x 1806.75pt>
+File: s_winter_wheat_sim_CG.png Graphic file (type png)
+<use s_winter_wheat_sim_CG.png>
+Package pdftex.def Info: s_winter_wheat_sim_CG.png used on input line 214.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+<s_winter_wheat_sim_CG_area_weight.png, id=60, 4516.875pt x 1806.75pt>
+File: s_winter_wheat_sim_CG_area_weight.png Graphic file (type png)
+<use s_winter_wheat_sim_CG_area_weight.png>
+Package pdftex.def Info: s_winter_wheat_sim_CG_area_weight.png used on input li
+ne 222.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+[9
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_winter_wheat_sim_C
+G.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_winter_wheat
+_sim_CG_area_weight.png>] <s_spring_wheat_sim_CG.png, id=66, 4516.875pt x 1806.
+75pt>
+File: s_spring_wheat_sim_CG.png Graphic file (type png)
+<use s_spring_wheat_sim_CG.png>
+Package pdftex.def Info: s_spring_wheat_sim_CG.png used on input line 232.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+<s_spring_wheat_sim_CG_area_weight.png, id=67, 4516.875pt x 1806.75pt>
+File: s_spring_wheat_sim_CG_area_weight.png Graphic file (type png)
+<use s_spring_wheat_sim_CG_area_weight.png>
+Package pdftex.def Info: s_spring_wheat_sim_CG_area_weight.png used on input li
+ne 240.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+[10
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_sim_C
+G.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat
+_sim_CG_area_weight.png>] <s_feature_selection.png, id=73, 708.8884pt x 272.056
+4pt>
+File: s_feature_selection.png Graphic file (type png)
+<use s_feature_selection.png>
+Package pdftex.def Info: s_feature_selection.png used on input line 251.
+(pdftex.def)             Requested size: 469.75502pt x 180.28424pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+[11
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.
+png>] <s_temp.png, id=79, 4516.875pt x 4516.875pt>
+File: s_temp.png Graphic file (type png)
+<use s_temp.png>
+Package pdftex.def Info: s_temp.png used on input line 260.
+(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+[12
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_temp.png>] <s_wate
+r.png, id=84, 4516.875pt x 4516.875pt>
+File: s_water.png Graphic file (type png)
+<use s_water.png>
+Package pdftex.def Info: s_water.png used on input line 269.
+(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+[13
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_water.png>] <s_car
+bon.png, id=90, 4516.875pt x 4516.875pt>
+File: s_carbon.png Graphic file (type png)
+<use s_carbon.png>
+Package pdftex.def Info: s_carbon.png used on input line 277.
+(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+[14
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_carbon.png>] <s_ni
+trogen.png, id=95, 4516.875pt x 4516.875pt>
+File: s_nitrogen.png Graphic file (type png)
+<use s_nitrogen.png>
+Package pdftex.def Info: s_nitrogen.png used on input line 285.
+(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+[15
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_nitrogen.png>] <em
+_CTWN_all_crops.png, id=100, 4516.875pt x 4516.875pt>
+File: em_CTWN_all_crops.png Graphic file (type png)
+<use em_CTWN_all_crops.png>
+Package pdftex.def Info: em_CTWN_all_crops.png used on input line 293.
+(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+[16
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/em_CTWN_all_crops.pn
+g>] <s_em_err_JULES.png, id=105, 266.09814pt x 559.94797pt>
+File: s_em_err_JULES.png Graphic file (type png)
+<use s_em_err_JULES.png>
+Package pdftex.def Info: s_em_err_JULES.png used on input line 304.
+(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
+<s_em_err_PROMET.png, id=106, 266.09814pt x 559.94797pt>
+File: s_em_err_PROMET.png Graphic file (type png)
+<use s_em_err_PROMET.png>
+Package pdftex.def Info: s_em_err_PROMET.png used on input line 312.
+(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
+<s_error_360_total.png, id=107, 2258.4375pt x 4968.5625pt>
+File: s_error_360_total.png Graphic file (type png)
+<use s_error_360_total.png>
+Package pdftex.def Info: s_error_360_total.png used on input line 323.
+(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
+<s_error_810.png, id=108, 2258.4375pt x 4968.5625pt>
+File: s_error_810.png Graphic file (type png)
+<use s_error_810.png>
+Package pdftex.def Info: s_error_810.png used on input line 332.
+(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
+
+LaTeX Warning: Reference `fig:error' on page 17 undefined on input line 333.
+
+
+LaTeX Warning: Reference `eqn:error' on page 17 undefined on input line 333.
+
+
+LaTeX Warning: Reference `eqn:per_yield' on page 17 undefined on input line 333
+.
+
+
+LaTeX Warning: Reference `fig:error' on page 17 undefined on input line 333.
+
+
+LaTeX Warning: Reference `eqn:error' on page 17 undefined on input line 333.
+
+
+LaTeX Warning: Reference `eqn:per_yield' on page 17 undefined on input line 333
+.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_JULES.png> 
+</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_PROMET.png>]
+[18 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_360_total
+.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_810.png
+>] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 15879 strings out of 492995
- 306003 string characters out of 6132704
- 347222 words of memory out of 5000000
- 19217 multiletter control sequences out of 15000+600000
- 12021 words of font info for 48 fonts, out of 8000000 for 9000
+ 15907 strings out of 492995
+ 306700 string characters out of 6132704
+ 327694 words of memory out of 5000000
+ 19241 multiletter control sequences out of 15000+600000
+ 12617 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,10451b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,43p,10451b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supd
-oc.pdf (14 pages, 15726437 bytes).
+oc.pdf (18 pages, 17683967 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 147 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
