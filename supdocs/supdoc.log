@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 MAR 2019 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 MAR 2019 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,27 +1201,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 area_irr.png, id=11, 261.778pt x 490.9542pt>
 File: s_croparea_irr.png Graphic file (type png)
 <use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 106.
+Package pdftex.def Info: s_croparea_irr.png used on input line 107.
 (pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
 <s_croparea.png, id=13, 262.9022pt x 492.0784pt>
 File: s_croparea.png Graphic file (type png)
 <use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 115.
+Package pdftex.def Info: s_croparea.png used on input line 116.
 (pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
 <s_how_many_simulations.png, id=14, 3613.5pt x 2258.4375pt>
 File: s_how_many_simulations.png Graphic file (type png)
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 124.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 125.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.127 \end{figure}
+l.128 \end{figure}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1241,20 +1241,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: s_maize_sim_CG_area_weight_rf.png Graphic file (type png)
 <use s_maize_sim_CG_area_weight_rf.png>
 Package pdftex.def Info: s_maize_sim_CG_area_weight_rf.png used on input line 1
-33.
+34.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 <s_sim_KG_crops_all.png, id=26, 5420.25pt x 2258.4375pt>
 File: s_sim_KG_crops_all.png Graphic file (type png)
 <use s_sim_KG_crops_all.png>
-Package pdftex.def Info: s_sim_KG_crops_all.png used on input line 140.
+Package pdftex.def Info: s_sim_KG_crops_all.png used on input line 141.
 (pdftex.def)             Requested size: 469.75502pt x 195.70366pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
@@ -1265,21 +1265,21 @@ weight_rf.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_
 KG_crops_all.png>] <s_maize_sim_CG.png, id=32, 4516.875pt x 1806.75pt>
 File: s_maize_sim_CG.png Graphic file (type png)
 <use s_maize_sim_CG.png>
-Package pdftex.def Info: s_maize_sim_CG.png used on input line 150.
+Package pdftex.def Info: s_maize_sim_CG.png used on input line 151.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 <s_maize_sim_CG_area_weight.png, id=33, 4516.875pt x 1806.75pt>
 File: s_maize_sim_CG_area_weight.png Graphic file (type png)
 <use s_maize_sim_CG_area_weight.png>
-Package pdftex.def Info: s_maize_sim_CG_area_weight.png used on input line 158.
+Package pdftex.def Info: s_maize_sim_CG_area_weight.png used on input line 159.
 
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
@@ -1290,20 +1290,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 eight.png>] <s_soy_sim_CG.png, id=39, 4516.875pt x 1806.75pt>
 File: s_soy_sim_CG.png Graphic file (type png)
 <use s_soy_sim_CG.png>
-Package pdftex.def Info: s_soy_sim_CG.png used on input line 168.
+Package pdftex.def Info: s_soy_sim_CG.png used on input line 169.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 <s_soy_sim_CG_area_weight.png, id=40, 4516.875pt x 1806.75pt>
 File: s_soy_sim_CG_area_weight.png Graphic file (type png)
 <use s_soy_sim_CG_area_weight.png>
-Package pdftex.def Info: s_soy_sim_CG_area_weight.png used on input line 176.
+Package pdftex.def Info: s_soy_sim_CG_area_weight.png used on input line 177.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
@@ -1314,20 +1314,20 @@ Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_soy_sim_CG_area_weigh
 t.png>] <s_rice_sim_CG.png, id=46, 4516.875pt x 1806.75pt>
 File: s_rice_sim_CG.png Graphic file (type png)
 <use s_rice_sim_CG.png>
-Package pdftex.def Info: s_rice_sim_CG.png used on input line 186.
+Package pdftex.def Info: s_rice_sim_CG.png used on input line 187.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 <s_rice_sim_CG_area_weight.png, id=47, 4516.875pt x 1806.75pt>
 File: s_rice_sim_CG_area_weight.png Graphic file (type png)
 <use s_rice_sim_CG_area_weight.png>
-Package pdftex.def Info: s_rice_sim_CG_area_weight.png used on input line 194.
+Package pdftex.def Info: s_rice_sim_CG_area_weight.png used on input line 195.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
@@ -1338,10 +1338,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 ght.png>] <s_winter_wheat_sim_CG.png, id=54, 4516.875pt x 1806.75pt>
 File: s_winter_wheat_sim_CG.png Graphic file (type png)
 <use s_winter_wheat_sim_CG.png>
-Package pdftex.def Info: s_winter_wheat_sim_CG.png used on input line 204.
+Package pdftex.def Info: s_winter_wheat_sim_CG.png used on input line 205.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
@@ -1349,10 +1349,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 File: s_winter_wheat_sim_CG_area_weight.png Graphic file (type png)
 <use s_winter_wheat_sim_CG_area_weight.png>
 Package pdftex.def Info: s_winter_wheat_sim_CG_area_weight.png used on input li
-ne 212.
+ne 213.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
@@ -1364,10 +1364,10 @@ _sim_CG_area_weight.png>] <s_spring_wheat_sim_CG.png, id=61, 4516.875pt x 1806.
 75pt>
 File: s_spring_wheat_sim_CG.png Graphic file (type png)
 <use s_spring_wheat_sim_CG.png>
-Package pdftex.def Info: s_spring_wheat_sim_CG.png used on input line 222.
+Package pdftex.def Info: s_spring_wheat_sim_CG.png used on input line 223.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
@@ -1375,10 +1375,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 File: s_spring_wheat_sim_CG_area_weight.png Graphic file (type png)
 <use s_spring_wheat_sim_CG_area_weight.png>
 Package pdftex.def Info: s_spring_wheat_sim_CG_area_weight.png used on input li
-ne 230.
+ne 231.
 (pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
@@ -1390,10 +1390,10 @@ _sim_CG_area_weight.png>] <s_wheat_baseline.png, id=68, 1099.10625pt x 504.8862
 5pt>
 File: s_wheat_baseline.png Graphic file (type png)
 <use s_wheat_baseline.png>
-Package pdftex.def Info: s_wheat_baseline.png used on input line 240.
+Package pdftex.def Info: s_wheat_baseline.png used on input line 241.
 (pdftex.def)             Requested size: 469.75502pt x 215.78717pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
@@ -1403,10 +1403,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 >] <s_feature_selection.png, id=73, 708.8884pt x 272.0564pt>
 File: s_feature_selection.png Graphic file (type png)
 <use s_feature_selection.png>
-Package pdftex.def Info: s_feature_selection.png used on input line 250.
+Package pdftex.def Info: s_feature_selection.png used on input line 251.
 (pdftex.def)             Requested size: 469.75502pt x 180.28424pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
@@ -1416,10 +1416,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
 png>] <s_temp.png, id=79, 4516.875pt x 4516.875pt>
 File: s_temp.png Graphic file (type png)
 <use s_temp.png>
-Package pdftex.def Info: s_temp.png used on input line 259.
+Package pdftex.def Info: s_temp.png used on input line 260.
 (pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
@@ -1429,10 +1429,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 r.png, id=84, 4516.875pt x 4516.875pt>
 File: s_water.png Graphic file (type png)
 <use s_water.png>
-Package pdftex.def Info: s_water.png used on input line 268.
+Package pdftex.def Info: s_water.png used on input line 269.
 (pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
@@ -1442,10 +1442,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 bon.png, id=90, 4516.875pt x 4516.875pt>
 File: s_carbon.png Graphic file (type png)
 <use s_carbon.png>
-Package pdftex.def Info: s_carbon.png used on input line 276.
+Package pdftex.def Info: s_carbon.png used on input line 277.
 (pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
@@ -1455,10 +1455,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 trogen.png, id=95, 4516.875pt x 4516.875pt>
 File: s_nitrogen.png Graphic file (type png)
 <use s_nitrogen.png>
-Package pdftex.def Info: s_nitrogen.png used on input line 284.
+Package pdftex.def Info: s_nitrogen.png used on input line 285.
 (pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
@@ -1468,10 +1468,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--285
 _CTWN_all_crops.png, id=100, 4516.875pt x 4516.875pt>
 File: em_CTWN_all_crops.png Graphic file (type png)
 <use em_CTWN_all_crops.png>
-Package pdftex.def Info: em_CTWN_all_crops.png used on input line 292.
+Package pdftex.def Info: em_CTWN_all_crops.png used on input line 293.
 (pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
@@ -1481,22 +1481,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 g>] <s_em_err_JULES.png, id=105, 266.09814pt x 559.94797pt>
 File: s_em_err_JULES.png Graphic file (type png)
 <use s_em_err_JULES.png>
-Package pdftex.def Info: s_em_err_JULES.png used on input line 303.
+Package pdftex.def Info: s_em_err_JULES.png used on input line 304.
 (pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
 <s_em_err_PROMET.png, id=106, 266.09814pt x 559.94797pt>
 File: s_em_err_PROMET.png Graphic file (type png)
 <use s_em_err_PROMET.png>
-Package pdftex.def Info: s_em_err_PROMET.png used on input line 311.
+Package pdftex.def Info: s_em_err_PROMET.png used on input line 312.
 (pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
 <s_error_360_total.png, id=107, 2258.4375pt x 4968.5625pt>
 File: s_error_360_total.png Graphic file (type png)
 <use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png used on input line 322.
+Package pdftex.def Info: s_error_360_total.png used on input line 323.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 <s_error_810.png, id=108, 2258.4375pt x 4968.5625pt>
 File: s_error_810.png Graphic file (type png)
 <use s_error_810.png>
-Package pdftex.def Info: s_error_810.png used on input line 331.
+Package pdftex.def Info: s_error_810.png used on input line 332.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1515,11 +1515,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15904 strings out of 492995
  306663 string characters out of 6132704
- 327693 words of memory out of 5000000
+ 327698 words of memory out of 5000000
  19238 multiletter control sequences out of 15000+600000
  12617 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,10451b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,43p,10451b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
@@ -1529,7 +1529,7 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supd
-oc.pdf (18 pages, 17683954 bytes).
+oc.pdf (18 pages, 17684255 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream

@@ -182,6 +182,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 OUTPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea_irr.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea_irr.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea_irr.png
@@ -192,7 +193,6 @@ INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulations.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulations.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulations.png
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_weight_rf.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_weight_rf.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_weight_rf.png
