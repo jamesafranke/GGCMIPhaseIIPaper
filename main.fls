@@ -252,11 +252,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/croparea.png
@@ -272,6 +267,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_sim_CG.png
@@ -294,6 +291,9 @@ INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_model.
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/global_em_maize.png
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
 INPUT /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/Agformet_validation.png
