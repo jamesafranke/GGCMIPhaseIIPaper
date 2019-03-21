@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1553180256 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf" "supdoc" 1553180285
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux" 1553180285 15109 2a80739d23cd344aa5748f70f3518bf3 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" 1553180225 22135 4f502e56cf240c120a1e3001d7e18e17 ""
+["pdflatex"] 1553181389 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf" "supdoc" 1553181418
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux" 1553181418 15419 84aaecb2c6bfa78ef7d167a7ca9e4ce9 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" 1553181359 22444 19865c9ebc49f7b115b74b6e5616b2d6 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -144,13 +144,13 @@
   "s_wheat_baseline.png" 1548711579 2578265 51806be7c808731fad7b67ccf674aaaf ""
   "s_winter_wheat_sim_CG.png" 1552832507 340248 b85e3d4f80b7bac6c0d3707435609105 ""
   "s_winter_wheat_sim_CG_area_weight.png" 1552832516 377901 c4777cadc891ec68a64bbebf764d8844 ""
-  "supdoc.aux" 1553180285 15109 2a80739d23cd344aa5748f70f3518bf3 ""
-  "supdoc.tex" 1553180225 22135 4f502e56cf240c120a1e3001d7e18e17 ""
+  "supdoc.aux" 1553181418 15419 84aaecb2c6bfa78ef7d167a7ca9e4ce9 ""
+  "supdoc.tex" 1553181359 22444 19865c9ebc49f7b115b74b6e5616b2d6 ""
   "testhighlatskde.png" 1553177324 223311 d22abb69024de5282bc59b41a447dae8 ""
   (generated)
-  "supdoc.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.log"
   "supdoc.pdf"
+  "supdoc.aux"
+  "supdoc.toc"
   "supdoc.log"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf"
-  "supdoc.toc"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.log"
