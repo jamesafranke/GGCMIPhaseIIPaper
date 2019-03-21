@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1553035639 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf" "supdoc" 1553035669
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux" 1553035669 15153 4a59d47520651455a1a1bc9f68e3d0ee ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" 1553035610 22179 f9ad05dc67886a5be04e42acd97a9e11 ""
+["pdflatex"] 1553180256 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf" "supdoc" 1553180285
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux" 1553180285 15109 2a80739d23cd344aa5748f70f3518bf3 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex" 1553180225 22135 4f502e56cf240c120a1e3001d7e18e17 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -144,14 +144,13 @@
   "s_wheat_baseline.png" 1548711579 2578265 51806be7c808731fad7b67ccf674aaaf ""
   "s_winter_wheat_sim_CG.png" 1552832507 340248 b85e3d4f80b7bac6c0d3707435609105 ""
   "s_winter_wheat_sim_CG_area_weight.png" 1552832516 377901 c4777cadc891ec68a64bbebf764d8844 ""
-  "supdoc.aux" 1553035669 15153 4a59d47520651455a1a1bc9f68e3d0ee ""
-  "supdoc.tex" 1553035610 22179 f9ad05dc67886a5be04e42acd97a9e11 ""
-  "testhighlats.png" 1553030993 134367 d511cc3a97ab019426533e75f3e93ef9 ""
-  "testhighlats2.png" 1553030994 136422 633c2e458b6edba40057ddcb73c3940b ""
+  "supdoc.aux" 1553180285 15109 2a80739d23cd344aa5748f70f3518bf3 ""
+  "supdoc.tex" 1553180225 22135 4f502e56cf240c120a1e3001d7e18e17 ""
+  "testhighlatskde.png" 1553177324 223311 d22abb69024de5282bc59b41a447dae8 ""
   (generated)
-  "supdoc.pdf"
   "supdoc.aux"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.log"
+  "supdoc.pdf"
   "supdoc.log"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.pdf"
   "supdoc.toc"

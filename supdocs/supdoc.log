@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 MAR 2019 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 MAR 2019 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,9 +1000,6 @@ LaTeX Warning: Label `fig:maizeCG' multiply defined.
 
 LaTeX Warning: Label `fig:maizeCG' multiply defined.
 
-
-LaTeX Warning: Label `fig:highlat' multiply defined.
-
 )
 \openout1 = `supdoc.aux'.
 
@@ -1481,49 +1478,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--294
 [16
 
  </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/em_CTWN_all_crops.pn
-g>] <testhighlats.png, id=105, 619.916pt x 330.6754pt>
-File: testhighlats.png Graphic file (type png)
-<use testhighlats.png>
-Package pdftex.def Info: testhighlats.png used on input line 302.
-(pdftex.def)             Requested size: 469.75502pt x 250.57922pt.
+g>] <testhighlatskde.png, id=105, 506.8536pt x 396.5214pt>
+File: testhighlatskde.png Graphic file (type png)
+<use testhighlatskde.png>
+Package pdftex.def Info: testhighlatskde.png used on input line 302.
+(pdftex.def)             Requested size: 469.75502pt x 367.5026pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
-<testhighlats2.png, id=106, 626.0188pt x 330.6754pt>
-File: testhighlats2.png Graphic file (type png)
-<use testhighlats2.png>
-Package pdftex.def Info: testhighlats2.png used on input line 309.
-(pdftex.def)             Requested size: 469.75502pt x 248.13712pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-
- []
-
 [17
 
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/testhighlats.png> </
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/testhighlats2.png>] <s_
-em_err_JULES.png, id=113, 266.09814pt x 559.94797pt>
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/testhighlatskde.png>
+] <s_em_err_JULES.png, id=111, 266.09814pt x 559.94797pt>
 File: s_em_err_JULES.png Graphic file (type png)
 <use s_em_err_JULES.png>
-Package pdftex.def Info: s_em_err_JULES.png used on input line 321.
+Package pdftex.def Info: s_em_err_JULES.png used on input line 315.
 (pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_em_err_PROMET.png, id=114, 266.09814pt x 559.94797pt>
+<s_em_err_PROMET.png, id=112, 266.09814pt x 559.94797pt>
 File: s_em_err_PROMET.png Graphic file (type png)
 <use s_em_err_PROMET.png>
-Package pdftex.def Info: s_em_err_PROMET.png used on input line 329.
+Package pdftex.def Info: s_em_err_PROMET.png used on input line 323.
 (pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_error_360_total.png, id=115, 2258.4375pt x 4968.5625pt>
+<s_error_360_total.png, id=113, 2258.4375pt x 4968.5625pt>
 File: s_error_360_total.png Graphic file (type png)
 <use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png used on input line 340.
+Package pdftex.def Info: s_error_360_total.png used on input line 334.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
-<s_error_810.png, id=116, 2258.4375pt x 4968.5625pt>
+<s_error_810.png, id=114, 2258.4375pt x 4968.5625pt>
 File: s_error_810.png Graphic file (type png)
 <use s_error_810.png>
-Package pdftex.def Info: s_error_810.png used on input line 349.
+Package pdftex.def Info: s_error_810.png used on input line 343.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1540,10 +1526,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15915 strings out of 492995
- 306879 string characters out of 6132704
+ 15910 strings out of 492995
+ 306790 string characters out of 6132704
  327709 words of memory out of 5000000
- 19247 multiletter control sequences out of 15000+600000
+ 19243 multiletter control sequences out of 15000+600000
  12617 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,43p,10451b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1557,10 +1543,10 @@ l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supd
-oc.pdf (19 pages, 17945129 bytes).
+oc.pdf (19 pages, 17885065 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
