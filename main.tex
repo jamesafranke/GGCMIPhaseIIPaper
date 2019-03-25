@@ -138,14 +138,11 @@ GGCMI Phase II is the continuation of a multi-model comparison exercise begun in
 
 \begin{table*}[t]
 \caption{Models included in GGCMI Phase II and the number of C, T, W, and N simulations that each performs, with 756 as the maximum. ``N-Dim.'' indicates whether the simulations include varying nitrogen levels. Two models provide only one nitrogen level. All models provide the same set of simulations across all modeled crops, but some omit individual crops. (For example, APSIM does not simulate winter wheat.)}
-%Irrigated simulations are provided at the level of the other covariates for each model, i.e.\ an additional 84 simulations for fully-sampled models. 
-%Simulations are nearly global but their geographic extent can vary, even for different crops in an individual model, since some simulations omit regions far outside the currently cultivated area. 
-%Models marked with * require sub-daily weather input data and so do not utilize the AgMERRA reanalysis dataset. See \citet{Elliott2015} for additional details on crop model setup for intercomparison.} 
 \label{table:models}
 	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.5cm}}
         \tophline
         {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Simulations per crop}}\\ \middlehline
-        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44}\\ \middlehline
+        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {X} & {X} & {X} & {44}\\ \middlehline
         {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252}\\ \middlehline
         {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39}\\  \middlehline
         {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765}\\ \middlehline
@@ -153,11 +150,11 @@ GGCMI Phase II is the continuation of a multi-model comparison exercise begun in
         {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430}\\ \middlehline
         {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756}\\  \middlehline
         {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756}\\ \middlehline
-        {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--} & {X} & {--} & {X} & {X} & {33}\\ \middlehline
+        {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--} & {X} & {x} & {--} & {X} & {33}\\ \middlehline
         {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756}\\ \middlehline
         {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149}\\ \middlehline
         {\textbf{PROMET},    \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X\dag} & {261}\\ \middlehline
-        {Totals} & {12} & {10} & {11} & {9} & {12} & {10} & {5240}\\
+        {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240}\\
         \bottomhline
     \end{tabular}
 \end{table*}
@@ -304,7 +301,7 @@ While the GGCMI Phase II database should offer the foundation for multiple futur
 The GGCMI Phase II dataset invites a broad range of potential future avenues of analysis, especially because emulation allows statistical distillation of the large dataset (40 billion simulated yields) into a tractable form. Potential studies might include a detailed examination of interaction terms between the major input drivers, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes, and evaluation of geographic shifts in optimal growing regions. The dataset also enables studies of emulation itself, including a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for better understanding potential future crop responses and for improving process-based crop models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available on zenodo.org, as are the raw simulation yield outputs. Code to run the emulator is available upon request to the author.}
+\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available on zenodo.org, as are the raw simulation yield outputs. See Appendix \ref{A:3} for data DOIs.}
 
 \appendix
 \section{}
@@ -381,6 +378,31 @@ We also provide a more stringent test of emulator performance; a three-fold cros
 \end{tabular}
 \end{table*}
 
+\subsection{Data Access}
+\label{A:3}
+The emulator parameters can be found at https://doi.org/10.5281/zenodo.2605374. Two sets of parameters are provided in globally gridded form for each crop and model, one for rainfed and one for irrigated yields. Parameters follow conventions found in Equation \ref{eqn:features_final}. Simulation output dataset can be found at the DOIs located in table \ref{table:dataloc}.
+
+\begin{table*}[t]
+\caption{DOI's for model yield data outputs. All yield output data can be found at https://doi.org/10.5281/zenodo/XX. Where XX is the value found in the table.} 
+\label{table:dataloc}
+	\begin{tabular}{p{3cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
+        \tophline
+        {\textbf{Model}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}\\ \middlehline
+        {\textbf{APSIM-UGOE}} & {2582531} & {258235} & {2582533} & {2582537} & {2582539}\\ \middlehline
+        {\textbf{CARAIB}} & {2582522} & {2582508} & {2582504} & {2582516} & {2582499}\\ \middlehline
+        {\textbf{EPIC-IIASA}} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
+        {\textbf{EPIC-TAMU}} & {2582349} & {2582367} & {2582352} & {2582392} & {2582418\\ \middlehline
+        {\textbf{JULES}} & {2582543} & {2582547} & {2582545} & {--} & {2582551}\\ \middlehline
+        {\textbf{GEPIC}} & {2582247} & {258225} & {2582251} & {2582260} & {2582263}\\ \middlehline
+        {\textbf{LPJ-GUESS}} & {2581625} & {--} & {--} & {2581638} & {2581640}\\  \middlehline
+        {\textbf{LPJmL}} & {2581356} & {2581498} & {2581436} & {2581565} & {2581606}\\ \middlehline
+        {\textbf{ORCHIDEE-crop}} & {2582441} & {--} & {2582445} & {2582449} & {--}\\ \middlehline
+        {\textbf{pDSSAT}} & {2582111} & {2582147} & {2582127} & {2582163} & {2582178}\\ \middlehline
+        {\textbf{PEPIC}} & {2582341} & {2582433} & {2582343} & {2582439} & {2582455}\\ \middlehline
+        {\textbf{PROMET}} & {2582467} & {2582488} & {2582479} & {2582490} & {2582492}\\
+        \bottomhline
+    \end{tabular}
+\end{table*}
 \noappendix %% use this to mark the end of the appendix section
 
 \authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F. and E.M.\ prepared the manuscript.}
@@ -396,6 +418,57 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 \bibliography{bib.bib}
 
 \end{document}
+
+@misc{muller_christoph_2019_2581356,
+  author       = {Müller, Christoph},
+  title        = {{AgMIP's global gridded crop model intercomparison 
+                   (GGCMI) phase II CTWN-A archive: priority 1
+                   outputs from LPJmL maize simulations}},
+  month        = mar,
+  year         = 2019,
+  doi          = {2581356},
+  url          = {https://doi.org/10.5281/zenodo.2581356}
+}
+@misc{muller_christoph_2019_2581436,
+  author       = {Müller, Christoph},
+  title        = {{AgMIP's global gridded crop model intercomparison 
+                   (GGCMI) phase II CTWN-A archive: priority 1
+                   outputs from LPJmL rice simulations}},
+  month        = mar,
+  year         = 2019,
+  doi          = {2581436},
+  url          = {https://doi.org/10.5281/zenodo.2581436}
+}
+@misc{muller_christoph_2019_2581498,
+  author       = {Müller, Christoph},
+  title        = {{AgMIP's global gridded crop model intercomparison 
+                   (GGCMI) phase II CTWN-A archive: priority 1
+                   outputs from LPJmL soybean simulations}},
+  month        = mar,
+  year         = 2019,
+  doi          = {2581498},
+  url          = {https://doi.org/10.5281/zenodo.2581498}
+}
+@misc{muller_christoph_2019_2581606,
+  author       = {Müller, Christoph},
+  title        = {{AgMIP's global gridded crop model intercomparison 
+                   (GGCMI) phase II CTWN-A archive: priority 1
+                   outputs from LPJmL spring wheat simulations}},
+  month        = mar,
+  year         = 2019,
+  doi          = {2581606},
+  url          = {https://doi.org/10.5281/zenodo.2581606}
+}
+@misc{muller_christoph_2019_2581565,
+  author       = {Müller, Christoph},
+  title        = {{AgMIP's global gridded crop model intercomparison 
+                   (GGCMI) phase II CTWN-A archive: priority 1
+                   outputs from LPJmL winter wheat simulations}},
+  month        = mar,
+  year         = 2019,
+  doi          = {2581565},
+  url          = {https://doi.org/10.5281/zenodo.2581565}
+}
 
 %% LITERATURE CITATIONS
 %%
