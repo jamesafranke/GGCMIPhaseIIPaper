@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 MAR 2019 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 MAR 2019 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,8 +1091,14 @@ Package pdftex.def Info: figures/global_em_maize.png used on input line 272.
 [14] [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regression_a
 reas.png>] [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/regres
 sion_model.png>] [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/figures/
-global_em_maize.png>] [18] <figures/Agformet_validation.png, id=535, 632.50703p
-t x 617.61942pt>
+global_em_maize.png>]
+Overfull \hbox (64.98775pt too wide) in paragraph at lines 304--304
+[]\T1/ptm/m/n/9 The poly-no-mial em-u-la-tor pa-ram-e-ter ma-tri-ces for all cr
+op model em-u-la-tors are avail-able at https://doi.org/10.5281/zenodo.2605374.
+
+ []
+
+[18] <figures/Agformet_validation.png, id=535, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
 Package pdftex.def Info: figures/Agformet_validation.png used on input line 313
@@ -1248,7 +1254,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
 Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/main.pdf (34
- pages, 10183848 bytes).
+ pages, 10183816 bytes).
 PDF statistics:
  849 PDF objects out of 1000 (max. 8388607)
  766 compressed objects within 8 object streams
