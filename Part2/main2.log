@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1089,90 +1089,90 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 Package lineno Warning: Linenumber reference failed, 
 (lineno)                rerun to get it right.
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 76.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 76.
+(Font)              scaled to size 8.54997pt on input line 78.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `OHAGAN2006' on page 2 undefined on input line
- 86.
+ 85.
 
 
 Package natbib Warning: Citation `OHAGAN2010' on page 2 undefined on input line
- 86.
+ 85.
 
 
 Package natbib Warning: Citation `Razavi2012' on page 2 undefined on input line
- 86.
+ 85.
 
 
 Package natbib Warning: Citation `STORLIE2009' on page 2 undefined on input lin
-e 86.
+e 85.
 
 
 Package natbib Warning: Citation `RATTO2012' on page 2 undefined on input line 
-86.
+85.
 
 
 Package natbib Warning: Citation `Castruccio14' on page 2 undefined on input li
-ne 86.
+ne 85.
 
 
 Package natbib Warning: Citation `Holden2014' on page 2 undefined on input line
- 86.
+ 85.
 
 
 Package natbib Warning: Citation `Howden2005' on page 2 undefined on input line
- 88.
+ 87.
 
 
 Package natbib Warning: Citation `raisen2006' on page 2 undefined on input line
- 88.
+ 87.
 
 
 Package natbib Warning: Citation `Lobell2010' on page 2 undefined on input line
- 88.
+ 87.
 
 
 Package natbib Warning: Citation `Ferrise2011' on page 2 undefined on input lin
-e 88.
+e 87.
 
 
 Package natbib Warning: Citation `Holzkamper2012' on page 2 undefined on input 
-line 88.
+line 87.
 
 
 Package natbib Warning: Citation `RUANE2013a' on page 2 undefined on input line
- 88.
+ 87.
 
 
 Package natbib Warning: Citation `Oyebamiji15' on page 2 undefined on input lin
-e 88.
+e 87.
 
 
 Package natbib Warning: Citation `BLANC2015' on page 2 undefined on input line 
-88.
+87.
 
 
 Package natbib Warning: Citation `BLANC2017' on page 2 undefined on input line 
-88.
+87.
 
 
 Package natbib Warning: Citation `Ostberg2018' on page 2 undefined on input lin
-e 88.
+e 87.
 
 
 Package natbib Warning: Citation `Mistry2017' on page 2 undefined on input line
- 88.
+ 87.
 
 
 Package natbib Warning: Citation `Warszawski3228' on page 2 undefined on input 
-line 88.
+line 87.
 
 
 Package natbib Warning: Citation `BLANC2015' on page 2 undefined on input line 
