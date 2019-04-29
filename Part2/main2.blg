@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main2.aux
+The style file: copernicus.bst
+Database file #1: bib.bib.bib
+Warning--missing publisher in Markowski2015
+You've used 48 entries,
+            2811 wiz_defined-function locations,
+            1366 strings with 24132 characters,
+and the built_in function-call counts, 64031 in all, are:
+= -- 6546
+> -- 3853
+< -- 16
++ -- 1547
+- -- 1239
+* -- 4512
+:= -- 6949
+add.period$ -- 48
+call.type$ -- 48
+change.case$ -- 510
+chr.to.int$ -- 48
+cite$ -- 145
+duplicate$ -- 5634
+empty$ -- 2789
+format.name$ -- 1393
+if$ -- 12581
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 743
+newline$ -- 153
+num.names$ -- 192
+pop$ -- 2751
+preamble$ -- 1
+purify$ -- 509
+quote$ -- 0
+skip$ -- 3302
+stack$ -- 0
+substring$ -- 2233
+swap$ -- 5024
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 429
+warning$ -- 1
+while$ -- 248
+width$ -- 0
+write$ -- 582
+(There was 1 warning)

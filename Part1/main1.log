@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex
+**main1.tex
+(./main1.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./copernicus.cls
@@ -945,4 +945,397 @@ Now handling font encoding PD1 ...
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `bookmarks' set `false' on input line 4374.
-P
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks OFF on input line 4757.
+\c@Hy@tempcnt=\count130
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen154
+\Fld@menulength=\count131
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count135
+\c@bookmark@seq@number=\count136
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip67
+)
+\c@reaction=\count137
+\tabularwidth=\dimen157
+Package color Info: Redefining color bgcol on input line 2486.
+Package color Info: Redefining color textcol on input line 2490.
+Package color Info: Redefining color bgcol on input line 2491.
+Package color Info: Redefining color barcol on input line 2492.
+)
+LaTeX Info: Redefining \vec on input line 3.
+
+(./main1.aux
+
+LaTeX Warning: Label `fig:globesim' multiply defined.
+
+
+LaTeX Warning: Label `fig:globesim' multiply defined.
+
+
+LaTeX Warning: Label `fig:globesim' multiply defined.
+
+
+LaTeX Warning: Label `fig:globesim' multiply defined.
+
+)
+\openout1 = `main1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count138
+\scratchdimen=\dimen158
+\scratchbox=\box37
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen159
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks38
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring OFF on input line 4.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count144
+)
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 78.
+ [1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<figures/croparea.png, id=113, 262.9022pt x 492.0784pt>
+File: figures/croparea.png Graphic file (type png)
+
+<use figures/croparea.png>
+Package pdftex.def Info: figures/croparea.png used on input line 103.
+(pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 104.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]|\T1/ptm/b/n/9 Winter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]|\T1/ptm/b/n/9 Spring
+ []
+
+
+Overfull \hbox (2.83324pt too wide) in paragraph at lines 129--129
+[]|\T1/ptm/b/n/9 Simulations
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 141.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [4 <./figures/croparea.png>] [5] [6]
+<figures/global_sim_CG.png, id=252, 4516.875pt x 1806.75pt>
+File: figures/global_sim_CG.png Graphic file (type png)
+
+<use figures/global_sim_CG.png>
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 171.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
+
+<figures/baselinecomp_yield_3.png, id=259, 527.42645pt x 347.47417pt>
+File: figures/baselinecomp_yield_3.png Graphic file (type png)
+
+<use figures/baselinecomp_yield_3.png>
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 17
+8.
+(pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
+ [7]
+
+LaTeX Warning: File `figures/global_sim_CG_pr.png' not found on input line 195.
+
+
+
+! Package pdftex.def Error: File `figures/global_sim_CG_pr.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 ...width=14cm]{figures/global_sim_CG_pr.png}
+                                                  
+? s
+OK, entering \scrollmode...
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 195.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Warning: File `figures/global_sim_CG_C.png' not found on input line 202.
+
+
+! Package pdftex.def Error: File `figures/global_sim_CG_C.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 ...[width=14cm]{figures/global_sim_CG_C.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `figures/global_sim_CG_N.png' not found on input line 209.
+
+
+! Package pdftex.def Error: File `figures/global_sim_CG_N.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...[width=14cm]{figures/global_sim_CG_N.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `figures/global_sim_CG_irr_water.png' not found on input li
+ne 216.
+
+
+! Package pdftex.def Error: File `figures/global_sim_CG_irr_water.png' not foun
+d.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 ...4cm]{figures/global_sim_CG_irr_water.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figures/Agformet_validation.png, id=279, 632.50703pt x 617.61942pt>
+File: figures/Agformet_validation.png Graphic file (type png)
+
+<use figures/Agformet_validation.png>
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 229
+.
+(pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
+ [8 <./figures/global_sim_CG.png>]
+[9 <./figures/baselinecomp_yield_3.png>] [10] [11] [12] [13]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+[14 <./figures/Agformet_validation.png>]
+
+LaTeX Warning: Reference `fig:globe_em' on page 15 undefined on input line 249.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]|\T1/ptm/b/n/9 Winter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]|\T1/ptm/b/n/9 Spring
+ []
+
+[15] [16] (./main1.bbl [17]
+Underfull \hbox (badness 2253) in paragraph at lines 76--80
+[]\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
+M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 76--80
+\T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (p
+SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
+ []
+
+[18]
+Underfull \hbox (badness 1152) in paragraph at lines 125--130
+[]\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
+pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 125--130
+\T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
+r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
+ []
+
+[19]
+Underfull \hbox (badness 1147) in paragraph at lines 234--238
+[]\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
+b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 234--238
+\T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
+-va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 326--331
+\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
+i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
+ []
+
+[20] [21]
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
+) [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+ (./main1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 297.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+ ) 
+Here is how much of TeX's memory you used:
+ 10766 strings out of 492995
+ 151743 string characters out of 6132704
+ 310940 words of memory out of 5000000
+ 13978 multiletter control sequences out of 15000+600000
+ 47131 words of font info for 87 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,10n,40p,1900b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main1.pdf (22 pages, 5918842 bytes).
+PDF statistics:
+ 525 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

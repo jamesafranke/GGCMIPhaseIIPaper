@@ -2,7 +2,7 @@
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 
 \begin{document}
-\title{Globally-gridded 30-year mean climatological crop model emulators for yield} %and irrigation water demand
+\title{Globally-gridded 30-year mean climatological crop model emulators for yield (and irragation water demand)} %and irrigation water demand
 
 \Author[1,2]{James}{Franke}
 \Author[2,3]{Joshua}{Elliott}
@@ -97,6 +97,7 @@ In this paper we describe a crop model emulator developed from a new simulation 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}
 \label{S:2}
+
 \begin{figure}[ht]
 \centering
    \includegraphics[width=8.3cm]{figures/tempyearvclim.png}
@@ -130,7 +131,7 @@ Although the GGCMI Phase II sampled variable space is relatively large, it is st
 
 \begin{figure}[ht]
 \centering
-   \includegraphics[width=8.3cm]{figures/features_selection.png}
+   \includegraphics[width=8.3cm]{figures/feature_selection.png}
    \caption{Mean Squared Error (MSE) from the 3-fold cross-validation process during polynomial feature selection. The emulated yield for maize, rice, and soy are compared to the simulated values for the same model in all grid cells where crops are presently cultivated, weighted by area in each grid cell. The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. The terms that did not reduce the aggregate error (horizontal lines) are not included in the final model. Solid lines indicate L1 normalization and dashed lines indicate L2 normalization. Colors indicated different models (three fully-sampled simulation sets).}
    \label{fig:features}
 \end{figure}
@@ -184,6 +185,13 @@ Crop yield responses are geographically diverse, even in high-yield and high-cul
 While the nitrogen dimension is important, it is also the most problematic to emulate in this work because of its limited sampling compared to other dimensions. The GGCMI Phase II protocol specified three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. While it is possible that over-application of nitrogen at the wrong time in the growing period could lead to reduced yields, these relative strength of this feature is are potentially an artifact of the fit. The Bayesian Ridge estimator tends to mitigate the `peak-decline effect' compared to ordinary least squares. In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 The emulation fidelity demonstrated here is sufficient to allow using emulated response surfaces to compare model responses and derive insight about impacts projections. Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures S18-S21 for other crops and dimensions). The emulated values closely match simulations even at this aggregation level. Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep{Sippel2015}. The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
+
+\begin{figure*}[ht]
+	\centering
+    \includegraphics[width=13cm]{figures/em_CTWN_all_crops.png}
+	\caption{Multi-model ensemble spread in sensitivity to changes in all four dimensions for rain-fed crops at the global level. 5\% median and 95\% percentile emulated damage function for currently cultivated areas. PROMET and JULES removed from ensemble as they are the two models that are most difficult to emulate. All other covariates held constant in each case. Soy as an efficient atmospheric nitrogen-fixer is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions.}
+	\label{fig:all_dims}
+\end{figure*}
 
 \subsection{Emulator Assessment}
 \label{S:4}
@@ -253,12 +261,11 @@ We show that the systematic parameter sampling in the GGCMI Phase II experiments
 The GGCMI Phase II dataset invites a broad range of potential future avenues of analysis, especially because emulation allows statistical distillation of the large dataset (40 billion simulated yields) into a tractable form. Potential studies might include a detailed examination of interaction terms between the major input drivers, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes, and evaluation of geographic shifts in optimal growing regions. The dataset also enables studies of emulation itself, including a more systematic evaluation of different statistical model specifications and formal calculation of uncertainties in derived parameters. In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for better understanding potential future crop responses and for improving process-based crop models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available at https://doi.org/10.5281/zenodo.2605374.}
+\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available at {doi.org/10.5281/zenodo.2605374.}}
 
 %\appendix
 %\section{}
 %\subsection{Data Access}
-
 %\noappendix %% use this to mark the end of the appendix section
 
 \authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F. and E.M.\ prepared the manuscript.}
@@ -272,3 +279,5 @@ We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions t
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 \bibliographystyle{copernicus}
 \bibliography{bib.bib}
+
+\end{document}
