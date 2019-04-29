@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,65 +999,6 @@ LaTeX Info: Redefining \vec on input line 3.
 
 LaTeX Warning: Label `fig:yearvclim' multiply defined.
 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.305 ... OLS linear model is unstable.\relax }}{1
-                                                  3}{table.caption.11}}
-? s
-OK, entering \scrollmode...
-! Extra }, or forgotten \endgroup.
-l.305 ...unstable.\relax }}{13}{table.caption.11}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-LaTeX Warning: Label `table:ASE' multiply defined.
-
-! Extra }, or forgotten \endgroup.
-l.351 }
-       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.525 hewe}
-           }}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.525 hewe}}
-            }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-l.525 hewe}}}
-             
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 )
 \openout1 = `main2.aux'.
 
@@ -1087,20 +1028,6 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-Overfull \hbox (95.9645pt too wide) in paragraph at lines 305--13
-[]\T1/cmr/m/n/10 13table.caption.11                                            
-                                                                               
-                                                                               
-                  hewe
- []
-
-LaTeX Font Info:    Try loading font information for T1+phv on input line 13.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 13.
-
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
 \scratchdimen=\dimen158
@@ -1161,10 +1088,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 78.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures/tempyearvclim.png, id=118, 322.9666pt x 333.0844pt>
+<figures/tempyearvclim.png, id=117, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 
 <use figures/tempyearvclim.png>
@@ -1173,7 +1107,7 @@ Package pdftex.def Info: figures/tempyearvclim.png used on input line 103.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 104.
 
-<figures/hist_year.png, id=120, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=119, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 
 <use figures/hist_year.png>
@@ -1192,52 +1126,146 @@ Type  H <return>  for immediate help.
                                                   
 l.117 ...ics[width=8.3cm]{figures/pryearvclim.png}
                                                   
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? s
+OK, entering \scrollmode...
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 117.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [3] [4 <./figures/tempyearvclim.png>] [5 <./figures/hist_year.png>]
-<figures/feature_selection.png, id=185, 708.8884pt x 272.0564pt>
+<figures/feature_selection.png, id=184, 708.8884pt x 272.0564pt>
 File: figures/feature_selection.png Graphic file (type png)
 
 <use figures/feature_selection.png>
 Package pdftex.def Info: figures/feature_selection.png used on input line 134.
 (pdftex.def)             Requested size: 455.24408pt x 174.71327pt.
  [6] [7 <./figures/feature_selection.png>]
-<figures/regression_areas.png, id=208, 5420.25pt x 2258.4375pt>
+<figures/regression_areas.png, id=209, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 
 <use figures/regression_areas.png>
 Package pdftex.def Info: figures/regression_areas.png used on input line 162.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-<figures/regression_model.png, id=210, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=211, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 
 <use figures/regression_model.png>
 Package pdftex.def Info: figures/regression_model.png used on input line 169.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-<figures/global_em_maize.png, id=213, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=214, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
 Package pdftex.def Info: figures/global_em_maize.png used on input line 176.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
- [8] [9 <./figures/regression_areas.png>]
-<figures/em_CTWN_all_crops.png, id=243, 4516.875pt x 4516.875pt>
+ [8 <./figures/regression_areas.png>] [9 <./figures/regression_model.png>] [10 
+<./figures/global_em_maize.png>]
+<figures/em_CTWN_all_crops.png, id=249, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
 Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 191.
 (pdftex.def)             Requested size: 369.88582pt x 369.83478pt.
 
-<figures/error_360.png, id=244, 2258.4375pt x 4968.5625pt>
+<figures/error_360.png, id=250, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 
 <use figures/error_360.png>
 Package pdftex.def Info: figures/error_360.png used on input line 200.
-(pdftex.def)             Requested size: 199.16928pt x
+(pdftex.def)             Requested size: 199.16928pt x 438.12947pt.
+ [11 <./figures/em_CTWN_all_crops.png>]
+<figures/em_err.png, id=260, 265.08636pt x 561.82698pt>
+File: figures/em_err.png Graphic file (type png)
+
+<use figures/em_err.png>
+Package pdftex.def Info: figures/em_err.png used on input line 207.
+(pdftex.def)             Requested size: 199.16928pt x 422.13217pt.
+ [12] [13]
+Overfull \hbox (39.97731pt too wide) in paragraph at lines 264--264
+[]\T1/ptm/m/n/9 The poly-no-mial em-u-la-tor pa-ram-e-ter ma-tri-ces for all cr
+op model em-u-la-tors are avail-able at doi.org/10.5281/zenodo.2605374. 
+ []
+
+[14] (./main2.bbl [15] [16]
+Underfull \hbox (badness 1490) in paragraph at lines 116--120
+\T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
+-pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 137--140
+[]\T1/ptm/m/n/9 Kodra, E. and Gan-guly, A.: Asym-me-try of pro-jected in-crease
+s in ex-treme tem-per-a-ture dis-tri-bu-tions, Sci-en-tific re-ports, 4, 5884,
+ []
+
+[17]
+Underfull \hbox (badness 1292) in paragraph at lines 242--247
+\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
+i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 261--264
+[]\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
+gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
+ []
+
+[18]
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 362--366
+[]\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
+ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 362--366
+\T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
+ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
+ []
+
+) [19] [20 <./figures/error_360.png>] [21 <./figures/em_err.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+ (./main2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 283.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+ ) 
+Here is how much of TeX's memory you used:
+ 10721 strings out of 492995
+ 151345 string characters out of 6132704
+ 295737 words of memory out of 5000000
+ 13953 multiletter control sequences out of 15000+600000
+ 43110 words of font info for 73 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,9n,40p,1801b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on main2.pdf (21 pages, 5306493 bytes).
+PDF statistics:
+ 471 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
