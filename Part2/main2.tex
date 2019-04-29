@@ -2,7 +2,7 @@
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 
 \begin{document}
-\title{Globally-gridded 30-year mean climatological crop model emulators for yield (and irragation water demand)} %and irrigation water demand
+\title{Globally-gridded mean climatological crop model emulators for yield (and irragation water demand)} %and irrigation water demand
 
 \Author[1,2]{James}{Franke}
 \Author[2,3]{Joshua}{Elliott}
@@ -129,12 +129,12 @@ A Gaussian process model can be fit to the response in a single grid cell, and g
 
 Although the GGCMI Phase II sampled variable space is relatively large, it is still sufficiently limited that use of the full polynomial expression described above can be problematic. We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. In this procedure higher-order and interaction terms are added successively to the regression model; we then follow the reduction of the aggregate mean squared error with increasing terms and eliminate those terms that do not contribute significant reductions (Figure \ref{fig:features}). Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). We select terms by applying the feature selection process to three example models that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and LPJmL); the resulting choice of terms is then applied for all emulators and all crops.
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 \centering
-   \includegraphics[width=8.3cm]{figures/feature_selection.png}
+   \includegraphics[width=16cm]{figures/feature_selection.png}
    \caption{Mean Squared Error (MSE) from the 3-fold cross-validation process during polynomial feature selection. The emulated yield for maize, rice, and soy are compared to the simulated values for the same model in all grid cells where crops are presently cultivated, weighted by area in each grid cell. The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. The terms that did not reduce the aggregate error (horizontal lines) are not included in the final model. Solid lines indicate L1 normalization and dashed lines indicate L2 normalization. Colors indicated different models (three fully-sampled simulation sets).}
    \label{fig:features}
-\end{figure}
+\end{figure*}
 
 Feature importance is remarkably consistent across all three models and across crops (Figure \ref{fig:features}). Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance indicated by the terms where the error is reduced and where additional terms provide no predictive benefit (line slopes match in Figure \ref{fig:features}). The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C. Finally, we eliminate two 2nd-order interaction terms in T and one in W. Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. The resulting statistical model (Equation \ref{eqn:features_final}) is used for all grid cells, models, and rainfed crops. (The regressions for irrigated crops do not contain the W terms and the models that do not sample the nitrogen levels omit the N terms).
 
