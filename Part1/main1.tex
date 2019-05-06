@@ -86,38 +86,48 @@ Inter-model uncertainty is qualitatively similar across all the four input dimen
 
 \introduction
 \label{S:1}
-Understanding crop yield response to a changing climate is critically important, especially as the global food production system will face pressure from increased demand over the next century. 
-Climate-related reductions in supply could therefore have severe socioeconomic consequences. 
-Multiple studies using different crop or climate models concur in predicting sharp yield reductions on currently cultivated cropland under {business-as-usual} climate scenarios, although their yield projections show considerable spread \citep[e.g.][and references therein]{Rosenzweig2014, Schauberger2017, porter2014}. 
-Modeling crop responses continues to be challenging, as crop growth is a function of complex interactions between climate inputs and management practices. 
-Intercomparison projects targeting model responses to important drivers are critical to improve future projections.
+Understanding crop yield response to a changing climate is critically important, especially as the global food production system will face pressure from increased demand over the next century \citep{bodirsky2015}. 
+Climate-related reductions in supply could therefore have severe socioeconomic consequences \citep[e.g.][]{Stevanovic2016,Wiebe_2015}. 
+Multiple studies using different crop or climate models concur in projecting sharp yield reductions on currently cultivated cropland under {business-as-usual} climate scenarios, although their yield projections show considerable spread \citep[e.g.][and references therein]{Rosenzweig2014, Schauberger2017, porter2014}. 
+Modeling crop responses continues to be challenging, as crop growth is a function of complex interactions between climate inputs and management practices \citep{Boote13,rotter2011}. 
+Intercomparison projects such as the Agricultural Model Intercomparison and Improvement Project \citep[AgMIP][]{ROSENZWEIG2013} have helped to quantify uncertainties in model projections \citep{Rosenzweig2014}, developed protocols \citep{Elliott2015} for evaluating model performance \citep{muller_global_2017} and analyzed selected mechanisms \citep[e.g.][]{Schauberger2017}. 
 
-Computational models have been used to project crop yields since the 1950's, beginning with statistical models  that attempt to capture the relationship between input factors and resultant yields \citep[e.g.][]{Heady57, Heady61}. 
-These statistical models were typically developed on a small scale for locations with extensive histories of yield data. 
-The emergence of electronic computers allowed development of numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops (first proposed by \citet{wit58} and \citet{Duncan67} and attempted by \citet{Duncan72}; for a history of crop model development see \citet{Rosenzweig2014}). 
-A half-century of improvement in both models and computing resources means that researchers can now run crop simulations for many years at higher spatial resolution on the global scale. 
+% to me, this is too broad of an introduction and the distinction of different modle types is more suitable for pitching the emulators than for the introduction of the experiment
 
-Both types of models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
+%Computational models have been used to project crop yields since the 1950's, beginning with statistical models  that attempt to capture the relationship between input factors and resultant yields \citep[e.g.][]{Heady57, Heady61}. 
+%These statistical models were typically developed on a small scale for locations with extensive histories of yield data. 
+%The emergence of electronic computers allowed development of numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops (first proposed by \citet{wit58} and \citet{Duncan67} and attempted by \citet{Duncan72}; for a history of crop model development see \citet{Rosenzweig2014}). 
+%A half-century of improvement in both models and computing resources means that researchers can now run crop simulations for many years at higher spatial resolution on the global scale. 
+
+%Both types of models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 Models tend to agree broadly in major response patterns, including a reasonable representation of the spatial pattern in historical yields of major crops \citep[e.g.][]{Elliott2015, muller_global_2017} and projections of shifts in yield under future climate scenarios.
 
-Process-based models do continue to struggle with some important details, including reproducing historical year-to-year variability \citep[e.g.][]{muller_global_2017}, reproducing historical yields when driven by reanalysis weather \citep[e.g.][]{Glotter14}, and low sensitivity to extreme events \citep[e.g.][]{Glotter15, Jag2018, schewe2019}. 
+Process-based models still struggle with some important details, including reproducing historical year-to-year variability in various countries \citep[e.g.][]{muller_global_2017}, reproducing historical yields when driven by reanalysis weather \citep[e.g.][]{Glotter14}, and low sensitivity to extreme events \citep[e.g.][]{Glotter15, Jag2018, schewe2019}. 
 These issues are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
 Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
 For these reasons, individual studies must generally re-calibrate models to ensure that short-term predictions reflect current cultivars and management levels, and long-term projections retain considerable uncertainty \citep{WOLF2002217, JAGTAP200273, Iizumi2010, ANGULO201332, Asseng2013, Asseng2015}. 
 Inter-model discrepancies can also be high in areas not yet cultivated \citep[e.g.][]{Challinor2014, WHITE2011357}. 
-Finally, process-based models present additional difficulties for high-resolution global studies because of their complexity and computational requirements. 
-For global economic impacts assessments, it is often impossible to integrate a set of process-based crop models directly into an integrated assessment model to estimate the potential cost of climate change to the agricultural sector.
+Finally, process-based models present additional difficulties for high-resolution global studies because of their complexity and computational requirements, as well as the general inability to calibrate site-specific parameters. 
+%For global economic impacts assessments, it is often impossible to integrate a set of process-based crop models directly into an integrated assessment model to estimate the potential cost of climate change to the agricultural sector.
 
-Nevertheless, process-based models are necessary for understanding the future yield impacts of climate change. 
+Nevertheless, process-based models are necessary for understanding the future yield impacts of climate change as well as options for climate mitigation \citep{muller2015} and adaptation \citep{challinor2018improving}, future sustainable development \citep{humpenoder2018large}, and food security \citep{wheeler2013climate}. 
+Despite the additional uncertainty and challenges to run crop models at the global scale \citep{muller_global_2017}, gridded, global crop model applications are much needed for consistent assessments.
+Climate change and international agricultural trade often require to consider the global and local dynamics \citep{rosenzweig2018,ruane2018} and global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}.
 Cultivation may shift to new areas, where no yield data are currently available and therefore statistical models cannot be applied. 
-Yield data are also often limited in the developing world, where future climate impacts may be the most critical. 
+%Yield data, on which statistical models could be trained, are also often limited in the developing world, where future climate impacts may be the most critical. 
 Finally, only process-based models can capture the growth response to novel conditions and practices that are not represented in historical data \citep[e.g.][]{pugh_climate_2016, Roberts2017}. 
-These novel changes can include the direct fertilization effect of elevated CO$_2$, and changes in management practices that may mitigate climate-induced damages.
+These novel changes can include the direct fertilization effect of elevated CO$_2$, and changes in management practices that may mitigate climate-induced damages \citep[e.g.][]{minoli2019modelling}.
 
-The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment involves running a suite of process-based crop models across historical conditions perturbed by a set of discrete steps in different input parameters, including an applied nitrogen dimension. 
-The experimental protocol involves 756 different parameter combinations for each model and crop, with simulations providing near-global coverage at a half degree spatial resolution. 
+Understanding process-based models' responses to important drivers are thus critical to improve future projections of agricultural productivity.
+The Global Gridded Crop Model Intercomparison (GGCMI) of AgMIP \citep{Elliott2015} has thus designed a 2nd phase (\textit{Phase II}) with a focus on models' response to changes in the most important model drivers: atmospheric carbon dioxide concentrations ([CO$_2$], C),temperature (T), water (W), and nitrogen (N). 
+The CTWN experiment is inspired by AgMIP's Coordinated Climate-Crop Modeling Project \citep[C3MP][]{ruane2014,mcdermid2015agmip} and has been extended by the nitrogen dimension. 
+To account for the importance of adapation in agricultural production to climate change, a fifth dimension, adaptation (A) has been added to the CTWN experiment. 
+The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adapation} setting, in which the growing season that is shortened under warming, is regained by adapted crop cultivar choice.
+
+The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment was conducted by a suite of process-based crop models, running across historical conditions perturbed by a set of discrete steps in the four input parameters (CTWN), for both adaptation settings (yes/no). 
+The experimental protocol involves 756 different parameter combinations for each model and crop for the non-adapted and 648 combinations for the adapted setting (does not include T=0), with simulations providing near-global coverage at a half degree spatial resolution. 
 The experiment was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) \citep{Taylor2012, Eyring2016}. 
-The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015} and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
+The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015agmip} and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
 GGCMI Phase II is designed to allow addressing goals such as understanding where highest-yield regions may shift under climate change; exploring future adaptive management strategies; understanding how interacting input drivers affect crop yield; quantifying uncertainties across models and major drivers; and testing strategies for producing lightweight emulators of process-based models. 
 In this paper, we describe the GGCMI Phase II model experiments and present initial summary results.
 
@@ -131,7 +141,10 @@ In this paper, we describe the GGCMI Phase II model experiments and present init
 \begin{figure}[ht]
 \centering
    \includegraphics[width=8.3cm]{figures/croparea.png}
-   \caption{Presently cultivated area for rainfed crops. Blue indicates grid cells with more that 20,000 hectares ($\sim$10\% of the equatorial grid cell). Gray contour shows area with more that 10 hectares cultivated. Cultivated areas for maize, rice, and soy are taken from the MIRCA2000 (``monthly irrigated and rainfed crop areas around the year 2000'') dataset \citep{Portmann2010}. Areas for winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing period. For analogous figure of irrigated crops, see Figure S1.}
+   \caption{Presently cultivated area for rainfed crops. Blue indicates grid cells with more that 20,000 hectares ($\sim$10\% of an equatorial grid cell). 
+   Gray contour shows area with more that 10 hectares cultivated. Cultivated areas for maize, rice, and soy are taken from the MIRCA2000 (``monthly irrigated and rainfed crop areas around the year 2000'') dataset \citep{Portmann2010}. 
+   Areas for winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing period. 
+   For analogous figure of irrigated crops, see Figure S1.}
    \label{fig:crop_area}
 \end{figure}
 
