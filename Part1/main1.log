@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 APR 2019 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2019 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,113 +1097,140 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 84.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 78.
+(Font)              scaled to size 8.54997pt on input line 84.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures/croparea.png, id=113, 262.9022pt x 492.0784pt>
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `bodirsky2015' on page 2 undefined on input li
+ne 89.
+
+
+Package natbib Warning: Citation `Stevanovic2016' on page 2 undefined on input 
+line 90.
+
+
+Package natbib Warning: Citation `Wiebe_2015' on page 2 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Boote13' on page 2 undefined on input line 92
+.
+
+
+Package natbib Warning: Citation `rotter2011' on page 2 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `muller2015' on page 2 undefined on input line
+ 113.
+
+
+Package natbib Warning: Citation `challinor2018improving' on page 2 undefined o
+n input line 113.
+
+
+Package natbib Warning: Citation `humpenoder2018large' on page 2 undefined on i
+nput line 113.
+
+
+Package natbib Warning: Citation `wheeler2013climate' on page 2 undefined on in
+put line 113.
+
+
+Package natbib Warning: Citation `Stevanovic2016' on page 2 undefined on input 
+line 115.
+
+
+Package natbib Warning: Citation `hasegawa2018risk' on page 2 undefined on inpu
+t line 115.
+
+
+Package natbib Warning: Citation `minoli2019modelling' on page 2 undefined on i
+nput line 119.
+
+[2]
+
+Package natbib Warning: Citation `mcdermid2015agmip' on page 3 undefined on inp
+ut line 123.
+
+
+Package natbib Warning: Citation `mcdermid2015agmip' on page 3 undefined on inp
+ut line 130.
+
+<figures/croparea.png, id=118, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 103.
+Package pdftex.def Info: figures/croparea.png used on input line 143.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 104.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 147.
+ [3] [4 <./figures/croparea.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|\T1/ptm/b/n/9 Spring
  []
 
 
-Overfull \hbox (2.83324pt too wide) in paragraph at lines 129--129
+Overfull \hbox (2.83324pt too wide) in paragraph at lines 177--177
 []|\T1/ptm/b/n/9 Simulations
  []
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 141.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 189.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [4 <./figures/croparea.png>] [5] [6]
-<figures/global_sim_CG.png, id=252, 4516.875pt x 1806.75pt>
+) [5] [6]
+<figures/global_sim_CG.png, id=246, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 171.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 240.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
-<figures/baselinecomp_yield_3.png, id=259, 527.42645pt x 347.47417pt>
+<figures/baselinecomp_yield_3.png, id=253, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 17
-8.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 25
+4.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
- [7]
+ [7] [8 <./figures/global_sim_CG.png>]
+<figures/swh_sim_CG_C.png, id=281, 4516.875pt x 1806.75pt>
+File: figures/swh_sim_CG_C.png Graphic file (type png)
 
-LaTeX Warning: File `figures/global_sim_CG_pr.png' not found on input line 195.
+<use figures/swh_sim_CG_C.png>
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 289.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
+<figures/soy_sim_CG_W.png, id=282, 4516.875pt x 1806.75pt>
+File: figures/soy_sim_CG_W.png Graphic file (type png)
 
+<use figures/soy_sim_CG_W.png>
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 296.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
-! Package pdftex.def Error: File `figures/global_sim_CG_pr.png' not found.
+<figures/rice_sim_CG_N.png, id=283, 4516.875pt x 1806.75pt>
+File: figures/rice_sim_CG_N.png Graphic file (type png)
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 ...width=14cm]{figures/global_sim_CG_pr.png}
-                                                  
-? s
-OK, entering \scrollmode...
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 195.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-
-LaTeX Warning: File `figures/global_sim_CG_C.png' not found on input line 202.
-
-
-! Package pdftex.def Error: File `figures/global_sim_CG_C.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 ...[width=14cm]{figures/global_sim_CG_C.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `figures/global_sim_CG_N.png' not found on input line 209.
-
-
-! Package pdftex.def Error: File `figures/global_sim_CG_N.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.209 ...[width=14cm]{figures/global_sim_CG_N.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figures/rice_sim_CG_N.png>
+Package pdftex.def Info: figures/rice_sim_CG_N.png used on input line 303.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
 
 
 LaTeX Warning: File `figures/global_sim_CG_irr_water.png' not found on input li
-ne 216.
+ne 310.
 
 
 ! Package pdftex.def Error: File `figures/global_sim_CG_irr_water.png' not foun
@@ -1213,92 +1240,102 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 ...4cm]{figures/global_sim_CG_irr_water.png}
+l.310 ...4cm]{figures/global_sim_CG_irr_water.png}
                                                   
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<figures/Agformet_validation.png, id=279, 632.50703pt x 617.61942pt>
+? s
+OK, entering \scrollmode...
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 310.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [9 <./figures/baselinecomp_yield_3.png>]
+<figures/Agformet_validation.png, id=292, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 229
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 323
 .
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
- [8 <./figures/global_sim_CG.png>]
-[9 <./figures/baselinecomp_yield_3.png>] [10] [11] [12] [13]
+ [10 <./figures/swh_sim_CG_C.png> <./figures/soy_sim_CG_W.png>] [11 <./figures/
+rice_sim_CG_N.png>] [12]
 
-LaTeX Warning: Text page 14 contains only floats.
+LaTeX Warning: Text page 13 contains only floats.
 
-[14 <./figures/Agformet_validation.png>]
+[13 <./figures/Agformet_validation.png>]
 
-LaTeX Warning: Reference `fig:globe_em' on page 15 undefined on input line 249.
+LaTeX Warning: Reference `fig:globe_em' on page 14 undefined on input line 375.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []|\T1/ptm/b/n/9 Spring
  []
 
-[15] [16] (./main1.bbl [17]
-Underfull \hbox (badness 2253) in paragraph at lines 76--80
+[14] [15] (./main1.bbl [16]
+Underfull \hbox (badness 2253) in paragraph at lines 95--99
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 76--80
+Underfull \hbox (badness 4391) in paragraph at lines 95--99
 \T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (p
 SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
  []
 
-[18]
-Underfull \hbox (badness 1152) in paragraph at lines 125--130
+[17]
+Underfull \hbox (badness 1152) in paragraph at lines 144--149
 []\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
 pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 125--130
+Underfull \hbox (badness 1635) in paragraph at lines 144--149
 \T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
 r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
-[19]
-Underfull \hbox (badness 1147) in paragraph at lines 234--238
+[18]
+Underfull \hbox (badness 1147) in paragraph at lines 267--271
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 234--238
+Underfull \hbox (badness 1424) in paragraph at lines 267--271
 \T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-
-Underfull \hbox (badness 1292) in paragraph at lines 326--331
+[19]
+Underfull \hbox (badness 1292) in paragraph at lines 362--367
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[20] [21]
+[20]
 
 Package lineno Warning: Linenumber reference failed, 
 (lineno)                rerun to get it right.
 
-) [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
- (./main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 297.
+[21]) [22]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+(./main1.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 436.
 
 
 LaTeX Warning: There were undefined references.
@@ -1306,16 +1343,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 436.
  ) 
 Here is how much of TeX's memory you used:
- 10766 strings out of 492995
- 151743 string characters out of 6132704
- 310940 words of memory out of 5000000
- 13978 multiletter control sequences out of 15000+600000
- 47131 words of font info for 87 fonts, out of 8000000 for 9000
+ 10793 strings out of 492995
+ 152416 string characters out of 6132704
+ 306825 words of memory out of 5000000
+ 14001 multiletter control sequences out of 15000+600000
+ 49979 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1900b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1900b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
@@ -1332,10 +1369,10 @@ fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main1.pdf (22 pages, 5918842 bytes).
+Output written on main1.pdf (22 pages, 6566104 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 482 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
