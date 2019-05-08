@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.13)  8 MAY 2019 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.13)  8 MAY 2019 23:56
 entering extended mode
 **./main1.tex
 (main1.tex
@@ -680,20 +680,7 @@ Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 3.
 
-(main1.aux
-
-LaTeX Warning: Label `fig:globesim' multiply defined.
-
-
-LaTeX Warning: Label `fig:globesim' multiply defined.
-
-
-LaTeX Warning: Label `fig:globesim' multiply defined.
-
-
-LaTeX Warning: Label `fig:globesim' multiply defined.
-
-)
+(main1.aux)
 \openout1 = `main1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -787,16 +774,347 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 84.
  [1
 
-{C:/Users/cmueller/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] 
-[4]
-<figures/croparea.png, id=218, 262.9022pt x 492.0784pt>
+{C:/Users/cmueller/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+Package natbib Warning: Citation `bodirsky2015' on page 2 undefined on input li
+ne 89.
+
+
+Package natbib Warning: Citation `Stevanovic2016' on page 2 undefined on input 
+line 90.
+
+
+Package natbib Warning: Citation `Wiebe_2015' on page 2 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Rosenzweig2014' on page 2 undefined on input 
+line 91.
+
+
+Package natbib Warning: Citation `Schauberger2017' on page 2 undefined on input
+ line 91.
+
+
+Package natbib Warning: Citation `porter2014' on page 2 undefined on input line
+ 91.
+
+
+Package natbib Warning: Citation `Boote13' on page 2 undefined on input line 92
+.
+
+
+Package natbib Warning: Citation `rotter2011' on page 2 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `ROSENZWEIG2013' on page 2 undefined on input 
+line 93.
+
+
+Package natbib Warning: Citation `Rosenzweig2014' on page 2 undefined on input 
+line 93.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 2 undefined on input lin
+e 93.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
+put line 93.
+
+
+Package natbib Warning: Citation `Schauberger2017' on page 2 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 2 undefined on input lin
+e 103.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
+put line 103.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
+put line 105.
+
+
+Package natbib Warning: Citation `Glotter14' on page 2 undefined on input line 
+105.
+
+
+Package natbib Warning: Citation `Glotter15' on page 2 undefined on input line 
+105.
+
+
+Package natbib Warning: Citation `Jag2018' on page 2 undefined on input line 10
+5.
+
+
+Package natbib Warning: Citation `schewe2019' on page 2 undefined on input line
+ 105.
+
+
+Package natbib Warning: Citation `JONES2017b' on page 2 undefined on input line
+ 106.
+
+
+Package natbib Warning: Citation `WOLF2002217' on page 2 undefined on input lin
+e 108.
+
+
+Package natbib Warning: Citation `JAGTAP200273' on page 2 undefined on input li
+ne 108.
+
+
+Package natbib Warning: Citation `Iizumi2010' on page 2 undefined on input line
+ 108.
+
+
+Package natbib Warning: Citation `ANGULO201332' on page 2 undefined on input li
+ne 108.
+
+
+Package natbib Warning: Citation `Asseng2013' on page 2 undefined on input line
+ 108.
+
+
+Package natbib Warning: Citation `Asseng2015' on page 2 undefined on input line
+ 108.
+
+
+Package natbib Warning: Citation `Challinor2014' on page 2 undefined on input l
+ine 109.
+
+
+Package natbib Warning: Citation `WHITE2011357' on page 2 undefined on input li
+ne 109.
+
+
+Package natbib Warning: Citation `muller2015' on page 2 undefined on input line
+ 113.
+
+
+Package natbib Warning: Citation `challinor2018improving' on page 2 undefined o
+n input line 113.
+
+
+Package natbib Warning: Citation `humpenoder2018large' on page 2 undefined on i
+nput line 113.
+
+
+Package natbib Warning: Citation `wheeler2013climate' on page 2 undefined on in
+put line 113.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 2 undefined on in
+put line 114.
+
+
+Package natbib Warning: Citation `rosenzweig2018' on page 2 undefined on input 
+line 115.
+
+
+Package natbib Warning: Citation `ruane2018' on page 2 undefined on input line 
+115.
+
+
+Package natbib Warning: Citation `Stevanovic2016' on page 2 undefined on input 
+line 115.
+
+
+Package natbib Warning: Citation `hasegawa2018risk' on page 2 undefined on inpu
+t line 115.
+
+
+Package natbib Warning: Citation `pugh_climate_2016' on page 2 undefined on inp
+ut line 118.
+
+
+Package natbib Warning: Citation `Roberts2017' on page 2 undefined on input lin
+e 118.
+
+
+Package natbib Warning: Citation `minoli2019modelling' on page 2 undefined on i
+nput line 119.
+
+[2]
+
+Package natbib Warning: Citation `Elliott2015' on page 3 undefined on input lin
+e 122.
+
+
+Package natbib Warning: Citation `ruane2014' on page 3 undefined on input line 
+123.
+
+
+Package natbib Warning: Citation `mcdermid2015agmip' on page 3 undefined on inp
+ut line 123.
+
+
+Package natbib Warning: Citation `ROSENZWEIG2013' on page 3 undefined on input 
+line 129.
+
+
+Package natbib Warning: Citation `Rosenzweig2014' on page 3 undefined on input 
+line 129.
+
+
+Package natbib Warning: Citation `Taylor2012' on page 3 undefined on input line
+ 129.
+
+
+Package natbib Warning: Citation `Eyring2016' on page 3 undefined on input line
+ 129.
+
+
+Package natbib Warning: Citation `ruane2014' on page 3 undefined on input line 
+130.
+
+
+Package natbib Warning: Citation `mcdermid2015agmip' on page 3 undefined on inp
+ut line 130.
+
+
+Package natbib Warning: Citation `ruane2018' on page 3 undefined on input line 
+130.
+
+
+Package natbib Warning: Citation `rosenzweig2018' on page 3 undefined on input 
+line 130.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 3 undefined on input lin
+e 144.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 3 undefined on in
+put line 144.
+
+
+Package natbib Warning: Citation `folberth2016' on page 3 undefined on input li
+ne 144.
+
+
+Package natbib Warning: Citation `porwollik_spatial_2016' on page 3 undefined o
+n input line 144.
+
+
+Package natbib Warning: Citation `FAOSTAT' on page 3 undefined on input line 14
+6.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 3 undefined on input lin
+e 146.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 3 undefined on in
+put line 146.
+
+
+Package natbib Warning: Citation `porwollik_spatial_2016' on page 3 undefined o
+n input line 146.
+
+
+Package natbib Warning: Citation `Ray2012' on page 3 undefined on input line 14
+6.
+
+
+Package natbib Warning: Citation `iizumi_historical_2014' on page 3 undefined o
+n input line 146.
+
+[3]
+
+Package natbib Warning: Citation `olesen2012changes' on page 4 undefined on inp
+ut line 148.
+
+
+Package natbib Warning: Citation `vadez2012adaptation' on page 4 undefined on i
+nput line 148.
+
+
+Package natbib Warning: Citation `challinor2018improving' on page 4 undefined o
+n input line 148.
+
+
+Package natbib Warning: Citation `Portmann2010' on page 4 undefined on input li
+ne 171.
+
+<figures/croparea.png, id=28, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 <use figures/croparea.png>
 Package pdftex.def Info: figures/croparea.png  used on input line 175.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 179.
- [5] [6 <./figures/croparea.png>] [7]
+
+Package natbib Warning: Citation `Portmann2010' on page 4 undefined on input li
+ne 179.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 4 undefined on in
+put line 188.
+
+[4] [5 <./figures/croparea.png>]
+
+Package natbib Warning: Citation `Ruane2015' on page 6 undefined on input line 
+192.
+
+
+Package natbib Warning: Citation `weedon2014wfdei' on page 6 undefined on input
+ line 192.
+
+
+Package natbib Warning: Citation `dee2011era' on page 6 undefined on input line
+ 192.
+
+
+Package natbib Warning: Citation `Sacks2010' on page 6 undefined on input line 
+213.
+
+
+Package natbib Warning: Citation `Portmann2008' on page 6 undefined on input li
+ne 213.
+
+
+Package natbib Warning: Citation `Portmann2010' on page 6 undefined on input li
+ne 213.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 6 undefined on input lin
+e 216.
+
+
+Package natbib Warning: Citation `Sacks2010' on page 6 undefined on input line 
+218.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 6 undefined on input lin
+e 219.
+
+
+Package natbib Warning: Citation `Portmann2010' on page 6 undefined on input li
+ne 220.
+
+[6]
+
+Package natbib Warning: Citation `waha2012climate' on page 7 undefined on input
+ line 228.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 7 undefined on input lin
+e 228.
+
+
+Package natbib Warning: Citation `Elliott2015' on page 7 undefined on input lin
+e 239.
+
+
+Package natbib Warning: Citation `frieler2017assessing' on page 7 undefined on 
+input line 239.
+
+
 Overfull \hbox (1.85802pt too wide) in paragraph at lines 241--242
 []$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 model\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 
 climate\OT1/cmr/m/n/10 ][]\OML/cmm/m/it/10 hist[]fullharm[]\OT1/cmr/m/n/10 [\OM
@@ -807,6 +1125,7 @@ t/10 year\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 end \OMS/cmsy/m/n/10   \OML/cmm/m
 /it/10 year\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :nc\OT1/cmr/m/n/10 4$ 
  []
 
+[7]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 258.
@@ -823,7 +1142,7 @@ Overfull \hbox (57.71313pt too wide) in paragraph at lines 303--304
 T4W0,T4Winf,T6W-
  []
 
-[8] [9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 324--324
 []|\T1/ptm/b/n/9 Winter
  []
@@ -843,126 +1162,232 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--324
 \T1/ptm/b/n/9 per crop
  []
 
+
+Package natbib Warning: Citation `KEATING2003267' on page 8 undefined on input 
+line 325.
+
+
+Package natbib Warning: Citation `HOLZWORTH2014327' on page 8 undefined on inpu
+t line 325.
+
+
+Package natbib Warning: Citation `Dury2011' on page 8 undefined on input line 3
+26.
+
+
+Package natbib Warning: Citation `Pirttioja2015' on page 8 undefined on input l
+ine 326.
+
+
+Package natbib Warning: Citation `BALKOVIC2014' on page 8 undefined on input li
+ne 327.
+
+
+Package natbib Warning: Citation `Izaurralde06' on page 8 undefined on input li
+ne 328.
+
+
+Package natbib Warning: Citation `Osborne2015' on page 8 undefined on input lin
+e 329.
+
+
+Package natbib Warning: Citation `Williams2015' on page 8 undefined on input li
+ne 329.
+
+
+Package natbib Warning: Citation `Williams2017' on page 8 undefined on input li
+ne 329.
+
+
+Package natbib Warning: Citation `LIU2007478' on page 8 undefined on input line
+ 330.
+
+
+Package natbib Warning: Citation `FOLBERTH201221' on page 8 undefined on input 
+line 330.
+
+
+Package natbib Warning: Citation `Lindeskog2013' on page 8 undefined on input l
+ine 331.
+
+
+Package natbib Warning: Citation `Olin2015' on page 8 undefined on input line 3
+31.
+
+
+Package natbib Warning: Citation `von_Bloh_implementing_2018' on page 8 undefin
+ed on input line 332.
+
+
+Package natbib Warning: Citation `Wu2016' on page 8 undefined on input line 333
+.
+
+
+Package natbib Warning: Citation `Elliott2014b' on page 8 undefined on input li
+ne 334.
+
+
+Package natbib Warning: Citation `JONES2003235' on page 8 undefined on input li
+ne 334.
+
+
+Package natbib Warning: Citation `LIU2016164' on page 8 undefined on input line
+ 335.
+
+
+Package natbib Warning: Citation `LIU2016' on page 8 undefined on input line 33
+5.
+
+
+Package natbib Warning: Citation `Hank2015' on page 8 undefined on input line 3
+36.
+
+
+Package natbib Warning: Citation `MAUSER2015' on page 8 undefined on input line
+ 336.
+
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 336.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<figures/global_sim_CG.png, id=339, 4516.875pt x 1806.75pt>
+) [8] [9]
+<figures/global_sim_CG.png, id=75, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 <use figures/global_sim_CG.png>
 Package pdftex.def Info: figures/global_sim_CG.png  used on input line 356.
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
-<figures/baselinecomp_yield_3.png, id=346, 527.42645pt x 347.47417pt>
+
+
+Package natbib Warning: Citation `rubel2010' on page 10 undefined on input line
+ 364.
+
+
+Package natbib Warning: Citation `Portmann2010' on page 10 undefined on input l
+ine 364.
+
+
+Package natbib Warning: Citation `rubel2010' on page 10 undefined on input line
+ 364.
+
+<figures/baselinecomp_yield_3.png, id=76, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png  used on input line 3
 70.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
- [10] [11]
-<figures/Agformet_validation.png, id=391, 632.50703pt x 617.61942pt>
+
+Package natbib Warning: Citation `rubel2010' on page 10 undefined on input line
+ 383.
+
+[10] [11 <./figures/global_sim_CG.png>]
+
+Package natbib Warning: Citation `Asseng2013' on page 12 undefined on input lin
+e 400.
+
+<figures/swh_sim_CG_C.png, id=90, 4516.875pt x 1806.75pt>
+File: figures/swh_sim_CG_C.png Graphic file (type png)
+<use figures/swh_sim_CG_C.png>
+Package pdftex.def Info: figures/swh_sim_CG_C.png  used on input line 405.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
+<figures/soy_sim_CG_W.png, id=91, 4516.875pt x 1806.75pt>
+File: figures/soy_sim_CG_W.png Graphic file (type png)
+<use figures/soy_sim_CG_W.png>
+Package pdftex.def Info: figures/soy_sim_CG_W.png  used on input line 412.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
+<figures/rice_sim_CG_N.png, id=92, 4516.875pt x 1806.75pt>
+File: figures/rice_sim_CG_N.png Graphic file (type png)
+<use figures/rice_sim_CG_N.png>
+Package pdftex.def Info: figures/rice_sim_CG_N.png  used on input line 419.
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
+<figures/testhighlatskde.png, id=93, 506.8536pt x 396.5214pt>
+File: figures/testhighlatskde.png Graphic file (type png)
+<use figures/testhighlatskde.png>
+Package pdftex.def Info: figures/testhighlatskde.png  used on input line 433.
+(pdftex.def)             Requested size: 236.15796pt x 184.7496pt.
+[12 <./figures/baselinecomp_yield_3.png>]
+<figures/Agformet_validation.png, id=102, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png  used on input line 43
-9.
+Package pdftex.def Info: figures/Agformet_validation.png  used on input line 44
+7.
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
- [12 <./figures/global_sim_CG.png>] [13 <./figures/baselinecomp_yield_3.png>] [
-14]
-
-LaTeX Warning: Reference `fig:globe_em' on page 15 undefined on input line 491.
 
 
+Package natbib Warning: Citation `FAOSTAT' on page 13 undefined on input line 4
+54.
 
-Overfull \hbox (22.52496pt too wide) in paragraph at lines 510--510
+
+Package natbib Warning: Citation `muller_global_2017' on page 13 undefined on i
+nput line 458.
+
+
+Package natbib Warning: Citation `FAOSTAT' on page 13 undefined on input line 4
+58.
+
+[13 <./figures/swh_sim_CG_C.png> <./figures/soy_sim_CG_W.png>]
+
+Package natbib Warning: Citation `muller_global_2017' on page 14 undefined on i
+nput line 471.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 14 undefined on i
+nput line 472.
+
+
+Package natbib Warning: Citation `muller_global_2017' on page 14 undefined on i
+nput line 479.
+
+[14 <./figures/rice_sim_CG_N.png>]
+
+LaTeX Warning: Reference `fig:globe_em' on page 15 undefined on input line 499.
+
+
+[15 <./figures/testhighlatskde.png>]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+[16 <./figures/Agformet_validation.png>]
+Overfull \hbox (22.52496pt too wide) in paragraph at lines 518--518
 \T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path = %2
 FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _ SEASON . HARM . version
 1 .
  []
 
-[15]
 
-LaTeX Warning: Text page 16 contains only floats.
-
-[16 <./figures/Agformet_validation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
 []|\T1/ptm/b/n/9 Spring
  []
 
-[17] (main1.bbl [18]
-Underfull \hbox (badness 2253) in paragraph at lines 102--106
-[]\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
-M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
- []
+[17]
+No file main1.bbl.
+[18]
 
+Package natbib Warning: There were undefined citations.
 
-Underfull \hbox (badness 4391) in paragraph at lines 102--106
-\T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (p
-SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
- []
-
-[19]
-Underfull \hbox (badness 1152) in paragraph at lines 172--177
-[]\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
-pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 172--177
-\T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
-r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
- []
-
-[20]
-Underfull \hbox (badness 1147) in paragraph at lines 302--306
-[]\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
-b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 302--306
-\T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
--va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
- []
-
-[21]
-Underfull \hbox (badness 1292) in paragraph at lines 406--411
-\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
-i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
- []
-
-[22] [23]
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-) [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 563.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 563.
- (main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 563.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 563.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
+(main1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 571.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 571.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 563.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 571.
  ) 
 Here is how much of TeX's memory you used:
- 10544 strings out of 492946
- 150618 string characters out of 3135518
- 324064 words of memory out of 3000000
- 14099 multiletter control sequences out of 15000+200000
+ 10394 strings out of 492946
+ 148581 string characters out of 3135518
+ 313502 words of memory out of 3000000
+ 14029 multiletter control sequences out of 15000+200000
  51002 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1929b,612s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,40p,1929b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -978,9 +1403,9 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 etic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main1.pdf (24 pages, 6027246 bytes).
+Output written on main1.pdf (18 pages, 6765721 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

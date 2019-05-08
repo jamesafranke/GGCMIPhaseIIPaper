@@ -268,105 +268,111 @@
 \@LN{168}{11}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Emulator Assessment}{12}{subsection.3.1}}
 \newlabel{S:4}{{3.1}{12}{Emulator Assessment}{subsection.3.1}{}}
-\@LN{169}{11}
-\@LN{170}{11}
-\@LN{171}{11}
-\@LN{172}{11}
-\@LN{173}{11}
-\newlabel{eqn:per_yield}{{2}{12}{Emulator Assessment}{equation.3.2}{}}
-\@LN{174}{11}
-\newlabel{eqn:error}{{3}{12}{Emulator Assessment}{equation.3.3}{}}
-\@LN{175}{11}
-\@LN{176}{11}
-\@LN{177}{11}
-\@LN{178}{11}
-\@LN{179}{11}
-\@LN{180}{11}
-\@LN{181}{11}
-\@LN{182}{11}
-\@LN{183}{11}
-\@LN{184}{11}
-\@LN{185}{11}
-\@LN{186}{11}
-\@LN{187}{11}
-\@LN{188}{11}
-\@LN{189}{11}
-\@LN{190}{11}
-\@LN{191}{11}
-\@LN{192}{11}
-\@LN{193}{11}
-\@LN{194}{11}
-\@LN{195}{11}
-\@LN{196}{11}
-\@LN{197}{11}
-\@LN{198}{11}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref  {eqn:error}, \ref  {eqn:per_yield}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure S3). JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.\relax }}{12}{figure.caption.9}}
+\newlabel{fig:error_360}{{9}{12}{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref {eqn:error}, \ref {eqn:per_yield}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure S3). JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure \ref  {fig:error_360}.\relax }}{13}{figure.caption.10}}
+\newlabel{fig:error}{{10}{13}{Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure \ref {fig:error_360}.\relax }{figure.caption.10}{}}
+\@LN{169}{12}
+\@LN{170}{12}
+\@LN{171}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Illustration of the spatial pattern of irrigation water demand.\relax }}{14}{figure.caption.11}}
+\newlabel{fig:error}{{11}{14}{Illustration of the spatial pattern of irrigation water demand.\relax }{figure.caption.11}{}}
+\@LN{172}{13}
+\@LN{173}{13}
+\newlabel{eqn:per_yield}{{2}{14}{Emulator Assessment}{equation.3.2}{}}
+\@LN{174}{13}
+\newlabel{eqn:error}{{3}{14}{Emulator Assessment}{equation.3.3}{}}
+\@LN{175}{13}
+\@LN{176}{13}
+\@LN{177}{13}
+\@LN{178}{13}
+\@LN{179}{13}
+\@LN{180}{13}
+\@LN{181}{13}
+\@LN{182}{13}
+\@LN{183}{13}
+\@LN{184}{13}
+\@LN{185}{13}
+\@LN{186}{13}
+\@LN{187}{13}
+\@LN{188}{13}
+\@LN{189}{13}
+\@LN{190}{13}
+\@LN{191}{13}
+\@LN{192}{13}
 \citation{Portmann2010}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable spaces is heterogeneous. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep  {Portmann2010} and `MD' shows the unweighted median across grid cell values. * Indicates cases where the OLS linear model is unstable.\relax }}{13}{table.caption.11}}
-\newlabel{table:ASE}{{1}{13}{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable spaces is heterogeneous. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep {Portmann2010} and `MD' shows the unweighted median across grid cell values. * Indicates cases where the OLS linear model is unstable.\relax }{table.caption.11}{}}
-\@LN{199}{12}
-\@LN{200}{12}
-\@LN{201}{12}
-\@LN{202}{12}
-\@LN{203}{12}
-\@LN{204}{12}
-\@LN{205}{12}
-\@LN{206}{12}
-\@LN{207}{12}
-\@LN{208}{12}
-\@LN{209}{12}
-\@LN{210}{12}
-\@LN{211}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion and Conclusions}{13}{section.4}}
-\newlabel{S:5}{{4}{13}{Discussion and Conclusions}{section.4}{}}
-\@LN{212}{12}
-\@LN{213}{12}
 \citation{Alexande2006}
 \citation{Kodra2014}
 \citation{Leeds2015}
 \citation{poppick2016}
 \citation{Won16}
 \citation{Haugen2018}
-\@LN{214}{13}
-\@LN{215}{13}
-\@LN{216}{13}
-\@LN{217}{13}
-\@LN{218}{13}
-\@LN{219}{13}
-\@LN{220}{13}
-\@LN{221}{13}
-\@LN{222}{13}
-\@LN{223}{13}
-\@LN{224}{13}
-\@LN{225}{13}
-\@LN{226}{13}
-\@LN{227}{13}
-\@LN{228}{13}
-\@LN{229}{13}
-\@LN{230}{13}
-\@LN{231}{13}
-\@LN{232}{13}
-\@LN{233}{13}
-\@LN{234}{13}
-\@LN{235}{13}
-\@LN{236}{13}
-\@LN{237}{13}
-\@LN{238}{13}
-\@LN{239}{13}
+\@LN{193}{14}
+\@LN{194}{14}
+\@LN{195}{14}
+\@LN{196}{14}
+\@LN{197}{14}
+\@LN{198}{14}
+\@LN{199}{14}
+\@LN{200}{14}
+\@LN{201}{14}
+\@LN{202}{14}
+\@LN{203}{14}
+\@LN{204}{14}
+\@LN{205}{14}
+\@LN{206}{14}
+\@LN{207}{14}
+\@LN{208}{14}
+\@LN{209}{14}
+\@LN{210}{14}
+\@LN{211}{14}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion and Conclusions}{15}{section.4}}
+\newlabel{S:5}{{4}{15}{Discussion and Conclusions}{section.4}{}}
+\@LN{212}{14}
+\@LN{213}{14}
+\@LN{214}{14}
+\@LN{215}{14}
+\@LN{216}{14}
+\@LN{217}{14}
+\@LN{218}{14}
+\@LN{219}{14}
+\@LN{220}{14}
+\@LN{221}{14}
+\@LN{222}{14}
+\@LN{223}{14}
+\@LN{224}{14}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable spaces is heterogeneous. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep  {Portmann2010} and `MD' shows the unweighted median across grid cell values. * Indicates cases where the OLS linear model is unstable.\relax }}{16}{table.caption.12}}
+\newlabel{table:ASE}{{1}{16}{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable spaces is heterogeneous. The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep {Portmann2010} and `MD' shows the unweighted median across grid cell values. * Indicates cases where the OLS linear model is unstable.\relax }{table.caption.12}{}}
+\@LN{225}{15}
+\@LN{226}{15}
+\@LN{227}{15}
+\@LN{228}{15}
+\@LN{229}{15}
+\@LN{230}{15}
+\@LN{231}{15}
+\@LN{232}{15}
+\@LN{233}{15}
+\@LN{234}{15}
+\@LN{235}{15}
 \bibstyle{copernicus}
 \bibdata{bib.bib}
-\@LN{240}{14}
-\@LN{241}{14}
-\@LN{242}{14}
-\@LN{243}{14}
-\@LN{244}{14}
-\@LN{245}{14}
-\@LN{246}{14}
-\@LN{247}{14}
-\@LN{248}{14}
-\@LN{249}{14}
-\@LN{250}{14}
-\@LN{251}{14}
-\@LN{252}{14}
+\@LN{236}{16}
+\@LN{237}{16}
+\@LN{238}{16}
+\@LN{239}{16}
+\@LN{240}{16}
+\@LN{241}{16}
+\@LN{242}{16}
+\@LN{243}{16}
+\@LN{244}{16}
+\@LN{245}{16}
+\@LN{246}{16}
+\@LN{247}{16}
+\@LN{248}{16}
+\@LN{249}{16}
+\@LN{250}{16}
+\@LN{251}{16}
+\@LN{252}{16}
 \bibcite{Alexande2006}{{1}{2006}{{Alexander et~al.}}{{Alexander, Zhang, Peterson, Caesar, BA, Tank, Haylock, Collins, Trewin, Rahimzadeh, Tagipour, Rupa~Kumar, Revadekar, Griffiths, Vincent, B.~Stephenson, Burn, Aguilar, Brunet, and L.~Vazquez-Aguirre}}}
 \bibcite{AULAKH2005}{{2}{2005}{{Aulakh and Malhi}}{{}}}
 \bibcite{BLANC2017}{{3}{2017}{{Blanc}}{{}}}
@@ -380,43 +386,43 @@
 \bibcite{Glotter14}{{11}{2014}{{Glotter et~al.}}{{Glotter, Elliott, McInerney, Best, Foster, and Moyer}}}
 \bibcite{Haugen2018}{{12}{2018}{{Haugen et~al.}}{{Haugen, Stein, Moyer, and Sriver}}}
 \bibcite{He2016}{{13}{2016}{{He et~al.}}{{He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He, and Li}}}
-\@LN{253}{15}
-\@LN{254}{15}
-\@LN{255}{15}
-\@LN{256}{15}
-\@LN{257}{15}
-\@LN{258}{15}
-\@LN{259}{15}
-\@LN{260}{15}
-\@LN{261}{15}
-\@LN{262}{15}
-\@LN{263}{15}
-\@LN{264}{15}
-\@LN{265}{15}
-\@LN{266}{15}
-\@LN{267}{15}
-\@LN{268}{15}
-\@LN{269}{15}
-\@LN{270}{15}
-\@LN{271}{15}
-\@LN{272}{15}
-\@LN{273}{15}
-\@LN{274}{15}
-\@LN{275}{15}
-\@LN{276}{15}
-\@LN{277}{15}
-\@LN{278}{15}
-\@LN{279}{15}
-\@LN{280}{15}
-\@LN{281}{15}
-\@LN{282}{15}
-\@LN{283}{15}
-\@LN{284}{15}
-\@LN{285}{15}
-\@LN{286}{15}
-\@LN{287}{15}
-\@LN{288}{15}
-\@LN{289}{15}
+\@LN{253}{17}
+\@LN{254}{17}
+\@LN{255}{17}
+\@LN{256}{17}
+\@LN{257}{17}
+\@LN{258}{17}
+\@LN{259}{17}
+\@LN{260}{17}
+\@LN{261}{17}
+\@LN{262}{17}
+\@LN{263}{17}
+\@LN{264}{17}
+\@LN{265}{17}
+\@LN{266}{17}
+\@LN{267}{17}
+\@LN{268}{17}
+\@LN{269}{17}
+\@LN{270}{17}
+\@LN{271}{17}
+\@LN{272}{17}
+\@LN{273}{17}
+\@LN{274}{17}
+\@LN{275}{17}
+\@LN{276}{17}
+\@LN{277}{17}
+\@LN{278}{17}
+\@LN{279}{17}
+\@LN{280}{17}
+\@LN{281}{17}
+\@LN{282}{17}
+\@LN{283}{17}
+\@LN{284}{17}
+\@LN{285}{17}
+\@LN{286}{17}
+\@LN{287}{17}
+\@LN{288}{17}
+\@LN{289}{17}
 \bibcite{Holden2014}{{14}{2014}{{Holden et~al.}}{{Holden, Edwards, PH, Fraedrich, Lunkeit, E, Labriet, Kanudia, and F}}}
 \bibcite{Holzkamper2012}{{15}{2012}{{Holzk{\"a}mper et~al.}}{{Holzk{\"a}mper, Calanca, and Fuhrer}}}
 \bibcite{Howden2005}{{16}{2005}{{Howden and Crimp}}{{}}}
@@ -435,43 +441,43 @@
 \bibcite{Oyebamiji15}{{29}{2015}{{Oyebamiji et~al.}}{{Oyebamiji, Edwards, Holden, Garthwaite, Schaphoff, and Gerten}}}
 \bibcite{scikit-learn}{{30}{2011}{{Pedregosa et~al.}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay}}}
 \bibcite{Pirttioja2015}{{31}{2015}{{Pirttioja et~al.}}{{Pirttioja, Carter, Fronzek, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M\"{u}ller, Nendel, \"{O}zt\"{u}rk, Perego, Rodr{\'{\i }}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao, and R\"{o}tter}}}
-\@LN{290}{16}
-\@LN{291}{16}
-\@LN{292}{16}
-\@LN{293}{16}
-\@LN{294}{16}
-\@LN{295}{16}
-\@LN{296}{16}
-\@LN{297}{16}
-\@LN{298}{16}
-\@LN{299}{16}
-\@LN{300}{16}
-\@LN{301}{16}
-\@LN{302}{16}
-\@LN{303}{16}
-\@LN{304}{16}
-\@LN{305}{16}
-\@LN{306}{16}
-\@LN{307}{16}
-\@LN{308}{16}
-\@LN{309}{16}
-\@LN{310}{16}
-\@LN{311}{16}
-\@LN{312}{16}
-\@LN{313}{16}
-\@LN{314}{16}
-\@LN{315}{16}
-\@LN{316}{16}
-\@LN{317}{16}
-\@LN{318}{16}
-\@LN{319}{16}
-\@LN{320}{16}
-\@LN{321}{16}
-\@LN{322}{16}
-\@LN{323}{16}
-\@LN{324}{16}
-\@LN{325}{16}
-\@LN{326}{16}
+\@LN{290}{18}
+\@LN{291}{18}
+\@LN{292}{18}
+\@LN{293}{18}
+\@LN{294}{18}
+\@LN{295}{18}
+\@LN{296}{18}
+\@LN{297}{18}
+\@LN{298}{18}
+\@LN{299}{18}
+\@LN{300}{18}
+\@LN{301}{18}
+\@LN{302}{18}
+\@LN{303}{18}
+\@LN{304}{18}
+\@LN{305}{18}
+\@LN{306}{18}
+\@LN{307}{18}
+\@LN{308}{18}
+\@LN{309}{18}
+\@LN{310}{18}
+\@LN{311}{18}
+\@LN{312}{18}
+\@LN{313}{18}
+\@LN{314}{18}
+\@LN{315}{18}
+\@LN{316}{18}
+\@LN{317}{18}
+\@LN{318}{18}
+\@LN{319}{18}
+\@LN{320}{18}
+\@LN{321}{18}
+\@LN{322}{18}
+\@LN{323}{18}
+\@LN{324}{18}
+\@LN{325}{18}
+\@LN{326}{18}
 \bibcite{poppick2016}{{32}{2016}{{Poppick et~al.}}{{Poppick, McInerney, Moyer, and Stein}}}
 \bibcite{Portmann2010}{{33}{2010}{{Portmann et~al.}}{{Portmann, Siebert, and Doell}}}
 \bibcite{raisen2006}{{34}{2006}{{R\"ais\"anen and Ruokolainen}}{{}}}
@@ -483,69 +489,65 @@
 \bibcite{RUANE2013a}{{40}{2013}{{Ruane et~al.}}{{Ruane, Cecil, Horton, Gordon, McCollum, Brown, Killough, Goldberg, Greeley, and Rosenzweig}}}
 \bibcite{ruane2014}{{41}{2014}{{Ruane et~al.}}{{Ruane, McDermid, Rosenzweig, Baigorria, Jones, Romero, and Cecil}}}
 \bibcite{RUIZRAMOS2018}{{42}{2018}{{Ruiz-Ramos et~al.}}{{Ruiz-Ramos, Ferrise, Rodr\IeC {\'\i }guez, Lorite, Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano, Chen, Dumont, Ewert, Gaiser, Hlavinka, Hoffmann, H\IeC {\"o}hn, Jurecka, Kersebaum, Krzyszczak, Lana, Mechiche-Alami, Minet, Montesino, Nendel, Porter, Ruget, Semenov, Steinmetz, Stratonovitch, Supit, Tao, Trnka, de~Wit, and R\IeC {\"o}tter}}}
-\@LN{327}{17}
-\@LN{328}{17}
-\@LN{329}{17}
-\@LN{330}{17}
-\@LN{331}{17}
-\@LN{332}{17}
-\@LN{333}{17}
-\@LN{334}{17}
-\@LN{335}{17}
-\@LN{336}{17}
-\@LN{337}{17}
-\@LN{338}{17}
-\@LN{339}{17}
-\@LN{340}{17}
-\@LN{341}{17}
-\@LN{342}{17}
-\@LN{343}{17}
-\@LN{344}{17}
-\@LN{345}{17}
-\@LN{346}{17}
-\@LN{347}{17}
-\@LN{348}{17}
-\@LN{349}{17}
-\@LN{350}{17}
-\@LN{351}{17}
-\@LN{352}{17}
-\@LN{353}{17}
-\@LN{354}{17}
-\@LN{355}{17}
-\@LN{356}{17}
-\@LN{357}{17}
-\@LN{358}{17}
-\@LN{359}{17}
-\@LN{360}{17}
-\@LN{361}{17}
-\@LN{362}{17}
-\@LN{363}{17}
-\@LN{364}{17}
+\@LN{327}{19}
+\@LN{328}{19}
+\@LN{329}{19}
+\@LN{330}{19}
+\@LN{331}{19}
+\@LN{332}{19}
+\@LN{333}{19}
+\@LN{334}{19}
+\@LN{335}{19}
+\@LN{336}{19}
+\@LN{337}{19}
+\@LN{338}{19}
+\@LN{339}{19}
+\@LN{340}{19}
+\@LN{341}{19}
+\@LN{342}{19}
+\@LN{343}{19}
+\@LN{344}{19}
+\@LN{345}{19}
+\@LN{346}{19}
+\@LN{347}{19}
+\@LN{348}{19}
+\@LN{349}{19}
+\@LN{350}{19}
+\@LN{351}{19}
+\@LN{352}{19}
+\@LN{353}{19}
+\@LN{354}{19}
+\@LN{355}{19}
+\@LN{356}{19}
+\@LN{357}{19}
+\@LN{358}{19}
+\@LN{359}{19}
+\@LN{360}{19}
+\@LN{361}{19}
+\@LN{362}{19}
+\@LN{363}{19}
+\@LN{364}{19}
 \bibcite{Schlenker2009}{{43}{2009}{{Schlenker and Roberts}}{{}}}
 \bibcite{Sippel2015}{{44}{2015}{{Sippel et~al.}}{{Sippel, Zscheischler, Heimann, Otto, Peters, and Mahecha}}}
 \bibcite{Snyder2018}{{45}{2018}{{Snyder et~al.}}{{Snyder, Calvin, Phillips, and Ruane}}}
 \bibcite{STORLIE2009}{{46}{2009}{{Storlie et~al.}}{{Storlie, Swiler, Helton, and Sallaberry}}}
 \bibcite{Tebaldi2008}{{47}{2008}{{Tebaldi and Lobell}}{{}}}
 \bibcite{Warszawski3228}{{48}{2014}{{Warszawski et~al.}}{{Warszawski, Frieler, Huber, Piontek, Serdeczny, and Schewe}}}
-\@LN{365}{18}
-\@LN{366}{18}
-\@LN{367}{18}
-\@LN{368}{18}
-\@LN{369}{18}
-\@LN{370}{18}
-\@LN{371}{18}
-\@LN{372}{18}
-\@LN{373}{18}
-\@LN{374}{18}
-\@LN{375}{18}
-\@LN{376}{18}
-\@LN{377}{18}
-\@LN{378}{18}
-\@LN{379}{18}
-\@LN{380}{18}
-\@LN{381}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref  {eqn:error}, \ref  {eqn:per_yield}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure S3). JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.\relax }}{20}{figure.caption.9}}
-\newlabel{fig:error_360}{{9}{20}{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref {eqn:error}, \ref {eqn:per_yield}). We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. Large columns are crops and large rows models; squares within are T,P scenario pairs. Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure S3). JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure \ref  {fig:error_360}.\relax }}{21}{figure.caption.10}}
-\newlabel{fig:error}{{10}{21}{Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. White areas are those where crops are not simulated by this model. Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. For CARAIB, emulation of soy is more problematic, as was also shown in Figure \ref {fig:error_360}.\relax }{figure.caption.10}{}}
+\@LN{365}{20}
+\@LN{366}{20}
+\@LN{367}{20}
+\@LN{368}{20}
+\@LN{369}{20}
+\@LN{370}{20}
+\@LN{371}{20}
+\@LN{372}{20}
+\@LN{373}{20}
+\@LN{374}{20}
+\@LN{375}{20}
+\@LN{376}{20}
+\@LN{377}{20}
+\@LN{378}{20}
+\@LN{379}{20}
+\@LN{380}{20}
+\@LN{381}{20}
 \newlabel{LastPage}{{}{21}{}{}{}}
