@@ -349,8 +349,51 @@ Not all modeling teams provide the full simulation protocol, for instance, CARIA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Results}
+\subsection{Simulation Assessment}
 \label{S:3}
+
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=14cm]{figures/Agformet_validation.png}
+    \caption{Time series of correlation coefficients between simulated crop yield and FAO data \citep{FAOSTAT} at the country level. 
+    The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. 
+    The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
+    Models that provided different nitrogen application levels are shown with low, med, and high label (models that did not simulate different nitrogen levels are analogous to a high nitrogen application level). 
+    The ensemble mean yield is also correlated with the FAO data (not the mean of the correlations). 
+    Wheat contains both spring wheat and winter wheat simulations where supplied, else one or the other (see Table 2). 
+    The Pearson r correlation coefficients are similar to those of GGCMI Phase I, with reasonable fidelity at capturing year-over-year variation, with differences by region and crop stronger than difference between models as indicated by more horizontal bars than vertical bars of the same color.}
+    \label{fig:simulation_val}
+\end{figure*}
+
+The \citet{muller_global_2017} procedure evaluates response to year-to-year temperature and precipitation variations in a control run driven by historical climate and compares it to detrended historical yields from the FAO \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. 
+The procedure is sensitive to the detrending method and the area mask used to aggregate yields. Here we use a 5-year running mean removal and the MICRA area mask for aggregation. 
+In some cases the time series are shifted by one year to account for errors in FAO or model year reporting. The procedure offers no means of assessing CO$_2$ fertilization, since [CO$_2$] has been relatively constant over the historical data collection period. 
+Nitrogen introduces another source of uncertainty into the analysis, since the GGCMI Phase II runs impose fixed, uniform nitrogen application levels that are not realistic for individual countries. 
+We evaluate up to three control runs for each model, since some modeling groups provide historical runs for three different nitrogen levels. 
+
+Results are similar to those of GGCMI Phase I, with reasonable fidelity at capturing year-over-year variation, with differences by region and crop stronger than difference between models. 
+(That is, Figure \ref{fig:simulation_val} shows more similarity in horizontal than vertical bars.) 
+No single model is dominant, with each model providing near best-in-class performance in at least one location-crop combination. 
+For example, maize in the United States is consistently well-simulated while maize in Indonesia is problematic (mean Pearson correlation coefficients of 0.68 and 0.18, respectively). 
+In some cases, especially in the developing world, low correlation coefficients may indicate not only model failure but also problems in FAO yield data. 
+
+In general, correlation coefficients in GGCMI Phase II are slightly below those of Phase I, likely because of unrealistic nitrogen levels, lack of country level calibration in some models, and restriction to only the MICRA aggregation mask in this study. 
+(Compare Figure \ref{fig:simulation_val} to \citet{muller_global_2017} Figures 1--4 and 6.)  
+Additionally, the time period used in this case is slightly different from the time period used in \citet{muller_global_2017}. 
+Note that in this methodology, simulations of crops with low year-to-year variability such as irrigated rice and wheat will tend to score more poorly than those with higher variability.
+
+Some models do show particular strength for particular crops. 
+For example, the EPIC family of models, and especially the EPIC-TAMU model, perform particularly well for soy across all regions. 
+In other cases a model has particular strength in only certain crop and region combinations. 
+For example, the strongest correlation coefficient in Figure \ref{fig:simulation_val} is that for the pDSSAT model for maize in the U.S. (the example crop-model-location used in many example figures in this paper), but pDSSAT slightly under performs for maize in other regions. 
+These model assessment results are similar to those for GGCMI Phase I in \citet{muller_global_2017}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+\label{S:4}
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=14cm]{figures/global_sim_CG.png}
@@ -416,13 +459,6 @@ For wheat crops see Figure S16 wheat projections are more uncertain, possibly be
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=14cm]{figures/rice_sim_CG_N.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for Nitrogen.}
-   \label{fig:globesim_N}
-\end{figure*}
-
-\begin{figure*}[ht]
-\centering
    %\includegraphics[width=14cm]{figures/global_sim_CG_irr_water.png}
    \caption{Illustration of the distribution of regional irragation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for....}
    \label{fig:globesim_IRR}
@@ -434,50 +470,6 @@ For wheat crops see Figure S16 wheat projections are more uncertain, possibly be
 \caption{Kernel density estimate of soy yields north of 45$^o$ latitude for the PROMET and LPJmL models. Solid lines show the historical climatology and dashed lines show the T+4 (K) case. Note strong reduction in the lowest bin for the T+4 case for PROMET that is spread almost equally over the rest of the distribution.}
 \label{fig:highlat}
 \end{figure}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Simulation Assessment}
-\label{S:4}
-
-\begin{figure*}[ht]
-    \centering
-    \includegraphics[width=14cm]{figures/Agformet_validation.png}
-    \caption{Time series of correlation coefficients between simulated crop yield and FAO data \citep{FAOSTAT} at the country level. 
-    The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. 
-    The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
-    Models that provided different nitrogen application levels are shown with low, med, and high label (models that did not simulate different nitrogen levels are analogous to a high nitrogen application level). 
-    The ensemble mean yield is also correlated with the FAO data (not the mean of the correlations). 
-    Wheat contains both spring wheat and winter wheat simulations where supplied, else one or the other (see Table 2). 
-    The Pearson r correlation coefficients are similar to those of GGCMI Phase I, with reasonable fidelity at capturing year-over-year variation, with differences by region and crop stronger than difference between models as indicated by more horizontal bars than vertical bars of the same color.}
-    \label{fig:simulation_val}
-\end{figure*}
-
-The \citet{muller_global_2017} procedure evaluates response to year-to-year temperature and precipitation variations in a control run driven by historical climate and compares it to detrended historical yields from the FAO \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. 
-The procedure is sensitive to the detrending method and the area mask used to aggregate yields. Here we use a 5-year running mean removal and the MICRA area mask for aggregation. 
-In some cases the time series are shifted by one year to account for errors in FAO or model year reporting. The procedure offers no means of assessing CO$_2$ fertilization, since [CO$_2$] has been relatively constant over the historical data collection period. 
-Nitrogen introduces another source of uncertainty into the analysis, since the GGCMI Phase II runs impose fixed, uniform nitrogen application levels that are not realistic for individual countries. 
-We evaluate up to three control runs for each model, since some modeling groups provide historical runs for three different nitrogen levels. 
-
-Results are similar to those of GGCMI Phase I, with reasonable fidelity at capturing year-over-year variation, with differences by region and crop stronger than difference between models. 
-(That is, Figure \ref{fig:simulation_val} shows more similarity in horizontal than vertical bars.) 
-No single model is dominant, with each model providing near best-in-class performance in at least one location-crop combination. 
-For example, maize in the United States is consistently well-simulated while maize in Indonesia is problematic (mean Pearson correlation coefficients of 0.68 and 0.18, respectively). 
-In some cases, especially in the developing world, low correlation coefficients may indicate not only model failure but also problems in FAO yield data. 
-
-In general, correlation coefficients in GGCMI Phase II are slightly below those of Phase I, likely because of unrealistic nitrogen levels, lack of country level calibration in some models, and restriction to only the MICRA aggregation mask in this study. 
-(Compare Figure \ref{fig:simulation_val} to \citet{muller_global_2017} Figures 1--4 and 6.)  
-Additionally, the time period used in this case is slightly different from the time period used in \citet{muller_global_2017}. 
-Note that in this methodology, simulations of crops with low year-to-year variability such as irrigated rice and wheat will tend to score more poorly than those with higher variability.
-
-Some models do show particular strength for particular crops. 
-For example, the EPIC family of models, and especially the EPIC-TAMU model, perform particularly well for soy across all regions. 
-In other cases a model has particular strength in only certain crop and region combinations. 
-For example, the strongest correlation coefficient in Figure \ref{fig:simulation_val} is that for the pDSSAT model for maize in the U.S. (the example crop-model-location used in many example figures in this paper), but pDSSAT slightly under performs for maize in other regions. 
-These model assessment results are similar to those for GGCMI Phase I in \citet{muller_global_2017}.
-
 
 \section{Discussion and Conclusions} 
 \label{S:5}
