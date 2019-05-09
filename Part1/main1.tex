@@ -240,7 +240,7 @@ All output data is supplied as netCDF version 4 files as in GGCMI phase 1 \citep
 
 $[model]\_[climate]\_hist\_fullharm\_[irrig.scenario]\_[variable]\_[crop]\_global\_annual\_[start-year]\_[end-year].nc4$
 
-where $[model]$ is the GGCM name, $[climate]$ is the original climate input data set (typically AgMERRA), $[irrig.scenario]$ is the irrigation setting ("firr" for fully irrigated and "noirr" for fully rainfed), $[variable]$ is the output variable (see Table \ref{table:outputs}), $[crop]$ is the crop abbreviation ("mai" for maize, "ric" for rice, "soy" for soybean, "swh" for spring wheat, "wwh" for winter wheat), $[start-year]\_[end-year]$ specify the first and last year recorded on file. 
+\noindent where $[model]$ is the GGCM name, $[climate]$ is the original climate input data set (typically AgMERRA), $[irrig.scenario]$ is the irrigation setting ("firr" for fully irrigated and "noirr" for fully rainfed), $[variable]$ is the output variable (see Table \ref{table:outputs}), $[crop]$ is the crop abbreviation ("mai" for maize, "ric" for rice, "soy" for soybean, "swh" for spring wheat, "wwh" for winter wheat), $[start-year]\_[end-year]$ specify the first and last year recorded on file. 
 The entire file name needs to be in small caps. 
 The first entry in the file is the result of the first simulated cropping cycle that is entirely within the given climate input. 
 For AgMERRA, where the first year provided is 1980, the first harvest record is thus of 1980, when the prescribed sowing and harvest dates are in 1980 (e.g. sowing in March and harvest in September 1980) but is of 1981 if sowing is later in a calendar year than harvest (e.g. sowing in September 1980 and harvest in March 1981). 
@@ -322,22 +322,22 @@ The different participation levels are thus defined by combining the CxN sets wi
 ``N-Dim.'' indicates whether the simulations include varying nitrogen levels. Two models provide only one nitrogen level. 
 All models provide the same set of simulations across all modeled crops, but some omit individual crops. (For example, APSIM does not simulate winter wheat.)}
 \label{table:models}
-	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{2cm}}
+	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
         \tophline
-        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims. per crop (A0/A1)}}\\ \middlehline
-        {\textbf{APSIM-UGOE}, \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {X} & {X} & {X} & {44/36}\\ \middlehline
-        {\textbf{CARAIB},     \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252/216}\\ \middlehline
-        {\textbf{EPIC-IIASA}, \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39/0}\\  \middlehline
-        {\textbf{EPIC-TAMU},  \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765/648}\\ \middlehline
-        {\textbf{JULES},      \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252/0}\\ \middlehline
-        {\textbf{GEPIC},      \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430/181}\\ \middlehline
-        {\textbf{LPJ-GUESS},  \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756/648}\\  \middlehline
-        {\textbf{LPJmL},      \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
-        {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33/0}\\ \middlehline
-        {\textbf{pDSSAT},      \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
-        {\textbf{PEPIC},       \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149/121}\\ \middlehline
-        {\textbf{PROMET},      \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261/232}\\ \middlehline
-        {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240}\\
+        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1}}\\ \middlehline
+        {\textbf{APSIM-UGOE},   \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
+        {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252 / 216}\\ \middlehline
+        {\textbf{EPIC-IIASA},   \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
+        {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765 / 648}\\ \middlehline
+        {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252 / 0}\\ \middlehline
+        {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
+        {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756 / 648}\\  \middlehline
+        {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
+        {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
+        {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
+        {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+        {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
+        {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240 | 3378}\\
         \bottomhline
     \end{tabular}
 \end{table*}
@@ -357,7 +357,7 @@ Not all modeling teams provide the full simulation protocol, for instance, CARIA
 
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=11cm]{figures/Agformet_validation.png}
+    \includegraphics[width=14cm]{figures/Agformet_validation.png}
     \caption{Time series of correlation coefficients between simulated crop yield and FAO data \citep{FAOSTAT} at the country level. 
     The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. 
     The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
@@ -414,7 +414,7 @@ These model assessment results are similar to those for GGCMI Phase I in \citet{
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=14cm]{figures/global_sim_CG.png}
+   \includegraphics[width=15cm]{figures/global_sim_CG.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
    We show responses of a single crop (rainfed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
 Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
@@ -449,22 +449,22 @@ For wheat crops see Figure S16 wheat projections are more uncertain, possibly be
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=14cm]{figures/swh_sim_CG_C.png}
+   \includegraphics[width=15cm]{figures/swh_sim_CG_C.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for Carbon.}
    \label{fig:globesim_C}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=14cm]{figures/soy_sim_CG_W.png}
+   \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for precip.}
    \label{fig:globesim_W}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
-   %\includegraphics[width=14cm]{figures/global_sim_CG_irr_water.png}
-   \caption{Illustration of the distribution of regional irragation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for....}
+   \includegraphics[width=14cm]{figures/rice_sim_CG_irrwat.png}
+   \caption{Illustration of the distribution of regional irragation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for rice.}
    \label{fig:globesim_IRR}
 \end{figure*}
 
