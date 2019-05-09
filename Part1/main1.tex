@@ -269,27 +269,30 @@ Variable                                & variable name             & units \\
 \textbf{Maturity date}                           & \textbf{maty-day\_<crop>}  & \textbf{days from planting}\\
 \textbf{Applied irrigation water}                & \textbf{pirrww\_<crop>}    & \textbf{mm yr$^{-1}$} \\
 \textbf{Evapotranspiration (growing season sum)} & \textbf{etransp\_<crop>}   & \textbf{mm yr$^{-1}$ (firr scenarios only)}\\ \middlehline
-Transpiration (growing season sum)                                                                         & transp\_<crop>    & mm yr$^{-1}$ \\
-Evaporation (growing season sum)                                                                           & evap\_<crop>      & mm yr$^{-1}$                    \\
-Runoff (total growing season sum, subsurface + surface)                                                    & runoff\_<crop>    & mm yr$^{-1}$                    \\
-Total available soil moisture in root zone (growing season sum, basis for computing average soil moisture) & trzpah2o\_<crop>  & mm yr$^{-1}$                    \\
-Total root biomass                                                                                         & rootm\_<crop>     & t ha$^{-1}$ yr$^{-1}$ (dry matter)  \\
-Total Nr uptake (total growing season sum)                                                                 & tnrup\_<crop>     & kg ha$^{-1}$ yr$^{-1}$              \\
-Total Nr inputs (total growing season sum)                                                                 & tnrin\_<crop>     & kg ha$^{-1}$ yr$^{-1}$              \\
-Total Nr losses (total growing season sum)                                                                 & tnrloss\_<crop>   & kg ha$^{-1}$ yr$^{-1}$              \\
-Gross primary production (GPP)                                                                                                        & gpp\_<crop>       & gC m$^{-2}$ yr$^{-1}$               \\
-Net primary production (NPP)                                                                                                        & npp\_<crop>       & gC m$^{-2}$ yr$^{-1}$               \\
-CO$_2$ response scaler on NPP                                                                                & co2npp\_<crop>    & - \{0..inf\}                \\
-water response scaler on NPP                                                                               & h2onpp\_<crop>    & - \{0..1\}                  \\
-temperature response scaler on NPP                                                                         & tnpp\_<crop>      & - \{0..1\}                  \\
-Nr response scaler on NPP                                                                                  & nrnpp\_<crop>     & - \{0..1\}                  \\
-Other nutrient response scaler on NPP                                                                      & ornpp\_<crop>     & - \{0..1\}                  \\
-CO$_2$ response scaler on transpiration                                                                      & co2trans\_<crop>  & - \{0..1\}                  \\
-maximum stress response scaler                                                                             & maxstress\_<crop> & - \{0..1\}                  \\
-Maximum LAI                                                                                                & laimax\_<crop>    & m$^{2}$ m$^{-2}$           \\        
+Transpiration (growing season sum)                       & transp\_<crop>    & mm yr$^{-1}$ \\
+Evaporation (growing season sum)                         & evap\_<crop>      & mm yr$^{-1}$ \\
+Runoff (total growing season sum, subsurface + surface)  & runoff\_<crop>    & mm yr$^{-1}$                    \\
+Total available soil moisture in root zone *             & trzpah2o\_<crop>  & mm yr$^{-1}$                    \\
+Total root biomass                                       & rootm\_<crop>     & t ha$^{-1}$ yr$^{-1}$ (dry matter)  \\
+Total Nr uptake (total growing season sum)               & tnrup\_<crop>     & kg ha$^{-1}$ yr$^{-1}$              \\
+Total Nr inputs (total growing season sum)               & tnrin\_<crop>     & kg ha$^{-1}$ yr$^{-1}$              \\
+Total Nr losses (total growing season sum)               & tnrloss\_<crop>   & kg ha$^{-1}$ yr$^{-1}$              \\
+Gross primary production (GPP)                           & gpp\_<crop>       & gC m$^{-2}$ yr$^{-1}$               \\
+Net primary production (NPP)                             & npp\_<crop>       & gC m$^{-2}$ yr$^{-1}$               \\
+CO$_2$ response scaler on NPP                            & co2npp\_<crop>    & - \{0..inf\}                \\
+water response scaler on NPP                             & h2onpp\_<crop>    & - \{0..1\}                  \\
+temperature response scaler on NPP                       & tnpp\_<crop>      & - \{0..1\}                  \\
+Nr response scaler on NPP                                & nrnpp\_<crop>     & - \{0..1\}                  \\
+Other nutrient response scaler on NPP                    & ornpp\_<crop>     & - \{0..1\}                  \\
+CO$_2$ response scaler on transpiration                  & co2trans\_<crop>  & - \{0..1\}                  \\
+maximum stress response scaler                           & maxstress\_<crop> & - \{0..1\}                  \\
+Maximum LAI                                              & laimax\_<crop>    & m$^{2}$ m$^{-2}$           \\        
 \bottomhline
+* growing season sum, basis for computing average soil moisture & {} & {} \\
 \end{tabular}
 \end{table}
+
+
 
 A script for initial data quality screening has been provided to the modeling groups so that these could test plausible data range and spatial coverage prior to data submission.
 
@@ -300,8 +303,8 @@ Given the substantial computational requirements for participation in GGCMI Phas
 These subsets were designed as orthogonal samples across the 4 dimensions of the CTWN space. 
 These are designed by combinations of selected pairs in the CxN space (all 12 vs. 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) and the TxW space:
 \begin{itemize}
-\item a \textit{minimum set} with an orthogonal, stratified 9-step sampling (T-1W-10,T0W10,T1W-30,T2W-50,T2W20,T3W30,T4W0,T4Winf,T6W-20)
-\item a \textit{reduced set} of alternating combinations, which uses different W for even Ts than for odd Ts. For even Ts (i.e. T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4*4, for odd Ts (i.e. T-1,T1,T3) , we use W = -30,-10,+10,+30,inf = 3*5,
+\item a \textit{minimum set} with an orthogonal, stratified 9-step sampling (T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20)
+\item a \textit{reduced set} of alternating combinations, which uses different W for even Ts than for odd Ts. For even Ts (i.e. T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4*4, for odd Ts (i.e. T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3*5,
 \item and the \textit{full set} (all 7Tx9W)
 \end{itemize}
 
@@ -319,21 +322,21 @@ The different participation levels are thus defined by combining the CxN sets wi
 ``N-Dim.'' indicates whether the simulations include varying nitrogen levels. Two models provide only one nitrogen level. 
 All models provide the same set of simulations across all modeled crops, but some omit individual crops. (For example, APSIM does not simulate winter wheat.)}
 \label{table:models}
-	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.5cm}}
+	\begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{2cm}}
         \tophline
-        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Simulations per crop (A0/A1)}}\\ \middlehline
-        {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {X} & {X} & {X} & {44/36}\\ \middlehline
-        {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252/216}\\ \middlehline
-        {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39/0}\\  \middlehline
-        {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765/648}\\ \middlehline
-        {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252/0}\\ \middlehline
-        {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430/181}\\ \middlehline
-        {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756/648}\\  \middlehline
-        {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
-        {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33/0}\\ \middlehline
-        {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
-        {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149/121}\\ \middlehline
-        {\textbf{PROMET},        \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X\dag} & {261/232}\\ \middlehline
+        {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soy}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims. per crop (A0/A1)}}\\ \middlehline
+        {\textbf{APSIM-UGOE}, \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {X} & {X} & {X} & {44/36}\\ \middlehline
+        {\textbf{CARAIB},     \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252/216}\\ \middlehline
+        {\textbf{EPIC-IIASA}, \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39/0}\\  \middlehline
+        {\textbf{EPIC-TAMU},  \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765/648}\\ \middlehline
+        {\textbf{JULES},      \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252/0}\\ \middlehline
+        {\textbf{GEPIC},      \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430/181}\\ \middlehline
+        {\textbf{LPJ-GUESS},  \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756/648}\\  \middlehline
+        {\textbf{LPJmL},      \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
+        {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33/0}\\ \middlehline
+        {\textbf{pDSSAT},      \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756/648}\\ \middlehline
+        {\textbf{PEPIC},       \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149/121}\\ \middlehline
+        {\textbf{PROMET},      \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261/232}\\ \middlehline
         {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240}\\
         \bottomhline
     \end{tabular}
@@ -354,7 +357,7 @@ Not all modeling teams provide the full simulation protocol, for instance, CARIA
 
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=1scm]{figures/Agformet_validation.png}
+    \includegraphics[width=11cm]{figures/Agformet_validation.png}
     \caption{Time series of correlation coefficients between simulated crop yield and FAO data \citep{FAOSTAT} at the country level. 
     The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. 
     The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
@@ -544,7 +547,6 @@ Simulation yield output dataset can be found at the DOIs located in table \ref{t
 \competinginterests{The authors declare no competing interests.}
 
 \begin{acknowledgements}
-We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. 
 This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. 
 RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. 
 J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. 
