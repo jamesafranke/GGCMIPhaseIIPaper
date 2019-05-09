@@ -349,12 +349,12 @@ Not all modeling teams provide the full simulation protocol, for instance, CARIA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Simulation Assessment}
+\section{Simulation Assessment}
 \label{S:3}
 
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=14cm]{figures/Agformet_validation.png}
+    \includegraphics[width=1scm]{figures/Agformet_validation.png}
     \caption{Time series of correlation coefficients between simulated crop yield and FAO data \citep{FAOSTAT} at the country level. 
     The top panels indicate two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application case. 
     The heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
@@ -393,21 +393,8 @@ These model assessment results are similar to those for GGCMI Phase I in \citet{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
-\label{S:4}
-\begin{figure*}[ht]
-\centering
-   \includegraphics[width=14cm]{figures/global_sim_CG.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
-   We show responses of a single crop (rainfed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
-Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
-If all models like within 1.5$\cdot$IQR then whiskers extend to maximum and minimum of simulations, else the outlier is shown separately. Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
-Figure shows all modeled land area; see Figure S4 in the supplemental material for currently-cultivated land and Figure S5 for other crops. Panel text gives the percentage of rainfed maize presently cultivated in each climate zone \citep[data from][]{Portmann2010}. 
-Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
-Outside high-latitude regions ('Cold continental' and `Polar'), models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
-The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.}
-   \label{fig:globesim}
-\end{figure*}
 
+\label{S:4}
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=14cm]{figures/baselinecomp_yield_3.png} 
@@ -420,6 +407,20 @@ The right panel (Global) shows yield responses to a globally uniform temperature
    Hatching indicates areas of low confidence ($\Delta < 1 \sigma$), and stippling areas of medium confidence ($1 \sigma < \Delta < 2 \sigma$). 
    Crop model results in cold areas, where yield impacts are on average positive, also have the highest uncertainty.}
    \label{fig:maizesoybaseline}
+\end{figure*}
+
+\begin{figure*}[ht]
+\centering
+   \includegraphics[width=14cm]{figures/global_sim_CG.png}
+   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
+   We show responses of a single crop (rainfed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
+Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
+If all models like within 1.5$\cdot$IQR then whiskers extend to maximum and minimum of simulations, else the outlier is shown separately. Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
+Figure shows all modeled land area; see Figure S4 in the supplemental material for currently-cultivated land and Figure S5 for other crops. Panel text gives the percentage of rainfed maize presently cultivated in each climate zone \citep[data from][]{Portmann2010}. 
+Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
+Outside high-latitude regions ('Cold continental' and `Polar'), models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
+The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.}
+   \label{fig:globesim}
 \end{figure*}
 
 Crop models in the GGCMI Phase II ensemble show broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. 
