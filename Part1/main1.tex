@@ -298,8 +298,6 @@ Maximum LAI                                              & laimax\_<crop>    & m
 \end{tabular}
 \end{table}
 
-
-
 A script for initial data quality screening has been provided to the modeling groups so that these could test plausible data range and spatial coverage prior to data submission.
 
 
@@ -433,57 +431,27 @@ Note that in this methodology, simulations of crops with low year-to-year variab
    \includegraphics[width=15cm]{figures/global_sim_CG.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
    We show responses of a single crop (rainfed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
-Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. 
-Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
-If all models like within 1.5$\cdot$IQR then whiskers extend to maximum and minimum of simulations, else the outlier is shown separately. 
-Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
-Figure shows all modeled land area; see Figure S4 in the supplemental material for currently-cultivated land and Figure S5 for other crops. 
-Panel text gives the percentage of rainfed maize presently cultivated in each climate zone \citep[data from][]{Portmann2010}. 
-Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
-Outside high-latitude regions ('Cold continental' and `Polar'), models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
-The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.}
+	Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
+	If all models like within 1.5$\cdot$IQR then whiskers extend to maximum and minimum of simulations, else the outlier is shown separately. Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
+	Figure shows all modeled land area; see Figure S4 in the supplemental material for currently-cultivated land and Figure S5 for other crops. Panel text gives the percentage of rainfed maize presently cultivated in each climate zone \citep[data from][]{Portmann2010}. 
+	Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
+	Outside high-latitude regions ('Cold continental' and `Polar'), models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
+	The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.}
    \label{fig:globesim}
-\end{figure*}
-
-Crop models in the GGCMI Phase II ensemble show broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. 
-We illustrate this result for rainfed maize in Figure \ref{fig:globesim}, which shows yields across all grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
-In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 
-These impacts are robust for even moderate climate perturbations. 
-In the `warm temperate' zone, even a 1 degree temperature rise with other variables held fixed leads to a median yield reduction that exceeds the variance across models. 
-A 6 degree temperature rise results in median loss of $\sim$25\% of yields with a signal to noise ratio of nearly three to one. 
-A notable exception is the `cold continental' region, where models disagree strongly, extending even to the sign of impacts. 
-Other crops show similar responses to warming, with robust yield losses in warmer locations and high inter-model variance in the `cold continental' regions (Figure S5).
-
-The effects of rainfall changes on maize yields shown in Figure \ref{fig:globesim} are also as expected and are consistent across models. 
-Increased rainfall mitigates the negative effect of higher temperatures by counteracting the increased evapo-transpiration to some degree, most strongly in arid regions.
-Decreased rainfall amplifies yield losses and also increases inter-model variance; i.e. models agree that the response to decreased water availability is negative in sign but disagree on its magnitude.
-%Decreased rainfall amplifies yield losses and also increases inter-model variance more strongly, suggesting that models have difficulty representing crop response to water stress or increased evapo-transpiration due to warmer temperatures. 
-We show only rainfed maize here; see Figure S6 for comparison between rainfed and irrigated case. 
-Simulations show that irrigated crops are more resilient to temperature increases in all regions, especially so where water is limiting. 
-See Figures S7-15 in the supplement for other crops.   
-
-Mapping the distribution of baseline yields and yield changes shows the geographic dependencies that underlie these results. 
-Crop cultivation areas and yield changes with respect to the T+4 scenario show distinct geographic pattern (Figure 3). 
-Absolute yield potentials show strong spatial variation, with much of the Earth's surface area unsuitable for any of these crops. 
-In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
-Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes, possibly due to how crop failures are considered across different models. 
-This is also illustrated in Figure \ref{fig:highlat}, which shows that e.g. the PROMET model has a much higher share in crop failure (yield of 0 ton ha$^{-1}$) at high latitudes (>45$^\circ$ north) than the LPJmL model.
-For wheat crops see Figure S16.
-Wheat projections are more uncertain, possibly because simulation calibration is especially important \citep[e.g.][]{Asseng2013}.
-
-
-\begin{figure*}[ht]
-\centering
-   \includegraphics[width=15cm]{figures/swh_sim_CG_C.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for Carbon.}
-   \label{fig:globesim_C}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for precip.}
+   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for soybean. Same as Figure \ref{fig:globesim} except precipitation is varied. Simulations at a T + 4K are show in color. Cold continental and polar regions are not shown because very little irrigated rice is grown in these regions.}
    \label{fig:globesim_W}
+\end{figure*}
+
+\begin{figure*}[ht]
+\centering
+   \includegraphics[width=15cm]{figures/swh_sim_CG_C.png}
+   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for spring wheat. Same as Figure \ref{fig:globesim} except atmospheric carbon dioxide is varied. Two different water specifications (precipitation -20\% and precipitation +20\%) are shown in colors.}
+   \label{fig:globesim_C}
 \end{figure*}
 
 \begin{figure}[ht]
@@ -493,7 +461,39 @@ Wheat projections are more uncertain, possibly because simulation calibration is
 \label{fig:highlat}
 \end{figure}
 
-Simulated irrigation water demand is also variable across models and shows mixed responses to increasing temperatures and generally a decrease with increasing levels of [CO$_2$] (Figure \ref{fig:globesim_IRR}). 
+
+Crop models in the GGCMI Phase II ensemble show broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. 
+Mapping the distribution of baseline yields and yield changes shows the geographic dependencies that underlie these results. Crop cultivation areas and yield changes with respect to the T+4 scenario show distinct geographic pattern (Figure \ref{fig:maizesoybaseline}). 
+Absolute yield potentials show strong spatial variation, with much of the Earth's surface area unsuitable for any of these crops. 
+In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
+Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes, due in part to how crop failures are considered across different models. 
+This is also illustrated in Figure \ref{fig:highlat}, which shows that e.g. the PROMET model has a much higher share in crop failure (yield of 0 ton ha$^{-1}$) at high latitudes (>45$^\circ$ north) than the LPJmL model.
+For wheat crops see Figure S16.
+Wheat projections are more uncertain, possibly because simulation calibration is especially important \citep[e.g.][]{Asseng2013}.
+
+We illustrate the across-model spread for rainfed maize in Figure \ref{fig:globesim}, which shows yields across all grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
+In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 
+These impacts are robust for even moderate climate perturbations. 
+In the `warm temperate' zone, even a 1 degree temperature rise with other variables held fixed leads to a median yield reduction that exceeds the variance across models. 
+A 6 degree temperature rise results in median loss of $\sim$25\% of yields with a signal to noise ratio of nearly three to one. A notable exception is the `cold continental' region, where models disagree strongly, extending even to the sign of impacts. 
+Other crops show similar responses to warming, with robust yield losses in warmer locations and high inter-model variance in the `cold continental' regions (Figure S5).
+
+The effects of rainfall changes on maize yields shown in Figure \ref{fig:globesim} (and for soybean in Figure \ref{fig:globesim_W}) are also relatively are consistent across models. 
+Increased rainfall mitigates the negative effect of higher temperatures by counteracting the increased evapo-transpiration to some degree, most strongly in arid regions.
+Decreased rainfall amplifies yield losses and also increases inter-model variance; i.e. models agree that the response to decreased water availability is negative in sign but disagree on its magnitude.
+We show only rainfed maize here; see Figure S6 for comparison between rainfed and irrigated case. As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is limiting. See Figures S7-15 in the supplement for other crops.   
+
+Finally, we show yield response to increased CO$_2$ for rice in Figure \ref{fig:globesim_C}. 
+
+
+\begin{figure}[ht]
+\centering
+   \includegraphics[width=8.3cm]{figures/testhighlatskde.png}
+\caption{Kernel density estimate of soybean yields north of 45$^o$ latitude for the PROMET and LPJmL models. Solid lines show the historical climatology and dashed lines show the T+4 (K) case. Note strong reduction in the lowest bin for the T+4 case for PROMET that is spread almost equally over the rest of the distribution.}
+\label{fig:highlat}
+\end{figure}
+
+Simulated irrigation water demand, as an example for non-yield outputs, is also variable across models and shows mixed responses to increasing temperatures and generally a decrease with increasing levels of [CO$_2$] (Figure \ref{fig:globesim_IRR}). 
 This is because shorter growing seasons under warming reduce water demand whereas warmer temperatures increase water demand. Often, the inter-model uncertainty is larger than the response to warming and can both increase (e.g. Arid) or decrease (e.g. Tropical) with warming.
 
 \begin{figure*}[ht]
@@ -502,7 +502,6 @@ This is because shorter growing seasons under warming reduce water demand wherea
    \caption{Illustration of the distribution of regional irrigation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for rice.}
    \label{fig:globesim_IRR}
 \end{figure*}
-
 
 \section{Discussion and Conclusions} 
 \label{S:5}
@@ -580,7 +579,7 @@ Data are published in crop- and GGCM-specific packages, in order to break down t
 \end{table*}
 \noappendix %% use this to mark the end of the appendix section
 
-\authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F. and E.M.\ prepared the manuscript.}
+\authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
 
 \competinginterests{The authors declare no competing interests.}
 
