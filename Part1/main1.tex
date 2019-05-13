@@ -244,7 +244,6 @@ All stresses are disabled other than factors related to nitrogen, temperature, a
 No additional nitrogen inputs, such as atmospheric deposition, are considered, but some model treatments of soil organic matter allows additional nitrogen release through mineralization. 
 %See \citet{Elliott2015} for further details on model setup for intercomparison in the GGCMI protocol. 
 
-
 \subsubsection{Output data conventions and file names}
 
 All output data is supplied as netCDF version 4 files as in GGCMI Phase I \citep{Elliott2015} following a similar naming convention. As the ISIMIP file naming convention now includes the identifier $global$ to distinguish regional from global model output \citep{frieler2017assessing}, we follow that convention here as well:
@@ -351,7 +350,6 @@ All models provide the same set of simulations across all modeled crops, but som
     \end{tabular}
 \end{table*}
 
-
 The 12 models included in GGCMI Phase II are all process-based crop models that are widely used in impacts assessments (Table \ref{table:models}). 
 Although some models share a common base (e.g.\ the LPJ family or the EPIC family of models), they have subsequently developed independently. 
 Differences in model structure mean that several key factors are not standardized across the experiment, such as carry-over effects across growing years including residue management and soil moisture, and the extent of simulated area for different crops. 
@@ -431,6 +429,13 @@ Note that in this methodology, simulations of crops with low year-to-year variab
    \label{fig:maizesoybaseline}
 \end{figure*}
 
+\begin{figure}[ht]
+\centering
+   \includegraphics[width=8.3cm]{figures/testhighlatskde.png}
+\caption{Kernel density estimate of soybean yields north of 45$^o$ latitude for the PROMET and LPJmL models. Solid lines show the historical climatology and dashed lines show the T+4 (K) case. Note strong reduction in the lowest bin for the T+4 case for PROMET that is spread almost equally over the rest of the distribution.}
+\label{fig:highlat}
+\end{figure}
+
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=15cm]{figures/global_sim_CG.png}
@@ -448,7 +453,7 @@ Note that in this methodology, simulations of crops with low year-to-year variab
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for soybean. Same as Figure \ref{fig:globesim} except precipitation is varied. Simulations at a T + 4K are show in color. Cold continental and polar regions are not shown because very little irrigated rice is grown in these regions.}
+   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for soybean. Same as Figure \ref{fig:globesim} except precipitation is varied. Simulations at a T + 4K are show in color.}
    \label{fig:globesim_W}
 \end{figure*}
 
@@ -469,6 +474,8 @@ This is also illustrated in Figure \ref{fig:highlat}, which shows that e.g. the 
 For wheat crops see Figure S16.
 Wheat projections are more uncertain, possibly because simulation calibration is especially important \citep[e.g.][]{Asseng2013}.
 
+Yield response differences at high latitudes are due in part to model representation of zero yields or yield failures. Model representation of crop suitability differs across models for areas where crops not currently grown. For example, soy yields north of 45$^o$ in the PROMET model are most often zero in the historical simulations and are relatively evenly distributed between 0 and 4 tons ha$^-1$ in the LPJmL model. Under the warming scenario (T+4K), many grid cells which were previously too cold to grow soy in the PROMET model are no suitable and the LPJmL yields have shifted slightly down the distribution (Figure \ref{fig:highlat}).
+
 We illustrate the across-model spread for rainfed maize in Figure \ref{fig:globesim}, which shows yields across all grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
 In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 
 These impacts are robust for even moderate climate perturbations. 
@@ -488,20 +495,13 @@ The yield response to increased CO$_2$ for spring wheat is a robust increase acr
 Increased precipitation allows crops to capture additional yield boost from elevated CO$_2$ levels in the mid rage in most climate regions, but this effect saturates at the highest CO$_2$ levels. 
 Increased CO$_2$ outweighs the damages caused by 20\% reduced precipitation in all climate regions in the multi-model median, but not all models agree upon the positive sign.
 
-\begin{figure}[ht]
-\centering
-   \includegraphics[width=8.3cm]{figures/testhighlatskde.png}
-\caption{Kernel density estimate of soybean yields north of 45$^o$ latitude for the PROMET and LPJmL models. Solid lines show the historical climatology and dashed lines show the T+4 (K) case. Note strong reduction in the lowest bin for the T+4 case for PROMET that is spread almost equally over the rest of the distribution.}
-\label{fig:highlat}
-\end{figure}
-
 Simulated irrigation water demand, as an example for non-yield outputs, is also variable across models and shows mixed responses to increasing temperatures and generally a decrease with increasing levels of [CO$_2$] (Figure \ref{fig:globesim_IRR}). 
 This is because shorter growing seasons under warming reduce water demand whereas warmer temperatures increase water demand. Often, the inter-model uncertainty is larger than the response to warming and can both increase (e.g. Arid) or decrease (e.g. Tropical) with warming.
 
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=14cm]{figures/rice_sim_CG_irrwat.png}
-   \caption{Illustration of the distribution of regional irrigation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for rice.}
+   \caption{Illustration of the distribution of regional irrigation water demand across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for rice. Cold continental and polar regions are not shown because very little rice is grown in these regions.}
    \label{fig:globesim_IRR}
 \end{figure*}
 
@@ -529,12 +529,10 @@ The effect results from geographic differences in cultivation: irrigated maize i
 Geographic effects also mean that nitrogen fertilization produces stronger responses in irrigated than non-irrigated wheat and maize, presumably because those rainfed crops are limited by water availability (Figure S21).
 
 In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for increasing understanding of potential future crop responses and for improving process-based crop models.
-
 The data set is unprecedentedly large, being global in extent, covering 31-simulation years per pixel and up to 756 perturbations for 12 GGCMs.
 We expect that the GGCMI Phase II data archive will be used to analyze the different GGCMs' sensitivity to changes in the CTWN-A space, including the interaction between drivers.
- 
 The authors are working on some analyses but many more are facilitated by the GGCMI Phase II data archive. 
-We appreciate additional analyses of the data and if the data authors are consulted in the analysis and interpretation of their data. 
+%We appreciate additional analyses of the data and if the data authors are consulted in the analysis and interpretation of their data. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \codedataavailability{The simulation outputs of the mandatory 7 output variables (Table \ref{table:outputs}) are available on zenodo.org. 
