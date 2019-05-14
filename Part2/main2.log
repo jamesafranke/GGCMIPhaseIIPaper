@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 MAY 2019 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 MAY 2019 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,9 +997,6 @@ LaTeX Info: Redefining \vec on input line 3.
 
 (./main2.aux
 
-LaTeX Warning: Label `fig:yearvclim' multiply defined.
-
-
 LaTeX Warning: Label `fig:error' multiply defined.
 
 )
@@ -1091,118 +1088,116 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 81.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 81.
+(Font)              scaled to size 8.54997pt on input line 78.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures/tempyearvclim.png, id=117, 322.9666pt x 333.0844pt>
-File: figures/tempyearvclim.png Graphic file (type png)
-
-<use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 125.
-(pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
 
-<figures/hist_year.png, id=119, 326.4998pt x 328.1058pt>
+<figures/tempyearvclim.png, id=118, 322.9666pt x 333.0844pt>
+File: figures/tempyearvclim.png Graphic file (type png)
+
+<use figures/tempyearvclim.png>
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 147.
+(pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
+
+<figures/hist_year.png, id=120, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 136.
+Package pdftex.def Info: figures/hist_year.png used on input line 158.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
-<figures/pryearvclim.png, id=122, 321.8424pt x 333.0844pt>
+<figures/pryearvclim.png, id=123, 321.8424pt x 333.0844pt>
 File: figures/pryearvclim.png Graphic file (type png)
 
 <use figures/pryearvclim.png>
-Package pdftex.def Info: figures/pryearvclim.png used on input line 146.
+Package pdftex.def Info: figures/pryearvclim.png used on input line 168.
 (pdftex.def)             Requested size: 236.15796pt x 244.4151pt.
- [3] [4 <./figures/tempyearvclim.png>]
-<figures/model_select_maize_rice.png, id=176, 700.3766pt x 728.6422pt>
+ [3] [4] [5 <./figures/tempyearvclim.png>]
+<figures/model_select_maize_rice.png, id=188, 700.3766pt x 728.6422pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 187.
+ 209.
 (pdftex.def)             Requested size: 398.33858pt x 414.4298pt.
- [5 <./figures/hist_year.png>]
-[6 <./figures/pryearvclim.png>]
+ [6 <./figures/hist_year.png>]
+[7 <./figures/pryearvclim.png>]
 
-LaTeX Warning: Text page 7 contains only floats.
+LaTeX Warning: Text page 8 contains only floats.
 
-[7 <./figures/model_select_maize_rice.png>]
-
-LaTeX Warning: Reference `eqn:rsquare' on page 8 undefined on input line 232.
-
-[8] <figures/regression_areas.png, id=224, 5420.25pt x 2258.4375pt>
+[8 <./figures/model_select_maize_rice.png>]
+<figures/regression_areas.png, id=222, 5420.25pt x 2258.4375pt>
 File: figures/regression_areas.png Graphic file (type png)
 
 <use figures/regression_areas.png>
-Package pdftex.def Info: figures/regression_areas.png used on input line 258.
+Package pdftex.def Info: figures/regression_areas.png used on input line 280.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-<figures/regression_model.png, id=226, 5420.25pt x 2258.4375pt>
+<figures/regression_model.png, id=224, 5420.25pt x 2258.4375pt>
 File: figures/regression_model.png Graphic file (type png)
 
 <use figures/regression_model.png>
-Package pdftex.def Info: figures/regression_model.png used on input line 273.
+Package pdftex.def Info: figures/regression_model.png used on input line 295.
 (pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-<figures/global_em_maize.png, id=229, 2710.125pt x 3161.8125pt>
+<figures/global_em_maize.png, id=227, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 286.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 308.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 
-<figures/em_CTWN_all_crops.png, id=230, 4516.875pt x 4516.875pt>
+<figures/em_CTWN_all_crops.png, id=228, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 297.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 319.
 (pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
- [9 <./figures/regression_areas.png>]
-[10 <./figures/regression_model.png>] [11 <./figures/global_em_maize.png>]
-[12 <./figures/em_CTWN_all_crops.png>]
+ [9] [10 <./figures/regression_areas.png>]
+[11 <./figures/regression_model.png>]
 <figures/error_360.png, id=269, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 341.
+Package pdftex.def Info: figures/error_360.png used on input line 363.
 (pdftex.def)             Requested size: 184.9429pt x 406.81825pt.
 
 <figures/em_err.png, id=272, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 354.
+Package pdftex.def Info: figures/em_err.png used on input line 376.
 (pdftex.def)             Requested size: 184.9429pt x 391.97314pt.
 
 <figures/irr_emulator_skill.png, id=274, 729.927pt x 201.48875pt>
 File: figures/irr_emulator_skill.png Graphic file (type png)
 
 <use figures/irr_emulator_skill.png>
-Package pdftex.def Info: figures/irr_emulator_skill.png used on input line 366.
+Package pdftex.def Info: figures/irr_emulator_skill.png used on input line 388.
 
 (pdftex.def)             Requested size: 455.24408pt x 125.66574pt.
- [13]
+ [12 <./figures/global_em_maize.png>]
+[13 <./figures/em_CTWN_all_crops.png>]
 
 LaTeX Warning: Text page 14 contains only floats.
 
 [14 <./figures/error_360.png>] [15 <./figures/em_err.png>] [16 <./figures/irr_e
-mulator_skill.png>]
-Overfull \hbox (39.97731pt too wide) in paragraph at lines 460--460
+mulator_skill.png>] [17]
+Overfull \hbox (39.97731pt too wide) in paragraph at lines 482--482
 []\T1/ptm/m/n/9 The poly-no-mial em-u-la-tor pa-ram-e-ter ma-tri-ces for all cr
 op model em-u-la-tors are avail-able at doi.org/10.5281/zenodo.2605374. 
  []
 
-[17] (./main2.bbl [18] [19]
+[18] (./main2.bbl [19] [20]
 Underfull \hbox (badness 1490) in paragraph at lines 116--120
 \T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
 -pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
@@ -1214,7 +1209,7 @@ Underfull \hbox (badness 1087) in paragraph at lines 137--140
 s in ex-treme tem-per-a-ture dis-tri-bu-tions, Sci-en-tific re-ports, 4, 5884,
  []
 
-[20]
+[21]
 Underfull \hbox (badness 1292) in paragraph at lines 242--247
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
@@ -1226,14 +1221,14 @@ Underfull \hbox (badness 1005) in paragraph at lines 261--264
 gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
  []
 
-[21]
+[22]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 336.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 3428) in paragraph at lines 335--338
-[]\T1/ptm/m/n/9 SHAPIRO, S. and WILK, M.: An anal-y-sis of vari-ance test for n
+Underfull \hbox (badness 6348) in paragraph at lines 335--338
+[]\T1/ptm/m/n/9 Shapiro, S. and Wilk, M.: An anal-y-sis of vari-ance test for n
 or-mal-ity (com-plete sam-ples)\TS1/ptm/m/n/9 „\T1/ptm/m/n/9 , Biometrika, 52, 
 591--611,
  []
@@ -1250,51 +1245,46 @@ Underfull \hbox (badness 2707) in paragraph at lines 367--371
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-) [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 490.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 490.
+) [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 512.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 512.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 490.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 490.
-
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 512.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 512.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 490.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 512.
  ) 
 Here is how much of TeX's memory you used:
- 10731 strings out of 492995
- 151669 string characters out of 6132704
- 294283 words of memory out of 5000000
- 13959 multiletter control sequences out of 15000+600000
+ 10736 strings out of 492995
+ 151724 string characters out of 6132704
+ 298445 words of memory out of 5000000
+ 13962 multiletter control sequences out of 15000+600000
  42803 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,40p,1224b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1225b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on main2.pdf (22 pages, 7930372 bytes).
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on main2.pdf (23 pages, 7947255 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

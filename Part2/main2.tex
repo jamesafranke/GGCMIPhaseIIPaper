@@ -85,10 +85,10 @@ Crop model emulation should therefore facilitate both model comparison and integ
 
 \introduction
 \label{S:1}
-Efforts to project climate change impacts often combine models from different disciplines under a single economic framework to calculate a total cost of climate change or total cost of carbon often called an Integrated Assessment Model (IAM). 
-The numerical models implemented by different disciplines studying climate change and its associated impacts cannot be directly integrated into IAMs because of their simulation framework or computational cost. 
+Efforts to project climate change impacts often combine models from different disciplines under a single economic framework to calculate a total cost of climate change often called an Integrated Assessment Model (IAM). 
+In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their simulation framework or computational cost. 
 Process-based crop simulation models provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
-Statistical crop models on the other hand, often lack important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM.
+Statistical crop models on the other hand, often lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM.
 
 Interest has been rising in statistical emulation, which allows combining advantageous features of both statistical and process-based models. 
 The approach involves constructing a statistical representation or ``surrogate model'' of complicated numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
@@ -121,6 +121,26 @@ In this paper we introduce a spatially explicit emulator for the mean-climatolog
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}
 \label{S:2}
+The simulation output dataset that serves as the training set for the crop model emulators is described in detail in Franke et al. (this issue). 
+The training dataset consists of 9 process-based crop models for five crops (maize, rice, soybean, spring wheat, and winter wheat) simulated globally at the 0.5 degree Lat and Lon resolution. 
+Each simulation scenario is run for 30 years including the historic weather variability for the period of 1980-2010. 
+Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}) where the temperature and precipitation is offset from the historical values.
+
+\begin{table}[t]
+\caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
+\label{table:inputs} 
+    \begin{tabular}{lcc} 
+        \tophline \vspace{1mm}
+        \textbf{Input variable} & \textbf{Tested range} & \textbf{Unit} \\ \middlehline \vspace{1mm}
+        [CO$_2$] (C) & \textbf{360}, 510, 660, 810 & ppm\\ \middlehline \vspace{1mm}
+        Temperature (T) & -1, \textbf{0}, 1, 2, 3, 4, 6 & $^{\circ}$C\\ \middlehline \vspace{1mm}
+        Precipitation (W) & -50, -30, -20, -10, \textbf{0}, & \% \\
+        {} & 10, 20, 30, (and W$_{inf}$) & {} \\ \middlehline \vspace{1mm}
+        Applied nitrogen (N) & 10, 60, \textbf{200} & kg ha$^{-1}$ \\ \middlehline \vspace{1mm}
+        Adaptation (A) & \textbf{A0: none}, A1: new cultivar to maintain original growing season length & -\\ \bottomhline
+    \end{tabular}\\
+\end{table}
+
 
 \begin{figure}[ht]
 \centering
@@ -202,7 +222,7 @@ Although the GGCMI Phase II sampled variable space is relatively large, it is st
 We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. 
 In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
 
-We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (Top row of Figure \ref{fig:features}). 
+We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set 130 (PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
 There is some heterogeneity of parameter 
@@ -231,7 +251,7 @@ The resulting statistical model (Equation \ref{eqn:features_final}) is used for 
 
 To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
 This results in a reduction in mean absolute error for some of th high-order interaction terms in the model (Top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
-The Bayesian Ridge method is necessary to maintain a consistent functional form across all models and locations (see * Table \ref{table:ASE}). The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (equation \ref{eqn:rsquare}, where n is the number of samples and k is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
+The Bayesian Ridge method is necessary to maintain a consistent functional form across all models and locations (see Table \ref{table:ASE}). The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (equation \ref{eqn:rsquare}, where n is the number of samples and k is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
 
 \begin{equation}
     \label{eqn:rsquare}
@@ -331,7 +351,7 @@ The emulated values closely match simulations even at this aggregation level.
 
 We also show global damage functions across all four dimensions tested in this study (Figure \ref{fig:all_dims}). In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
-Soy as an efficient atmospheric nitrogen-fixer is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions. 
+On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
 
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
@@ -459,7 +479,7 @@ The dataset also enables studies of emulation itself, including a more systemati
 In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for better understanding potential future crop responses and for improving process-based crop models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available at {doi.org/10.5281/zenodo.2605374.}}
+\codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available at {doi.org/10.5281/ zenodo.2605374.}}
 
 %\appendix
 %\section{}
