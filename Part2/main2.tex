@@ -228,7 +228,14 @@ The resulting statistical model (Equation \ref{eqn:features_final}) is used for 
 \end{align}
 
 To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
+This results in a reduction in mean absolute error for some of th high-order interaction terms in the model (Top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
 The Bayesian Ridge method is necessary to maintain a consistent functional form across all models and locations (see * Table \ref{table:ASE}). 
+
+The distribution of the residuals depends on the terms included in the regression, the method for estimating the parameters, and the training set target distribution. 
+Including additional higher order terms in the model tends to reduce the skew in the residuals in most cases.
+The residuals are only normally distributed (Shapiro–Wilk test \citep{Shapiro1965} pvalue > 0.05) for one of the crop models shown in Figure \ref{fig:features} for any specification tested. 
+The EPIC-TAMU and pDSSAT crop module emulator residuals are never normally distributed by this metric for any polynomial specification proposed here. 
+
 We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. 
 We do not attempt to emulate models that provided less than 50 simulations. 
