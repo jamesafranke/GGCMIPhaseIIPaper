@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 MAY 2019 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 MAY 2019 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main2.tex
+**main2
 (./main2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
@@ -1047,7 +1047,6 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage griek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1079,26 +1078,26 @@ LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 81.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 78.
+(Font)              scaled to size 8.54997pt on input line 81.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
@@ -1106,194 +1105,155 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 File: figures/tempyearvclim.png Graphic file (type png)
 
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 102.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 125.
 (pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
 
 <figures/hist_year.png, id=119, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 109.
+Package pdftex.def Info: figures/hist_year.png used on input line 136.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
 
+<figures/pryearvclim.png, id=122, 321.8424pt x 333.0844pt>
+File: figures/pryearvclim.png Graphic file (type png)
 
-LaTeX Warning: File `figures/pryearvclim.png' not found on input line 116.
+<use figures/pryearvclim.png>
+Package pdftex.def Info: figures/pryearvclim.png used on input line 146.
+(pdftex.def)             Requested size: 236.15796pt x 244.4151pt.
+ [3] [4 <./figures/tempyearvclim.png>]
+<figures/model_select_maize_rice.png, id=176, 700.3766pt x 728.6422pt>
+File: figures/model_select_maize_rice.png Graphic file (type png)
 
+<use figures/model_select_maize_rice.png>
+Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
+ 187.
+(pdftex.def)             Requested size: 426.79134pt x 444.02637pt.
+ [5 <./figures/hist_year.png>]
+[6 <./figures/pryearvclim.png>] [7 <./figures/model_select_maize_rice.png>]
+<figures/regression_areas.png, id=207, 5420.25pt x 2258.4375pt>
+File: figures/regression_areas.png Graphic file (type png)
 
-! Package pdftex.def Error: File `figures/pryearvclim.png' not found.
+<use figures/regression_areas.png>
+Package pdftex.def Info: figures/regression_areas.png used on input line 243.
+(pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 ...ics[width=8.3cm]{figures/pryearvclim.png}
-                                                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.116 ...ics[width=8.3cm]{figures/pryearvclim.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<figures/regression_model.png, id=209, 5420.25pt x 2258.4375pt>
+File: figures/regression_model.png Graphic file (type png)
 
- 
-Here is how much of TeX's memory you used:
- 10554 strings out of 492995
- 149051 string characters out of 6132704
- 287375 words of memory out of 5000000
- 13881 multiletter control sequences out of 15000+600000
- 35911 words of font info for 61 fonts, out of 8000000 for 9087.
+<use figures/regression_model.png>
+Package pdftex.def Info: figures/regression_model.png used on input line 258.
+(pdftex.def)             Requested size: 455.24408pt x 189.67299pt.
 
+<figures/global_em_maize.png, id=212, 2710.125pt x 3161.8125pt>
+File: figures/global_em_maize.png Graphic file (type png)
 
-Package natbib Warning: Citation `BLANC2017' on page 2 undefined on input line 
-87.
+<use figures/global_em_maize.png>
+Package pdftex.def Info: figures/global_em_maize.png used on input line 271.
+(pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 
+<figures/em_CTWN_all_crops.png, id=213, 4516.875pt x 4516.875pt>
+File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
-Package natbib Warning: Citation `Ostberg2018' on page 2 undefined on input lin
-e 87.
+<use figures/em_CTWN_all_crops.png>
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 282.
+(pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
+ [8] [9 <./figures/regression_areas.png>]
+[10 <./figures/regression_model.png>]
+<figures/error_360.png, id=251, 2258.4375pt x 4968.5625pt>
+File: figures/error_360.png Graphic file (type png)
 
+<use figures/error_360.png>
+Package pdftex.def Info: figures/error_360.png used on input line 323.
+(pdftex.def)             Requested size: 184.9429pt x 406.81825pt.
 
-Package natbib Warning: Citation `Mistry2017' on page 2 undefined on input line
- 87.
+<figures/em_err.png, id=254, 265.08636pt x 561.82698pt>
+File: figures/em_err.png Graphic file (type png)
 
+<use figures/em_err.png>
+Package pdftex.def Info: figures/em_err.png used on input line 336.
+(pdftex.def)             Requested size: 184.9429pt x 391.97314pt.
 
-Package natbib Warning: Citation `Ruane2016' on page 2 undefined on input line 
-89.
+<figures/irr_emulator_skill.png, id=256, 729.927pt x 201.48875pt>
+File: figures/irr_emulator_skill.png Graphic file (type png)
 
-[2]
+<use figures/irr_emulator_skill.png>
+Package pdftex.def Info: figures/irr_emulator_skill.png used on input line 348.
 
-Package natbib Warning: Citation `ruane2014' on page 3 undefined on input line 
-91.
-
-
-Package natbib Warning: Citation `Markowski2015' on page 3 undefined on input l
-ine 91.
-
-
-Package natbib Warning: Citation `Pirttioja2015' on page 3 undefined on input l
-ine 91.
-
-
-Package natbib Warning: Citation `FRONZEK20182' on page 3 undefined on input li
-ne 91.
-
-
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 91.
-
-
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 91.
+(pdftex.def)             Requested size: 455.24408pt x 125.66574pt.
+ [11 <./figures/global_em_maize.png>]
+Overfull \vbox (0.60127pt too high) has occurred while \output is active []
 
 
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 91.
+[12 <./figures/em_CTWN_all_crops.png>]
+
+LaTeX Warning: Text page 13 contains only floats.
+
+[13 <./figures/error_360.png>] [14 <./figures/em_err.png>] [15 <./figures/irr_e
+mulator_skill.png>] [16]
+Overfull \hbox (39.97731pt too wide) in paragraph at lines 442--442
+[]\T1/ptm/m/n/9 The poly-no-mial em-u-la-tor pa-ram-e-ter ma-tri-ces for all cr
+op model em-u-la-tors are avail-able at doi.org/10.5281/zenodo.2605374. 
+ []
+
+[17] (./main2.bbl [18] [19]
+Underfull \hbox (badness 1490) in paragraph at lines 116--120
+\T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
+-pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
+ []
 
 
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 91.
+Underfull \hbox (badness 1087) in paragraph at lines 137--140
+[]\T1/ptm/m/n/9 Kodra, E. and Gan-guly, A.: Asym-me-try of pro-jected in-crease
+s in ex-treme tem-per-a-ture dis-tri-bu-tions, Sci-en-tific re-ports, 4, 5884,
+ []
+
+[20]
+Underfull \hbox (badness 1292) in paragraph at lines 242--247
+\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
+i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
+ []
 
 
-Package natbib Warning: Citation `FRONZEK20182' on page 3 undefined on input li
-ne 91.
+Underfull \hbox (badness 1005) in paragraph at lines 261--264
+[]\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
+gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
+ []
+
+[21]
+Underfull \hbox (badness 3735) in paragraph at lines 362--366
+[]\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
+ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
+ []
 
 
-Package natbib Warning: Citation `RUIZRAMOS2018' on page 3 undefined on input l
-ine 91.
+Underfull \hbox (badness 2707) in paragraph at lines 362--366
+\T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
+ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
+ []
 
-
-Package natbib Warning: Citation `Snyder2018' on page 3 undefined on input line
- 91.
-
-
-Package natbib Warning: Citation `calvin2019' on page 3 undefined on input line
- 91.
-
-
-Package natbib Warning: Citation `ROSENZWEIG2013' on page 3 undefined on input 
-line 93.
-
-
-Package natbib Warning: Citation `Rosenzweig2014' on page 3 undefined on input 
-line 93.
-
-<figures/tempyearvclim.png, id=19, 322.9666pt x 333.0844pt>
-File: figures/tempyearvclim.png Graphic file (type png)
-
-<use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 102.
-(pdftex.def)             Requested size: 236.15796pt x 243.56125pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 103.
-
-<figures/hist_year.png, id=21, 326.4998pt x 328.1058pt>
-File: figures/hist_year.png Graphic file (type png)
-
-<use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 109.
-(pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
-
-
-LaTeX Warning: Reference `fig:yearvclim' on page 3 undefined on input line 110.
-
-
-
-LaTeX Warning: Reference `fig:yearvclim' on page 3 undefined on input line 110.
-
-
-
-LaTeX Warning: File `figures/pryearvclim.png' not found on input line 116.
-
-
-! Package pdftex.def Error: File `figures/pryearvclim.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 ...ics[width=8.3cm]{figures/pryearvclim.png}
-                                                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.116 ...ics[width=8.3cm]{figures/pryearvclim.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- 
-Here is how much of TeX's memory you used:
- 10463 strings out of 492995
- 148078 string characters out of 6132704
- 272824 words of memory out of 5000000
- 13809 multiletter control sequences out of 15000+600000
- 35911 words of font info for 61 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,6n,40p,1860b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
-ed!
-Document' on input line 290.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 290.
+) [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+ (./main2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 472.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
  ) 
 Here is how much of TeX's memory you used:
- 10700 strings out of 492995
- 151201 string characters out of 6132704
- 294931 words of memory out of 5000000
- 13935 multiletter control sequences out of 15000+600000
+ 10705 strings out of 492995
+ 151268 string characters out of 6132704
+ 293976 words of memory out of 5000000
+ 13939 multiletter control sequences out of 15000+600000
  42489 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,40p,1805b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,40p,1224b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -1308,10 +1268,10 @@ ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on main2.pdf (21 pages, 6571813 bytes).
+Output written on main2.pdf (22 pages, 7926648 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

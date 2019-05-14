@@ -173,39 +173,40 @@ For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-worl
 Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
 To avoid over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
 
-We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametrization that allows for some interpretation of coefficients. 
+We do not focus on comparing different functional forms in this study, and instead choose a relatively simple polynomial parametrization that allows for some interpretation of coefficients. 
 Some prior studies have used other statistical specifications, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression. 
-The simple functional form used here allows emulation at the grid cell level. 
+The relativity simple functional form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
 The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate. 
 We hold the statistical specification constant across all crops and models to facilitate parameter by parameter simulation model comparison.
 
-A Gaussian process model was also tested as a potential statical functional form. 
-A Gaussian process model can be fit to the response in a single grid cell, and generally outperforms the polynomial in terms of out of sample prediction, but quickly becomes cumbersome in the context of fitting individual kernels across 40,000 grid cells for a single simulation model and crop.
+%A Gaussian process model was also tested as a potential statical functional form. 
+%A Gaussian process model can be fit to the response in a single grid cell, and generally outperforms the polynomial in terms of out of sample prediction, but quickly becomes cumbersome in the context of fitting individual kernels across 40,000 grid cells for a single simulation model and crop.
+
+\begin{figure*}[ht]
+\centering
+   \includegraphics[width=15cm]{figures/model_select_maize_rice.png}
+   \caption{Summary results from polynomial feature selection process.
+   Top row illustrates log mean absolute error between emulated yield and simulated values calucled from a three fold cross validation process, where the emulator is trained on two thirds of the data and predicts the remaining third.
+   The second row illustrates the adjusted R$^2$ score for the fit at each model specification where additionally terms are penalized.
+   The third row illustrates the log mean standard parameter error and the forth and fifth rows illustrate the distribution of the residuals.
+   The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. 
+   The terms that did not reduce the aggregate error (horizontal lines) are not included in the final model. 
+   Solid lines indicate Bayesian Ridge regression results and dashed lines indicated standard ordinary least squares. 
+   Colors indicated three different models.}
+   \label{fig:features}
+\end{figure*}
 
 Although the GGCMI Phase II sampled variable space is relatively large, it is still sufficiently limited that use of the full polynomial expression described above can be problematic. 
 We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. 
 In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
 
-We then calculate an aggregate mean squared error with each increasing terms and eliminate those terms that do not contribute significant reductions (Figure \ref{fig:features}). 
+We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). 
-We select terms by applying the feature selection process to three example models that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and LPJmL); the resulting choice of terms is then applied for all emulators and all crops. 
-Terms are not uniformly important across models, crops, or in space in a single model and crop combination. 
-
+We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set 130 (PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
+There is some heterogeneity of parameter 
 Since the goal of the emulator is interpolation within the sample space and not extrapolation, we air on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over fitting.  
 
-\begin{figure*}[ht]
-\centering
-   \includegraphics[width=16cm]{figures/feature_selection.png}
-   \caption{Mean Squared Error (MSE) from the 3-fold cross-validation process during polynomial feature selection. 
-   The emulated yield for maize, rice, and soy are compared to the simulated values for the same model in all grid cells where crops are presently cultivated, weighted by area in each grid cell. 
-   The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. 
-   The terms that did not reduce the aggregate error (horizontal lines) are not included in the final model. 
-   Solid lines indicate L1 normalization and dashed lines indicate L2 normalization. 
-   Colors indicated different models (three fully-sampled simulation sets).}
-   \label{fig:features}
-\end{figure*}
-
-Feature importance is remarkably consistent across all three models and across crops (Figure \ref{fig:features}). 
+Feature importance is remarkably consistent across models (Figure \ref{fig:features}). 
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance indicated by the terms where the error is reduced and where additional terms provide no predictive benefit (line slopes match in Figure \ref{fig:features}). 
 The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. 
 We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. 
@@ -279,6 +280,15 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
     \label{fig:globe_em}
 \end{figure}
 
+\begin{figure*}[ht]
+	\centering
+    \includegraphics[width=15cm]{figures/em_CTWN_all_crops.png}
+	\caption{Multi-model ensemble spread in sensitivity to changes in all four dimensions for crops at the global level. Minimum, MME mean and maximum model emulated damage function for currently cultivated areas. 
+	PROMET and JULES removed from ensemble as they are the two models that are most difficult to emulate. 
+	All other covariates held constant in each case and the fractional change in production is relative to the baseline case (T+0K, W+0\%, C=360ppm, and N=200kg ha-1).}
+	\label{fig:all_dims}
+\end{figure*}
+
 Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. 
 Emulation is only possible  when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
@@ -303,19 +313,11 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
 The emulation fidelity demonstrated here is sufficient to allow using emulated response surfaces to compare model responses and derive insight about impacts projections. 
 Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
 As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures S18-S21 for other crops and dimensions). 
-The emulated values closely match simulations even at this aggregation level. 
+The emulated values closely match simulations even at this aggregation level. s
+Soy as an efficient atmospheric nitrogen-fixer is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions. Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
+
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
-
-\begin{figure*}[ht]
-	\centering
-    \includegraphics[width=13cm]{figures/em_CTWN_all_crops.png}
-	\caption{Multi-model ensemble spread in sensitivity to changes in all four dimensions for crops at the global level. Minimum, MME mean and maximum model emulated damage function for currently cultivated areas. 
-	PROMET and JULES removed from ensemble as they are the two models that are most difficult to emulate. 
-	All other covariates held constant in each case and the fractional change in production is relative to the baseline case (T+0K, W+0\%, C=360ppm, and N=200kg ha-1). 
-	Soy as an efficient atmospheric nitrogen-fixer is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions. Uncertainty is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.}
-	\label{fig:all_dims}
-\end{figure*}
 
 \subsection{Emulator Assessment}
 \label{S:4}
