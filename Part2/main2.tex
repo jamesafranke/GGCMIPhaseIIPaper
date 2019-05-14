@@ -200,7 +200,7 @@ Although the GGCMI Phase II sampled variable space is relatively large, it is st
 We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. 
 In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
 
-We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (Figure \ref{fig:features}). 
+We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (Top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set 130 (PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
 There is some heterogeneity of parameter 
