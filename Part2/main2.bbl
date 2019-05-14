@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -330,6 +330,11 @@ Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   damages to {U}.{S}. crop yields under climate change, Proceedings of the
   National Academy of Sciences, 106, 15\,594--15\,598,
   \doi{10.1073/pnas.0906865106}, 2009.
+
+\bibitem[{SHAPIRO and WILK(1965)}]{Shapiro1965}
+SHAPIRO, S. and WILK, M.: {An analysis of variance test for normality (complete
+  samples)†}, Biometrika, 52, 591--611, \doi{10.1093/biomet/52.3-4.591},
+  1965.
 
 \bibitem[{Sippel et~al.(2015)Sippel, Zscheischler, Heimann, Otto, Peters, and
   Mahecha}]{Sippel2015}
