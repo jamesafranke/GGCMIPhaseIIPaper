@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -174,6 +174,11 @@ Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
   agricultural impacts of climate change, Environmental Research Letters, 12,
   \doi{10.1088/1748-9326/aa788c}, 2017.
 
+\bibitem[{Moore et~al.(2017)Moore, Baldos, Hertel, and Diaz}]{Moore2017}
+Moore, F.~C., Baldos, U., Hertel, T., and Diaz, D.: New science of climate
+  change impacts on agriculture implies higher social cost of carbon, Nature
+  Communications, 8, \doi{10.1038/s41467-017-01792-x}, 2017.
+
 \bibitem[{Nakamura et~al.(1997)Nakamura, Osaki, Koike, Hanba, Wada, and
   Tadano}]{Nakamura97}
 Nakamura, T., Osaki, M., Koike, T., Hanba, Y.~T., Wada, E., and Tadano, T.:
@@ -261,6 +266,13 @@ Ratto, M., Castelletti, A., and Pagano, A.: Emulation techniques for the
 Razavi, S., Tolson, B.~A., and Burn, D.~H.: Review of surrogate modeling in
   water resources, Water Resources Research, 48, \doi{10.1029/2011WR011527},
   2012.
+
+\bibitem[{Roberts et~al.(2017)Roberts, Braun, R~Sinclair, B~Lobell, and
+  Schlenker}]{Roberts2017}
+Roberts, M., Braun, N., R~Sinclair, T., B~Lobell, D., and Schlenker, W.:
+  Comparing and combining process-based crop models and statistical models with
+  some implications for climate change, Environmental Research Letters, 12,
+  \doi{10.1088/1748-9326/aa7f33.}, 2017.
 
 \bibitem[{Rosenzweig et~al.(2013)Rosenzweig, Jones, Hatfield, Ruane, Boote,
   Thorburn, Antle, Nelson, Porter, Janssen, Asseng, Basso, Ewert, Wallach,
@@ -368,5 +380,17 @@ Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
   J.: The {I}nter-{S}ectoral {I}mpact {M}odel {I}ntercomparison {P}roject
   ({ISI{\textendash}MIP}): {P}roject framework, Proceedings of the National
   Academy of Sciences, 111, 3228--3232, \doi{10.1073/pnas.1312330110}, 2014.
+
+\bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
+  Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,
+  Müller, Peng, Peñuelas, Ruane, Wallach, Wang, Wu, Liu, Zhu, Zhu, and
+  Asseng}]{zhao2017}
+Zhao, C., Liu, B., Piao, S., Wang, X., Lobell, D.~B., Huang, Y., Huang, M.,
+  Yao, Y., Bassu, S., Ciais, P., Durand, J.~L., Elliott, J., Ewert, F.,
+  Janssens, I.~A., Li, T., Lin, E., Liu, Q., Martre, P., Müller, C., Peng, S.,
+  Peñuelas, J., Ruane, A.~C., Wallach, D., Wang, T., Wu, D., Liu, Z., Zhu, Y.,
+  Zhu, Z., and Asseng, S.: Temperature increase reduces global yields of major
+  crops in four independent estimates, Proc. Natl. Acad. Sci., 114, 9326--9331,
+  \doi{10.1073/pnas.1701762114}, 2017.
 
 \end{thebibliography}

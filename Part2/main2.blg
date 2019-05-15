@@ -4,45 +4,45 @@ The top-level auxiliary file: main2.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
 Warning--missing publisher in Markowski2015
-You've used 49 entries,
+You've used 52 entries,
             2811 wiz_defined-function locations,
-            1375 strings with 24282 characters,
-and the built_in function-call counts, 64973 in all, are:
-= -- 6662
-> -- 3874
+            1395 strings with 25335 characters,
+and the built_in function-call counts, 68870 in all, are:
+= -- 6971
+> -- 4225
 < -- 17
-+ -- 1560
-- -- 1245
-* -- 4564
-:= -- 7034
-add.period$ -- 49
-call.type$ -- 49
-change.case$ -- 514
-chr.to.int$ -- 49
-cite$ -- 148
-duplicate$ -- 5737
-empty$ -- 2840
-format.name$ -- 1404
-if$ -- 12771
++ -- 1685
+- -- 1359
+* -- 4898
+:= -- 7538
+add.period$ -- 52
+call.type$ -- 52
+change.case$ -- 558
+chr.to.int$ -- 52
+cite$ -- 157
+duplicate$ -- 6008
+empty$ -- 2997
+format.name$ -- 1527
+if$ -- 13520
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 752
-newline$ -- 156
-num.names$ -- 196
-pop$ -- 2789
+missing$ -- 809
+newline$ -- 165
+num.names$ -- 208
+pop$ -- 2966
 preamble$ -- 1
-purify$ -- 513
+purify$ -- 557
 quote$ -- 0
-skip$ -- 3364
+skip$ -- 3499
 stack$ -- 0
-substring$ -- 2278
-swap$ -- 5116
+substring$ -- 2348
+swap$ -- 5335
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 438
+type$ -- 465
 warning$ -- 1
-while$ -- 253
+while$ -- 265
 width$ -- 0
-write$ -- 594
+write$ -- 630
 (There was 1 warning)

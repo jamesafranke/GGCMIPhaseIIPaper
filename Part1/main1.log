@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 MAY 2019 08:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 MAY 2019 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,16 +1095,16 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4]
-<figures/croparea.png, id=219, 262.9022pt x 492.0784pt>
+<figures/croparea.png, id=213, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 184.
+Package pdftex.def Info: figures/croparea.png used on input line 182.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 188.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 186.
  [5] [6 <./figures/croparea.png>] [7]
-Overfull \hbox (1.85802pt too wide) in paragraph at lines 251--252
+Overfull \hbox (1.85802pt too wide) in paragraph at lines 249--250
 []$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 model\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 
 climate\OT1/cmr/m/n/10 ][]\OML/cmm/m/it/10 hist[]fullharm[]\OT1/cmr/m/n/10 [\OM
 L/cmm/m/it/10 irrig:scenario\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 variable\OT1/c
@@ -1116,95 +1116,95 @@ mm/m/it/10 year\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :nc\OT1/cmr/m/n/10 4$
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 268.
+               Default added (so using `tbp') on input line 266.
 
 [8] [9]
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 335--335
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 333--333
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\T1/ptm/b/n/9 Spring
  []
 
-[10] <figures/Agformet_validation.png, id=354, 632.50703pt x 617.61942pt>
+[10] <figures/Agformet_validation.png, id=348, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 378
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 376
 .
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
  [11]
-<figures/baselinecomp_yield_3.png, id=400, 527.42645pt x 347.47417pt>
+<figures/baselinecomp_yield_3.png, id=394, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 41
-9.
+7.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 
-<figures/testhighlatskde.png, id=401, 506.8536pt x 396.5214pt>
+<figures/testhighlatskde.png, id=395, 506.8536pt x 396.5214pt>
 File: figures/testhighlatskde.png Graphic file (type png)
 
 <use figures/testhighlatskde.png>
-Package pdftex.def Info: figures/testhighlatskde.png used on input line 434.
+Package pdftex.def Info: figures/testhighlatskde.png used on input line 432.
 (pdftex.def)             Requested size: 236.15796pt x 184.7496pt.
 
-<figures/global_sim_CG.png, id=402, 4516.875pt x 1806.75pt>
+<figures/global_sim_CG.png, id=396, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 441.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 439.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/soy_sim_CG_W.png, id=409, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_W.png, id=403, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_W.png Graphic file (type png)
 
 <use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 455.
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 453.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/swh_sim_CG_C.png, id=411, 4516.875pt x 1806.75pt>
+<figures/swh_sim_CG_C.png, id=405, 4516.875pt x 1806.75pt>
 File: figures/swh_sim_CG_C.png Graphic file (type png)
 
 <use figures/swh_sim_CG_C.png>
-Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 462.
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 460.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
+
+<figures/rice_sim_CG_irrwat.png, id=407, 4516.875pt x 1806.75pt>
+File: figures/rice_sim_CG_irrwat.png Graphic file (type png)
+
+<use figures/rice_sim_CG_irrwat.png>
+Package pdftex.def Info: figures/rice_sim_CG_irrwat.png used on input line 467.
+
+(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
  [12]
 
 LaTeX Warning: Text page 13 contains only floats.
 
 [13 <./figures/Agformet_validation.png>] [14 <./figures/baselinecomp_yield_3.pn
-g>] [15 <./figures/testhighlatskde.png>]
-<figures/rice_sim_CG_irrwat.png, id=462, 4516.875pt x 1806.75pt>
-File: figures/rice_sim_CG_irrwat.png Graphic file (type png)
-
-<use figures/rice_sim_CG_irrwat.png>
-Package pdftex.def Info: figures/rice_sim_CG_irrwat.png used on input line 503.
-
-(pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
- [16 <./figures/global_sim_CG.png>]
+g>] [15 <./figures/testhighlatskde.png>] [16 <./figures/global_sim_CG.png>]
 [17 <./figures/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>] [18 <./figures/r
 ice_sim_CG_irrwat.png>]
-Overfull \hbox (22.52496pt too wide) in paragraph at lines 550--550
+Overfull \hbox (22.52496pt too wide) in paragraph at lines 548--548
 \T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path = %2
 FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _ SEASON . HARM . version
 1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 562--562
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 562--562
 []|\T1/ptm/b/n/9 Spring
  []
 
@@ -1251,17 +1251,17 @@ i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
 [24] [25]) [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 603.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 603.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
  (./main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 603.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 603.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 603.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 601.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 601.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
  ) 
 Here is how much of TeX's memory you used:
  10777 strings out of 492995
  152325 string characters out of 6132704
- 321408 words of memory out of 5000000
+ 321389 words of memory out of 5000000
  13974 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1284,10 +1284,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (26 pages, 6830393 bytes).
+Output written on main1.pdf (26 pages, 6830508 bytes).
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 627 compressed objects within 7 object streams
+ 689 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
  133 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
