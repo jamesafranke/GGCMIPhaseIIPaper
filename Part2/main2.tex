@@ -74,7 +74,7 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-Spatial resolution 
+Statistical emulation of process-based crop models provides the opportunity to combine some of the advantageous features of statistical and process-based crop models.  
 
 The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
 The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
@@ -86,9 +86,10 @@ Crop model emulation should therefore facilitate both model comparison and integ
 \introduction
 \label{S:1}
 Efforts to project climate change impacts often combine models from different disciplines under a single economic framework to calculate a total cost of climate change often called an Integrated Assessment Model (IAM). 
-In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their simulation framework or computational cost. 
-Process-based crop simulation models provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
-Statistical crop models on the other hand, often lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM.
+In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their simulation framework or computational cost.
+On the one hand, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
+Statistical crop models on the other hand, lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM. 
+Both types of crop models models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 
 Interest has been rising in statistical emulation, which allows combining advantageous features of both statistical and process-based models. 
 The approach involves constructing a statistical representation or ``surrogate model'' of complicated numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
