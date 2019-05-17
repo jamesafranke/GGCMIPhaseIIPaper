@@ -172,8 +172,8 @@ The resulting GGCMI Phase II dataset captures a distribution of crop responses o
 Each model is run at 0.5 degree spatial resolution and covers all currently cultivated areas and much of the uncultivated land area. 
 (See Figure \ref{fig:crop_area} for the present-day cultivated area of rainfed crops, and Figure S1 in the Supplemental Material for irrigated crops.)  
 To reduce the computational burden, we provide a boolean mask, identifying regions that are unsuitable for cropland for non-climatic reasons. 
-For this, we use a combination of unsuitable areas according to GAEZ (downloaded from www.gaez.iiasa.ac.at/w). 
-{\color{red}Tom: how did you generate the 90\% suitability map?}
+For this, we use a combination of soil suitability indices at 10 arc minute resolution for excess salt, oxygen availability, rooting conditions, toxicities, and workability according to GAEZ \citep{gaez} (downloaded from www.gaez.iiasa.ac.at/), following the procedure as proposed by \citet{pugh_climate_2016}. 
+We excluded all 0.5 arc degree grid cells in which at least 90\% of the area was masked as unsuitable --- i.e. not categorized as "minimal" or "moderate" constraints according to any of these suitability indices.  
 There are a few cases, where (at the resolution of 0.5 degrees) the grid cell is classified as dominantly unsuitable but the cropland masks assign cropland to these grid cells. 
 To ensure that all cropland currently used in the aggregation is also simulated by the groups, we exclude only pixels that are predominantly unsuitable (>=90\%) and do not contain any cropland (according to MIRCA2000 \citep{Portmann2010}).
 
