@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 MAY 2019 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 JUN 2019 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main2
-(./main2.tex
+**/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./copernicus.cls
@@ -1251,13 +1251,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 514.
  ) 
 Here is how much of TeX's memory you used:
- 10742 strings out of 492995
- 151801 string characters out of 6132704
- 295994 words of memory out of 5000000
+ 10743 strings out of 492995
+ 151964 string characters out of 6132704
+ 295990 words of memory out of 5000000
  13965 multiletter control sequences out of 15000+600000
  42803 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1225b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1284b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
