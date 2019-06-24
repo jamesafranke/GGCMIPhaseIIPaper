@@ -80,16 +80,18 @@ In this study we present the construction of a set of crop model emulators of me
 The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
 The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
 Crop model emulation should therefore facilitate both model comparison and integrated assessment of climate impacts.
+XXXXXXXX
 \end{abstract}
 
 %\copyrightstatement{TEXT}
 
 \introduction
 \label{S:1}
-Efforts to project climate change impacts often combine models from different disciplines under a single economic framework to calculate a total cost of climate change often called an Integrated Assessment Model (IAM). 
-In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their simulation framework or computational cost.
-On the one hand, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
-Statistical crop models on the other hand, lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM. 
+Climate change will likely impact many different economic sectors. 
+Efforts to project climate change impacts often combine models from different disciplines under a single economic framework -- called an Integrated Assessment Model (IAM). 
+In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their framework or computational cost.
+For the agricultural sector, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
+Statistical crop models lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM. 
 Both types of crop models models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 
 Interest has been rising in statistical emulation, which allows combining advantageous features of both statistical and process-based models. 
@@ -177,7 +179,7 @@ Simulations are run for both rainfed and irrigated crops across a variety of cli
    \label{fig:yearvclimpr}
 \end{figure}
 
-As most assessment models project impacts at some large temporal scale (decades) or utilize some temporally aggregated climate projection, we construct an emulator of 30-year climatological mean yields. 
+As most assessment models project impacts at some aggregate temporal scale (decades) or utilize some temporally aggregated climate projection, we construct an emulator of 30-year climatological mean yields. 
 This approach is made possible by the structured set of simulations involving systematic perturbations. 
 In the GGCMI Phase II dataset, the year-over-year responses are generally quantitatively distinct from (and larger than) climatological mean responses. 
 In the example Figure \ref{fig:yearvclim}, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
@@ -195,7 +197,7 @@ We include interaction terms (both linear and higher-order) because past studies
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance. 
 (C and N are fixed in these data.) 
 Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
-To avoid over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
+To limit over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
 
 We do not focus on comparing different functional forms in this study, and instead choose a relatively simple polynomial parametrization that allows for some interpretation of coefficients. 
 Some prior studies have used other statistical specifications, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression. 
