@@ -2,7 +2,7 @@
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 
 \begin{document}
-\title{Globally-gridded mean climatological crop model emulators for yield (and irrigation water demand??)}
+\title{GGCMI Phase II: global gridded crop model emulators}
 
 \Author[1,2]{James}{Franke}
 \Author[3]{Christoph}{M\"{u}ller}
@@ -87,38 +87,42 @@ XXXXXXXX
 
 \introduction
 \label{S:1}
-Climate change will likely impact many different economic sectors. 
-Efforts to project climate change impacts often combine models from different disciplines under a single economic framework -- called an Integrated Assessment Model (IAM). 
-In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their framework or computational cost.
-For the agricultural sector, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
+
+%Climate change will likely impact many different economic sectors. 
+%Efforts to project climate change impacts often combine models from different disciplines under a single economic framework -- called an Integrated Assessment Model (IAM). 
+%In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their framework or computational cost.
+
+Process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
 Statistical crop models lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that can be brought directly into an IAM. 
 Both types of crop models models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 
-Interest has been rising in statistical emulation, which allows combining advantageous features of both statistical and process-based models. 
+Statistical emulation allows combining advantageous features of both statistical and process-based models. 
 The approach involves constructing a statistical representation or ``surrogate model'' of complicated numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large,  and  has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
-For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies. 
+For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies, and assists with model comparison and model evaluation efforts.
 
-In the past decade, multiple studies have developed emulators of process-based crop simulations. 
+Interest is rising in applying statistical emulation to crop models as multiple studies have developed crop model emulators in the past decade.
+%In the past decade, multiple studies have developed emulators of process-based crop simulations. 
 Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}, who used a machine learning approach to predict Mediterranean wheat yields. 
 Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model (for multiple crops, using multiple scenarios as a training set). 
 More recently, emulators have begun to be used in the context of multi-model intercomparisons, with \citet{BLANC2015, BLANC2017, Ostberg2018} and \citet{Mistry2017} using them to analyze the five crop models of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP) \citep{Warszawski3228}, which simulated yields for maize, soy, wheat, and rice. 
 Choices differ: \citet{BLANC2015} and \citet{BLANC2017} base their emulation on historical simulations and three climate scenarios for one Representative Concentration Pathway (RPC8.5), which represents a high level of global warming; and use local weather variables and yields in their regression across soil regions; \citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors then pattern-scale to emulate local yields; while \citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
 These efforts do share important common features: all emulate annual crop yields across the entire scenario or scenarios, and when future scenarios are considered, they are non-stationary, i.e.\ their input climate parameters evolve over the course of the simulations.
 
-An alternative approach is to construct a training set of multiple stationary scenarios in which parameters are systematically varied. 
+An alternative approach to emulation involves the constructions a training set of multiple stationary scenarios in which input parameters are systematically varied. 
 Such a ``parameter sweep'' offers several advantages for emulation over scenarios in which climate evolves over time. 
 First, it allows separating the effects of different variables that impact yields but that are highly correlated in realistic future scenarios (e.g.\ CO$_2$ and temperature). 
 Second, it allows making a distinction between year-over-year yield variations and climatological changes, which may involve different responses to the particular climate regressors used \citep[e.g.][]{Ruane2016}. 
-For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing period, and long-term climate changes are driven predominantly by shifts in means, then regressing on the mean growing period temperature will produce different yield responses at annual vs.\ climatological timescales. 
-Disadvantages of this approach include neglecting changes in seasonality and some implausible combinations of input settings (e.g. colder temperature and high CO$_2$). 
+For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing period, and long-term climate changes are driven predominantly by shifts in means, then regressing on the mean growing period temperature will produce different yield responses at annual vs.\ climatological timescales.  
 
 Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2014 and 2015 \citep{ruane2014, Markowski2015, Pirttioja2015}, and several recent studies in 2018 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. 
 All three 2018 studies sample multiple perturbations to temperature and precipitation (with \citet{Snyder2018} and \citet{RUIZRAMOS2018} adding CO$_2$ as well), in 132, 99 and 220 different combinations, respectively, and take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
 All studies focus on a limited number of sites; \citet{FRONZEK20182} and \citet{RUIZRAMOS2018} simulate only wheat (over many models) and \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) for agricultural impacts experiments with the GCAM \citep{calvin2019} model.
 
-In this paper we describe a crop model emulator developed from a new simulation output dataset parameter sweep as part of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
-In this paper we introduce a spatially explicit emulator for the mean-climatological time scale that allows for representing process-based crop model responses in economic assessment models and other applications.
+In this paper we describe a crop model emulator developed from a new simulation output dataset as of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
+The emulators are developed from a training set consiting of the largest 
+The spatially explicit emulator at the mean-climatological time scale that allows for representing process-based crop model responses in economic assessment models and other applications.
+%%% SOMETHING HERE %%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -188,6 +192,7 @@ The same general principal applies to the precipitation dimension however in thi
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariants, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
 Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
+%Disadvantages of the parameter sweep approach include neglecting changes in seasonality and some implausible combinations of input settings (e.g. colder temperatures and higher CO$_2$).
 
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).  
 We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. 
