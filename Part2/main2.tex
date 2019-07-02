@@ -290,7 +290,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/regression_areas.png}
-    \caption{Illustration of spatial variations in yield response and emulation ability. 
+    \caption{Illustration of spatial variations in yield response successfully captured by the emulator. 
     We show rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
     Each panel shows variation along a single variable, with others held at baseline values. 
@@ -305,7 +305,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/regression_model.png}
-    \caption{Illustration of across-model variations in yield response. 
+    \caption{Illustration of across-model variations in yield response successfully captured by the emulator. 
     Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
     Models that do not simulate the nitrogen dimension are omitted for clarity. 
     Note that models are uncalibrated, increasing spread in absolute yields. 
@@ -347,11 +347,9 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
    \label{fig:error}
 \end{figure*}
 
-Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. 
-Emulation in the method proposed here is only possible  when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
+%Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. 
+The emulation in the method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
-We show illustrations of emulation fidelity in this section; for more detailed discussion see Appendix B.
-
 Crop yield responses to changes in weather and management are geographically diverse, even in high-yield and high-cultivation areas. 
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression} rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
@@ -367,11 +365,6 @@ Steep and nonlinear declines in yield with lower nitrogen levels mean that some 
 While it is possible that over-application of nitrogen at the wrong time in the growing period could lead to reduced yields, these relative strength of this feature is are potentially an artifact of the fit. 
 The Bayesian Ridge estimator tends to mitigate the `peak-decline effect' compared to ordinary least squares. 
 In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
-
-The emulation fidelity demonstrated here is sufficient to allow using emulated response surfaces to compare model responses and derive insight about impacts projections. 
-Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
-As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures S18-S21 for other crops and dimensions). 
-The emulated values closely match simulations even at this aggregation level.
 
 No general criteria exist for defining an acceptable crop model emulator, so we present two different metrics. 
 First, for a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
@@ -409,13 +402,6 @@ The rationale for this choice of assessment metric is to relate the fidelity of 
 We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. 
 More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
 
-We also provide a more stringent test of emulator performance; a three-fold cross validation (out-of-sample validation). 
-Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). 
-We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. 
-Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}). 
-Note that the cross validation process often does not include edge simulations in the training set that are then predicted in the test phase. 
-This extrapolation during cross validation is not representative based on the intended use of the emulator.
-
 \begin{table*}[t]
 \caption{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. 
 A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). 
@@ -441,6 +427,16 @@ The table displays area weighted mean (`WM') shows the mean error weighted by he
 \end{table*}
 
 
+We also provide a more stringent test of emulator performance; a three-fold cross validation (out-of-sample validation). 
+Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). 
+We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. 
+Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}). 
+Note that the cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension).
+The ``edge'' cases are then predicted during the prediction phase of cross validation.
+Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
+
+%The emulation fidelity demonstrated here is sufficient to allow using emulated response surfaces to compare model responses and derive insight about impacts projections. 
+
 \subsection{Emulator Products}
 \label{S:4}
 \begin{figure}[ht]
@@ -463,7 +459,12 @@ The table displays area weighted mean (`WM') shows the mean error weighted by he
   \label{fig:all_dims}
 \end{figure*}
 
-We also show global damage functions across all four dimensions tested in this study (Figure \ref{fig:all_dims}). In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
+Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
+As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures S18-S21 for other crops and dimensions). 
+The emulated values closely match simulations even at this aggregation level.
+
+Finally, we present global damage functions across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
+In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
 On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
 
