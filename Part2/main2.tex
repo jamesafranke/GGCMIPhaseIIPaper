@@ -217,7 +217,7 @@ We hold the statistical specification constant across all crops and models to fa
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=14cm]{figures/model_select_maize_rice.png}
+   \includegraphics[width=12cm]{figures/model_select_maize_rice.png}
    \caption{Summary results from polynomial feature selection process.
    Top row illustrates log mean absolute error between emulated yield and simulated values calculated with a three fold cross validation process, where the emulator is trained on two thirds of the data and predicts the remaining third.
    The second row illustrates the adjusted R$^2$ score for the fit at each model specification where additionally terms are penalized.
@@ -318,12 +318,12 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 
 \begin{figure}[ht]
 \centering
-    \includegraphics[width=6.5cm]{figures/error_360.png}
+    \includegraphics[width=6cm]{figures/error_360.png}
     \caption{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. 
-    Large columns are crops and large rows models; squares within are T,P scenario pairs. 
+    Large columns are crops and large rows models; squares within are T, P scenario pairs. 
     Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
-    Of the 756 scenarios with these CO$_2$ and N values, we consider only those for which all 9 models submitted data (Figure S3). 
+    Of the 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 models submitted data (Figure S3) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}
    \label{fig:error_360}
@@ -331,7 +331,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 
 \begin{figure}[ht]
 \centering
-    \includegraphics[width=6.5cm]{figures/em_err.png}
+    \includegraphics[width=6cm]{figures/em_err.png}
     \caption{Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
     Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
     White areas are those where crops are not simulated by this model. 
