@@ -132,7 +132,7 @@ Globally-gridded crop model emulators allow representing process-based crop mode
 The 
 
 The simulation output dataset that serves as the training set for the crop model emulators is described in detail in Franke et al. (this issue). 
-The training dataset consists of 9 process-based crop models for five crops (maize, rice, soybean, spring wheat, and winter wheat) simulated globally at the 0.5 degree Lat and Lon resolution. 
+The training dataset consists of 9 process-based crop models for five crops (maize, rice, soybean, spring wheat, and winter wheat) simulated globally at the 0.5 degree latitude and longitude resolution. 
 Each simulation scenario is run for 30 years including the historic weather variability for the period of 1980-2010. 
 Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}) where the temperature and precipitation is offset from the historical values.
 
@@ -177,10 +177,10 @@ Simulations are run for both rainfed and irrigated crops across a variety of cli
    \includegraphics[width=8.3cm]{figures/pryearvclim.png}
    \caption{Example showing distinction between crop yield responses to year-to-year and climatological mean precipitation shifts. 
    Figure shows rainfed maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (gray) and for the scenario of maximum and minimum precipitation change (brown and green). 
-   Other variables are held at baseline values, and the choice of irrigated yields means that precipitation is not a factor. 
-   Open black circles mark climatological mean yield values for all six temperature scenarios (T-1, +0, +1, +2, +3, +4, +6). 
+   Other covariates are held at baseline values.
+   Open black circles mark climatological mean yield values for all seven precipitation scenarios (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%). 
    Colored lines show total least squares linear regressions of year-over-year variations in each scenario. 
-   Black line shows the fit through the climatological mean values.}
+   Bold Black line shows the emulator fit through the climatological mean values.}
    \label{fig:yearvclimpr}
 \end{figure}
 
@@ -431,7 +431,7 @@ We also provide a more stringent test of emulator performance; a three-fold cros
 Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). 
 We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. 
 Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}). 
-Note that the cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension).
+Note that the cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension) on one or more folds of the training set split.
 The ``edge'' cases are then predicted during the prediction phase of cross validation.
 Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
 
@@ -445,7 +445,7 @@ Such an extrapolation during cross validation is not representative based on the
     \caption{Global emulated damages for maize on currently cultivated lands for the GGCMI Phase II models emulated, for uniform temperature shifts with other inputs held at baseline. 
     (The damage function is created from aggregating up emulated values at the grid cell level, not from a regression of global mean yields.) 
     Lines are emulations for rainfed (solid) and irrigated (dashed) crops; for comparison, dots are the simulated values for the rainfed case.  
-    For most models, irrigated crops show a sharper reduction than rainfed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift (the exceptions are PROMET, JULES, and LPJmL). 
+    For most models, irrigated crops show a sharper reduction than rainfed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift (the exceptions are PROMET, JULES, and LPJmL, see Franke et. al this issue for more details). 
     For other crops and scenarios see Figures S18-21 in the supplemental material.}
     \label{fig:globe_em}
 \end{figure}
@@ -468,7 +468,7 @@ In general, across model spread is qualitatively similar across different crops 
 Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
 On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
 
-Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep{Sippel2015}. 
+Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
 
