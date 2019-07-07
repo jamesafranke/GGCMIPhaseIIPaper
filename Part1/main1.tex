@@ -77,10 +77,10 @@ Concerns about food security under climate change motivate efforts to better und
 Process-based crop models, which represent plant physiological processes, are necessary tools for this purpose since they allow representing future climate and management conditions not sampled in the historical record and new locations where cultivation may shift. 
 However, models remain uncertain and differ in many critical details. 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment, an activity of the Agricultural Model Intercomparison and Improvement Project (AgMIP), is designed to allow systematic evaluation and ``emulation'' of model responses to multiple interacting factors.
-The different levels in carbon dioxide (n=4), temperature (n=7), water availability (n=9), and nitrogen application (n=3) combine to a total of 756 CTWN combinations. 
-For these CTWN combinations models conducted global gridded simulations of 31 years per crop, but not all crop models were able to provide the full set. 
-One important aspect of climate change impacts on crop yields is the acceleration of crop phenology under warming that can be addressed with slower maturing varieties. 
-The GGCMI Phase II experiment thus also includes an additional adaptation set with 648 CTWN elements assuming new varieties which regain the original growing season in each location. 
+%The different levels in carbon dioxide (n=4), temperature (n=7), water availability (n=9), and nitrogen application (n=3) combine to a total of 756 CTWN combinations. 
+%For these CTWN combinations models conducted global gridded simulations of 31 years per crop, but not all crop models were able to provide the full set. 
+%One important aspect of climate change impacts on crop yields is the acceleration of crop phenology under warming that can be addressed with slower maturing varieties. 
+%The GGCMI Phase II experiment thus also includes an additional adaptation set with 648 CTWN elements assuming new varieties which regain the original growing season in each location. 
 In this paper we describe the GGCMI Phase II experimental protocol (simulations run with systematic uniform perturbations of historical climate) and its simulation data archive (from twelve crop models and five crops). 
 We also present different model outputs in different aggregations across the CTNW space in order to illustrate the data richness of the GGCMI Phase II archive and to discuss some general characteristics of the simulation data set. 
 Modeled yields show robust decreases to warmer mean climatologies in almost all regions, with a nonlinear dependence that means yield changes in warmer baseline locations are more sensitive to temperature increases. 
@@ -105,7 +105,12 @@ Models tend to agree broadly in major response patterns, including a reasonable 
 %The emergence of electronic computers allowed development of numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops (first proposed by \citet{wit58} and \citet{Duncan67} and attempted by \citet{Duncan72}; for a history of crop model development see \citet{Rosenzweig2014}). 
 %A half-century of improvement in both models and computing resources means that researchers can now run crop simulations for many years at higher spatial resolution on the global scale. 
 
-Process-based models crop models are a family of numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops.
+Process-based crop models are a family of numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops.
+Process-based crop models provide some advantages over statistical crop models when used for climate change assessments. 
+The ability to incorporate direct fertilization from atmospheric CO2 
+Globally-gridded crop models allow flexibility in spatial assessment 
+.. and to study future cultivation area changes and crop selection switching under climate change.
+
 Process-based models still struggle with some important details, including reproducing historical year-to-year variability in various countries \citep[e.g.][]{muller_global_2017}, reproducing historical yields when driven by reanalysis weather \citep[e.g.][]{Glotter14}, and low sensitivity to extreme events \citep[e.g.][]{Glotter15, Jag2018, schewe2019}. 
 These issues are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
 Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
@@ -124,24 +129,31 @@ These novel changes can include the direct fertilization effect of elevated CO$_
 Understanding process-based models' responses to important drivers are thus critical to improve future projections of agricultural productivity.
 The Global Gridded Crop Model Intercomparison (GGCMI) of AgMIP \citep{Elliott2015} has thus designed a 2nd phase (\textit{Phase II}) with a focus on models' response to changes in the most important model drivers: atmospheric carbon dioxide concentrations ([CO$_2$], C),temperature (T), water (W), and nitrogen (N). 
 The CTWN experiment is inspired by AgMIP's Coordinated Climate-Crop Modeling Project \citep[C3MP][]{ruane2014,mcdermid2015agmip} and has been extended by the nitrogen dimension. 
-To account for the importance of adapation in agricultural production to climate change, a fifth dimension, adaptation (A) has been added to the CTWN experiment. 
-The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adapation} setting, in which the growing season that is shortened under warming, is regained by adapted crop cultivar choice.
+To account for the importance of adaptation in agricultural production to climate change, a fifth dimension, adaptation (A) has been added to the CTWN experiment. 
+The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adaptation} setting, in which the growing season that is shortened under warming, is regained by adapted crop cultivar choice.
 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment was conducted by a suite of process-based crop models, running across historical conditions perturbed by a set of discrete steps in the four input parameters (CTWN), for both adaptation settings (yes/no). 
 The experimental protocol involves 756 different parameter combinations for each model and crop for the non-adapted and 648 combinations for the adapted setting (does not include T=0), with simulations providing near-global coverage at a half degree spatial resolution. 
 The experiment was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) \citep{Taylor2012, Eyring2016}. 
 The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015agmip} and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
 GGCMI Phase II is designed to allow addressing goals such as understanding where highest-yield regions may shift under climate change; exploring future adaptive management strategies; understanding how interacting input drivers affect crop yield; quantifying uncertainties across models and major drivers; and testing strategies for producing lightweight emulators of process-based models. 
+
 In this paper, we describe the GGCMI Phase II model experiments and present initial summary results.
 
+The following sections provide the goals and protocols 
+
+models included and a what levels
+
+Simulation assessment is provided with comparison to FAO yield data at the country level
+
+Finally we show some illustrative 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Methods}
+\section{Simulation objectives, protocol, and models}
 \label{S:2}
-
-\subsection{Modeling protocol}
+\subsection{Goals}
 
 GGCMI Phase II is the continuation of a multi-model comparison exercise begun in 2014. 
 The initial Phase I compared harmonized yield simulations of 21 models for 19 crops over the historical period with a primary goal of model evaluation \citep{Elliott2015, muller_global_2017} and understanding of different sources of uncertainty, such as model parameterization \citep{folberth2016}, different weather products, or aggregation \citep{porwollik_spatial_2016}. 
@@ -163,6 +175,8 @@ The dataset is designed to allow researchers to:
 \end{itemize}
 \vspace{-0.05in}
 
+\subsection{Modeling protocol}
+The phase II protocol focuses on climatological perturbations from historical weather in the period 1980-2010 at different management and atmospheric CO2 levels.
 The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for [CO$_2$], and 3 for applied nitrogen, for a total of 672 simulations for rainfed agriculture and an additional 84 for irrigated (Table \ref{table:inputs}). 
 For irrigated simulations, limitations from actual water supply are not considered. 
 Limits for the climate variable perturbations are selected to represent reasonable ranges for potential climate changes in the medium term. 
@@ -305,6 +319,7 @@ A script for initial data quality screening has been provided to the modeling gr
 
 \subsection{Models contributing}
 
+The protocol described above has been implemented by 12 GGCMs which have supplied data to the GGCMI Phase II archive. 
 Given the substantial computational requirements for participation in GGCMI Phase II with 756 (A0) + 648 (A1) global 31-year simulations for 5 different crops, we specified different participation tiers to allow submission of smaller sub-sets. 
 These subsets were designed as orthogonal samples across the 4 dimensions of the CTWN space. 
 These are designed by combinations of selected pairs in the CxN space (all 12 vs. 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) and the TxW space:
@@ -359,7 +374,6 @@ Not all modeling teams provide the full simulation protocol, for instance, CARIA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-The protocol described above has been implemented by 12 GGCMs which have supplied data to the GGCMI Phase II archive. 
 We provide some comparison of model results to FAO data records to describe the models' skill in reproducing crop yield characteristics. 
 We stress that the comparison is not straightforward as none of the settings in the CTWN-A experiment design reflects actual conditions. 
 For a more rigorous evaluation of the models' performance, we refer to the GGCMI model evaluation study of \citet{muller_global_2017}. In order to illustrate the data structure and general features of the ensemble, we show selected results in different aggregation levels (maps, regional aggregations). 
