@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{79}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -68,6 +68,16 @@ Bodirsky, B.~L., Rolinski, S., Biewald, A., Weindl, I., Popp, A., and
   ONE, 10, 1--27, \doi{10.1371/journal.pone.0139201},
   \urlprefix\url{https://doi.org/10.1371/journal.pone.0139201}, 2015.
 
+\bibitem[{Calvin et~al.(2019)Calvin, Patel, Clarke, Asrar, Bond-Lamberty, Cui,
+  Di~Vittorio, Dorheim, Edmonds, Hartin, Hejazi, Horowitz, Iyer, Kyle, Kim,
+  Link, McJeon, Smith, Snyder, Waldhoff, and Wise}]{calvin2019}
+Calvin, K., Patel, P., Clarke, L., Asrar, G., Bond-Lamberty, B., Cui, R.~Y.,
+  Di~Vittorio, A., Dorheim, K., Edmonds, J., Hartin, C., Hejazi, M., Horowitz,
+  R., Iyer, G., Kyle, P., Kim, S., Link, R., McJeon, H., Smith, S.~J., Snyder,
+  A., Waldhoff, S., and Wise, M.: GCAM v5.1: representing the linkages between
+  energy, water, land, climate, and economic systems, Geoscientific Model
+  Development, 12, 677--698, \doi{10.5194/gmd-12-677-2019}, 2019.
+
 \bibitem[{Challinor et~al.(2014)Challinor, Watson, Lobell, Howden, Smith, and
   Chhetri}]{Challinor2014}
 Challinor, A., Watson, J., Lobell, D., Howden, S., Smith, D., and Chhetri, N.:
@@ -114,12 +124,9 @@ Elliott, J., M\"uller, C., Deryng, D., Chryssanthacopoulos, J., Boote, K.~J.,
   and modeling protocols for {P}hase 1 (v1.0), Geoscientific Model Development,
   8, 261--277, \doi{10.5194/gmd-2016-207}, 2015.
 
-\bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
-  and Taylor}]{Eyring2016}
-Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
-  R.~J., and Taylor, K.~E.: Overview of the Coupled Model Intercomparison
-  Project Phase 6 (CMIP6) experimental design and organization, Geoscientific
-  Model Development, 9, 1937--1958, \doi{10.5194/gmdd-8-10539-2015}, 2016.
+\bibitem[{{FAO/IIASA}(2011)}]{gaez}
+{FAO/IIASA}: {G}lobal {A}gro-ecological {Z}ones and {FAO-GAEZ} {D}ata
+  {P}ortal({GAEZ} v3.0), \urlprefix\url{http://www.gaez.iiasa.ac.at/}, 2011.
 
 \bibitem[{Folberth et~al.(2012)Folberth, Gaiser, Abbaspour, Schulin, and
   Yang}]{FOLBERTH201221}
@@ -154,6 +161,27 @@ Frieler, K., Lange, S., Piontek, F., Reyer, C.~P., Schewe, J., Warszawski, L.,
   of 1.5 C global warming--simulation protocol of the Inter-Sectoral Impact
   Model Intercomparison Project (ISIMIP2b), Geoscientific Model Development,
   2017.
+
+\bibitem[{Fronzek et~al.(2018)Fronzek, Pirttioja, Carter, Bindi, Hoffmann,
+  Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin,
+  Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c{c}}ois,
+  Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet,
+  Minguez, Montesino, Moriondo, M{\"{u}}ller, Nendel, {\"{O}}zt{\"{u}}rk,
+  Perego, Rodr{\'{i}}guez, Ruane, Ruget, Sanna, Semenov, Slawinski,
+  Stratonovitch, Supit, Waha, Wang, Wu, Zhao, and R{\"{o}}tter}]{FRONZEK20182}
+Fronzek, S., Pirttioja, N., Carter, T.~R., Bindi, M., Hoffmann, H., Palosuo,
+  T., Ruiz-Ramos, M., Tao, F., Trnka, M., Acutis, M., Asseng, S., Baranowski,
+  P., Basso, B., Bodin, P., Buis, S., Cammarano, D., Deligios, P., Destain,
+  M.-F., Dumont, B., Ewert, F., Ferrise, R., Fran{\c{c}}ois, L., Gaiser, T.,
+  Hlavinka, P., Jacquemin, I., Kersebaum, K.~C., Kollas, C., Krzyszczak, J.,
+  Lorite, I.~J., Minet, J., Minguez, M.~I., Montesino, M., Moriondo, M.,
+  M{\"{u}}ller, C., Nendel, C., {\"{O}}zt{\"{u}}rk, I., Perego, A.,
+  Rodr{\'{i}}guez, A., Ruane, A.~C., Ruget, F., Sanna, M., Semenov, M.~A.,
+  Slawinski, C., Stratonovitch, P., Supit, I., Waha, K., Wang, E., Wu, L.,
+  Zhao, Z., and R{\"{o}}tter, R.~P.: Classifying multi-model wheat yield impact
+  response surfaces showing sensitivity to temperature and precipitation
+  change, Agricultural Systems, 159, 209--224,
+  \doi{10.1016/j.agsy.2017.08.004}, 2018.
 
 \bibitem[{Glotter et~al.(2014)Glotter, Elliott, McInerney, Best, Foster, and
   Moyer}]{Glotter14}
@@ -303,6 +331,16 @@ Liu, W., Yang, H., Liu, J., Azevedo, L.~B., Wang, X., Xu, Z., Abbaspour, K.~C.,
   and Schulin, R.: Global assessment of nitrogen losses and trade-offs with
   yields from major crop cultivations, Science of The Total Environment, 572,
   526 -- 537, \doi{10.1016/j.scitotenv.2016.08.093}, 2016{\natexlab{b}}.
+
+\bibitem[{Makowski et~al.(2015)Makowski, Asseng, Ewert, Bassu, Durand, Martre,
+  Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote,
+  Brisson, Cammarano, Challinor, Conijn, and Wolf}]{Markowski2015}
+Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
+  M., Aggarwal, P., Angulo, C., Baron, C., Basso, B., Bertuzzi, P., Biernath,
+  C., Boogaard, H., Boote, K., Brisson, N., Cammarano, D., Challinor, A.,
+  Conijn, J., and Wolf, J.: Statistical Analysis of Large Simulated Yield
+  Datasets for Studying Climate Effects, p. 1100,
+  \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
 \bibitem[{Mauser et~al.(2015)Mauser, Klepper, Zabel, Delzeit, Hank,
   Putzenlechner, and Calzadilla}]{MAUSER2015}
@@ -512,6 +550,23 @@ Rubel, F. and Kottek, M.: Observed and projected climate shifts 1901-2100
   Meteorologische Zeitschrift, 19, 135--141, \doi{10.1127/0941-2948/2010/0430},
   2010.
 
+\bibitem[{Ruiz-Ramos et~al.(2018)Ruiz-Ramos, Ferrise, Rodríguez, Lorite,
+  Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano,
+  Chen, Dumont, Ewert, Gaiser, Hlavinka, Hoffmann, Höhn, Jurecka, Kersebaum,
+  Krzyszczak, Lana, Mechiche-Alami, Minet, Montesino, Nendel, Porter, Ruget,
+  Semenov, Steinmetz, Stratonovitch, Supit, Tao, Trnka, de~Wit, and
+  Rötter}]{RUIZRAMOS2018}
+Ruiz-Ramos, M., Ferrise, R., Rodríguez, A., Lorite, I., Bindi, M., Carter, T.,
+  Fronzek, S., Palosuo, T., Pirttioja, N., Baranowski, P., Buis, S., Cammarano,
+  D., Chen, Y., Dumont, B., Ewert, F., Gaiser, T., Hlavinka, P., Hoffmann, H.,
+  Höhn, J., Jurecka, F., Kersebaum, K., Krzyszczak, J., Lana, M.,
+  Mechiche-Alami, A., Minet, J., Montesino, M., Nendel, C., Porter, J., Ruget,
+  F., Semenov, M., Steinmetz, Z., Stratonovitch, P., Supit, I., Tao, F., Trnka,
+  M., de~Wit, A., and Rötter, R.: Adaptation response surfaces for managing
+  wheat under perturbed climate and CO2 in a Mediterranean environment,
+  Agricultural Systems, 159, 260 -- 274, \doi{10.1016/j.agsy.2017.01.009},
+  2018.
+
 \bibitem[{Sacks et~al.(2010)Sacks, Deryng, Foley, and Ramankutty}]{Sacks2010}
 Sacks, W.~J., Deryng, D., Foley, J.~A., and Ramankutty, N.: Crop planting
   dates: an analysis of global patterns, Global Ecology and Biogeography, 19,
@@ -547,6 +602,12 @@ Schewe, J., Gosling, S.~N., Reyer, C., Zhao, F., Ciais, P., Elliott, J.,
   extremes, Nature Communications, 10, 1005--,
   \doi{10.1038/s41467-019-08745-6}, 2019.
 
+\bibitem[{Snyder et~al.(2018)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
+Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
+  emulator for use in GCAM and similar models:Persephone v1.0, Accepted for
+  publication in Geoscientific Model Development, pp. 1--42,
+  \doi{10.5194/gmd-2018-195}, in open review, 2018.
+
 \bibitem[{Stevanovi{\'c} et~al.(2016)Stevanovi{\'c}, Popp, Lotze-Campen,
   Dietrich, M{\"u}ller, Bonsch, Schmitz, Bodirsky, Humpen{\"o}der, and
   Weindl}]{Stevanovic2016}
@@ -555,11 +616,6 @@ Stevanovi{\'c}, M., Popp, A., Lotze-Campen, H., Dietrich, J.~P., M{\"u}ller,
   I.: The impact of high-end climate change on agricultural welfare, Science
   Advances, 2, \doi{10.1126/sciadv.1501452},
   \urlprefix\url{https://advances.sciencemag.org/content/2/8/e1501452}, 2016.
-
-\bibitem[{Taylor et~al.(2012)Taylor, Stouffer, and Meehl}]{Taylor2012}
-Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A.: An Overview of {C}{M}{I}{P}5
-  and the Experiment Design, Bulletin of the American Meteorological Society,
-  93, 485--498, \doi{10.1175/BAMS-D-11-00094.1}, 2012.
 
 \bibitem[{Vadez et~al.(2012)Vadez, Berger, Warkentin, Asseng, Ratnakumar, Rao,
   Gaur, Munier-Jolain, Larmure, Voisin et~al.}]{vadez2012adaptation}

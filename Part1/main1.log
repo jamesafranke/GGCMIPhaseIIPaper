@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 JUL 2019 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 JUL 2019 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,21 +1093,79 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 89.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4]
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
-Package natbib Warning: Citation `gaez' on page 5 undefined on input line 189.
+! LaTeX Error: Environment comment undefined.
 
-<figures/croparea.png, id=205, 262.9022pt x 492.0784pt>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \begin{comment}
+                     All studies focus on a limited number of sites; \citet{...
+
+? s
+OK, entering \scrollmode...
+
+! LaTeX Error: \begin{document} ended by \end{comment}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \end{comment}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Runaway argument?
+{red|{Roadmap para XX - fix up} In this paper, we describe the GGCMI \ETC.
+! Paragraph ended before \@textcolor was complete.
+<to be read again> 
+                   \par 
+l.144 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Environment comment undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \begin{comment}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{comment}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \end{comment}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3] [4] <figures/croparea.png, id=255, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 196.
+Package pdftex.def Info: figures/croparea.png used on input line 215.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 200.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 219.
  [5] [6 <./figures/croparea.png>] [7]
-Overfull \hbox (1.85802pt too wide) in paragraph at lines 263--264
+Overfull \hbox (1.85802pt too wide) in paragraph at lines 282--283
 []$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 model\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 
 climate\OT1/cmr/m/n/10 ][]\OML/cmm/m/it/10 hist[]fullharm[]\OT1/cmr/m/n/10 [\OM
 L/cmm/m/it/10 irrig:scenario\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 variable\OT1/c
@@ -1117,291 +1175,160 @@ annual[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 start \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m
 mm/m/it/10 year\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :nc\OT1/cmr/m/n/10 4$ 
  []
 
+[8]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 280.
-
-[8] [9]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.327 \item a
-              \textit{minimum set} with an orthogonal, stratified 9-step sam...
-
-? s
-OK, entering \scrollmode...
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.327 \item a
-              \textit{minimum set} with an orthogonal, stratified 9-step sam...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+               Default added (so using `tbp') on input line 299.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.327 \item a
-              \textit{minimum set} with an orthogonal, stratified 9-step sam...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \item a
-              \textit{reduced set} of alternating combinations, which uses d...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \item a
-              \textit{reduced set} of alternating combinations, which uses d...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.328 \item a
-              \textit{reduced set} of alternating combinations, which uses d...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 \item a
-             nd the \textit{full set} (all 7Tx9W)
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 \item a
-             nd the \textit{full set} (all 7Tx9W)
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 \item a
-             nd the \textit{full set} (all 7Tx9W)
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.330 \end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 348--348
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 367--367
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 []|\T1/ptm/b/n/9 Spring
  []
 
-[10] <figures/Agformet_validation.png, id=340, 632.50703pt x 617.61942pt>
+[9] [10] [11]
+<figures/Agformet_validation.png, id=421, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 390
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 409
 .
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
- [11]
 
-LaTeX Warning: Text page 12 contains only floats.
-
-[12 <./figures/Agformet_validation.png>]
-<figures/baselinecomp_yield_3.png, id=397, 527.42645pt x 347.47417pt>
+<figures/baselinecomp_yield_3.png, id=439, 527.42645pt x 347.47417pt>
 File: figures/baselinecomp_yield_3.png Graphic file (type png)
 
 <use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 43
-1.
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 45
+0.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 
-<figures/testhighlatskde.png, id=398, 506.8536pt x 396.5214pt>
+<figures/testhighlatskde.png, id=440, 506.8536pt x 396.5214pt>
 File: figures/testhighlatskde.png Graphic file (type png)
 
 <use figures/testhighlatskde.png>
-Package pdftex.def Info: figures/testhighlatskde.png used on input line 446.
+Package pdftex.def Info: figures/testhighlatskde.png used on input line 465.
 (pdftex.def)             Requested size: 236.15796pt x 184.7496pt.
 
-<figures/global_sim_CG.png, id=399, 4516.875pt x 1806.75pt>
+<figures/global_sim_CG.png, id=441, 4516.875pt x 1806.75pt>
 File: figures/global_sim_CG.png Graphic file (type png)
 
 <use figures/global_sim_CG.png>
-Package pdftex.def Info: figures/global_sim_CG.png used on input line 453.
+Package pdftex.def Info: figures/global_sim_CG.png used on input line 472.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/soy_sim_CG_W.png, id=406, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_W.png, id=448, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_W.png Graphic file (type png)
 
 <use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 467.
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 486.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/swh_sim_CG_C.png, id=408, 4516.875pt x 1806.75pt>
+<figures/swh_sim_CG_C.png, id=450, 4516.875pt x 1806.75pt>
 File: figures/swh_sim_CG_C.png Graphic file (type png)
 
 <use figures/swh_sim_CG_C.png>
-Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 474.
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 493.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/rice_sim_CG_irrwat.png, id=410, 4516.875pt x 1806.75pt>
+<figures/rice_sim_CG_irrwat.png, id=452, 4516.875pt x 1806.75pt>
 File: figures/rice_sim_CG_irrwat.png Graphic file (type png)
 
 <use figures/rice_sim_CG_irrwat.png>
-Package pdftex.def Info: figures/rice_sim_CG_irrwat.png used on input line 481.
+Package pdftex.def Info: figures/rice_sim_CG_irrwat.png used on input line 500.
 
 (pdftex.def)             Requested size: 398.33858pt x 159.3198pt.
- [13] [14 <./figures/baselinecomp_yield_3.png>] [15 <./figures/testhighlatskde.
-png>] [16 <./figures/global_sim_CG.png>]
+ [12]
+
+LaTeX Warning: Text page 13 contains only floats.
+
+[13 <./figures/Agformet_validation.png>] [14 <./figures/baselinecomp_yield_3.pn
+g>] [15 <./figures/testhighlatskde.png>] [16 <./figures/global_sim_CG.png>]
 [17 <./figures/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>] [18 <./figures/r
 ice_sim_CG_irrwat.png>]
-Overfull \hbox (22.52496pt too wide) in paragraph at lines 562--562
+Overfull \hbox (22.52496pt too wide) in paragraph at lines 581--581
 \T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path = %2
 FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _ SEASON . HARM . version
 1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 595--595
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 595--595
 []|\T1/ptm/b/n/9 Spring
  []
 
 [19] (./main1.bbl [20]
-Underfull \hbox (badness 2253) in paragraph at lines 102--106
+Underfull \hbox (badness 2253) in paragraph at lines 112--116
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 102--106
+Underfull \hbox (badness 4391) in paragraph at lines 112--116
 \T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (p
 SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
  []
 
 [21]
-Underfull \hbox (badness 1152) in paragraph at lines 172--177
+Underfull \hbox (badness 1152) in paragraph at lines 200--205
 []\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
 pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 172--177
+Underfull \hbox (badness 1635) in paragraph at lines 200--205
 \T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
 r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
 [22]
-Underfull \hbox (badness 1147) in paragraph at lines 302--306
+Underfull \hbox (badness 1147) in paragraph at lines 330--334
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 302--306
+Underfull \hbox (badness 1424) in paragraph at lines 330--334
 \T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-[23]
-Underfull \hbox (badness 1292) in paragraph at lines 406--411
+[23] [24]
+Underfull \hbox (badness 1292) in paragraph at lines 444--449
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[24] [25]) [26]
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 615.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 615.
-(./main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 615.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 615.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 615.
+[25] [26]) [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 634.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 634.
+ (./main1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 634.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 634.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
  ) 
 Here is how much of TeX's memory you used:
- 10779 strings out of 492995
- 152345 string characters out of 6132704
- 316586 words of memory out of 5000000
- 13975 multiletter control sequences out of 15000+600000
+ 10789 strings out of 492995
+ 152477 string characters out of 6132704
+ 329173 words of memory out of 5000000
+ 13980 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1903b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1903b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1420,10 +1347,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (26 pages, 6830081 bytes).
+Output written on main1.pdf (27 pages, 6833751 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 615 compressed objects within 7 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
