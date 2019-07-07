@@ -85,6 +85,8 @@ In this paper we describe the GGCMI Phase II experimental protocol (simulations 
 We also present different model outputs in different aggregations across the CTNW space in order to illustrate the data richness of the GGCMI Phase II archive and to discuss some general characteristics of the simulation data set. 
 Modeled yields show robust decreases to warmer mean climatologies in almost all regions, with a nonlinear dependence that means yield changes in warmer baseline locations are more sensitive to temperature increases. 
 Inter-model uncertainty is qualitatively similar across all the four input dimensions, but is highest in high-latitude regions where crops may be grown in the future.
+
+largest systematic sampling of parameter for 
 \end{abstract}
 
 %\copyrightstatement{TEXT}
@@ -119,6 +121,8 @@ Inter-model discrepancies can also be high in areas not yet cultivated \citep[e.
 Finally, process-based models present additional difficulties for high-resolution global studies because of their complexity and computational requirements, as well as the general inability to calibrate site-specific parameters. 
 %For global economic impacts assessments, it is often impossible to integrate a set of process-based crop models directly into an integrated assessment model to estimate the potential cost of climate change to the agricultural sector.
 
+so we need a systematic parameter sweep
+
 Nevertheless, process-based models are necessary for understanding the future yield impacts of climate change as well as options for climate mitigation \citep{muller2015} and adaptation \citep{challinor2018improving}, future sustainable development \citep{humpenoder2018large}, and food security \citep{wheeler2013climate}. 
 Despite the additional uncertainty and challenges to run crop models at the global scale \citep{muller_global_2017}, gridded, global crop model applications are much needed for consistent assessments.
 Climate change and international agricultural trade often require to consider the global and local dynamics \citep{rosenzweig2018,ruane2018} and global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}.
@@ -128,25 +132,25 @@ These novel changes can include the direct fertilization effect of elevated CO$_
 
 Understanding process-based models' responses to important drivers are thus critical to improve future projections of agricultural productivity.
 The Global Gridded Crop Model Intercomparison (GGCMI) of AgMIP \citep{Elliott2015} has thus designed a 2nd phase (\textit{Phase II}) with a focus on models' response to changes in the most important model drivers: atmospheric carbon dioxide concentrations ([CO$_2$], C),temperature (T), water (W), and nitrogen (N). 
-The CTWN experiment is inspired by AgMIP's Coordinated Climate-Crop Modeling Project \citep[C3MP][]{ruane2014,mcdermid2015agmip} and has been extended by the nitrogen dimension. 
+The CTWN experiment is inspired by AgMIP's Coordinated Climate-Crop Modeling Project \citep[C3MP][]{ruane2014,mcdermid2015agmip} and has been extended by the nitrogen dimension and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
 To account for the importance of adaptation in agricultural production to climate change, a fifth dimension, adaptation (A) has been added to the CTWN experiment. 
 The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adaptation} setting, in which the growing season that is shortened under warming, is regained by adapted crop cultivar choice.
 
-The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment was conducted by a suite of process-based crop models, running across historical conditions perturbed by a set of discrete steps in the four input parameters (CTWN), for both adaptation settings (yes/no). 
-The experimental protocol involves 756 different parameter combinations for each model and crop for the non-adapted and 648 combinations for the adapted setting (does not include T=0), with simulations providing near-global coverage at a half degree spatial resolution. 
-The experiment was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) \citep{Taylor2012, Eyring2016}. 
-The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015agmip} and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
-GGCMI Phase II is designed to allow addressing goals such as understanding where highest-yield regions may shift under climate change; exploring future adaptive management strategies; understanding how interacting input drivers affect crop yield; quantifying uncertainties across models and major drivers; and testing strategies for producing lightweight emulators of process-based models. 
+%The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment was conducted by a suite of process-based crop models, running across historical conditions perturbed by a set of discrete steps in the four input parameters (CTWN), for both adaptation settings (yes/no). 
+%The experimental protocol involves 756 different parameter combinations for each model and crop for the non-adapted and 648 combinations for the adapted setting (does not include T=0), with simulations providing near-global coverage at a half degree spatial resolution. 
+%The experiment was conducted as part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, an international effort conducted under a framework similar to the Climate Model Intercomparison Project (CMIP) \citep{Taylor2012, Eyring2016}. 
+%The GGCMI protocol builds on the AgMIP Coordinated Climate-Crop Modeling Project (C3MP) \citep{ruane2014, mcdermid2015agmip} and contributes to the AgMIP Coordinated Global and Regional Assessments (CGRA) \citep{ruane2018, rosenzweig2018}. 
+%GGCMI Phase II is designed to allow addressing goals such as understanding where highest-yield regions may shift under climate change; exploring future adaptive management strategies; understanding how interacting input drivers affect crop yield; quantifying uncertainties across models and major drivers; and testing strategies for producing lightweight emulators of process-based models. 
 
 In this paper, we describe the GGCMI Phase II model experiments and present initial summary results.
 
 The following sections provide the goals and protocols 
 
-models included and a what levels
+models included and at what levels of participation
 
 Simulation assessment is provided with comparison to FAO yield data at the country level
 
-Finally we show some illustrative 
+Finally we show some selected slices of the simulation output dataset to illustrate spread in model response across some of the input dimension
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -323,7 +327,7 @@ The protocol described above has been implemented by 12 GGCMs which have supplie
 Given the substantial computational requirements for participation in GGCMI Phase II with 756 (A0) + 648 (A1) global 31-year simulations for 5 different crops, we specified different participation tiers to allow submission of smaller sub-sets. 
 These subsets were designed as orthogonal samples across the 4 dimensions of the CTWN space. 
 These are designed by combinations of selected pairs in the CxN space (all 12 vs. 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) and the TxW space:
-\begin{itemize}
+\begin{itemize}s
 \item a \textit{minimum set} with an orthogonal, stratified 9-step sampling (T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20)
 \item a \textit{reduced set} of alternating combinations, which uses different W for even Ts than for odd Ts. For even Ts (i.e. T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4*4, for odd Ts (i.e. T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3*5,
 \item and the \textit{full set} (all 7Tx9W)
