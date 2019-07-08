@@ -190,7 +190,6 @@ The dataset is designed to allow researchers to:
 \vspace{-0.05in}
 
 \subsection{Modeling protocol}
-
 The GGCMI Phase I intercomparison was a relatively limited computational exercise, requiring yield simulations for 19 crops across a total of 310 model-years of historical scenarios, and had the participation of 21 modeling groups.
 The GGCMI Phase II protocol is substantially larger, involving over 1400 individual 30-year scenarios, or over 42,000 model-years; 12 modeling groups nevertheless participated. To reduce the computational load, the GGCMI Phase II protocol reduced the number crops to 5 (maize, rice, soybean, spring wheat, and winter wheat). 
 The reduced set of crops includes the three major global cereals and the major legume and accounts for over 50\% of human calories (in 2016, nearly 3.5 billion tons or 32\% of total global crop production by weight) \citep{FAOSTAT}. This set of major crops has the advantage of  historical yield data at sub-national scale across the globe \citep{Ray2012,iizumi_historical_2014}, and has been frequently used in agricultural analyses \citep[e.g.][]{muller_global_2017,porwollik_spatial_2016}.  % put gratuitous citations here!
@@ -246,6 +245,13 @@ All modeling groups simulate the minimum required coverage, but many provide sim
 \subsection{Harmonization between models}
 
 While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} at XX timescale, and JULES uses a version of ERA-Interim with modified precipitation, the \textcolor{red}{XX what timescale, define acronym} WFDEI \citep{weedon2014wfdei}.  \textcolor{red}{Explain what WFDEI does and how it's constructed. Then a Sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
+
+While the reanalysis products agree in general, some important differences exist. For example, ERAI is approximately 1.5 $^o$K cooler than AgMERRA in the annual means over the historical period than when aggregated over rain-fed rice cultivation area and 1 $^o$K cooler over rain-fed maize cultivation area.
+
+Very small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy \textcolor{red}{I've put these at the end of the subdocs, but it does throw some error...}.
+There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
+Still, these differences are relatively small compared to the deviations used.
+
 
 Growing seasons are standardized across models and assumed identical for rainfed and irrigated scenarios, but vary by crop and by location on the globe. 
 %(with assumptions based on \citet{Sacks2010} and \citet{Portmann2008, Portmann2010})
@@ -908,7 +914,7 @@ All modeling groups simulate the minimum required coverage, but many provide sim
 
 
 \subsection{Harmonization between models}
-While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} at XX timescale, and JULES uses a version of ERA-Interim with modified precipitation, the 3-hour WFDEI \citep{weedon2014wfdei}.  
+While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data or long wave radiation and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} in order to include long-wave, and JULES uses a version of ERA-Interim with modified precipitation, the 3-hour WFDEI \citep{weedon2014wfdei}.  
 
 
 \textcolor{red}{Explain what WFDEI does and how it's constructed. Then a Sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
@@ -916,7 +922,6 @@ While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA histor
 Small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy)
 There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
 These differences are relatively small compared to the pertibations used in the sampling protocol.
-
 
 Growing seasons are standardized across models and assumed identical for rainfed and irrigated scenarios, but vary by crop and by location on the globe. 
 %(with assumptions based on \citet{Sacks2010} and \citet{Portmann2008, Portmann2010})
@@ -941,7 +946,6 @@ and to spring wheat otherwise.
 \textcolor{red}{XX Does that mean that there are only two growing seasons? does the mean monthly T criterion relate to the grid cell climatology over the whole year or to the grid cell climatology only during the growing season? also, why is there a N./S. hemisphere difference?}
 
 %--------- adaptation protocol ------
-
 %The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adaptation} setting, in which %Given that the production of annual crops is continuously changing by making use of new varieties and technologies \citep{olesen2012changes} it is plausible to assume at least some degree of adaptation to new climate conditions. 
 %We thus also include one additional simulation set across the entire CTWN space with just one simple adaptation setting (A), in which we assume that varieties are grown at each temperature level, that maintain the growing season, i.e. that reach maturity at the same time as current varieties under current temperature regimes. 
 %We acknowledge that this is an overly simplistic assumption that does not reflect the range of opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}. 
@@ -956,7 +960,7 @@ allow additional release of plant-avalable nitrogen through mineralization in so
 
 \subsection{Output data products}
 All models in GGCMI Phase II provide 7 mandatory output variables (Table \ref{table:outputs}, bold), if available. For each scenario, 0.5 degree grid cell, and crop, models provide 30-year timeseries of annual crop yields in units of tons ha$^{-1}$ year$^{-1}$, as well as total aboveground biomass yield; the dates of planting, anthesis, and maturity; applied irrigation water in irrigated scenarios; and total evapotranspirtation. \textcolor{red}{Did the models all provide these? Who did not provide all of them? The protocol says "if available". Whose weren't available?}
-  Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text}.
+Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text}.
 Participating modeling groups provided between XX and XX of these optional variables. Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses. \textcolor{red{}{which models did this?}
 
 \begin{table}[]
