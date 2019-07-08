@@ -198,7 +198,11 @@ To provide some evaluation of the skill of the process-based models used, we rep
 
 \subsubsection{Input data and harmonization}
 
-In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (JULES and PROMET) require sub-daily input data and use their own alternative baseline climate inputs (WFDEI \citep{weedon2014wfdei} and ERA-Interim \citep{dee2011era}, respectively). 
+In most cases, historical daily climate inputs are taken from the 0.5 degree NASA AgMERRA daily gridded re-analysis product specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}, but two models (JULES and PROMET) require sub-daily input data and use their own alternative baseline climate inputs (WFDEI \citep{weedon2014wfdei} and ERA-Interim \citep{dee2011era}, respectively).
+The models using WFDEI use the precipitation data set that is bias-corrected against the CRU data set \citep{weedon2014wfdei}.
+Very small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy \textcolor{red}{I've put these at the end of the subdocs, but it does throw some error...}.
+There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
+Still, these differences are relatively small compared to the deviations used.
 
 Temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature time series for each grid cell.
 Precipitation perturbations are applied as fractional changes at the grid cell level, and [CO$_2$] and nitrogen levels are specified as discrete values applied uniformly over all grid cells. 
