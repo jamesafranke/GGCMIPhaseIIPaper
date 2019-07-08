@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.13)  11 MAY 2019 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.13)  8 JUL 2019 16:18
 entering extended mode
 **./supdoc.tex
 (supdoc.tex
@@ -1056,146 +1056,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 [10
 
  <./s_wheat_baseline.png>]
-<s_feature_selection.png, id=72, 708.8884pt x 272.0564pt>
-File: s_feature_selection.png Graphic file (type png)
-<use s_feature_selection.png>
-Package pdftex.def Info: s_feature_selection.png  used on input line 251.
-(pdftex.def)             Requested size: 469.75502pt x 180.28424pt.
+<temperatures_4crops_totalarea.pdf, id=72, 578.16pt x 578.16pt>
+File: temperatures_4crops_totalarea.pdf Graphic file (type pdf)
+<use temperatures_4crops_totalarea.pdf>
+Package pdftex.def Info: temperatures_4crops_totalarea.pdf  used on input line 
+250.
+(pdftex.def)             Requested size: 469.75502pt x 469.75385pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-[11
-
- <./s_feature_selection.png>]
-<s_temp.png, id=78, 4516.875pt x 4516.875pt>
-File: s_temp.png Graphic file (type png)
-<use s_temp.png>
-Package pdftex.def Info: s_temp.png  used on input line 260.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[12
+<precip_4crops_totalarea.pdf, id=73, 578.16pt x 578.16pt>
+File: precip_4crops_totalarea.pdf Graphic file (type pdf)
+<use precip_4crops_totalarea.pdf>
+Package pdftex.def Info: precip_4crops_totalarea.pdf  used on input line 257.
+(pdftex.def)             Requested size: 469.75502pt x 469.75385pt.
 
- <./s_temp.png>]
-<s_water.png, id=83, 4516.875pt x 4516.875pt>
-File: s_water.png Graphic file (type png)
-<use s_water.png>
-Package pdftex.def Info: s_water.png  used on input line 269.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
-
-[13
-
- <./s_water.png>]
-<s_carbon.png, id=89, 4516.875pt x 4516.875pt>
-File: s_carbon.png Graphic file (type png)
-<use s_carbon.png>
-Package pdftex.def Info: s_carbon.png  used on input line 277.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-[14
-
- <./s_carbon.png>]
-<s_nitrogen.png, id=94, 4516.875pt x 4516.875pt>
-File: s_nitrogen.png Graphic file (type png)
-<use s_nitrogen.png>
-Package pdftex.def Info: s_nitrogen.png  used on input line 285.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-[15
-
- <./s_nitrogen.png>]
-
-LaTeX Warning: File `em_CTWN_all_crops.png' not found on input line 293.
-
-
-! Package pdftex.def Error: File `em_CTWN_all_crops.png' not found: using draft
- setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.293 ...[width=\textwidth]{em_CTWN_all_crops.png}
-                                                  \\
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
- []
-
-[16
-
-]
-<s_em_err_JULES.png, id=103, 266.09814pt x 559.94797pt>
-File: s_em_err_JULES.png Graphic file (type png)
-<use s_em_err_JULES.png>
-Package pdftex.def Info: s_em_err_JULES.png  used on input line 314.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_em_err_PROMET.png, id=104, 266.09814pt x 559.94797pt>
-File: s_em_err_PROMET.png Graphic file (type png)
-<use s_em_err_PROMET.png>
-Package pdftex.def Info: s_em_err_PROMET.png  used on input line 322.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_error_360_total.png, id=105, 2258.4375pt x 4968.5625pt>
-File: s_error_360_total.png Graphic file (type png)
-<use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png  used on input line 333.
-(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
-<s_error_810.png, id=106, 2258.4375pt x 4968.5625pt>
-File: s_error_810.png Graphic file (type png)
-<use s_error_810.png>
-Package pdftex.def Info: s_error_810.png  used on input line 342.
-(pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17
+)
+! Emergency stop.
+<*> ./supdoc.tex
+                
+*** (job aborted, no legal \end found)
 
- <./s_em_err_JULES.png> <./s_em_err_PROMET.png>] [18 <./s_error_360_total.png> 
-<./s_error_810.png>] (supdoc.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 17727 strings out of 492946
- 339809 string characters out of 3135518
- 362897 words of memory out of 3000000
- 21423 multiletter control sequences out of 15000+200000
- 541315 words of font info for 60 fonts, out of 3000000 for 9000
+ 17666 strings out of 492946
+ 338934 string characters out of 3135518
+ 361541 words of memory out of 3000000
+ 21377 multiletter control sequences out of 15000+200000
+ 539294 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,63p,1329b,606s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on supdoc.pdf (18 pages, 17167470 bytes).
-PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 41i,8n,63p,690b,606s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
