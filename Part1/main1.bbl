@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{76}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -120,6 +120,10 @@ Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
   R.~J., and Taylor, K.~E.: Overview of the Coupled Model Intercomparison
   Project Phase 6 (CMIP6) experimental design and organization, Geoscientific
   Model Development, 9, 1937--1958, \doi{10.5194/gmdd-8-10539-2015}, 2016.
+
+\bibitem[{{FAO/IIASA}(2011)}]{gaez}
+{FAO/IIASA}: {G}lobal {A}gro-ecological {Z}ones and {FAO-GAEZ} {D}ata
+  {P}ortal({GAEZ} v3.0), \urlprefix\url{http://www.gaez.iiasa.ac.at/}, 2011.
 
 \bibitem[{Folberth et~al.(2012)Folberth, Gaiser, Abbaspour, Schulin, and
   Yang}]{FOLBERTH201221}
