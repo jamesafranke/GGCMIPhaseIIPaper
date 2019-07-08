@@ -212,19 +212,19 @@ Growing seasons are standardized across models and assumed identical for rainfed
 For example, at present maize is sown in March in Spain, in July in Indonesia, and in December in Namibia. 
 \textcolor{red}{sounds like... Growing seasons are specified in terms of climatological variables, and so the actual length of crop growth alters under climate change. XX need more here.} To roughly account for the importance of adaptation in agricultural production, the GGCMI Phase II protocol includes two sets of experiments that sample across planting strategies. The first set (``A0'', where A denotes ``adaptation'') involves growing seasons as specified by the data sources below, which generally result in shorter growing seasons in warmer scenarios. The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. These simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at the same time as do current varieties under the current temperature regime. This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields.
 
-Growing seasons for maize, rice, and soybean are taken from the SAGE \textcolor{define acronym} crop calendar \citep{Sacks2010} and are identical to those used in GGCMI Phase I \citep{Elliott2015}.
+Growing seasons for maize, rice, and soybean are taken from the SAGE \textcolor{red}{define acronym} crop calendar \citep{Sacks2010} and are identical to those used in GGCMI Phase I \citep{Elliott2015}.
 In GGCMI Phase II, we separately treat spring and winter wheat and so must define different growing seasons for each.
 We use the SAGE crop calendar, which separately specifies spring and winter wheat, as the primary source (for \textcolor{red}{XX\% of grid cells}. In the remaning areas where no SAGE information is available, we turn to, in order of preference, the MIRCA2000 crop calendar \citep{Portmann2010} and to simulated LPJmL growing seasons \citep{waha2012climate}.  These datasets each provide several options for wheat growing season for each grid cell, but do not label them as spring or winter wheat. We assign a growing season to each wheat type for each location based on its baseline climate conditions. 
 A growing seasons is assigned to winter wheat if all of the following hold:
 % below requires \usepackage{enumitem}
-\begin{itemize}[noitemsep]
-\item the mean monthly temperature is below freezing point (<0$^\circ$C) at most for 5 months per year
+\begin{itemize} %[noitemsep]
+\item the mean monthly temperature is below freezing point (<0$^\circ$C) at most for 5 months per year 
 \item the coldest 3 months of a year are below 10$^\circ$C
-\item the season start date fits the criteria that  
+\item the season start date fits the criteria that
 	\begin{itemize} 
 		\item if in the N.\ hemisphere, it is after the warmest \textit{or} before the coldest month of the year 
-		\item if in the S.\ hemisphere, it is after the warmest \textit{and} before the coldest month of the year
-         \end{itemize}
+		\item if in the S.\ hemisphere, it is after the warmest \textit{and} before the coldest month of the year 
+    \end{itemize}
 \end{itemize}
 and to spring wheat otherwise. 
 \textcolor{red}{XX Does that mean that there are only two growing seasons? does the mean monthly T criterion relate to the grid cell climatology over the whole year or to the grid cell climatology only during the growing season? also, why is there a N./S. hemisphere difference?}
@@ -246,8 +246,8 @@ allow additional release of plant-avalable nitrogen through mineralization in so
 
 \subsection{Output data products}
 All models in GGCMI Phase II provide 7 mandatory output variables (Table \ref{table:outputs}, bold), if available. For each scenario, 0.5 degree grid cell, and crop, models provide 30-year timeseries of annual crop yields in units of tons ha$^{-1}$ year$^{-1}$, as well as total aboveground biomass yield; the dates of planting, anthesis, and maturity; applied irrigation water in irrigated scenarios; and total evapotranspirtation. \textcolor{red}{Did the models all provide these? Who did not provide all of them? The protocol says "if available". Whose weren't available?}
-  Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text}.
-Participating modeling groups provided between XX and XX of these optional variables. Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses. \textcolor{red{}{which models did this?}
+  Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text).
+Participating modeling groups provided between XX and XX of these optional variables. Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses. \textcolor{red}{which models did this?}
 
 \begin{table}[]
 \caption{Output variables requested per crop in the GGCMI Phase II protocol. Items in \textbf{bold} are mandatory, if available in that model.}
@@ -318,10 +318,10 @@ These subsets were designed as alternate samples across the 4 dimensions of the 
 with \textit{full} (12) and \textit{low} (4) options for the C $\times$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\times$ W variables (described below). All participating modeling groups provided identical coverage of the CTWN parameter space for rainfed and irrigated scenarios, and for scenarios with and without adpatation (A0 and A1). \textcolor{red}{check.} 
 The different participation levels are defined by combining the CxN sets with the TxW sets:
 \begin{itemize}
-\item \textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)
-\item \textbf{high}: 362 simulations (all 12 CxN combinations * \textit{reduced} TxW set of 31 combinations)
-\item \textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations * \textit{reduced} TxW set of 31 combinations)
-\item \textbf{low}: 36 simulations (\textit{low} 4 CxN combinations * \textit{minimum} TxW set of 9 combinations)
+\item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
+\item{\textbf{high}: 362 simulations (all 12 CxN combinations * \textit{reduced} TxW set of 31 combinations)}
+\item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations * \textit{reduced} TxW set of 31 combinations)}
+\item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations * \textit{minimum} TxW set of 9 combinations)}
 \end{itemize}
 \textcolor{red}{Why are the A1 simulations only 658 in total?}
 
@@ -329,14 +329,14 @@ Of the 12 models submitting data, 6 followed the \textit{full} protocol; these a
 
 The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specifiy  
 \begin{itemize}
-\textit{full} as 12 pairs, with 3 C values (360, 660, 810 ppm) and 4 N (10, 60, XX, 200) \textcolor{red}{units})
-\textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) 
+\item \textit{full} as 12 pairs, with 3 C values (360, 660, 810 ppm) and 4 N (10, 60, XX, 200) \textcolor{red}{units})
+\item \textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) 
 \end{itemize}
 		
 For the	TxW space we specify:
 \begin{itemize}
 \item \textit{full} as all 7 T levels and 9W levels.
-\item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot#$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
+\item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
 \item \textit{minimum} as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
 	% with an orthogonal, stratified 9-step sampling  XX didn't understand this
 \end{itemize}
