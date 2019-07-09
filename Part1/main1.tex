@@ -76,8 +76,9 @@
 Concerns about food security under climate change motivate efforts to better understand future changes in crop yields.  
 Process-based crop models, which represent plant physiological processes, are necessary tools for this purpose since they allow representing future climate and management conditions not sampled in the historical record and new locations where cultivation may shift. 
 However, process-based crop models  differ in many critical details, and their responses to different interacting factors remain only poorly understood. 
-The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment, an activity of the Agricultural Model Intercomparison and Improvement Project (AgMIP), is designed to provide a systematic parameter sweep across critical interacting factors, to allow both evaluating model behavior and emulating their responses in impact assement tools.
-In this paper we describe the GGCMI Phase II experimental protocol and its simulation data archive. Twelve crop models simulate five crops in simulations run with systematic uniform perturbations of historical climate, varying CO$_2$, temperature, precipitation, and applied nitrogen (``CTWN'') for rainfed and irrigated agriculture.
+The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment, an activity of the Agricultural Model Intercomparison and Improvement Project (AgMIP), is designed to provide a systematic parameter sweep across critical interacting factors, to allow both evaluating model behavior and emulating their responses in impact assessment tools.
+In this paper we describe the GGCMI Phase II experimental protocol and its simulation data archive. 
+Twelve crop models simulate five crops in simulations run with systematic uniform perturbations of historical climate, varying CO$_2$, temperature, precipitation, and applied nitrogen (``CTWN'') for rainfed and irrigated agriculture as well as simple growing season adaptation.
 We also show some simulation results to illustrate potential uses of the GGCMI Phase II archive and general characteristics of the simulations. 
 For example, modeled yields show robust decreases to warmer temperatures in almost all regions, with a nonlinear dependence that means yields in warmer baseline locations have greater temperature sensitivity. 
 Inter-model uncertainty is qualitatively similar across all the four input dimensions, but is highest in high-latitude regions where crops may be grown in the future.
@@ -93,9 +94,7 @@ Multiple studies using different crop or climate models concur in projecting sha
 Although forecasts of future yields reductions can be made with simple statistical models based on regressions in historical weather data, process-based models, which simulate the process of photosynthesis and the biology and phenology of individual crops, play a critical role in assessing the impacts of climate change.
 
 Process-based models are necessary for understanding crop yields in novel conditions not included in historical data, including higher [CO$_2$] levels, out-of-sample combinations of rainfall and temperature, cultivation in areas where crops are not currently grown, and differing management practices \citep[e.g.][]{pugh_climate_2016, Roberts2017,minoli2019modelling}. Process-based models have therefore been widely used in studies on future food security \citep{wheeler2013climate}, options for climate mitigation \citep{muller2015} and adaptation \citep{challinor2018improving}, and future sustainable development \citep{humpenoder2018large}.
-Process-based models also allow the globally gridded simulations needed for understanding 
-the global dynamics of agricultural trade, including  cultivation area changes and crop selection switching under climate change  \citep{rosenzweig2018,ruane2018}. These global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}.
-Global crop model experiments are therefore needed for systematic assessments \citep{muller_global_2017}.
+Process-based models also allow the globally gridded simulations needed for understanding  the global dynamics of agricultural trade, including  cultivation area changes and crop selection switching under climate change  \citep{rosenzweig2018,ruane2018}, because global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}, global crop model experiments are needed for systematic climate change assessments \citep{muller_global_2017}.
 
 Modeling crop responses continues however to be challenging, as crop growth is a function of complex interactions between climate inputs and management practices \citep{Boote13,rotter2011}. 
 Models tend to agree broadly in major response patterns, including a reasonable representation of the spatial pattern in historical yields of major crops \citep[e.g.][]{Elliott2015, muller_global_2017} and projections of shifts in yield under future climate scenarios. 
@@ -153,16 +152,16 @@ The reduced set of crops includes the three major global cereals and the major l
 
 The Phase II protocol involves a suite of uniform perturbations from a historical weather scenario. 
 The baseline climate scenario for GGCMI Phase II is one of the weather products used in Phase I, daily climate inputs for the years period 1980-2010 from the 0.5 degree NASA AgMERRA (``Agricultural''-modified Modern Era Retrospective analysis for Research and Applications) gridded re-analysis product. AgMERRA is specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}. 
-The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for [CO$_2$], and 3 for applied nitrogen, for a total of 756 simulations, 672 for rainfed agriculture and additional 84 for irrigated (Table \ref{table:inputs}).  For irrigated simulations, models are set of eliminate all water stress, with no limitations in water supply. 
+The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for [CO$_2$], and 3 for applied nitrogen, for a total of 756 simulations, 672 for rainfed agriculture and additional 84 for irrigated (Table \ref{table:inputs}).  For irrigated simulations, models are set to eliminate all water stress, with no limitations in water supply. 
 Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to end of 2100) under business-as-usual emissions. 
 The resulting GGCMI Phase II dataset therefore captures the distribution of crop responses over the space of future potential climate conditions.
 
 \begin{table}[t]
-\caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
+\caption{GGCMI Phase II input parameter levels for each dimension. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' or historical level for each dimension. Adaptation dimension (A1) repeats all (A0) simulations except the growing season in held fixed. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
 \label{table:inputs} 
     \begin{tabular}{lcc} 
         \tophline \vspace{1mm}
-        \textbf{Input variable} & \textbf{Tested range} & \textbf{Unit} \\ \middlehline \vspace{1mm}
+        \textbf{Input variable} & \textbf{Simulation input values} & \textbf{Unit} \\ \middlehline \vspace{1mm}
         [CO$_2$] (C) & \textbf{360}, 510, 660, 810 & ppm\\ \middlehline \vspace{1mm}
         Temperature (T) & -1, \textbf{0}, 1, 2, 3, 4, 6 & $^{\circ}$C\\ \middlehline \vspace{1mm}
         Precipitation (W) & -50, -30, -20, -10, \textbf{0}, & \% \\
@@ -186,15 +185,15 @@ Selection criterion involve a combination of soil suitability indices at 10 arc-
 % CITATION (downloaded from www.gaez.iiasa.ac.at/). 
 Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the IIASA (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
-All modeling groups simulate the minimum required coverage, but many provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia.
+All modeling groups simulate the minimum required coverage, but some provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia.
 
 \subsection{Harmonization between models}
 
-While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data or longwave radiation and use alternative baseline climate inputs. 
-PROMET uses the ERA-Interim reanalysis \citep{dee2011era} in order to incorporate longwave radiation, and JULES uses a version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} in which the ERAI is adjusted following the procedures used on the WATCH hydrological dataset, improving the precipitation.
-Small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy)
-There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
-However, these differences are relatively small compared to the perturbations tested in the protocol.
+While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require modified baseline climate inputs.
+PROMET uses the ERA-Interim reanalysis for all baseline climate inputs \citep{dee2011era} in order to additionally incorporate longwave radiation into the model. JULES requires sub-daily inputs and so uses a version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} in which the ERA-Interim data is adjusted following the procedures used on the WATCH hydrological dataset, improving the precipitation.
+Small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas.
+There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation (Figures Sxx and Syy).
+However, these differences are still relatively small compared to the perturbations tested in the protocol.
 
 %\textcolor{red}{Explain what WFDEI does and how it's constructed. Then a sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
 
@@ -203,8 +202,8 @@ For example, at present maize is sown in March in Spain, in July in Indonesia, a
 %\textcolor{red}{sounds like... Growing seasons are specified in terms of climatological variables, and so the actual length of crop growth alters under climate change. XX need more here.} 
 To roughly account for the importance of adaptation in agricultural production, the GGCMI Phase II protocol includes two sets of experiments that sample across planting strategies. 
 The first set (``A0'', where A denotes ``adaptation'') involves growing seasons as specified by the data sources below, which generally result in shorter growing seasons in warmer scenarios. 
-The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. T
-hese simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at the same time as do current varieties under the current temperature regime. 
+The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. 
+These simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at the same time as do current varieties under the current temperature regime. 
 This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields.
 
 Growing seasons for maize, rice, and soybean are taken from the SAGE (Center for Sustainability and the Global Environment, University of Wisconsin) crop calendar \citep{Sacks2010} and are identical to those used in GGCMI Phase I \citep{Elliott2015}.
