@@ -140,7 +140,7 @@ The dataset is designed to allow researchers to:
 \subsection{Modeling protocol}
 \begin{figure}[ht]
 \centering
-   \includegraphics[width=8.3cm]{figures/croparea.png}
+   \includegraphics[width=7cm]{figures/croparea.png}
    \caption{Presently cultivated area for rainfed crops. Blue indicates grid cells with more that 20,000 hectares ($\sim$10\% of an equatorial grid cell). 
    Gray contour shows area with more that 10 hectares cultivated. Cultivated areas for maize, rice, and soybean are taken from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. 
    Areas for winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing period; see text for details.  For analogous figure of irrigated crops, see Figure S1.}
@@ -156,7 +156,6 @@ The baseline climate scenario for GGCMI Phase II is one of the weather products 
 The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for [CO$_2$], and 3 for applied nitrogen, for a total of 756 simulations, 672 for rainfed agriculture and additional 84 for irrigated (Table \ref{table:inputs}).  For irrigated simulations, models are set of eliminate all water stress, with no limitations in water supply. 
 Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to end of 2100) under business-as-usual emissions. 
 The resulting GGCMI Phase II dataset therefore captures the distribution of crop responses over the space of future potential climate conditions.
-
 
 \begin{table}[t]
 \caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
@@ -189,30 +188,30 @@ Soil suitability indices measure excess salt, oxygen availability, rooting condi
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
 All modeling groups simulate the minimum required coverage, but many provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia.
 
-%--------- adaptation protocol ------
-%The {A} dimension only has two elements, namely \textit{no adaptation} and one \textit{adaptation} setting, in which %Given that the production of annual crops is continuously changing by making use of new varieties and technologies \citep{olesen2012changes} it is plausible to assume at least some degree of adaptation to new climate conditions. 
-%We thus also include one additional simulation set across the entire CTWN space with just one simple adaptation setting (A), in which we assume that varieties are grown at each temperature level, that maintain the growing season, i.e. that reach maturity at the same time as current varieties under current temperature regimes. 
-%We acknowledge that this is an overly simplistic assumption that does not reflect the range of opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}. 
-%Still, this setting allows to demonstrate the role of adaptation and is easy to integrate into the modeling protocol as growing seasons have to be harmonized across groups anyway.
-
 \subsection{Harmonization between models}
 
-While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} at XX timescale, and JULES uses a version of ERA-Interim with modified precipitation, the 3-hour WFDEI \citep{weedon2014wfdei}. 
- \textcolor{red}{Explain what WFDEI does and how it's constructed. Then a sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
-
-While the reanalysis products agree in general, some important differences exist. For example, ERAI is approximately 1.5 $^o$K cooler than AgMERRA in the annual means over the historical period than when aggregated over rain-fed rice cultivation area and 1 $^o$K cooler over rain-fed maize cultivation area.
-
-Very small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy)
+While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data or longwave radiation and use alternative baseline climate inputs. 
+PROMET uses the ERA-Interim reanalysis \citep{dee2011era} in order to incorporate longwave radiation, and JULES uses a version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} in which the ERAI is adjusted following the procedures used on the WATCH hydrological dataset, improving the precipitation.
+Small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy)
 There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
-Still, these differences are relatively small compared to the deviations used.
+However, these differences are relatively small compared to the perturbations tested in the protocol.
+
+%\textcolor{red}{Explain what WFDEI does and how it's constructed. Then a sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
 
 Growing seasons are standardized across models and assumed identical for rainfed and irrigated scenarios, but vary by crop and by location on the globe. 
 For example, at present maize is sown in March in Spain, in July in Indonesia, and in December in Namibia. 
-\textcolor{red}{sounds like... Growing seasons are specified in terms of climatological variables, and so the actual length of crop growth alters under climate change. XX need more here.} To roughly account for the importance of adaptation in agricultural production, the GGCMI Phase II protocol includes two sets of experiments that sample across planting strategies. The first set (``A0'', where A denotes ``adaptation'') involves growing seasons as specified by the data sources below, which generally result in shorter growing seasons in warmer scenarios. The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. These simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at the same time as do current varieties under the current temperature regime. This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields.
+%\textcolor{red}{sounds like... Growing seasons are specified in terms of climatological variables, and so the actual length of crop growth alters under climate change. XX need more here.} 
+To roughly account for the importance of adaptation in agricultural production, the GGCMI Phase II protocol includes two sets of experiments that sample across planting strategies. 
+The first set (``A0'', where A denotes ``adaptation'') involves growing seasons as specified by the data sources below, which generally result in shorter growing seasons in warmer scenarios. 
+The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. T
+hese simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at the same time as do current varieties under the current temperature regime. 
+This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields.
 
 Growing seasons for maize, rice, and soybean are taken from the SAGE (Center for Sustainability and the Global Environment, University of Wisconsin) crop calendar \citep{Sacks2010} and are identical to those used in GGCMI Phase I \citep{Elliott2015}.
 In GGCMI Phase II, we separately treat spring and winter wheat and so must define different growing seasons for each.
-We use the SAGE crop calendar, which separately specifies spring and winter wheat, as the primary source (for \textcolor{red}{XX\% of grid cells}. In the remaining areas where no SAGE information is available, we turn to, in order of preference, the MIRCA2000 crop calendar \citep{Portmann2010} and to simulated LPJmL growing seasons \citep{waha2012climate}.  These datasets each provide several options for wheat growing season for each grid cell, but do not label them as spring or winter wheat. We assign a growing season to each wheat type for each location based on its baseline climate conditions. 
+We use the SAGE crop calendar, which separately specifies spring and winter wheat, as the primary source (for \textcolor{red}{XX\% of grid cells}. 
+In the remaining areas where no SAGE information is available, we turn to, in order of preference, the MIRCA2000 crop calendar \citep{Portmann2010} and to simulated LPJmL growing seasons \citep{waha2012climate}.  
+These datasets each provide several options for wheat growing season for each grid cell, but do not label them as spring or winter wheat. We assign a growing season to each wheat type for each location based on its baseline climate conditions. 
 A growing seasons is assigned to winter wheat if all of the following hold:
 % below requires \usepackage{enumitem}
 \begin{itemize} %[noitemsep]
@@ -236,16 +235,17 @@ In the GGCMI Phase II protocol, the second fertilization date for winter wheat i
 
 All nutrient stresses are disabled in models other than those related to nitrogen, temperature, and water. 
 For example, model responses to alkalinity, salinity, and non-nitrogen nutrients are all disabled. 
-No other external N inputs are permitted -- that is, there is no atmospheric deposition of nitrogen --  but some models
-allow additional release of plant-available nitrogen through mineralization in soils. 
+No other external N inputs are permitted -- that is, there is no atmospheric deposition of nitrogen --  but some models allow additional release of plant-available nitrogen through mineralization in soils. 
 Soil mineralization is a part of model treatments of soil organic matter and cannot be disabled in some models. 
-\textcolor{red}{Check this, also say how many/which models have this property} 
-
+\textcolor{red}{Which models have this property} 
 
 \subsection{Output data products}
-All models in GGCMI Phase II provide 7 mandatory output variables (Table \ref{table:outputs}, bold), if available. For each scenario, 0.5 degree grid cell, and crop, models provide 30-year timeseries of annual crop yields in units of tons ha$^{-1}$ year$^{-1}$, as well as total aboveground biomass yield; the dates of planting, anthesis, and maturity; applied irrigation water in irrigated scenarios; and total evapotranspirtation. \textcolor{red}{Did the models all provide these? Who did not provide all of them? The protocol says "if available". Whose weren't available?}
+All models in GGCMI Phase II provide 7 mandatory output variables (Table \ref{table:outputs}, bold), if available. 
+For each scenario, 0.5 degree grid cell, and crop, models provide 30-year timeseries of annual crop yields in units of tons ha$^{-1}$ year$^{-1}$, as well as total aboveground biomass yield; the dates of planting, anthesis, and maturity; applied irrigation water in irrigated scenarios; and total evapotranspirtation. 
+Several of the EPIC-family models does not provide the anthesis date.
 Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text).
-Participating modeling groups provided between XX and XX of these optional variables. Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses. \textcolor{red}{which models did this?}
+Participating modeling groups provided between 3 (PEPIC) and 18 (APSIM-UGOE) of these optional variables. 
+%Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses which were supplied by LPJmL, LPJ-GUESS and pDSSAT.
 
 \begin{table}[]
 \caption{Output variables requested per crop in the GGCMI Phase II protocol. Items in \textbf{bold} are mandatory, if available in that model.}
@@ -284,7 +284,7 @@ Maximum LAI                                              & laimax\_<crop>    & m
 \end{tabular}
 \end{table}
 
-All output data is supplied as netCDF version 4 files, each containing values for one variable in a 30-year timeseries associated with a single scenario, for all grid cells. Filenames follow the naming conventions of GGCMI Phase I \citep{Elliott2015}, which themselves are adapted from \textcolor{red}{taken from?} those of ISIMIP \citep{frieler2017assessing}. File names are specified (in small caps) as 
+All output data is supplied as netCDF version 4 files, each containing values for one variable in a 30-year timeseries associated with a single scenario, for all grid cells. Filenames follow the naming conventions of GGCMI Phase I \citep{Elliott2015}, which themselves are taken from those of ISIMIP \citep{frieler2017assessing}. File names are specified (in small caps) as 
 
 $[model]\_[climate]\_hist\_fullharm\_[irrig.scenario]\_[variable]\_[crop]\_global\_annual\_[start-year]\_[end-year].nc4$
 
@@ -293,12 +293,12 @@ All filenames include the identifier $global$ to distinguish them as global mode
 
 Output data is provided on a regular geographic grid, identical for all models. 
 Grid cell centers span latitudes -89.75 to 89.75$^{\circ}$ and longitudes from -179.75 to 179.75$^{\circ}$. 
-Missing values  where no crop growth has been simulated are distinguished from crop failures: a crop failure is reported as zero yield but non-simulated areas (including ocean grid cells) have yields reported as 1.e+20f \textcolor{red}{what is the "f"?}. 
+Missing values  where no crop growth has been simulated are distinguished from crop failures: a crop failure is reported as zero yield but non-simulated areas (including ocean grid cells) have yields reported as 1.e+20f (float). 
 Following NetCDF standards, latitude, longitude and time are included as separate variables in ascending order, with
 units "degrees north", "degrees east", and "growing seasons since YYYY-01-01 00:00:00". YYYY indicates the first year of the timeseries, which is 1980 for AgMERRA \textcolor{red}{and what about the other timeseries? Also, does this contradict the statements below about reporting of years?} 
 
 % ---- XX well-edited up to here, only lightly below  -----------------
-\textcolor{red}{XX Confusing, clarify?} The first entry in the file is the result of the first simulated cropping cycle that is entirely within the given climate input. 
+The first entry in the file is the result of the first simulated cropping cycle that is entirely within the given climate input. 
 For AgMERRA, where the first year provided is 1980, the first harvest record is thus of 1980, when the prescribed sowing and harvest dates are in 1980 (e.g. sowing in March and harvest in September 1980) but is of 1981 if sowing is later in a calendar year than harvest (e.g. sowing in September 1980 and harvest in March 1981). 
 To avoid distortions in harvest events, output files report the sequence of growing periods rather than calendar years. 
 In most cases, this is equivalent, as there is always only one sowing event per calendar year.
@@ -309,8 +309,7 @@ If harvest events are around the end of the calendar year (Dec. 31), reported va
 \label{S:3}
 
 The contributions of the 12 crop models supplying data to the GGCMI Phase II archive are described in Table \ref{table:models}. 
-Modeling groups did not all implement the full protocol described above:
-given the substantial computational requirements, 
+Modeling groups did not all implement the full protocol described above: given the substantial computational requirements, 
 %with 756 (A0) + 648 (A1) global 31-year simulations for 5 different crops, 
 different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
 These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,  % I took out "orthogonal" becuase it sounds like the different subsets are orthogonal to each other, but maybe this is not clear
@@ -506,6 +505,8 @@ Increased [CO$_2$] outweighs the damages caused by 20\% reduced precipitation in
 
 \section{Discussion and Conclusions} 
 \label{S:5}
+
+\textcolor{red}{NEED INTRO SENTENCE}
 %These issues are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
 %Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
 %For these reasons, individual studies must generally re-calibrate models to ensure that short-term predictions reflect current cultivars and management levels. 
