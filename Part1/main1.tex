@@ -198,14 +198,13 @@ All modeling groups simulate the minimum required coverage, but many provide sim
 
 \subsection{Harmonization between models}
 
-While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} at XX timescale, and JULES uses a version of ERA-Interim with modified precipitation, the \textcolor{red}{XX what timescale, define acronym} WFDEI \citep{weedon2014wfdei}.  \textcolor{red}{Explain what WFDEI does and how it's constructed. Then a Sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
+While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate inputs, two models require sub-daily input data and use alternative baseline climate inputs. PROMET uses the ERA-Interim reanalysis \citep{dee2011era} at XX timescale, and JULES uses a version of ERA-Interim with modified precipitation, the \textcolor{red}{XX what timescale, define acronym} WFDEI \citep{weedon2014wfdei}.  \textcolor{red}{Explain what WFDEI does and how it's constructed. Then a sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
 
 While the reanalysis products agree in general, some important differences exist. For example, ERAI is approximately 1.5 $^o$K cooler than AgMERRA in the annual means over the historical period than when aggregated over rain-fed rice cultivation area and 1 $^o$K cooler over rain-fed maize cultivation area.
 
 Very small differences exist in temperature and precipitation levels between AgMERRA and WFDEI for the relevant crop production areas (Figures Sxx and Syy)
 There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation.
 Still, these differences are relatively small compared to the deviations used.
-
 
 Growing seasons are standardized across models and assumed identical for rainfed and irrigated scenarios, but vary by crop and by location on the globe. 
 %(with assumptions based on \citet{Sacks2010} and \citet{Portmann2008, Portmann2010})
@@ -235,7 +234,6 @@ and to spring wheat otherwise.
 %We thus also include one additional simulation set across the entire CTWN space with just one simple adaptation setting (A), in which we assume that varieties are grown at each temperature level, that maintain the growing season, i.e. that reach maturity at the same time as current varieties under current temperature regimes. 
 %We acknowledge that this is an overly simplistic assumption that does not reflect the range of opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}. 
 %Still, this setting allows to demonstrate the role of adaptation and is easy to integrate into the modeling protocol as growing seasons have to be harmonized across groups anyway.
-
 
 Nitrogen application is also standardized in timing across models.  N fertilizer is applied in two doses, as is the norm in actual practice, to reduce losses to the environment. In the GGCMI Phase II protocol, half of the total fertilizer input is applied at sowing and the other half on day 40 after sowing, for all crops except for winter wheat. For winter wheat, in practice the application date for the second N fertilizer application varies according to local temperature, because the length of winter dormancy can vary strongly.  In the GGCMI Phase II protocol, the second fertilization date for winter wheat is set to the middle day of the first month after sowing that has average temperatures above 5$^\circ$C, with a minimum distance to the maturity date of 50 days and to planting of 40 days. \textcolor{red}{What if these criteria disagree with each other? do you take the 50 day / 40 day limit and violate the first criterion?}
 
@@ -353,13 +351,13 @@ All models provide the same set of simulations across all modeled crops, but som
         {\textbf{APSIM-UGOE},   \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
         {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252 / 216}\\ \middlehline
         {\textbf{EPIC-IIASA},   \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
-        {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {765 / 648}\\ \middlehline
+        {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
         {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252 / 0}\\ \middlehline
         {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
         {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756 / 648}\\  \middlehline
         {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
         {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
-        {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
+        {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 756}\\ \middlehline
         {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
         {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
         {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240 | 3378}\\
@@ -459,9 +457,8 @@ Note that in this methodology, simulations of crops with low year-to-year variab
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=15cm]{figures/global_sim_CG.png}
-   \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
-   \includegraphics[width=15cm]{figures/swh_sim_CG_C.png}
+   \includegraphics[width=15cm]{figures/maize_sim_CG_T.png}
+   \includegraphics[width=15cm]{figures/rice_sim_CG_T.png}
    \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}. 
    We show responses of a single crop (rainfed maize) to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
 	Y-axis is fractional change in the regional average climatological potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles, i.e.\ box height is the interquartile range (IQR). 
@@ -470,7 +467,15 @@ Note that in this methodology, simulations of crops with low year-to-year variab
 	Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
 	Outside high-latitude regions ('Cold continental' and `Polar'), models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
 	The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.}
-   \label{fig:globesim}
+   \label{fig:maizerice}
+\end{figure*}
+
+\begin{figure*}[ht]
+\centering
+   \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
+   \includegraphics[width=15cm]{figures/swh_sim_CG_C.png}
+   \caption{Same convention as above except for soy and spring wheat.}
+   \label{fig:soywheat}
 \end{figure*}
 
 Crop models in the GGCMI Phase II ensemble show broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. 
