@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 JUL 2019 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 JUL 2019 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1197,16 +1197,12 @@ LaTeX Warning: Text page 16 contains only floats.
 
 LaTeX Warning: Reference `fig:soyrice' on page 17 undefined on input line 487.
 
-[17 <./figures/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>]
+[17 <./figures/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>] [18]
 
-Package natbib Warning: Citation `Challinor2014' on page 18 undefined on input 
-line 507.
+Package natbib Warning: Citation `JONES2017b' on page 19 undefined on input lin
+e 528.
 
 
-Package natbib Warning: Citation `WHITE2011357' on page 18 undefined on input l
-ine 507.
-
-[18]
 Overfull \hbox (22.52496pt too wide) in paragraph at lines 556--556
 \T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path = %2
 FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _ SEASON . HARM . version
@@ -1265,12 +1261,7 @@ Underfull \hbox (badness 1292) in paragraph at lines 404--409
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[25] [26] [27]
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-) [28]
+[25] [26] [27]) [28]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1286,10 +1277,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
  ) 
 Here is how much of TeX's memory you used:
- 10778 strings out of 492995
- 152391 string characters out of 6132704
- 317804 words of memory out of 5000000
- 13975 multiletter control sequences out of 15000+600000
+ 10777 strings out of 492995
+ 152374 string characters out of 6132704
+ 317803 words of memory out of 5000000
+ 13974 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,2034b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1311,10 +1302,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (28 pages, 6733638 bytes).
+Output written on main1.pdf (28 pages, 6733477 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 611 compressed objects within 7 object streams
+ 679 PDF objects out of 1000 (max. 8388607)
+ 609 compressed objects within 7 object streams
  132 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
