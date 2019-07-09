@@ -307,13 +307,9 @@ If harvest events are around the end of the calendar year (Dec. 31), reported va
 
 \section{Models contributing}
 \label{S:3}
-
 The contributions of the 12 crop models supplying data to the GGCMI Phase II archive are described in Table \ref{table:models}. 
-Modeling groups did not all implement the full protocol described above: given the substantial computational requirements, 
-%with 756 (A0) + 648 (A1) global 31-year simulations for 5 different crops, 
-different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
-These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,  % I took out "orthogonal" becuase it sounds like the different subsets are orthogonal to each other, but maybe this is not clear
-with \textit{full} (12) and \textit{low} (4) options for the C $\times$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\times$ W variables (described below). All participating modeling groups provided identical coverage of the CTWN parameter space for rainfed and irrigated scenarios, and for scenarios with and without adpatation (A0 and A1). \textcolor{red}{check.} 
+Modeling groups did not all implement the full protocol described above in terms of all simulation levels. Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
+These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with \textit{full} (12) and \textit{low} (4) options for the C $\times$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\times$ W variables (described below). All participating modeling groups provided identical coverage of the CTWN parameter space for rainfed and irrigated scenarios, and for scenarios with and without adpatation (A0 and A1).
 The different participation levels are defined by combining the CxN sets with the TxW sets:
 \begin{itemize}
 \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
@@ -321,13 +317,13 @@ The different participation levels are defined by combining the CxN sets with th
 \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations * \textit{reduced} TxW set of 31 combinations)}
 \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations * \textit{minimum} TxW set of 9 combinations)}
 \end{itemize}
-\textcolor{red}{Why are the A1 simulations only 658 in total?}
+\textcolor{red}{Why are the A1 simulations only 658 in total? Why did some people do less?? Some models have the 756 in the A1 folder}
 
-Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with italic text in Table \ref{table:models}. However, note that two of these models (CARAIB and JULES) intrinsically cannot represent nitrogen effects and so do not sample over the the nitrogen dimension at all. 2 models followed \textit{high} with minor modifications (XX adding an additional T level and XX  omitting an N level). 1 model (XX) followed \textit{mid} but included an additional C level. 3 models approximately folllowed \textit{low} with XX and XX providing some additional levels and ORCHIDEE-crop omitting XX.  
+Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with italic text in Table \ref{table:models}. However, note that two of these models (CARAIB and JULES) intrinsically cannot represent nitrogen effects and so do not sample over the the nitrogen dimension at all. 2 models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 1 model (PEPIC) followed \textit{mid} but included an additional C level. 3 models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional levels and ORCHIDEE-crop omitting a TxW combination.  
 
-The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specifiy  
+The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
 \begin{itemize}
-\item \textit{full} as 12 pairs, with 3 C values (360, 660, 810 ppm) and 4 N (10, 60, XX, 200) \textcolor{red}{units})
+\item \textit{full} as 12 pairs, with 4 C values (360, 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$ ))
 \item \textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200) 
 \end{itemize}
 		
@@ -336,9 +332,7 @@ For the	TxW space we specify:
 \item \textit{full} as all 7 T levels and 9W levels.
 \item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
 \item \textit{minimum} as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
-	% with an orthogonal, stratified 9-step sampling  XX didn't understand this
 \end{itemize}
-
 
 \begin{table*}[t]
 \caption{Models included in GGCMI Phase II and the number of C, T, W, and N simulations that each performs, with 756 as the maximum for A0 (no adaptation) and 648 as the maximum for A1 (maintaining growing season adaptation). 
@@ -349,15 +343,15 @@ All models provide the same set of simulations across all modeled crops, but som
         \tophline
 		{\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
         {\textbf{APSIM-UGOE},   \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
-        {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {252 / 216}\\ \middlehline
+        {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
         {\textbf{EPIC-IIASA},   \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
-        {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
-        {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {252 / 0}\\ \middlehline
+        {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+        {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
         {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
-        {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {756 / 648}\\  \middlehline
-        {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 648}\\ \middlehline
+        {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
+        {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
         {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
-        {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {756 / 756}\\ \middlehline
+        {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 756}}\\ \middlehline
         {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
         {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
         {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240 | 3378}\\
