@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 JUL 2019 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 JUL 2019 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main1.tex
-(./main1.tex
+**/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex
+(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./copernicus.cls
@@ -1084,32 +1084,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 89.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 85.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 89.
+(Font)              scaled to size 8.54997pt on input line 85.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 152.
  [4] [5]
 <figures/croparea.png, id=220, 262.9022pt x 492.0784pt>
 File: figures/croparea.png Graphic file (type png)
 
 <use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 191.
+Package pdftex.def Info: figures/croparea.png used on input line 184.
 (pdftex.def)             Requested size: 236.15796pt x 442.03302pt.
  [6 <./figures/croparea.png>] [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 250.
+               Default added (so using `tbp') on input line 243.
 
 [8] [9]
-Overfull \hbox (1.85802pt too wide) in paragraph at lines 289--290
+Overfull \hbox (1.85802pt too wide) in paragraph at lines 282--283
 []$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 model\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 
 climate\OT1/cmr/m/n/10 ][]\OML/cmm/m/it/10 hist[]fullharm[]\OT1/cmr/m/n/10 [\OM
 L/cmm/m/it/10 irrig:scenario\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 variable\OT1/c
@@ -1120,17 +1120,17 @@ mm/m/it/10 year\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :nc\OT1/cmr/m/n/10 4$
  []
 
 [10]
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 350--350
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 343--343
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []|\T1/ptm/b/n/9 Spring
  []
 
@@ -1138,7 +1138,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--350
 File: figures/Agformet_validation.png Graphic file (type png)
 
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 392
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 385
 .
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
  [12]
@@ -1147,42 +1147,42 @@ File: figures/baselinecomp_yield_3.png Graphic file (type png)
 
 <use figures/baselinecomp_yield_3.png>
 Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 43
-8.
+1.
 (pdftex.def)             Requested size: 398.33858pt x 262.43417pt.
 
 <figures/testhighlatskde.png, id=386, 506.8536pt x 396.5214pt>
 File: figures/testhighlatskde.png Graphic file (type png)
 
 <use figures/testhighlatskde.png>
-Package pdftex.def Info: figures/testhighlatskde.png used on input line 453.
+Package pdftex.def Info: figures/testhighlatskde.png used on input line 446.
 (pdftex.def)             Requested size: 236.15796pt x 184.7496pt.
 
 <figures/maize_sim_CG_T.png, id=387, 4516.875pt x 1806.75pt>
 File: figures/maize_sim_CG_T.png Graphic file (type png)
 
 <use figures/maize_sim_CG_T.png>
-Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 460.
+Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 453.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
 <figures/rice_sim_CG_T.png, id=388, 4516.875pt x 1806.75pt>
 File: figures/rice_sim_CG_T.png Graphic file (type png)
 
 <use figures/rice_sim_CG_T.png>
-Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 461.
+Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 454.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/soy_sim_CG_W.png, id=395, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_W.png, id=393, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_W.png Graphic file (type png)
 
 <use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 475.
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 470.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/swh_sim_CG_C.png, id=396, 4516.875pt x 1806.75pt>
+<figures/swh_sim_CG_C.png, id=394, 4516.875pt x 1806.75pt>
 File: figures/swh_sim_CG_C.png Graphic file (type png)
 
 <use figures/swh_sim_CG_C.png>
-Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 476.
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 471.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
  [13]
 
@@ -1220,14 +1220,14 @@ s/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>]
 LaTeX Warning: Reference `fig:globesim' on page 19 undefined on input line 542.
 
 
-
+[19]
 Overfull \hbox (22.52496pt too wide) in paragraph at lines 565--565
 \T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path = %2
 FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _ SEASON . HARM . version
 1 .
  []
 
-[19]
+
 Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []|\T1/ptm/b/n/9 Winter
  []
@@ -1289,16 +1289,19 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 618.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
  ) 
 Here is how much of TeX's memory you used:
- 10777 strings out of 492995
- 152232 string characters out of 6132704
- 322118 words of memory out of 5000000
- 13975 multiletter control sequences out of 15000+600000
+ 10776 strings out of 492995
+ 152380 string characters out of 6132704
+ 324081 words of memory out of 5000000
+ 13973 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1903b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,2052b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1317,10 +1320,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (28 pages, 6732766 bytes).
+Output written on main1.pdf (28 pages, 6733493 bytes).
 PDF statistics:
- 674 PDF objects out of 1000 (max. 8388607)
- 604 compressed objects within 7 object streams
+ 673 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
  132 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
