@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -266,6 +266,16 @@ Jones, J., Hoogenboom, G., Porter, C., Boote, K., Batchelor, W., Hunt, L.,
   Wilkens, P., Singh, U., Gijsman, A., and Ritchie, J.: The {DSSAT} cropping
   system model, European Journal of Agronomy, 18, 235 -- 265,
   \doi{10.1016/S1161-0301(02)00107-7}, 2003.
+
+\bibitem[{Jones et~al.(2017)Jones, Antle, Basso, Boote, Conant, Foster,
+  Godfray, Herrero, Howitt, Janssen, Keating, Munoz-Carpena, Porter,
+  Rosenzweig, and Wheeler}]{JONES2017b}
+Jones, J.~W., Antle, J.~M., Basso, B., Boote, K.~J., Conant, R.~T., Foster, I.,
+  Godfray, H. C.~J., Herrero, M., Howitt, R.~E., Janssen, S., Keating, B.~A.,
+  Munoz-Carpena, R., Porter, C.~H., Rosenzweig, C., and Wheeler, T.~R.: Toward
+  a new generation of agricultural system data, models, and knowledge products:
+  State of agricultural systems science, Agricultural Systems, 155, 269 -- 288,
+  \doi{doi.org/10.1016/j.agsy.2016.09.021}, 2017.
 
 \bibitem[{Keating et~al.(2003)Keating, Carberry, Hammer, Probert, Robertson,
   Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes,
