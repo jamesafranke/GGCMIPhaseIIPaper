@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 
-\externaldocument{../PhaseIIPaper/Part1/supdocs/supdoc}
+%\externaldocument{../PhaseIIPaper/Part1/supdocs/supdoc}
 
 \begin{document}
 \title{The GGCMI Phase II experiment: global gridded crop model simulations under uniform changes in CO$_2$, temperature, water, and nitrogen levels (protocol version 1.0)}
@@ -420,7 +420,7 @@ Instead, each model shows near best-in-class performance for at least one locati
 \subsection{Model crop yield responses under CTWN forcing}
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=12cm]{figures/baselinecomp_yield_3.png} 
+   \includegraphics[width=16.5cm]{figures/baselinecomp_yield_3.png} 
   \caption{Illustration of the spatial pattern of potential yields (left) and yield changes (right) in the GGCMI Phase II ensemble, for three major crops: maize, soybean and rice. Left column (a) shows multi-model mean climatological potential yields for the baseline scenario for (top--bottom) rainfed maize, soybean, and rice. 
    Wheat shows a qualitatively similar response, see Figure S16 in the supplemental material. % XX need dynamic references
    White stippling indicates areas where these crops are not currently cultivated. 
@@ -477,14 +477,8 @@ Crop yield changes under climate perturbations also show distinct geographic pat
 In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
 Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes. 
 
-% --- -------------------
-\textcolor{red}{this material is all one paragraph about crop failures -- JF EDIT}
-Larger inter model spread at higher latitudes is due in part to how crop suitability or crop failures differ across models.
-For example, soy yields north of 45$^o$ in the PROMET model are mostly zero in the historical simulations and a relatively evenly distributed between 0 and 4 tons ha$^-1$ in the LPJmL model. 
-Under the warming scenario (T+4K), many grid cells which were previously too cold to grow soy in the PROMET model are now suitable and the LPJmL yields have shifted slightly down the distribution (Figure \ref{fig:highlat}).
-Wheat projections are more uncertain, possibly because simulation calibration is especially important \citep[e.g.][]{Asseng2013}. 
-For wheat see Figure SXX.
-% ------------------------------------------
+The larger inter-model spread in yield projections at higher latitudes evident in (Figure \ref{fig:maizesoybaseline}) is due in part to how crop suitability or crop failures differ across models. In many cases the spread results from differences in the present-day scenario rather than the future one.  For example, soy yields north of 45$^o$ in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^-1$ in LPJmL -- but become more similar in the T+4 scenario (to mean of XX and XX tons ha-1). Warming increases high-latitude soy yields in PROMET as land becomes suitable for cultivation, but yields in LPJmL actually shift down slightly (Figure \ref{fig:highlat}). Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.
+\textcolor{red}{XXX We need to check if this is due to input climate data difference}
 
 We illustrate the across-model spread for selected crops in Figures \ref{fig:maizerice} - \ref{fig:soywheat}, which shows changes in yields across all simulated grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010} for various input dimensions.
 In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 
@@ -495,7 +489,7 @@ The temperature response is qualitatively similar across all crops included in t
 Increased [CO$_2$] boosts yields overall but does little to change the nature of the temperature response for e.g. irrigated rice (Figure \ref{fig:maizerice}, bottom panel).
 Other crops show similar responses to warming, with robust yield losses in warmer locations and high inter-model variance in the `cold continental' regions (Figure SX).
 
-The effects of rainfall changes on yields are also relatively consistent across models (maize: Figure \ref{fig:maizerice}, soybeans: Figure \ref{fig:soyrice}). 
+The effects of rainfall changes on yields are also relatively consistent across models (maize: Figure \ref{fig:maizerice}, soybeans: Figure \ref{fig:soywheat}). 
 Increased rainfall mitigates the negative effect of higher temperatures by counteracting the increased evapo-transpiration to some degree, most strongly in arid regions.
 Decreased rainfall amplifies yield losses and also increases inter-model variance; e.g.\ models agree that the response to decreased water availability is negative in sign but disagree on its magnitude.
 Increased temperature results in a relative flattening of the precipitation change response (Figure \ref{fig:soywheat}, top panel).
