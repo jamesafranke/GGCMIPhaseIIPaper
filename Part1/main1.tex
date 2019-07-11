@@ -156,7 +156,7 @@ The reduced set of crops includes the three major global cereals and the major l
 The Phase II protocol involves a suite of uniform perturbations from a historical weather scenario. 
 The baseline climate scenario for GGCMI Phase II is one of the weather products used in Phase I, daily climate inputs for the years period 1980-2010 from the 0.5 degree NASA AgMERRA (``Agricultural''-modified Modern Era Retrospective analysis for Research and Applications) gridded re-analysis product. AgMERRA is specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}. 
 The experimental protocol consists of 9 levels for precipitation perturbations, 7 for temperature, 4 for [CO$_2$], and 3 for applied nitrogen, for a total of 756 simulations, 672 for rainfed agriculture and additional 84 for irrigated (Table \ref{table:inputs}).  For irrigated simulations, models are set to apply near-perfect irrigation to keeps soils wet throughout the entire growing period, with no limitations in water supply. 
-Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to end of 2100) under business-as-usual emissions. 
+Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to 2100) under business-as-usual emissions. 
 The resulting GGCMI Phase II dataset therefore captures the distribution of crop model responses over the space of future potential climate conditions.
 
 \begin{table}[t]
@@ -192,18 +192,22 @@ All modeling groups simulate the minimum required coverage, but some provide sim
 
 \subsection{Harmonization between models}
 The 12 models included in GGCMI Phase II are all process-based crop models that are widely used in impacts assessments (Table \ref{table:models}).
-Although some models share a common base (e.g.\ the LPJ family or the EPIC family of models), they have subsequently developed independently.  Wherever possible, the GGCMI Phase II protocol harmonizes inputs, but
+Although some models share a common base (e.g.\ the LPJ family or the EPIC family of models), they have subsequently developed independently.  
+Wherever possible, the GGCMI Phase II protocol harmonizes inputs, but
 differences in model structure mean that several key factors cannot be fully standardized across the experiment. These include soil treatment (which affects soil organic matter and carry-over effects of soil moisture across growing years) and baseline climate inputs.  
 
 %Not all modeling teams provide the full simulation protocol, for instance, CARIAB and JULES do not simulate the nitrogen dimension and some crops are not parameterized in each model (see Table \ref{table:models} for details). 
 
 While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate data product, two models require sub-daily input data and thus use different baseline climate inputs:
 PROMET uses the ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, selecting the WFDEI version in which precipitation is bias-corrected against the CRU TS3.101/TS3.21 precipitation totals\citep{harris_cru_2014}.
-The WFDEI data product differs slightly, ERA-Interim more pronounced from  AgMERRA. Figures \ref{SXX} and \ref{SXX} show temperature and precipitation in the three data products over currently cultivated areas for XX and XX crops. At this aggregation level, temperatures are very similar between data products, ERA-Interim being about 1.0 and 0.3$\circ$C cooler in rice and maize growing areas, respectively. For precipitation, ERA-Interim is substantially wetter in wheat areas (+60mm year$^{-1}$) and also in some years for rice, maize and soybean areas.
+The WFDEI reanalysis differs slightly from AgMERRA while the ERA-Interim differs more substantially from AgMERRA. 
+Figures \ref{SXX} and \ref{SXX} show temperature and precipitation in the three data products over currently cultivated areas for each crop. At this aggregation level, temperatures are very similar between data products, ERA-Interim being about 1.0 and 0.3$\circ$C cooler in rice and maize growing areas, respectively. 
+For precipitation, ERA-Interim is substantially wetter in wheat areas (+60mm year$^{-1}$) and also in some years for rice, maize and soybean areas.
+These differences are still relatively small compared to the perturbations tested in the protocol.
 %There are some larger differences for ERA-Interim, especially for rice area air temperatures, which are roughly 1K lower and for wheat and maize precipitation (Figures Sxx and Syy).
 %---- NOTE-- XX EJM - doesn't make sense that ERA-Interim differs in temperature from WFDEI since above you said the only different was precipitation
 % WFDEI is a bias-corrected version of ERA-Interim -- in all variables. Hopefully more clear now.
-These differences are still relatively small compared to the perturbations tested in the protocol.
+
 
 %\textcolor{red}{Explain what WFDEI does and how it's constructed. Then a sentence about differences in temp and precip absolutes and variability between these datasets.? Did you check how much this matters to yields? Are you assuming that baseline doesn't matter and you'll still capture changes well?}
 Planting dates and growing season lengths are standardized across models, following the procedure described in \citet{Elliott2015} for the \textit{fullharm} setting. In contrast to GGCMI Phase I \citep{Elliott2015}, we here assume identical growing seasons for rainfed and irrigated scenarios, to allow for direct comparability of simulations along the W dimension, in which irrigation (\textit{W$_{inf}$}) is one element (see Table \ref{table:inputs}). 
@@ -218,7 +222,7 @@ As simulated growing seasons respond to temperatures, these are sensitive to cha
 The first set (``A0'', where 0 denotes ``no adaptation'') involves growing seasons with unmodified, harmonized phenological parameters, which generally result in shorter growing seasons in warmer scenarios. 
 The second set, (``A1'', with adaptation) holds the length of the growing season fixed at that of the baseline climate scenario. 
 For this, modelers had to repeat the baseline calibration of growing seasons length at all temperature levels along the T dimension (Table \ref{table:inputs}).
-Even though CARAIB did not harmonize the growing seasons to GGCMI targest, their ``A1'' simulations follow the same principle, so that phenological parameters are modified to keep growing seasons roughly constant across different warming scenarios.
+Even though CARAIB did not harmonize the growing seasons to GGCMI targets, their ``A1'' simulations follow the same principle, so that phenological parameters are modified to keep growing seasons roughly constant across different warming scenarios.
 These ``A1'' simulations roughly capture the case in which adaptive crop cultivar choice maintain the growing season length so that crops reach maturity at roughly the same time as do current varieties under the current temperature regime. 
 This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields.
 
@@ -490,9 +494,9 @@ Crop yield changes under climate perturbations also show distinct geographic pat
 In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
 Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes. 
 
-The larger inter-model spread in yield projections at higher latitudes evident in (Figure \ref{fig:maizesoybaseline}) is due in part to how crop suitability or crop failures differ across models. In many cases the spread results from differences in the present-day scenario rather than the future one.  For example, soy yields north of 45$^\circ$ \textcolor{red}{specify if this is on current soybean area only or all areas north of 45$^\circ$?} in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^{-1}$ in LPJmL -- but become more similar in the T+4 scenario (to mean of \textcolor{red}{XX and XX} tons ha$^{-1}$). Warming increases high-latitude soy yields in PROMET as land becomes suitable for cultivation, but yields in LPJmL actually shift down slightly (Figure \ref{fig:highlat}). Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.
-\textcolor{red}{XXX We need to check if this is due to input climate data difference}
-\textcolor{blue}{CM: I don't think we have to. This is a model experiment description paper. The purpose is NOT to expain everything we find in the data.}
+The larger inter-model spread in yield projections at higher latitudes evident in (Figure \ref{fig:maizesoybaseline}) is due in part to how crop suitability or crop failures differ across models. In many cases the spread results from differences in the present-day scenario rather than the future one.  For example, soy yields on all gridcells north of 45$^\circ$ in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^{-1}$ in LPJmL -- but become more similar in the T+4 scenario (to mean of \textcolor{red}{XX and XX} tons ha$^{-1}$). Warming increases high-latitude soy yields in PROMET as land becomes suitable for cultivation, but yields in LPJmL actually shift down slightly (Figure \ref{fig:highlat}). Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.
+%\textcolor{red}{XXX We need to check if this is due to input climate data difference}
+%\textcolor{blue}{CM: I don't think we have to. This is a model experiment description paper. The purpose is NOT to expain everything we find in the data.}
 
 We illustrate the across-model spread for selected crops in Figures \ref{fig:maizerice} - \ref{fig:soywheat}, which shows changes in yields across all simulated grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010} for various input dimensions.
 In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 

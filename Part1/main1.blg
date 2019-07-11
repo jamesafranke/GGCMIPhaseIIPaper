@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main1.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main1.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
+You've used 75 entries,
+            2811 wiz_defined-function locations,
+            1519 strings with 38636 characters,
+and the built_in function-call counts, 114710 in all, are:
+= -- 10701
+> -- 8580
+< -- 14
++ -- 3250
+- -- 2791
+* -- 8736
+:= -- 13338
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 1075
+chr.to.int$ -- 74
+cite$ -- 225
+duplicate$ -- 9110
+empty$ -- 4602
+format.name$ -- 3022
+if$ -- 22345
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1443
+newline$ -- 234
+num.names$ -- 301
+pop$ -- 5008
+preamble$ -- 1
+purify$ -- 1074
+quote$ -- 0
+skip$ -- 5279
+stack$ -- 0
+substring$ -- 3314
+swap$ -- 8076
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 672
+warning$ -- 0
+while$ -- 390
+width$ -- 0
+write$ -- 897
