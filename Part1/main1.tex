@@ -180,7 +180,7 @@ Perturbations are applied independently and the protocol samples over all possib
 
 Each model is run at 0.5 degree spatial resolution and covers all currently cultivated areas and much of the uncultivated land area. See Figure \ref{fig:crop_area} for the present-day cultivated area of rainfed crops, provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}, and Supplementary Figure S1 for irrigated crops. 
 Coverage extends considerably outside currently cultivated areas because cultivation will likely shift under climate change.  
-To reduce the computational burden, however, the protocol requires simulation only over \textcolor{blue}{JIM -- XX\%} of Earth surface area.  
+To reduce the computational burden, however, the protocol requires simulation only over \textcolor{red}{Christoph -- XX\%} of Earth surface area.  
 Areas are not simulated if they are assumed to remain non-arable even under an extreme climate change; these regions include Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and central Australia. 
 The protocol also eliminates regions judged unsuitable for cropland for non-climatic reasons. 
 Selection criterion involve a combination of soil suitability indices at 10 arc-minute resolution and excludes those 0.5 degree grid cells in which at least 90\% of the area is masked as unsuitable according to any single index, and which do not contain any currently cultivated cropland. 
@@ -189,6 +189,7 @@ Selection criterion involve a combination of soil suitability indices at 10 arc-
 Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the IIASA (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
 All modeling groups simulate the minimum required coverage, but some provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia.
+See Figure SXX in the supplemental for spatial coverage of simulations.
 
 \subsection{Harmonization between models}
 The 12 models included in GGCMI Phase II are all process-based crop models that are widely used in impacts assessments (Table \ref{table:models}).
@@ -439,28 +440,32 @@ Instead, each model shows near best-in-class performance for at least one locati
 \centering
    \includegraphics[width=16.5cm]{figures/baselinecomp_yield_3.png} 
   \caption{Illustration of the spatial pattern of potential yields (left) and yield changes (right) in the GGCMI Phase II ensemble, for three major crops: maize, soybean and rice. Left column (a) shows multi-model mean climatological potential yields for the baseline scenario for (top--bottom) rainfed maize, soybean, and rice. 
-   Wheat shows a qualitatively similar response, see Figure S16 in the supplemental material. % XX need dynamic references
+   Wheat shows a qualitatively similar response, see Figure SXX in the supplemental material. % XX need dynamic references
    White stippling on the left panels indicates areas where these crops are not currently cultivated. 
    Absence of cultivation aligns well with the lowest yield contour (0-2 ton ha$^{-1}$). 
    Right column (b) shows the multi-model mean fractional yield change in the T+4 $^{\circ}$C scenario.
    Because yields vary geographically, we show change from a baseline, which we take as the scenario with historical climatology (i.e.\ T and P changes of 0), C of 360 ppm, and applied N at 200 kg N ha$^{-1}$. 
    In T+4 only temperature is changed and other inputs remain fixed at baseline values. 
-   Stippling indicates areas of low confidence ($\Delta < 1 \sigma$) and areas without stippling are those where confidence in projections is higher: the multi-model mean fractional change exceeds the standard deviations of the ensemble change ($\Delta > 2\sigma$). 
-   Crop model simulation results in cold areas, where yield impacts are on average positive, also have the highest uncertainty.}
+   Stippling indicates areas of low confidence ($\Delta < 1 \sigma$) and areas without stippling are those where confidence in projections is higher: the multi-model mean fractional change exceeds the standard deviations of the ensemble change ($\Delta > \sigma$). 
+   Crop model simulation results in cold areas, where yield impacts are on average positive, also have the highest uncertainty.
+   Spatial coverage is not consistent in number of models and explains some of the patterns in regions where crops are not currently cultivated.
+   See Figure SXX in the supplemental for spatial coverage of simulations for the T+4 case.}
    \label{fig:maizesoybaseline}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=15cm]{figures/soy_highlats.png}
-\caption{Probability density estimate of soybean yields north of 45$^o$ latitude for selected models. 
+\caption{Probability density estimate of soybean yields at high latitude for selected models. 
+  Probability density functions are estimated across all grid cells north of 45$^o$ latitude for currently cultivated areas (left panel, approximately 2500 grid cells) and across uncultivated grid cells that were simulated by all 9 models show here (right panel, approximately 1500 grid cells). 
   The solid lines show the historical(1980-2010) climatology and dashed lines show the T+4 (K) case.
-  
-  `Green' category models show steep distributions between 1 - 2 (ton ha-1) with slight decreases under 
+  Models vary widely on the representation of soy yields at this latitude even for areas where the crop is currently cultivated (left panel).
+  `Green' category models show steep distributions between 1 - 2 (ton ha-1) with slight decreases under. 
   `Red' category models show relatively flatter distributions with mixed shifts under warming. 
   `Blue' category models show mostly 0 (ton ha-1) yields for the historical climatology and large increases under a 4 degree warming. 
   The solid black line indicates the probability density function for the mean 1997-2003 yield values from the data from \cite{Ray2012}. 
   Yield values greater than 6 (ton ha-1) are not actually achieved in reality. 
+  Models agree to a greater extent about the unsuitability for soy where it is not currently cultivated (right panel) and less so about the change under warming.
 }
 \label{fig:highlat}
 \end{figure*}
@@ -502,11 +507,21 @@ Crop yield changes under climate perturbations also show distinct geographic pat
 In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
 Models show robust decreases in yields at low latitudes, and highly uncertain median increases at most high latitudes. 
 
-The larger inter-model spread in yield projections at higher latitudes evident in (Figure \ref{fig:maizesoybaseline}) is due in part to how crop suitability or crop failures differ across models. In many cases the spread results from differences in the present-day scenario rather than the future one.  For example, soy yields on all gridcells north of 45$^\circ$ in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^{-1}$ in LPJmL -- but become more similar in the T+4 scenario (to mean of \textcolor{red}{XX and XX} tons ha$^{-1}$). 
-Warming increases high-latitude soy yields in PROMET as land becomes suitable for cultivation, but yields in LPJmL actually shift down slightly (Figure \ref{fig:highlat}). Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.
-Mean yield weighted by growing area in canada in the ray et al data is 2.2 ton ha-1 for the period 1997-2003 and 1.8 in Russia.
-%\textcolor{red}{XXX We need to check if this is due to input climate data difference}
-%\textcolor{blue}{CM: I don't think we have to. This is a model experiment description paper. The purpose is NOT to expain everything we find in the data.}
+The larger inter-model spread in yield projections at higher latitudes evident in Figure \ref{fig:maizesoybaseline} is due in part to how crop suitability or crop failures differ across models. 
+In many cases the spread results from differences in the present-day scenario rather than the future one. 
+For example, three models in Phase II show almost all 0 (ton ha-1) yields north of 45$^o$ for the historical period and steep increases in yields under a 4 degree warming even for areas currently under cultivation (\ref{fig:highlat}, left panel). 
+Other models (PEPIC and GEPIC) show yields between 1-2 (ton ha-1) in the historical climate and a slight decrease in yield under a warming scenario.
+PEPIC and GEPIC reproduce actual yields \citep{Ray2012} most faithfully.
+Models agree more about the unsuitability of soy in locations north of 45$^o$ where it is not currently cultivated, but the low baseline yields result in large and unstable fractional changes under warming.
+
+\textcolor{red}{NOT SURE WHERE TO PUT THESE sentences, all kind of tacked on at moment --XXX The density functions shown in Figure \ref{fig:highlat} are not weighted by cultivation area. 
+This makes direct comparison to national level statistics difficult because cultivation tends to weight towards the more favorable conditions.
+Mean yield weighted by growing area in Canada/Northern US in the \cite{Ray2012} data is 2.2 ton ha-1 for the period 1997-2003 and 1.8 in Russia/ Eastern Europe.
+No equivalent real world data exist for uncultivated grid cells.
+Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.}
+
+%For example, soy yields on all grid cells north of 45$^\circ$ in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^{-1}$ in LPJmL -- but become more similar in the T+4 scenario (to mean of \textcolor{red}{XX and XX} tons ha$^{-1}$). 
+%Warming increases high-latitude soy yields in PROMET as land becomes suitable for cultivation, but yields in LPJmL actually shift down slightly (Figure \ref{fig:highlat}). 
 
 We illustrate the across-model spread for selected crops in Figures \ref{fig:maizerice} - \ref{fig:soywheat}, which shows changes in yields across all simulated grid cells for the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010} for various input dimensions.
 In warming scenarios with precipitation held constant, all models show decreases in maize yield in the `warm temperate', `equatorial', and `arid' regions that account for nearly three-quarters of global maize production. 
@@ -523,7 +538,7 @@ Decreased rainfall amplifies yield losses and also increases inter-model varianc
 Increased temperature results in a relative flattening of the precipitation change response (Figure \ref{fig:soywheat}, top panel).
 We show only rainfed maize and soy here; see Figure SXX for comparison between rainfed and irrigated maize. 
 As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is already limiting. 
-The other crops in this study show a qualitatively similar response to changes in precipitation (Figures SX - X).  
+The other crops in this study show a qualitatively similar response to changes in precipitation (Figures SX - X).
 
 Mean climatological yield response to the other two GGCMI Phase II dimensions (C and N) are qualitatively similar across crops. 
 The yield response to increased [CO$_2$] for spring wheat is a robust increase across models in all climate regions (Figure \ref{fig:soywheat}, bottom panel). 
