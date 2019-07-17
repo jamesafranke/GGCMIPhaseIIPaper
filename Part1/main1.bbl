@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -91,12 +91,26 @@ Dury, M., Hambuckers, A., Warnant, P., Henrot, A., Favre, E., Ouberdous, M.,
   intensity}, iForest - Biogeosciences and Forestry, pp. 82--99,
   \doi{10.3832/ifor0572-004}, 2011.
 
-\bibitem[{Elliott et~al.(2014)Elliott, Kelly, Chryssanthacopoulos, Glotter,
-  Jhunjhnuwala, Best, Wilde, and Foster}]{Elliott2014b}
+\bibitem[{Elliott et~al.(2014{\natexlab{a}})Elliott, Deryng, Müller, Frieler,
+  Konzmann, Gerten, Glotter, Floerke, Wada, Best, Eisner, Fekete, Folberth,
+  Foster, Gosling, Haddeland, Khabarov, Ludwig, Masaki, and Wisser}]{Elliott14}
+Elliott, J., Deryng, D., Müller, C., Frieler, K., Konzmann, M., Gerten, D.,
+  Glotter, M., Floerke, M., Wada, Y., Best, N., Eisner, S., Fekete, B.,
+  Folberth, C., Foster, I., Gosling, S., Haddeland, I., Khabarov, N., Ludwig,
+  F., Masaki, Y., and Wisser, D.: Constraints and potentials of future
+  irrigation water availability on agricultural production under climate
+  change, Proceedings of the National Academy of Sciences of the United States
+  of America, 111, 3239--3244, \doi{10.1073/pnas.1222474110},
+  2014{\natexlab{a}}.
+
+\bibitem[{Elliott et~al.(2014{\natexlab{b}})Elliott, Kelly,
+  Chryssanthacopoulos, Glotter, Jhunjhnuwala, Best, Wilde, and
+  Foster}]{Elliott2014b}
 Elliott, J., Kelly, D., Chryssanthacopoulos, J., Glotter, M., Jhunjhnuwala, K.,
   Best, N., Wilde, M., and Foster, I.: The parallel system for integrating
   impact models and sectors (p{S}{I}{M}{S}), Environmental Modelling and
-  Software, 62, 509--516, \doi{10.1016/j.envsoft.2014.04.008}, 2014.
+  Software, 62, 509--516, \doi{10.1016/j.envsoft.2014.04.008},
+  2014{\natexlab{b}}.
 
 \bibitem[{Elliott et~al.(2015)Elliott, M\"uller, Deryng, Chryssanthacopoulos,
   Boote, B\"uchner, Foster, Glotter, Heinke, Iizumi, Izaurralde, Mueller, Ray,
@@ -132,6 +146,16 @@ Folberth, C., Elliott, J., M\"uller, C., Balkovic, J., Chryssanthacopoulos, J.,
   management and soil handling on crop yield estimates, Biogeosciences
   Discussions, 2016, 1--30, \doi{10.5194/bg-2016-527},
   \urlprefix\url{https://www.biogeosciences-discuss.net/bg-2016-527/}, 2016.
+
+\bibitem[{Foley et~al.(2005)Foley, DeFries, Asner, Barford, Bonan, Carpenter,
+  Chapin, Coe, Daily, Gibbs, Helkowski, Holloway, Howard, Kucharik, Monfreda,
+  Patz, Prentice, Ramankutty, and Snyder}]{Foley2005}
+Foley, J.~A., DeFries, R., Asner, G.~P., Barford, C., Bonan, G., Carpenter,
+  S.~R., Chapin, F.~S., Coe, M.~T., Daily, G.~C., Gibbs, H.~K., Helkowski,
+  J.~H., Holloway, T., Howard, E.~A., Kucharik, C.~J., Monfreda, C., Patz,
+  J.~A., Prentice, I.~C., Ramankutty, N., and Snyder, P.~K.: Global
+  Consequences of Land Use, Science, 309, 570--574,
+  \doi{10.1126/science.1111772}, 2005.
 
 \bibitem[{{Food and Agriculture Organization of the United
   Nations}(2018)}]{FAOSTAT}
@@ -261,6 +285,14 @@ J.~Boote, K., Jones, J., White, J., Asseng, S., and Lizaso, J.: Putting
 J\"{a}germeyr, J. and Frieler, K.: Spatial variations in crop growing seasons
   pivotal to reproduce global fluctuations in maize and wheat yields, Science
   Advances, 4, 4517, \doi{10.1126/sciadv.aat4517}, 2018.
+
+\bibitem[{J\"{a}germeyr et~al.(2017)J\"{a}germeyr, Pastor, Biemans, and
+  Gerten}]{jagermeyr_reconciling_2017}
+J\"{a}germeyr, J., Pastor, A., Biemans, H., and Gerten, D.: Reconciling
+  irrigated food production with environmental flows for {Sustainable}
+  {Development} {Goals} implementation, Nature Communications, 8, 15\,900,
+  \doi{10.1038/ncomms15900},
+  \urlprefix\url{http://www.nature.com/articles/ncomms15900}, 2017.
 
 \bibitem[{Jagtap and Jones(2002)}]{JAGTAP200273}
 Jagtap, S.~S. and Jones, J.~W.: Adaptation and evaluation of the
