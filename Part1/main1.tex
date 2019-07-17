@@ -13,7 +13,7 @@
 \Author[2,4]{Joshua}{Elliott}
 \Author[5]{Alex C.}{Ruane}
 \Author[6]{Abigail}{Snyder}
-\Author[3,2,4,5]{Jonas}{J\"{a}germeyr}
+\Author[2,3,4,5]{Jonas}{J\"{a}germeyr}
 \Author[7,8]{Juraj}{Balkovic}
 \Author[9,10]{Philippe}{Ciais}
 \Author[11]{Marie}{Dury}
@@ -41,7 +41,7 @@
 \affil[1]{Department of the Geophysical Sciences, University of Chicago, Chicago, IL, USA}
 \affil[2]{Center for Robust Decision-making on Climate and Energy Policy (RDCEP), University of Chicago, Chicago, IL, USA}
 \affil[3]{Potsdam Institute for Climate Impact Research, Member of the Leibniz Association, Potsdam, Germany}
-\affil[3]{Department of Computer Science, University of Chicago, Chicago, IL, USA}
+\affil[4]{Department of Computer Science, University of Chicago, Chicago, IL, USA}
 \affil[5]{NASA Goddard Institute for Space Studies, New York, NY, United States}
 \affil[6]{Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA}
 \affil[7]{Ecosystem Services and Management Program, International Institute for Applied Systems Analysis, Laxenburg, Austria}
@@ -140,14 +140,15 @@ The dataset is designed to allow researchers to:
 
 
 \subsection{Modeling protocol}
-\begin{figure}[ht]
-\centering
-   \includegraphics[width=7cm]{figures/croparea.png}
-   \caption{Presently cultivated area for rainfed crops. Blue indicates grid cells with more that 20,000 hectares ($\sim$10\% of an equatorial grid cell). 
-   Gray contour shows area with more that 10 hectares cultivated. Cultivated areas for maize, rice, and soybean are taken from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. 
-  Areas for winter and spring wheat areas are adapted from MIRCA2000 and two other sources; see text for details.  For analogous figure of irrigated crops, see Figure \ref{S1}.}
-   \label{fig:crop_area}
-\end{figure}
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=15cm]{figures/number_of_models.png}
+  \caption{\textbf{Left panel:} Presently cultivated area for rainfed crops. Blue indicates grid cells with more that 20,000 hectares ($\sim$10\% of an equatorial grid cell). 
+  Gray contour shows area with more that 10 hectares cultivated. Cultivated areas for maize, rice, and soybean are taken from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. 
+  Areas for winter and spring wheat areas are adapted from MIRCA2000 and two other sources; see text for details.  For analogous figure of irrigated crops, see Figure \ref{S1}.
+  \textbf{Right panel:} The number of models simulating the historical simulation in each grid cell.}
+  \label{fig:crop_area}
+\end{figure*}
 
 The GGCMI Phase I intercomparison was a relatively limited computational exercise, requiring yield simulations for 19 crops across a total of 310 model-years of historical scenarios, and had the participation of 21 modeling groups.
 The GGCMI Phase II protocol is substantially larger, involving over 1400 individual 30-year scenarios, or over 42,000 model-years; 12 modeling groups nevertheless participated. To reduce the computational load, the GGCMI Phase II protocol reduced the number crops to 5 (maize, rice, soybean, spring wheat, and winter wheat). 
@@ -351,7 +352,7 @@ All models provide the same set of simulations across all modeled crops, but som
         {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 756}}\\ \middlehline
         {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
         {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
-        {Totals} & {12} & {10} & {11} & {11} & {11} & {10} & {5240 | 3378}\\
+        {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
         \bottomhline
     \end{tabular}
 \end{table*}
@@ -457,13 +458,14 @@ Instead, each model shows near best-in-class performance for at least one locati
 \centering
    \includegraphics[width=15cm]{figures/soy_highlats.png}
 \caption{Probability density estimate of soybean yields at high latitude for selected models. 
-  Probability density functions are estimated across all grid cells north of 45$^o$ latitude for currently cultivated areas (left panel, approximately 2500 grid cells) and across uncultivated grid cells that were simulated by all 9 models show here (right panel, approximately 1500 grid cells). 
+  Probability density functions are estimated across all grid cells (not weighted by cultivation area) north of 45$^o$ latitude for currently cultivated areas (left panel, approximately 2500 grid cells) and across uncultivated grid cells that were simulated by all 9 models show here (right panel, approximately 1500 grid cells). 
   The solid lines show the historical(1980-2010) climatology and dashed lines show the T+4 (K) case.
   Models vary widely on the representation of soy yields at this latitude even for areas where the crop is currently cultivated (left panel).
   `Green' category models show steep distributions between 1 - 2 (ton ha-1) with slight decreases under. 
   `Red' category models show relatively flatter distributions with mixed shifts under warming. 
   `Blue' category models show mostly 0 (ton ha-1) yields for the historical climatology and large increases under a 4 degree warming. 
   The solid black line indicates the probability density function for the mean 1997-2003 yield values from the data from \cite{Ray2012}. 
+  No equivalent real world data exist for uncultivated grid cells.
   Yield values greater than 6 (ton ha-1) are not actually achieved in reality. 
   Models agree to a greater extent about the unsuitability for soy where it is not currently cultivated (right panel) and less so about the change under warming.
 }
@@ -514,10 +516,9 @@ Other models (PEPIC and GEPIC) show yields between 1-2 (ton ha-1) in the histori
 PEPIC and GEPIC reproduce actual yields \citep{Ray2012} most faithfully.
 Models agree more about the unsuitability of soy in locations north of 45$^o$ where it is not currently cultivated, but the low baseline yields result in large and unstable fractional changes under warming.
 
-\textcolor{red}{NOT SURE WHERE TO PUT THESE sentences, all kind of tacked on at moment --XXX The density functions shown in Figure \ref{fig:highlat} are not weighted by cultivation area. 
+\textcolor{red}{NOT SURE WHERE TO PUT THESE sentences, all kind of tacked on at moment --XXX 
 This makes direct comparison to national level statistics difficult because cultivation tends to weight towards the more favorable conditions.
 Mean yield weighted by growing area in Canada/Northern US in the \cite{Ray2012} data is 2.2 ton ha-1 for the period 1997-2003 and 1.8 in Russia/ Eastern Europe.
-No equivalent real world data exist for uncultivated grid cells.
 Inter-model spreads are largest in wheat projections (Figure SXX), possibly because calibration is most important for wheat \citep[e.g.][]{Asseng2013}.}
 
 %For example, soy yields on all grid cells north of 45$^\circ$ in the PROMET and LPLmL models are very different in historical simulations -- mostly zero in the PROMET model, which considers present-day temperatures too cold for soy, but averaging 2 tons ha$^{-1}$ in LPJmL -- but become more similar in the T+4 scenario (to mean of \textcolor{red}{XX and XX} tons ha$^{-1}$). 

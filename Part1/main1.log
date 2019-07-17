@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUL 2019 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 JUL 2019 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,32 +1095,36 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<figures/croparea.png, id=178, 262.9022pt x 492.0784pt>
-File: figures/croparea.png Graphic file (type png)
+<figures/number_of_models.png, id=178, 545.78304pt x 570.78847pt>
+File: figures/number_of_models.png Graphic file (type png)
 
-<use figures/croparea.png>
-Package pdftex.def Info: figures/croparea.png used on input line 145.
-(pdftex.def)             Requested size: 199.16928pt x 372.79712pt.
+<use figures/number_of_models.png>
+Package pdftex.def Info: figures/number_of_models.png used on input line 145.
+(pdftex.def)             Requested size: 426.79134pt x 446.33673pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 148.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
 
 
-LaTeX Warning: Reference `S1' on page 4 undefined on input line 148.
+LaTeX Warning: Reference `S1' on page 4 undefined on input line 149.
 
-[4] [5 <./figures/croparea.png>] [6]
+[4]
 
-LaTeX Warning: Reference `SXX' on page 7 undefined on input line 205.
+LaTeX Warning: Text page 5 contains only floats.
+
+[5 <./figures/number_of_models.png>] [6]
+
+LaTeX Warning: Reference `SXX' on page 7 undefined on input line 206.
 
 
-LaTeX Warning: Reference `SXX' on page 7 undefined on input line 205.
+LaTeX Warning: Reference `SXX' on page 7 undefined on input line 206.
 
 [7] [8]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 272.
+               Default added (so using `tbp') on input line 273.
 
 
-Overfull \hbox (1.85802pt too wide) in paragraph at lines 311--312
+Overfull \hbox (1.85802pt too wide) in paragraph at lines 312--313
 []$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 model\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 
 climate\OT1/cmr/m/n/10 ][]\OML/cmm/m/it/10 hist[]fullharm[]\OT1/cmr/m/n/10 [\OM
 L/cmm/m/it/10 irrig:scenario\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 variable\OT1/c
@@ -1130,96 +1134,95 @@ annual[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 start \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m
 mm/m/it/10 year\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :nc\OT1/cmr/m/n/10 4$ 
  []
 
-
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 341--341
+[9] [10]
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 342--342
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 []|\T1/ptm/b/n/9 Spring
  []
 
-[9] [10] [11] [12]
-<figures/Agformet_validation.png, id=379, 632.50703pt x 617.61942pt>
+[11] [12] <figures/Agformet_validation.png, id=378, 632.50703pt x 617.61942pt>
 File: figures/Agformet_validation.png Graphic file (type png)
 
 <use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 399
+Package pdftex.def Info: figures/Agformet_validation.png used on input line 400
 .
 (pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
-
-<figures/baselinecomp_yield_3.png, id=399, 527.42645pt x 347.47417pt>
-File: figures/baselinecomp_yield_3.png Graphic file (type png)
-
-<use figures/baselinecomp_yield_3.png>
-Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 44
-1.
-(pdftex.def)             Requested size: 469.47046pt x 309.29875pt.
-
-<figures/soy_highlats.png, id=400, 956.8548pt x 456.4252pt>
-File: figures/soy_highlats.png Graphic file (type png)
-
-<use figures/soy_highlats.png>
-Package pdftex.def Info: figures/soy_highlats.png used on input line 458.
-(pdftex.def)             Requested size: 426.79134pt x 203.57867pt.
-
-<figures/maize_sim_CG_T.png, id=403, 4516.875pt x 1806.75pt>
-File: figures/maize_sim_CG_T.png Graphic file (type png)
-
-<use figures/maize_sim_CG_T.png>
-Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 475.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-
-<figures/rice_sim_CG_T.png, id=404, 4516.875pt x 1806.75pt>
-File: figures/rice_sim_CG_T.png Graphic file (type png)
-
-<use figures/rice_sim_CG_T.png>
-Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 476.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-
-<figures/soy_sim_CG_W.png, id=409, 4516.875pt x 1806.75pt>
-File: figures/soy_sim_CG_W.png Graphic file (type png)
-
-<use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 492.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-
-<figures/swh_sim_CG_C.png, id=410, 4516.875pt x 1806.75pt>
-File: figures/swh_sim_CG_C.png Graphic file (type png)
-
-<use figures/swh_sim_CG_C.png>
-Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 493.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
  [13]
 
 LaTeX Warning: Text page 14 contains only floats.
 
-[14 <./figures/Agformet_validation.png>] [15 <./figures/baselinecomp_yield_3.pn
-g>] [16 <./figures/soy_highlats.png>]
+[14 <./figures/Agformet_validation.png>]
+<figures/baselinecomp_yield_3.png, id=414, 527.42645pt x 347.47417pt>
+File: figures/baselinecomp_yield_3.png Graphic file (type png)
+
+<use figures/baselinecomp_yield_3.png>
+Package pdftex.def Info: figures/baselinecomp_yield_3.png used on input line 44
+2.
+(pdftex.def)             Requested size: 469.47046pt x 309.29875pt.
+
+<figures/soy_highlats.png, id=415, 956.8548pt x 456.4252pt>
+File: figures/soy_highlats.png Graphic file (type png)
+
+<use figures/soy_highlats.png>
+Package pdftex.def Info: figures/soy_highlats.png used on input line 459.
+(pdftex.def)             Requested size: 426.79134pt x 203.57867pt.
+
+<figures/maize_sim_CG_T.png, id=418, 4516.875pt x 1806.75pt>
+File: figures/maize_sim_CG_T.png Graphic file (type png)
+
+<use figures/maize_sim_CG_T.png>
+Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 477.
+(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
+
+<figures/rice_sim_CG_T.png, id=419, 4516.875pt x 1806.75pt>
+File: figures/rice_sim_CG_T.png Graphic file (type png)
+
+<use figures/rice_sim_CG_T.png>
+Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 478.
+(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
+
+<figures/soy_sim_CG_W.png, id=424, 4516.875pt x 1806.75pt>
+File: figures/soy_sim_CG_W.png Graphic file (type png)
+
+<use figures/soy_sim_CG_W.png>
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 494.
+(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
+
+<figures/swh_sim_CG_C.png, id=425, 4516.875pt x 1806.75pt>
+File: figures/swh_sim_CG_C.png Graphic file (type png)
+
+<use figures/swh_sim_CG_C.png>
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 495.
+(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
+ [15 <./figures/baselinecomp_yield_3.png>]
+[16 <./figures/soy_highlats.png>]
 
 LaTeX Warning: Text page 17 contains only floats.
 
 [17 <./figures/maize_sim_CG_T.png> <./figures/rice_sim_CG_T.png>] [18 <./figure
 s/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>] [19] [20]
-Overfull \hbox (59.95053pt too wide) in paragraph at lines 603--603
+Overfull \hbox (59.95053pt too wide) in paragraph at lines 604--604
 \T1/ptm/m/n/9 wheat is now di-vided up into win-ter and spring wheat, avail-abl
 e at []$https : / / app . globus . org / ^^\le-[]manager ? origin _ id = e4c16e
 81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--617
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--617
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 []|\T1/ptm/b/n/9 Spring
  []
 
@@ -1266,11 +1269,11 @@ i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
 [26] [27] [28]) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 656.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
  (./main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 656.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 657.
 
 
 LaTeX Warning: There were undefined references.
@@ -1278,12 +1281,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 656.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
  10783 strings out of 492995
- 152266 string characters out of 6132704
- 336493 words of memory out of 5000000
+ 152306 string characters out of 6132704
+ 321617 words of memory out of 5000000
  13978 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1306,10 +1309,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (29 pages, 6828640 bytes).
+Output written on main1.pdf (29 pages, 8561270 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 640 compressed objects within 7 object streams
+ 710 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
  135 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
