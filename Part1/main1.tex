@@ -271,7 +271,7 @@ Participating modeling groups provided between 3 (PEPIC) and 18 (APSIM-UGOE) of 
 %Finally, some models provide additional variables not specified in the protocol, such as more detailed separation of total nitrogen losses which were supplied by LPJmL, LPJ-GUESS and pDSSAT.
 
 \begin{table}[]
-\caption{Output variables, naming convention, and units. Items in \textbf{bold} are the minimum requirements, others are optionally provided depending on availability.
+\caption{Output variables, naming convention, and units. Items in \textbf{bold} are the minimum requirements, others are optionally provided depending on availability.}
 \begin{tabular}{lll}
         \tophline \vspace{1mm}
 Variable                                & variable name             & units \\
@@ -371,7 +371,7 @@ The different participation levels are defined by combining the CxN sets with th
 %\textcolor{red}{Why are the A1 simulations only 658 in total? pDSSAT has 756 in the A1 folder}
 % For A1, T0 sims are identical with A0 -- there is no adaptation to shorter growing seasons if they don't get shorter. Added that to table caption
 
-Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with italic text in Table \ref{table:models}. However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the the nitrogen dimension. Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). One model (PEPIC) followed \textit{mid} but included an additional C level. Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional levels and ORCHIDEE-crop omitting a TxW combination.  
+Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with italic text in Table \ref{table:models}. However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the the nitrogen dimension. Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). One model (PEPIC) followed \textit{mid} but included an additional C level. Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
 
 The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
 \begin{itemize}
@@ -392,28 +392,29 @@ For the TxW space we specify:
 \section{Results}
 \label{S:4}
 
-To illustrate the properties of the GGCMI Phase II model simulations, we provide both an assessment of model performance by comparing with observed yields, and selected case studies showing the spread of model responses to climate and management inputs.
+To illustrate the properties of the GGCMI Phase II model simulations, we provide both an evaluation of model performance by comparing with observed yields, and selected focus regions showing the spread of model responses to climate and management inputs.
 
-\subsection{Assessment of model performance}
+\subsection{Evaluation of model performance}
 \begin{figure*}[ht]
     \centering
     \includegraphics[width=14cm]{figures/Agformet_validation.png}
-    \caption{Assessment of crop model performance in GGCMI Phase II, following protocol of GGCMI Phase I \citep{muller_global_2017}. 
-    \textbf{Top:} example time series comparison between simulated crop yield and FAO data \citep{FAOSTAT} at the country level for two example cases: US maize (a good case), and rice in India (mixed case), both for the high nitrogen application level. 
-    \textbf{Bottom:} the heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulation mean yield at the country level compared to the detrended FAO yield data for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
-    Models that provided different nitrogen application levels are shown with low (10 kg N ha$^{-1}$), med (60 kg N ha$^{-1}$), and high (200 kg N ha$^{-1}$) label (models that did not simulate different nitrogen levels are analogous to a high nitrogen application level). 
-    The ensemble mean yield, show in the leftmost column, is also correlated with the FAO data (not the mean of the correlations). 
+    \caption{Assessment of crop model performance in GGCMI Phase II, following the protocol of GGCMI Phase I \citep{muller_global_2017}. 
+    \textbf{Top:} example time series comparison between simulated crop yield and FAO country statistics \citep{FAOSTAT} at the country level for two example large production countries: US maize, and rice in India, both for the 200 kg ha$^{-1}$ nitrogen application level. 
+    \textbf{Bottom:} the heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulated and observed mean yield at the country level for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
+    Models that provided different nitrogen application levels are shown with low (10 kg N ha$^{-1}$), med (60 kg N ha$^{-1}$), and high (200 kg N ha$^{-1}$) label.
+    %(models that did not simulate different nitrogen levels are analogous to a high nitrogen application level). 
+    The ensemble mean yield, shown in the leftmost column, is also correlated with the FAO data (not the mean of the correlations). 
     Wheat contains both spring wheat and winter wheat simulations where supplied, else one or the other (see Table \ref{table:models} ). 
     Differences by region and crop are stronger than difference between models, e.g.\ horizontal bars are more similar in color than vertical bars.}
     \label{fig:simulation_val}
 \end{figure*}
 
 Evaluating the performance of crop models in the GGCMI Phase II archive is complicated by the artificial nature of the protocol: the settings in the CTWN-A experiment design do not reflect actual conditions in the real world. 
-The protocol includes one scenario of near-historical climate inputs (T$_0$, W$_0$, C$_360$), but the prescribed uniform nitrogen application levels do not reflect real-world fertilizer practices. Models also omit detailed calibrations to reflect the performance of historical cultivars. 
+The protocol includes one scenario of near-historical climate inputs (T$_0$, W$_0$, C$_{360}$), but the prescribed uniform nitrogen application levels do not reflect real-world fertilizer practices. Models also omit detailed calibrations to reflect the performance of historical cultivars. 
 
 We provide a partial evaluation of the models' skill in reproducing crop yield characteristics using the methodology of \citet{muller_global_2017}, who described model characteristics in GGCMI Phase I. 
 \citet{muller_global_2017} evaluate how well model crop yield responses in historical run capture real-world yield variations driven by year-to-year temperature and precipitation variations. 
-Following this approach, we compare yields in the GGCMI Phase II baseline run with detrended historical yields from the UN Food and Agriculture Organization (FAO) \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. 
+Following this approach, we compare yields in the GGCMI Phase II baseline run with detrended historical yields from FAOSTAT \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient. 
 The procedure is sensitive to the detrending method and the area mask used to aggregate yields; we use a 5-year running mean removal and the MIRCA2000 cultivation area mask for aggregation. 
 In some cases the model time series are shifted by one year to account for errors in FAO or model year reporting. 
 % XX -- save for later ---- The procedure offers no means of assessing [CO$_2$] fertilization, since [CO$_2$] has been relatively constant over the historical data collection period. 
@@ -422,14 +423,14 @@ Because the GGCMI Phase II protocol imposes fixed, uniform nitrogen application 
 %In order to illustrate the data structure and general features of the ensemble, we show selected results in different aggregation levels (maps, regional aggregations). 
 %We focus on yield data, as this data set if presumably of greatest interest and yield data are the more important and best evaluated outputs of GGCMs.
 
-As expected, correlation coefficients are slightly lower than those found in the GGCMI Phase I evaluation, but models show reasonable fidelity at capturing year-over-year variation (Figure \ref{fig:simulation_val}). 
+As expected due to the nitrogen application levels, correlation coefficients are slightly lower than those found in the GGCMI Phase I evaluation, but models show reasonable fidelity at capturing year-over-year variation (Figure \ref{fig:simulation_val}). 
 \textcolor{blue}{JIM -- give a few numbers here}
 (Compare to \citet{muller_global_2017} Figures 1--4 and 6.)  
-In GGCMI Phase II, as in Phase I, differences in fidelity between regions and crops exceed differences between models: 
+Differences in fidelity between regions and crops exceed differences between models: 
 that is, Figure \ref{fig:simulation_val} shows more color similarity in horizontal than vertical bars. 
 For example, maize in the United States is consistently well-simulated while maize in Indonesia is problematic (mean Pearson correlation coefficients of 0.68 and 0.18, respectively). 
 Note that in this methodology, simulations of crops with low year-to-year variability such as irrigated rice and wheat will tend to score more poorly than those with higher variability.
-In some cases, especially in the developing world, low correlation coefficients may indicate not model failure but problems in FAO yield data \citep{Ray2012, muller_global_2017}. 
+In some cases, especially in the developing world, low correlation coefficients also point to reporting problems in the FAO statistics \citep{Ray2012, muller_global_2017}. 
 No single model consistently exhibits greater fidelity than others. 
 Instead, each model shows near best-in-class performance for at least one location-crop combination. For example for maize pDSSAT is the best model in the US, LPJmL and GEPIC are the best in Germany, PROMET is best in Argentina, PEPIC and LPJ-GUESS are the best in France, and CARAIB is near best in class in South Africa. 
 
@@ -476,11 +477,11 @@ Instead, each model shows near best-in-class performance for at least one locati
 \centering
    \includegraphics[width=15cm]{figures/maize_sim_CG_T.png}
    \includegraphics[width=15cm]{figures/rice_sim_CG_T.png}
-   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions \citep{rubel2010}.
+   \caption{Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions.
   Y-axis is the fractional change in the regional average climatological (30-year mean) potential yield relative to the baseline. Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles; whiskers extend to 1.5$\cdot$IQR.
   Figure shows all modeled land area within each model; see Figure SXX-SXX in the supplemental material for only currently-cultivated land.
   The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.
-  Note that \citet{rubel2010} use the name `Snow' rather than `Cold continental'. 
+  Note that `Cold continental' is sometimes referred to as `Snow'. 
   \textbf{Top:} responses for rainfed maize to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with [CO$_2$] and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
   Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
   Outside high-latitude regions for maize, models generally agree, with projected declines under increasing temperatures larger than inter-model variance. 
