@@ -397,7 +397,8 @@ To illustrate the properties of the GGCMI Phase II model simulations, we provide
 \subsection{Evaluation of model performance}
 \begin{figure*}[ht]
     \centering
-    \includegraphics[width=14cm]{figures/Agformet_validation.png}
+    \includegraphics[width=14cm]{figures/validation_top.png}
+    \includegraphics[width=14cm]{figures/validation_bottom.png}
     \caption{Assessment of crop model performance in GGCMI Phase II, following the protocol of GGCMI Phase I \citep{muller_global_2017}. 
     \textbf{Top:} example time series comparison between simulated crop yield and FAO country statistics \citep{FAOSTAT} at the country level for two example large production countries: US maize, and rice in India, both for the 200 kg ha$^{-1}$ nitrogen application level. 
     \textbf{Bottom:} the heatmaps illustrate the Pearson $r$ correlation coefficient between the detrended simulated and observed mean yield at the country level for the top producing countries for each crop with continuous FAO data over the 1981-2010 period. 
@@ -510,10 +511,10 @@ Models show robust decreases in yields at low latitudes, and highly uncertain me
 
 The larger inter-model spread in yield projections at higher latitudes evident in Figure \ref{fig:maizesoybaseline} is due in part to how crop suitability or crop failures differ across models. 
 In many cases the spread results from differences in the present-day scenario rather than the future one. 
-For example, three models in Phase II show almost all 0 (ton ha-1) yields north of 45$^o$ for the historical period and steep increases in yields under a 4 degree warming even for areas currently under cultivation (\ref{fig:highlat}, left panel). 
+For example, three models in Phase II show almost all 0 (ton ha-1) yields north of 45$^\circ$ for the historical period and steep increases in yields under a 4 degree warming even for areas currently under cultivation (\ref{fig:highlat}, left panel). 
 Other models (PEPIC and GEPIC) show yields between 1-2 (ton ha-1) in the historical climate and a slight decrease in yield under a warming scenario.
 PEPIC and GEPIC reproduce actual yields \citep{Ray2012} most faithfully.
-Models agree more about the unsuitability of soybeans in locations north of 45$^o$ where it is not currently cultivated, but the low baseline yields result in large and unstable fractional changes under warming.
+Models agree more about the unsuitability of soybeans in locations north of 45$^\circ$ where it is not currently cultivated, but the low baseline yields result in large and unstable fractional changes under warming.
 
 \textcolor{red}{NOT SURE WHERE TO PUT THESE sentences, all kind of tacked on at moment --XXX 
 Spatial coverage is not consistent in number of models and explains some of the patterns in regions where crops are not currently cultivated.
@@ -572,6 +573,9 @@ Geographic effects also mean that nitrogen fertilization produces stronger respo
 
 Some limitations with the model experiment described here are as follows.
 The phase II experiment must not be confused with a correct historic setup, as there is no trend in the [CO$_2$] and the uniform application of 200 kg N ha$^{-1}$ is not representative for many world regions \citep{Elliott2015}.
+Uniform offsets in temperature and precipitation are not realistic because climate change will result in spatially heterogeneous changes mean temperature and precipitation. 
+For example, the 2$^{\circ}$C scenario presented here has the same global mean temperature change as 2$^{\circ}$C of warming under climate change, but not the projected spatial pattern of warming, which results in more than 2$^{\circ}$C in some locations and less in others.
+Additionally, we do not sample any potential changes in the higher-order moments in the distributions in temperature and precipitation. 
 Some issues with process based models are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
 Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
 For these reasons, individual studies must generally re-calibrate models to ensure that short-term predictions reflect current cultivars and management levels. 
@@ -585,7 +589,11 @@ The GGCMI Phase II simulations are designed for evaluating changes in yield acro
 In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for increasing understanding of potential future crop responses and for improving process-based crop models.
 The data set is unprecedentedly large, being global in extent, covering 31-simulation years per pixel and up to 756 scenarios for 12 GGCMs.
 We expect that the GGCMI Phase II data archive will be used to analyze the different GGCMs' sensitivity to changes in the CTWN-A space, including the interaction between drivers.
-The authors are working on some analyses but many more are facilitated by the GGCMI Phase II data archive. 
+\textcolor{red}{The authors are working on some analyses including: emulators, yield response surface, adaptation studies, nitrogen use efficiency and others.
+Many other avenues of analysis more are facilitated by the GGCMI Phase II data archive and we encourage external collaboration.}
+
+%Also I highly recommend to extend the discussion by spelling out potential applications of the archive -- not necessarily  concrete papers, but at least the main collaboration pathways, i.e. IAM, emulators, response surface, adaptation studies, nitrogen use efficiency, etc. This could also be a good place to highlight that we explicitly encourage external collaboration (i.e. we are happy if people write papers with our data!).
+
 %We appreciate additional analyses of the data and if the data authors are consulted in the analysis and interpretation of their data. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

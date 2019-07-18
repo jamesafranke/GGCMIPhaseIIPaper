@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 JUL 2019 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 JUL 2019 07:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,59 +1157,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--341
 []|\T1/ptm/b/n/9 Spring
  []
 
-[11] [12] <figures/Agformet_validation.png, id=388, 632.50703pt x 617.61942pt>
-File: figures/Agformet_validation.png Graphic file (type png)
+[11] [12] <figures/validation_top.png, id=388, 618.19759pt x 236.03381pt>
+File: figures/validation_top.png Graphic file (type png)
 
-<use figures/Agformet_validation.png>
-Package pdftex.def Info: figures/Agformet_validation.png used on input line 400
-.
-(pdftex.def)             Requested size: 398.33858pt x 388.96092pt.
+<use figures/validation_top.png>
+Package pdftex.def Info: figures/validation_top.png used on input line 400.
+(pdftex.def)             Requested size: 398.33858pt x 152.09116pt.
+
+<figures/validation_bottom.png, id=389, 721.6757pt x 427.58801pt>
+File: figures/validation_bottom.png Graphic file (type png)
+
+<use figures/validation_bottom.png>
+Package pdftex.def Info: figures/validation_bottom.png used on input line 401.
+(pdftex.def)             Requested size: 398.33858pt x 236.01578pt.
  [13]
 
 LaTeX Warning: Text page 14 contains only floats.
 
-[14 <./figures/Agformet_validation.png>]
-<figures/baselinecomp_yield_5.png, id=426, 560.95975pt x 570.78847pt>
+[14 <./figures/validation_top.png> <./figures/validation_bottom.png>]
+<figures/baselinecomp_yield_5.png, id=428, 560.95975pt x 570.78847pt>
 File: figures/baselinecomp_yield_5.png Graphic file (type png)
 
 <use figures/baselinecomp_yield_5.png>
 Package pdftex.def Info: figures/baselinecomp_yield_5.png used on input line 44
-3.
+4.
 (pdftex.def)             Requested size: 398.33858pt x 405.33232pt.
 
-<figures/soy_highlats.png, id=427, 956.8548pt x 456.4252pt>
+<figures/soy_highlats.png, id=429, 956.8548pt x 456.4252pt>
 File: figures/soy_highlats.png Graphic file (type png)
 
 <use figures/soy_highlats.png>
-Package pdftex.def Info: figures/soy_highlats.png used on input line 458.
+Package pdftex.def Info: figures/soy_highlats.png used on input line 459.
 (pdftex.def)             Requested size: 426.79134pt x 203.57867pt.
 
-<figures/maize_sim_CG_T.png, id=430, 4516.875pt x 1806.75pt>
+<figures/maize_sim_CG_T.png, id=432, 4516.875pt x 1806.75pt>
 File: figures/maize_sim_CG_T.png Graphic file (type png)
 
 <use figures/maize_sim_CG_T.png>
-Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 476.
+Package pdftex.def Info: figures/maize_sim_CG_T.png used on input line 477.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/rice_sim_CG_T.png, id=431, 4516.875pt x 1806.75pt>
+<figures/rice_sim_CG_T.png, id=433, 4516.875pt x 1806.75pt>
 File: figures/rice_sim_CG_T.png Graphic file (type png)
 
 <use figures/rice_sim_CG_T.png>
-Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 477.
+Package pdftex.def Info: figures/rice_sim_CG_T.png used on input line 478.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/soy_sim_CG_W.png, id=432, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_W.png, id=434, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_W.png Graphic file (type png)
 
 <use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 493.
+Package pdftex.def Info: figures/soy_sim_CG_W.png used on input line 494.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
 
-<figures/swh_sim_CG_C.png, id=433, 4516.875pt x 1806.75pt>
+<figures/swh_sim_CG_C.png, id=435, 4516.875pt x 1806.75pt>
 File: figures/swh_sim_CG_C.png Graphic file (type png)
 
 <use figures/swh_sim_CG_C.png>
-Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 494.
+Package pdftex.def Info: figures/swh_sim_CG_C.png used on input line 495.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
  [15 <./figures/baselinecomp_yield_5.png>]
 [16 <./figures/soy_highlats.png>]
@@ -1219,27 +1225,27 @@ LaTeX Warning: Text page 17 contains only floats.
 [17 <./figures/maize_sim_CG_T.png> <./figures/rice_sim_CG_T.png>] [18 <./figure
 s/soy_sim_CG_W.png> <./figures/swh_sim_CG_C.png>] [19] [20]
 
-LaTeX Warning: Reference `table:outputs' on page 21 undefined on input line 604
+LaTeX Warning: Reference `table:outputs' on page 21 undefined on input line 612
 .
 
 
-Overfull \hbox (59.95053pt too wide) in paragraph at lines 604--604
+Overfull \hbox (59.95053pt too wide) in paragraph at lines 612--612
 \T1/ptm/m/n/9 wheat is now di-vided up into win-ter and spring wheat, avail-abl
 e at []$https : / / app . globus . org / ^^\le-[]manager ? origin _ id = e4c16e
 81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--618
+Underfull \hbox (badness 10000) in paragraph at lines 626--626
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--618
+Underfull \hbox (badness 10000) in paragraph at lines 626--626
 []|\T1/ptm/b/n/9 Spring
  []
 
-[21] (./main1.bbl [22]
+[21] [22] (./main1.bbl [23]
 Underfull \hbox (badness 2253) in paragraph at lines 109--114
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
@@ -1251,7 +1257,7 @@ Underfull \hbox (badness 4391) in paragraph at lines 109--114
 SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
  []
 
-[23]
+[24]
 Underfull \hbox (badness 1152) in paragraph at lines 208--213
 []\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
 pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
@@ -1263,7 +1269,7 @@ Underfull \hbox (badness 1635) in paragraph at lines 208--213
 r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
-[24] [25]
+[25] [26]
 Underfull \hbox (badness 1147) in paragraph at lines 354--358
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
@@ -1275,32 +1281,29 @@ Underfull \hbox (badness 1424) in paragraph at lines 354--358
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-[26]
+[27]
 Underfull \hbox (badness 1292) in paragraph at lines 454--459
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[27] [28]) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
+[28] [29]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
  (./main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 657.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 665.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
  ) 
 Here is how much of TeX's memory you used:
- 10787 strings out of 492995
- 152400 string characters out of 6132704
- 319987 words of memory out of 5000000
- 13979 multiletter control sequences out of 15000+600000
+ 10797 strings out of 492995
+ 152568 string characters out of 6132704
+ 320000 words of memory out of 5000000
+ 13987 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1942b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1322,10 +1325,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (29 pages, 10276940 bytes).
+Output written on main1.pdf (30 pages, 50153006 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 652 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 730 PDF objects out of 1000 (max. 8388607)
+ 656 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
