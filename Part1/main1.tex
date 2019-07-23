@@ -213,8 +213,8 @@ PROMET uses ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-correct
 The data products show some differences (Figures SXX-SXX, which compare data products over currently cultivated areas for each crop during their growing seasons). 
 For example, for maize, ERA-Interim daily precipitation is biased high from that in AgMERRA by XX\% (1 sigma), while mean daily precipitation in WFDEI is only XX\% high/low. 
 Precipitation differences are largest in wheat areas, where ERA-Interim is substantially wetter (+60mm year$^{-1}$). 
-Temperatures for maize are very similar between data products, with ERA-Interim 0.3◦C cooler and WFDEI XX cooler/warmer. 
-Differences are largest for rice, with ERA-Interim 1◦C cooler. 
+Temperatures for maize are very similar between data products, with ERA-Interim 0.3$^\circ$C cooler and WFDEI XX cooler/warmer. 
+Differences are largest for rice, with ERA-Interim 1$^\circ$C cooler. 
 These differences are still relatively small compared to the perturbations tested in the protocol.
 
 %In general, temperatures are very similar between data products, with ERA-Interim being about 1.0 and 0.3$^{\circ}$C cooler than AgMERRA (or WFDEI) when compared over rice and maize cultivation areas, respectively (supplemental Figure \ref{SXX}). 
@@ -335,22 +335,23 @@ While there is generally one sowing event per calendar year (since simulations d
 \caption{
 Models included in GGCMI Phase II and the number of CTWN simulations performed. 
 The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
-Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM does not simulate winter wheat.)}
+Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM does not simulate winter wheat.)
+}
 \label{table:models}
   \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
         \tophline
     {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
         {\textbf{APSIM-UGOE},   \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
-        {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}} & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
+        {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
         {\textbf{EPIC-IIASA},   \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
         {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
         {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
         {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
         {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
         {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-        {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--} & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
+        {\textbf{ORCHIDEE-crop},\citet{Wu2016}} & {X} & {--}  & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
         {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-        {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}} & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+        {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
         {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
         {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
         \bottomhline
