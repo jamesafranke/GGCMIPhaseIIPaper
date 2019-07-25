@@ -68,6 +68,11 @@ Bodirsky, B.~L., Rolinski, S., Biewald, A., Weindl, I., Popp, A., and
   ONE, 10, 1--27, \doi{10.1371/journal.pone.0139201},
   \urlprefix\url{https://doi.org/10.1371/journal.pone.0139201}, 2015.
 
+\bibitem[{Boote et~al.(2013)Boote, Jones, White, Asseng, and Lizaso}]{Boote13}
+Boote, K., Jones, J., White, J., Asseng, S., and Lizaso, J.: Putting Mechanisms
+  into Crop Production Models., Plant, cell \& environment, 36,
+  \doi{10.1111/pce.12119}, 2013.
+
 \bibitem[{Challinor et~al.(2018)Challinor, M{\"u}ller, Asseng, Deva, Nicklin,
   Wallach, Vanuytrecht, Whitfield, Ramirez-Villegas, and
   Koehler}]{challinor2018improving}
@@ -122,6 +127,10 @@ Elliott, J., M\"uller, C., Deryng, D., Chryssanthacopoulos, J., Boote, K.~J.,
   and modeling protocols for {P}hase 1 (v1.0), Geoscientific Model Development,
   8, 261--277, \doi{10.5194/gmd-2016-207}, 2015.
 
+\bibitem[{{FAO}(2018)}]{FAOSTAT}
+{FAO}: {FAOSTAT} Database, \urlprefix\url{http://www.fao.org/faostat/en/home},
+  2018.
+
 \bibitem[{{FAO/IIASA}(2011)}]{gaez}
 {FAO/IIASA}: {G}lobal {A}gro-ecological {Z}ones and {FAO-GAEZ} {D}ata
   {P}ortal({GAEZ} v3.0), \urlprefix\url{http://www.gaez.iiasa.ac.at/}, 2011.
@@ -156,11 +165,6 @@ Foley, J.~A., DeFries, R., Asner, G.~P., Barford, C., Bonan, G., Carpenter,
   J.~A., Prentice, I.~C., Ramankutty, N., and Snyder, P.~K.: Global
   Consequences of Land Use, Science, 309, 570--574,
   \doi{10.1126/science.1111772}, 2005.
-
-\bibitem[{{Food and Agriculture Organization of the United
-  Nations}(2018)}]{FAOSTAT}
-{Food and Agriculture Organization of the United Nations}: {FAOSTAT} Database,
-  \urlprefix\url{http://www.fao.org/faostat/en/home}, 2018.
 
 \bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
   Warszawski, Zhao, Chini, Denvil, Emanuel et~al.}]{frieler2017assessing}
@@ -274,12 +278,6 @@ Izaurralde, R., Williams, J., Mcgill, W., Rosenberg, N., and Quiroga~Jakas, M.:
   Simulating soil {C} dynamics with {E}{P}{I}{C}: Model description and testing
   against long-term data, Ecological Modelling, 192, 362--384,
   \doi{10.1016/j.ecolmodel.2005.07.010}, 2006.
-
-\bibitem[{J.~Boote et~al.(2013)J.~Boote, Jones, White, Asseng, and
-  Lizaso}]{Boote13}
-J.~Boote, K., Jones, J., White, J., Asseng, S., and Lizaso, J.: Putting
-  Mechanisms into Crop Production Models., Plant, cell \& environment, 36,
-  \doi{10.1111/pce.12119}, 2013.
 
 \bibitem[{J\"{a}germeyr and Frieler(2018)}]{Jag2018}
 J\"{a}germeyr, J. and Frieler, K.: Spatial variations in crop growing seasons
