@@ -145,7 +145,7 @@ The dataset is designed to allow researchers to:
   \includegraphics[width=15cm]{figures/number_of_models.png}
   \caption{
   \textbf{Left panel:}Cultivated areas for maize, rice, and soybean are taken from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. 
-  Areas for winter and spring wheat areas are adapted from MIRCA2000 and two other sources; see text for details.  For irrigated crops, see supplemental Figure XX.
+  Areas for winter and spring wheat areas are adapted from MIRCA2000 and two other sources; see text for details.  For irrigated crops, see supplemental Figure S1.
   \textbf{Right panel:} Number of models providing simulations for each grid cell.  
   All models provide the minimum areal coverage of the GGCMI Phase II protocol, but some provide extra coverage at high latitudes or in arid or otherwise unsuitable areas.}
   \label{fig:crop_area}
@@ -188,7 +188,7 @@ The protocol samples over all possible permutations of individual perturbations.
 This choice means that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with particular climate changes, e.g.\ higher temperatures. 
 
 Each model is run at 0.5 degree spatial resolution and covers all currently cultivated areas and much of the uncultivated land area. 
-Figure \ref{fig:crop_area}, left, shows the present-day cultivated area of rainfed crops and Supplementary Figure SXX that for irrigated crops. 
+Figure \ref{fig:crop_area}, left, shows the present-day cultivated area of rainfed crops and Supplementary Figure S1 that for irrigated crops. 
 Cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}.
 Coverage extends considerably outside currently cultivated areas because cultivation will likely shift under climate change.  
 To reduce the computational burden, however, the protocol requires simulation only over \textcolor{red}{Christoph -- XX\%} of Earth surface area.  
@@ -211,7 +211,7 @@ differences in model structure mean that several key factors cannot be fully sta
 
 While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate data product, two models require sub-daily input data and thus use different baseline climate inputs:
 PROMET uses ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, selecting WFDEI version with precipitation bias-corrected against the CRU TS3.101/TS3.21 precipitation totals \citep{harris_cru_2014}.
-The data products show some differences (Figures SXX-SXX, which compare data products over currently cultivated areas for each crop during their growing seasons). 
+The data products show some differences (Figures S3-S4, which compare data products over currently cultivated areas for each crop during their growing seasons). 
 For example, for maize, ERA-Interim daily precipitation is biased high from that in AgMERRA by XX\% (1 sigma), while mean daily precipitation in WFDEI is only XX\% high/low. 
 Precipitation differences are largest in wheat areas, where ERA-Interim is substantially wetter (+60mm year$^{-1}$). 
 Temperatures for maize are very similar between data products, with ERA-Interim 0.3$^\circ$C cooler and WFDEI XX cooler/warmer. 
@@ -378,7 +378,7 @@ However, note that two of these models (CARAIB and JULES) cannot represent nitro
 Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
 One model (PEPIC) followed \textit{mid} but included an additional C level. 
 Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
-See Figure SXX in the supplemental material for number of models that provided simulations at each combination of input levels.
+%See Figure SXX in the supplemental material for number of models that provided simulations at each combination of input levels.
 
 The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
 \begin{itemize}
@@ -534,16 +534,16 @@ The GGCMI Phase II exercise offers the opportunity to examine and characterize n
 We illustrate a few of these relationships in Figures 5—6, choosing crops and factors whose effects are reasonably well understood. 
 It is expected, for instance, that increases in precipitation should buffer the effects of warmer temperatures and that CO2 increases should reduce damage to crops in scenarios where water is limited. 
 Models generally confirm expected behavior but also provide insight into unforeseen interactions. 
-To show geographic effects, we divide model responses in Figures ref{fig:maizerice}—\ref{fig:soywheat} by the primary K\:{o}ppen-Geiger climate regions \citep{rubel2010}, showing the yield changes across all simulated grid cells in each region. 
+To show geographic effects, we divide model responses in Figures \ref{fig:maizerice}—\ref{fig:soywheat} by the primary K\:{o}ppen-Geiger climate regions \citep{rubel2010}, showing the yield changes across all simulated grid cells in each region. 
 In each panel we examine relationships between two factors, showing yield response against one for several scenarios of the other, in box plots that show the inter-model spread. 
-The responses highlighted here are qualitatively similar across all crops included in this study (Supplementary Figures SX - X). 
+The responses highlighted here are qualitatively similar across all crops included in this study (Supplementary Figures S5 - S8). 
 
 For all crops, warming scenarios with precipitation held constant produce yield decreases in most regions. 
 These impacts are robust for even moderate climate perturbations. For rainfed maize, even a 1 degree temperature increase with other factors held constant produces a median regional decline in potential yield that exceeds the variance across models, in all but the ``cold-continental'' regions (Figure \ref{fig:maizerice}a). 
 The remaining areas (‘warm temperate’, ‘equatorial’, and ‘arid’) account for nearly three-quarters of global maize production. In the high-latitude ``cold-continental'' region, potential yield changes are positive but highly uncertain, for the reasons discussed previously; uncertainties are larger even for maize than for soybeans. 
 (Compare Figures \ref{fig:maizerice}a and \ref{fig:maizerice}b.) 
 Temperature effects are somewhat nonlinear, with the largest impacts for maize in the warm ``tropical'' region. 
-(For soybeans, temperature effects are more complex; see Supplementary Figure XX.) 
+(For soybeans, temperature effects are more complex; see Supplementary Figure S5.) 
 Precipitation effects on rainfed crops are more strongly nonlinear. 
 The curvature of the precipitation response can be seen by eye in Figure \ref{fig:maizerice}b: soybean yields are strongly negatively impacted by reduced rainfall, peak under increased precipitation of ~20\%, and actually decline at higher precipitation levels. 
 
@@ -566,7 +566,7 @@ That is, CO2 fertilization does little to change the nature of the temperature r
 This interaction is seen in Figure \ref{fig:soywheat}b as smaller yield losses from reduced rainfall when [CO2] levels are higher. 
 For soy, raising [CO2] to 510 ppm actually outweighs the multi-model median damages caused by a 20\% precipitation reduction in all climate regions. 
 All crops show similar behavior, but note that model uncertainties for wheat are substantially higher than those for other crops, possibly because [statement about causes]. 
-(Compare Figure \ref{fig:soywheat}a for soy and Supplementary Figure XX for wheat).
+(Compare Figure \ref{fig:soywheat}a for soy and Supplementary Figure S7 for wheat).
 
 \section{Discussion and Conclusions} 
 \label{S:5}
