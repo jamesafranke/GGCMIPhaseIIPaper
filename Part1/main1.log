@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 AUG 2019 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 AUG 2019 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,12 +1288,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 667.
  (./main1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 667.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 667.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 667.
  ) 
 Here is how much of TeX's memory you used:
  10794 strings out of 492995
  152552 string characters out of 6132704
- 324031 words of memory out of 5000000
+ 324030 words of memory out of 5000000
  13984 multiletter control sequences out of 15000+600000
  50374 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1316,7 +1320,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main1.pdf (29 pages, 13748769 bytes).
+Output written on main1.pdf (29 pages, 13748774 bytes).
 PDF statistics:
  739 PDF objects out of 1000 (max. 8388607)
  667 compressed objects within 7 object streams
