@@ -208,7 +208,7 @@ These include soil treatment (which affects soil organic matter and carry-over e
 While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate data product, two models require sub-daily input data and thus use different baseline climate inputs:
 PROMET uses ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, selecting WFDEI version with precipitation bias-corrected against the CRU TS3.101/TS3.21 precipitation totals \citep{harris_cru_2014}.
 The data products show some differences (Figures S3-S4, which compare data products over currently cultivated areas for each crop during their growing seasons). 
-For example, for maize, ERA-Interim daily precipitation is biased high from that in AgMERRA by XX\% (1 sigma), while mean daily precipitation in WFDEI is only XX\% high/low. 
+For example, for maize, ERA-Interim daily precipitation is biased high from that in AgMERRA by 7\% (< 1 sigma), while mean daily precipitation in WFDEI is only 3\% higher. 
 Precipitation differences are largest in wheat areas, where ERA-Interim is substantially wetter (+60mm year$^{-1}$). 
 Temperatures for maize are very similar between data products, with ERA-Interim 0.3$^\circ$C cooler and WFDEI XX cooler/warmer. 
 Differences are largest for rice, with ERA-Interim 1$^\circ$C cooler. 
@@ -233,7 +233,7 @@ This assumption is simplistic, and does not reflect realistic opportunities and 
 
 Growing seasons for maize, rice, and soybean are taken from the SAGE (Center for Sustainability and the Global Environment, University of Wisconsin) crop calendar \citep{Sacks2010} and are identical to those used in GGCMI Phase I \citep{Elliott2015}.
 In GGCMI Phase II, we separately treat spring and winter wheat and so must define different growing seasons for each.
-We use the SAGE crop calendar, which separately specifies spring and winter wheat, as the primary source for \textcolor{red}{Christoph-- XX\% of grid cells}. 
+We use the SAGE crop calendar, which separately specifies spring and winter wheat, as the primary source for 69\% of grid cells. 
 In the remaining areas where no SAGE information is available, we turn to, in order of preference, the MIRCA2000 crop calendar \citep{Portmann2010} and to simulated LPJmL growing seasons \citep{waha2012climate}.  
 These datasets each provide several options for wheat growing season for each grid cell, but do not label them as spring or winter wheat. We assign a growing season to each wheat type for each location based on its baseline climate conditions. 
 A growing season is assigned to winter wheat if all of the following hold, and to spring wheat otherwise :
@@ -399,7 +399,7 @@ To illustrate the properties of the GGCMI Phase II model simulations, we provide
 \begin{figure*}[ht]
   \centering
   \includegraphics[width=14cm]{figures/validation_top.png}
-  \includegraphics[width=14cm]{figures/validation_bottom1.png}
+  \includegraphics[width=14cm]{figures/validation_bottom1.jpg}
   \caption{
   Assessment of crop model performance in GGCMI Phase II, following the protocol of GGCMI Phase I \citep{muller_global_2017}. 
   \textbf{Top:} example timeseries comparison between simulated crop yield and FAO country statistics \citep{FAOSTAT} at the country level for two example high production countries: US maize, and rice in India, both for the 200 kg ha$^{-1}$ nitrogen application level. 
@@ -480,7 +480,7 @@ For example, pDSSAT is the best model for maize in the US, LPJmL and GEPIC are b
   \textbf{Top:} Response of rainfed maize to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with CO$_2$ and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$).
   Outliers in the tropics (strong negative impact of higher T) are the pDSSAT model; outliers in the arid region (strong positive impact of higher P) are JULES.
   \textbf{Bottom:} 
-  Response of rainfed soybeans to applied uniform precipitation perturbations, for two discrete temperature levels, with CO$_2$ and nitrogen held constant at baseline levels. 
+  Response of rainfed soybeans to applied uniform precipitation perturbations, for two discrete temperature levels.
   Cases with reduced precipitation show greater inter-model spread than those with increased precipitation.
   At very large precipitation increases, yield changes level out: benefits saturate once water availability is no longer limiting.
   Precipitation changes are more important in the arid region, as expected. 
@@ -529,7 +529,7 @@ Apparent future yield increases in the multi-model mean are driven by the least 
 
 The GGCMI Phase II exercise offers the opportunity to examine and characterize not just crop response to a single temperature change but nonlinearities in responses and interactions between factors. 
 We illustrate a few of these relationships in Figures 5—6, choosing crops and factors whose effects are reasonably well understood. 
-It is expected, for instance, that increases in precipitation should buffer the effects of warmer temperatures and that CO2 increases should reduce damage to crops in scenarios where water is limited. 
+It is expected, for instance, that increases in precipitation should buffer the effects of warmer temperatures and that CO$_2$f increases should reduce damage to crops in scenarios where water is limited. 
 Models generally confirm expected behavior but also provide insight into unforeseen interactions. 
 To show geographic effects, we divide model responses in Figures \ref{fig:maizerice}—\ref{fig:soywheat} by the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}, showing the yield changes across all simulated grid cells in each region. 
 In each panel we examine relationships between two factors, showing yield response against one for several scenarios of the other, in box plots that show the inter-model spread. 
@@ -558,7 +558,7 @@ As expected, irrigated crops are more resilient to temperature increases in all 
 Increased CO$_2$ boosts yields overall through the well-known CO$_2$ fertilization effect (Figure \ref{fig:soywheat}). 
 The effect is strongest for the C3 crops (wheat, soybeans, and rice), while maize, a C4 grass, has a comparatively muted response. 
 We show irrigated rice and rainfed soy in Figure \ref{fig:soywheat} as representative C3 crops.  
-The effect of CO2 on yields is nonlinear, as expected, with significant benefit from small increases but with effects plateauing at higher concentrations (Figure \ref{fig:soywheat}). 
+The effect of CO$_2$f on yields is nonlinear, as expected, with significant benefit from small increases but with effects plateauing at higher concentrations (Figure \ref{fig:soywheat}). 
 CO$_2$ and temperature effects show minimal interaction. 
 This effect is seen in Figure \ref{fig:soywheat}a, which shows nearly parallel response slopes at different CO$_2$ levels. 
 That is, CO$_2$ fertilization does little to change the nature of the temperature response. 
@@ -573,18 +573,17 @@ All crops show similar behavior, but note that model uncertainties for wheat are
 The GGCMI Phase II experiment provides a database designed to allow detailed study of multi-factor crop yields in process-based models under climate change. While previous crop model intercomparison projects in the climate change context have focused on simulations along realistic climate scenarios,
 the use of systematic input parameter variations in GGCMI Phase II (with up to 756 scenarios) allows not only comparing yield sensitivities to changing climate and management inputs but also evaluating the complex interactions between important driving factors: CO$_2$, temperature, precipitation, and applied nitrogen. 
 The global extent of the experiment also allows identifying geographic shifts in high potential yield locations. 
-With 12 participating models and 31 simulation years per scenario the complete database constitutes [XXX]. 
+With 12 participating models and 31 simulation years per scenario the complete database constitutes over 150,000 years of global yield simulation output. 
 
-% Para on results - reiterating
-Preliminary results shown here highlight some of the insights provided by the simulation exercise and lend confidence in the models
-1) validation - reiterate something about that. In historical simuoaltions, year-over-year correlations in modeled and actual country-level yields are ... 
-2) models generally agree on changes driven by all factors outside the high latitudes (where models differ in treatment of crop response to current cold conditions).
-3) interactions between major factors (temperature and precipitation in Figure X, precipitation and CO2 in figure Y) generally follow expectations.
+Preliminary results shown here highlight some of the insights provided by the simulation exercise and lend confidence in the models.
+1) validation - reiterate something about that. In historical simulations, year-over-year correlations in modeled and actual country-level yields are comparable to previous process-based model intercomparison projects.
+Models generally agree on changes driven by all factors outside the high latitudes (where models differ in treatment of crop response to current cold conditions).
+Interactions between major yield drivers (temperature and precipitation in Figure 5, precipitation and CO$_2$f in Figure 6) generally follow expectations.
 
-% Para on limitations
 Users should be aware of some limitations with the experiment. 
 First, absolute model yield values in the historical scenario will generally not match observed yields.  
 In order to match current yields, process-based models must generally be re-tuned to account for the constant evolution of crop cultivar genetics and  management practice \citep[e.g.][]{JONES2017b}. The historical scenario also includes no trend in CO$_2$, and scenarios assume unrealistic globally uniform nitrogen application levels \citep{Elliott2015}.
+%As our goal is testing model sensitivity to important
 %% justification of why this choice was made and doesn't matter the purposes here - just want the changes, absolute level doesn't matter XX
 However, note that the models used in this exercise cannot not simulate some climate-induced yield changes due to factors such as pests, diseases, and weeds. 
 Second, exercise is intended to allow studying factors that will affect future yields, but no individual scenario in the exercise is itself a realistic future projection.
@@ -598,19 +597,21 @@ In general, the development of multi-model ensembles involving systematic parame
 We expect that the GGCMI Phase II data archive will be used to analyze the different GGCMs' sensitivity to changes in the CTWN-A space, including the interaction between drivers.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar}
 \codedataavailability{The simulation outputs of the mandatory 7 output variables (Table \ref{table:outputs}) are available on zenodo.org. 
 See Appendix \ref{A:1} for data DOIs. 
 All other simulation output variables are available upon request to the corresponding author. 
 The scripts for generating the spring wheat and winter wheat growing seasons and second fertilizer dates and the quality screening script is available at https://github.com/RDCEP/ggcmi/blob/phase2/.
 All input data are available via globus.org (registration required, free of charge):
 Minimum cropland mask is available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
 choose the file boolean\_cropmask\_ggcmi\_phase2.nc4
 Growing period data for wheat is now divided up into winter and spring wheat, available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
 whereas all other growing season data (maize, rice, soybean) are the same as in Phase I (version 1.25), available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
 }
+\end{sloppypar}
 
 \appendix
 \section{}
@@ -642,7 +643,7 @@ Data are published in crop- and GGCM-specific packages, in order to break down t
 \end{table*}
 \noappendix %% use this to mark the end of the appendix section
 
-\authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
+\authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
 
 \competinginterests{The authors declare no competing interests.}
 
@@ -669,6 +670,11 @@ R.C.I.\ acknowledges support from the Texas Agrilife Research and 634 Extension,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Para on results - reiterating
+Preliminary results shown here highlight some of the insights provided by the simulation exercise and lend confidence in the models.
+1) validation - reiterate something about that. In historical simulations, year-over-year correlations in modeled and actual country-level yields are ... 
+2) models generally agree on changes driven by all factors outside the high latitudes (where models differ in treatment of crop response to current cold conditions).
+3) interactions between major factors (temperature and precipitation in Figure 5, precipitation and CO$_2$f in Figure 6) generally follow expectations.
 
 The GGCMI Phase II experiment provides a database designed to allow detailed multi-factor study of crop yields in process-based models under climate change. 
 The use of systematic input parameter variations facilitates not only comparing the sensitivities of process-based crop yield models to changing climate and management inputs but also evaluating the complex interactions between driving factors (CO$_2$, temperature, precipitation, and applied nitrogen). 
