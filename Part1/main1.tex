@@ -188,15 +188,13 @@ The protocol samples over all possible permutations of individual perturbations.
 This choice means that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with particular climate changes, e.g.\ higher temperatures. 
 
 Each model is run at 0.5 degree spatial resolution and covers all currently cultivated areas and much of the uncultivated land area. 
-Figure \ref{fig:crop_area}, left, shows the present-day cultivated area of rainfed crops and Supplementary Figure S1 that for irrigated crops. 
+Figure \ref{fig:crop_area}, left, shows the present-day cultivated area of rainfed crops and Supplemental Figure S1 that for irrigated crops. 
 Cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}.
 Coverage extends considerably outside currently cultivated areas because cultivation will likely shift under climate change.  
 To reduce the computational burden, however, the protocol requires simulation only over 80\% of Earth land surface area.  
 Areas are not simulated if they are assumed to remain non-arable even under an extreme climate change; these regions include Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and Central Australia.
 The protocol also eliminates regions judged unsuitable for cropland for non-climatic reasons. 
 Selection criterion involve a combination of soil suitability indices at 10 arc-minute resolution and excludes those 0.5 degree grid cells in which at least 90\% of the area is masked as unsuitable according to any single index, and which do not contain any currently cultivated cropland. 
-% COMMENTED til we understand (i.e.\ soil quality is not not categorized as "minimal" or "moderate" constraints).and do not contain any cropland  
-% CITATION (downloaded from www.gaez.iiasa.ac.at/). 
 Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the IIASA (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
 All modeling groups simulate the minimum required coverage, but some provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia (Figure \ref{fig:crop_area}, right).
@@ -204,10 +202,8 @@ All modeling groups simulate the minimum required coverage, but some provide sim
 \subsection{Harmonization between models}
 The 12 models included in GGCMI Phase II are all process-based crop models that are widely used in impacts assessments (Table \ref{table:models}).
 Although some models share a common base (e.g.\ the LPJ family or the EPIC family of models), they have subsequently developed independently.  
-Wherever possible, the GGCMI Phase II protocol harmonizes inputs, but
-differences in model structure mean that several key factors cannot be fully standardized across the experiment. These include soil treatment (which affects soil organic matter and carry-over effects of soil moisture across growing years) and baseline climate inputs.  
-
-%Not all modeling teams provide the full simulation protocol, for instance, CARIAB and JULES do not simulate the nitrogen dimension and some crops are not parameterized in each model (see Table \ref{table:models} for details). 
+Wherever possible, the GGCMI Phase II protocol harmonizes inputs, but differences in model structure mean that several key factors cannot be fully standardized across the experiment. 
+These include soil treatment (which affects soil organic matter and carry-over effects of soil moisture across growing years) and baseline climate inputs.  
 
 While 10 of the 12 models participating in GGCMI Phase II use the AgMERRA historical daily climate data product, two models require sub-daily input data and thus use different baseline climate inputs:
 PROMET uses ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, selecting WFDEI version with precipitation bias-corrected against the CRU TS3.101/TS3.21 precipitation totals \citep{harris_cru_2014}.
@@ -226,8 +222,6 @@ Given that temperature varies between years, individual years can vary from the 
 Growing seasons are harmonized across models but are crop- and location-specific.
 For example, at present maize is sown in March in Spain, in July in Indonesia, and in December in Namibia \citep{Portmann2010}.
 The one exception to the harmonization protocol described above involves CARAIB, which for technical reasons kept their own growing season specifications rather than tuning to standard lengths.
-
-%One exception is CARAIB, which did not harmonize against provided growing season data \citep{Elliott2015}, but kept their own growing seasons for technical reasons.
  
 Because harvest dates are a function of climate parameters, simulations with the harmonized phenological parameters described above generally result in shorter growing seasons in future warmer scenarios. 
 We denote these simulations as ``A0'' experiments, where 0 denotes ``no adaptation''. 
@@ -432,7 +426,6 @@ Because the GGCMI Phase II protocol imposes fixed, uniform nitrogen application 
 Nine of the GGCMI Phase II models (Table 3) provide historical runs for all three nitrogen levels (10, 60, and. 200 kg ha$^-1$ yr$^-1$).
 
 As expected due to the unrealistic features described above, correlation coefficients for the GGCMI Phase II simulations are slightly lower than those found in the Phase I evaluation, but models show reasonable fidelity at capturing year-over-year variation (Figure \ref{fig:simulation_val}). 
-%\textcolor{blue}{JIM -- give a few numbers here}
 (Compare to \citet{muller_global_2017} Figures 1--4 and 6.)  
 Differences in fidelity between regions and crops exceed differences between models: 
 that is, Figure \ref{fig:simulation_val} shows more color similarity in horizontal than vertical bars. 
@@ -479,22 +472,23 @@ For example, pDSSAT is the best model for maize in the US, LPJmL and GEPIC are b
   \includegraphics[width=15cm]{figures/maize_sim_CG_T.png}
   \includegraphics[width=15cm]{figures/soy_sim_CG_W.png}
   \caption{
-  Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions for the A0 case.
-  Y-axis is the fractional change in the regional average climatological (30-year mean) potential yield relative to the baseline. 
-  Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles; whiskers extend to 1.5$\cdot$IQR.
-  Figure shows all modeled land area within each model; see Figure SXX-SXX in the supplemental material for only currently-cultivated land.
-  The right panel (Global) shows yield responses to a globally uniform temperature shift; note that these results are not directly comparable to simulations of more realistic climate scenarios.
-  Note that `Cold continental' is sometimes referred to as `Snow'. 
-  \textbf{Top:} responses for rainfed maize to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with CO$_2$ and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$). 
-  Outliers in the tropics (strong negative impact of temperature increases) are the pDSSAT model; outliers in the high-rainfall case (strong positive impact of precipitation increases) are the JULES model. 
-  Outside high-latitude regions for maize, models generally agree, with projected declines under increasing temperatures larger than inter-model variance.
-  \textbf{Bottom:} response for rainfed soybeans to applied uniform precipitation perturbations, for two discrete temperature levels, with CO$_2$ and nitrogen held constant at baseline levels.
+  Illustration of the distribution of regional yield changes across the multi-model ensemble, split by K\"{o}ppen-Geiger climate regions, and with global response in rightmost panel.
+  Y-axis is the fractional change in the regional average climatological (30-year mean) potential yield relative to the baseline.
+  Box-and-whiskers plots show distribution across models, with median marked; edges are first and third quartiles and whiskers extend to 1.5$\cdot$IQR.
+  Figure shows all all simulated grid cells for each model; see Supplemental Figure SXX-SXX for only currently-cultivated land. We highlight responses to individual factors; note that results are not directly comparable to simulations of realistic climate scenarios with identical global mean changes.  
+  Models generally agree outside high-latitude regions, with projected changes exceeding inter-model variance.
+  \textbf{Top:} Response of rainfed maize to applied uniform temperature perturbations, for three discrete precipitation perturbation levels ( -20\%, 0\%, and +20\%), with CO$_2$ and nitrogen held constant at baseline values (360 pmm and 200 kg ha$^{-1}$ yr$^{-1}$).
+  Outliers in the tropics (strong negative impact of higher T) are the pDSSAT model; outliers in the arid region (strong positive impact of higher P) are JULES.
+  \textbf{Bottom:} 
+  Response of rainfed soybeans to applied uniform precipitation perturbations, for two discrete temperature levels, with CO$_2$ and nitrogen held constant at baseline levels. 
   Cases with reduced precipitation show greater inter-model spread than those with increased precipitation.
   At very large precipitation increases, yield changes level out: benefits saturate once water availability is no longer limiting.
-  Precipitation changes are more important in the arid region, as expected. Note the large uncertainty in the cold continental region also illustrated in Figures 3 and 4.
+  Precipitation changes are more important in the arid region, as expected. 
+  Note the large uncertainty in the cold continental region, also illustrated in Figures 3 and 4.
   }
   \label{fig:maizerice}
 \end{figure*}
+
 
 \begin{figure*}[ht]
   \centering
@@ -503,12 +497,13 @@ For example, pDSSAT is the best model for maize in the US, LPJmL and GEPIC are b
   \caption{
   Illustration of the distribution of regional yield changes across the multi-model ensemble, here for soybeans and rice for the A0 case. Conventions as in Figure \ref{fig:maizerice}.
   \textbf{Top:} 
-  response for rainfed soybeans to atmospheric CO$_2$, for three discrete precipitation perturbation levels with temperature and nitrogen held constant at baseline values.
-  The CO$_2$ Reduced precipitation tends to steepen the CO$_2$ response and increased precipitation tends to flatten it, as expected. 
+  Response of rainfed soybeans to atmospheric CO$_2$, for three discrete precipitation perturbation levels with temperature and nitrogen held constant at baseline values.
+  Low outliers are the EPIC-TAMU model and the high outliers in the Arid region are the JULES model.
+  Reduced precipitation tends to steepen the CO$_2$ response and increased precipitation tends to flatten it, as expected. 
   Reduced precipitation tends to increase the inter model spread, especially at the highest CO$_2$ levels.
   \textbf{Bottom:} 
-  response for irrigated rice for three discrete CO$_2$ levels, with nitrogen and precipitation held constant. CO$_2$ does not change the nature of temperature response respective to baseline as the slopes at each CO$_2$ level are relatively constant.
-  There is very little difference across K\"{o}ppen-Geiger regions for irrigated rice.
+  Response of irrigated rice for three discrete CO$_2$ levels, with nitrogen and precipitation held constant. 
+  CO$_2$ does not change the nature of temperature response respective to baseline as the slopes at each CO$_2$ level are relatively constant.
   }
   \label{fig:soywheat}
 \end{figure*}
@@ -538,14 +533,14 @@ It is expected, for instance, that increases in precipitation should buffer the 
 Models generally confirm expected behavior but also provide insight into unforeseen interactions. 
 To show geographic effects, we divide model responses in Figures \ref{fig:maizerice}—\ref{fig:soywheat} by the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}, showing the yield changes across all simulated grid cells in each region. 
 In each panel we examine relationships between two factors, showing yield response against one for several scenarios of the other, in box plots that show the inter-model spread. 
-The responses highlighted here are qualitatively similar across all crops included in this study (Supplementary Figures S5 - S8). 
+The responses highlighted here are qualitatively similar across all crops included in this study (Supplemental Figures S5 - S8). 
 
 For all crops, warming scenarios with precipitation held constant produce yield decreases in most regions. 
 These impacts are robust for even moderate climate perturbations. For rainfed maize, even a 1 degree temperature increase with other factors held constant produces a median regional decline in potential yield that exceeds the variance across models, in all but the ``cold-continental'' regions (Figure \ref{fig:maizerice}a). 
 The remaining areas (‘warm temperate’, ‘equatorial’, and ‘arid’) account for nearly three-quarters of global maize production. In the high-latitude ``cold-continental'' region, potential yield changes are positive but highly uncertain, for the reasons discussed previously; uncertainties are larger even for maize than for soybeans. 
 (Compare Figures \ref{fig:maizerice}a and \ref{fig:maizerice}b.) 
 Temperature effects are somewhat nonlinear, with the largest impacts for maize in the warm ``tropical'' region. 
-(For soybeans, temperature effects are more complex; see Supplementary Figure S5.) 
+(For soybeans, temperature effects are more complex; see Supplemental Figure S5.) 
 Precipitation effects on rainfed crops are more strongly nonlinear. 
 The curvature of the precipitation response can be seen by eye in Figure \ref{fig:maizerice}b: soybean yields are strongly negatively impacted by reduced rainfall, peak under increased precipitation of 20\%, and actually decline at higher precipitation levels. 
 
@@ -558,7 +553,7 @@ For soybeans, the equivalent values are ~11\% and 1\%, respectively.
 Decreased rainfall, on the other hand, amplifies yield losses and also increases inter-model variance. 
 That is, models agree that the response to decreased water availability is negative in sign but disagree on its magnitude. 
 Outside of arid regions, the interaction effect itself shows little nonlinearity (i.e. response slopes in Figures \ref{fig:maizerice}a and \ref{fig:maizerice}b are roughly parallel). 
-As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is already limiting  (other than winter wheat, Supplementary Figure S9).
+As expected, irrigated crops are more resilient to temperature increases in all regions, especially so where water is already limiting  (other than winter wheat, Supplemental Figure S9).
 
 Increased CO$_2$ boosts yields overall through the well-known CO$_2$ fertilization effect (Figure \ref{fig:soywheat}). 
 The effect is strongest for the C3 crops (wheat, soybeans, and rice), while maize, a C4 grass, has a comparatively muted response. 
@@ -571,54 +566,36 @@ On the other hand, CO$_2$ and precipitation effects interact strongly, as expect
 This interaction is seen in Figure \ref{fig:soywheat}b as smaller yield losses from reduced rainfall when CO$_2$ levels are higher. 
 For example, for soy, raising CO$_2$ to 510 ppm actually outweighs the multi-model median damages caused by a 20\% precipitation reduction in all climate regions. 
 All crops show similar behavior, but note that model uncertainties for wheat are substantially higher than those for other crops, possibly because model calibration is especially important for wheat \citep{Asseng2013}. 
-(Compare Figure \ref{fig:soywheat}a for soy and Supplementary Figure S7 for wheat).
+(Compare Figure \ref{fig:soywheat}a for soy and Supplemental Figure S7 for wheat).
 
 \section{Discussion and Conclusions} 
 \label{S:5}
-The GGCMI Phase II experiment provides a database designed to allow detailed multi-factor study of crop yields in process-based models under climate change. 
-The use of systematic input parameter variations facilitates not only comparing the sensitivities of process-based crop yield models to changing climate and management inputs but also evaluating the complex interactions between driving factors (CO$_2$, temperature, precipitation, and applied nitrogen). 
+The GGCMI Phase II experiment provides a database designed to allow detailed study of multi-factor crop yields in process-based models under climate change. While previous crop model intercomparison projects in the climate change context have focused on simulations along realistic climate scenarios,
+the use of systematic input parameter variations in GGCMI Phase II (with up to 756 scenarios) allows not only comparing yield sensitivities to changing climate and management inputs but also evaluating the complex interactions between important driving factors: CO$_2$, temperature, precipitation, and applied nitrogen. 
+The global extent of the experiment also allows identifying geographic shifts in high potential yield locations. 
+With 12 participating models and 31 simulation years per scenario the complete database constitutes [XXX]. 
 
-Its global extent also allows identifying geographic shifts in high yield locations. 
-We expect that the simulations will yield multiple insights in future studies
+% Para on results - reiterating
+Preliminary results shown here highlight some of the insights provided by the simulation exercise and lend confidence in the models
+1) validation - reiterate something about that. In historical simuoaltions, year-over-year correlations in modeled and actual country-level yields are ... 
+2) models generally agree on changes driven by all factors outside the high latitudes (where models differ in treatment of crop response to current cold conditions).
+3) interactions between major factors (temperature and precipitation in Figure X, precipitation and CO2 in figure Y) generally follow expectations.
 
-, and show a selection of preliminary results. 
-We discuss below the implications from the experimental design, but refrain from analyzing simulation results in detail. 
-Data analyses will be conducted in subsequent analyses making use of the GGCMI Phase II data archive.
-
-First, the GGCMI Phase II simulations allow identifying major areas of uncertainty. 
-Inter-model uncertainty is qualitatively similar across all four inputs tested at the globally aggregate level with some notable exceptions. 
-For example, soybean, a nitrogen-fixing legume, is insensitive to nitrogen addition, while wheat is particularly uncertain in its response to CO$_2$ levels and water availability (Supplemental Figure S8). 
-Across geographic regions, projections are most robust in the low latitudes where yield impacts are largest, and most uncertain in the high latitudes where yields may increase under warming. 
-Model differences in projected high-latitude yield changes appear driven more by differences in baseline than in responses to CTWN perturbations.  
-
-
-\textcolor{red}{not so sure about this... Second, the GGCMI Phase II simulations allow for the decomposition of the interaction between major drivers behind yield at the climatological-mean level. 
-Previous crop model intercomparison projects in the climate change context have focused on simulations along dynamic climate scenarios prescribed by Representative Concentration Pathways  (RCPs).
-Temperature, precipitation, and CO$_2$ co-vary in these climate scenarios in ways that make isolating the effects and interactions difficult. 
-...
-}
-
-\textcolor{red}{OLD -Second, the GGCMI Phase II simulations demonstrate the sensitivity of climate-driven yield impacts to the locations of cultivated land. 
-One counterintuitive result apparent in the simulations is that warmer temperatures drive steeper yield reductions in irrigated than rainfed maize when considered only over currently cultivated land, even though water availability increases crop resiliency to temperature increases at any given location (compare Figure \ref{fig:maizerice} and Figures SX to SX). 
-The effect results from geographic differences in cultivation: irrigated maize is grown in warmer locations where the impacts of warming are more severe (See Figures SX-SX for other crops.) 
-Geographic effects also mean that nitrogen fertilization produces stronger responses in irrigated than non-irrigated wheat and maize, presumably because those rainfed crops are limited by water availability (Figure SX).
-}
-
-Some limitations with the model experiment described here are as follows.
-Some issues with process based models are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
-Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
-For these reasons, individual studies must generally re-calibrate models to ensure that short-term predictions reflect current cultivars and management levels. 
-The GGCMI Phase II simulations are designed for evaluating changes in yield across the CTNW-A space but not necessarily absolute yields, since they omit detailed calibrations. 
-The Phase II experiment must not be confused with a correct historic setup, as there is no trend in the CO$_2$ and the uniform application of 200 kg N ha$^{-1}$ is not representative for many world regions \citep{Elliott2015}.
+% Para on limitations
+Users should be aware of some limitations with the experiment. 
+First, absolute model yield values in the historical scenario will generally not match observed yields.  
+In order to match current yields, process-based models must generally be re-tuned to account for the constant evolution of crop cultivar genetics and  management practice \citep[e.g.][]{JONES2017b}. The historical scenario also includes no trend in CO$_2$, and scenarios assume unrealistic globally uniform nitrogen application levels \citep{Elliott2015}.
+%% justification of why this choice was made and doesn't matter the purposes here - just want the changes, absolute level doesn't matter XX
+However, note that the models used in this exercise cannot not simulate some climate-induced yield changes due to factors such as pests, diseases, and weeds. 
+Second, exercise is intended to allow studying factors that will affect future yields, but no individual scenario in the exercise is itself a realistic future projection.
 Uniform offsets in temperature and precipitation are not realistic because climate change will result in spatially heterogeneous changes mean temperature and precipitation. 
-For example, the 2$^{\circ}$C scenario presented here has the same global mean temperature change as 2$^{\circ}$C of warming under climate change, but not the projected spatial pattern of warming, which results in more than 2$^{\circ}$C in some locations and less in others.
-Additionally, we do not sample any potential changes in the higher-order moments in the distributions in temperature and precipitation, which may play an important role.
+Using GGCMI Phase II simulation results for impacts projection requires the construction of an emulator of crop yield response to climatological changes. 
+However, note that the experiment does not sample over potential changes in the higher-order moments in the distributions in temperature and precipitation. 
 
+We expect that the simulations will yield multiple insights in future studies. 
+Potential applications include emulators, yield response surface, adaptation studies, nitrogen use efficiency, regional production shifts, and others.
 In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for increasing understanding of potential future crop responses and for improving process-based crop models.
-The dataset is unprecedentedly large, being global in extent, covering 31-simulation years per pixel and up to 756 scenarios for 12 GGCMs.
 We expect that the GGCMI Phase II data archive will be used to analyze the different GGCMs' sensitivity to changes in the CTWN-A space, including the interaction between drivers.
-\textcolor{red}{The authors are working on some analyses including: emulators, yield response surface, adaptation studies, nitrogen use efficiency, regional production shifts, and others.
-Many other avenues of analysis are facilitated by the GGCMI Phase II data archive and we encourage external collaboration.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \codedataavailability{The simulation outputs of the mandatory 7 output variables (Table \ref{table:outputs}) are available on zenodo.org. 
@@ -627,12 +604,12 @@ All other simulation output variables are available upon request to the correspo
 The scripts for generating the spring wheat and winter wheat growing seasons and second fertilizer dates and the quality screening script is available at https://github.com/RDCEP/ggcmi/blob/phase2/.
 All input data are available via globus.org (registration required, free of charge):
 Minimum cropland mask is available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
 choose the file boolean\_cropmask\_ggcmi\_phase2.nc4
 Growing period data for wheat is now divided up into winter and spring wheat, available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
 whereas all other growing season data (maize, rice, soybean) are the same as in Phase I (version 1.25), available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
+\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46- 22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
 }
 
 \appendix
@@ -691,3 +668,49 @@ R.C.I.\ acknowledges support from the Texas Agrilife Research and 634 Extension,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The GGCMI Phase II experiment provides a database designed to allow detailed multi-factor study of crop yields in process-based models under climate change. 
+The use of systematic input parameter variations facilitates not only comparing the sensitivities of process-based crop yield models to changing climate and management inputs but also evaluating the complex interactions between driving factors (CO$_2$, temperature, precipitation, and applied nitrogen). 
+
+Its global extent also allows identifying geographic shifts in high yield locations. 
+We expect that the simulations will yield multiple insights in future studies
+
+, and show a selection of preliminary results. 
+We discuss below the implications from the experimental design, but refrain from analyzing simulation results in detail. 
+Data analyses will be conducted in subsequent analyses making use of the GGCMI Phase II data archive.
+
+First, the GGCMI Phase II simulations allow identifying major areas of uncertainty. 
+Inter-model uncertainty is qualitatively similar across all four inputs tested at the globally aggregate level with some notable exceptions. 
+For example, soybean, a nitrogen-fixing legume, is insensitive to nitrogen addition, while wheat is particularly uncertain in its response to CO$_2$ levels and water availability (Supplemental Figure S8). 
+Across geographic regions, projections are most robust in the low latitudes where yield impacts are largest, and most uncertain in the high latitudes where yields may increase under warming. 
+Model differences in projected high-latitude yield changes appear driven more by differences in baseline than in responses to CTWN perturbations.  
+
+
+\textcolor{red}{not so sure about this... Second, the GGCMI Phase II simulations allow for the decomposition of the interaction between major drivers behind yield at the climatological-mean level. 
+Previous crop model intercomparison projects in the climate change context have focused on simulations along dynamic climate scenarios prescribed by Representative Concentration Pathways  (RCPs).
+Temperature, precipitation, and CO$_2$ co-vary in these climate scenarios in ways that make isolating the effects and interactions difficult. 
+...
+}
+
+\textcolor{red}{OLD -Second, the GGCMI Phase II simulations demonstrate the sensitivity of climate-driven yield impacts to the locations of cultivated land. 
+One counterintuitive result apparent in the simulations is that warmer temperatures drive steeper yield reductions in irrigated than rainfed maize when considered only over currently cultivated land, even though water availability increases crop resiliency to temperature increases at any given location (compare Figure \ref{fig:maizerice} and Figures SX to SX). 
+The effect results from geographic differences in cultivation: irrigated maize is grown in warmer locations where the impacts of warming are more severe (See Figures SX-SX for other crops.) 
+Geographic effects also mean that nitrogen fertilization produces stronger responses in irrigated than non-irrigated wheat and maize, presumably because those rainfed crops are limited by water availability (Figure SX).
+}
+
+Some limitations with the model experiment described here are as follows.
+Some issues with process based models are driven in part by the diversity of new cultivars and genetic variants, which outstrips the ability of academic modeling groups to capture them \citep[e.g.][]{JONES2017b}. 
+Models also do not simulate many additional factors affecting production, including but not limited to: pests, diseases, and weeds. 
+For these reasons, individual studies must generally re-calibrate models to ensure that short-term predictions reflect current cultivars and management levels. 
+The GGCMI Phase II simulations are designed for evaluating changes in yield across the CTNW-A space but not necessarily absolute yields, since they omit detailed calibrations. 
+The Phase II experiment must not be confused with a correct historic setup, as there is no trend in the CO$_2$ and the uniform application of 200 kg N ha$^{-1}$ is not representative for many world regions \citep{Elliott2015}.
+Uniform offsets in temperature and precipitation are not realistic because climate change will result in spatially heterogeneous changes mean temperature and precipitation. 
+For example, the 2$^{\circ}$C scenario presented here has the same global mean temperature change as 2$^{\circ}$C of warming under climate change, but not the projected spatial pattern of warming, which results in more than 2$^{\circ}$C in some locations and less in others.
+Additionally, we do not sample any potential changes in the higher-order moments in the distributions in temperature and precipitation, which may play an important role.
+
+In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for increasing understanding of potential future crop responses and for improving process-based crop models.
+The dataset is unprecedentedly large, being global in extent, covering 31-simulation years per pixel and up to 756 scenarios for 12 GGCMs.
+We expect that the GGCMI Phase II data archive will be used to analyze the different GGCMs' sensitivity to changes in the CTWN-A space, including the interaction between drivers.
+\textcolor{red}{The authors are working on some analyses including: emulators, yield response surface, adaptation studies, nitrogen use efficiency, regional production shifts, and others.
+Many other avenues of analysis are facilitated by the GGCMI Phase II data archive and we encourage external collaboration.}
