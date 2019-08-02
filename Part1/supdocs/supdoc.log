@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 JUL 2019 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 AUG 2019 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,6 +1029,18 @@ LABELS NOT IMPORTED.
 
 LaTeX Warning: Label `fig:precip_rea' multiply defined.
 
+
+LaTeX Warning: Label `fig:temperautre' multiply defined.
+
+
+LaTeX Warning: Label `fig:water' multiply defined.
+
+
+LaTeX Warning: Label `fig:carbon' multiply defined.
+
+
+LaTeX Warning: Label `fig:carbontemp' multiply defined.
+
 )
 \openout1 = `supdoc.aux'.
 
@@ -1302,19 +1314,67 @@ Package pdftex.def Info: s_sim_CG_TC.png used on input line 170.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<s_sim_CG_T_irr.png, id=34, 4516.875pt x 5420.25pt>
+File: s_sim_CG_T_irr.png Graphic file (type png)
+ <use s_sim_CG_T_irr.png>
+Package pdftex.def Info: s_sim_CG_T_irr.png used on input line 177.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<s_sim_CG_T_area.png, id=35, 4516.875pt x 5420.25pt>
+File: s_sim_CG_T_area.png Graphic file (type png)
+ <use s_sim_CG_T_area.png>
+Package pdftex.def Info: s_sim_CG_T_area.png used on input line 184.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<s_sim_CG_W_area.png, id=36, 4516.875pt x 5420.25pt>
+File: s_sim_CG_W_area.png Graphic file (type png)
+ <use s_sim_CG_W_area.png>
+Package pdftex.def Info: s_sim_CG_W_area.png used on input line 191.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<s_sim_CG_C_area.png, id=37, 4516.875pt x 5420.25pt>
+File: s_sim_CG_C_area.png Graphic file (type png)
+ <use s_sim_CG_C_area.png>
+Package pdftex.def Info: s_sim_CG_C_area.png used on input line 198.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<s_sim_CG_TC_area.png, id=38, 4516.875pt x 5420.25pt>
+File: s_sim_CG_TC_area.png Graphic file (type png)
+
+<use s_sim_CG_TC_area.png>
+Package pdftex.def Info: s_sim_CG_TC_area.png used on input line 205.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [5
 
  <./s_sim_CG_T.png>] [6 <./s_sim_CG_W.png>] [7 <./s_sim_CG_C.png>] [8 <./s_sim_
-CG_TC.png>] (./supdoc.aux)
+CG_TC.png>] [9 <./s_sim_CG_T_irr.png>] [10 <./s_sim_CG_T_area.png>] [11 <./s_si
+m_CG_W_area.png>] [12 <./s_sim_CG_C_area.png>] [13 <./s_sim_CG_TC_area.png>]
+(./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15788 strings out of 492995
- 303324 string characters out of 6132704
- 327127 words of memory out of 5000000
- 19147 multiletter control sequences out of 15000+600000
+ 15814 strings out of 492995
+ 303908 string characters out of 6132704
+ 327144 words of memory out of 5000000
+ 19168 multiletter control sequences out of 15000+600000
  10298 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,43p,10390b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1324,10 +1384,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on supdoc.pdf (8 pages, 13706990 bytes).
+Output written on supdoc.pdf (13 pages, 19383021 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
