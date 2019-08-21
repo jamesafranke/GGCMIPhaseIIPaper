@@ -156,10 +156,10 @@ This set of major crops has the advantage of historical yield data globally avai
 
 The Phase II protocol involves a suite of uniform perturbations from a historical climate timeseries.
 The baseline climate scenario for GGCMI Phase II is one of the weather products used in Phase I, daily climate inputs for 1980-2010 from the 0.5 degree NASA AgMERRA (``Agricultural''-modified Modern Era Retrospective analysis for Research and Applications) gridded re-analysis product. AgMERRA is specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}. 
-The experimental protocol consists of 9 levels for water supply perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 756 simulations (Table \ref{table:inputs}), 672 for rainfed agriculture and an additional 84 for irrigated (W$_{inf}$). 
+The experimental protocol consists of 9 levels for water supply perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 756 simulations (Table \ref{table:inputs}), 672 for rainfed agriculture and an additional 84 for irrigated (W$_{\infinity}$). 
 %For irrigated simulations, models are set to apply near-perfect irrigation to keeps soils wet throughout the entire growing period, with no limitations in water supply. 
 In irrigated simulations, crops are assumed to have no water constraints, i.e. all crop water requirements are fulfilled regardless of local water supply limitations.
-Given that the irrigated scenario (W$_{inf}$) is one element of the water supply levels, irrigated simulations use the same growing seasons and areas as all other simulations.
+Given that the irrigated scenario (W$_{\infinity}$) is one element of the water supply levels, irrigated simulations use the same growing seasons and areas as all other simulations.
 All other water supply levels are implemented as relative variations of precipitation.
 Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to 2100) under business-as-usual emissions. 
 The resulting GGCMI Phase II dataset therefore captures the distribution of crop model responses over the range of potential future climate conditions.
@@ -167,7 +167,7 @@ The resulting GGCMI Phase II dataset therefore captures the distribution of crop
 \begin{table}[t]
   \caption{
   GGCMI Phase II input parameter levels for each dimension. Temperature and precipitation values indicate the perturbations from the historical climatology. 
-Irrigated (W$_{inf}$) simulations assume the maximum beneficial levels of water. 
+Irrigated (W$_{\infinity}$) simulations assume the maximum beneficial levels of water. 
 Bold font indicates the `baseline' or historical level for each dimension. One model provided simulations at the T + 5 level.
   }
   \label{table:inputs} 
@@ -177,7 +177,7 @@ Bold font indicates the `baseline' or historical level for each dimension. One m
       CO$_2$ (C) & \textbf{360}, 510, 660, 810 & ppm\\ \middlehline \vspace{1mm}
       Temperature (T) & -1, \textbf{0}, 1, 2, 3, 4, 6 & $^{\circ}$C\\ \middlehline \vspace{1mm}
       Precipitation (W) & -50, -30, -20, -10, \textbf{0}, & \% \\
-      {} & 10, 20, 30, (and W$_{inf}$) & {} \\ \middlehline \vspace{1mm}
+      {} & 10, 20, 30, (and W$_{\infinity}$) & {} \\ \middlehline \vspace{1mm}
       Applied nitrogen (N) & 10, 60, \textbf{200} & kg ha$^{-1}$ \\ \middlehline \vspace{1mm}
       Adaptation (A) & \textbf{A0: none}, A1: new cultivar to maintain original growing season length & -\\ \bottomhline
   \end{tabular}\\
@@ -217,7 +217,7 @@ Differences are largest for rice, with ERA-Interim 1$^\circ$C cooler.
 These differences are relatively small compared to the perturbations tested in the protocol.
 
 Planting dates and growing season lengths are standardized across models, following the procedure described in \citet{Elliott2015} for the \textit{fullharm} setting. 
-In contrast to GGCMI Phase I \citep{Elliott2015}, we here assume identical growing seasons for rainfed and irrigated scenarios, to allow for direct comparability of simulations along the W dimension, in which irrigation (W$_{inf}$) is one element. (See Table \ref{table:inputs}.) 
+In contrast to GGCMI Phase I \citep{Elliott2015}, we here assume identical growing seasons for rainfed and irrigated scenarios, to allow for direct comparability of simulations along the W dimension, in which irrigation (W$_{\infinity}$) is one element. (See Table \ref{table:inputs}.) 
 While sowing dates are prescribed directly and held fixed in models, the length of the growing season is a product of crop phenology, which in turn is mostly driven by phenological parameters and temperature. 
 Modelers are asked to adjust the phenological parameters so that growing season length of the baseline scenario (C=360, T=0, W=0)  on average matches the harmonization target. 
 Given that temperature varies between years, individual years can vary from the harmonization target.
@@ -285,7 +285,7 @@ Participating modeling groups provided between 3 (PEPIC) and 18 (APSIM-UGOE) of 
     \textbf{Anthesis date}                           & \textbf{anth-day\_<crop>}  & \textbf{days from planting} \\
     \textbf{Maturity date}                           & \textbf{maty-day\_<crop>}  & \textbf{days from planting}\\
     \textbf{Applied irrigation water}                & \textbf{pirrww\_<crop>}    & \textbf{mm yr$^{-1}$} \\
-    \textbf{Evapotranspiration (growing season sum)} & \textbf{etransp\_<crop>}   & \textbf{mm yr$^{-1}$ (W$_{inf}$ scenarios only)}\\ \middlehline
+    \textbf{Evapotranspiration (growing season sum)} & \textbf{etransp\_<crop>}   & \textbf{mm yr$^{-1}$ (W$_{\infinity}$ scenarios only)}\\ \middlehline
     Transpiration (growing season sum)                       & transp\_<crop>    & mm yr$^{-1}$ \\
     Evaporation (growing season sum)                         & evap\_<crop>      & mm yr$^{-1}$ \\
     Runoff (total growing season sum, subsurface + surface)  & runoff\_<crop>    & mm yr$^{-1}$                    \\
