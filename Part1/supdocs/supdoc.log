@@ -1207,10 +1207,7 @@ Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/mf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
@@ -1263,62 +1260,64 @@ Package pdftex.def Info: s_croparea.png used on input line 123.
  [2
 
  <./s_croparea_irr.png> <./s_croparea.png>]
-<s_precip_rea.png, id=20, 578.16pt x 578.16pt>
-File: s_precip_rea.png Graphic file (type png)
- <use s_precip_rea.png>
-Package pdftex.def Info: s_precip_rea.png used on input line 133.
+<s_precip_rea.pdf, id=20, 578.16pt x 578.16pt>
+File: s_precip_rea.pdf Graphic file (type pdf)
+ <use s_precip_rea.pdf>
+Package pdftex.def Info: s_precip_rea.pdf used on input line 133.
 (pdftex.def)             Requested size: 469.75502pt x 469.75385pt.
 
-<s_temp_rea.png, id=21, 578.16pt x 578.16pt>
-File: s_temp_rea.png Graphic file (type png)
- <use s_temp_rea.png>
-Package pdftex.def Info: s_temp_rea.png used on input line 140.
+<s_temp_rea.pdf, id=21, 578.16pt x 578.16pt>
+File: s_temp_rea.pdf Graphic file (type pdf)
+ <use s_temp_rea.pdf>
+Package pdftex.def Info: s_temp_rea.pdf used on input line 141.
 (pdftex.def)             Requested size: 469.75502pt x 469.75385pt.
+ [3
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3
-
- <./s_precip_rea.png>] [4 <./s_temp_rea.png>]
-<s_sim_CG_T.png, id=30, 4516.875pt x 5420.25pt>
-File: s_sim_CG_T.png Graphic file (type png)
- <use s_sim_CG_T.png>
-Package pdftex.def Info: s_sim_CG_T.png used on input line 149.
-(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
-
-<s_sim_CG_W.png, id=31, 4516.875pt x 5420.25pt>
+ <./s_precip_rea.pdf>] [4 <./s_temp_rea.pdf>]
+<s_sim_CG_W.png, id=40, 4516.875pt x 5420.25pt>
 File: s_sim_CG_W.png Graphic file (type png)
  <use s_sim_CG_W.png>
-Package pdftex.def Info: s_sim_CG_W.png used on input line 156.
+Package pdftex.def Info: s_sim_CG_W.png used on input line 150.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_sim_CG_C.png, id=32, 4516.875pt x 5420.25pt>
+ [5 <./s_sim_CG_W.png>]
+File: s_sim_CG_W.png Graphic file (type png)
+ <use s_sim_CG_W.png>
+Package pdftex.def Info: s_sim_CG_W.png used on input line 158.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+ [6]
+<s_sim_CG_C.png, id=48, 4516.875pt x 5420.25pt>
 File: s_sim_CG_C.png Graphic file (type png)
  <use s_sim_CG_C.png>
-Package pdftex.def Info: s_sim_CG_C.png used on input line 163.
+Package pdftex.def Info: s_sim_CG_C.png used on input line 166.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+ [7
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_TC.png, id=33, 4516.875pt x 5420.25pt>
+ <./s_sim_CG_C.png>] <s_sim_CG_TC.png, id=54, 4516.875pt x 5420.25pt>
 File: s_sim_CG_TC.png Graphic file (type png)
- <use s_sim_CG_TC.png>
-Package pdftex.def Info: s_sim_CG_TC.png used on input line 170.
+
+<use s_sim_CG_TC.png>
+Package pdftex.def Info: s_sim_CG_TC.png used on input line 174.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+)
+*
+! Emergency stop.
+<*> ...itHub/PhaseIIPaper/Part1/supdocs/supdoc.tex
+                                                  
+End of file on the terminal!
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<s_sim_CG_T_irr.png, id=34, 4516.875pt x 5420.25pt>
-File: s_sim_CG_T_irr.png Graphic file (type png)
- <use s_sim_CG_T_irr.png>
-Package pdftex.def Info: s_sim_CG_T_irr.png used on input line 177.
-(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+ 
+Here is how much of TeX's memory you used:
+ 15773 strings out of 492995
+ 303290 string characters out of 6132704
+ 327025 words of memory out of 5000000
+ 19134 multiletter control sequences out of 15000+600000
+ 10298 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,8n,43p,10457b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
+ 469.75502pt x 563.6431pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
