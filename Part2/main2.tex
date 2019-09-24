@@ -33,6 +33,7 @@
 \Author[12]{Karina}{Williams}
 \Author[13]{Florian}{Zabel}
 \Author[1,2]{Elisabeth}{Moyer}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \affil[1]{Department of the Geophysical Sciences, University of Chicago, Chicago, IL, USA}
 \affil[2]{Center for Robust Decision-making on Climate and Energy Policy (RDCEP), University of Chicago, Chicago, IL, USA}
@@ -63,6 +64,7 @@
 \runningauthor{Franke et al.}
 \correspondence{James Franke (jfranke@uchicago.edu)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% These dates will be inserted by Copernicus Publications during the typesetting process.
 \received{}
 \pubdiscuss{} %% only important for two-stage journals
@@ -130,6 +132,7 @@ Globally-gridded crop model emulators allow representing process-based crop mode
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}
 \label{S:2}
+\subsection{Training Dataset}
 The simulation output dataset that serves as the training set for the crop model emulators presented here are part of the GGCMI phase II project.
 The GGCMI Phase II simulations are described in detail in Franke et al (this issue), but we summarize briefly here.
 The training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution. 
@@ -195,8 +198,8 @@ The same general principal applies to the precipitation dimension however in thi
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariants, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
 Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
-%Disadvantages of the parameter sweep approach include neglecting changes in seasonality and some implausible combinations of input settings (e.g. colder temperatures and higher CO$_2$).
 
+\subsection{Model Selection}
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).  
 We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. 
 We aggregate the entire 30-year run in each case to improve signal to noise ratio. 
@@ -212,9 +215,6 @@ Some prior studies have used other statistical specifications, e.g.\ 39 term fra
 The relativity simple functional form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
 The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate. 
 We hold the statistical specification constant across all crops and models to facilitate parameter by parameter simulation model comparison.
-
-%A Gaussian process model was also tested as a potential statical functional form. 
-%A Gaussian process model can be fit to the response in a single grid cell, and generally outperforms the polynomial in terms of out of sample prediction, but quickly becomes cumbersome in the context of fitting individual kernels across 40,000 grid cells for a single simulation model and crop.
 
 \begin{figure*}[ht]
 \centering
@@ -236,7 +236,7 @@ In this procedure higher-order and interaction terms are added successively to t
 
 We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). 
-We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set 130 (PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
+We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (130, PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
 There is some heterogeneity of parameter 
 Since the goal of the emulator is interpolation within the sample space and not extrapolation, we air on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over fitting.  
 
@@ -279,14 +279,14 @@ We use the implementation of the Bayesian Ridge estimator from the scikit-learn 
 In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. 
 We do not attempt to emulate models that provided less than 50 simulations. 
 The lowest number of simulations emulated across the full parameter space is then 130 (for the PEPIC model). 
-The yield output for a single GGCMI Phase II model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$100 MB, a reduction by over two orders of magnitude. 
+The yield output for a single GGCMI Phase II model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$20 MB, a reduction of nearly three orders of magnitude. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{S:3}
-\subsection{Emulator Assessment}
+\subsection{Model Validation}
 \label{S:4}
 
 \begin{figure*}[ht]
@@ -349,10 +349,8 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
    \label{fig:error}
 \end{figure*}
 
-%Emulation provides not only a computational tool but a means of understanding and interpreting crop yield response across the parameter space. 
 The emulation in the method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
-%Crop yield responses to changes in weather and management are geographically diverse, even in high-yield and high-cultivation areas. 
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression} rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
 Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological response to perturbations. 
