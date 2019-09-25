@@ -263,7 +263,8 @@ The resulting statistical model (Equation \ref{eqn:features_final}) is used for 
 
 To fit the parameters $K$, we use a Bayesian Ridge probabilistic estimator \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
 This results in a reduction in mean absolute error for some of th high-order interaction terms in the model (Top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
-The Bayesian Ridge method is necessary to maintain a consistent functional form across all models and locations (see Table \ref{table:ASE}). The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (equation \ref{eqn:rsquare}, where n is the number of samples and k is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
+The Bayesian Ridge method is necessary to maintain a consistent functional form across all models and locations (see Table \ref{table:ASE}). 
+The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (equation \ref{eqn:rsquare}, where n is the number of samples and k is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
 
 \begin{equation}
     \label{eqn:rsquare}
