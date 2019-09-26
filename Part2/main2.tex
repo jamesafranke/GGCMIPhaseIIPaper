@@ -123,6 +123,7 @@ All studies focus on a limited number of sites.
 In this paper we describe a set of crop model emulators developed from a new simulation output dataset as of the Global Gridded Crop Model Intercomparison (GGCMI) effort under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
 The emulators are developed from a training set consisting of the largest-yet parameter sweep run by globally gridded crop models for maize, rice, soy and wheat.
 Globally-gridded crop model emulators allow representing process-based crop model responses in economic assessments in a computationally-cheap fashion and assist in crop model intercomparison and improvement efforts.
+In the following sections we descibe the training dataset, the model specificaction, and model validation results.  
 
 %The spatially explicit emulator at the mean-climatological time scale that allows for representing process-based crop model responses in economic assessment models and other applications.
 %%% SOMETHING HERE %%%%%%%%%
@@ -274,8 +275,8 @@ The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (
 
 The distribution of the residuals depends on the number of features included in the regression, the method for estimating the parameters, and the target distribution in the training set. 
 Including additional higher order terms in the model tends to reduce the skew in the residuals in most cases.
-The residuals are only normally distributed (Shapiro–Wilk test \citep{Shapiro1965} pvalue > 0.05) for one of the crop models shown in Figure \ref{fig:features} for any specification tested. 
-The EPIC-TAMU and pDSSAT crop module emulator residuals are never normally distributed by this metric for any polynomial specification proposed here. 
+The residuals are only normally distributed (Shapiro–Wilk test \citep{Shapiro1965} pvalue > 0.05) for one of the crop models shown in Figure \ref{fig:features} for any specification tested.
+The EPIC-TAMU and pDSSAT crop module emulator residuals are never normally distributed by this metric for any feature specification proposed here. 
 
 We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. 
@@ -351,7 +352,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
    \label{fig:error}
 \end{figure*}
 
-The emulation in the method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
+Model emulation with the paramteric method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression} rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
