@@ -132,14 +132,14 @@ Globally-gridded crop model emulators allow representing process-based crop mode
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methods}
 \label{S:2}
-\subsection{Training Dataset}
+\subsection{Training dataset}
 The simulation output dataset that serves as the training set for the crop model emulators presented here are part of the GGCMI phase II project.
-The GGCMI Phase II simulations are described in detail in Franke et al (this issue), but we summarize briefly here.
+The GGCMI Phase II simulations are described in detail in Franke et al \textcolor{red}{(this issue)}, but we summarize briefly here.
 The training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution. 
 Each simulation scenario is run for 30 years over the historic weather variability for the period of 1980-2010. 
 Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}). 
 In each case, the where the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
-CO2 and nitrogen are varied as well and take uniform values globally for each simulation case. 
+Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each simulation case. 
 
 \begin{table}[t]
 \caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
@@ -189,6 +189,7 @@ CO2 and nitrogen are varied as well and take uniform values globally for each si
    \label{fig:yearvclimpr}
 \end{figure}
 
+%% this is weird, cut and past from elsewhere??
 The structure of the GGCMI phase II simulation output dataset allows constructing the emulator at the mean-climatological level.
 We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 The year-over-year responses are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
@@ -199,7 +200,7 @@ Year-over-year and climatological responses can differ for many reasons includin
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
 Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
 
-\subsection{Model Selection}
+\subsection{Model selection}
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).  
 We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. 
 We aggregate the entire 30-year run in each case to improve signal to noise ratio. 
@@ -210,11 +211,11 @@ For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-worl
 Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
 To limit over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
 
-We do not focus on comparing different functional forms in this study, and instead choose a relatively simple polynomial parametrization that allows for some interpretation of coefficients. 
-Some prior studies have used other statistical specifications, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression. 
+We do not focus on comparing different functional forms in this study, and instead choose a relatively simple paramteric model with a polynomial basis function that allows for some interpretation of parameter weights. 
+Some prior studies have used other statistical specifications in crop model emulation, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression, or \textcolor{red}{add in the obemaji paper?}
 The relativity simple functional form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
-The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate. 
-We hold the statistical specification constant across all crops and models to facilitate parameter by parameter simulation model comparison.
+The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserves the spatail resolution of the parent models.
+We hold the statistical specification constant across all crops and models to facilitate potential parameter-by-parameter simulation model comparison.
 
 \begin{figure*}[ht]
 \centering
@@ -230,14 +231,14 @@ We hold the statistical specification constant across all crops and models to fa
    \label{fig:features}
 \end{figure*}
 
-Although the GGCMI Phase II sampled variable space is relatively large, it is still sufficiently limited that use of the full polynomial expression described above can be problematic. 
-We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance. 
+Although the GGCMI Phase II sampled variable space is relatively large, it is still sufficiently limited that use of the full polynomial basis function described above can be problematic. 
+We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
-
 We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (top row of Figure \ref{fig:features}). 
-Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed cannot be included without the temperature squared term, and the linear temperature term). 
-We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (130, PEPIC). The resulting choice of terms is then applied for all emulators and all crops. 
-There is some heterogeneity of parameter 
+Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed will not be included without the temperature squared term, and the linear temperature term). 
+We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (130, PEPIC). 
+Feature importance is not unifom due to spatial heterogenity across models and crops, so we weight the loss function by current cultuivation area durring this step. 
+The resulting choice of terms is then applied for all emulators and all crops. 
 Since the goal of the emulator is interpolation within the sample space and not extrapolation, we air on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over fitting.  
 
 Feature importance is remarkably consistent across models (Figure \ref{fig:features}). 
