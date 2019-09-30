@@ -2,7 +2,7 @@
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 
 \begin{document}
-\title{GGCMI Phase II: global gridded crop model emulators}
+\title{GGCMI Phase II global gridded crop model emulators of yield and irrigation water demand}
 
 \Author[1,2]{James}{Franke}
 \Author[3]{Christoph}{M\"{u}ller}
@@ -54,13 +54,13 @@
 \affil[17]{Department of Statistics, University of Chicago, Chicago, IL, USA}
 \affil[18]{EAWAG, Swiss Federal Institute of Aquatic Science and Technology, D\"{u}bendorf, Switzerland}
 \affil[19]{Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}
-\affil[20]{Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
+\affil[20]{Earth Institute Center for Climate Systems Research, Columbia University, Nesw York, NY, USA}
 \affil[21]{School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}
 \affil[22]{Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.}
 \affil[23]{Leibniz Centre for Agricultural Landscape Research (ZALF), D-15374 Müncheberg, Germany}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\runningtitle{The GGCMI Phase II experiment: simulating and emulating global crop yield}
+\runningtitle{The GGCMI crop model emulators}
 \runningauthor{Franke et al.}
 \correspondence{James Franke (jfranke@uchicago.edu)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,13 +93,13 @@ XXXXXXXX
 % Efforts to project climate change impacts often combine models from different disciplines under a single economic framework -- called an Integrated Assessment Model (IAM). 
 % In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their framework or computational cost.
 Improving crop yield projections under future climate change is critical for global food security in the twenty-first century. 
-Process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments. 
-Statistical crop models lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but sometimes take analytical forms that are easily used by downstream impact modelers. 
+Process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide many advantages for projecting the impacts of climate change on agriculture but are difficult to directly integrate into larger economic assessments due to computational constraints.  
+Statistical crop models (models developed from historical weather and yield data) lack some of the important features of process-based models including future atmospheric CO$_2$ fertilization and potential changes in agricultural management, but typically take analytical forms that are easily implemented by downstream impact modelers. 
 Both types of crop models models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 
 Statistical emulation allows combining advantageous features of both statistical and process-based models. 
-The approach involves constructing a statistical representation or ``surrogate model'' of complicated numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
-Emulation is particularly useful in cases where simulations are complex and output data volumes are large,  and  has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
+The approach involves constructing a statistical representation or ``surrogate model'' of numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
+Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies, and assists with model comparison and model evaluation efforts.
 
 Interest is rising in applying statistical emulation to crop models as multiple studies have developed crop model emulators in the past decade.
@@ -123,7 +123,7 @@ All studies focus on a limited number of sites.
 In this paper we describe a set of crop model emulators developed from a new simulation output dataset as of the Global Gridded Crop Model Intercomparison (GGCMI) effort under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
 The emulators are developed from a training set consisting of the largest-yet parameter sweep run by globally gridded crop models for maize, rice, soy and wheat.
 Globally-gridded crop model emulators allow representing process-based crop model responses in economic assessments in a computationally-cheap fashion and assist in crop model intercomparison and improvement efforts.
-In the following sections we descibe the training dataset, the model stastical specificaction, and some evidence of model fidelity.
+In the following sections we describe the training dataset, the model statistical specification, and some evidence of model fidelity.
 
 %The spatially explicit emulator at the mean-climatological time scale that allows for representing process-based crop model responses in economic assessment models and other applications.
 %%% SOMETHING HERE %%%%%%%%%
@@ -139,8 +139,8 @@ The GGCMI Phase II simulations are described in detail in Franke et al \textcolo
 The training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution. 
 Each simulation scenario is run for 30 years over the historic weather variability for the period of 1980-2010. 
 Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}). 
-In each case, the where the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
-Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each simulation case. 
+In each case, the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
+Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each 30-year simulation case. 
 
 \begin{table}[t]
 \caption{GGCMI Phase II input levels. Temperature and precipitation values indicate the perturbations from the historical climatology. W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. See Figure S3 in the supplement for number of simulations associated with each combination of input levels.}
@@ -191,7 +191,7 @@ Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take unifo
 \end{figure}
 
 %% this is weird, cut and past from elsewhere??
-The structure of the GGCMI phase II simulation output dataset allows constructing the emulator at the mean-climatological level.
+\textcolor{red}{The structure of the GGCMI phase II simulation output dataset allows constructing the emulator at the mean-climatological level.}
 We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 The year-over-year responses are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
 In the example Figure \ref{fig:yearvclim}, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
@@ -200,6 +200,10 @@ The same general principal applies to the precipitation dimension however in thi
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariants, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
 Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
+
+We develop crop model emulators separately for yield and irrigation water demand with no growing season adaptation, and under a growing season adaptation methodology where crop phenology is allowed to vary to maintain relatively constant growing season length under the warming scenarios (so-called A0 and A1 scenarios, see Franke et al. for more details).
+Emulators for irrigated yields are separate from rainfed and therefore irrigation water demand is only provided for irrigated simulations. 
+Each crop model emulator consists of six sets of fits.
 
 \subsection{Model selection}
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).  
@@ -212,10 +216,10 @@ For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-worl
 Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
 To limit over-fitting or unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
 
-We do not focus on comparing different functional forms in this study, and instead choose a relatively simple paramteric model with a polynomial basis function that allows for some interpretation of parameter weights. 
+We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametric model with a polynomial basis function that allows for some interpretation of resultant parameter weights. 
 Some prior studies have used other statistical specifications in crop model emulation, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression, or \textcolor{red}{add in the obemaji paper?}
 The relativity simple functional form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
-The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserves the spatail resolution of the parent models.
+The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserves the spatial resolution of the parent models.
 We hold the statistical specification constant across all crops and models to facilitate potential parameter-by-parameter simulation model comparison.
 
 \begin{figure*}[ht]
@@ -238,7 +242,7 @@ In this procedure higher-order and interaction terms are added successively to t
 We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed will not be included without the temperature squared term, and the linear temperature term). 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (130, PEPIC). 
-Feature importance is not unifom due to spatial heterogenity across models and crops, so we weight the loss function by current cultuivation area durring this step. 
+Feature importance is not uniform due to spatial heterogeneity across models and crops, so we weight the loss function by current cultivation area during this step. 
 The resulting choice of terms is then applied for all emulators and all crops. 
 Since the goal of the emulator is interpolation within the sample space and not extrapolation, we air on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over fitting.  
 
@@ -352,7 +356,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
    \label{fig:error}
 \end{figure*}
 
-Model emulation with the paramteric method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
+Model emulation with the parametric method proposed here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression} rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
