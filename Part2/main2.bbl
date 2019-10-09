@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -24,6 +24,14 @@ Aulakh, M.~S. and Malhi, S.~S.: Interactions of {N}itrogen with {O}ther
   {U}se {E}fficiency, {C}arbon {S}equestration, and {E}nvironmental
   {P}ollution, Advances in Agronomy, 86, 341 -- 409,
   \doi{10.1016/S0065-2113(05)86007-9}, 2005.
+
+\bibitem[{Balkovič et~al.(2014)Balkovič, van~der Velde, Skalský, Xiong,
+  Folberth, Khabarov, Smirnov, Mueller, and Obersteiner}]{BALKOVIC2014}
+Balkovič, J., van~der Velde, M., Skalský, R., Xiong, W., Folberth, C.,
+  Khabarov, N., Smirnov, A., Mueller, N.~D., and Obersteiner, M.: Global wheat
+  production potentials and management flexibility under the representative
+  concentration pathways, Global and Planetary Change, 122, 107 -- 121,
+  \doi{10.1016/j.gloplacha.2014.08.010}, 2014.
 
 \bibitem[{Blanc(2017)}]{BLANC2017}
 Blanc, E.: Statistical emulators of maize, rice, soybean and wheat yields from
@@ -62,11 +70,34 @@ Conti, S., Gosling, J.~P., Oakley, J.~E., and O'Hagan, A.: Gaussian process
   emulation of dynamic computer codes, Biometrika, 96, 663--676,
   \doi{10.1093/biomet/asp028}, 2009.
 
+\bibitem[{Dury et~al.(2011)Dury, Hambuckers, Warnant, Henrot, Favre, Ouberdous,
+  and Fran{\c{c}}ois}]{Dury2011}
+Dury, M., Hambuckers, A., Warnant, P., Henrot, A., Favre, E., Ouberdous, M.,
+  and Fran{\c{c}}ois, L.: {Responses of European forest ecosystems to 21st
+  century climate: assessing changes in interannual variability and fire
+  intensity}, iForest - Biogeosciences and Forestry, pp. 82--99,
+  \doi{10.3832/ifor0572-004}, 2011.
+
+\bibitem[{Elliott et~al.(2014)Elliott, Kelly, Chryssanthacopoulos, Glotter,
+  Jhunjhnuwala, Best, Wilde, and Foster}]{Elliott2014b}
+Elliott, J., Kelly, D., Chryssanthacopoulos, J., Glotter, M., Jhunjhnuwala, K.,
+  Best, N., Wilde, M., and Foster, I.: The parallel system for integrating
+  impact models and sectors (p{S}{I}{M}{S}), Environmental Modelling and
+  Software, 62, 509--516, \doi{10.1016/j.envsoft.2014.04.008}, 2014.
+
 \bibitem[{Ferrise et~al.(2011)Ferrise, Moriondo, and Bindi}]{Ferrise2011}
 Ferrise, R., Moriondo, M., and Bindi, M.: Probabilistic assessments of climate
   change impacts on durum wheat in the Mediterranean region, Natural Hazards
   and Earth System Sciences, 11, 1293--1302, \doi{10.5194/nhess-11-1293-2011},
   2011.
+
+\bibitem[{Folberth et~al.(2012)Folberth, Gaiser, Abbaspour, Schulin, and
+  Yang}]{FOLBERTH201221}
+Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
+  Regionalization of a large-scale crop growth model for sub-{S}aharan
+  {A}frica: {M}odel setup, evaluation, and estimation of maize yields,
+  Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
+  \doi{10.1016/j.agee.2012.01.026}, 2012.
 
 \bibitem[{Fronzek et~al.(2018)Fronzek, Pirttioja, Carter, Bindi, Hoffmann,
   Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin,
@@ -96,6 +127,13 @@ Glotter, M., Elliott, J., McInerney, D., Best, N., Foster, I., and Moyer,
   impacts projections, Proceedings of the National Academy of Sciences, 111,
   8776--8781, \doi{10.1073/pnas.1314787111}, 2014.
 
+\bibitem[{Hank et~al.(2015)Hank, Bach, and Mauser}]{Hank2015}
+Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
+  {H}ydro-{A}groecological {M}odel for {F}ield-{S}cale {S}imulation of
+  {H}eterogeneous {C}rop {G}rowth and {Y}ield: {A}pplication for {W}heat in
+  {C}entral {E}urope, Remote Sensing, 7, 3934--3965, \doi{10.3390/rs70403934},
+  2015.
+
 \bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
   temperature distributions in a large ensemble of climate simulations using
@@ -124,6 +162,26 @@ Holzk{\"a}mper, A., Calanca, P., and Fuhrer, J.: Statistical crop models:
   {P}redicting the effects of temperature and precipitation changes, Climate
   Research, 51, 11--21, \doi{10.3354/cr01057}, 2012.
 
+\bibitem[{Holzworth et~al.(2014)Holzworth, Huth, deVoil, Zurcher, Herrmann,
+  McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall,
+  Fainges, Bell, Peake, Poulton, Hochman, Thorburn, Gaydon, Dalgliesh,
+  Rodriguez, Cox, Chapman, Doherty, Teixeira, Sharp, Cichota, Vogeler, Li,
+  Wang, Hammer, Robertson, Dimes, Whitbread, Hunt, van Rees, McClelland,
+  Carberry, Hargreaves, MacLeod, McDonald, Harsdorf, Wedgwood, and
+  Keating}]{HOLZWORTH2014327}
+Holzworth, D.~P., Huth, N.~I., deVoil, P.~G., Zurcher, E.~J., Herrmann, N.~I.,
+  McLean, G., Chenu, K., van Oosterom, E.~J., Snow, V., Murphy, C., Moore,
+  A.~D., Brown, H., Whish, J.~P., Verrall, S., Fainges, J., Bell, L.~W., Peake,
+  A.~S., Poulton, P.~L., Hochman, Z., Thorburn, P.~J., Gaydon, D.~S.,
+  Dalgliesh, N.~P., Rodriguez, D., Cox, H., Chapman, S., Doherty, A., Teixeira,
+  E., Sharp, J., Cichota, R., Vogeler, I., Li, F.~Y., Wang, E., Hammer, G.~L.,
+  Robertson, M.~J., Dimes, J.~P., Whitbread, A.~M., Hunt, J., van Rees, H.,
+  McClelland, T., Carberry, P.~S., Hargreaves, J.~N., MacLeod, N., McDonald,
+  C., Harsdorf, J., Wedgwood, S., and Keating, B.~A.: {A}{P}{S}{I}{M} –
+  {E}volution towards a new generation of agricultural systems simulation,
+  Environmental Modelling and Software, 62, 327 -- 350,
+  \doi{doi.org/10.1016/j.envsoft.2014.07.009}, 2014.
+
 \bibitem[{Howden and Crimp(2005)}]{Howden2005}
 Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
   Australia's wheat industry, Modelling and Simulation Society of Australia and
@@ -132,6 +190,32 @@ Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
 \bibitem[{Ingestad(1977)}]{Torsten77}
 Ingestad, T.: Nitrogen and {P}lant {G}rowth; {M}aximum {E}fficiency of
   {N}itrogen {F}ertilizers, Ambio, 6, 146--151, 1977.
+
+\bibitem[{Izaurralde et~al.(2006)Izaurralde, Williams, Mcgill, Rosenberg, and
+  Quiroga~Jakas}]{Izaurralde06}
+Izaurralde, R., Williams, J., Mcgill, W., Rosenberg, N., and Quiroga~Jakas, M.:
+  Simulating soil {C} dynamics with {E}{P}{I}{C}: Model description and testing
+  against long-term data, Ecological Modelling, 192, 362--384,
+  \doi{10.1016/j.ecolmodel.2005.07.010}, 2006.
+
+\bibitem[{Jones et~al.(2003)Jones, Hoogenboom, Porter, Boote, Batchelor, Hunt,
+  Wilkens, Singh, Gijsman, and Ritchie}]{JONES2003235}
+Jones, J., Hoogenboom, G., Porter, C., Boote, K., Batchelor, W., Hunt, L.,
+  Wilkens, P., Singh, U., Gijsman, A., and Ritchie, J.: The {DSSAT} cropping
+  system model, European Journal of Agronomy, 18, 235 -- 265,
+  \doi{10.1016/S1161-0301(02)00107-7}, 2003.
+
+\bibitem[{Keating et~al.(2003)Keating, Carberry, Hammer, Probert, Robertson,
+  Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes,
+  Silburn, Wang, Brown, Bristow, Asseng, Chapman, McCown, Freebairn, and
+  Smith}]{KEATING2003267}
+Keating, B., Carberry, P., Hammer, G., Probert, M., Robertson, M., Holzworth,
+  D., Huth, N., Hargreaves, J., Meinke, H., Hochman, Z., McLean, G., Verburg,
+  K., Snow, V., Dimes, J., Silburn, M., Wang, E., Brown, S., Bristow, K.,
+  Asseng, S., Chapman, S., McCown, R., Freebairn, D., and Smith, C.: An
+  overview of {A}{P}{S}{I}{M}, a model designed for farming systems simulation,
+  European Journal of Agronomy, 18, 267 -- 288,
+  \doi{10.1016/S1161-0301(02)00108-9}, 2003.
 
 \bibitem[{Kodra and Ganguly(2014)}]{Kodra2014}
 Kodra, E. and Ganguly, A.: Asymmetry of projected increases in extreme
@@ -143,6 +227,33 @@ Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
   under changing temporal covariance structures, Advances in Statistical
   Climatology, Meteorology and Oceanography, 1, 1--14,
   \doi{10.5194/ascmo-1-1-2015}, 2015.
+
+\bibitem[{Lindeskog et~al.(2013)Lindeskog, Arneth, Bondeau, Waha, Seaquist,
+  Olin, and Smith}]{Lindeskog2013}
+Lindeskog, M., Arneth, A., Bondeau, A., Waha, K., Seaquist, J., Olin, S., and
+  Smith, B.: Implications of accounting for land use in simulations of
+  ecosystem carbon cycling in {A}frica, Earth System Dynamics, 4, 385--407,
+  \doi{10.5194/esd-4-385-2013}, 2013.
+
+\bibitem[{Liu et~al.(2007)Liu, Williams, Zehnder, and Yang}]{LIU2007478}
+Liu, J., Williams, J.~R., Zehnder, A.~J., and Yang, H.: {G}{E}{P}{I}{C} -
+  modelling wheat yield and crop water productivity with high resolution on a
+  global scale, Agricultural Systems, 94, 478 -- 493,
+  \doi{10.1016/j.agsy.2006.11.019}, 2007.
+
+\bibitem[{Liu et~al.(2016{\natexlab{a}})Liu, Yang, Folberth, Wang, Luo, and
+  Schulin}]{LIU2016164}
+Liu, W., Yang, H., Folberth, C., Wang, X., Luo, Q., and Schulin, R.: Global
+  investigation of impacts of {PET} methods on simulating crop-water relations
+  for maize, Agricultural and Forest Meteorology, 221, 164 -- 175,
+  \doi{10.1016/j.agrformet.2016.02.017}, 2016{\natexlab{a}}.
+
+\bibitem[{Liu et~al.(2016{\natexlab{b}})Liu, Yang, Liu, Azevedo, Wang, Xu,
+  Abbaspour, and Schulin}]{LIU2016}
+Liu, W., Yang, H., Liu, J., Azevedo, L.~B., Wang, X., Xu, Z., Abbaspour, K.~C.,
+  and Schulin, R.: Global assessment of nitrogen losses and trade-offs with
+  yields from major crop cultivations, Science of The Total Environment, 572,
+  526 -- 537, \doi{10.1016/j.scitotenv.2016.08.093}, 2016{\natexlab{b}}.
 
 \bibitem[{Lobell and Burke(2010)}]{Lobell2010}
 Lobell, D.~B. and Burke, M.~B.: On the use of statistical models to predict
@@ -168,6 +279,13 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
   Datasets for Studying Climate Effects, p. 1100,
   \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
+\bibitem[{Mauser et~al.(2015)Mauser, Klepper, Zabel, Delzeit, Hank,
+  Putzenlechner, and Calzadilla}]{MAUSER2015}
+Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
+  and Calzadilla, A.: Global biomass production potentials exceed expected
+  future demand without the need for cropland expansion, Nature Communications,
+  6, \doi{10.1038/ncomms9946}, 2015.
+
 \bibitem[{Mistry et~al.(2017)Mistry, Wing, and De~Cian}]{Mistry2017}
 Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
   responsiveness of crop yields: {U}{S} evidence and implications for the
@@ -191,10 +309,25 @@ O'Hagan, A.: Bayesian analysis of computer code outputs: A tutorial,
   Reliability Engineering \& System Safety, 91, 1290 -- 1300,
   \doi{10.1016/j.ress.2005.11.025}, 2006.
 
+\bibitem[{Olin et~al.(2015)Olin, Schurgers, Lindeskog, W{\aa}rlind, Smith,
+  Bodin, Holm\'er, and Arneth}]{Olin2015}
+Olin, S., Schurgers, G., Lindeskog, M., W{\aa}rlind, D., Smith, B., Bodin, P.,
+  Holm\'er, J., and Arneth, A.: Modelling the response of yields and tissue
+  {C:N} to changes in atmospheric {CO$_{2}$} and {N} management in the main
+  wheat regions of western Europe, Biogeosciences, 12, 2489--2515,
+  \doi{10.5194/bg-12-2489-2015}, 2015.
+
 \bibitem[{Osaki et~al.(1992)Osaki, Shinano, and Tadano}]{Mitsuru92}
 Osaki, M., Shinano, T., and Tadano, T.: Carbon-nitrogen interaction in field
   crop production, Soil Science and Plant Nutrition, 38, 553--564,
   \doi{10.1007/BF00025019}, 1992.
+
+\bibitem[{Osborne et~al.(2015)Osborne, Gornall, Hooker, Williams, Wiltshire,
+  Betts, and Wheeler}]{Osborne2015}
+Osborne, T., Gornall, J., Hooker, J., Williams, K., Wiltshire, A., Betts, R.,
+  and Wheeler, T.: {J}{U}{L}{E}{S}-crop: a parametrisation of crops in the
+  {J}oint {UK} {L}and {E}nvironment {S}imulator, Geoscientific Model
+  Development, 8, 1139--1155, \doi{10.5194/gmd-8-1139-2015}, 2015.
 
 \bibitem[{Ostberg et~al.(2018)Ostberg, Schewe, Childers, and
   Frieler}]{Ostberg2018}
@@ -374,12 +507,45 @@ Tebaldi, C. and Lobell, D.~B.: Towards probabilistic projections of climate
   change impacts on global crop yields, Geophysical Research Letters, 35,
   \doi{10.1029/2008GL033423}, 2008.
 
+\bibitem[{von Bloh et~al.(2018)von Bloh, Schaphoff, M\"uller, Rolinski, Waha,
+  and Zaehle}]{von_Bloh_implementing_2018}
+von Bloh, W., Schaphoff, S., M\"uller, C., Rolinski, S., Waha, K., and Zaehle,
+  S.: Implementing the {N}itrogen cycle into the dynamic global vegetation,
+  hydrology and crop growth model {LPJ}m{L} (version 5.0), Geoscientific Model
+  Development, 11, 2789--2812, \doi{10.5194/gmd-11-2789-2018}, 2018.
+
 \bibitem[{Warszawski et~al.(2014)Warszawski, Frieler, Huber, Piontek,
   Serdeczny, and Schewe}]{Warszawski3228}
 Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
   J.: The {I}nter-{S}ectoral {I}mpact {M}odel {I}ntercomparison {P}roject
   ({ISI{\textendash}MIP}): {P}roject framework, Proceedings of the National
   Academy of Sciences, 111, 3228--3232, \doi{10.1073/pnas.1312330110}, 2014.
+
+\bibitem[{Williams et~al.(2017)Williams, Gornall, Harper, Wiltshire, Hemming,
+  Quaife, Arkebauer, and Scoby}]{Williams2017}
+Williams, K., Gornall, J., Harper, A., Wiltshire, A., Hemming, D., Quaife, T.,
+  Arkebauer, T., and Scoby, D.: Evaluation of {J}{U}{L}{E}{S}-crop performance
+  against site observations of irrigated maize from {M}ead, {N}ebraska,
+  Geoscientific Model Development, 10, 1291--1320,
+  \doi{10.5194/gmd-10-1291-2017}, 2017.
+
+\bibitem[{Williams and Falloon(2015)}]{Williams2015}
+Williams, K.~E. and Falloon, P.~D.: Sources of interannual yield variability in
+  {J}{U}{L}{E}{S}-crop and implications for forcing with seasonal weather
+  forecasts, Geoscientific Model Development, 8, 3987--3997,
+  \doi{10.5194/gmd-8-3987-2015}, 2015.
+
+\bibitem[{Wu et~al.(2016)Wu, Vuichard, Ciais, Viovy, de~Noblet-Ducoudr\'e,
+  Wang, Magliulo, Wattenbach, Vitale, Di~Tommasi, Moors, Jans, Elbers, Ceschia,
+  Tallec, Bernhofer, Gr\"unwald, Moureaux, Manise, Ligne, Cellier, Loubet,
+  Larmanou, and Ripoche}]{Wu2016}
+Wu, X., Vuichard, N., Ciais, P., Viovy, N., de~Noblet-Ducoudr\'e, N., Wang, X.,
+  Magliulo, V., Wattenbach, M., Vitale, L., Di~Tommasi, P., Moors, E.~J., Jans,
+  W., Elbers, J., Ceschia, E., Tallec, T., Bernhofer, C., Gr\"unwald, T.,
+  Moureaux, C., Manise, T., Ligne, A., Cellier, P., Loubet, B., Larmanou, E.,
+  and Ripoche, D.: {ORCHIDEE}-{CROP} (v0), a new process-based agro-land
+  surface model: model description and evaluation over Europe, Geoscientific
+  Model Development, 9, 857--873, \doi{10.5194/gmd-9-857-2016}, 2016.
 
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,
