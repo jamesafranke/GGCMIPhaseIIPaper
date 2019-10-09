@@ -301,14 +301,17 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=15cm]{figures/lpjml_maize.png}
-    \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator. 
-    Top row: rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
-    Legend includes hectares cultivated in each selected grid cell. 
-    Bottom row: simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in the top row. 
-    Models that do not simulate the nitrogen dimension are omitted for clarity.
-    Each panel shows variation along a single variable, with others held at baseline values. 
-    Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. }
-   \label{fig:regression}
+    \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator.
+    Simulated and emulated yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
+    Absolute yield differences are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
+    Percent differences (from simulated baseline) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
+    Approximately 7\% of grid cells have errors over 20\% different from baseline, but only 3\% of grid cells with current cultivation (MIRCA) have errors over 20\%.
+    Notable exceptions include areas with very low baseline yield in the simulations including, for example, the Sahara, the Andes, and northern Quebec. 
+    Percent error weighted by cultivation area globally is essentially zero (see also Table \ref{table:ASE}).
+    Performance varies by crop and model. 
+    See supplemental for more examples.
+    }
+   \label{fig:map_pattern}
 \end{figure*}
 
 
@@ -316,17 +319,15 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 \centering
     \includegraphics[width=15cm]{figures/regression_example.png}
     \caption{Illustration of spatial and across model variations in yield response successfully captured by the emulator. 
-    Top row: rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
+    Top row: simulations and emulations for rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
     Bottom row: simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in the top row. 
     Models that do not simulate the nitrogen dimension are omitted for clarity.
     Each panel shows variation along a single variable, with others held at baseline values. 
     Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. 
     In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
-
     While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial approach (e.g.\ LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. 
-    Note that models are uncalibrated, increasing spread in absolute yields. 
-    Extrapolation can however produce misleading results. 
+    Note that some models are uncalibrated, increasing spread in absolute yields. 
     Nitrogen fits in some cases may not be realistic at intermediate values given limited sampling.
     }
    \label{fig:regression}
