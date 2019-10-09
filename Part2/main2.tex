@@ -300,31 +300,40 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=16cm]{figures/regression_areas.png}
-    \caption{Illustration of spatial variations in yield response successfully captured by the emulator. 
-    We show rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
+    \includegraphics[width=15cm]{figures/lpjml_maize.png}
+    \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator. 
+    Top row: rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
+    Bottom row: simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in the top row. 
+    Models that do not simulate the nitrogen dimension are omitted for clarity.
     Each panel shows variation along a single variable, with others held at baseline values. 
-    Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. 
-    In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
-    Extrapolation can however produce misleading results. 
-    Nitrogen fits in some cases may not be realistic at intermediate values given limited sampling. 
-    For more detailed emulator assessment, see Appendix B.}
+    Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. }
    \label{fig:regression}
 \end{figure*}
 
+
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=16cm]{figures/regression_model.png}
-    \caption{Illustration of across-model variations in yield response successfully captured by the emulator. 
-    Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
-    Models that do not simulate the nitrogen dimension are omitted for clarity. 
-    Note that models are uncalibrated, increasing spread in absolute yields. 
+    \includegraphics[width=15cm]{figures/regression_example.png}
+    \caption{Illustration of spatial and across model variations in yield response successfully captured by the emulator. 
+    Top row: rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
+    Legend includes hectares cultivated in each selected grid cell. 
+    Bottom row: simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in the top row. 
+    Models that do not simulate the nitrogen dimension are omitted for clarity.
+    Each panel shows variation along a single variable, with others held at baseline values. 
+    Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. 
+    In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
+
     While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial approach (e.g.\ LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. 
-    For more detailed emulator assessment, see Appendix B. 
-    As in Figure \ref{fig:regression}, extrapolation out of the sample space is potentially problematic.}
-   \label{fig:regression_iowa}
+    Note that models are uncalibrated, increasing spread in absolute yields. 
+    Extrapolation can however produce misleading results. 
+    Nitrogen fits in some cases may not be realistic at intermediate values given limited sampling.
+    }
+   \label{fig:regression}
 \end{figure*}
+
+
+The rainfed maize response in north-central Ontario is shown for the PROMET model as a good example of an area where the emulator fails.
 
 \begin{figure}[ht]
 \centering
@@ -534,3 +543,33 @@ Computing resources were provided by the University of Chicago Research Computin
 \bibliography{bib}
 
 \end{document}
+
+
+
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=16cm]{figures/regression_areas.png}
+    \caption{Illustration of spatial variations in yield response successfully captured by the emulator. 
+    We show rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
+    Legend includes hectares cultivated in each selected grid cell. 
+    Each panel shows variation along a single variable, with others held at baseline values. 
+    Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_final}. 
+    In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
+    Extrapolation can however produce misleading results. 
+    Nitrogen fits in some cases may not be realistic at intermediate values given limited sampling. 
+    For more detailed emulator assessment, see Appendix B.}
+   \label{fig:regression}
+\end{figure*}
+
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=16cm]{figures/regression_model.png}
+    \caption{Illustration of across-model variations in yield response successfully captured by the emulator. 
+    Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
+    Models that do not simulate the nitrogen dimension are omitted for clarity. 
+    Note that models are uncalibrated, increasing spread in absolute yields. 
+    While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial approach (e.g.\ LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. 
+    For more detailed emulator assessment, see Appendix B. 
+    As in Figure \ref{fig:regression}, extrapolation out of the sample space is potentially problematic.}
+   \label{fig:regression_iowa}
+\end{figure*}
