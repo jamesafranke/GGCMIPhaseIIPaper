@@ -179,17 +179,25 @@ Table repeated from Franke et al.
 The simulation output dataset that serves as the training set for the crop model emulators presented here are part of the GGCMI phase II project.
 The GGCMI Phase II simulations are described in detail in Franke et al \textcolor{red}{(this issue)}, but we summarize briefly here.
 The emulator training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution.
-The models included can be seen in Table \ref{table:models}. 
-Some models share a common genealogy, but have since branched and developed independently.
+The models included in the GGCMI emulators can be found in Table \ref{table:models}. 
+Some models share a common genealogy, but have since branched and developed independently, and will be treated independently in this work.
+Models inputs are harmonized wherever possible including planting days (which vary spatially) and growing season lengths. 
 
-Each simulation scenario is run for 30 years over the historic weather variability for the period of 1981-2010. 
+Each simulation scenario is run for 30 years over the historic weather variability for the period of 1981-2010.
+Most crop models utilize the AgMERRA historical daily climate data product \citep{Ruane2015}.
+PROMET uses ERA-Interim reanalysis \citep{dee2011era} and JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, 
+
 Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}). 
 In each case, the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
+The historical rainfall differs across the climate products used in the 
 Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each 30-year simulation case.
 
-We develop crop model emulators separately for yield and irrigation water demand with no growing season adaptation, and under a growing season adaptation methodology where crop phenology is allowed to vary to maintain relatively constant growing season length under the warming scenarios (so-called A0 and A1 scenarios, see Franke et al. for more details).
-Emulators for irrigated simulations are separate from rainfed simulations and therefore irrigation water demand is only provided for irrigated simulations. 
-Therefore, each crop model included consists of six emulators.
+
+We develop crop model emulators separately for each model and for yield and irrigation water demand with no growing season adaptation, and under a growing season adaptation methodology where crop phenology is allowed to vary to maintain relatively constant growing season length under the warming scenarios (so-called A0 and A1 scenarios, see Franke et al. for more details).
+Emulators for irrigated simulations are separate from rainfed simulations so irrigation water demand is only provided for irrigated simulations. 
+Therefore, each crop model emulator included consists of six sets of regressions.
+We focus on yield emulators with no-growing season adaptation here. 
+See supplemental for more information on irrigation water demand and adaptation cases.  
 
 \subsection{Climatological vs. year-to-year response}
 \begin{figure}[ht]
@@ -222,11 +230,8 @@ Therefore, each crop model included consists of six emulators.
    \label{fig:yearly}
 \end{figure}
 
-We designed the GGCMI Phase II parameter sweep to
-
-and because the GGCMI Phase II training dataset is structured in a way that allows temporally aggregation.
-
-construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
+The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way that allows temporally aggregation.
+We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 The year-over-year responses are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
 
 In the example Figure \ref{fig:yearvclim}, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
@@ -235,6 +240,8 @@ The same general principal applies to the precipitation dimension however in thi
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariates, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
 Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}.  
+
+
 
 \subsection{Feature engineering and regularization}
 
@@ -254,7 +261,7 @@ Prior work has suggested that mean changes are the dominant drivers of climatolo
 
 Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).
 
-Nonlinear responses, which are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). 
+Nonlinear yield responses are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). 
 We include interaction terms (both linear and higher-order) because past studies have shown them to be significant effects. 
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance. 
 (C and N are fixed in these data.) 
@@ -331,7 +338,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=15cm]{figures/lpjml_maize.png}
+    \includegraphics[width=16cm]{figures/lpjml_maize.png}
     \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator.
     Simulated and emulated yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
     Absolute yield differences are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
@@ -348,7 +355,7 @@ The yield output for a single GGCMI Phase II model that simulates all scenarios 
 
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=15cm]{figures/regression_example.png}
+    \includegraphics[width=16cm]{figures/regression_example.png}
     \caption{Illustration of spatial and across model variations in yield response successfully captured by the emulator. 
     Top row: simulations and emulations for rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
