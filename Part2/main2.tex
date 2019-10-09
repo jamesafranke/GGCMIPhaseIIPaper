@@ -87,19 +87,16 @@ XXXXXXXX
 
 \introduction
 \label{S:1}
-% Climate change will likely impact many different economic sectors. 
-% Efforts to project climate change impacts often combine models from different disciplines under a single economic framework -- called an Integrated Assessment Model (IAM). 
-% In general, the numerical models implemented by different disciplines studying climate change and its associated impacts often cannot be directly integrated into IAMs because of their framework or computational cost.
 Improving crop yield projections under future climate change is critical for global food security in the twenty-first century. 
 Two distinct approaches have been applied to project future agricultural production under climate change. 
-On the one hand, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide some advantages for projecting the impacts of climate change on agriculture including a clear mechanism for linking climate to yield outcomes.
+On the one hand, process-based crop simulation models (numerical models that simulate the process of photosynthesis and the biology and phenology of individual crops) provide some advantages for projecting the impacts of climate change on agriculture including providing a clear mechanism for linking climate to yield outcomes.
 However, process-based models can be difficult or impossible to directly integrate into larger economic assessments due to computational constraints.  
 Statistical crop models on the other hand (models developed from historical weather and yield data), lack some of the features of process-based models including future atmospheric CO$_2$ fertilization for example, but implicitly include farmer management and behavioral practices that are difficult to model explicitly. 
 Additionally, statistical models typically take analytical forms that are easily implemented by downstream impact modelers. 
 Both types of models continue to be used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 Active development of crop models is ongoing and these two approaches are becoming less district as both camps incorporate methods from the other.
 
-Statistical emulation allows potentially combining some advantageous features of both statistical and process-based models. 
+Statistical emulation allows combining some advantageous features of both statistical and process-based models. 
 The approach involves constructing a statistical representation or ``surrogate model'' of numerical simulations by using simulation output as the training data for a statistical model \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies, and assists with model comparison and model evaluation efforts.
@@ -122,13 +119,10 @@ All three 2018 studies sample multiple perturbations to temperature and precipit
 All three studies focus however on a limited number of sites.
 \citet{FRONZEK20182} and \citet{RUIZRAMOS2018} simulate only wheat (over many models) and \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) for agricultural impacts experiments with the GCAM \citep{calvin2019} model.
 
-In this paper we describe a set of crop model emulators developed from a new simulation output dataset as of the Global Gridded Crop Model Intercomparison (GGCMI) effort under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
-This is the most comprehensive crop model emulation effort to date, consisting of the largest-yet parameter sweep run by globally gridded crop models for maize, rice, soy and wheat.
-Globally-gridded crop model emulators allow representing process-based crop model responses in economic assessments in a computationally-cheap fashion and assist in crop model intercomparison and improvement efforts.
-In the following sections we describe the training dataset, the emulator statistical specification, and some evidence of model reliability.
-
-%The spatially explicit emulator at the mean-climatological time scale that allows for representing process-based crop model responses in economic assessment models and other applications.
-%%% SOMETHING HERE %%%%%%%%%
+In this paper we describe a set of globally-gridded crop model emulators developed from a new simulation output dataset as of the Global Gridded Crop Model Intercomparison (GGCMI) effort under the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}. 
+This is the most comprehensive crop model emulation effort to date, expanding on previous parameter-sweep crop model emulation work by incorporating a dozen different globally gridded crop models for maize, rice, soy and wheat with as much as 40,000 years of global simulated output for a single model and crop.
+Globally-gridded crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
+In the following sections we describe the training dataset, the emulator statistical specification, and evidence of model reliability.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,6 +152,33 @@ Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take unifo
         Adaptation (A) & \textbf{A0: none}, A1: new cultivar to maintain original growing season length & -\\ \bottomhline
     \end{tabular}\\
 \end{table}
+
+\begin{table*}[t]
+\caption{Repeated  from Franke et al: 
+Models included in GGCMI Phase II and the number of CTWN-A simulations performed. 
+The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
+Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM-UGOE does not simulate winter wheat.)
+}
+\label{table:models}
+  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
+    \tophline
+    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
+    {\textbf{APSIM-UGOE},   \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
+    {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
+    {\textbf{EPIC-IIASA},   \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
+    {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
+    {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
+    {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
+    {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--}  & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
+    {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+    {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
+    {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
+    \bottomhline
+  \end{tabular}
+\end{table*}
 
 
 \subsection{Climatological vs. year-to-year response}
@@ -193,9 +214,6 @@ Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take unifo
    Bold Black line shows the emulator fit through the climatological mean values.}
    \label{fig:yearvclimpr}
 \end{figure}
-
-%% this is weird, cut and past from elsewhere??
-%%\textcolor{red}{The structure of the GGCMI phase II simulation output dataset allows constructing the emulator at the mean-climatological level.}
 
 We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input, and because the GGCMI Phase II training dataset is structured in a way that allows temporally aggregation.
 The year-over-year responses are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
