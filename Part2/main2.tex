@@ -130,13 +130,30 @@ In the following sections we describe the training dataset, the emulator statist
 \section{Methods}
 \label{S:2}
 \subsection{Training dataset}
-The simulation output dataset that serves as the training set for the crop model emulators presented here are part of the GGCMI phase II project.
-The GGCMI Phase II simulations are described in detail in Franke et al \textcolor{red}{(this issue)}, but we summarize briefly here.
-The emulator training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution. 
-Each simulation scenario is run for 30 years over the historic weather variability for the period of 1981-2010. 
-Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}). 
-In each case, the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
-Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each 30-year simulation case. 
+\begin{table*}[t]
+\caption{
+Crop models included in GGCMI Phase II emulators and the number of CTWN-A simulations performed for each model. 
+The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
+Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. 
+(For example, CARAIB does not simulate spring wheat.)
+Table adapted from Franke et al.
+}
+\label{table:models}
+  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
+    \tophline
+    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
+    {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
+    {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
+    {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
+    {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
+    {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+    {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\
+    \bottomhline
+  \end{tabular}
+\end{table*}
 
 \begin{table}[t]
 \caption{GGCMI Phase II input levels. 
@@ -159,47 +176,36 @@ Table repeated from Franke et al.
     \end{tabular}\\
 \end{table}
 
-\begin{table*}[t]
-\caption{: 
-Models included in GGCMI Phase II emulators and the number of CTWN-A simulations performed for each model. 
-The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
-Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, CARAIB does not simulate spring wheat.)
-Table adapted from Franke et al.
-}
-\label{table:models}
-  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
-    \tophline
-    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
-    {\textbf{CARAIB},       \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
-    {\textbf{EPIC-TAMU},    \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{JULES},        \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
-    {\textbf{GEPIC},        \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
-    {\textbf{LPJ-GUESS},    \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
-    {\textbf{LPJmL},        \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{pDSSAT},       \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{PEPIC},        \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
-    {\textbf{PROMET},       \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
-    {Totals} & {9} & {8} & {8} & {8} & {9} & {8} & {5240 | 3378}\\
-    \bottomhline
-  \end{tabular}
-\end{table*}
+The simulation output dataset that serves as the training set for the crop model emulators presented here are part of the GGCMI phase II project.
+The GGCMI Phase II simulations are described in detail in Franke et al \textcolor{red}{(this issue)}, but we summarize briefly here.
+The emulator training dataset consists of the outputs from nine process-based crop models for five different crops (maize, rice, soybean, spring wheat, and winter wheat), each simulated globally at the 0.5 degree latitude and longitude resolution.
+The models included can be seen in Table \ref{table:models}. 
+Some models share a common genealogy, but have since branched and developed independently.
 
+Each simulation scenario is run for 30 years over the historic weather variability for the period of 1981-2010. 
+Simulations are run for both rainfed and irrigated crops across a variety of climate and management input values (Table \ref{table:inputs}). 
+In each case, the temperature and/or precipitation is offset from the historical values by either an additive mean shift or a fractional multiplier.
+Atmospheric CO$_2$ and applied nitrogen fertilizer varied as well and take uniform values globally for each 30-year simulation case.
+
+We develop crop model emulators separately for yield and irrigation water demand with no growing season adaptation, and under a growing season adaptation methodology where crop phenology is allowed to vary to maintain relatively constant growing season length under the warming scenarios (so-called A0 and A1 scenarios, see Franke et al. for more details).
+Emulators for irrigated simulations are separate from rainfed simulations and therefore irrigation water demand is only provided for irrigated simulations. 
+Therefore, each crop model included consists of six emulators.
 
 \subsection{Climatological vs. year-to-year response}
 \begin{figure}[ht]
 \centering
    \includegraphics[width=7cm]{figures/tempyearvclim.png} \includegraphics[width=7cm]{figures/pryearvclim.png}
-   \caption{Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. 
+   \caption{
+   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. 
    Left: irrigated maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for the scenario of maximum temperature change (+6 K, red). 
    Open black circles mark climatological mean yield values for all six temperature scenarios (T-1, +0, +1, +2, +3, +4, +6).
    Right: same as left side except for rainfed maize for the baseline 1981-2010 historical climate (gray) and for the scenario of maximum and minimum precipitation change (brown and green).
    Other variables are held at baseline values, and the choice of irrigated yields in the left panel means that precipitation is not a factor. 
    Open black circles mark climatological mean yield values for all seven precipitation scenarios (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%). 
-   Colored lines show total least squares linear regressions of year-over-year variations in each scenario. 
+   Colored lines show total least squares linear regressions of year-over-year variations in each individual scenario. 
    Black line shows the fit through the climatological mean values.  
    Responses to year-over-year temperature variations (colored lines) are 100--200\% larger than those to long-term climate perturbations, rising under warmer conditions. 
-   Bold Black line shows the emulator fit through the climatological mean values.
-
+   Bold Black line shows the emulator fit through the climatological mean yield values.
    }
    \label{fig:yearvclim}
 \end{figure}
@@ -207,45 +213,30 @@ Table adapted from Franke et al.
 \begin{figure}[ht]
 \centering
    \includegraphics[width=8.3cm]{figures/hist_year.png}
-   \caption{Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. 
+   \caption{
+   Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. 
    Figure shows irrigated maize for nine adjacent high-yield grid cells of Figure \ref{fig:yearvclim} from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for scenarios with temperature shifted by T+3 (orange) and T+6 K (red), with other variables held at baseline values. 
    The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields even though the variance in climate drivers is identical. 
-   In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines).}
+   In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines).
+   }
    \label{fig:yearly}
 \end{figure}
 
-We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input, and because the GGCMI Phase II training dataset is structured in a way that allows temporally aggregation.
+We designed the GGCMI Phase II parameter sweep to
+
+and because the GGCMI Phase II training dataset is structured in a way that allows temporally aggregation.
+
+construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 The year-over-year responses are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
+
 In the example Figure \ref{fig:yearvclim}, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
 The stronger year-over-year response under warmer conditions also manifests as a wider distribution of yields (Figure \ref{fig:yearly}).
-The same general principal applies to the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclimpr}).
+The same general principal applies to the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariates, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 Note that the GGCMI Phase II datasets do not capture one climatological factor, potential future distributional shifts, because all simulations are run with fixed offsets from the historical climatology. 
-Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}. 
-
-We develop crop model emulators separately for yield and irrigation water demand with no growing season adaptation, and under a growing season adaptation methodology where crop phenology is allowed to vary to maintain relatively constant growing season length under the warming scenarios (so-called A0 and A1 scenarios, see Franke et al. for more details).
-Emulators for irrigated simulations are separate from rainfed simulations and therefore irrigation water demand is only provided for irrigated simulations. 
-Therefore, each crop model included consists of six emulators. 
+Prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in non-arid regions \citep[e.g.][]{Glotter14}.  
 
 \subsection{Feature engineering and regularization}
-Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).
-
-
-
-We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. 
-%We aggregate the entire 30-year run in each case to improve signal to noise ratio. 
-The higher-order terms are necessary to capture any nonlinear responses, which are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). 
-We include interaction terms (both linear and higher-order) because past studies have shown them to be significant effects. 
-For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance. 
-(C and N are fixed in these data.) 
-Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
-To limit over-fitting and unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
-
-We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametric model with a polynomial basis function that allows for some interpretation of resultant parameter weights. 
-Some prior studies have used other statistical specifications in crop model emulation, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression.  % or \textcolor{red}{add in the obemaji paper?}
-The relativity simple parametric form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
-The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserves the spatial resolution of the parent models.
-We hold the functional form constant in space, across all crops, and models to facilitate potential parameter-by-parameter simulation model comparison.
 
 \begin{figure*}[ht]
 \centering
@@ -260,6 +251,23 @@ We hold the functional form constant in space, across all crops, and models to f
    Colors indicated three different crop models.}
    \label{fig:features}
 \end{figure*}
+
+Emulation involves fitting individual regression models for each crop, simulation model, and 0.5 degree geographic pixel from the GGCMI Phase II dataset; the regressors are the applied constant perturbations in CO$_2$, temperature, water, and nitrogen (C,T, W, N).
+
+Nonlinear responses, which are well-documented in observations for temperature and water perturbations (e.g.\ \citet{Schlenker2009} for T and \citet{He2016} for W). 
+We include interaction terms (both linear and higher-order) because past studies have shown them to be significant effects. 
+For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields, the joint distribution in T and W is needed to explain observed yield variance. 
+(C and N are fixed in these data.) 
+Other observation-based studies have shown the importance of the interaction between water and nitrogen \citep[e.g.][]{AULAKH2005}, and between nitrogen and CO$_2$ \citep{Mitsuru92, Nakamura97}. 
+To limit over-fitting and unstable parameter estimation, we apply a feature selection procedure (described below) that reduces the potential 34-term polynomial (for the rainfed case) to 23 terms.
+
+We regress 30-year climatological mean yields against a third-order polynomial in C, T, W, and N with interaction terms. 
+
+We do not focus on comparing different functional forms in this study, and instead choose a relatively simple parametric model with a polynomial basis function that allows for some interpretation of resultant parameter weights. 
+Some prior studies have used other statistical specifications in crop model emulation, e.g.\ 39 term fractional polynomial in \citet{BLANC2015} and \citet{BLANC2017}, who borrow information across space by fitting grid points simultaneously across soil region in a panel regression.  % or \textcolor{red}{add in the obemaji paper?}
+The relativity simple parametric form used here allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
+The emulation therefore indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserves the spatial resolution of the parent models.
+We hold the functional form constant in space, across all crops, and models to facilitate potential parameter-by-parameter simulation model comparison.
 
 Although the GGCMI Phase II sampled variable space is relatively large, it is still sufficiently limited that use of the full polynomial basis function described above can be problematic. 
 We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance.
@@ -501,7 +509,6 @@ On the other side, muted responses include soy, an efficient atmospheric nitroge
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -556,7 +563,15 @@ Computing resources were provided by the University of Chicago Research Computin
 
 \end{document}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure*}[ht]
 \centering
@@ -597,3 +612,5 @@ Computing resources were provided by the University of Chicago Research Computin
    Bold Black line shows the emulator fit through the climatological mean values.}
    \label{fig:yearvclimpr}
 \end{figure}
+
+    {Totals} & {9} & {8} & {8} & {8} & {9} & {8} & {5240 | 3378}\\
