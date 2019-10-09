@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -24,14 +24,6 @@ Aulakh, M.~S. and Malhi, S.~S.: Interactions of {N}itrogen with {O}ther
   {U}se {E}fficiency, {C}arbon {S}equestration, and {E}nvironmental
   {P}ollution, Advances in Agronomy, 86, 341 -- 409,
   \doi{10.1016/S0065-2113(05)86007-9}, 2005.
-
-\bibitem[{Balkovič et~al.(2014)Balkovič, van~der Velde, Skalský, Xiong,
-  Folberth, Khabarov, Smirnov, Mueller, and Obersteiner}]{BALKOVIC2014}
-Balkovič, J., van~der Velde, M., Skalský, R., Xiong, W., Folberth, C.,
-  Khabarov, N., Smirnov, A., Mueller, N.~D., and Obersteiner, M.: Global wheat
-  production potentials and management flexibility under the representative
-  concentration pathways, Global and Planetary Change, 122, 107 -- 121,
-  \doi{10.1016/j.gloplacha.2014.08.010}, 2014.
 
 \bibitem[{Blanc(2017)}]{BLANC2017}
 Blanc, E.: Statistical emulators of maize, rice, soybean and wheat yields from
@@ -69,6 +61,13 @@ Chang, W., Stein, M., Wang, J., Kotamarthi, V., and Moyer, E.: Changes in
 Conti, S., Gosling, J.~P., Oakley, J.~E., and O'Hagan, A.: Gaussian process
   emulation of dynamic computer codes, Biometrika, 96, 663--676,
   \doi{10.1093/biomet/asp028}, 2009.
+
+\bibitem[{Dee et~al.(2011)Dee, Uppala, Simmons, Berrisford, Poli, Kobayashi,
+  Andrae, Balmaseda, Balsamo, Bauer et~al.}]{dee2011era}
+Dee, D.~P., Uppala, S., Simmons, A., Berrisford, P., Poli, P., Kobayashi, S.,
+  Andrae, U., Balmaseda, M., Balsamo, G., Bauer, d.~P., et~al.: The ERA-Interim
+  reanalysis: Configuration and performance of the data assimilation system,
+  Quarterly Journal of the royal meteorological society, 137, 553--597, 2011.
 
 \bibitem[{Dury et~al.(2011)Dury, Hambuckers, Warnant, Henrot, Favre, Ouberdous,
   and Fran{\c{c}}ois}]{Dury2011}
@@ -162,26 +161,6 @@ Holzk{\"a}mper, A., Calanca, P., and Fuhrer, J.: Statistical crop models:
   {P}redicting the effects of temperature and precipitation changes, Climate
   Research, 51, 11--21, \doi{10.3354/cr01057}, 2012.
 
-\bibitem[{Holzworth et~al.(2014)Holzworth, Huth, deVoil, Zurcher, Herrmann,
-  McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall,
-  Fainges, Bell, Peake, Poulton, Hochman, Thorburn, Gaydon, Dalgliesh,
-  Rodriguez, Cox, Chapman, Doherty, Teixeira, Sharp, Cichota, Vogeler, Li,
-  Wang, Hammer, Robertson, Dimes, Whitbread, Hunt, van Rees, McClelland,
-  Carberry, Hargreaves, MacLeod, McDonald, Harsdorf, Wedgwood, and
-  Keating}]{HOLZWORTH2014327}
-Holzworth, D.~P., Huth, N.~I., deVoil, P.~G., Zurcher, E.~J., Herrmann, N.~I.,
-  McLean, G., Chenu, K., van Oosterom, E.~J., Snow, V., Murphy, C., Moore,
-  A.~D., Brown, H., Whish, J.~P., Verrall, S., Fainges, J., Bell, L.~W., Peake,
-  A.~S., Poulton, P.~L., Hochman, Z., Thorburn, P.~J., Gaydon, D.~S.,
-  Dalgliesh, N.~P., Rodriguez, D., Cox, H., Chapman, S., Doherty, A., Teixeira,
-  E., Sharp, J., Cichota, R., Vogeler, I., Li, F.~Y., Wang, E., Hammer, G.~L.,
-  Robertson, M.~J., Dimes, J.~P., Whitbread, A.~M., Hunt, J., van Rees, H.,
-  McClelland, T., Carberry, P.~S., Hargreaves, J.~N., MacLeod, N., McDonald,
-  C., Harsdorf, J., Wedgwood, S., and Keating, B.~A.: {A}{P}{S}{I}{M} –
-  {E}volution towards a new generation of agricultural systems simulation,
-  Environmental Modelling and Software, 62, 327 -- 350,
-  \doi{doi.org/10.1016/j.envsoft.2014.07.009}, 2014.
-
 \bibitem[{Howden and Crimp(2005)}]{Howden2005}
 Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
   Australia's wheat industry, Modelling and Simulation Society of Australia and
@@ -204,18 +183,6 @@ Jones, J., Hoogenboom, G., Porter, C., Boote, K., Batchelor, W., Hunt, L.,
   Wilkens, P., Singh, U., Gijsman, A., and Ritchie, J.: The {DSSAT} cropping
   system model, European Journal of Agronomy, 18, 235 -- 265,
   \doi{10.1016/S1161-0301(02)00107-7}, 2003.
-
-\bibitem[{Keating et~al.(2003)Keating, Carberry, Hammer, Probert, Robertson,
-  Holzworth, Huth, Hargreaves, Meinke, Hochman, McLean, Verburg, Snow, Dimes,
-  Silburn, Wang, Brown, Bristow, Asseng, Chapman, McCown, Freebairn, and
-  Smith}]{KEATING2003267}
-Keating, B., Carberry, P., Hammer, G., Probert, M., Robertson, M., Holzworth,
-  D., Huth, N., Hargreaves, J., Meinke, H., Hochman, Z., McLean, G., Verburg,
-  K., Snow, V., Dimes, J., Silburn, M., Wang, E., Brown, S., Bristow, K.,
-  Asseng, S., Chapman, S., McCown, R., Freebairn, D., and Smith, C.: An
-  overview of {A}{P}{S}{I}{M}, a model designed for farming systems simulation,
-  European Journal of Agronomy, 18, 267 -- 288,
-  \doi{10.1016/S1161-0301(02)00108-9}, 2003.
 
 \bibitem[{Kodra and Ganguly(2014)}]{Kodra2014}
 Kodra, E. and Ganguly, A.: Asymmetry of projected increases in extreme
@@ -453,6 +420,13 @@ Ruane, A.~C., McDermid, S., Rosenzweig, C., Baigorria, G.~A., Jones, J.~W.,
   Climate-Crop Modeling Project (C3MP), Glob. Change Biology, 20, 394--407,
   \doi{10.1111/gcb.12412}, 2014.
 
+\bibitem[{Ruane et~al.(2015)Ruane, Goldberg, and
+  Chryssanthacopoulos}]{Ruane2015}
+Ruane, A.~C., Goldberg, R., and Chryssanthacopoulos, J.: Climate forcing
+  datasets for agricultural modeling: Merged products for gap-filling and
+  historical climate series estimation, Agric. Forest Meteorol., 200, 233--248,
+  \doi{10.1016/j.agrformet.2014.09.016}, 2015.
+
 \bibitem[{Ruiz-Ramos et~al.(2018)Ruiz-Ramos, Ferrise, Rodríguez, Lorite,
   Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano,
   Chen, Dumont, Ewert, Gaiser, Hlavinka, Hoffmann, Höhn, Jurecka, Kersebaum,
@@ -521,6 +495,13 @@ Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
   ({ISI{\textendash}MIP}): {P}roject framework, Proceedings of the National
   Academy of Sciences, 111, 3228--3232, \doi{10.1073/pnas.1312330110}, 2014.
 
+\bibitem[{Weedon et~al.(2014)Weedon, Balsamo, Bellouin, Gomes, Best, and
+  Viterbo}]{weedon2014wfdei}
+Weedon, G.~P., Balsamo, G., Bellouin, N., Gomes, S., Best, M.~J., and Viterbo,
+  P.: The WFDEI meteorological forcing data set: WATCH Forcing Data methodology
+  applied to ERA-Interim reanalysis data, Water Resources Research, 50,
+  7505--7514, 2014.
+
 \bibitem[{Williams et~al.(2017)Williams, Gornall, Harper, Wiltshire, Hemming,
   Quaife, Arkebauer, and Scoby}]{Williams2017}
 Williams, K., Gornall, J., Harper, A., Wiltshire, A., Hemming, D., Quaife, T.,
@@ -534,18 +515,6 @@ Williams, K.~E. and Falloon, P.~D.: Sources of interannual yield variability in
   {J}{U}{L}{E}{S}-crop and implications for forcing with seasonal weather
   forecasts, Geoscientific Model Development, 8, 3987--3997,
   \doi{10.5194/gmd-8-3987-2015}, 2015.
-
-\bibitem[{Wu et~al.(2016)Wu, Vuichard, Ciais, Viovy, de~Noblet-Ducoudr\'e,
-  Wang, Magliulo, Wattenbach, Vitale, Di~Tommasi, Moors, Jans, Elbers, Ceschia,
-  Tallec, Bernhofer, Gr\"unwald, Moureaux, Manise, Ligne, Cellier, Loubet,
-  Larmanou, and Ripoche}]{Wu2016}
-Wu, X., Vuichard, N., Ciais, P., Viovy, N., de~Noblet-Ducoudr\'e, N., Wang, X.,
-  Magliulo, V., Wattenbach, M., Vitale, L., Di~Tommasi, P., Moors, E.~J., Jans,
-  W., Elbers, J., Ceschia, E., Tallec, T., Bernhofer, C., Gr\"unwald, T.,
-  Moureaux, C., Manise, T., Ligne, A., Cellier, P., Loubet, B., Larmanou, E.,
-  and Ripoche, D.: {ORCHIDEE}-{CROP} (v0), a new process-based agro-land
-  surface model: model description and evaluation over Europe, Geoscientific
-  Model Development, 9, 857--873, \doi{10.5194/gmd-9-857-2016}, 2016.
 
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,
