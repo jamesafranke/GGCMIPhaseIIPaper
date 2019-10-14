@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -97,6 +97,20 @@ Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   {A}frica: {M}odel setup, evaluation, and estimation of maize yields,
   Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
   \doi{10.1016/j.agee.2012.01.026}, 2012.
+
+\bibitem[{Franke et~al.(2019)Franke, M\"{u}ller, Elliott, Ruane, Snyder,
+  J\"{a}germeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Hank, Hoffmann,
+  Izaurralde, Jacquemin, Jones, Koch, Li, Olin, Phillips, Pugh, Reddy, Wang,
+  Williams, Zabel, and Moyer}]{Franke2019a}
+Franke, J., M\"{u}ller, C., Elliott, J., Ruane, A., Snyder, A., J\"{a}germeyr,
+  J., Balkovic, J., Ciais, P., Dury, M., Falloon, P., Folberth,
+  C.~Fran{\c{c}}ois, L., Hank, T., Hoffmann, M., Izaurralde, R., Jacquemin, I.,
+  Jones, C.~Khabarov, N., Koch, M., Li, M.~Liu, W., Olin, S., Phillips, M.,
+  Pugh, T., Reddy, A., Wang, X., Williams, K., Zabel, F., and Moyer, E.: The
+  {G}{G}{C}{M}{I} phase {I}{I} experiment: global gridded crop model
+  simulations under uniform changes in {C}{O}$_2$, temperature, water, and
+  nitrogen levels (protocol version 1.0)., Geoscientific Model Development, in
+  open review, 2019.
 
 \bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
   Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel,
@@ -265,8 +279,8 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
   M., Aggarwal, P., Angulo, C., Baron, C., Basso, B., Bertuzzi, P., Biernath,
   C., Boogaard, H., Boote, K., Brisson, N., Cammarano, D., Challinor, A.,
   Conijn, J., and Wolf, J.: Statistical Analysis of Large Simulated Yield
-  Datasets for Studying Climate Effects, p. 1100,
-  \doi{10.13140/RG.2.1.5173.8328}, 2015.
+  Datasets for Studying Climate Effects, p. 1100, World Scientific Publishing
+  Co, \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
 \bibitem[{Mauser et~al.(2015)Mauser, Klepper, Zabel, Delzeit, Hank,
   Putzenlechner, and Calzadilla}]{MAUSER2015}

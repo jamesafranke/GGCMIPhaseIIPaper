@@ -3,47 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main2.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "Franke2019a"
-Warning--missing publisher in Markowski2015
-You've used 72 entries,
+You've used 73 entries,
             2811 wiz_defined-function locations,
-            1535 strings with 31886 characters,
-and the built_in function-call counts, 97435 in all, are:
-= -- 10016
-> -- 5858
+            1538 strings with 32538 characters,
+and the built_in function-call counts, 99289 in all, are:
+= -- 10120
+> -- 6095
 < -- 19
-+ -- 2357
-- -- 1884
-* -- 6867
-:= -- 10533
-add.period$ -- 72
-call.type$ -- 72
-change.case$ -- 772
-chr.to.int$ -- 71
-cite$ -- 217
-duplicate$ -- 8593
-empty$ -- 4210
-format.name$ -- 2114
-if$ -- 19136
++ -- 2436
+- -- 1962
+* -- 7048
+:= -- 10810
+add.period$ -- 73
+call.type$ -- 73
+change.case$ -- 801
+chr.to.int$ -- 72
+cite$ -- 219
+duplicate$ -- 8680
+empty$ -- 4270
+format.name$ -- 2195
+if$ -- 19488
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1122
-newline$ -- 225
-num.names$ -- 288
-pop$ -- 4232
+missing$ -- 1154
+newline$ -- 228
+num.names$ -- 292
+pop$ -- 4322
 preamble$ -- 1
-purify$ -- 771
+purify$ -- 799
 quote$ -- 0
-skip$ -- 5006
+skip$ -- 5043
 stack$ -- 0
-substring$ -- 3420
-swap$ -- 7683
+substring$ -- 3425
+swap$ -- 7745
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 645
-warning$ -- 1
-while$ -- 375
+type$ -- 654
+warning$ -- 0
+while$ -- 378
 width$ -- 0
-write$ -- 868
-(There were 2 warnings)
+write$ -- 880
