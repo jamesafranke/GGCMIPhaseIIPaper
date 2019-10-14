@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -97,6 +97,28 @@ Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   {A}frica: {M}odel setup, evaluation, and estimation of maize yields,
   Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
   \doi{10.1016/j.agee.2012.01.026}, 2012.
+
+\bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
+  Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel,
+  Murakami, Ostberg, Popp, Riva, Stevanovic, Suzuki, Volkholz, Burke, Ciais,
+  Ebi, Eddy, Elliott, Galbraith, Gosling, Hattermann, Hickler, Hinkel, Hof,
+  Huber, Jägermeyr, Krysanova, Marcé, Müller~Schmied, Mouratiadou, Pierson,
+  Tittensor, Vautard, van Vliet, Biber, Betts, Bodirsky, Deryng, Frolking,
+  Jones, Lotze, Lotze-Campen, Sahajpal, Thonicke, Tian, and
+  Yamagata}]{Frieler2017}
+Frieler, K., Lange, S., Piontek, F., Reyer, C. P.~O., Schewe, J., Warszawski,
+  L., Zhao, F., Chini, L., Denvil, S., Emanuel, K., Geiger, T., Halladay, K.,
+  Hurtt, G., Mengel, M., Murakami, D., Ostberg, S., Popp, A., Riva, R.,
+  Stevanovic, M., Suzuki, T., Volkholz, J., Burke, E., Ciais, P., Ebi, K.,
+  Eddy, T.~D., Elliott, J., Galbraith, E., Gosling, S.~N., Hattermann, F.,
+  Hickler, T., Hinkel, J., Hof, C., Huber, V., Jägermeyr, J., Krysanova, V.,
+  Marcé, R., Müller~Schmied, H., Mouratiadou, I., Pierson, D., Tittensor,
+  D.~P., Vautard, R., van Vliet, M., Biber, M.~F., Betts, R.~A., Bodirsky,
+  B.~L., Deryng, D., Frolking, S., Jones, C.~D., Lotze, H.~K., Lotze-Campen,
+  H., Sahajpal, R., Thonicke, K., Tian, H., and Yamagata, Y.: Assessing the
+  impacts of 1.5$^o$C global warming — Simulation protocol of the
+  Inter-Sectoral Impact Model Intercomparison Project (ISIMIP2b), Geosci. Model
+  Dev., 10, 4321--4345, \doi{10.5194/gmd-10-4321-2017}, 2017.
 
 \bibitem[{Fronzek et~al.(2018)Fronzek, Pirttioja, Carter, Bindi, Hoffmann,
   Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin,
