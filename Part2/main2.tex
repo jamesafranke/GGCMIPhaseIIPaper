@@ -89,6 +89,12 @@ Crop model emulation should therefore facilitate both model comparison and integ
 
 %\copyrightstatement{TEXT}
 
+Training dataset section needs to say right away that it's a parameter 
+sweep over uniform perturbations - I'm not hearing that. That's the most 
+salient feature of the whole study, that you have a parameter sweep, so 
+say it up front. The details of harmonization aren't important except 
+for describing the adaptation.
+
 \introduction
 \label{S:1}
 Improving our understanding of the impacts of future climate change on crop yields is critical for global food security in the twenty-first century. 
@@ -99,7 +105,8 @@ However, they are computationally expensive, and can be difficult or impossible 
 Statistical crop models can only capture crop responses under the range of current conditions, but have several advantages: they implicitly include management and behavioral practices that are difficult to model explicitly, and they are typically simple analytical expressions that are easily implemented by downstream impact modelers. 
 Both types of models are routinely used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
 
-Statistical emulation allows combining some of the advantageous features of both statistical and process-based models. 
+Statistical emulation allows combining some of the advantageous features of both statistical and process-based models.
+Crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
 The approach involves constructing a ``surrogate model'' of numerical simulations by using their output as training data for a statistical representation \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies. Emulation allows producing yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
@@ -114,7 +121,7 @@ Choices of emulation strategy differ even when analyzing ISIMIP.
 \citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors, and then pattern-scales to emulate local yields. 
 \citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
 The constraints of the ISIMIP experiment as a training set mean that all these efforts share important common features. 
-All emulate annual crop yields across an entire scenario or scenarios, and all future climate scenarios are non-stationary, i.e.\ their input climate parameters evolve over the course of the simulations.
+All emulate annual crop yields across an entire scenario or scenarios, and all future climate scenarios are non-stationary, and important covariates (temperature and precipitation for example) are evolving simultaneously, which may make diagnosing the individual and interacting affects difficult.  
 
 An alternative approach to emulation involves construction of a ``parameter sweep'' training set, a collection of multiple stationary scenarios that systematically cover a range of input parameter values.
 A parameter sweep offers several important advantages for emulation over an experiment in which climate evolves over time. 
@@ -128,10 +135,10 @@ All three 2018 studies sample multiple perturbations to temperature and precipit
 All take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
 All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) but only in one crop model (GCAM) \citep{calvin2019}.
 
-In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
-The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
-The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects. 
-Globally-gridded crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
+In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
+\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).}
+%The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
 %is the most comprehensive crop model emulation effort to date, significantly expanding the scope of previous parameter-sweep crop model emulation work by incorporating 
@@ -169,8 +176,8 @@ The three simulation models not included in the emulators have been removed for 
 \end{table*}
 
 \begin{table}[t]
-\caption{GGCMI Phase II input levels. 
-Temperature and precipitation values indicate the perturbations from the historical climatology. 
+\caption{GGCMI Phase II input levels for the parameter sweep. 
+Temperature and precipitation values are the perturbations from the historical climatology. 
 W-percentage does not apply to the irrigated (W$_{inf}$) simulations, which are all simulated at the maximum beneficial levels of water. 
 Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. 
 See Figure SX in the supplement for number of simulations associated with each combination of input levels.
@@ -191,14 +198,14 @@ Table repeated from \citet{Franke2019a}
 \end{table}
 
 The GGCMI Phase II simulations %that serve as the training dataset for the crop model emulators presented here 
-are described in detail in \citet{Franke2019a}, but we summarize briefly here. The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) over as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
-The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.
-Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
+are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
+\textcolor{red}{The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a parameter sweep of as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
+The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
+Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
+These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
 (Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
 The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or 40,000 years across all simulations. 
-Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, %%what does Liz mean here??
-\textcolor{red}{and the complete dataset represents roughly 20\% of this maximum. 
-... with the lowest level of participation consisting of 20\% of the maximum possible simulations}
+Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}. 
@@ -339,9 +346,9 @@ Finally, we eliminate two 2nd-order interaction terms in T and one in W.
 Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. 
 
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
-This results in a reduction in mean absolute error for some of th high-order interaction terms in the model (top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
+The choice results in a reduction in mean absolute error for some of th high-order interaction terms in the model (top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
+The estimation method scores relatively lower on adjusted $R^2$ (equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
 The Bayesian Ridge method is necessary over the standard OLS to maintain a consistent functional form across all models and locations (see Table \ref{table:ASE}). 
-The Bayesian Ridge estimation method scores relatively lower on adjusted $R^2$ (equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
 
 \begin{equation}
     \label{eqn:rsquare}
@@ -465,20 +472,20 @@ Here $F_{\: scn.}$ is the fractional change in a model's mean emulated or simula
 The normalized error $e$ is the difference between the emulated fractional change in yield and that actually simulated, normalized by $\sigma_{sim}$, the standard deviation in simulated fractional yields change $F_{sim,\: scn.}$ across all models. 
 The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (Figure SX). 
 
-This metric implies that emulation is generally satisfactory, with several distinct exceptions. 
+The normalized error metric implies that emulation is generally satisfactory, with several distinct exceptions. 
 Almost all model-crop combination emulators have normalized errors less than one over nearly all currently cultivated hectares (Figure \ref{fig:error}), but some individual model-crop combinations are difficult to emulate (e.g.\ PROMET for rice and soy, JULES for soy and spring wheat, Figures SXX-XX). 
 Problems with emulating PROMET for rice and soy may have to do with the parametrization of the phenology for those crops which lengthens the growing season in some cases. 
 Normalized errors for soy are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soy than for other crops (see Figure SXX), lowering the denominator. 
 Emulator performance often degrades in geographic locations where crops are not currently cultivated. 
 For example, emulator performance may be satisfactory over cultivated areas for all crops, but uncultivated regions may show some problematic areas (Figure \ref{fig:error} shows a CARAIB model case, see also Figure SXX).
 
-This first assessment procedure is relatively forgiving for several reasons. 
+The normalized error assessment procedure is relatively forgiving for several reasons. 
 First, each emulation is evaluated against the simulation actually used to train the  (in-sample validation). 
 Had we used a spline interpolation the error would necessarily be zero. 
 Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. 
 The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. 
 Where models differ more widely, the standard for emulators becomes less stringent. 
-This effect is readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
+Ensemble spread dependence can be readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
 The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. 
 We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. 
 More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
@@ -518,7 +525,7 @@ Such an extrapolation during cross validation is not representative based on the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Emulator Results and Products}
+\section{Emulator results and products}
 \label{S:5}
 \begin{figure}[ht]
     \centering
@@ -556,7 +563,7 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Discussion and Conclusions} 
+\section{Discussion and conclusions} 
 \label{S:6}
 We show that the systematic parameter sampling in the GGCMI Phase II experiments allow emulating climatological crop yield responses with a relatively simple reduced-form statistical model. 
 The sampling provides information on the influence of multiple interacting factors in a way that realistic climate model simulations cannot, and allows isolating long-term impacts from confounding factors that lead to different year-over-year responses. 
