@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 OCT 2019 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 OCT 2019 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,115 +1097,121 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 87.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 145.
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 149--149
+LaTeX Warning: Reference `S:5' on page 3 undefined on input line 130.
+
+[3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 148.
+
+
+Package natbib Warning: Citation `Franke2019a' on page 4 undefined on input lin
+e 148.
+
+
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 152--152
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T1/ptm/b/n/9 Spring
  []
 
 
 Package natbib Warning: Citation `Franke2019a' on page 4 undefined on input lin
-e 171.
+e 174.
 
 
 Package natbib Warning: Citation `Franke2019a' on page 4 undefined on input lin
-e 186.
+e 189.
 
-[4] <figures/tempyearvclim.png, id=217, 322.9666pt x 333.0844pt>
+[4] [5] <figures/tempyearvclim.png, id=230, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 
 <use figures/tempyearvclim.png>
-Package pdftex.def Info: figures/tempyearvclim.png used on input line 204.
+Package pdftex.def Info: figures/tempyearvclim.png used on input line 213.
 (pdftex.def)             Requested size: 199.16928pt x 205.41237pt.
 
-<figures/pryearvclim.png, id=219, 321.8424pt x 333.0844pt>
+<figures/pryearvclim.png, id=232, 321.8424pt x 333.0844pt>
 File: figures/pryearvclim.png Graphic file (type png)
 
 <use figures/pryearvclim.png>
-Package pdftex.def Info: figures/pryearvclim.png used on input line 204.
+Package pdftex.def Info: figures/pryearvclim.png used on input line 213.
 (pdftex.def)             Requested size: 199.16928pt x 206.13408pt.
 
-<figures/hist_year.png, id=220, 326.4998pt x 328.1058pt>
+<figures/hist_year.png, id=233, 326.4998pt x 328.1058pt>
 File: figures/hist_year.png Graphic file (type png)
 
 <use figures/hist_year.png>
-Package pdftex.def Info: figures/hist_year.png used on input line 222.
+Package pdftex.def Info: figures/hist_year.png used on input line 231.
 (pdftex.def)             Requested size: 236.15796pt x 237.32741pt.
- [5] [6 <./figures/tempyearvclim.png> <./figures/pryearvclim.png>] [7 <./figure
-s/hist_year.png>]
-
-LaTeX Warning: Reference `XX' on page 8 undefined on input line 283.
-
-[8] <figures/model_select_maize_rice.png, id=306, 700.3766pt x 728.6422pt>
+ [6 <./figures/tempyearvclim.png> <./figures/pryearvclim.png>] [7 <./figures/hi
+st_year.png>] [8]
+<figures/model_select_maize_rice.png, id=303, 700.3766pt x 728.6422pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 298.
+ 316.
 (pdftex.def)             Requested size: 341.43306pt x 355.22554pt.
  [9] [10 <./figures/model_select_maize_rice.png>] <figures/lpjml_maize.png, id=
-334, 505.02277pt x 362.0727pt>
+330, 505.02277pt x 362.0727pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png used on input line 346.
+Package pdftex.def Info: figures/lpjml_maize.png used on input line 363.
 (pdftex.def)             Requested size: 455.24408pt x 326.39279pt.
 
-<figures/regression_example.png, id=336, 613.42776pt x 365.83073pt>
+<figures/regression_example.png, id=332, 613.42776pt x 365.83073pt>
 File: figures/regression_example.png Graphic file (type png)
 
 <use figures/regression_example.png>
-Package pdftex.def Info: figures/regression_example.png used on input line 362.
+Package pdftex.def Info: figures/regression_example.png used on input line 379.
 
 (pdftex.def)             Requested size: 455.24408pt x 271.50316pt.
 
 
 LaTeX Warning: Reference `eqn:features_final' on page 11 undefined on input lin
-e 374.
+e 391.
 
-[11] [12 <./figures/lpjml_maize.png>]
-<figures/error_360.png, id=360, 2258.4375pt x 4968.5625pt>
+[11] [12 <./figures/lpjml_maize.png>] [13 <./figures/regression_example.png>]
+<figures/error_360.png, id=365, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 406.
+Package pdftex.def Info: figures/error_360.png used on input line 422.
 (pdftex.def)             Requested size: 170.71652pt x 375.50705pt.
 
-<figures/em_err.png, id=363, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=368, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 419.
+Package pdftex.def Info: figures/em_err.png used on input line 435.
 (pdftex.def)             Requested size: 170.71652pt x 361.82268pt.
- [13 <./figures/regression_example.png>]
-Overfull \vbox (26.34373pt too high) has occurred while \output is active []
-
-
-[14 <./figures/error_360.png>] [15 <./figures/em_err.png>] [16]
-<figures/global_em_maize.png, id=400, 2710.125pt x 3161.8125pt>
+ [14] [15 <./figures/error_360.png>] [16 <./figures/em_err.png>] <figures/globa
+l_em_maize.png, id=400, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 501.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 518.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
+
+
+Package natbib Warning: Citation `Franke2019a' on page 17 undefined on input li
+ne 523.
 
 <figures/em_CTWN_all_crops.png, id=401, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 512.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 529.
 (pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
  [17] [18 <./figures/global_em_maize.png>]
 [19 <./figures/em_CTWN_all_crops.png>] [20] (./main2.bbl [21]
@@ -1292,15 +1298,19 @@ Underfull \hbox (badness 2707) in paragraph at lines 493--497
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
 ) [26]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
 (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 584.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 601.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 601.
 
 
 LaTeX Warning: There were undefined references.
@@ -1308,13 +1318,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
  ) 
 Here is how much of TeX's memory you used:
- 10795 strings out of 492995
- 152376 string characters out of 6132704
- 305832 words of memory out of 5000000
- 13993 multiletter control sequences out of 15000+600000
+ 10796 strings out of 492995
+ 152382 string characters out of 6132704
+ 308491 words of memory out of 5000000
+ 13994 multiletter control sequences out of 15000+600000
  42803 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1550b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1334,7 +1344,7 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main2.pdf (26 pages, 8136456 bytes).
+Output written on main2.pdf (26 pages, 8137119 bytes).
 PDF statistics:
  629 PDF objects out of 1000 (max. 8388607)
  560 compressed objects within 6 object streams
