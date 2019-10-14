@@ -77,7 +77,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 \textcolor{red}{
-
 Statistical emulation of process-based crop models provides the opportunity to combine some of the advantageous features of statistical and process-based crop models.  
 The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development.
 In this study we present the construction of a set of crop model emulators of mean-climatological yield for nine process-based crop models and five crops.
@@ -131,8 +130,8 @@ All studies have some limitations, however, for assessing global agricultural im
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
 GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
-\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).}
-%The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.
+\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).
+The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
 %is the most comprehensive crop model emulation effort to date, significantly expanding the scope of previous parameter-sweep crop model emulation work by incorporating 
@@ -216,14 +215,14 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 \subsection{Climatological vs. year-to-year response}
 \begin{figure}[ht]
 \centering
-   \includegraphics[width=7cm]{figures/tempyearvclim.png} \includegraphics[width=7cm]{figures/pryearvclim.png}
+   \includegraphics[width=7cm]{figures/tempyearvclim.png} \hspace{10mm} \includegraphics[width=7cm]{figures/pryearvclim.png}
    \caption{
-   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. 
+   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts.
    Left: irrigated maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for the scenario of maximum temperature change (+6 K, red). 
    Open black circles mark climatological mean yield values for all six temperature scenarios (T-1, +0, +1, +2, +3, +4, +6).
    Right: same as left side except for rainfed maize for the baseline 1981-2010 historical climate (gray) and for the scenario of maximum and minimum precipitation change (brown and green).
-   Other variables are held at baseline values, and the choice of irrigated yields in the left panel means that precipitation is not a factor. 
    Open black circles mark climatological mean yield values for all seven precipitation scenarios (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%). 
+   Other variables are held at baseline values, and the choice of irrigated yields in the left panel means that precipitation is not a factor (year-to-year temperature is not held fixed in the right panel). 
    Colored lines show total least squares linear regressions of year-over-year variations in each individual scenario. 
    Black line shows the fit through the climatological mean values.  
    Responses to year-over-year temperature variations (colored lines) are 100--200\% larger than those to long-term climate perturbations, rising under warmer conditions. 
@@ -234,12 +233,11 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 
 \begin{figure}[ht]
 \centering
-   \includegraphics[width=8.3cm]{figures/hist_year.png}
+   \includegraphics[width=7cm]{figures/hist_year_t.png} \hspace{10mm} \includegraphics[width=7cm]{figures/hist_year_pr.png}
    \caption{
-   Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. 
-   Figure shows irrigated maize for nine adjacent high-yield grid cells of Figure \ref{fig:yearvclim} from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for scenarios with temperature shifted by T+3 (orange) and T+6 K (red), with other variables held at baseline values. 
-   The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields even though the variance in climate drivers is identical. 
-   In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines).
+   Example showing results of increased crop yield sensitivity to year-over-year climate variations under climate stress. 
+   Figure shows distributions of yields from examples of Figure \ref{fig:yearvclim}, of irrigated (left) and rainfed (right) maize in Iowa in scenarios of altered temperature (left) and precipitation (right).
+   Under large warming (T+6) or drying (P-50\%), increased sensitivity means that distributions of year-over-year crop yields widen relative to present-day simulations, even though input climate has identical variance in climate drivers.
    }
    \label{fig:yearly}
 \end{figure}
@@ -249,17 +247,20 @@ The first critical design choice for our emulators is centered around temporal a
 We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
 
-Two important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
+Three important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
 First, the year-over-year responses to weather are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
 In the example in Figure \ref{fig:yearvclim} for irrigated maize in Iowa, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
 The same general principal applies to the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariates, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
 
-Second, the climatological-mean yield response is considerably smoother than the year-to-year yield response and makes emulation relatively simple. 
-The year-over-year response to changes in temperature is less clear.
-For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation.
+Second, the year-over-year response is not constant across different levels of climate stress. 
+For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation even though the variance in input temperates is unchanged. 
+Likewise for precipitation changes, strong decreases in precipitation results in a widening of the distribution in yields even though the variance in precipitation is decreasing (from approximately 60 cm yr-1 to 30 cm yr-1 in this example). 
+\textcolor{red}{...both are manifestations of the non-linear mapping from input weather to yields}
 Since we emulate mean climatological-yields, we do not capture any of these higher-order moment changes in yield in this study.
-Note that the GGCMI Phase II training dataset does not capture one climatological factor, potential climate variable variability, because all simulations are run with fixed offsets from the historical climatology. 
+
+Finally, the climatological-mean yield response is considerably smoother than the year-to-year yield response and makes emulation relatively simple. 
+Note that the GGCMI Phase II training dataset does not capture potential changes in climate variability, because all simulations are run with fixed offsets from the historical climatology.
 However, prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in all but arid regions \citep[e.g.][]{Glotter14}.
 Critically for emulation, the mean-climatological yield can easily be related to the mean-climatological shift in temperature or precipitation in the GGCMI Phase II dataset.
 
@@ -691,3 +692,26 @@ We regress 30-year climatological mean yields against a third-order polynomial i
 %       + \ & K_{18} T^2 W + K_{19} W^2 T + K_{20} W^2 N  \nonumber \\ % lost 2 terms, CWN and CTN
 %%      + \ & K_{21} N^2 C + K_{22} N^2 T + K_{23} N^2 W  \nonumber    % lose 6 terms: T^2N and T^2C, W^2C, 3 C^2 terms
 %\end{align}
+
+
+\begin{figure}[ht]
+\centering
+   \includegraphics[width=8.3cm]{figures/hist_year.png}
+   \caption{
+   Example showing results of 
+increased crop yield sensitivity to year-over-year climate variations 
+under climate stress. Figure shows distributions of yields from examples 
+of Figure 1, of irrigated (left) and rainfed (right) maize in Iowa in 
+scenarios of altered temperature (left) and precipitation (right)..  
+Under large warming (T+6) or drying (P-50\%), increased sensitivity means 
+that distributions of year-over-year crop yields widen relative to 
+present-day simulations, even though input timeseries has identical 
+variance in climate drivers.
+
+   Example showing climatological mean yields and distribution of yearly yields for three 30-year scenarios. 
+   Figure shows irrigated maize for nine adjacent high-yield grid cells of Figure \ref{fig:yearvclim} from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for scenarios with temperature shifted by T+3 (orange) and T+6 K (red), with other variables held at baseline values. 
+   The stronger year-over-year temperature response with higher temperatures seen in Figure \ref{fig:yearvclim} is manifested here as larger variance in annual yields even though the variance in climate drivers is identical. 
+   In this work we emulate not the year-over-year distributions but the climatological mean response (dashed vertical lines).
+   }
+   \label{fig:yearly}
+\end{figure}
