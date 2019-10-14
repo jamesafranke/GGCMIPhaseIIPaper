@@ -77,53 +77,58 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 \textcolor{red}{
+
 Statistical emulation of process-based crop models provides the opportunity to combine some of the advantageous features of statistical and process-based crop models.  
-The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a uniform training dataset for crop model emulator development.
+The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development.
 In this study we present the construction of a set of crop model emulators of mean-climatological yield for nine process-based crop models and five crops.
 The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
 The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
-Crop model emulation should therefore facilitate both model comparison and integrated assessment of climate impacts.}
+Crop model emulation should therefore facilitate both model comparison and integrated assessment of climate impacts.
+}
 \end{abstract}
 
 %\copyrightstatement{TEXT}
 
 \introduction
 \label{S:1}
-Improving our understadnding of the impacts of future climate change on crop yields is critical for global food security in the twenty-first century. 
+Improving our understanding of the impacts of future climate change on crop yields is critical for global food security in the twenty-first century. 
 Projections of future yields under climate change are generally made with one of two approaches: either process-based models, which  simulate the process of photosynthesis and the biology and phenology of individual crops, or statistical models, which use historical weather and yield data to capture relationships between observed crop yields and major drivers.
 Process-based crop models provide some advantages, including capturing the direct effects of CO$_2$ fertilization and allowing projections in areas where crops are not currently grown. 
 %including providing a clear mechanism for linking climate to yield outcomes.
 However, they are computationally expensive, and can be difficult or impossible to directly integrate into larger climate change impacts assessments.
 Statistical crop models can only capture crop responses under the range of current conditions, but have several advantages: they implicitly include management and behavioral practices that are difficult to model explicitly, and they are typically simple analytical expressions that are easily implemented by downstream impact modelers. 
 Both types of models are routinely used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017}. 
-%Active development of crop models is ongoing and these two approaches are becoming less district as both camps incorporate methods from the other.
 
 Statistical emulation allows combining some of the advantageous features of both statistical and process-based models. 
-The approach involves constructing a %statistical representation or 
-``surrogate model'' of numerical simulations by using their output as training data for a statistical representsation \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
+The approach involves constructing a ``surrogate model'' of numerical simulations by using their output as training data for a statistical representation \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies. Emulation allows producing yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
 
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
 Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}, who used a machine learning approach to predict Mediterranean wheat yields. 
-Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model. %While most of these focus on a single crop, the LPJmL study includes multiple crops and multiple scenarios as a training set. 
-More recently, emulators have begun to be used in the context of multi-model intercomparisons, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP), which simulated yields for four crops (maize, soy, wheat, and rice) under control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228}.  %X cite Frieler too?
-Choices of emulation strategy differ even when analyzing ISIMIP. \citet{BLANC2015} and \citet{BLANC2017} use historical and RPC8.5 scenarios, combine multiple climate model projections for RCP8.5, and... \textcolor{red}{don't understand: and use local weather variables and yields in their regression across soil regions}. \citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors, and then pattern-scales to emulate local yields. \citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
-The constraints of the ISIMIP experiment as a training set mean that all these efforts share important common features. All emulate annual crop yields across an entire scenario or scenarios, and all future climate scenarios are non-stationary, i.e.\ their input climate parameters evolve over the course of the simulations.
+Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model. 
+More recently, emulators have begun to be used in the context of multi-model intercomparisons, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP), which simulated yields for four crops (maize, soy, wheat, and rice) under control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017}.
+Choices of emulation strategy differ even when analyzing ISIMIP. 
+\citet{BLANC2015} and \citet{BLANC2017} use historical and RPC8.5 scenarios, combine multiple climate model projections for RCP8.5, and regress across soil regions. 
+%\textcolor{red}{don't understand: and use local weather variables and yields in their regress across soil regions}. 
+\citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors, and then pattern-scales to emulate local yields. 
+\citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
+The constraints of the ISIMIP experiment as a training set mean that all these efforts share important common features. 
+All emulate annual crop yields across an entire scenario or scenarios, and all future climate scenarios are non-stationary, i.e.\ their input climate parameters evolve over the course of the simulations.
 
 An alternative approach to emulation involves construction of a ``parameter sweep'' training set, a collection of multiple stationary scenarios that systematically cover a range of input parameter values.
 A parameter sweep offers several important advantages for emulation over an experiment in which climate evolves over time. 
-First, it allows separating the effects of different variables that affect yields but that are highly correlated in realistic future scenarios (e.g.\ CO$_2$ and temperature). \textcolor{red}{another sentence here relating to ISIMIP?}
+First, it allows separating the effects of different variables that affect yields but that are highly correlated in realistic future scenarios (e.g.\ CO$_2$ and temperature). 
+\textcolor{red}{another sentence here relating to ISIMIP?}
 Second, it allows making a distinction between year-over-year yield variations and climatological changes, which may involve different responses to the particular climate regressors used \citep[e.g.][]{Ruane2016}. 
 For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing period, and long-term climate changes are driven predominantly by shifts in means, then regressing on the mean growing period temperature will produce different yield responses at annual vs.\ climatological timescales.  
 
 Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2014 and 2015 \citep{ruane2014, Markowski2015, Pirttioja2015}, and several recent studies in 2018 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. 
-All three 2018 studies sample multiple perturbations to temperature and precipitation, and two of the three add CO$_2$ as well, for a total of 132, 99 and 220 different combinations, respectively. All take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
-All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) 
-\citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) but only in one crop model (GCAM) \citep{calvin2019}.
+All three 2018 studies sample multiple perturbations to temperature and precipitation, and two of the three add CO$_2$ as well, for a total of 132, 99 and 220 different combinations, respectively. 
+All take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
+All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) but only in one crop model (GCAM) \citep{calvin2019}.
 
-In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. GGCMI Phase II, a part of
-the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
+In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
 The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
 The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects. 
 Globally-gridded crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
@@ -260,7 +265,7 @@ Critically for emulation, the mean-climatological yield can easily be related to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulation}
 \label{S:3}
-
+\subsection{Feature engineering}
 Emulation involves fitting individual regression models from GGCMI Phase II output for each crop and model and 0.5 degree geographic pixel; the regressors are the applied perturbations in CO$_2$, temperature, water, and nitrogen (CTWN). 
 We discuss here largely emulations of climatological mean crop yield with no growing season adaptation (A0 scenarios), but note that any output of the crop models can potentially be emulated. 
 We provide separate emulations of not only irrigated and rainfed yields but also irrigation water demand in both the A0 and A1 growing season, meaning that each model and crop combination results in six regressions. (See Supplementary Material XX for more information on additional cases not shown.)
@@ -268,7 +273,7 @@ We provide separate emulations of not only irrigated and rainfed yields but also
 For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
 If the climatological mean response is relatively smooth, then a simpler form provides a reasonable fit that allows for some interpretation of resultant parameter weights. 
 A relativity simple parametric form also allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
-By emulating at the grid cell elevel, we indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserve the spatial resolution of the parent models.
+By emulating at the grid cell level, we indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserve the spatial resolution of the parent models.
 To facilitate potential parameter-by-parameter comparison across crop models, we hold the functional form constant in space, across all crops, and models. 
 That is, the same statistical model is used for all grid cells, models, and rainfed crops. 
 (Note however that regressions for irrigated crops do not contain W terms and models that do not sample the nitrogen levels omit the N terms.)
@@ -300,7 +305,7 @@ Such a high-dimensional model is difficult to fit, especially for a training set
 Our simpler functional form can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
-\subsection{Feature engineering and regularization}
+\subsection{Regularization}
 The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.
 We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
@@ -336,7 +341,7 @@ Implication of this choice include that nitrogen interactions are complex and im
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
 This results in a reduction in mean absolute error for some of th high-order interaction terms in the model (top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
 The Bayesian Ridge method is necessary over the standard OLS to maintain a consistent functional form across all models and locations (see Table \ref{table:ASE}). 
-The Bayesian Ridge estimation method scores relatively lower on adjusted R$^2$ (equation \ref{eqn:rsquare}, where n is the number of samples and k is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
+The Bayesian Ridge estimation method scores relatively lower on adjusted $R^2$ (equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
 
 \begin{equation}
     \label{eqn:rsquare}
@@ -405,7 +410,7 @@ Geographic diversity is high within a single crop and model (Figure \ref{fig:reg
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
 Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological response to perturbations. 
 Crop yield responses generally follow similar functional forms across models, though with a large spread in magnitude partly due to the lack of calibration. 
-Inter-model diversity for a single crop and location is also high (Figure \ref{fig:regression}, rainfed maize in northern Iowa, also shown in Figure \ref{fig:regression}). 
+Inter-model diversity for a single crop and location is also high (Figure \ref{fig:regression}, rainfed maize in northern Iowa, also shown in Figure \ref{fig:regression}, top row). 
 Differences in response shape can lead to  differences in the fidelity of emulation, though comparison here is complicated by the different simulation experiment sampling regimes across models. 
 Note that models are most similar in their responses to temperature perturbations. 
 
@@ -423,7 +428,7 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
     \caption{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. 
     Large columns are crops and large rows models; squares within are T, P scenario pairs. 
-    Colors denote the fraction of currently cultivated hectares ('area frac') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
+    Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
     Of the 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 models submitted data (Figure SX) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}
@@ -482,7 +487,7 @@ More rigorous emulator assessments that could be preformed in future work includ
 \caption{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. 
 A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). 
 The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-The calculation only includes grid cells with at least 1 \% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
+The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
 The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `MD' shows the unweighted median across grid cell values. 
 * Indicates cases where the OLS linear model fails.} 
 \label{table:ASE}
@@ -510,7 +515,9 @@ Note that the cross validation process often does not include ``edge'' simulatio
 The ``edge'' cases are then predicted during the prediction phase of cross validation.
 Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
 
-%-------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator Results and Products}
 \label{S:5}
 \begin{figure}[ht]
@@ -594,7 +601,6 @@ This is paper number 35 of the Birmingham Institute of Forest Research.
 Computing resources were provided by the University of Chicago Research Computing Center (RCC).
 \end{acknowledgements}
 
-%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 \bibliographystyle{copernicus}
 \bibliography{bib}
 
@@ -604,11 +610,12 @@ Computing resources were provided by the University of Chicago Research Computin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  OLD UNUSED 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{figure*}[ht]
 \centering
