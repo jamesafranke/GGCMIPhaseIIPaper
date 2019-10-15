@@ -107,19 +107,18 @@ For agricultural impacts studies, emulation of process-based models allows captu
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
 Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}, who used a machine learning approach to predict Mediterranean wheat yields. 
 Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model. 
-More recently, emulators have begun to be used in the context of multi-model intercomparisons, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP), which simulated yields for four crops (maize, soy, wheat, and rice) under control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017}.
-Choices of emulation strategy differ even when analyzing ISIMIP. 
+More recently, emulators have begun to be used in the context of multi-model intercomparisons, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models  of the Inter-Sectoral Impacts Model Intercomparison Project (ISIMIP). ISIMIP offers a relatively large traning set --  control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017} -- and choices of emulation strategy differ.
 \citet{BLANC2015} and \citet{BLANC2017} use historical and RPC8.5 scenarios, combine multiple climate model projections for RCP8.5, and regress across soil regions. 
 %\textcolor{red}{don't understand: and use local weather variables and yields in their regress across soil regions}. 
 \citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors, and then pattern-scales to emulate local yields. 
 \citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
-The constraints of the ISIMIP experiment as a training set mean that all these efforts share important common features. 
-All emulate annual crop yields across an entire scenario or scenarios, and all future climate scenarios are non-stationary, and important covariates (temperature and precipitation for example) are evolving simultaneously, which may make diagnosing the individual and interacting affects difficult.  
+The constraints of the ISIMIP experiment mean that all these efforts do share important common features. 
+All emulate annual crop yields along an entire scenario or scenarios, and all future climate scenarios are non-stationary, with important covariates (temperature and precipitation for example) evolving simultaneously. % which may make diagnosing the individual and interacting affects difficult.  
 
 An alternative approach to emulation involves construction of a ``parameter sweep'' training set, a collection of multiple stationary scenarios that systematically cover a range of input parameter values.
 A parameter sweep offers several important advantages for emulation over an experiment in which climate evolves over time. 
 First, it allows separating the effects of different variables that affect yields but that are highly correlated in realistic future scenarios (e.g.\ CO$_2$ and temperature). 
-\textcolor{red}{another sentence here relating to ISIMIP?}
+such as those of ISIMIP.
 Second, it allows making a distinction between year-over-year yield variations and climatological changes, which may involve different responses to the particular climate regressors used \citep[e.g.][]{Ruane2016}. 
 For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing period, and long-term climate changes are driven predominantly by shifts in means, then regressing on the mean growing period temperature will produce different yield responses at annual vs.\ climatological timescales.  
 
@@ -129,9 +128,10 @@ All take advantage of the structured training set to construct emulators (``resp
 All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) but only in one crop model (GCAM) \citep{calvin2019}.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
-GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators. 
-\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).
-The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators,  
+%\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).
+%The resulting dataset allows }
+to allow diagnosing the effects on crop yields of both individual factors and their joint effects.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
 %is the most comprehensive crop model emulation effort to date, significantly expanding the scope of previous parameter-sweep crop model emulation work by incorporating 
@@ -192,13 +192,13 @@ Table repeated from \citet{Franke2019a}
 
 The GGCMI Phase II simulations %that serve as the training dataset for the crop model emulators presented here 
 are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
-\textcolor{red}{The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a parameter sweep of as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
-The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
+The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a parameter sweep of as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
+%The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
 These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
 (Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
-The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or 40,000 years across all simulations. 
-Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations.
+The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or \red{40,000} years across all simulations. 
+Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is \red{XX\%}.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}. 
@@ -217,17 +217,10 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 \centering
    \includegraphics[width=7cm]{figures/tempyearvclim.png} \hspace{10mm} \includegraphics[width=7cm]{figures/pryearvclim.png}
    \caption{
-   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts.
-   Left: irrigated maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model, for the baseline 1981-2010 historical climate (blue) and for the scenario of maximum temperature change (+6 K, red). 
-   Open black circles mark climatological mean yield values for all six temperature scenarios (T-1, +0, +1, +2, +3, +4, +6).
-   Right: same as left side except for rainfed maize for the baseline 1981-2010 historical climate (gray) and for the scenario of maximum and minimum precipitation change (brown and green).
-   Open black circles mark climatological mean yield values for all seven precipitation scenarios (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%). 
-   Other variables are held at baseline values, and the choice of irrigated yields in the left panel means that precipitation is not a factor (year-to-year temperature is not held fixed in the right panel). 
-   Colored lines show total least squares linear regressions of year-over-year variations in each individual scenario. 
-   Black line shows the fit through the climatological mean values.  
-   Responses to year-over-year temperature variations (colored lines) are 100--200\% larger than those to long-term climate perturbations, rising under warmer conditions. 
-   Bold black line shows the emulator fit through the climatological mean yield values.
-   }
+   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. Figures shows
+	maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. \textit{Right}: rainfed maize, all precipition cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
+	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yieldsin each case.  Bold black lines show \red{3rd order polynomial} fits through climatological mean values. 
+   In the temperature case, year-over-year yield responses are very different from the response to longer-term climate perturbations, and rise under warmer conditions. In the precipitation case, year-over-year responses resemmble the climatological mean response, but the reponse is highly nonlinear.}
    \label{fig:yearvclim}
 \end{figure}
 
@@ -267,11 +260,11 @@ Critically for emulation, the mean-climatological yield can easily be related to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulation}
 \label{S:3}
-\subsection{Feature engineering}
 Emulation involves fitting individual regression models from GGCMI Phase II output for each crop and model and 0.5 degree geographic pixel; the regressors are the applied perturbations in CO$_2$, temperature, water, and nitrogen (CTWN). 
 We discuss here largely emulations of climatological mean crop yield with no growing season adaptation (A0 scenarios), but note that any output of the crop models can potentially be emulated. 
 We provide separate emulations of not only irrigated and rainfed yields but also irrigation water demand in both the A0 and A1 growing season, meaning that each model and crop combination results in six regressions. (See Supplementary Material XX for more information on additional cases not shown.)
 
+\subsection{Statistical model} %Feature engineering}
 For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
 If the climatological mean response is relatively smooth, then a simpler form provides a reasonable fit that allows for some interpretation of resultant parameter weights. 
 A relativity simple parametric form also allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
@@ -280,14 +273,16 @@ To facilitate potential parameter-by-parameter comparison across crop models, we
 That is, the same statistical model is used for all grid cells, models, and rainfed crops. 
 (Note however that regressions for irrigated crops do not contain W terms and models that do not sample the nitrogen levels omit the N terms.)
 
-A full third order polynomial with interaction terms for the four regressors (CTWN) has 34 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
-Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
+Both higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
 %The mean-climatological response is relatively smooth but also manifestly non-linear.
-Interaction terms are also needed since the yield response is expected to depend on interactions between the major inputs. 
+Interaction terms are needed since the yield response is expected to depend on interactions between the major inputs. 
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}. 
-To reduce the number of free parameters, we apply a feature selection process to eliminate 10 terms that do not play a significant role; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
-The feature selection process is discussed in detail below. The resulting 23-parameter model can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
+
+A full third order polynomial with interaction terms for the four regressors (CTWN) has 34 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. %The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function can be problematic.
+We therefore reduce the number of free parameters 
+through a feature selection process (discussed in detail below), eliminating 10 terms that do not play a significant role in crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
+The resulting 23-parameter model can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 \begin{align}
     \label{eqn:features_original}
@@ -301,18 +296,18 @@ The feature selection process is discussed in detail below. The resulting 23-par
     + \ & {\color{dark-gray}K_{g} T^2 C} + {\color{dark-gray}K_{h} W^2 C} + {\color{dark-gray}K_{i} C^2 W} + {\color{dark-gray}K_{j} C^2 T} + {\color{dark-gray}K_{k} C^2 N} \nonumber
 \end{align}
 
-We do not focus on comparing different functional forms or non-parametric models in this study.
+We do not focus in this study on comparing different functional forms or non-parametric models.
 Some prior studies have used other statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial. 
 Such a high-dimensional model is difficult to fit, especially for a training set of realistic simulations in which input parameters are highly correlated, and  \citet{BLANC2015} and \citet{BLANC2017}  ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
 Our simpler functional form can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
-\subsection{Regularization}
-The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.
-We therefore reduce the number of terms through a feature selection cross-validation process in which terms in the polynomial are tested for importance.
-In this procedure higher-order and interaction terms are added successively to the regression model one by one. 
-We then calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions (top row of Figure \ref{fig:features}). 
-Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error (i.e. temperature cubed will not be included without the temperature squared term, and the linear temperature term). 
+\subsection{Feature selection} %Regularization}
+%The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.
+To reduce the number of terms in our statistical model, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
+In this procedure higher-order and interaction terms are added successively to the regression model one by one, and 
+we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
+Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (120, PEPIC). 
 Feature importance is not uniform due to spatial heterogeneity across models and crops, so we weight the loss function by current cultivation area during this step. 
 The resulting choice of terms is then applied for all emulators and all crops. 
@@ -340,6 +335,7 @@ We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction te
 Finally, we eliminate two 2nd-order interaction terms in T and one in W. 
 Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. 
 
+\subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
 The choice results in a reduction in mean absolute error for some of th high-order interaction terms in the model (top row of Figure \ref{fig:features}) and drastically reduces standard parameter error in the model by stabilizing the estimates.
 The estimation method scores relatively lower on adjusted $R^2$ (equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features) for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study.
