@@ -303,7 +303,7 @@ Our simpler functional form can be fit independently at each grid cell while sti
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
 \subsection{Feature selection} %Regularization}
-%The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.
+%The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.s
 To reduce the number of terms in our statistical model, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and 
 we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
