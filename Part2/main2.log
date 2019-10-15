@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 OCT 2019 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 OCT 2019 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,85 +1111,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T1/ptm/b/n/9 Spring
  []
 
-[4] [5] <figures/tempyearvclim.png, id=238, 322.9666pt x 333.0844pt>
+! Undefined control sequence.
+l.200 ...fed crop and growing-season case; or \red
+                                                  {40,000} years across all ...
+
+? s
+OK, entering \scrollmode...
+! Undefined control sequence.
+l.201 ...ons; the mean participation level is \red
+                                                  {XX\%}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4] <figures/tempyearvclim.png, id=225, 322.9666pt x 333.0844pt>
 File: figures/tempyearvclim.png Graphic file (type png)
 
 <use figures/tempyearvclim.png>
 Package pdftex.def Info: figures/tempyearvclim.png used on input line 218.
 (pdftex.def)             Requested size: 199.16928pt x 205.41237pt.
 
-<figures/pryearvclim.png, id=240, 321.8424pt x 333.0844pt>
+<figures/pryearvclim.png, id=227, 321.8424pt x 333.0844pt>
 File: figures/pryearvclim.png Graphic file (type png)
 
 <use figures/pryearvclim.png>
 Package pdftex.def Info: figures/pryearvclim.png used on input line 218.
 (pdftex.def)             Requested size: 199.16928pt x 206.13408pt.
 
-<figures/hist_year_t.png, id=241, 326.4998pt x 328.1058pt>
+! Undefined control sequence.
+<argument> ...ch case. Bold black lines show \red 
+                                                  {3rd order polynomial} fit...
+l.223 ...se, but the reponse is highly nonlinear.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ch case. Bold black lines show \red 
+                                                  {3rd order polynomial} fit...
+l.223 ...se, but the reponse is highly nonlinear.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<figures/hist_year_t.png, id=228, 326.4998pt x 328.1058pt>
 File: figures/hist_year_t.png Graphic file (type png)
 
 <use figures/hist_year_t.png>
-Package pdftex.def Info: figures/hist_year_t.png used on input line 236.
+Package pdftex.def Info: figures/hist_year_t.png used on input line 229.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
 
-<figures/hist_year_pr.png, id=242, 326.4998pt x 328.1058pt>
+<figures/hist_year_pr.png, id=229, 326.4998pt x 328.1058pt>
 File: figures/hist_year_pr.png Graphic file (type png)
 
 <use figures/hist_year_pr.png>
-Package pdftex.def Info: figures/hist_year_pr.png used on input line 236.
+Package pdftex.def Info: figures/hist_year_pr.png used on input line 229.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
- [6 <./figures/tempyearvclim.png> <./figures/pryearvclim.png>] [7 <./figures/hi
-st_year_t.png> <./figures/hist_year_pr.png>]
-[8] [9] <figures/model_select_maize_rice.png, id=321, 700.3766pt x 728.6422pt>
+ [5] [6 <./figures/tempyearvclim.png> <./figures/pryearvclim.png>] [7 <./figure
+s/hist_year_t.png> <./figures/hist_year_pr.png>]
+[8] <figures/model_select_maize_rice.png, id=313, 700.3766pt x 728.6422pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 323.
+ 318.
 (pdftex.def)             Requested size: 341.43306pt x 355.22554pt.
- [10 <./figures/model_select_maize_rice.png>] <figures/lpjml_maize.png, id=339,
- 505.02277pt x 362.0727pt>
+ [9] [10 <./figures/model_select_maize_rice.png>] <figures/lpjml_maize.png, id=
+340, 505.02277pt x 359.32645pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png used on input line 370.
-(pdftex.def)             Requested size: 455.24408pt x 326.39279pt.
+Package pdftex.def Info: figures/lpjml_maize.png used on input line 366.
+(pdftex.def)             Requested size: 455.24408pt x 323.91716pt.
 
-<figures/regression_example.png, id=341, 613.42776pt x 365.83073pt>
+<figures/regression_example.png, id=342, 613.42776pt x 365.83073pt>
 File: figures/regression_example.png Graphic file (type png)
 
 <use figures/regression_example.png>
-Package pdftex.def Info: figures/regression_example.png used on input line 386.
+Package pdftex.def Info: figures/regression_example.png used on input line 382.
 
 (pdftex.def)             Requested size: 455.24408pt x 271.50316pt.
  [11] [12 <./figures/lpjml_maize.png>]
 [13 <./figures/regression_example.png>]
-<figures/error_360.png, id=375, 2258.4375pt x 4968.5625pt>
+<figures/error_360.png, id=377, 2258.4375pt x 4968.5625pt>
 File: figures/error_360.png Graphic file (type png)
 
 <use figures/error_360.png>
-Package pdftex.def Info: figures/error_360.png used on input line 429.
+Package pdftex.def Info: figures/error_360.png used on input line 425.
 (pdftex.def)             Requested size: 170.71652pt x 375.50705pt.
 
-<figures/em_err.png, id=378, 265.08636pt x 561.82698pt>
+<figures/em_err.png, id=380, 265.08636pt x 561.82698pt>
 File: figures/em_err.png Graphic file (type png)
 
 <use figures/em_err.png>
-Package pdftex.def Info: figures/em_err.png used on input line 442.
+Package pdftex.def Info: figures/em_err.png used on input line 438.
 (pdftex.def)             Requested size: 170.71652pt x 361.82268pt.
  [14] [15 <./figures/error_360.png>] [16 <./figures/em_err.png>] [17] <figures/
-global_em_maize.png, id=415, 2710.125pt x 3161.8125pt>
+global_em_maize.png, id=417, 2710.125pt x 3161.8125pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 527.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 523.
 (pdftex.def)             Requested size: 236.15796pt x 275.48073pt.
 
-<figures/em_CTWN_all_crops.png, id=418, 4516.875pt x 4516.875pt>
+<figures/em_CTWN_all_crops.png, id=420, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 538.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 534.
 (pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
  [18 <./figures/global_em_maize.png>]
 [19 <./figures/em_CTWN_all_crops.png>] [20] (./main2.bbl [21]
@@ -1277,25 +1314,25 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
 [26]) [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 609.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 609.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 605.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 605.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 609.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 609.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 605.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 605.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 605.
  ) 
 Here is how much of TeX's memory you used:
- 10807 strings out of 492995
- 152584 string characters out of 6132704
- 309553 words of memory out of 5000000
- 14000 multiletter control sequences out of 15000+600000
+ 10809 strings out of 492995
+ 152601 string characters out of 6132704
+ 308137 words of memory out of 5000000
+ 14001 multiletter control sequences out of 15000+600000
  42803 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1614b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1609b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
@@ -1312,10 +1349,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main2.pdf (27 pages, 8237705 bytes).
+Output written on main2.pdf (27 pages, 8238518 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 575 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 576 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
