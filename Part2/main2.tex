@@ -293,8 +293,7 @@ For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-worl
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}. 
 
 A full third order polynomial with interaction terms for the four regressors (CTWN) has 34 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. %The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function can be problematic.
-We therefore reduce the number of free parameters 
-through a feature selection process (discussed in detail below), eliminating 10 terms that do not play a significant role in crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
+We therefore reduce the number of free parameters through a feature selection process (discussed in detail below), eliminating 10 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
 The resulting 23-parameter model can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 \begin{align}
@@ -316,7 +315,7 @@ Our simpler functional form can be fit independently at each grid cell while sti
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
 \subsection{Feature selection} %Regularization}
-%The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.s
+%The large GGCMI Phase II sampled variable space greatly aids in fitting statistical models, but it is still sufficiently limited that use of the full 34-parameter polynomial basis function described above can be problematic.
 To reduce the number of terms in our statistical model, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and 
 we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
@@ -540,6 +539,15 @@ Such an extrapolation during cross validation is not representative based on the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator results and products}
 \label{S:5}
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=15cm]{figures/em_CTWN_all_crops.png}
+  \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
+  Solid line shows single-dimension damages and shaded area shows the spread resulting from changes in all four (CTWN) dimensions.
+  For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). Damages are reported as fractional change in production relative to the baseline case.}
+  \label{fig:all_dims}
+\end{figure*}
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width=8.3cm]{figures/global_em_maize.png}
@@ -551,26 +559,18 @@ Such an extrapolation during cross validation is not representative based on the
     \label{fig:globe_em}
 \end{figure}
 
-\begin{figure*}[ht]
-  \centering
-  \includegraphics[width=15cm]{figures/em_CTWN_all_crops.png}
-  \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
-  Solid line shows single-dimension damages and shaded area shows the spread resulting from changes in all four (CTWN) dimensions.
-  For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). Damages are reported as fractional change in production relative to the baseline case.}
-  \label{fig:all_dims}
-\end{figure*}
-
 Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
-As an example, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures SXX-XX for other crops and dimensions). 
-The emulated values closely match simulations even at this aggregation level.
-
-Finally, we present global damage functions across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
+As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
 In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
 On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
 
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
+
+
+Finally, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated transient climate run values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -751,3 +751,7 @@ variance in climate drivers.
     }
    \label{fig:regression}
 \end{figure*}
+
+
+Finally, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures SXX-XX for other crops and dimensions). 
+The emulated values closely match simulations even at this aggregation level.
