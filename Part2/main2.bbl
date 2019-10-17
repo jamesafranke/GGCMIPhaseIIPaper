@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -511,6 +511,11 @@ Storlie, C.~B., Swiler, L.~P., Helton, J.~C., and Sallaberry, C.~J.:
   sensitivity analysis of computationally demanding models, Reliability
   Engineering \& System Safety, 94, 1735 -- 1763,
   \doi{10.1016/j.ress.2009.05.007}, 2009.
+
+\bibitem[{Taylor et~al.(2012)Taylor, Stouffer, and Meehl}]{Taylor2012}
+Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A.: An Overview of {C}{M}{I}{P}5
+  and the Experiment Design, Bulletin of the American Meteorological Society,
+  93, 485--498, \doi{10.1175/BAMS-D-11-00094.1}, 2012.
 
 \bibitem[{Tebaldi and Lobell(2008)}]{Tebaldi2008}
 Tebaldi, C. and Lobell, D.~B.: Towards probabilistic projections of climate

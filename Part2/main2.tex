@@ -196,8 +196,8 @@ The experiment involves nine different globally gridded crop models, each simula
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
 These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
 (Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
-The complete protocol for a modeling group involves up to 20,000 years of global simulated output for rainfed crop and growing-season case; or \textcolor{red}{40,000} years across all simulations for a single modeling group. 
-Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\%.
+The complete protocol for a modeling group involves up to 19,440 years of global simulated output for rainfed crop and growing-season case; or 42,120 years across all simulations for a single modeling group. 
+Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\% of max potential runs.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}. 
@@ -218,7 +218,7 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
    \caption{
    Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. Figures shows
 	maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. \textit{Right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
-	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yields in each case.  Bold black lines show \red{3rd order polynomial} fits through climatological mean values. 
+	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yields in each case. Bold black lines show 3rd order polynomial fits through climatological mean values. 
    In the temperature case, year-over-year yield responses are very different from the response to longer-term climate perturbations, and rise under warmer conditions. In the precipitation case, year-over-year responses resemble the climatological mean response, but the response is highly nonlinear.}
    \label{fig:yearvclim}
 \end{figure}
@@ -372,8 +372,14 @@ The lowest number of simulations emulated across the full parameter space is the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
+In the following section we present some illustrations of emulator performance.
+Model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
+However, the principle of no-free-lunch applies, so losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
+The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
+
+\subsection{Emulator behavior}
 \begin{figure*}[ht]
-\centering
+\centerings
     \includegraphics[width=16cm]{figures/lpjml_maize.png}
     \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator.
     Simulated and emulated yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
@@ -422,8 +428,7 @@ Many of these regions are not currently viable for agriculture and therefore hav
 Some differences in spatial skill exist across models and crops, with maize being the qualitatively easiest to emulate. 
 See supplemental figures SXX-SXX for more crops and models. 
 
-Model emulation with the parametric method used here is only possible when crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
-Responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
+Yield responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression}, rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
 Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
 Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological response to perturbations. 
@@ -467,6 +472,7 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
 
 No general criteria exist for defining an acceptable crop model emulator, so we present two different metrics. 
 First, for a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
+Second, we show a out-of-sample cross-validation aggregate error for each model independent of the ensemble. 
 We define the normalized error $e$ for each scenario as the difference between the fractional yield change from the emulator and that in the original simulation, divided by the standard deviation of the multi-model spread (Equations \ref{eqn:per_yield} and  \ref{eqn:error}):
 
 \begin{equation}
@@ -542,8 +548,8 @@ Such an extrapolation during cross validation is not representative based on the
   \centering
   \includegraphics[width = 15cm]{figures/em_CTWN_all_crops.png}
   \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
-  Solid line shows single-dimension damages and shaded area shows the spread resulting from changes in all four (CTWN) dimensions.
-  For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). 
+  Solid line shows the multi-model ensemble median and shaded area shows the high and low model projection. 
+  All other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). 
   Damages are reported as fractional change in production relative to the baseline case over currently cultivated land \citep{Portmann2010}.
   }
   \label{fig:all_dims}
@@ -564,7 +570,6 @@ Such an extrapolation during cross validation is not representative based on the
     \label{fig:globe_em}
 \end{figure}
 
-
 \begin{figure}[ht]
 \centering
    \includegraphics[width=7cm]{figures/figure_10_alt_1.png} \hspace{10mm} \includegraphics[width=7cm]{figures/figure_10_alt_2.png}
@@ -573,17 +578,18 @@ Such an extrapolation during cross validation is not representative based on the
    \label{fig:yearly}
 \end{figure}
 
-
 Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
 As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
 In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
-Model spread is highest for spring wheat in general and for the CO$_2$ response for the wheats and soy.
+Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
 On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
 
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
-Finally, we show emulated climate RCP runs using projections from 30 climate models from the 
+Finally, we show emulated climate RCP runs using projections from 30 climate models from the CMIP-5 archive. 
+
+
 
 a damage function constructed from the 4D emulation, aggregated to global yield, with simulated transient climate run values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
 
