@@ -558,8 +558,9 @@ Such an extrapolation during cross validation is not representative based on the
 \begin{figure}[ht]
     \centering
     \includegraphics[width = 8.3cm]{figures/global_em_maize.png}
-    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
-    Scatter points show the emulated values for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
+    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. 
+    Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
+    Scatter points show the emulated production change from the 1980-2010 mean value for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
     The x-axis represents the mean temperature shift over all grid cells where crops are grown (unweighted).
     Temperature and precipitation vary in the climate runs but the effects of CO$_2$ are not included here.
     Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
@@ -582,16 +583,18 @@ Because the emulator or ``surrogate model'' transforms the discrete simulation s
 As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
 In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
-On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, and rice is not generally grown in water-limited conditions so shows the lowest response to changes in precipitation. 
+On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, rice is not generally grown in water-limited conditions so it shows the lowest response to changes in precipitation, and maize has a muted response to CO$_2$ as a C4 plant.
 
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
-Finally, we show emulated climate RCP runs using projections from 30 climate models from the CMIP-5 archive. 
+Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
+The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em}.
+
+30 climate models from the CMIP-5 archive \citep{Taylor2012}. 
 
 
-
-a damage function constructed from the 4D emulation, aggregated to global yield, with simulated transient climate run values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
+aggregated to global yield, \textcolor{red}{with simulated transient climate run values shown for comparison} (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
