@@ -197,8 +197,8 @@ The experiment involves nine different globally gridded crop models, each simula
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
 These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
 (Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
-The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or \red{40,000} years across all simulations. 
-Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is \red{XX\%}.
+The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or \textcolor{red}{40,000} years across all simulations. 
+Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is \textcolor{red}{XX\%}.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}. 
@@ -218,9 +218,9 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
    \includegraphics[width=7cm]{figures/tempyearvclim.png} \hspace{10mm} \includegraphics[width=7cm]{figures/pryearvclim.png}
    \caption{
    Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. Figures shows
-	maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. \textit{Right}: rainfed maize, all precipition cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
-	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yieldsin each case.  Bold black lines show \red{3rd order polynomial} fits through climatological mean values. 
-   In the temperature case, year-over-year yield responses are very different from the response to longer-term climate perturbations, and rise under warmer conditions. In the precipitation case, year-over-year responses resemmble the climatological mean response, but the reponse is highly nonlinear.}
+	maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. \textit{Right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
+	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yields in each case.  Bold black lines show \red{3rd order polynomial} fits through climatological mean values. 
+   In the temperature case, year-over-year yield responses are very different from the response to longer-term climate perturbations, and rise under warmer conditions. In the precipitation case, year-over-year responses resemble the climatological mean response, but the response is highly nonlinear.}
    \label{fig:yearvclim}
 \end{figure}
 
@@ -380,7 +380,7 @@ The lowest number of simulations emulated across the full parameter space is the
     Simulated and emulated yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
     Absolute yield differences are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
     Percent differences (from simulated baseline) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
-    Approximately 7\% of grid cells have errors over 20\% different from baseline, but only 3\% of grid cells with current cultivation (MIRCA) have errors over 20\%.
+    Approximately 7\% of grid cells have errors over 20\% different from baseline, but only 3\% of grid cells with current cultivation \citep{Portmann2010} have errors over 20\%.
     Notable exceptions include areas with very low baseline yield in the simulations including, for example, the Sahara, the Andes, and northern Quebec. 
     Percent error weighted by cultivation area globally is essentially zero (see also Table \ref{table:ASE}).
     Performance varies by crop and model. 
@@ -472,12 +472,12 @@ We define the normalized error $e$ for each scenario as the difference between t
 
 \begin{equation}
     \label{eqn:per_yield}
-    F_{\: scn.}=\frac{Y_{scn.}-Y_{baseline}}{Y_{baseline}}
+    F_{\: scn.}= \frac{Y_{scn.}-Y_{baseline}}{Y_{baseline}}
 \end{equation}
 
 \begin{equation}
     \label{eqn:error}
-    e_{\: scn.} =\frac{F_{em, \: scn.}-F_{sim, \: scn.}}{\sigma_{sim, \: scn.}}
+    e_{\: scn.} = \frac{F_{em, \: scn.}-F_{sim, \: scn.}}{\sigma_{sim, \: scn.}}
 \end{equation}
 
 Here $F_{\: scn.}$ is the fractional change in a model's mean emulated or simulated yield from the defined historical baseline, in a certain setting or scenario (scn.) in C, T, W, and N space; $Y_{scn.}$ and $Y_{baseline}$ are the absolute emulated or simulated mean yields. 
@@ -503,11 +503,11 @@ We therefore do not provide a formal parameter uncertainty analysis, but note th
 More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
 
 \begin{table*}[t]
-\caption{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process. 
+\caption{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process for rainfed crops. 
 A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). 
 The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
 The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
-The table displays area weighted mean (`WM') shows the mean error weighted by hectares grown in each grid cell \citep{Portmann2010} and `MD' shows the unweighted median across grid cell values. 
+The table shows the mean error (`WM') weighted by hectares grown in each grid cell \citep{Portmann2010} and the unweighted median across included grid cells `MD'. 
 * Indicates cases where the OLS linear model fails.} 
 \label{table:ASE}
 \begin{tabular}{l | cc | cc | cc | cc | cc} 
@@ -541,21 +541,26 @@ Such an extrapolation during cross validation is not representative based on the
 \label{S:5}
 \begin{figure*}[ht]
   \centering
-  \includegraphics[width=15cm]{figures/em_CTWN_all_crops.png}
+  \includegraphics[width = 15cm]{figures/em_CTWN_all_crops.png}
   \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
   Solid line shows single-dimension damages and shaded area shows the spread resulting from changes in all four (CTWN) dimensions.
-  For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). Damages are reported as fractional change in production relative to the baseline case.}
+  For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). 
+  Damages are reported as fractional change in production relative to the baseline case over currently cultivated land \citep{Portmann2010}.}
   \label{fig:all_dims}
 \end{figure*}
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=8.3cm]{figures/global_em_maize.png}
-    \caption{Global emulated damages for maize on currently cultivated lands for the GGCMI Phase II models emulated, for uniform temperature shifts with other inputs held at baseline. 
-    (The damage function is created from aggregating up emulated values at the grid cell level, not from a regression of global mean yields.) 
-    Lines are emulations for rainfed (solid) and irrigated (dashed) crops; for comparison, dots are the simulated values for the rainfed case.  
-    For most models, irrigated crops show a sharper reduction than rainfed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift (the exceptions are PROMET, JULES, and LPJmL, see \citet{Franke2019a} for more details). 
-    For other crops and scenarios see Figures SXX-XX in the supplemental material.}
+    \includegraphics[width = 8.3cm]{figures/global_em_maize.png}
+    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. Models not show: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
+    Scatter points show the emulated values for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
+    The x-axis represents the mean temperature shift over all grid cells where crops are grown (unweighted).
+    Temperature and precipitation vary in the climate runs but the effects of CO$_2$ are not included here.
+    Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
+    Bold lines show emulated values with uniform global temperature shifts applied and precipitation held constant. 
+    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the six models not shown).
+    In all cases nitrogen is fixed at 200 (kg ha$^-1$) and global production values are aggregated up from the grid cell level based on the growing areas for rainfed and irrigated maize \citep{Portmann2010}. 
+    }
     \label{fig:globe_em}
 \end{figure}
 
@@ -568,8 +573,9 @@ On the other side, muted responses include soy, an efficient atmospheric nitroge
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
+Finally, we show emulated climate RCP runs using projections from 30 climate models from the 
 
-Finally, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated transient climate run values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
+a damage function constructed from the 4D emulation, aggregated to global yield, with simulated transient climate run values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -755,3 +761,15 @@ variance in climate drivers.
 
 Finally, we show a damage function constructed from the 4D emulation, aggregated to global yield, with simulated values shown for comparison (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land; see Figures SXX-XX for other crops and dimensions). 
 The emulated values closely match simulations even at this aggregation level.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=8.3cm]{figures/global_em_maize.png}
+    \caption{Global emulated damages for maize on currently cultivated lands for the GGCMI Phase II models emulated, for uniform temperature shifts with other inputs held at baseline. 
+    (The damage function is created from aggregating up emulated values at the grid cell level, not from a regression of global mean yields.) 
+    Lines are emulations for rainfed (solid) and irrigated (dashed) crops; for comparison, dots are the simulated values for the rainfed case.  
+    For most models, irrigated crops show a sharper reduction than rainfed because of the locations of cultivated areas: irrigated crops tend to be grown in warmer areas where impacts are more severe for a given temperature shift (the exceptions are PROMET, JULES, and LPJmL, see \citet{Franke2019a} for more details). 
+    For other crops and scenarios see Figures SXX-XX in the supplemental material.}
+    \label{fig:globe_em}
+\end{figure}
