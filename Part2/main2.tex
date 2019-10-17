@@ -190,15 +190,14 @@ Table repeated from \citet{Franke2019a}
     \end{tabular}\\
 \end{table}
 
-The GGCMI Phase II simulations %that serve as the training dataset for the crop model emulators presented here 
-are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
+The GGCMI Phase II simulations are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
 The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a parameter sweep of as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
 %The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
 These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
 (Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
-The complete protocol for a modeling group involves over 20,000 years of global simulated output for rainfed crop and growing-season case; or \textcolor{red}{40,000} years across all simulations. 
-Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is \textcolor{red}{XX\%}.
+The complete protocol for a modeling group involves up to 20,000 years of global simulated output for rainfed crop and growing-season case; or \textcolor{red}{40,000} years across all simulations for a single modeling group. 
+Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\%.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}. 
@@ -545,24 +544,35 @@ Such an extrapolation during cross validation is not representative based on the
   \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
   Solid line shows single-dimension damages and shaded area shows the spread resulting from changes in all four (CTWN) dimensions.
   For single-dimension damages, all other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). 
-  Damages are reported as fractional change in production relative to the baseline case over currently cultivated land \citep{Portmann2010}.}
+  Damages are reported as fractional change in production relative to the baseline case over currently cultivated land \citep{Portmann2010}.
+  }
   \label{fig:all_dims}
 \end{figure*}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width = 8.3cm]{figures/global_em_maize.png}
-    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. Models not show: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
+    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
     Scatter points show the emulated values for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
     The x-axis represents the mean temperature shift over all grid cells where crops are grown (unweighted).
     Temperature and precipitation vary in the climate runs but the effects of CO$_2$ are not included here.
     Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
     Bold lines show emulated values with uniform global temperature shifts applied and precipitation held constant. 
-    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the six models not shown).
+    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the six models not shown in full).
     In all cases nitrogen is fixed at 200 (kg ha$^-1$) and global production values are aggregated up from the grid cell level based on the growing areas for rainfed and irrigated maize \citep{Portmann2010}. 
     }
     \label{fig:globe_em}
 \end{figure}
+
+
+\begin{figure}[ht]
+\centering
+   \includegraphics[width=7cm]{figures/figure_10_alt_1.png} \hspace{10mm} \includegraphics[width=7cm]{figures/figure_10_alt_2.png}
+   \caption{alternate
+   }
+   \label{fig:yearly}
+\end{figure}
+
 
 Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
 As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
