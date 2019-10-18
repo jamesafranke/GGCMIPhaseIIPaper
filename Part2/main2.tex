@@ -362,8 +362,9 @@ The lowest number of simulations emulated across the full parameter space is the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In the following section we present some illustrations of emulator performance.
-Model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
+In the following section we present some illustrations of emulator performance. 
+We have nearly 3 million different regressions to summarize because we fit individual models at each grid cell for each simulation model and crop.
+In general, model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 However, the principle of no-free-lunch applies, so losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
 The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
 
