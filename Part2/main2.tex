@@ -436,9 +436,9 @@ The Bayesian Ridge estimator (shown in Figure \ref{fig:regression}) tends to mit
 In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 \subsection{Emulator performance metrics}
-\begin{figure}[ht]
+\begin{figure*}[ht]
 \centering
-    \includegraphics[width=6cm]{figures/error_360.png}
+    \includegraphics[width=16cm]{figures/error_grid.png}
     \caption{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. 
     Large columns are crops and large rows models; squares within are T, P scenario pairs. 
@@ -447,7 +447,7 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}
    \label{fig:error_360}
-\end{figure}
+\end{figure*}
 
 \begin{figure*}[ht]
 \centering
