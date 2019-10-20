@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 OCT 2019 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 OCT 2019 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,11 +995,7 @@ Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 3.
 
-(./main2.aux
-
-LaTeX Warning: Label `fig:yearly' multiply defined.
-
-)
+(./main2.aux)
 \openout1 = `main2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1144,7 +1140,7 @@ Package pdftex.def Info: figures/hist_year_pr.png used on input line 228.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
  [5] [6 <./figures/tempyearvclim.png> <./figures/pryearvclim.png>] [7 <./figure
 s/hist_year_t.png> <./figures/hist_year_pr.png>]
-[8] <figures/model_select_maize_rice.png, id=315, 700.3766pt x 728.6422pt>
+[8] <figures/model_select_maize_rice.png, id=314, 700.3766pt x 728.6422pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
@@ -1152,14 +1148,14 @@ Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
  319.
 (pdftex.def)             Requested size: 341.43306pt x 355.22554pt.
  [9] [10 <./figures/model_select_maize_rice.png>] [11] <figures/lpjml_maize.png
-, id=353, 505.02277pt x 359.32645pt>
+, id=352, 505.02277pt x 359.32645pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
 Package pdftex.def Info: figures/lpjml_maize.png used on input line 374.
 (pdftex.def)             Requested size: 455.24408pt x 323.91716pt.
 
-<figures/regression_example_1.png, id=357, 612.70506pt x 205.39134pt>
+<figures/regression_example_1.png, id=356, 612.70506pt x 205.39134pt>
 File: figures/regression_example_1.png Graphic file (type png)
 
 <use figures/regression_example_1.png>
@@ -1167,7 +1163,7 @@ Package pdftex.def Info: figures/regression_example_1.png used on input line 39
 0.
 (pdftex.def)             Requested size: 455.24408pt x 152.61087pt.
 
-<figures/regression_example_2.png, id=359, 612.70506pt x 202.06693pt>
+<figures/regression_example_2.png, id=358, 612.70506pt x 202.06693pt>
 File: figures/regression_example_2.png Graphic file (type png)
 
 <use figures/regression_example_2.png>
@@ -1176,14 +1172,14 @@ Package pdftex.def Info: figures/regression_example_2.png used on input line 40
 (pdftex.def)             Requested size: 455.24408pt x 150.14075pt.
  [12 <./figures/lpjml_maize.png>]
 [13 <./figures/regression_example_1.png> <./figures/regression_example_2.png>]
-<figures/error_grid.png, id=387, 606.3453pt x 241.81541pt>
+<figures/error_grid.png, id=386, 601.2864pt x 241.81541pt>
 File: figures/error_grid.png Graphic file (type png)
 
 <use figures/error_grid.png>
 Package pdftex.def Info: figures/error_grid.png used on input line 441.
-(pdftex.def)             Requested size: 455.24408pt x 181.55298pt.
+(pdftex.def)             Requested size: 455.24408pt x 183.08055pt.
 
-<figures/CARAIB_spatial_error.png, id=390, 505.02277pt x 332.15292pt>
+<figures/CARAIB_spatial_error.png, id=389, 505.02277pt x 332.15292pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 
 <use figures/CARAIB_spatial_error.png>
@@ -1192,36 +1188,24 @@ Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 45
 (pdftex.def)             Requested size: 455.24408pt x 299.4214pt.
  [14] [15 <./figures/error_grid.png>]
 [16 <./figures/CARAIB_spatial_error.png>]
-<figures/em_CTWN_all_crops.png, id=422, 4516.875pt x 4516.875pt>
+<figures/em_CTWN_all_crops.png, id=421, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 542.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 544.
 (pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
 
-<figures/global_em_maize.png, id=425, 312.06186pt x 294.8616pt>
-File: figures/global_em_maize.png Graphic file (type png)
+<figures/global_em_maize_4.png, id=424, 536.09886pt x 522.80118pt>
+File: figures/global_em_maize_4.png Graphic file (type png)
 
-<use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 553.
-(pdftex.def)             Requested size: 236.15796pt x 223.1478pt.
-
-<figures/figure_10_alt_1.png, id=430, 312.06186pt x 294.8616pt>
-File: figures/figure_10_alt_1.png Graphic file (type png)
-
-<use figures/figure_10_alt_1.png>
-Package pdftex.def Info: figures/figure_10_alt_1.png used on input line 569.
-(pdftex.def)             Requested size: 199.16928pt x 188.19786pt.
-
-<figures/figure_10_alt_2.png, id=431, 312.06186pt x 294.8616pt>
-File: figures/figure_10_alt_2.png Graphic file (type png)
-
-<use figures/figure_10_alt_2.png>
-Package pdftex.def Info: figures/figure_10_alt_2.png used on input line 569.
-(pdftex.def)             Requested size: 199.16928pt x 188.19786pt.
+<use figures/global_em_maize_4.png>
+Package pdftex.def Info: figures/global_em_maize_4.png used on input line 555.
+(pdftex.def)             Requested size: 398.33858pt x 388.45428pt.
  [17] [18 <./figures/em_CTWN_all_crops.png>]
-[19 <./figures/global_em_maize.png>] [20 <./figures/figure_10_alt_1.png> <./fig
-ures/figure_10_alt_2.png>] [21] (./main2.bbl [22]
+
+LaTeX Warning: Text page 19 contains only floats.
+
+[19 <./figures/global_em_maize_4.png>] [20] [21] (./main2.bbl [22]
 Underfull \hbox (badness 2253) in paragraph at lines 82--86
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
@@ -1306,25 +1290,21 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
 ) [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 644.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 646.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
  ) 
 Here is how much of TeX's memory you used:
- 10830 strings out of 492995
- 153246 string characters out of 6132704
- 307670 words of memory out of 5000000
- 14014 multiletter control sequences out of 15000+600000
+ 10817 strings out of 492995
+ 152932 string characters out of 6132704
+ 308076 words of memory out of 5000000
+ 14004 multiletter control sequences out of 15000+600000
  42803 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1448b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,1460b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
@@ -1341,10 +1321,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main2.pdf (28 pages, 8442062 bytes).
+Output written on main2.pdf (28 pages, 8518199 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 596 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 140 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -501,33 +501,35 @@ We therefore do not provide a formal parameter uncertainty analysis, but note th
 More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
 
 \begin{table*}[t]
-\caption{Mean absolute error of emulator representation of a simulation as a percentage of baseline yield for the cross-validation process for rainfed crops. 
-A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on two-thirds of the data and validated on the held-out remaining third (repeated three times). 
+\caption{
+Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
+A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
 The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
 The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
-The table shows the mean error (`WM') weighted by hectares grown in each grid cell \citep{Portmann2010} and the unweighted median across included grid cells `MD'. 
-* Indicates cases where the OLS linear model fails.} 
+The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
+* Indicates cases where the OLS linear model fails.
+} 
 \label{table:ASE}
-\begin{tabular}{l | cc | cc | cc | cc | cc} 
+\begin{tabular}{l | c | c | c | c | c} 
 \hline
-{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{S. Wheat}} & \multicolumn{2}{c}{\textbf{W. Wheat}} \\
-\textbf{Model}     & WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%) & MD (\%) \\ \hline
-\textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03  & 2.95  & 0.02  & 4.40  & 0.01  & 2.36  \\ \hline
-\textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00  & 3.35  & 0.01* & 6.82* & 0.01  & 3.51  \\ \hline
-\textbf{JULES}     & 0.11  & 6.13  & 0.01  & 10.2  & 0.01  & 6.97  & 0.04  & 15.1  & NA    & NA    \\ \hline
-\textbf{GEPIC}     & 0.00  & 5.78  & 0.00  & 3.75  & 0.01  & 5.64  & 0.01  & 6.76  & 0.01  & 7.01  \\ \hline
-\textbf{LPJ-GUESS} & 0.00  & 1.78  & NA    & NA    & NA    & NA    & 0.05  & 6.22  & 0.02  & 3.35  \\ \hline
-\textbf{LPJmL}     & 0.00  & 9.44  & 0.00  & 3.25  & 0.01  & 8.37  & 0.01  & 9.83  & 0.01  & 4.98  \\ \hline
-\textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01  & 3.97  & 0.01  & 2.97  & 0.01  & 4.67  \\ \hline
-\textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01  & 9.85  & 0.01  & 7.04  & 0.01  & 3.68   \\ \hline
-\textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80* & 0.00* & 2.89* & 0.00* & 4.83* & 0.02* & 6.70*  \\ \hline
+\textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soy (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
+\textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
+\textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
+\textbf{JULES}     & 3.99  & 20.1  & 2.89  & 9.90  & NA     \\ \hline
+\textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
+\textbf{LPJ-GUESS} & 0.57  & NA    & NA    & xxxx  & 0.18   \\ \hline
+\textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
+\textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
+\textbf{PROMET}    & 4.41  & 7.48  & 6.06  & 16.8  & 7.07   \\ \hline
+\textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
 \end{tabular}
 \end{table*}
 
-We also provide a more stringent test of emulator performance; a three-fold cross validation (out-of-sample validation). 
-Here the training data is split and the model is trained on two thirds of the data and tested on the held out portion (the process is then repeated three times to cover all data in the training set). 
-We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) case and show aggregations by grid cell and weighted by area cultivated per grid cell. 
-Errors are generally low as a percentage of yield --even for this strict protocol-- and when weighted by area, essentially zero in most cases (Table \ref{table:ASE}). 
+We also provide a more stringent test of emulator performance; a four-fold cross validation (out-of-sample validation). 
+Here the training data is split and the model is trained on 75\% of the data and tested on the held out portion (the process is then repeated four times to cover all data in the training set). 
+We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) simulation and show aggregations weighted by area cultivated per grid cell. 
+Errors are generally low as a percentage of yield --even for this relatively strict protocol-- and when weighted by area, below 5\% of baseline yield for most cases (Table \ref{table:ASE}).
+The notable exceptions are the JULES model for soy and spring wheat and the PROMET model for soy, rice, and the wheats. 
 Note that the cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension) on one or more folds of the training set split.
 The ``edge'' cases are then predicted during the prediction phase of cross validation.
 Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
@@ -548,31 +550,22 @@ Such an extrapolation during cross validation is not representative based on the
   \label{fig:all_dims}
 \end{figure*}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
     \centering
-    \includegraphics[width = 8.3cm]{figures/global_em_maize.png}
+    \includegraphics[width = 14cm]{figures/global_em_maize_4.png}
     \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. 
-    Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
     Scatter points show the emulated production change from the 1980-2010 mean value for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
-    The x-axis represents the mean temperature shift over all grid cells where crops are grown (unweighted).
-    Temperature and precipitation vary in the climate runs but the effects of CO$_2$ are not included here.
+    The x-axis represents the mean temperature shift over all grid cells where crops are grown (no weighted by cultivation area).
     Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
-    Bold lines show emulated values with uniform global temperature shifts applied and precipitation held constant. 
-    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the six models not shown in full).
+    Bold lines show emulated values with uniform global temperature shifts applied and precipitation and CO$_2$ held constant. 
+    Panels a-d show CMIP-5 temperature only, temperature and precipitation, temperature and CO$_2$, and all three effects respectively. 
+    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the additional six crop model emulators not shown in full).
     In all cases nitrogen is fixed at 200 (kg ha$^-1$) and global production values are aggregated up from the grid cell level based on the growing areas for rainfed and irrigated maize \citep{Portmann2010}. 
     }
     \label{fig:globe_em}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[ht]
-\centering
-   \includegraphics[width=7cm]{figures/figure_10_alt_1.png} \hspace{10mm} \includegraphics[width=7cm]{figures/figure_10_alt_2.png}
-   \caption{alternate
-   }
-   \label{fig:yearly}
-\end{figure}
-
-Because the emulator or ``surrogate model'' transforms the discrete simulation sample space into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions. 
+The emulator or ``surrogate model'' transforms the discrete simulation samples into a continuous response surface at any geographic scale and can be used for a variety of applications, including construction of continuous damage functions. 
 As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
 In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
@@ -583,11 +576,20 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
 
 Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
 The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 30 climate models from the CMIP-5 archive \citep{Taylor2012}. 
-Differences between the emulation and simulation are similar to the spread across climate models for a single crop model, but much lower than the differences across climate models. 
-With CO$_2$ included, the climate model response spread increases considerably. Note that no direct comparison to the simulations is possible in this case.
+Differences between the emulation and simulation are similar to the spread across climate models for a single crop model emulation, but much lower than the differences across climate models. 
+
+With CO$_2$ and precipitation effects included, the climate model response spread increases considerably. 
+Note that no direct comparison to the simulations is possible in cases b, c, or d.
+
+Precipitation tends 
+
+PROMET, the quantitatively most difficult model to emulate for Maize is shown to illustrate that ...
+
+PROMET, the pattern of yields 
 
 aggregated to global yield, \textcolor{red}{with simulated transient climate run values shown for comparison} (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
 
+Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -729,6 +731,25 @@ We regress 30-year climatological mean yields against a third-order polynomial i
 %\end{align}
 
 
+\label{table:ASE}
+\begin{tabular}{l | cc | cc | cc | cc | cc} 
+\hline
+{} & \multicolumn{2}{c|}{\textbf{Maize}} & \multicolumn{2}{c|}{\textbf{Soy}}& \multicolumn{2}{c |}{\textbf{Rice}} & \multicolumn{2}{c |}{\textbf{S. Wheat}} & \multicolumn{2}{c}{\textbf{W. Wheat}} \\
+\textbf{Model}     & WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%)& MD (\%)& WM (\%) & MD (\%) \\ \hline
+\textbf{CARAIB}    & 0.00  & 1.71  & 0.02  & 2.39  & 0.03  & 2.95  & 0.02  & 4.40  & 0.01  & 2.36  \\ \hline
+\textbf{EPIC-TAMU} & 0.00  & 4.30  & 0.01  & 6.24  & 0.00  & 3.35  & 0.01* & 6.82* & 0.01  & 3.51  \\ \hline
+\textbf{JULES}     & 0.11  & 6.13  & 0.01  & 10.2  & 0.01  & 6.97  & 0.04  & 15.1  & NA    & NA    \\ \hline
+\textbf{GEPIC}     & 0.00  & 5.78  & 0.00  & 3.75  & 0.01  & 5.64  & 0.01  & 6.76  & 0.01  & 7.01  \\ \hline
+\textbf{LPJ-GUESS} & 0.00  & 1.78  & NA    & NA    & NA    & NA    & 0.05  & 6.22  & 0.02  & 3.35  \\ \hline
+\textbf{LPJmL}     & 0.00  & 9.44  & 0.00  & 3.25  & 0.01  & 8.37  & 0.01  & 9.83  & 0.01  & 4.98  \\ \hline
+\textbf{pDSSAT}    & 0.00  & 2.93  & 0.05  & 3.02  & 0.01  & 3.97  & 0.01  & 2.97  & 0.01  & 4.67  \\ \hline
+\textbf{PROMET}    & 0.01  & 4.19  & 0.00  & 6.03  & 0.01  & 9.85  & 0.01  & 7.04  & 0.01  & 3.68   \\ \hline
+\textbf{PEPIC}     & 0.00* & 3.71* & 0.00* & 2.80* & 0.00* & 2.89* & 0.00* & 4.83* & 0.02* & 6.70*  \\ \hline
+\end{tabular}
+\end{table*}
+
+
+
 \begin{figure}[ht]
 \centering
    \includegraphics[width=8.3cm]{figures/hist_year.png}
@@ -790,4 +811,20 @@ Figure 1 the year-over-year responses for temperature are very different from th
 In the precip case, on the other hand, the climatological response is strongly nonlinear, but the year-over-year responses matches it very well. 
 These effects are physically reasonable. Crops are very sensitive to daily temperature extrema and year-over-year and climatological changes in mean temperature can be associated with different changes (or lack of changes) in the growing season temperature distribution, and so produce different responses. 
 Crops are less sensitive to short-term precipitation changes, since they care about soil moisture and the soil integrates.(cite Glotter et al for showing that in all but very arid regions, crop responses in models are not sensitive to how the precipitation is distributed within a month).
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width = 8.3cm]{figures/global_em_maize.png}
+    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. 
+    Scatter points show the emulated production change from the 1980-2010 mean value for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
+    The x-axis represents the mean temperature shift over all grid cells where crops are grown (no weighted by cultivation area).
+    Temperature and precipitation vary in the climate runs but the effects of CO$_2$ are not included here.
+    Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
+    Bold lines show emulated values with uniform global temperature shifts applied and precipitation held constant. 
+    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model and resultant production change for each crop and climate model combination (including the six models not shown in full).
+    In all cases nitrogen is fixed at 200 (kg ha$^-1$) and global production values are aggregated up from the grid cell level based on the growing areas for rainfed and irrigated maize \citep{Portmann2010}. 
+    Models not shown: CARAIB, EPIC-TAMU, JULES, GEPIC, LPJ-GUESS, and PEPIC.
+    }
+    \label{fig
 
