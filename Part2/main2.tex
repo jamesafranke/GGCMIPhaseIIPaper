@@ -204,21 +204,17 @@ Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} h
 Temperature perturbations are applied as additive mean shifts (from -1 to +6 degrees C), precipitation as fractional multipliers (from -50\% to +30\%), and CO$_2$ and nitrogen application as fixed values. (See Table \ref{table:inputs} for all values.)
 Models provide global output at 0.5 degree latitude and longitude resolution for each simulation year.
 
-%Some models share a common genealogy, but have since branched and developed independently, and will be treated independently in this work. 
-%Minor differences in historical rainfall across the different reanalysis products used result in differences in the precipitation shift in the parameter-sweep. 
-%Atmospheric CO$_2$ and applied nitrogen fertilizer take uniform, static values globally for each 30-year simulation case.
-%Sampling across the parameter sweep is heterogeneous across models so the resultant training dataset size differs across models. 
-%(See Table \ref{table:models} for number of 30-year simulations).
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Climatological vs. year-to-year response}
 \begin{figure}[ht]
 \centering
    \includegraphics[width=7cm]{figures/tempyearvclim.png} \hspace{10mm} \includegraphics[width=7cm]{figures/pryearvclim.png}
    \caption{
-   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. Figures shows
-	maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. \textit{Right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
-	Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yields in each case. Bold black lines show 3rd order polynomial fits through climatological mean values. 
+   Example showing distinction between crop yield responses to year-to-year and climatological mean temperature and precipitation shifts. 
+   Figures shows maize for a representative high-yield region (nine adjacent grid cells in northern Iowa) from the pDSSAT model 
+   \textit{Left}: irrigated maize, climatological mean values for all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and individual years for T+0, blue, and T+6 K, red. 
+   \textit{Right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%), with individual years shown for W-50\%, grown, and W+50\%, green.
+   Open black circles mark climatological mean yields for each case and short colored lines the linear regression to individual yields in each case. Bold black lines show 3rd order polynomial fits through climatological mean values. 
    In the temperature case, year-over-year yield responses are very different from the response to longer-term climate perturbations, and rise under warmer conditions. In the precipitation case, year-over-year responses resemble the climatological mean response, but the response is highly nonlinear.}
    \label{fig:yearvclim}
 \end{figure}
@@ -317,14 +313,15 @@ Since the goal of the emulator is interpolation within the sample space and not 
 \begin{figure*}[ht]
 \centering
    \includegraphics[width=12cm]{figures/model_select_maize_rice.png}
-   \caption{Summary results from polynomial feature selection process.
+   \caption{
+   Summary results from polynomial feature selection process.
    The top row illustrates log mean absolute error between emulated yield and simulated values calculated with a three fold cross validation process, where the emulator is trained on two thirds of the data and predicts the remaining third.
    The second row illustrates the adjusted R$^2$ score for the fit at each model specification where additional terms are penalized.
    The third row illustrates the log mean standard parameter error and the forth and fifth rows illustrate the distribution of the residuals.
    The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. 
    The terms that did not reduce the aggregate error (horizontal lines) are not included in the final model. 
-   Solid lines indicate Bayesian Ridge regression results and dashed lines indicated standard ordinary least squares. 
-   Colors indicated three different crop models.}
+   Solid lines indicate Bayesian Ridge regression results, dashed lines indicated standard ordinary least squares and colors indicated three different crop models.
+   }
    \label{fig:features}
 \end{figure*}
 
@@ -372,7 +369,8 @@ The errors between the simulation and the emulation are generally small compared
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/lpjml_maize.png}
-    \caption{Illustration of spatial pattern in baseline yield successfully captured by the emulator.
+    \caption{
+    Illustration of spatial pattern in baseline yield successfully captured by the emulator.
     Simulated and emulated yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
     Absolute yield differences are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
     Percent differences (from simulated baseline) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
@@ -388,7 +386,8 @@ The errors between the simulation and the emulation are generally small compared
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/regression_example_1.png}
-    \caption{Illustration of spatial variations in yield response successfully captured by the emulator. 
+    \caption{
+    Illustration of spatial variations in yield response successfully captured by the emulator. 
     Figures show rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
     Each panel shows variation along a single variable, with others held at baseline values. 
@@ -396,14 +395,15 @@ The errors between the simulation and the emulation are generally small compared
     In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
     Extrapolation can however produce misleading results. 
     The rainfed maize response in north-central Ontario is shown for the PROMET model as a good example of an area where the emulator fails.
-}
+    }
    \label{fig:regression}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/regression_example_2.png}
-    \caption{Illustration of across-model variations in yield response successfully captured by the emulator. 
+    \caption{
+    Illustration of across-model variations in yield response successfully captured by the emulator. 
     Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
     Models that do not simulate the nitrogen dimension are omitted for clarity. 
     Note that models are uncalibrated, increasing spread in absolute yields. 
@@ -439,21 +439,23 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/error_grid.png}
-    \caption{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
+    \caption{
+    Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and P inputs, but with CO$_2$ and nitrogen held fixed at baseline values. 
     Large columns are crops and large rows models; squares within are T, P scenario pairs. 
     Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
     Of the 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 models submitted data (Figure SX) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soy. Emulator performance is generally satisfactory, with some exceptions. 
-    Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.}
+    Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for hotter and wetter scenarios.
+    }
    \label{fig:error_360}
 \end{figure*}
 
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/CARAIB_spatial_error.png}
-    \caption{I
-    llustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
+    \caption{
+    Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
     Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
     White areas are those where crops are not simulated by this model. 
     Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. 
@@ -542,7 +544,8 @@ Such an extrapolation during cross validation is not representative based on the
 \begin{figure*}[ht]
   \centering
   \includegraphics[width = 15cm]{figures/em_CTWN_all_crops.png}
-  \caption{Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
+  \caption{
+  Emulated global damage functions for the five crops included in GGCMI Phase II, from the multi-model mean, for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
   Solid line shows the multi-model ensemble median and shaded area shows the high and low model projection. 
   All other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). 
   Damages are reported as fractional change in production relative to the baseline case over currently cultivated land \citep{Portmann2010}.
@@ -550,10 +553,17 @@ Such an extrapolation during cross validation is not representative based on the
   \label{fig:all_dims}
 \end{figure*}
 
+The emulator or ``surrogate model'' transforms the discrete simulation samples into a continuous response surface at any geographic scale and can be used for a variety of applications, including construction of continuous damage functions. 
+As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
+In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
+Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
+On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, rice is not generally grown in water-limited conditions so it shows the lowest response to changes in precipitation, and maize has a muted response to CO$_2$ as a C4 plant.
+
 \begin{figure*}[ht]
     \centering
     \includegraphics[width = 16.5cm]{figures/global_em_maize.png}
-    \caption{Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. 
+    \caption{
+    Global emulated damages for maize on currently cultivated lands for three example GGCMI Phase II models. 
     Scatter points show the emulated production change from the 1980-2010 mean value for each crop model using inputs from 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal timescale for RCP 8.5.
     The x-axis represents the mean temperature shift over all grid cells where crops are grown (no weighted by cultivation area).
     Open square markers show the Phase II simulated values at each temperature level with other inputs held at baseline values (W+0\%, C = 360ppm, and N = 200kg ha-1).
@@ -564,12 +574,6 @@ Such an extrapolation during cross validation is not representative based on the
     }
     \label{fig:globe_em}
 \end{figure*}
-
-The emulator or ``surrogate model'' transforms the discrete simulation samples into a continuous response surface at any geographic scale and can be used for a variety of applications, including construction of continuous damage functions. 
-As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
-In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
-Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
-On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, rice is not generally grown in water-limited conditions so it shows the lowest response to changes in precipitation, and maize has a muted response to CO$_2$ as a C4 plant.
 
 Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
@@ -654,6 +658,13 @@ Computing resources were provided by the University of Chicago Research Computin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Some models share a common genealogy, but have since branched and developed independently, and will be treated independently in this work. 
+%Minor differences in historical rainfall across the different reanalysis products used result in differences in the precipitation shift in the parameter-sweep. 
+%Atmospheric CO$_2$ and applied nitrogen fertilizer take uniform, static values globally for each 30-year simulation case.
+%Sampling across the parameter sweep is heterogeneous across models so the resultant training dataset size differs across models. 
+%(See Table \ref{table:models} for number of 30-year simulations).
 
 
 \begin{figure*}[ht]
