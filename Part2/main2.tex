@@ -238,6 +238,12 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 %We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
 %The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
 
+you're saying that the year-over-year would add noise but not change your fit. But, I think this is why you talk about the nonlinearity of the year-over-year response, because in some cases it WOULD add bias. right? If the year-over-year response is the same as the mean response it's fine. If it's different from the mean response and not changing, I think even that adds bias, because your "noise" is then not stationary - its relationship to the mean response differs depending on temperature. If it's different from the mean response and changing, then it's definitely not stationary.
+
+so I think the organizational flow is 1) we emulate the climatological mean response, because that's what we care about, 2) the year-over-year response is not the same as the climatological response (Figure 2), 3) if we included the year-over-year response it's both noisier, making emulation harder, and can also actually bias the emulated response
+
+then you close by saying the GGCMI dataset lets you use a relatively simple form that converges well. That transitions you to the emulation section
+
 We emulate the yield response to C, T, W, and N at the 30-year climatological mean level.
 Three important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
 First, the year-over-year responses to weather are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset at each level. 
