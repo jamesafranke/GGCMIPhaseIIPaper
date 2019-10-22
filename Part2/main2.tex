@@ -359,13 +359,12 @@ The lowest number of simulations emulated across the full parameter space is the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In the following section we present some illustrations of emulator performance. 
-We have nearly 3 million different regressions to summarize because we fit individual models at each grid cell for each simulation model and crop.
+In the following section we present some illustrations of the yield response to drivers and the emulator performance. 
 In general, model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 However, the principle of no-free-lunch applies, so losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
 The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
 
-\subsection{Emulator behavior}
+\subsection{Yield response}
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=16cm]{figures/lpjml_maize.png}
@@ -412,21 +411,29 @@ The errors between the simulation and the emulation are generally small compared
    \label{fig:regression_2}
 \end{figure*}
 
+Yield patterns in the GGCMI Phase II archive are geographically diverse. 
 The emulator is able to successfully capture the spatial pattern of yields for a single simulation case and emulation errors are low in regions currently under cultivation (Figure \ref{fig:map_pattern}). 
-Nearly all grid cells have errors below 0.5 ha$^{-1}$ for the baseline case. 
-However, emulation errors as a percentage of baseline yield does reach high values in some areas with no cultivation in the real world.
-Many of these regions are not currently viable for agriculture and therefore have very low simulated baseline yields and may never become viable even under extreme climate change.  
-Some differences in spatial skill exist across models and crops, with maize being the qualitatively easiest to emulate. 
-See supplemental figures SXX-SXX for more crops and models. 
+In this example, nearly all grid cells have errors below 0.5 ha$^{-1}$ for the baseline case. 
+However, emulation errors as a percentage of baseline yield do reach high values in some areas with no cultivation in the real world.
+Many of these regions are not currently viable for agriculture (and therefore have very low simulated baseline yields) and may never become viable even under extreme climate change.  
+Some differences in spatial skill exist across models and crops, with maize being the qualitatively easiest to emulate across all models.  
+See supplemental Figures SXX-SXX for more crops and models examples. 
 
-Yield responses are quite diverse across locations, crops, and models, but in most cases local responses are regular enough to permit emulation. 
+Yield responses to the four main drivers considered here (C, T, W, and N) are quite diverse across locations, crops, and models, but in most cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
 Geographic diversity is high within a single crop and model (Figure \ref{fig:regression}, rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
-Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
-Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological response to perturbations. 
-Crop yield responses generally follow similar functional forms across models, though with a large spread in magnitude partly due to the lack of calibration. 
+%Each panel in Figure \ref{fig:regression} shows simulated yield output from scenarios varying only along a single dimension (CO$_2$, temperature, precipitation, or nitrogen addition), with other inputs held fixed at baseline levels, compared to the full 4D emulation across the parameter space. 
+Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations. 
+Crop yield responses generally follow similar functional forms across models, though with a spread in magnitude partly due to the lack of calibration. 
 Inter-model diversity for a single crop and location is also high (Figure \ref{fig:regression_2}, rainfed maize in northern Iowa, also shown in Figure \ref{fig:regression}). 
 Differences in response shape can lead to  differences in the fidelity of emulation, though comparison here is complicated by the different simulation experiment sampling regimes across models. 
 Note that models are most similar in their responses to temperature perturbations. 
+
+The emulator fails when the yield response has a discontinuity or is irregular in some regard. 
+For example, some simulation models report no yield under current conditions (too cold) and continue to report no yield until a simulation case with a significant amount of warming. 
+Under a warming of several degrees, agriculture is now viable in this model and non-zeros yields are returned (Figure \ref{fig:regression}, PROMET in gray). 
+Under these conditions, the 3rd order polynomial cannot fit the data, and errors are high. 
+Baring simulation model errors, theses locations are almost exclusively confined to areas with little to no cultivation in the real world. 
+This is quantified in more detail in the following section.
 
 While the nitrogen dimension is important, it is also the most troublesome to emulate in this work because of its limited sampling compared to other dimensions. 
 The GGCMI Phase II protocol specified three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
@@ -465,10 +472,12 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
    \label{fig:error}
 \end{figure*}
 
-No general criteria exist for defining an acceptable crop model emulator, so we present two different metrics. 
+Our emulators consist of nearly 3 million individual regressions, so presenting concise performance metrics poses a challenge.
+Additionally, no general agreed upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics: one operational and one more stringent. 
 First, for a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
-Second, we show a out-of-sample cross-validation aggregate error for each model independent of the ensemble. 
-We define the normalized error $e$ for each scenario as the difference between the fractional yield change from the emulator and that in the original simulation, divided by the standard deviation of the multi-model spread (Equations \ref{eqn:per_yield} and  \ref{eqn:error}):
+Second, we show a standard out-of-sample cross-validation aggregate mean error for each model independent of the other members of the ensemble. 
+
+For the first metric, we define the normalized error $e$ for each scenario. The normalized error $e$ is the difference between the emulated fractional change in yield and that actually simulated, normalized by the standard deviation in simulated fractional yield changes across all models for that scenario (Equations \ref{eqn:per_yield} and  \ref{eqn:error}). 
 
 \begin{equation}
     \label{eqn:per_yield}
@@ -481,15 +490,15 @@ We define the normalized error $e$ for each scenario as the difference between t
 \end{equation}
 
 Here $F_{\: scn.}$ is the fractional change in a model's mean emulated or simulated yield from the defined historical baseline, in a certain setting or scenario (scn.) in C, T, W, and N space; $Y_{scn.}$ and $Y_{baseline}$ are the absolute emulated or simulated mean yields. 
-The normalized error $e$ is the difference between the emulated fractional change in yield and that actually simulated, normalized by $\sigma_{sim}$, the standard deviation in simulated fractional yields change $F_{sim,\: scn.}$ across all models. 
-The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (Figure SX). 
+The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (See Figure SX for number of simulations in each case). 
 
-The normalized error metric implies that emulation is generally satisfactory, with several distinct exceptions. 
-Almost all model-crop combination emulators have normalized errors less than one over nearly all currently cultivated hectares (Figure \ref{fig:error}), but some individual model-crop combinations are difficult to emulate (e.g.\ PROMET for rice and soy, JULES for soy and spring wheat, Figures SXX-XX). 
+A normalized error $e<1$ indicates that the emulator is closer to the simulation than 1 standard deviation of the simulations in that scenario.
+This metric implies that emulation is generally satisfactory, with almost all model-crop combination emulators have normalized errors less than one over nearly all currently cultivated hectares (Figure \ref{fig:error}, dark colors indicate good performance and light colors poor performance). 
+Exceptions include a few individual model-crop combinations, which are difficult to emulate with the polynomial used here including PROMET (as previously mentioned, see also Figure \ref{fig:regression}) for rice and soy, JULES for soy and spring wheat. 
 Problems with emulating PROMET for rice and soy may have to do with the parametrization of the phenology for those crops which lengthens the growing season in some cases. 
-Normalized errors for soy are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soy than for other crops (see Figure SXX), lowering the denominator. 
-Emulator performance often degrades in geographic locations where crops are not currently cultivated. 
-For example, emulator performance may be satisfactory over cultivated areas for all crops, but uncultivated regions may show some problematic areas (Figure \ref{fig:error} shows a CARAIB model case, see also Figure SXX).
+Another reasons why emulation can be problematic in some models has to do with a saturation in yield reduction under temperature increases that cannot be easily captured with the 3rd order fit.
+Emulator performance also often degrades in general in geographic locations where crops are not currently cultivated. 
+For example, emulator performance may be satisfactory over currently cultivated areas for all crops from a model, but uncultivated regions may show some problematic areas (Figure \ref{fig:error} shows a CARAIB model case, see also Figure SXX-SXX for other models).
 
 The normalized error assessment procedure is relatively forgiving for several reasons. 
 First, each emulation is evaluated against the simulation actually used to train the  (in-sample validation). 
@@ -497,17 +506,19 @@ Had we used a spline interpolation the error would necessarily be zero.
 Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. 
 The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. 
 Where models differ more widely, the standard for emulators becomes less stringent. 
-Ensemble spread dependence can be readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
+For example, normalized errors for soy are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soy than for other crops (see Figure SXX), lowering the denominator.
+%Ensemble spread dependence can be readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
 The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. 
-We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. 
-More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
+%We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. 
+%More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
+
 
 \begin{table*}[t]
 \caption{
 Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
 A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
 The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
+%The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
 The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
 * Indicates cases where the OLS linear model fails.
 } 
@@ -517,30 +528,49 @@ The table shows the mean error (as a percentage of baseline yield) weighted by h
 \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soy (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
 \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
 \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
-\textbf{JULES}     & 3.99  & 20.1  & 2.89  & 9.90  & NA     \\ \hline
+\textbf{JULES}     & 3.99  & \textcolor{red}{20.1}  & 2.89  & \textcolor{red}{9.90}  & NA     \\ \hline
 \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
 \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & xxxx  & 0.18   \\ \hline
 \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
 \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
-\textbf{PROMET}    & 4.41  & 7.48  & 6.06  & 16.8  & 7.07   \\ \hline
+\textbf{PROMET}    & 4.41  & 7.48  & 6.06  & \textcolor{red}{16.8}  & 7.07   \\ \hline
 \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
 \end{tabular}
 \end{table*}
 
-We also provide a more stringent test of emulator performance; a four-fold cross validation (out-of-sample validation). 
-Here the training data is split and the model is trained on 75\% of the data and tested on the held out portion (the process is then repeated four times to cover all data in the training set). 
-We normalize the error in each grid cell by dividing by the yield in that grid cell in the baseline (T+0, W+0, C=360, N=200) simulation and show aggregations weighted by area cultivated per grid cell. 
-Errors are generally low as a percentage of yield --even for this relatively strict protocol-- and when weighted by area, below 5\% of baseline yield for most cases (Table \ref{table:ASE}).
-The notable exceptions are the JULES model for soy and spring wheat and the PROMET model for soy, rice, and the wheats. 
-Note that the cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension) on one or more folds of the training set split.
-The ``edge'' cases are then predicted during the prediction phase of cross validation.
+We also provide a second, more stringent test of emulator performance: namely a four-fold cross validation (also termed out-of-sample validation). 
+In this test the training data is split and the model is trained on 75\% of the data and tested on the held out 25\%.
+The mean absolute error is the calculated between the emulated (predicted) and simulated (``ground truth'') values across all cases in the held out 25\% of the simulations. 
+The process is then repeated four times to cover all data in the training set. 
+Finally, we normalize the mean absolute error in each grid cell by dividing by the simulated yield in that grid cell in the baseline case (T+0, W+0, C=360, N=200) and report a single aggregated mean absolute error values that are weighted by area cultivation area in the real world. 
+Geographic locations with very low baseline yields are especially problematic in this metric because minor differences result in high percent errors. 
+For this reason we mask all areas with less that 0.1 ton ha-1 in the baseline simulation. 
+
+Errors are generally low as a percentage of yield, even for this relatively strict protocol, below 5\% of baseline yield for most crop model combinations (Table \ref{table:ASE}).
+The notable exceptions are the JULES model for soy and spring wheat and the PROMET model for soy, rice, and the wheats as was seen before in the previous performance metric.
+Note that under the conditions of this test, the training set often does not include ``edge'' simulations (i.e. those at the highest or lowest value in that dimension).
+Predictions in the test phase are therefore extrapolating out to these edge values (e.g.\ predicted a T+6 case that was not included in the training set).
 Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
+Maps showing the spatial patterns of errors can seen in supplemental Figures SXX-SXX. 
+
+%construct this test in some case we are extrapolating, which is not the intended use... 
+%cross validation process often does not include ``edge'' simulations in the training set (i.e. those at the highest or lowest value in that dimension) on one or more folds of the training set split.
+%The ``edge'' cases are then predicted during the prediction phase of cross validation.
+%Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
+%(the process is then repeated four times to cover all data in the training set). 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator results and products}
 \label{S:5}
+Because the emulator or ``surrogate model'' transforms the discrete simulation samples into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions in a flexible format. 
+As an example, we present global damage functions constructed from the 4D emulation, for all four dimensions tested in this study (Figure \ref{fig:all_dims}) with the ensemble median and ensemble spread shown in bold line and ribbon. 
+This is helpful in the crop model intercomparison project context for diagnosing model differences. 
+In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
+Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
+On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, rice is not generally grown in water-limited conditions so it shows the lowest response to changes in precipitation, and maize has a muted response to CO$_2$ as a C4 plant.
+
 \begin{figure*}[ht]
   \centering
   \includegraphics[width = 15cm]{figures/em_CTWN_all_crops.png}
@@ -553,11 +583,8 @@ Such an extrapolation during cross validation is not representative based on the
   \label{fig:all_dims}
 \end{figure*}
 
-The emulator or ``surrogate model'' transforms the discrete simulation samples into a continuous response surface at any geographic scale and can be used for a variety of applications, including construction of continuous damage functions. 
-As an example, we present global damage functions constructed from the 4D emulation, across all four dimensions tested in this study (Figure \ref{fig:all_dims}). 
-In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
-Model spread is highest for spring wheat in general and the CO$_2$ response for the wheats and soy.
-On the other side, muted responses include soy, an efficient atmospheric nitrogen-fixer, is relatively insensitive to nitrogen, rice is not generally grown in water-limited conditions so it shows the lowest response to changes in precipitation, and maize has a muted response to CO$_2$ as a C4 plant.
+Note that these functions are presented here in Figure \ref{fig:all_dims} only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
+The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
 \begin{figure*}[ht]
     \centering
@@ -575,8 +602,7 @@ On the other side, muted responses include soy, an efficient atmospheric nitroge
     \label{fig:globe_em}
 \end{figure*}
 
-Note that these functions are presented only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g]{Sippel2015}. 
-The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
+The emulator is also useful for investigating the contributions of the different major climate drivers to yield outcomes.
 
 Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
 The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 30 climate models from the CMIP-5 archive \citep{Taylor2012}. 
@@ -585,11 +611,11 @@ Differences between the emulation and simulation are similar to the spread acros
 With CO$_2$ and precipitation effects included, the climate model response spread increases considerably. 
 Note that no direct comparison to the simulations is possible in cases b, c, or d.
 
-Precipitation tends 
+Including precipitation changes tends to reduce yields further and increase the spread across climate model projections. 
 
-PROMET, the quantitatively most difficult model to emulate for Maize is shown to illustrate that ...
+PROMET, the quantitatively most difficult model to emulate for Maize is shown to illustrate that ... its not that bad comparatively speaking.
 
-PROMET, the pattern of yields 
+The pattern of temperature change has the biggest impact for the PROMET model at the highest global temperature changes.
 
 aggregated to global yield, \textcolor{red}{with simulated transient climate run values shown for comparison} (Figure \ref{fig:globe_em}, which shows maize on currently cultivated land). 
 
