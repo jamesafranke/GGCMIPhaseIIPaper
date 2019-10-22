@@ -128,10 +128,10 @@ All take advantage of the structured training set to construct emulators (``resp
 All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soy) but only in one crop model (GCAM) \citep{calvin2019}.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
-GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations, and is specifically designed for construction of agricultural emulators,  
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in temperature, appreciation, CO$_2$, and applied nitrogen.
+The experiment is specifically designed for construction of crop model emulators, and to allow diagnosing the impacts on crop yields of both individual factors and their joint effects.
 %\textcolor{red}{The experiment involves twelve different globally gridded crop models, each simulating multiple crops (maize, rice, soy and spring and winter wheat) over as many as 1400 simulations, each driven by historical climate inputs with systematically perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN).
 %The resulting dataset allows }
-to allow diagnosing the effects on crop yields of both individual factors and their joint effects.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
 %is the most comprehensive crop model emulation effort to date, significantly expanding the scope of previous parameter-sweep crop model emulation work by incorporating 
@@ -172,7 +172,9 @@ The three simulation models not included in the emulators have been removed for 
 \caption{GGCMI Phase II input levels for the parameter sweep. 
 Temperature and precipitation values are the perturbations from the historical climatology. 
 W-percentage does not apply to the irrigated (W$_{\infty}$) simulations, which are all simulated at the maximum beneficial levels of water. 
-Bold font indicates the `baseline' historical level. One model provided simulations at the T + 5 level. 
+Bold font indicates the `baseline' historical level. 
+One model provided simulations at the T + 5 level. 
+The full protocol samples across all parameter combinations for a total of 756 cases.
 See Figure SX in the supplement for number of simulations associated with each combination of input levels.
 Table repeated from \citet{Franke2019a} 
 %The GGCMI Phase II simulation model inputs are harmonized wherever possible including planting days (which vary spatially) and growing season lengths.
@@ -194,8 +196,10 @@ The GGCMI Phase II simulations are described in detail in \citet{Franke2019a}, b
 The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a parameter sweep of as many as 1400 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
 %The resulting dataset allows diagnosing effects on crop yields of both the individual factors and their joint effects.}
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
-These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons lengthening in warmer climates. 
-(Fixed and lengthening growing-season scenarios are termed A0 and A1, respectively.) 
+See Table \ref{table:inputs} for all values associated with each dimension; we sample across all parameter combinations.
+
+These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons shortening in warmer climates. 
+(Fixed and variable growing-season scenarios are termed A1 and A0, respectively.)
 The complete protocol for a modeling group involves up to 19,440 years of global simulated output for rainfed crop and growing-season case; or 42,120 years across all simulations for a single modeling group. 
 Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\% of max potential runs.
 
@@ -230,12 +234,13 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
    \label{fig:yearly}
 \end{figure}
 
-The first critical design choice for our emulators is concerned with temporal aggregation.
-We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
-The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
+%The first critical design choice for our emulators is concerned with temporal aggregation.
+%We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
+%The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
 
+We emulate the yield response to C, T, W, and N at the 30-year climatological mean level.
 Three important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
-First, the year-over-year responses to weather are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset. 
+First, the year-over-year responses to weather are generally quantitatively distinct from (and, in the case of temperature, larger than) the climatological mean responses in the GGCMI Phase II simulation output dataset at each level. 
 In the example in Figure \ref{fig:yearvclim} for irrigated maize in Iowa, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
 The same general principal applies to a lesser degree the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariates, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
