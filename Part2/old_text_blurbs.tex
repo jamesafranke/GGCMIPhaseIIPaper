@@ -17,6 +17,20 @@ Note that year-over-year spreads in yields do become wider in highly impacted cl
 Higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields.
 
 
+%Note however that for both precipitation and temperature, year-over-year reponses are stronger in conditions of larger climate impacts (higher T or lower W), so that variance in  
+
+%Note that the GGCMI Phase II training dataset does not capture potential changes in climate variability, because all simulations are run with fixed offsets from the historical climatology.
+%However, prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in all but arid regions \citep[e.g.][]{Glotter14}.
+%Critically for emulation, the mean-climatological yield can easily be related to the mean-climatological shift in temperature or precipitation in the GGCMI Phase II dataset.
+
+%For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation even though the variance in input temperates is unchanged. 
+%Likewise for precipitation changes, strong decreases in precipitation results in a widening of the distribution in yields even though the variance in precipitation is decreasing (from approximately 60 cm yr-1 to 30 cm yr-1 in this example). 
+%In both cases show in the Figure (Figure \ref{fig:yearly}), the year-over-year response is nonlinear, getting stronger with more severe mean climate shifts. 
+%The strengthening of crop sensitivity under severe climate shifts causes distribution of modeled crop yields becomes wider, even when underlying climate variability is fixed.
+%For temperature, that strengthening year-over-year response adds a complication to emulating when using a non-stationary climate scenario where mean climate gradually warms.
+%In contrast for precipitation, the year over year response is locally similar to the climatological response.  
+%Note that since we emulate mean climatological-yields, we do not capture any of these higher-order moment changes in yield in this study.
+
 %While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model and lurking covariates, the most reasonable explanation is that the regressor here, mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means} may involve different changes in growing-season temperature \textit{distributions} in the forced and unforced cases \citep[e.g.][]{Ruane2016}. 
 %are associated with different changes in temprein the chara that short-term temperature fluctuations are associated with different associated distributions of daily growing-season daily weather . 
 %In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions (reasonable since summertime change are expected to be small \cite{XX}), but year-over-year variations are \textit{XX}. Note that year-over-year distributions of yields do become wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), but only because yield responses to both temperature and precipitation perturbations are nonlinear.
