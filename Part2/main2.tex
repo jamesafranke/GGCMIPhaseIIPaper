@@ -250,7 +250,8 @@ First, the year-over-year responses to weather are generally quantitatively dist
 In the example in Figure \ref{fig:yearvclim} for irrigated maize in Iowa, responses to year-over-year temperature variations are 100\% larger than those to long-term perturbations in the baseline case, and larger still under warmer conditions, rising to nearly 200\% more in the T+6 case. 
 The same general principal applies to a lesser degree the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
 Year-over-year and climatological responses can differ for many reasons including memory in the crop model, lurking covariates, and differing associated distributions of daily growing-season daily weather \citep[e.g.][]{Ruane2016}. 
-Crops are less sensitive to short-term precipitation changes, since they care about soil moisture and the soil integrates. Previous work has shown that in all but very arid regions, crop responses in models are not sensitive to how the precipitation is distributed within a month \citep{Glotter14}.
+Crops are less sensitive to short-term precipitation changes, since they care about soil moisture and the soil integrates. 
+Previous work has shown that in all but very arid regions, crop responses in models are not sensitive to how the precipitation is distributed within a month \citep{Glotter14}.
 
 Second, the year-over-year response is not constant across different levels of climate stress. 
 For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation even though the variance in input temperates is unchanged. 
@@ -265,6 +266,8 @@ Finally, the climatological-mean yield response is considerably smoother than th
 Note that the GGCMI Phase II training dataset does not capture potential changes in climate variability, because all simulations are run with fixed offsets from the historical climatology.
 However, prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in all but arid regions \citep[e.g.][]{Glotter14}.
 Critically for emulation, the mean-climatological yield can easily be related to the mean-climatological shift in temperature or precipitation in the GGCMI Phase II dataset.
+
+then you close by saying the GGCMI dataset lets you use a relatively simple form that converges well.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulation}
