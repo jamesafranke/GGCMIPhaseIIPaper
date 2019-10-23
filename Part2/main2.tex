@@ -18,12 +18,12 @@
 \Author[10,11]{R.\ Cesar}{Izaurralde}
 \Author[7]{Ingrid}{Jacquemin}
 \Author[10]{Curtis}{Jones}
-\Author[12]{Marian}{Koch}
-\Author[2,13]{Michelle}{Li}
-\Author[7,14]{Wenfeng}{Liu}
-\Author[15]{Stefan}{Olin}
-\Author[5,16]{Meridel}{Phillips}
-\Author[17,18]{Thomas A.\ M.}{Pugh}
+%\Author[12]{Marian}{Koch}
+\Author[2,12]{Michelle}{Li}
+\Author[7,13]{Wenfeng}{Liu}
+\Author[14]{Stefan}{Olin}
+\Author[5,15]{Meridel}{Phillips}
+\Author[16,17]{Thomas A.\ M.}{Pugh}
 \Author[10]{Ashwan}{Reddy}
 \Author[8]{Karina}{Williams}
 \Author[9]{Florian}{Zabel}
@@ -40,13 +40,13 @@
 \affil[9]{Department of Geography, Ludwig-Maximilians-Universit\"{a}t, Munich, Germany}
 \affil[10]{Department of Geographical Sciences, University of Maryland, College Park, MD, USA}
 \affil[11]{Texas Agrilife Research and Extension, Texas A\&M University, Temple, TX, USA}
-\affil[12]{Georg-August-University G\"{o}ttingen, Tropical Plant Production and Agricultural Systems Modeling, G\"{o}ttingen, Germany}
-\affil[13]{Department of Statistics, University of Chicago, Chicago, IL, USA}
-\affil[14]{EAWAG, Swiss Federal Institute of Aquatic Science and Technology, D\"{u}bendorf, Switzerland}
-\affil[15]{Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}
-\affil[16]{Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
-\affil[17]{School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}
-\affil[18]{Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.}
+%\affil[12]{Georg-August-University G\"{o}ttingen, Tropical Plant Production and Agricultural Systems Modeling, G\"{o}ttingen, Germany}
+\affil[12]{Department of Statistics, University of Chicago, Chicago, IL, USA}
+\affil[13]{EAWAG, Swiss Federal Institute of Aquatic Science and Technology, D\"{u}bendorf, Switzerland}
+\affil[14]{Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}
+\affil[15]{Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
+\affil[16]{School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}
+\affil[17]{Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \runningtitle{The GGCMI crop model emulators}
 \runningauthor{Franke et al.}
@@ -568,17 +568,21 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     \label{fig:globe_em}
 \end{figure*}
 
-The emulator can also be utilized for investigating the contributions of the different major climate drivers to production outcomes. 
-The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale.
-The spread across climate model response increases considerably with precipitation changes and CO$_2$ effects included, with precipitation changes reducing production and CO$_2$ increasing it.
-CO2 response is more heterogeneous across crop models that precipitation changes.
-Note that no direct comparison to the simulations is possible in cases b or c.
+The emulator can also be used for investigating the contributions of the different major climate drivers to production outcomes as it can project many different climate scenarios or models quickly.
+The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 29 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale.
+First, the spatial pattern of temperature change under a realistic climate scenario is relatively insignificant at the global mean production level.
+The global mean (over cultivated area) values work well except in the for the PROMET model at the highest global temperature changes. 
+Second, the spread across climate model response increases considerably with precipitation changes and CO$_2$ effects included, with precipitation changes reducing production and CO$_2$ increasing it.
+The CO$_2$ response is more heterogeneous across crop models that precipitation changes for maize. 
+See supplemental Figures SXX for the other crops.
 
-The differences between the emulation and the simulations are similar are much lower than the differences across climate models.
-PROMET, the quantitatively most difficult model to emulate for maize is shown to illustrate that emulation error at the global scale is still small compared to the spread across models or the spread across climate projections when all factors are included.
-The spatial pattern of temperature change under a realistic climate scenario is relatively insignificant. 
-The pattern of temperature change has the biggest impact for the PROMET model at the highest global temperature changes. 
+\textcolor{red}{
+Finally, the differences between the emulation and the simulations are similar to the spread across different climate model projections for a single crop model, but much lower than the differences across different crop models.
+PROMET, the quantitatively most difficult model to emulate for maize is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
+The globally gridded nature of the emulator allows for easy analysis at almost any spatial scale.
+}
 
+%Note that no direct comparison to the simulations is possible in cases b or c.
 %Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -632,6 +636,16 @@ Computing resources were provided by the University of Chicago Research Computin
 \bibliography{bib}
 
 \end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \Author[1,2]{James}{Franke}
