@@ -12,7 +12,7 @@
 \Author[5]{Alex C.}{Ruane}
 \Author[6]{Abigail}{Snyder}
 \Author[3,2,4,5]{Jonas}{J\"{a}germeyr}
-\Author[7,8]{Juraj}{Balkovic}
+%\Author[7,8]{Juraj}{Balkovic}
 \Author[9,10]{Philippe}{Ciais}
 \Author[11]{Marie}{Dury}
 \Author[12]{Pete}{Falloon}
@@ -32,7 +32,7 @@
 \Author[21,22]{Thomas A.\ M.}{Pugh}
 \Author[15]{Ashwan}{Reddy}
 \Author[9,10]{Xuhui}{Wang}
-\Author[12]{Karina}{Williams}
+\Author[12]{Karina}{Williams}s
 \Author[13]{Florian}{Zabel}
 \Author[1,2]{Elisabeth}{Moyer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,8 +42,8 @@
 \affil[3]{Department of Computer Science, University of Chicago, Chicago, IL, USA}
 \affil[5]{NASA Goddard Institute for Space Studies, New York, NY, United States}
 \affil[6]{Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA}
-\affil[7]{Ecosystem Services and Management Program, International Institute for Applied Systems Analysis, Laxenburg, Austria}
-\affil[8]{Department of Soil Science, Faculty of Natural Sciences, Comenius University in Bratislava, Bratislava, Slovak Republic}
+%\affil[7]{Ecosystem Services and Management Program, International Institute for Applied Systems Analysis, Laxenburg, Austria}
+%\affil[8]{Department of Soil Science, Faculty of Natural Sciences, Comenius University in Bratislava, Bratislava, Slovak Republic}
 \affil[9]{Laboratoire des Sciences du Climat et de l'Environnement, CEA-CNRS-UVSQ, 91191 Gif-sur-Yvette, France}
 \affil[10]{Sino-French Institute of Earth System Sciences, College of Urban and Env. Sciences, Peking University, Beijing, China}
 \affil[11]{Unit{\'{e}} de Mod{\'{e}}lisation du Climat et des Cycles Biog\'eochimiques, UR SPHERES, Institut d'Astrophysique et de G\'eophysique, University of Li\`ege, Belgium}
@@ -138,16 +138,17 @@ In the following, we describe the training dataset (Section \ref{S:2}), the stat
 \section{Training dataset}
 \label{S:2}
 \subsection{The GGCMI Phase II dataset}
+
 \begin{table*}[t]
-\caption{
-Crop models included in GGCMI Phase II emulators and the number of CTWN-A simulations performed for each model. 
-The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
-Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. 
-(For example, CARAIB does not simulate spring wheat.)
-Table adapted from \citet{Franke2019a}. 
-The three simulation models not included in the emulators have been removed for clarity.
-}
-\label{table:models}
+    \caption{
+    Crop models included in GGCMI Phase II emulators and the number of CTWN-A simulations performed for each model. 
+    The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
+    Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. 
+    (For example, CARAIB does not simulate spring wheat.)
+    Table adapted from \citet{Franke2019a}. 
+    The three simulation models included in Phase II that are not included in the emulators have been removed for clarity.
+    }
+    \label{table:models}
   \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
     \tophline
     {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
@@ -165,17 +166,16 @@ The three simulation models not included in the emulators have been removed for 
 \end{table*}
 
 \begin{table}[t]
-\caption{GGCMI Phase II input levels for the parameter sweep. 
-Temperature and precipitation values are the perturbations from the historical climatology. 
-W-percentage does not apply to the irrigated (W$_{\infty}$) simulations, which are all simulated at the maximum beneficial levels of water. 
-Bold font indicates the `baseline' historical level. 
-One model provided simulations at the T + 5 level. 
-The full protocol samples across all parameter combinations for a total of 756 cases.
-See Figure SX in the supplement for number of simulations associated with each combination of input levels.
-Table repeated from \citet{Franke2019a} 
-%The GGCMI Phase II simulation model inputs are harmonized wherever possible including planting days (which vary spatially) and growing season lengths.
-}
-\label{table:inputs} 
+    \caption{
+    GGCMI Phase II input levels for the parameter sweep. 
+    Temperature and precipitation values are the perturbations from the historical climatology. 
+    W-percentage does not apply to the irrigated (W$_{\infty}$) simulations, which are all simulated at the maximum beneficial levels of water. 
+    Bold font indicates the `baseline' historical level. 
+    One model provided simulations at the T + 5 level. 
+    The full protocol samples across all parameter combinations for a total of 756 cases.
+    Table repeated from \citet{Franke2019a}.
+    }
+    \label{table:inputs} 
     \begin{tabular}{lcc} 
         \tophline \vspace{1mm}
         \textbf{Input variable} & \textbf{Tested range} & \textbf{Unit} \\ \middlehline \vspace{1mm}
@@ -189,13 +189,14 @@ Table repeated from \citet{Franke2019a}
 \end{table}
 
 The GGCMI Phase II simulations are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
-The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a systematic parameter sweep of as many as 756 scenarios, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
+The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soy, and spring and winter wheat) across a systematic parameter sweep of as many as 756 combinations, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, precipitation, and nitrogen application (CTWN). 
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 8 of precipitation, and 3 of applied nitrogen. 
 See Table \ref{table:inputs} for all values associated with each dimension; we sample across all parameter combinations.
 
 These simulations are repeated four times, for irrigated and rainfed crops, and for fixed growing seasons and growing seasons shortening in warmer climates. 
 (Fixed and variable growing-season scenarios are termed A1 and A0, respectively.)
-The complete protocol for a modeling group involves up to 19,440 years of global simulated output for rainfed crop and growing-season case; or 42,120 years across all simulations for a single modeling group. 
+The complete protocol for a modeling group involves up to 42,120 years of global simulated output for each crop, for rainfed and irrigated cultivation and both growing season cases.
+%The complete protocol for a modeling group involves up to 19,440 years of global simulated output for rainfed crop and growing-season case; or 42,120 years across all simulations for a single modeling group. 
 Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\% of max potential runs.
 
 Each individual crop model simulation is run for 30 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
@@ -233,36 +234,28 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 
 We emulate the climatological mean response, because that is the response of interest in assessments of climate change impacts. Because the year-over-year response can be significantly different from the forced climatological one, we do not use information from year-to-year variability but instead emulate the aggregated mean yield in each 30-year simulation. Changes in these time-averaged yields are also considerably smoother than those in year-to-year yield response, making emulation relatively straightforward. 
 
-In the GGCMI Phase II simulation output dataset, year-over-year responses to weather are indeed quantitatively distinct from responses to climatological shifts. The differences are especially significant for temperature, with yield fluctations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
-This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated (left) and rainfed (right) maize in a representative location Iowa, with black lines and open circles showing the climatological mean responses and colored lines and solid circles those for the 30 individual years in selected scenarios. Yields are three times as sensitive to year-over-year temperature fluctuations as they are to climatological  temperature shifts (1.9 vs.\ 0.6 tons ha$^{-1}$/K in the baseline climate, Figure \ref{fig:yearvclim}, left), with both responses rising slightly at warmer temperatures. %Furthermore, the year-over-year response is nonlinear with baseline climate: while the climatological response is nearly the same in T+0 to T+6 scenarios, evolving only from XX-XX tons ha$^{-1}$/K, the year-over-year response rises by over a quarter, from 1.9 to 2.5 tons ha$^{-1}$/K. 
-Yield sensitivity to precipitation, on the other hand, is similar for both year-over-year and climatological changes (Figure \ref{fig:yearvclim}, right), though both are highly nonlinear and losses become more severe with increasing dryness. 
-%The same general principal applies to a lesser degree the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
+In the GGCMI Phase II simulation output dataset, year-over-year responses to weather are indeed quantitatively distinct from responses to climatological shifts. 
+The differences are especially significant for temperature: yield response to short-term temperature fluctuations are often significantly stronger than those to climatological shifts.
+This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated (left) and rainfed (right) maize in a representative location in Iowa, with black lines and open circles showing the climatological mean responses and colored lines and solid circles those for the 30 individual years in selected scenarios. Yields are three times as sensitive to year-over-year temperature fluctuations as they are to climatological  temperature shifts (1.9 vs.\ 0.6 tons ha$^{-1}$/K in the baseline climate, Figure \ref{fig:yearvclim}, left), with both responses rising slightly at warmer temperatures.
+Yield sensitivity to precipitation, on the other hand, is similar at both timescales (Figure \ref{fig:yearvclim}, right), but also highly nonlinear, with losses becoming more severe with increasing dryness
+%The differences are especially significant for temperature, with yield fluctuations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
+%Yield sensitivity to precipitation, on the other hand, is similar for both year-over-year and climatological changes (Figure \ref{fig:yearvclim}, right), though both are highly nonlinear and losses become more severe with increasing dryness. 
 
-While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model and lurking covariates, the most reasonable explanation is that the regressor here,  mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means} may involve different changes in growing-season temperature \textit{distributions} in the forced and unforced cases \citep[e.g.][]{Ruane2016}. 
-%are associated with different changes in temprein the chara that short-term temperature fluctuations are associated with different associated distributions of daily growing-season daily weather . 
-In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions (reasonable since summertime change are expected to be small \cite{XX}), but year-over-year variations are \textit{XX}. Note that year-over-year distributions of yields do become wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), but only because yield responses to both temperature and precipitation perturbations are nonlinear.
-It is expected that precipitation perturbations would produce more similar responses on year-over-year and climatological scales, because changes in precipitation distributions affect yields less than do those in temperature. Crops respond not to precipitation but to soil moisture, which integrates on timescales of weeks or even months \textcolor{red}{cite \cite{XX}}. 
+While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model and lurking covariates, the most reasonable explanation is that the regressor here, mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means} in the forced and unforced cases may involve different changes in growing-season temperature \textit{distributions} \citep[e.g.][]{Ruane2016}. 
+The similarity of responses to precipitation perturbations across timescales is then expected, because changes in precipitation distributions affect yields less than do those in temperature. 
+Crops respond not to precipitation but to soil moisture, which integrates on timescales of weeks or even months \textcolor{red}{cite ?}. 
 Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14}.
 
-%The first critical design choice for our emulators is concerned with temporal aggregation.
-%We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
-%The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
-%you're saying that the year-over-year would add noise but not change your fit. But, I think this is why you talk about the nonlinearity of the year-over-year response, because in some cases it WOULD add bias. right? If the year-over-year response is the same as the mean response it's fine. If it's different from the mean response and not changing, I think even that adds bias, because your "noise" is then not stationary - its relationship to the mean response differs depending on temperature. If it's different from the mean response and changing, then it's definitely not stationary.
-%We emulate the yield response to C, T, W, and N at the 30-year climatological mean level.
-%, 2) the year-over-year response is not the same as the climatological response (Figure 2), 3) if we included the year-over-year response it's both noisier, making emulation harder, and can also actually bias the emulated response
-%then you close by saying the GGCMI dataset lets you use a relatively simple form that converges well. That transitions you to the emulation section
-%Three important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
-%Note however that for both precipitation and temperature, year-over-year reponses are stronger in conditions of larger climate impacts (higher T or lower W), so that variance in  
-%Note that the GGCMI Phase II training dataset does not capture potential changes in climate variability, because all simulations are run with fixed offsets from the historical climatology.
-%However, prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in all but arid regions \citep[e.g.][]{Glotter14}.
-%Critically for emulation, the mean-climatological yield can easily be related to the mean-climatological shift in temperature or precipitation in the GGCMI Phase II dataset.
-%For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation even though the variance in input temperates is unchanged. 
-%Likewise for precipitation changes, strong decreases in precipitation results in a widening of the distribution in yields even though the variance in precipitation is decreasing (from approximately 60 cm yr-1 to 30 cm yr-1 in this example). 
-%In both cases show in the Figure (Figure \ref{fig:yearly}), the year-over-year response is nonlinear, getting stronger with more severe mean climate shifts. 
-%The strengthening of crop sensitivity under severe climate shifts causes distribution of modeled crop yields becomes wider, even when underlying climate variability is fixed.
-%For temperature, that strengthening year-over-year response adds a complication to emulating when using a non-stationary climate scenario where mean climate gradually warms.
-%In contrast for precipitation, the year over year response is locally similar to the climatological response.  
-%Note that since we emulate mean climatological-yields, we do not capture any of these higher-order moment changes in yield in this study.
+In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions (reasonable since summertime change are expected to be small \textcolor{red}{cite ?}), but year-over-year variations are \textcolor{red}{XX}. 
+Note that year-over-year spreads in yields do become wider in highly impacted climate states in GGCMI Phase II (Figure 2), but only because yield responses to both temperature and precipitation perturbations are nonlinear. 
+Higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields.
+
+
+%While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model and lurking covariates, the most reasonable explanation is that the regressor here, mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means} may involve different changes in growing-season temperature \textit{distributions} in the forced and unforced cases \citep[e.g.][]{Ruane2016}. 
+%are associated with different changes in temprein the chara that short-term temperature fluctuations are associated with different associated distributions of daily growing-season daily weather . 
+%In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions (reasonable since summertime change are expected to be small \cite{XX}), but year-over-year variations are \textit{XX}. Note that year-over-year distributions of yields do become wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), but only because yield responses to both temperature and precipitation perturbations are nonlinear.
+%It is expected that precipitation perturbations would produce more similar responses on year-over-year and climatological scales, because changes in precipitation distributions affect yields less than do those in temperature. Crops respond not to precipitation but to soil moisture, which integrates on timescales of weeks or even months \textcolor{red}{cite \cite{XX}}. 
+%Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulation}
@@ -516,8 +509,9 @@ Second, the performance metric scales emulator fidelity not by the magnitude of 
 The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. 
 Where models differ more widely, the standard for emulators becomes less stringent. 
 For example, normalized errors for soy are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soy than for other crops (see Figure SXX), lowering the denominator.
-%Ensemble spread dependence can be readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
 The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. 
+
+%Ensemble spread dependence can be readily seen when comparing assessments of emulator performance in simulations at baseline CO$_2$ (Figure \ref{fig:error_360}) with those at higher CO$_2$ levels (Figure SXX) because models disagree on the magnitude of CO$_2$ fertilization. 
 %We therefore do not provide a formal parameter uncertainty analysis, but note that the GGCMI Phase II dataset is well-suited to statistical exploration of emulation approaches and quantification of emulator fidelity. 
 %More rigorous emulator assessments that could be preformed in future work include: testing other statistical specifications including non-parametric models and calculating standard error on emulator parameters.
 
@@ -527,7 +521,6 @@ The rationale for this choice of assessment metric is to relate the fidelity of 
 Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
 A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
 The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-%The calculation only includes grid cells with at least 1\% of surface area cultivated with a specific crop (approximately 1000 grid cells in each case). 
 The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
 * Indicates cases where the OLS linear model fails.
 } 
@@ -537,12 +530,12 @@ The table shows the mean error (as a percentage of baseline yield) weighted by h
 \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soy (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
 \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
 \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
-\textbf{JULES}     & 3.99  & \textcolor{red}{20.1}  & 2.89  & \textcolor{red}{9.90}  & NA     \\ \hline
+\textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
 \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
-\textbf{LPJ-GUESS} & 0.57  & NA    & NA    & xxxx  & 0.18   \\ \hline
+\textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
 \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
 \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
-\textbf{PROMET}    & 4.41  & 7.48  & 6.06  & \textcolor{red}{16.8}  & 7.07   \\ \hline
+\textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
 \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
 \end{tabular}
 \end{table*}
@@ -599,18 +592,30 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     \centering
     \includegraphics[width = 16.5cm]{figures/global_em_maize.png}
     \caption{
-Illustration of the effects of factors affecting yields in more realistic climate scenarios. 
-Figures shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1980-2010 mean) for three representative crop models, with changes to T only (left), to T and P (center), and to T, P, and CO2 (right)
- Circles are emulated decadal yields from 2010-2100 in scenarios from 29 CMIP0-5 climate models, i.e.\ 261 total, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area). Rug plot at bottom shows range of final (mean 2090-2100) temperatures across models
- Bold lines are the emulated values over uniform T shifts. Open squares in \textit{Left} panel are GGCMI Phase II simulated values for each T level (with CWN at baseline).  Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure 5.)
-Mean yields are very similar for scenarios with a uniform temperature shift and those with more realistic temperature change patterns (compare lines to circles) 
-\textit{Center}: adding in projected precipitation changes depresses yields slightly and increases spread between projections for a given temperature change. \textit{Right:} adding in CO$_2$ changes produces very different responses across models. CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
-Emulation uncertainty is small compared to the differences across climate and crop models.
+    Illustration of the effects of factors affecting yields in more realistic climate scenarios. 
+    Figures shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1980-2010 mean) for three representative crop models, with changes to T only (left), to T and P (center), and to T, P, and CO2 (right)
+    Circles are emulated decadal yields from 2010-2100 in scenarios from 29 CMIP0-5 climate models, i.e.\ 261 total, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area). Rug plot at bottom shows range of final (mean 2090-2100) temperatures across models
+    Bold lines are the emulated values over uniform T shifts. 
+    Open squares in \textit{Left} panel are GGCMI Phase II simulated values for each T level (with CWN at baseline).  Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure \ref{fig:regression}.)
+    Mean yields are very similar for scenarios with a uniform temperature shift and those with more realistic temperature change patterns (compare lines to circles) 
+    \textit{Center}: adding in projected precipitation changes depresses yields slightly and increases spread between projections for a given temperature change. 
+    \textit{Right:} adding in CO$_2$ changes produces very different responses across models. CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
+    Emulation uncertainty is small compared to the differences across climate and crop models.
     }
     \label{fig:globe_em}
 \end{figure*}
 
-\textcolor{red}{Figure 10 discussion to be added...}
+\textcolor{red}{
+The emulator can also be utilized for investigating the contributions of the different major climate drivers to production outcomes. 
+The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale. 
+The spread across climate model response increases considerably with precipitation changes and CO$_2$ effects included, with precipitation changes reducing production and CO$_2$ increasing it.
+CO2 response is more more heterogeneous across crop models than precipitation changes.
+Note that no direct comparison to the simulations is possible in cases b or c.
+The differences between the emulation and the simulations are similar are much lower than the differences across climate models.
+PROMET, the quantitatively most difficult model to emulate for maize is shown to illustrate that emulation error at the global scale is still small compared to the spread across models or the spread across climate projections when all factors are included.
+The spatial pattern of temperature change under a realistic climate scenario is relatively insignificant. 
+The pattern of temperature change has the biggest impact for the PROMET model at the highest global temperature changes. 
+}
 
 %Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
 
@@ -644,7 +649,7 @@ In general, the development of multi-model ensembles involving systematic parame
 %\subsection{Data Access}
 %\noappendix %% use this to mark the end of the appendix section
 
-\authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F., C.M., and E.M.\ prepared the manuscript.}
+\authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F., C.M., and E.M.\ prepared the manuscript.}
 
 \competinginterests{The authors declare no competing interests.}
 
@@ -668,18 +673,6 @@ Computing resources were provided by the University of Chicago Research Computin
 
 \end{document}
 
-\textcolor{red}{
-The emulator can also be utilized for investigating the contributions of the different major climate drivers to production outcomes. 
-The emulated crop model yield responses to business-as-usual climate change (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 30 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale. 
-The spread across climate model response increases considerably with precipitation changes and CO$_2$ effects included, with precipitation changes reducing production and CO$_2$ increasing it.
-CO2 response is more more heterogeneous across crop models than precipitation changes.
-Note that no direct comparison to the simulations is possible in cases b or c.
-The differences between the emulation and the simulations are similar are much lower than the differences across climate models.
-PROMET, the quantitatively most difficult model to emulate for maize is shown to illustrate that emulation error at the global scale is still small compared to the spread across models or the spread across climate projections when all factors are included.
-The spatial pattern of temperature change under a realistic climate scenario is relatively insignificant. 
-The pattern of temperature change has the biggest impact for the PROMET model at the highest global temperature changes. 
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -689,6 +682,30 @@ The pattern of temperature change has the biggest impact for the PROMET model at
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%The same general principal applies to a lesser degree the precipitation dimension however in this case it is more manifestly an artifact of sampling range in the historical period (Figure \ref{fig:yearvclim}, right).
+%Furthermore, the year-over-year response is nonlinear with baseline climate: while the climatological response is nearly the same in T+0 to T+6 scenarios, evolving only from XX-XX tons ha$^{-1}$/K, the year-over-year response rises by over a quarter, from 1.9 to 2.5 tons ha$^{-1}$/K.
+%The first critical design choice for our emulators is concerned with temporal aggregation.
+%We construct our emulator of 30-year climatological mean yields because most economic models project impacts at some aggregate temporal scale (decades or larger) or utilize some temporally aggregated climate projection as their input.
+%The GGCMI Phase II model experiment parameter sweep was designed to provide a training dataset for emulation that is structured in a way conducive to this temporal aggregation.
+%you're saying that the year-over-year would add noise but not change your fit. But, I think this is why you talk about the nonlinearity of the year-over-year response, because in some cases it WOULD add bias. right? If the year-over-year response is the same as the mean response it's fine. If it's different from the mean response and not changing, I think even that adds bias, because your "noise" is then not stationary - its relationship to the mean response differs depending on temperature. If it's different from the mean response and changing, then it's definitely not stationary.
+%We emulate the yield response to C, T, W, and N at the 30-year climatological mean level.
+%, 2) the year-over-year response is not the same as the climatological response (Figure 2), 3) if we included the year-over-year response it's both noisier, making emulation harder, and can also actually bias the emulated response
+%then you close by saying the GGCMI dataset lets you use a relatively simple form that converges well. That transitions you to the emulation section
+%Three important distinctions are made between the year-to-year yield response and the climatological-mean yield response.
+%Note however that for both precipitation and temperature, year-over-year reponses are stronger in conditions of larger climate impacts (higher T or lower W), so that variance in  
+%Note that the GGCMI Phase II training dataset does not capture potential changes in climate variability, because all simulations are run with fixed offsets from the historical climatology.
+%However, prior work has suggested that mean changes are the dominant drivers of climatological crop yield shifts in all but arid regions \citep[e.g.][]{Glotter14}.
+%Critically for emulation, the mean-climatological yield can easily be related to the mean-climatological shift in temperature or precipitation in the GGCMI Phase II dataset.
+%For example, the stronger year-over-year response to temperature under warmer conditions also manifests as a wider distribution of yearly yields (Figure \ref{fig:yearly}) within a 30-year simulation even though the variance in input temperates is unchanged. 
+%Likewise for precipitation changes, strong decreases in precipitation results in a widening of the distribution in yields even though the variance in precipitation is decreasing (from approximately 60 cm yr-1 to 30 cm yr-1 in this example). 
+%In both cases show in the Figure (Figure \ref{fig:yearly}), the year-over-year response is nonlinear, getting stronger with more severe mean climate shifts. 
+%The strengthening of crop sensitivity under severe climate shifts causes distribution of modeled crop yields becomes wider, even when underlying climate variability is fixed.
+%For temperature, that strengthening year-over-year response adds a complication to emulating when using a non-stationary climate scenario where mean climate gradually warms.
+%In contrast for precipitation, the year over year response is locally similar to the climatological response.  
+%Note that since we emulate mean climatological-yields, we do not capture any of these higher-order moment changes in yield in this study.
 
 
 %Some models share a common genealogy, but have since branched and developed independently, and will be treated independently in this work. 
@@ -878,7 +895,7 @@ Crops are less sensitive to short-term precipitation changes, since they care ab
     Bold lines show emulated values with uniform global temperature shifts applied and precipitation and CO$_2$ held constant. 
     Panels a-c show CMIP-5 temperature only, temperature and precipitation, and all three effects respectively. 
     Bold lines are repeated in panels b and c for reference. 
-    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model (panel c. onlys) and the resultant maize production change for each crop and climate model combination (including the additional six crop model emulators not shown in full). 
+    Rug plots show end of century (2090-2100 mean) values for temperature change for each CMIP-5 model (panel c. only) and the resultant maize production change for each crop and climate model combination (including the additional six crop model emulators not shown in full). 
     Red rug shows the ensemble median value.
     In all cases nitrogen is fixed at 200 (kg ha$^-1$) and global production values are aggregated up from the grid cell level based on the growing areas for rainfed and irrigated maize \citep{Portmann2010}. 
 
