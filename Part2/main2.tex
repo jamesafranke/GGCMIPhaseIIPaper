@@ -296,7 +296,7 @@ Some terms that did not reduce the aggregate error are included if a higher orde
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (120, PEPIC). 
 Feature importance is not uniform due to spatial heterogeneity across models and crops, so we weight the loss function by current cultivation area \citep{Portmann2010} during this step. 
 The resulting choice of terms is then applied for all emulators and all crops. 
-Since the goal of the emulator is interpolation within the sample space and not extrapolation, we err on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over fitting.  
+Since the goal of the emulator is interpolation within the sample space and not extrapolation, we err on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over-fitting.  
 
 \begin{figure*}[ht]
 \centering
@@ -314,12 +314,11 @@ Since the goal of the emulator is interpolation within the sample space and not 
 \end{figure*}
 
 Feature importance is remarkably consistent across models (Figure \ref{fig:features}). 
-Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance indicated by the terms where the error is reduced and where additional terms provide no predictive benefit (line slopes match in Figure \ref{fig:features}). 
-The feature selection process results in a final polynomial in 23 terms, with 11 terms eliminated. 
-We omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels. 
-We eliminate many of the C terms: the cubic, the CT, CTN, and CWN interaction terms, and all higher order interaction terms in C. 
-Finally, we eliminate two 2nd-order interaction terms in T and one in W. 
-Implication of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. 
+Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
+The feature selection process allows us to eliminate 11 terms, leaving a final polynomial in 23 terms.
+We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. The eliminated terms include many of those in C: the cubic; the CT, CTN, and CWN interaction terms; and all higher order interaction terms in C. 
+Finally, we eliminate one 2nd-order interaction term in W and two in T. 
+Implications of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature. 
 
 \subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91}, which reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero. 
@@ -339,14 +338,13 @@ The EPIC-TAMU and pDSSAT crop module emulator residuals are never normally distr
 
 We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 In the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases or for low-yield geographic regions where some modeling groups did not run all scenarios. 
-We do not attempt to emulate models that provided less than 50 simulations. 
-The lowest number of simulations emulated across the full parameter space is then 120 (for the PEPIC model). 
+The lowest number of simulations emulated across the full parameter space is 120 (for the PEPIC model), since we do not attempt to emulate models that provided less than 50 simulations. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In the following section we present some illustrations of the yield response to drivers and the emulator performance. 
+In the following section we present some illustrations of the yield response to drivers and measures of emulator performance. 
 In general, model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
 However, the principle of no-free-lunch applies, so losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
 The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
@@ -519,7 +517,7 @@ The rationale for this choice of assessment metric is to relate the fidelity of 
     \end{tabular}
 \end{table*}
 
-We also provide a second, more stringent test of emulator performance: namely a four-fold cross validation (also termed out-of-sample validation). 
+We also provide a second, more stringent test of emulator performance: a four-fold cross validation (also termed out-of-sample validation). 
 In this test the training data is split and the model is trained on 75\% of the data and tested on the held out 25\%.
 The mean absolute error is the calculated between the emulated (predicted) and simulated (``ground truth'') values across all cases in the held out 25\% of the simulations. 
 The process is then repeated four times to cover all data in the training set. 
