@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 NOV 2019 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 NOV 2019 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,13 +1192,13 @@ File: figures/lpjml_maize.png Graphic file (type png)
 Package pdftex.def Info: figures/lpjml_maize.png used on input line 357.
 (pdftex.def)             Requested size: 455.24408pt x 323.91716pt.
 
-<figures/regression_example_1.png, id=354, 598.25105pt x 194.69537pt>
+<figures/regression_example_1.png, id=354, 612.70506pt x 202.06693pt>
 File: figures/regression_example_1.png Graphic file (type png)
 
 <use figures/regression_example_1.png>
 Package pdftex.def Info: figures/regression_example_1.png used on input line 37
 4.
-(pdftex.def)             Requested size: 455.24408pt x 148.16014pt.
+(pdftex.def)             Requested size: 455.24408pt x 150.14075pt.
 
 <figures/regression_example_2.png, id=356, 612.70506pt x 202.06693pt>
 File: figures/regression_example_2.png Graphic file (type png)
@@ -1249,7 +1249,7 @@ l.592
 ? s
 OK, entering \scrollmode...
 ! Too many }'s.
-l.616 }
+l.610 }
        
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1343,11 +1343,11 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 672.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 672.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
 (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 672.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 672.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 666.
 
 
 LaTeX Warning: There were undefined references.
@@ -1355,13 +1355,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 672.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 666.
  ) 
 Here is how much of TeX's memory you used:
- 10824 strings out of 492995
- 153086 string characters out of 6132704
- 304839 words of memory out of 5000000
- 14005 multiletter control sequences out of 15000+600000
+ 10836 strings out of 492995
+ 153176 string characters out of 6132704
+ 306335 words of memory out of 5000000
+ 14017 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1722b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1382,7 +1382,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main2.pdf (29 pages, 7652316 bytes).
+Output written on main2.pdf (29 pages, 7668801 bytes).
 PDF statistics:
  674 PDF objects out of 1000 (max. 8388607)
  599 compressed objects within 6 object streams
