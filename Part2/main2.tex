@@ -67,11 +67,11 @@
 \begin{abstract}
 %\textcolor{red}{
 Statistical emulation of process-based crop models provides the opportunity to combine some of the advantageous features of statistical and process-based crop models.  
-The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development across four dimensions: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). These training datasets are availalbe for two contrasting assumptions on growing season adapation (A): fixed growing seasons (through adaptation in cultivar choice) and growing seasons shortening in warmer climates (assuming no adaptation in cultivar choice).
+The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development across four dimensions: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). These training datasets are available for two contrasting assumptions on growing season adaption (A): fixed growing seasons (through adaptation in cultivar choice) and growing seasons shortening in warmer climates (assuming no adaptation in cultivar choice).
 In this study we present the construction of a set of crop model emulators of mean-climatological yield for nine process-based crop models and five crops. After presenting the rationale and technical implementation of the emulator construction, we evaluate the emulator performance and discuss the general applicability of these emulators as well as individual cases, where the emulators show unexpected behavior.
 %The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
 The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
-The crop model emulatiors presented here should therefore facilitate both model comparison and integrated assessment of climate impacts.
+The crop model emulators presented here should therefore facilitate both model comparison and integrated assessment of climate impacts.
 %}
 \end{abstract}
 
@@ -96,7 +96,7 @@ Crop model emulation allows producing yield projections under arbitrary emission
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
 Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}, who used a machine learning approach to predict Mediterranean wheat yields. 
 Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model. 
-More recently, emulators have begun to be used in the context of multi-model intercomparisons, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models  of the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP). ISIMIP offers a relatively large training set --  control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017} -- and choices of emulation strategy differ.
+More recently, emulators have begun to be used in the context of multi-model intercomparison, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models  of the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP). ISIMIP offers a relatively large training set --  control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017} -- and choices of emulation strategy differ.
 \citet{BLANC2015} and \citet{BLANC2017} use historical and RPC8.5 scenarios, combine multiple climate model projections for RCP8.5, and regress across soil regions. 
 \citet{Ostberg2018} use global mean temperature change (and CO$_2$) as regressors, and then pattern-scales to emulate local yields. 
 \citet{Mistry2017} compare emulated and observed historical yields, using local weather data and a historical crop simulation. 
@@ -242,7 +242,7 @@ Previous studies have suggested that in all but very arid regions, yields are no
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
 \textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes?}
-However, note that the nonlinearity of yield reponses means that the spread in annual yield becomes wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), even though distributions of climate variables are unchanged.
+However, note that the nonlinearity of yield responses means that the spread in annual yield becomes wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), even though distributions of climate variables are unchanged.
 \textcolor{red}{Cite Urban et al here, maybe compare numbers?}
 Higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields.
 
@@ -586,6 +586,11 @@ Second, the spread across climate model response increases considerably with pre
 The CO$_2$ response is more heterogeneous across crop models that precipitation changes for maize. 
 See supplemental Figures SXX for the other crops.
 
+\textcolor{red}{
+Finally, the differences between the emulation and the simulations are similar to the spread across different climate model projections for a single crop model, but much lower than the differences across different crop models.
+PROMET, the quantitatively most difficult model to emulate for maize is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
+The globally gridded nature of the emulator allows for easy analysis at almost any spatial scale.
+
 Left
 emulation can match simulation (uniform T shift)
 
@@ -596,7 +601,7 @@ model spread is pretty large (MIUCH larger than emulator fidelity issues)
 Middle
 precipitation changes in RCP8.5 make damages slightly worse but similarly so in all models
 
-Preciptation changes introduce some noise (because climate models have different P response for a given T)
+Precipitation changes introduce some noise (because climate models have different P response for a given T)
 
 emulator based on GGCMI perturbed mean training set is pretty good at reproducing a realistic scenario - T distribution within the growing season doesn't matter much. Big relief for GGCMI Phase II (add new RDP emulation to LPJmL and highlight the values from that climate model)
 
@@ -609,15 +614,7 @@ Upshot -
 emulation based on GGCMI climatological mean shifts is useful for realistic scenarios
 
 emulator fidelity uncertainty is small compared to climate model differences and tiny compared to intermodel differences
-
-
-\textcolor{red}{
-Finally, the differences between the emulation and the simulations are similar to the spread across different climate model projections for a single crop model, but much lower than the differences across different crop models.
-PROMET, the quantitatively most difficult model to emulate for maize is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
-The globally gridded nature of the emulator allows for easy analysis at almost any spatial scale.
 }
-
-
 
 %Note that no direct comparison to the simulations is possible in cases b or c.
 %Finally, the emulator can be used to quickly project crop yield responses to climate change under a variety of conditions. 
