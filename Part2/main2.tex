@@ -207,7 +207,10 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
        maize from the pDSSAT model in a representative high-yield region (nine adjacent grid cells in northern Iowa). 	\textbf{Left}: irrigated maize, all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and \textbf{right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%).
        Open black circles mark climatological mean yields and bold black lines show a 3rd order polynomial fit through them. Colored lines show linear regressions through the 30 annual yields of each parameter case. Colored circles show annual yields for selected cases:
        \textbf{left}: T+0 (blue) and T+6 K (red), and \textbf{right}: W-50\% (brown) and W+50\% (green).
-       For temperature, responses to year-over-year fluctuations are very different from those to longer-term climate shifts: slope of colored and black lines differ. For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately the tangent of the black line -- but the climatological response is highly nonlinear. 
+
+       \textcolor{red}{maize and soy are more regular in temperature, wheat and rice are not. Precip is irregular in ever case as far as I can tell.}
+       For temperature, responses to year-over-year fluctuations are very different from those to longer-term climate shifts for some crops: slope of colored and black lines differ. 
+       For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately the tangent of the black line -- but the climatological response is highly nonlinear. 
    }
    \label{fig:yearvclim}
 \end{figure*}
@@ -396,7 +399,7 @@ The errors between the simulation and the emulation are generally small compared
    \label{fig:regression_2}
 \end{figure*}
 
-Yield patterns in the GGCMI Phase II archive are geographically diverse. 
+%Yield patterns in the GGCMI Phase II archive are geographically diverse. 
 The emulator is able to successfully capture the spatial pattern of yields for a single simulation case and emulation errors are low in regions currently under cultivation (Figure \ref{fig:map_pattern}). 
 In this example, nearly all grid cells have errors below 0.5 ha$^{-1}$ for the baseline case. 
 However, emulation errors as a percentage of baseline yield do reach high values in some areas with no cultivation in the real world.
