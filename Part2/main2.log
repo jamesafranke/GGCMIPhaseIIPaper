@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2019 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2019 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,16 +1292,16 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
 ) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 669.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 669.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 669.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 669.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 670.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 669.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
  ) 
 Here is how much of TeX's memory you used:
  10851 strings out of 492995
@@ -1328,7 +1328,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main2.pdf (29 pages, 10135276 bytes).
+Output written on main2.pdf (29 pages, 10135377 bytes).
 PDF statistics:
  772 PDF objects out of 1000 (max. 8388607)
  679 compressed objects within 7 object streams
