@@ -21,12 +21,13 @@
 \Author[11]{Curtis}{Jones}
 %\Author[12]{Marian}{Koch}
 \Author[2,13]{Michelle}{Li}
-\Author[7,14]{Wenfeng}{Liu}
-\Author[15]{Stefan}{Olin}
-\Author[5,16]{Meridel}{Phillips}
-\Author[17,18]{Thomas A.\ M.}{Pugh}
+\Author[14,15]{Wenfeng}{Liu}
+\Author[16]{Stefan}{Olin}
+\Author[5,17]{Meridel}{Phillips}
+\Author[18,19]{Thomas A.\ M.}{Pugh}
 \Author[11]{Ashwan}{Reddy}
 \Author[8]{Karina}{Williams}
+%\Author[1,2]{Ziwei}{Wang}
 \Author[10]{Florian}{Zabel}
 \Author[1,2]{Elisabeth}{Moyer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,10 +45,13 @@
 \affil[12]{Texas Agrilife Research and Extension, Texas A\&M University, Temple, TX, USA}
 \affil[13]{Department of Statistics, University of Chicago, Chicago, IL, USA}
 \affil[14]{EAWAG, Swiss Federal Institute of Aquatic Science and Technology, D\"{u}bendorf, Switzerland}
-\affil[15]{Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}
-\affil[16]{Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
-\affil[17]{School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}
-\affil[18]{Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.}
+\affil[15]{Laboratoire des Sciences du Climat et de l'Environnement, LSCE/IPSL, CEA-CNRS-UVSQ, Universit\'{e} Paris-Saclay, F-91191 Gif-sur-Yvette, France.}
+\affil[16]{Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden}
+\affil[17]{Earth Institute Center for Climate Systems Research, Columbia University, New York, NY, USA}
+\affil[18]{School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}
+\affil[19]{Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \runningtitle{The GGCMI crop model emulators}
 \runningauthor{Franke et al.}
@@ -254,7 +258,8 @@ While differences in year-over-year and climatological temperature responses can
 This explanation is also consistent with the lack of difference in responses to precipitation perturbations across timescales.  
 While changes in temperature distributions can strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, those in precipitation distributions have less effect since crops respond not to rainfall but to soil moisture, which integrates on timescales of weeks or even months \citep[e.g.][]{potter2005effects}. 
 %\textcolor{red}{thisis one ref I found but it may not be the best reference and if we drop the claim of "weeks or even months" we can probably also do without a citation here...}
-Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. The difference in responses also suggests that correlation between temperature and precipitation fluctuations does not play a major role. \textcolor{red}{XX something about annual P-T correlation in the historical dataset used, the changes seem to be due to just temperature distributions.}
+Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. 
+The difference in responses also suggests that correlation between temperature and precipitation fluctuations does not play a major role. \textcolor{red}{XX something about annual P-T correlation in the historical dataset used, the changes seem to be due to just temperature distributions.}
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
 \textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes?}
@@ -368,7 +373,7 @@ The lowest number of simulations emulated across the full parameter space is 120
 \label{S:4}
 In the following section we present some illustrations of the yield response to drivers and measures of emulator performance. 
 In general, model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
-However, the principle of no-free-lunch applies, so losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
+However, losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
 The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
 
 \subsection{Yield response}
@@ -419,7 +424,7 @@ The errors between the simulation and the emulation are generally small compared
 \end{figure*}
 
 The emulator is able to successfully capture the spatial pattern of yields for a single simulation case and emulation errors are low in regions currently under cultivation (Figure \ref{fig:map_pattern}). 
-In this example, nearly all grid cells have errors below 0.5 ha$^{-1}$ for the baseline case. 
+In this example, nearly all grid cells have errors below 0.5 tons ha$^{-1}$ for the baseline case. 
 However, emulation errors as a percentage of baseline yield do reach high values in some areas with no cultivation in the real world.
 Many of these regions are not currently viable for agriculture (and therefore have very low simulated baseline yields) and may never become viable even under extreme climate change.  
 Some differences in spatial skill exist across models and crops, with maize being the qualitatively easiest to emulate across all models.  
@@ -548,7 +553,7 @@ For this reason we mask all areas with less that 0.1 ton ha$^{-1}$ in the baseli
 
 Errors are generally low as a percentage of yield, even for this relatively strict protocol, below 5\% of baseline yield for most crop model combinations (Table \ref{table:ASE}).
 The notable exceptions are the JULES model for soybean and spring wheat and the PROMET model for soybean, rice, and the wheats as was seen before in the previous performance metric.
-Note that under the conditions of this test, the training set often does not include ``edge'' simulations (i.e. those at the highest or lowest value in that dimension).
+Note that under the conditions of this test, the training set often does not include edge simulations (i.e. those at the highest or lowest value in that dimension).
 Predictions in the test phase are therefore extrapolating out to these edge values (e.g.\ predicted a T+6 case that was not included in the training set).
 Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
 Maps showing the spatial patterns of errors can seen in supplemental Figures SXX-SXX. 
@@ -632,7 +637,8 @@ The use of a relatively simple functional form in turn offers the possibility of
 The yield output for a single GGCMI Phase II model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$20 MB, a reduction of nearly three orders of magnitude. 
 
 Several cautions should be noted when using the emulator. While the emulator allows estimating agricultural impacts under arbitrary climate scenarios, extrapolation outside the sample space should be avoided. 
-Emulators by design reduce the complexity of process-based simulations and can thus deviate from the raw simulation output. This limitation is especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
+Emulators by design reduce the complexity of process-based simulations and can thus deviate from the raw simulation output. 
+This limitation is especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
 Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so cannot be used for impacts projections of absolute yields except in conjunction with historical yield information. 
 Finally, because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample potential changes in climate variability. 
 Although such changes are uncertain and remain poorly characterized \citep[e.g.][]{Alexande2006, Kodra2014}, follow-up experiments may wish to consider them. 
@@ -651,7 +657,7 @@ In general, the development of multi-model ensembles involving systematic parame
 %\subsection{Data Access}
 %\noappendix %% use this to mark the end of the appendix section
 
-\authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F., C.M., and E.M.\ prepared the manuscript.}
+\authorcontribution{J.E., C.M, A.R., J.F., and E.M.\ designed the research. C.M., J.J., P.F., C.F., L.F., R.C.I., I.J., C.J., W.L., S.O., M.P., T.P., A.Re., K.W., and F.Z.\ performed the simulations. J.F., J.J., A.S., M.L., and E.M.\ performed the analysis and J.F., C.M., and E.M.\ prepared the manuscript.}
 
 \competinginterests{The authors declare no competing interests.}
 
