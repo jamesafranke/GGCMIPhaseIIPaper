@@ -9,8 +9,8 @@
 \Author[3]{Christoph}{M\"{u}ller}
 \Author[2,4]{Joshua}{Elliott}
 \Author[5]{Alex C.}{Ruane}
-\Author[6]{Abigail}{Snyder}
 \Author[3,2,4,5]{Jonas}{J\"{a}germeyr}
+\Author[6]{Abigail}{Snyder}
 \Author[7]{Marie}{Dury}
 \Author[8]{Pete}{Falloon}
 \Author[9]{Christian}{Folberth}
@@ -114,12 +114,18 @@ For example, if year-over-year yield variations are driven predominantly by vari
 Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2014 and 2015 \citep{ruane2014, Markowski2015, Pirttioja2015}, and several recent studies in 2018 and 2019 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. 
 These three studies sample multiple perturbations to temperature and precipitation, and two of the three add CO$_2$ as well, for a total of 132, 99 and 220 different combinations, respectively. 
 All take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
-All studies have some limitations, however, for assessing global agricultural impacts. None offer global coverage, but instead focus on a limited number of sites. Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
+All studies have some limitations, however, for assessing global agricultural impacts. 
+None of the 2018 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
+Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+%analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
+
+Snyder et al analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 % it's based on many crop models if I'm not mistaken. 
 % but only in one crop model (GCAM) \citep{calvin2019}.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
-GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, and applied nitrogen (CTWN). %with two counterfactual assumptions on growing season adaptation (A: none vs. regaining growing season length) \citep{franke2019ctwnexperiment,minoli2019adaptation} .
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, and applied nitrogen (CTWN). 
+%with two counterfactual assumptions on growing season adaptation (A: none vs. regaining growing season length) \citep{franke2019ctwnexperiment,minoli2019adaptation} .
 The experiment is specifically designed for construction of crop model emulators, and to allow diagnosing the impacts on crop yields of both individual factors and their joint effects.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
@@ -150,7 +156,7 @@ In the following, we describe the training dataset (Section \ref{S:2}), the stat
         \textbf{LPJmL},     \citet{von_Bloh_implementing_2018} & X & X & X & X & X & X & \textbf{756 / 648}\\ \middlehline
         \textbf{pDSSAT},    \citet{Elliott2014b, JONES2003235} & X & X & X & X & X & X & \textbf{756 / 648}\\ \middlehline
         \textbf{PEPIC},     \citet{LIU2016164, LIU2016}        & X & X & X & X & X & X & 149 / 121\\ \middlehline
-        \textbf{PROMET},    \citet{Hank2015, MAUSER2015}       & X & X & X & X & X & X & 261 / 232\\
+        \textbf{PROMET},    \citet{Hank2015, MAUSER2015, Zabel2019}       & X & X & X & X & X & X & 261 / 232\\
         \bottomhline
     \end{tabular}
 \end{table*}
@@ -178,7 +184,7 @@ In the following, we describe the training dataset (Section \ref{S:2}), the stat
     \end{tabular}\\
 \end{table*}
 
-The GGCMI Phase II simulations are described in detail in \citet{franke2019ctwnexperiment}, but we summarize briefly here. 
+The GGCMI Phase II simulations are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
 The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soybean, and spring and winter wheat) across a systematic parameter sweep of as many as 756 combinations, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, water supply, and nitrogen application (CTWN). 
 Table \ref{table:models} shows the participating models and the scenarios that each provides, and Table \ref{table:inputs} shows the specified 4 levels of atmospheric CO$_2$, 7 of temperature, 9 of water supply, and 3 of applied nitrogen. 
 See Table \ref{table:inputs} for all values associated with each dimension; we sample across all parameter combinations.
@@ -187,7 +193,7 @@ These simulations are repeated for two adaptation scenarios: ``A0'' simulations 
 The complete protocol for each modeling group involves up to 43,524 years % (4*7*9*3+4*6*9*3)*31, irrigation is one element in W and does not doublicate the full CTWN set. A1 has one element in T less (T=0)
 of global simulated output for each crop.
 Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest recommended level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\%. 
-Three models that contributed data to the CTWN-A experiment \citep{franke2019ctwnexperiment} below this recommended threshold (providing samples under 5\% of the full protocol) could not be robustly emulated and so are excluded here.
+Three models that contributed data to the CTWN-A experiment \citep{Franke2019a} below this recommended threshold (providing samples under 5\% of the full protocol) could not be robustly emulated and so are excluded here.
 
 Each individual crop model simulation is run for 31 years over historic weather for the period of 1980-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} as these groups have specific sub-daily input data requirements. 
@@ -246,7 +252,7 @@ Yield sensitivity to precipitation, on the other hand, is similar for both year-
 
 While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model or lurking covariates,  the most reasonable explanation is that the regressor here, mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means}  may involve different changes in growing-season temperature \textit{distributions} in the forced and unforced cases \citep[e.g.][]{Ruane2016}. 
 This explanation is also consistent with the lack of difference in responses to precipitation perturbations across timescales.  
-While changes in temperature distributions can strongly affect crop yields \citep[e.g.][]{Roberts2017}, those in precipitation distributions have less effect since crops respond not to rainfall but to soil moisture, which integrates on timescales of weeks or even months \citep[e.g.][]{potter2005effects}. 
+While changes in temperature distributions can strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, those in precipitation distributions have less effect since crops respond not to rainfall but to soil moisture, which integrates on timescales of weeks or even months \citep[e.g.][]{potter2005effects}. 
 %\textcolor{red}{thisis one ref I found but it may not be the best reference and if we drop the claim of "weeks or even months" we can probably also do without a citation here...}
 Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. The difference in responses also suggests that correlation between temperature and precipitation fluctuations does not play a major role. \textcolor{red}{XX something about annual P-T correlation in the historical dataset used, the changes seem to be due to just temperature distributions.}
 
@@ -254,8 +260,8 @@ In the GGCMI Phase II experiment, the imposed perturbations involve no changes i
 \textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes?}
 However, note that the nonlinearity of yield responses means that the spread in annual yield becomes wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), even though distributions of climate variables are unchanged.
 %\textcolor{red}{\cite{Urban2012} Urban et al here, maybe compare numbers?}
-For example, \cite{Urban2012} show 20\% increase per degree K in varaince in maize yields in the U.S. under climate change.
-In the GGCMI simulations, higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields for all crops except maize. 
+For example, \cite{Urban2012} shows 20\% increase per degree K in variance in maize yields in the US under climate change.
+In the GGCMI simulations, higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields for all crops except rice, though we find inc 
 
 \textcolor{red}{The climatological mean response often does not contain a downturn that is present in the year-to-year response for increased precipitation at the extremes... of which models are well know to underestimate \citep{Glotter15,Li2019}.}
 
