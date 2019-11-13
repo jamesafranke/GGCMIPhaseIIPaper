@@ -98,7 +98,7 @@ For agricultural impacts studies, emulation of process-based models allows captu
 Crop model emulation allows producing yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
 
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
-Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}.  %who used a machine learning approach to predict Mediterranean wheat yields. 
+Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}.
 Studies developing single-model emulators include  \citet{Holzkamper2012} for the CropSyst model, \citet{RUANE2013a} for the CERES wheat model, and \citet{Oyebamiji15} for the LPJmL model. 
 More recently, emulators have begun to be used in the context of multi-model intercomparison, with multiple authors \citep{BLANC2015, BLANC2017, Ostberg2018, Mistry2017}  using them to analyze the five crop models  of the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP). ISIMIP offers a relatively large training set --  control, historical, and several Representative Concentration Pathway (RCP) scenarios using output from up to five climate models \citep{Warszawski3228, Frieler2017} -- and choices of emulation strategy differ.
 \citet{BLANC2015} and \citet{BLANC2017} use historical and RPC8.5 scenarios, combine multiple climate model projections for RCP8.5, and regress across soil regions. 
@@ -121,8 +121,8 @@ All take advantage of the structured training set to construct emulators (``resp
 All studies have some limitations, however, for assessing global agricultural impacts. 
 None of the 2018 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
 Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
-%analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
 Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+%analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
 % it's based on many crop models if I'm not mistaken. 
 % but only in one crop model (GCAM) \citep{calvin2019}.
 
@@ -255,7 +255,7 @@ The year-over-year response can be significantly different from the forced clima
 Emulation then becomes relatively straightforward, since changes in these time-averaged yields are also considerably smoother than those in year-to-year yield response.
 
 In the GGCMI Phase II simulation output dataset, year-over-year responses to weather can be quantitatively distinct from responses to climatological shifts. 
-The differences are especially significant for temperature, with yield fluctuations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
+The differences are especially significant for temperature for some crops, with yield fluctuations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
 This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated (left) and rainfed (right) maize in a representative location in Iowa and for winter wheat in France, with black lines and open circles showing the climatological mean responses and colored lines and solid circles those for the 30 individual years in selected scenarios. 
 Year-to-year temperature response for maize follows the mean climatological response in most cases. 
 In contrast, wheat does not ...
@@ -279,7 +279,7 @@ The difference in responses also suggests that correlation between temperature a
 \textcolor{red}{XX something about annual P-T correlation in the historical dataset used, the changes seem to be due to just temperature distributions.}
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
-\textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes?}
+\textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes? Ziwei is calculating this}
 However, note that the nonlinearity of yield responses means that the spread in annual yield becomes wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), even though distributions of climate variables are unchanged.
 %\textcolor{red}{\cite{Urban2012} Urban et al here, maybe compare numbers?}
 For example, \cite{Urban2012} shows 20\% increase per degree K in variance in maize yields in the US under climate change.
