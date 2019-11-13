@@ -1,4 +1,4 @@
-\begin{thebibliography}{81}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -171,6 +171,11 @@ Fronzek, S., Pirttioja, N., Carter, T.~R., Bindi, M., Hoffmann, H., Palosuo,
   change, Agricultural Systems, 159, 209--224,
   \doi{10.1016/j.agsy.2017.08.004}, 2018.
 
+\bibitem[{Gadgil et~al.(2002)Gadgil, Rao, and Rao}]{Gadgil2002}
+Gadgil, S., Rao, P.~S., and Rao, K.~N.: Use of climate information for
+  farm-level decision making: rainfed groundnut in southern India, Agricultural
+  Systems, 74, 431 -- 457, \doi{10.1016/S0308-521X(02)00049-5}, 2002.
+
 \bibitem[{Glotter et~al.(2014)Glotter, Elliott, McInerney, Best, Foster, and
   Moyer}]{Glotter14}
 Glotter, M., Elliott, J., McInerney, D., Best, N., Foster, I., and Moyer,
@@ -190,6 +195,11 @@ Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
   {H}eterogeneous {C}rop {G}rowth and {Y}ield: {A}pplication for {W}heat in
   {C}entral {E}urope, Remote Sensing, 7, 3934--3965, \doi{10.3390/rs70403934},
   2015.
+
+\bibitem[{Hansen and Jones(2000)}]{Hansen2000}
+Hansen, J. and Jones, J.: Scaling-up crop models for climate variability
+  applications, Agricultural Systems, 65, 43 -- 72,
+  \doi{10.1016/S0308-521X(00)00025-1}, 2000.
 
 \bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
@@ -234,6 +244,23 @@ Izaurralde, R., Williams, J., Mcgill, W., Rosenberg, N., and Quiroga~Jakas, M.:
   Simulating soil {C} dynamics with {E}{P}{I}{C}: Model description and testing
   against long-term data, Ecological Modelling, 192, 362--384,
   \doi{10.1016/j.ecolmodel.2005.07.010}, 2006.
+
+\bibitem[{Jones et~al.(2011)Jones, Hughes, Bellouin, Hardiman, Jones, Knight,
+  Liddicoat, O\&amp;apos;Connor, Andres, Bell, Boo, Bozzo, Butchart, Cadule,
+  Corbin, Doutriaux-Boucher, Friedlingstein, Gornall, Gray, Halloran, Hurtt,
+  Ingram, Lamarque, Law, Meinshausen, Osprey, Palin, Parsons~Chini, Raddatz,
+  Sanderson, Sellar, Schurer, Valdes, Wood, Woodward, Yoshioka, and
+  Zerroukat}]{Jones2011h}
+Jones, C.~D., Hughes, J.~K., Bellouin, N., Hardiman, S.~C., Jones, G.~S.,
+  Knight, J., Liddicoat, S., O\&amp;apos;Connor, F.~M., Andres, R.~J., Bell,
+  C., Boo, K.-O., Bozzo, A., Butchart, N., Cadule, P., Corbin, K.~D.,
+  Doutriaux-Boucher, M., Friedlingstein, P., Gornall, J., Gray, L., Halloran,
+  P.~R., Hurtt, G., Ingram, W.~J., Lamarque, J.-F., Law, R.~M., Meinshausen,
+  M., Osprey, S., Palin, E.~J., Parsons~Chini, L., Raddatz, T., Sanderson,
+  M.~G., Sellar, A.~A., Schurer, A., Valdes, P., Wood, N., Woodward, S.,
+  Yoshioka, M., and Zerroukat, M.: The {HadGEM}2-{ES} implementation of {CMIP}5
+  centennial simulations, Geoscientific Model Development, 4, 543--570,
+  \doi{10.5194/gmd-4-543-2011}, 2011.
 
 \bibitem[{Jones et~al.(2003)Jones, Hoogenboom, Porter, Boote, Batchelor, Hunt,
   Wilkens, Singh, Gijsman, and Ritchie}]{JONES2003235}
@@ -323,15 +350,6 @@ Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
   and Calzadilla, A.: Global biomass production potentials exceed expected
   future demand without the need for cropland expansion, Nature Communications,
   6, \doi{10.1038/ncomms9946}, 2015.
-
-\bibitem[{McDermid et~al.(2015)McDermid, Ruane, Rosenzweig, Hudson, Morales,
-  Agalawatte, Ahmad, Ahuja, Amien, Anapalli et~al.}]{mcdermid2015agmip}
-McDermid, S.~P., Ruane, A.~C., Rosenzweig, C., Hudson, N.~I., Morales, M.~D.,
-  Agalawatte, P., Ahmad, S., Ahuja, L., Amien, I., Anapalli, S.~S., et~al.: The
-  AgMIP coordinated climate-crop modeling project (C3MP): methods and
-  protocols, in: HANDBOOK OF CLIMATE CHANGE AND AGROECOSYSTEMS: The
-  Agricultural Model Intercomparison and Improvement Project Integrated Crop
-  and Economic Assessments, Part 1, pp. 191--220, World Scientific, 2015.
 
 \bibitem[{Mistry et~al.(2017)Mistry, Wing, and De~Cian}]{Mistry2017}
 Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
@@ -615,6 +633,14 @@ Williams, K.~E. and Falloon, P.~D.: Sources of interannual yield variability in
   {J}{U}{L}{E}{S}-crop and implications for forcing with seasonal weather
   forecasts, Geoscientific Model Development, 8, 3987--3997,
   \doi{10.5194/gmd-8-3987-2015}, 2015.
+
+\bibitem[{Zabel et~al.(2019)Zabel, Delzeit, Schneider, Seppelt, Mauser, and
+  V\`{a}clav\'{i}k}]{Zabel2019}
+Zabel, F., Delzeit, R., Schneider, J.~M., Seppelt, R., Mauser, W., and
+  V\`{a}clav\'{i}k, T.: Global impacts of future cropland expansion and
+  intensification on agricultural markets and biodiversity, Nature
+  Communications, 10, 2844, \doi{10.1038/s41467-019-10775-z},
+  \urlprefix\url{http://www.nature.com/articles/s41467-019-10775-z}, 2019.
 
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,

@@ -122,8 +122,7 @@ All studies have some limitations, however, for assessing global agricultural im
 None of the 2018 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
 Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 %analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
-
-Snyder et al analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 % it's based on many crop models if I'm not mistaken. 
 % but only in one crop model (GCAM) \citep{calvin2019}.
 
@@ -520,29 +519,17 @@ Where models differ more widely, the standard for emulators becomes less stringe
 For example, normalized errors for soybean are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soybean than for other crops (see Figure SXX), lowering the denominator.
 The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. 
 
-\begin{table*}[ht]
-    \caption{
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 15cm]{figures/emulator_error.png}
+  \caption{
     Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
     A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
     The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
     The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
-    * Indicates cases where the OLS linear model fails.
-    } 
-    \label{table:ASE}
-    \begin{tabular}{l | c | c | c | c | c} 
-        \hline
-        \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soybean (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
-        \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
-        \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
-        \textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
-        \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
-        \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
-        \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
-        \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
-        \textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
-        \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
-    \end{tabular}
-\end{table*}
+  }
+  \label{fig:all_dims}
+\end{figure*}
 
 We also provide a second, more stringent test of emulator performance: a four-fold cross validation (also termed out-of-sample validation). 
 In this test the training data is split and the model is trained on 75\% of the data and tested on the held out 25\%.
@@ -582,6 +569,20 @@ On the other side, muted responses include soybean, an efficient atmospheric nit
   \label{fig:all_dims}
 \end{figure*}
 
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.5cm]{figures/LPJMLRCP85comp.png}
+  \caption{
+  Simulated global production (black) and emulated global production (red) for four crops from the LPJmL model. 
+  Points show yearly global production values and lines show spline fit.
+  Both simulation and emulation are driven with temperature and precipitation outputs from the HADGEM2-ES model \citep{Jones2011h} for RCP 8.5 with Nitrogen and CO$_2$ held fixed.
+  The emulator trained on uniform climatological offset simulation outputs is able to capture the general response of the transient climate run in most cases. 
+  Notable exceptions include low simulated production maize for some years in the 1980s, overestimated historical rice, and a persistent low bias for emulated spring wheat.
+  }
+  \label{fig:all_dims}
+\end{figure*}
+
 Note that these functions are presented here in Figure \ref{fig:all_dims} only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g][]{Sippel2015}. 
 The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
 
@@ -596,7 +597,7 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     Open squares in panel \textbf{a} are GGCMI Phase II simulated values for each T level (with CWN at baseline).  
     Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure \ref{fig:regression}.)
     Mean yields are very similar whether T changes occur as a uniform temperature shift or in a more realistic spatial pattern (compare lines to circles). 
-    \textbf{b:} adding in projected precipitation changes depresses yields slightly and increases spread between projections for a given temperature change. 
+    \textbf{b:} adding in projected precipitation changes depresses yields slightly for PROMET and increases spread between projections for a given temperature change for the other models. 
     \textbf{c:} adding in CO$_2$ changes produces very different responses across models. CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
     Emulation uncertainty is small compared to the differences across climate and crop models.
     }
@@ -693,6 +694,31 @@ This material is based upon work supported by the National Science Foundation Gr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table*}[ht]
+    \caption{
+    Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
+    A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
+    The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
+    The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
+    * Indicates cases where the OLS linear model fails.
+    } 
+    \label{table:ASE}
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soybean (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
+        \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
+        \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
+        \textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
+        \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
+        \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
+        \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
+        \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
+        \textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
+        \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
+    \end{tabular}
+\end{table*}
 
 
 \Author[1,2]{James}{Franke}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2019 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 NOV 2019 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,6 +999,9 @@ LaTeX Info: Redefining \vec on input line 3.
 
 LaTeX Warning: Label `fig:yearvclim' multiply defined.
 
+
+LaTeX Warning: Label `fig:all_dims' multiply defined.
+
 )
 \openout1 = `main2.aux'.
 
@@ -1075,139 +1078,153 @@ LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 77.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 81.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 77.
+(Font)              scaled to size 8.54997pt on input line 81.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 140.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 149.
 
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 144--144
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 153--153
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []|\T1/ptm/b/n/9 Spring
  []
 
-[4] <figures/flowchart.pdf, id=237, 1584.92125pt x 628.3475pt>
+[4] [5] <figures/flowchart.pdf, id=250, 1584.92125pt x 628.3475pt>
 File: figures/flowchart.pdf Graphic file (type pdf)
 
 <use figures/flowchart.pdf>
-Package pdftex.def Info: figures/flowchart.pdf used on input line 199.
+Package pdftex.def Info: figures/flowchart.pdf used on input line 208.
 (pdftex.def)             Requested size: 497.92322pt x 197.40318pt.
- [5]
-<figures/phase_II_em_figure_1.png, id=253, 589.5626pt x 407.6028pt>
+
+<figures/phase_II_em_figure_1.png, id=251, 589.5626pt x 407.6028pt>
 File: figures/phase_II_em_figure_1.png Graphic file (type png)
 
 <use figures/phase_II_em_figure_1.png>
-Package pdftex.def Info: figures/phase_II_em_figure_1.png used on input line 21
-2.
+Package pdftex.def Info: figures/phase_II_em_figure_1.png used on input line 22
+1.
 (pdftex.def)             Requested size: 426.79134pt x 295.07841pt.
 
-<figures/hist_year_t.png, id=255, 326.4998pt x 328.1058pt>
+<figures/hist_year_t.png, id=253, 326.4998pt x 328.1058pt>
 File: figures/hist_year_t.png Graphic file (type png)
 
 <use figures/hist_year_t.png>
-Package pdftex.def Info: figures/hist_year_t.png used on input line 228.
+Package pdftex.def Info: figures/hist_year_t.png used on input line 237.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
 
-<figures/hist_year_pr.png, id=256, 326.4998pt x 328.1058pt>
+<figures/hist_year_pr.png, id=254, 326.4998pt x 328.1058pt>
 File: figures/hist_year_pr.png Graphic file (type png)
 
 <use figures/hist_year_pr.png>
-Package pdftex.def Info: figures/hist_year_pr.png used on input line 228.
+Package pdftex.def Info: figures/hist_year_pr.png used on input line 237.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
  [6 <./figures/flowchart.pdf>] [7 <./figures/phase_II_em_figure_1.png>] [8 <./f
 igures/hist_year_t.png> <./figures/hist_year_pr.png>] [9]
-<figures/model_select_maize_rice.png, id=397, 700.3766pt x 728.6422pt>
+<figures/model_select_maize_rice.png, id=403, 700.3766pt x 728.6422pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 319.
+ 330.
 (pdftex.def)             Requested size: 341.43306pt x 355.22554pt.
  [10] [11 <./figures/model_select_maize_rice.png>] <figures/lpjml_maize.png, id
-=425, 505.02277pt x 359.32645pt>
+=431, 505.02277pt x 359.32645pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png used on input line 371.
+Package pdftex.def Info: figures/lpjml_maize.png used on input line 382.
 (pdftex.def)             Requested size: 455.24408pt x 323.91716pt.
  [12]
-<figures/regression_example_1.png, id=441, 612.70506pt x 202.06693pt>
+<figures/regression_example_1.png, id=447, 612.70506pt x 202.06693pt>
 File: figures/regression_example_1.png Graphic file (type png)
 
 <use figures/regression_example_1.png>
-Package pdftex.def Info: figures/regression_example_1.png used on input line 38
-8.
+Package pdftex.def Info: figures/regression_example_1.png used on input line 39
+9.
 (pdftex.def)             Requested size: 455.24408pt x 150.14075pt.
 
-<figures/regression_example_2.png, id=443, 612.70506pt x 202.06693pt>
+<figures/regression_example_2.png, id=449, 612.70506pt x 202.06693pt>
 File: figures/regression_example_2.png Graphic file (type png)
 
 <use figures/regression_example_2.png>
-Package pdftex.def Info: figures/regression_example_2.png used on input line 40
-4.
+Package pdftex.def Info: figures/regression_example_2.png used on input line 41
+5.
 (pdftex.def)             Requested size: 455.24408pt x 150.14075pt.
  [13 <./figures/lpjml_maize.png>]
 [14 <./figures/regression_example_1.png> <./figures/regression_example_2.png>]
-<figures/error_grid.png, id=469, 601.2864pt x 241.81541pt>
+<figures/error_grid.png, id=475, 601.2864pt x 241.81541pt>
 File: figures/error_grid.png Graphic file (type png)
 
 <use figures/error_grid.png>
-Package pdftex.def Info: figures/error_grid.png used on input line 447.
+Package pdftex.def Info: figures/error_grid.png used on input line 458.
 (pdftex.def)             Requested size: 455.24408pt x 183.08055pt.
 
-<figures/CARAIB_spatial_error.png, id=472, 505.02277pt x 332.15292pt>
+<figures/CARAIB_spatial_error.png, id=478, 505.02277pt x 332.15292pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 
 <use figures/CARAIB_spatial_error.png>
-Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 46
-2.
+Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 47
+3.
 (pdftex.def)             Requested size: 455.24408pt x 299.4214pt.
  [15] [16 <./figures/error_grid.png>]
-[17 <./figures/CARAIB_spatial_error.png>] [18]
-<figures/em_CTWN_all_crops.png, id=509, 4516.875pt x 4516.875pt>
+[17 <./figures/CARAIB_spatial_error.png>]
+<figures/emulator_error.png, id=507, 610.53696pt x 509.21442pt>
+File: figures/emulator_error.png Graphic file (type png)
+
+<use figures/emulator_error.png>
+Package pdftex.def Info: figures/emulator_error.png used on input line 524.
+(pdftex.def)             Requested size: 426.79134pt x 355.95815pt.
+ [18] [19 <./figures/emulator_error.png>]
+<figures/em_CTWN_all_crops.png, id=524, 4516.875pt x 4516.875pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 563.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 562.
 (pdftex.def)             Requested size: 426.79134pt x 426.76425pt.
 
-<figures/global_em_maize.png, id=515, 536.09886pt x 215.65369pt>
+<figures/LPJMLRCP85comp.png, id=527, 578.01546pt x 170.70174pt>
+File: figures/LPJMLRCP85comp.png Graphic file (type png)
+
+<use figures/LPJMLRCP85comp.png>
+Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 575.
+(pdftex.def)             Requested size: 469.47046pt x 138.64792pt.
+ [20 <./figures/em_CTWN_all_crops.png>]
+<figures/global_em_maize.png, id=539, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 578.
-(pdftex.def)             Requested size: 469.47046pt x 188.85115pt.
- [19] [20 <./figures/em_CTWN_all_crops.png>]
-[21 <./figures/global_em_maize.png>] [22] (./main2.bbl [23]
+Package pdftex.def Info: figures/global_em_maize.png used on input line 591.
+(pdftex.def)             Requested size: 469.47046pt x 187.17639pt.
+ [21 <./figures/LPJMLRCP85comp.png>] [22 <./figures/global_em_maize.png>] [23] 
+(./main2.bbl [24]
 Underfull \hbox (badness 2253) in paragraph at lines 81--85
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
@@ -1219,119 +1236,128 @@ Underfull \hbox (badness 4391) in paragraph at lines 81--85
 SIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
  []
 
-[24]
-Underfull \hbox (badness 1152) in paragraph at lines 188--193
+[25]
+Underfull \hbox (badness 1152) in paragraph at lines 193--198
 []\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Su
 pported Hydro-Agroecological Model for Field-Scale Sim-u-la-
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 188--193
+Underfull \hbox (badness 1635) in paragraph at lines 193--198
 \T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion fo
 r Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 211--215
+Underfull \hbox (badness 3364) in paragraph at lines 200--203
+[]\T1/ptm/m/n/9 Hansen, J. and Jones, J.: Scaling-up crop mod-els for cli-mate 
+vari-abil-ity ap-pli-ca-tions, Agri-cul-tural Sys-tems, 65, 43 -- 72,
+ []
+
+[26]
+Underfull \hbox (badness 1490) in paragraph at lines 221--225
 \T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
 -pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
  []
 
-[25]
-Underfull \hbox (badness 1087) in paragraph at lines 246--249
+
+Underfull \hbox (badness 1087) in paragraph at lines 273--276
 []\T1/ptm/m/n/9 Kodra, E. and Gan-guly, A.: Asym-me-try of pro-jected in-crease
 s in ex-treme tem-per-a-ture dis-tri-bu-tions, Sci-en-tific re-ports, 4, 5884,
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 291--295
+Underfull \hbox (badness 1147) in paragraph at lines 318--322
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 291--295
+Underfull \hbox (badness 1424) in paragraph at lines 318--322
 \T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
-[26]
-Underfull \hbox (badness 1292) in paragraph at lines 427--432
+[27] [28]
+Underfull \hbox (badness 1292) in paragraph at lines 445--450
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
-[27]
-Underfull \hbox (badness 1005) in paragraph at lines 455--458
+
+Underfull \hbox (badness 1005) in paragraph at lines 473--476
 []\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
 gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
  []
 
-[28]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 544.
+[29]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 562.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 6348) in paragraph at lines 543--546
+Underfull \hbox (badness 6348) in paragraph at lines 561--564
 []\T1/ptm/m/n/9 Shapiro, S. and Wilk, M.: An anal-y-sis of vari-ance test for n
 or-mal-ity (com-plete sam-ples)\TS1/ptm/m/n/9 „\T1/ptm/m/n/9 , Biometrika, 52, 
 591--611,
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 593--597
+Underfull \hbox (badness 3735) in paragraph at lines 611--615
 []\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
 ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 593--597
+Underfull \hbox (badness 2707) in paragraph at lines 611--615
 \T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
-) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
+[30]) [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 670.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 686.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 686.
  ) 
 Here is how much of TeX's memory you used:
- 10851 strings out of 492995
- 153470 string characters out of 6132704
- 309411 words of memory out of 5000000
- 14024 multiletter control sequences out of 15000+600000
+ 10875 strings out of 492995
+ 153895 string characters out of 6132704
+ 308693 words of memory out of 5000000
+ 14039 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1722b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on main2.pdf (29 pages, 10135377 bytes).
+ 43i,10n,40p,1758b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.12} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on main2.pdf (31 pages, 11171555 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 679 compressed objects within 7 object streams
- 149 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
