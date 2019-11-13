@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: copernicus.bst
+Database file #1: bib.bib.bib
+Repeated entry---line 757 of file bib.bib.bib
+ : @article{Asseng2013
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--missing publisher in Markowski2015
+You've used 103 entries,
+            2811 wiz_defined-function locations,
+            1741 strings with 43034 characters,
+and the built_in function-call counts, 140512 in all, are:
+= -- 14164
+> -- 8784
+< -- 32
++ -- 3488
+- -- 2831
+* -- 10023
+:= -- 15412
+add.period$ -- 103
+call.type$ -- 103
+change.case$ -- 1150
+chr.to.int$ -- 102
+cite$ -- 310
+duplicate$ -- 12172
+empty$ -- 6046
+format.name$ -- 3152
+if$ -- 27591
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1646
+newline$ -- 318
+num.names$ -- 414
+pop$ -- 6084
+preamble$ -- 1
+purify$ -- 1149
+quote$ -- 0
+skip$ -- 7124
+stack$ -- 0
+substring$ -- 4770
+swap$ -- 10847
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 921
+warning$ -- 1
+while$ -- 531
+width$ -- 0
+write$ -- 1232
+(There was 1 error message)
