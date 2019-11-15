@@ -91,11 +91,12 @@ Statistical crop models can only capture crop responses under the range of curre
 Both types of models are routinely used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017,liu2016similar}. 
 
 Statistical emulation allows combining some of the advantageous features of both statistical and process-based models.
-Crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
+%Crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
 The approach involves constructing a ``surrogate model'' of numerical simulations by using their output as training data for a statistical representation \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies. 
-Crop model emulation allows producing yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
+%Crop model emulation 
+The resultant statistical model can produce yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
 
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
 Early studies proposing or describing potential crop yield emulators include \citet{Howden2005, raisen2006, Lobell2010}, and \citet{Ferrise2011}.
@@ -221,20 +222,15 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
    \includegraphics[width=15cm]{figures/phase_II_em_figure_1.png}
    \caption{
 	   Example showing distinction between crop yield responses to year-to-year and climatological mean shifts in climate variables, for  
-    maize from the pDSSAT model in a representative high-yield region (nine adjacent grid cells in northern Iowa). 	\textbf{Left}: irrigated maize, all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and \textbf{right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%).
-		Open black circles mark climatological mean yields and bold black lines show a 3rd order polynomial fit through them. Colored lines show linear regressions through the 30 annual yields of each parameter case. Colored circles show annual yields for selected cases:
-	\textbf{left}: T+0 (blue) and T+6 K (red), and \textbf{right}: 
-	  W-50\% (brown) and W+30\% (green).
-	For temperature, responses to year-over-year fluctuations are very different from those to longer-term climate shifts: slope of colored and black lines differ. For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately tangent to black line -- but the both responses are highly nonlinear. 
-    \textcolor{red}{VERSION ERRROR XXXXXXXXXX  -----  XXXXXXXXXXXXX}
-    Example showing distinction between crop yield responses to year-to-year and climatological mean shifts in climate variables, for  
-    maize from the pDSSAT model in a representative high-yield region (nine adjacent grid cells in northern Iowa).
-    \textbf{Left}: irrigated maize, all temperature cases (T-1, +0, +1, +2, +3, +4, +6) with other variables held at baseline values, and \textbf{right}: rainfed maize, all precipitation cases (W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%).
-    Open black circles mark climatological mean yields and bold black lines show a 3rd order polynomial fit through them. Colored lines show linear regressions through the 30 annual yields of each parameter case. Colored circles show annual yields for selected cases:
-    \textbf{left}: T+0 (blue) and T+6 K (red), and \textbf{right}: W-50\% (brown) and W+50\% (green).
-    Maize and soy are more regular in temperature, wheat and rice are not. Precip is irregular in ever case as far as I can tell.
-    For temperature, responses to year-over-year fluctuations are very different from those to longer-term climate shifts for some crops: slope of colored and black lines differ. 
-    For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately the tangent of the black line -- but the climatological response is highly nonlinear. 
+    maize from the pDSSAT model in a representative high-yield region (nine adjacent grid cells in northern Iowa). 	\textbf{Left}: irrigated maize, all temperature cases % (T-1, +0, +1, +2, +3, +4, +6) 
+	with other variables held at baseline values, and \textbf{right}: rainfed maize, all precipitation cases. %(W -50\%, -30\%, -20\%, -10\%, W, +10\%, +20\%, +30\%).
+		Open black circles mark climatological mean yields and bold black lines show a 3rd order polynomial fit through them. Colored lines show linear regressions (by total least squares) through the 30 annual yields of each parameter case. Colored circles show annual yields for selected cases %.: \textbf{left}: T+0 (blue) and T+6 K (red), and \textbf{right}: W-50\% (brown) and W+30\% (green).
+	Responses to year-over-year fluctuations can be very different from those to longer-term climate shifts  -- slope of colored and black lines differ -- with differences generally stronger for wheat (bottom) than maize (top). 
+%	For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately tangent to black line -- but the both responses are highly nonlinear. 
+%        Maize and soy are more regular in temperature, wheat and rice are not. Precip is irregular in ever case as far as I can tell.
+%    For temperature, responses to year-over-year fluctuations are very different from those to longer-term climate shifts for some crops: slope of colored and black lines differ. 
+    %For precipitation, responses to year-over-year responses resemble those to climatological shifts -- colored lines are approximately the tangent of the black line -- but the climatological response is highly nonlinear. 
+    Note that in this representation, slope differences could result from a correlation between precipitation and temperature fluctuations in the baseline timeseries, which need not affect actual emulations. P-T correlation does not contribute to the differences shown here.
    }
    \label{fig:yearvclim}
 \end{figure*}
@@ -252,40 +248,37 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
 
 We emulate the climatological mean response, because that is the response of interest in assessments of climate change impacts. 
 The year-over-year response can be significantly different from the forced climatological one, so we do not use information from year-to-year variability but instead emulate the aggregated mean yield in each 30-year simulation. 
-Emulation then becomes relatively straightforward, since changes in these time-averaged yields are also considerably smoother than those in year-to-year yield response.
+Emulation then becomes relatively straightforward, since changes in time-averaged yields are also considerably smoother than those in year-to-year yield response.
 
 In the GGCMI Phase II simulation output dataset, year-over-year responses to weather can be quantitatively distinct from responses to climatological shifts. 
-The differences are especially significant for temperature for some crops, with yield fluctuations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
-This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated (left) and rainfed (right) maize in a representative location in Iowa and for winter wheat in France, with black lines and open circles showing the climatological mean responses and colored lines and solid circles those for the 30 individual years in selected scenarios. 
-Year-to-year temperature response for maize follows the mean climatological response in most cases. 
-In contrast, wheat does not ...
+This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated and rainfed maize and wheat in representative locations; open circles and black lines show the climatological mean response, and solid circles and colored lines the responses for the 30 individual years in individual scenarios.  
+%open circles and black lines show the climatological mean responses, and colored lines the responses for the 30 individual years in each scenario, and solid circles individual years in selected scenarios.  In general, 
+Year-over-year and climatological responses do not generally match, with the discrepancy especially strong in wheat and rice. When discrepancies are large, year-over-year responses are generally stronger than climatological ones, but exact responses differ by crop and region and even by model within GGCMI Phase II. 
+%The differences are especially significant for temperature for some crops, with yield fluctuations generally stronger in response to short-term temperature fluctuations than in response to changes in climatological means. 
+%Year-to-year temperature response for maize follows the mean climatological response in most cases. 
 
-The year-to-year response for precipitation never matches the climatological-mean response, with some crops in some areas being more sensitive to year-to-year precipitation changes than the  climatological mean change and other crops being less sensitive.
-The responses to precipitation changes for crops is highly nonlinear in general and become more severe with increasing dryness.
+%The year-to-year response for precipitation never matches the climatological-mean response, with some crops in some areas being more sensitive to year-to-year precipitation changes than the  climatological mean change and other crops being less sensitive.
 
 %This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated (left) and rainfed (right) maize in a representative location in Iowa, with black lines and open circles showing the climatological mean responses and colored lines and solid circles those for the 30 individual years in selected scenarios. Yields are three times as sensitive to year-over-year temperature fluctuations as they are to climatological  temperature shifts (1.9 vs.\ 0.6 tons ha$^{-1}$\ K$^{-1}$ in the baseline climate, Figure \ref{fig:yearvclim}, left). 
 %Both responses rise slightly at warmer temperatures.
 %Yield sensitivity to precipitation, on the other hand, is similar for both year-over-year and climatological changes (Figure \ref{fig:yearvclim}, right). 
 %Both responses are highly nonlinear and become more severe with increasing dryness. 
-\textcolor{red}{XX Should extend to a more general statement about GGCMI behavior.}
 
-While differences in year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model or lurking covariates, the most reasonable explanation is that the regressor here, mean growing-season temperature, does not fully describe the conditions that affect crop yields. That is, changes in growing-season temperature \textit{means}  may involve different changes in growing-season temperature \textit{distributions} in the forced and unforced cases \citep[e.g.][]{Ruane2016}. 
-
-This explanation is also consistent with the lack of difference in responses to precipitation perturbations across timescales.  
-While changes in temperature distributions can strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, those in precipitation distributions have less effect since crops respond not to rainfall but to soil moisture, which integrates on timescales of weeks or even months \citep[e.g.][]{potter2005effects}. 
+While differences between year-over-year and climatological temperature responses can arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. First, the mean growing-season value is only a proxy for the distribution of daily climatic conditions that crops are sensitive to.  Present-day variations in growing-season \textit{means} from year to year are associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates \citep[e.g.][]{Ruane2016}: a warm year at present may be quite different from a warm year in the future.
+Changes in temperature distributions have been shown to strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}. (Precipitation effects should be smaller since crops respond not to rainfall but to soil moisture, which integrates over weeks or even months \citep[e.g.][]{potter2005effects, Glotter14, CHALLINOR200499}.) 
 %\textcolor{red}{thisis one ref I found but it may not be the best reference and if we drop the claim of "weeks or even months" we can probably also do without a citation here...}
-Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. 
-The difference in responses also suggests that correlation between temperature and precipitation fluctuations does not play a major role. 
-\textcolor{red}{XX something about annual P-T correlation in the historical dataset used, the changes seem to be due to just temperature distributions.}
+%Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. 
+Second, any nonlinearity in crop responses will itself lead to a distinction between climatological and year-over-year fits, even if distributional differences are irrelevant. Given the natural year-over-year variations in baseline conditions, the mean response to a perturbation is then not the same as the response of the climatological mean. This effect may be particularly relevant for precipitation, since model crop responses to precipitation changes are highly nonlinear, with yields dropping steeply with increasing dryness. (Crop yields should drop under excess precipitation as well, but process-based models do not capture losses in saturated conditions well \citep[e.g.][]{Glotter15,Li2019}. 
+% here put the recent paper showing that models don't get damages in moist conditions
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
-\textcolor{red}{Will need to say something here in justification - how big are distributional changes in the 30-year series? How big are projected changes? Ziwei is calculating this}
-However, note that the nonlinearity of yield responses means that the spread in annual yield becomes wider in highly impacted climate states in GGCMI Phase II (Figure \ref{fig:yearly}), even though distributions of climate variables are unchanged.
+\textcolor{red}{The choice is reasonable, since climate model projections of changes in temperature distributions are small relative to existing year-to-year variations, and often inconsistent between models. XX examples from Ziwei, and something about year-over-year differences in the AgMERRA dataset XX}
+Note that even though distributions of climate variables are unchanged in the GGCMI Phase II simulations, the spread in annual yields becomes wider in highly impacted climate states  because of the nonlinearity of yield responses (Figure \ref{fig:yearly}). 
+Higher sensitivity in conditions of extreme climate stress produces greater year-to-year yield variance for all crops except rice, which is typically irrigated and experiences no water stress. \textcolor{red}{Check and explain more} 
 %\textcolor{red}{\cite{Urban2012} Urban et al here, maybe compare numbers?}
-For example, \cite{Urban2012} shows 20\% increase per degree K in variance in maize yields in the US under climate change.
-In the GGCMI simulations, higher sensitivity in conditions of extreme climate stress results in greater year-to-year variance in yields for all crops except rice, though we find inc 
+Similar results have been reported in other studies: for example, in a study of \textcolor{red}{explain}, \cite{Urban2012} shows 20\% increase per degree K in variance in U.S.\ maize yields under climate change.
 
-\textcolor{red}{UNSURE  - maybe move to discusssion XXXX - The climatological mean response often does not contain a downturn that is present in the year-to-year response for increased precipitation at the extremes... of which models are well know to underestimate \citep{Glotter15,Li2019}.}
+%\textcolor{red}{UNSURE  - maybe move to discusssion XXXX - The climatological mean response often does not contain a downturn that is present in the year-to-year response for increased precipitation at the extremes... of which models are well know to underestimate \citep{Glotter15,Li2019}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
