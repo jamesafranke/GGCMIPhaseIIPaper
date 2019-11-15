@@ -381,10 +381,9 @@ The lowest number of simulations emulated across the full parameter space is 120
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In the following section we present some illustrations of the yield response to drivers and measures of emulator performance. 
-In general, model emulation with the parametric method used here is only possible when the crop yield responses are sufficiently smooth and continuous to allow fitting with a relatively simple functional form, but this condition largely holds in the GGCMI Phase II simulations. 
-However, losses between the emulator and simulations are great enough to be problematic in certain cases, especially for models with limited sampling or in geographic locations where crops are currently not grown. 
-The errors between the simulation and the emulation are generally small compared to the difference across different crop models or across the response to different climate model inputs.
+In this section we show illustrations of the GCCMI models yield responses to climate perturbations, and evaluate metrics of emulator performance. 
+Model emulation with the parametric method used here requires that crop yield responses be sufficiently smooth and continuous to allow fitting with a relatively simple functional form; we demonstrate that this condition largely holds in the GGCMI Phase II simulations. Emulation errors -- discrepancies between emulation and simulation --  are generally small, especially when compared to the differences across crop models or climate model inputs.
+Emulation errors become problematic only in certain cases: in models that provide limited sampling of the GGCMI parameter space, and in some geographic locations where crops are currently not grown. 
 
 \subsection{Yield response}
 \begin{figure*}[ht]
@@ -408,14 +407,13 @@ The errors between the simulation and the emulation are generally small compared
 \centering
     \includegraphics[width=16cm]{figures/regression_example_1.png}
     \caption{
-    Illustration of spatial variations in yield response successfully captured by the emulator. 
-    Figures show rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
+    Illustration of spatial variations in yield response, which are successfully captured by the emulator. 
+    Panels show simulations and emulations of rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
     Legend includes hectares cultivated in each selected grid cell. 
     Each panel shows variation along a single variable, with others held at baseline values. 
     Dots show climatological mean yields and lines the results of the full 4D emulator of Equation \ref{eqn:features_original}. 
-    In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. 
-    Extrapolation can however produce misleading results. 
-    The rainfed maize response in north-central Ontario is shown for the PROMET model as a good example of an area where the emulator fails.
+    In general the climatological response surface is sufficiently smooth that it can be represented within the sampled variable space by the simple polynomial used in this work. In some cases extrapolation would produce misleading results, 
+    and the emulator fails in conditions where yield response changes abruptly. Failure is illustrated here by the rainfed maize response in north-central Ontario for the PROMET model, which shows present-day yields of zero rising abruptly if temperature warms by 4 degrees.
     }
    \label{fig:regression}
 \end{figure*}
@@ -424,43 +422,45 @@ The errors between the simulation and the emulation are generally small compared
 \centering
     \includegraphics[width=16cm]{figures/regression_example_2.png}
     \caption{
-    Illustration of across-model variations in yield response successfully captured by the emulator. 
-    Figures shows simulations and emulations from six models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
+    Illustration of variations in yield response across models, which are successfully captured by the emulator. 
+    Panels show simulations and emulations from six representative GGCMI models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
     Models that do not simulate the nitrogen dimension are omitted for clarity. 
-    Note that models are uncalibrated, increasing spread in absolute yields. 
-    While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial approach (e.g.\ LPJ-GUESS here) and lead to emulation error, though error generally remains small relative to inter-model uncertainty. 
+    Models are uncalibrated, producing spread in absolute yields. 
+	While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ LPJ-GUESS here, for all parameter dimensions). Resulting error generally remains small relative to differences across models. \textcolor{red}{Why is there no PROMET in Figure 6? Looks suspicious}
     }
    \label{fig:regression_2}
 \end{figure*}
 
-The emulator is able to successfully capture the spatial pattern of yields for a single simulation case and emulation errors are low in regions currently under cultivation (Figure \ref{fig:map_pattern}). 
-In this example, nearly all grid cells have errors below 0.5 tons ha$^{-1}$ for the baseline case. 
-However, emulation errors as a percentage of baseline yield do reach high values in some areas with no cultivation in the real world.
-Many of these regions are not currently viable for agriculture (and therefore have very low simulated baseline yields) and may never become viable even under extreme climate change.  
-Some differences in spatial skill exist across models and crops, with maize being the qualitatively easiest to emulate across all models.  
+Crop yields show strong spatial differentiation across geographic regions, and emulators are able to readily reproduce these.Figure \ref{fig:map_pattern} illustrates the spatial yield pattern under current climate for one crop and model (maize in LPJmL). Absolute emulation errors are low --  nearly all (99.8\%) of grid cells have errors below 0.5 tons ha$^{-1}$ -- but 
+emulation errors as a percentage of baseline yield can be large in areas with low potential yield and no current cultivation in the real world (e.g.\ the Sahara, Patagonia).
+These regions are not currently viable for agriculture and may never become viable even under extreme climate change.  
+Emulation spatial skill differs across models and crops, with maize being the qualitatively easiest to emulate across all models \textcolor{red}{and XX showing larger discrepancies outside currently cultivated areas}.  
 See Supplemental Figures SXX-SXX for more crop and model examples. 
 
-Yield responses to the four main drivers considered here (C, T, W, and N) are quite diverse across locations, crops, and models, but in most cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
-Geographic diversity is high within a single crop and model (Figure \ref{fig:regression}, rainfed maize in pDSSAT); this heterogeneity supports the choice of emulating at the grid cell level. 
-Yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations. 
-Crop yield responses generally follow similar functional forms across models, though with a spread in magnitude partly due to the lack of calibration. 
-Inter-model diversity for a single crop and location is also high (Figure \ref{fig:regression_2}, rainfed maize in northern Iowa, also shown in Figure \ref{fig:regression}). 
-Differences in response shape can lead to  differences in the fidelity of emulation, though comparison here is complicated by the different simulation experiment sampling regimes across models. 
-Note that models are most similar in their responses to temperature perturbations. 
+Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
+Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in t ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
+In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. Emulators do perform poorly in a few regions that involve discontinuous or irregulalr yield responses. This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 yield), but which shows an abrupt rise to moderate yields once temperature rise 4 degrees. Under these conditions, the 3rd order polynomial cannot fit the response, and errors are high. See Section \ref{XX} for additional discussion. 
+%Note that 
+%The emulator fails when the yield response has a discontinuity or is irregular in some regard. 
+%For example, some simulation models report no yield under current conditions (too cold) and continue to report no yield until a simulation case with a significant amount of warming. 
+%Under a warming of several degrees, agriculture is now viable in this model and non-zeros yields are returned (Figure \ref{fig:regression}, PROMET in gray). 
+%Barring simulation model errors, theses locations are almost exclusively confined to areas with little to no cultivation in the real world. 
+\textcolor{red}{Why not show PROMET for all in Figure 5? Looks weird to show two different models.}
 
-The emulator fails when the yield response has a discontinuity or is irregular in some regard. 
-For example, some simulation models report no yield under current conditions (too cold) and continue to report no yield until a simulation case with a significant amount of warming. 
-Under a warming of several degrees, agriculture is now viable in this model and non-zeros yields are returned (Figure \ref{fig:regression}, PROMET in gray). 
-Under these conditions, the 3rd order polynomial cannot fit the data, and errors are high. 
-Barring simulation model errors, theses locations are almost exclusively confined to areas with little to no cultivation in the real world. 
-This is quantified in more detail in the following section.
+Crop yield responses in all models generally follow similar functional forms at any given location, though with a spread in magnitude (Figure \ref{fig:regression_2}, which shows rainfed maize in northern Iowa in a selection of GGCMI models). Absolute yield differences between models can be substantial because models are uncalibrated.
+In general, models are most similar in their responses to temperature perturbations, and least similar to changes in CO$_2$. That is, CO$_2$ fertilization effects \textit{within} a single model are consistent across locations, but CO$_2$ effects differ strongly \textit{across} models. 
+%Inter-model diversity for a single crop and location is also high . 
+Differences in response shape can lead to some differences in the fidelity of emulation for different crop-model combinations; we evaluate these in more detail in the following section. 
+\textcolor{red}{?? commented out something confusing}
+% XX though comparison here is complicated by the different simulation experiment sampling regimes across models. 
+%This is quantified in more detail in the following section.
 
-While the nitrogen dimension is important, it is also the most troublesome to emulate in this work because of its limited sampling compared to other dimensions. 
-The GGCMI Phase II protocol specified three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
-Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels. 
-While it is possible that over-application of nitrogen at the wrong time in the growing period could lead to reduced yields, these relative strength of this feature is are potentially an artifact of the fit. 
-The Bayesian Ridge estimator (shown in Figure \ref{fig:regression}) tends to mitigate the `peak-decline effect' in the nitrogen dimension compared to ordinary least squares. 
-In addition, the polynomial fit cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
+Note that while the nitrogen dimension is important, it is also the most troublesome to emulate in this work because of its limited sampling compared to other dimensions. 
+The GGCMI Phase II protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
+Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels (Figure \ref{fig:regression_2}, right). 
+While reduced yields under high nitrogen levels are physically possible and could reflect over-application at particular times in the growing period, they are implausible at the magnitude shown here and likely an artifact of the fit. 
+The Bayesian Ridge estimator does mitigate the `peak-decline effect' in the nitrogen dimension relative to ordinary least squares, but does not entirely remove it. 
+The polynomial fit also cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 \subsection{Emulator performance metrics}
 \begin{figure*}[ht]
@@ -492,8 +492,9 @@ In addition, the polynomial fit cannot capture the well-documented saturation ef
    \label{fig:error}
 \end{figure*}
 
-Our emulators consist of nearly 3 million individual regressions, so presenting concise performance metrics poses a challenge.
-Additionally, no general agreed upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics: one operational and one more stringent. 
+Our emulators \textcolor{red}{each? collectively?} consist of nearly 3 million individual regressions, so developing concise performance metrics poses a challenge.
+No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics, one ``operational'' and one more stringent. 
+
 First, for a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
 Second, we show a standard out-of-sample cross-validation aggregate mean error for each model independent of the other members of the ensemble. 
 
