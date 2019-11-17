@@ -461,7 +461,7 @@ Note that while the nitrogen dimension is important, it is also the most trouble
 The GGCMI Phase II protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
 Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels (Figure \ref{fig:regression_2}, right). 
 While reduced yields under high nitrogen levels are physically possible and could reflect over-application at particular times in the growing period, they are implausible at the magnitude shown here and likely an artifact of the fit. 
-The Bayesian Ridge estimator does mitigate the `peak-decline effect' in the nitrogen dimension relative to ordinary least squares, but does not entirely remove it. 
+The Bayesian Ridge estimator mitigates the `peak-decline effect' in the nitrogen dimension relative to ordinary least squares, but does not entirely remove it. 
 The polynomial fit also cannot capture the well-documented saturation effect of nitrogen application \citep[e.g.][]{Torsten77} as accurately as would be possible with a non-parametric model. 
 
 \subsection{Emulator performance metrics}
@@ -495,42 +495,51 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 \end{figure*}
 
 Our emulators \textcolor{red}{each? collectively?} consist of nearly 3 million individual regressions, so developing concise performance metrics poses a challenge.
-No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics, one ``operational'' and one more stringent. 
+No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics, one relatively loose %``operational'' 
+and one more stringent. These are described in detail below. Both metrics assess the ability of the emulator to reproduce model output from the GGCMI Phase II experiment. In Section \ref{XX} we also demonstrate the emulator's ability to simulate a realistic projection of evolving climate. 
+%Second, we show a standard out-of-sample cross-validation aggregate mean error for each model independent of the other members of the ensemble. 
 
-First, for a multi-model comparison exercise like GGCMI Phase II, one reasonable criterion is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
-Second, we show a standard out-of-sample cross-validation aggregate mean error for each model independent of the other members of the ensemble. 
+\textit{1. Normalized error.} We take as our first metric what we term the ``normalized error'', which compares the fidelity of an emulator to the inter-model spread. 
+For a multi-model comparison exercise like GGCMI Phase II, a reasonable though loose emulator criterion is that its errors be small relative to intermodel deifferences. The normalized error $e$ is defined separately for each C,T,W,N scenario $s$ as the difference between emulated and simulated fractional yield changes, normalized by the standard deviation in simulated changes across all models: 
 
-For the first metric, we define the normalized error $e$ for each scenario. The normalized error $e$ is the difference between the emulated fractional change in yield and that actually simulated, normalized by the standard deviation in simulated fractional yield changes across all models for that scenario (Equations \ref{eqn:per_yield} and  \ref{eqn:error}). 
+%(Equations \ref{eqn:per_yield} and  \ref{eqn:error}). 
+%for a is to ask whether is what we term the ``normalized error'', which compares the fidelity of an emulator for a given model and scenario to the inter-model uncertainty. 
 
-\begin{equation}
-    \label{eqn:per_yield}
-    F_{\: scn.}= \frac{Y_{scn.}-Y_{baseline}}{Y_{baseline}}
-\end{equation}
 
-\begin{equation}
+\begin{align}
+    %\label{eqn:per_yield}
+	e_{\: s}\  = \ & \frac{F_{em, \: s}-F_{sim, \: s}}{\sigma_{sim, \: s}}
+	\intertext{where $F$ is the fractional change in yields $Y$ between scenario $s$ and baseline $b$:}
+	F_{\: s} \ = \ \frac{Y_{s}-Y_{b}}{Y_{b}}
     \label{eqn:error}
-    e_{\: scn.} = \frac{F_{em, \: scn.}-F_{sim, \: scn.}}{\sigma_{sim, \: scn.}}
-\end{equation}
+\end{align}
 
-Here $F_{\: scn.}$ is the fractional change in a model's mean emulated or simulated yield from the defined historical baseline, in a certain setting or scenario (scn.) in C, T, W, and N space; $Y_{scn.}$ and $Y_{baseline}$ are the absolute emulated or simulated mean yields. 
-The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (See Figure SX for number of simulations in each case). 
 
-A normalized error $e<1$ indicates that the emulator is closer to the simulation than 1 standard deviation of the simulations in that scenario.
-This metric implies that emulation is generally satisfactory, with almost all model-crop combination emulators have normalized errors less than one over nearly all currently cultivated hectares (Figure \ref{fig:error}, dark colors indicate good performance and light colors poor performance). 
-Exceptions include a few individual model-crop combinations, which are difficult to emulate with the polynomial used here including PROMET (as previously mentioned, see also Figure \ref{fig:regression}) for rice and soybean, JULES for soybean and spring wheat. 
-Problems with emulating PROMET for rice and soybean may have to do with the parametrization of the phenology for those crops which lengthens the growing season and simulated crop failures in some cases. 
-Another reasons why emulation can be problematic in some models has to do with a saturation in yield reduction under temperature increases that cannot be easily captured with the 3rd order fit.
-Emulator performance also often degrades in general in geographic locations where crops are not currently cultivated. 
-For example, emulator performance may be satisfactory over currently cultivated areas for all crops from a model, but uncultivated regions may show some problematic areas (Figure \ref{fig:error} shows a CARAIB model case, see also Figure SXX-SXX for other models).
+%The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (See Figure SX for number of simulations in each case). 
 
-The normalized error assessment procedure is relatively forgiving for several reasons. 
-First, each emulation is evaluated against the simulations actually used to train the emulator (in-sample validation). 
-Had we used a spline interpolation the error would necessarily be zero. 
-Second, the performance metric scales emulator fidelity not by the magnitude of yield changes but by the inter-model spread in those changes. 
-The normalized error $e$ for a model depends not only on the fidelity of its emulator in reproducing a given simulation but on the particular suite of models considered in the intercomparison exercise. 
-Where models differ more widely, the standard for emulators becomes less stringent. 
-For example, normalized errors for soybean are somewhat higher across all models not because emulator fidelity is worse but because models agree more closely on yield changes for soybean than for other crops (see Figure SXX), lowering the denominator.
-The rationale for this choice of assessment metric is to relate the fidelity of the emulation to an estimate of true uncertainty, which we take as the multi-model spread. 
+Evalution of this metric implies that GGCMI Phase II emulators are generally satisfactory. 
+We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error}. A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
+For maize, for example, XX of the 9 models produce $e < 1$ over XX\% of currently cultivated area. (LPJ-GUESS emulation is lowest in fidelity for maize, as previously shown in Figure \ref{fig:regression_2}, and produces XX.)  A few individual model-crop combinations are particularly problematic, including PROMET for soybeans and rice and JULES for soybeans and spring wheat. (See Figures \ref{XX} for more detailed examples). % XX -- I think uyou have to point to supp docs and show examples there of what these bad fits look like. Just versions of your previous figure 6 showing these cases that are worse than LPJ-GUESS. Show what the response curve looks like 
+In crop-model cases where performance is low, it tends to degrade most in the coldest and wettest scenarios, \textcolor{red}{suggesting that .... }
+Emulator performance will also be poor in cases where models show steep yield losses or complete crop failures, because losses that saturate cannot be captured with a 3rd order poynomial.  
+%Problems with emulating PROMET for rice and soybean may have to do with the parametrization of the phenology for those crops which lengthens the growing season and simulated crop failures in some cases. 
+%\textcolor{red}{ PROMET sentence was confusing and surely you can figure out which explanation holds there?}
+While Figure \ref{fig:error} shows only currently cultivated land, 
+performance can be worse in locations where crops are not currently cultivated, on marginal lans where potential yields are low. 
+Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area. Emulator performance can be poor ($e > 2$) in arid zones: the edges of the Sahara, the Near East,  S.\ Africa and Southern Australia. 
+See Figures SXX-SXX for analogous figures for all models.
+
+Note that our normalized error assessment is relatively forgiving for several reasons. First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
+Had we used a spline interpolation, the error would necessarily be zero. 
+(Our second metric involves evaluating on scenarios not included in the training set.)
+%; such an  out-of-sample test would necessarily produce higher $e$. 
+Second, the metric scales emulator fidelity not by the magnitude of yield changes in the evaluated model but by the spread in yield changes across models. 
+The normalized error $e$ for a given model then depends 
+%not only on the fidelity of its emulator in reproducing a given simulation but 
+on the particular suite of other models considered in the intercomparison exercise.  The rationale for the choice is to relate the fidelity of the emulation to the true uncertainty, which we take as the multi-model spread.  The metric then has the property that 
+where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
+In GGCMI Phase II the effect is manifested  in the higher normalized errors for soybeans across all models, which results not because soybean yields are difficult to emuilate but because models agree more closely on yield changes for soybeans than for the other crops. %, lowering the denominator.
+ 
 
 \begin{table*}[ht]
     \caption{
@@ -557,20 +566,26 @@ The rationale for this choice of assessment metric is to relate the fidelity of 
 \end{table*}
 
 
-We also provide a second, more stringent test of emulator performance: a four-fold cross validation (also termed out-of-sample validation). 
-In this test the training data is split and the model is trained on 75\% of the data and tested on the held out 25\%.
-The mean absolute error is the calculated between the emulated (predicted) and simulated (``ground truth'') values across all cases in the held out 25\% of the simulations. 
-The process is then repeated four times to cover all data in the training set. 
-Finally, we normalize the mean absolute error in each grid cell by dividing by the simulated yield in that grid cell in the baseline case (T+0, W+0, C=360, N=200) and report a single aggregated mean absolute error values that are weighted by area cultivation area in the real world. 
-Geographic locations with very low baseline yields are especially problematic in this metric because minor differences result in high percent errors. 
-For this reason we mask all areas with less that 0.1 ton ha$^{-1}$ in the baseline simulation. 
+\textit{2. Out-of-sample validation.}  We also provide a second, more stringent test of emulator performance via a four-fold cross validation (also termed an out-of-sample validation). 
+In this test the GGCMI Phase II dataset is split \textcolor{red}{randomly} into two parts, with 75\% of the data used to train the model and the held-out 25\% used to test the fidelity of the resulting emulator.
+%is trained on 75\% of the data and tested on the held-out 25\%, and
+We calculate the mean absolute error  between emulated (predicted) and actual simulated values across the test set, % (``ground truth'') values across the test set. %the held out 25\% of the simulations. 
+repeat the process four times so that test sets include all data \textcolor{red}{divided how?}, and average the results. 
+As a last step, we normalize the mean absolute error in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
+Geographic locations with very low baseline yields are especially problematic in this metric because minor disparities result in high fractional errors. 
+For this reason we mask all areas with less that 0.1 ton ha$^{-1}$ baseline yields. We do not compare to yield \textit{changes}; for more detailed potential evaluation metrics see e.g.\ \cite{Castruccio2014}.
+Note that one aspect of this test can lead to increased errors and is not representative of the intended use of the emulator. The simple randomized sampling protocol for dividing training and test sets can mean that the training set omits edge simulations (those at the highest or lowest value of CTWN space). 
+%Note that under the conditions of this test, the training set often does not include edge simulations (i.e. those at the highest or lowest value in that dimension).
+The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
+In this sense the metric is overly conservative, i.e.\ should lead to higher values than under a more realistic sampling strategy. 
+%Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
 
-Errors are generally low as a percentage of yield, even for this relatively strict protocol, below 5\% of baseline yield for most crop model combinations (Table \ref{table:ASE}).
-The notable exceptions are the JULES model for soybean and spring wheat and the PROMET model for soybean, rice, and the wheats as was seen before in the previous performance metric.
-Note that under the conditions of this test, the training set often does not include edge simulations (i.e. those at the highest or lowest value in that dimension).
-Predictions in the test phase are therefore extrapolating out to these edge values (e.g.\ predicted a T+6 case that was not included in the training set).
-Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
-Maps showing the spatial patterns of errors can seen in supplemental Figures SXX-SXX. 
+
+The resulting error metric is generally low as a percentage of yield. %, even for this relatively strict protocol.
+Table \ref{table:ASE} shows mean \textcolor{red}{absolute} error by this metric over currently cultivated land for each model-crop combination. Means are weighted by cultivated area \textcolor{red}{and include all simulations in CTWN space}. 
+Values are below 2\% of baseline yield for half of all model-crop combinations, and below 5\% for all but  
+ six problematic combinations, highlighted in bold. These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for soybeans and rice) but now also PROMET for both wheats. \textcolor{red}{Why did PROMET wheat not show up in previous figure?}
+Errors are \textcolor{red}{say something about spatial pattern}; see supplemental Figures SXX-SXX for maps. \textcolor{red}{Concluding statement.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
