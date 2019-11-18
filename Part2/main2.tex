@@ -3,7 +3,7 @@
 \definecolor{dark-gray}{gray}{0.55}
 
 \begin{document}
-\title{The GGCMI CTWN emulators (version 1.0): global gridded emulators of crop model responses to changes in CO$_2$, Temperature, Nitrogen, and Water}
+\title{The GGCMI phase II emulators: global gridded crop model responses to changes in CO$_2$, temperature, water, and nitrogen (version 1.0)}
 
 \Author[1,2]{James}{Franke}
 \Author[3]{Christoph}{M\"{u}ller}
@@ -68,7 +68,6 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-%\textcolor{red}{
 Statistical emulation of process-based crop models provides the opportunity to combine advantageous features of statistical and process-based crop models.  
 The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development across four dimensions: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). 
 These training datasets are available for two contrasting assumptions on growing season adaption (A): fixed growing seasons (through adaptation in cultivar choice) and growing seasons shortening in warmer climates (assuming no adaptation in cultivar choice).
@@ -77,7 +76,6 @@ After presenting the rationale and technical implementation of the emulator cons
 %The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
 The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
 The crop model emulators presented here should therefore facilitate both model comparison and integrated assessment of climate impacts.
-%}
 \end{abstract}
 
 %\copyrightstatement{TEXT}
@@ -92,11 +90,9 @@ Statistical crop models can only capture crop responses under the range of curre
 Both types of models are routinely used, and comparative studies have concluded that when done carefully, both approaches can provide similar yield estimates \citep[e.g.][]{Lobell2010, Moore2017, Roberts2017, zhao2017,liu2016similar}. 
 
 Statistical emulation allows combining some of the advantageous features of both statistical and process-based models.
-%Crop model emulators allow representing process-based crop model responses in a computationally-inexpensive form appropriate for economic assessments, and assist in crop model intercomparison and improvement efforts.
 The approach involves constructing a ``surrogate model'' of numerical simulations by using their output as training data for a statistical representation \citep[e.g.][]{OHAGAN2006, OHAGAN2010}. 
 Emulation is particularly useful in cases where simulations are complex and output data volumes are large, and has been used in a variety of fields, including hydrology \citep[e.g.][]{Razavi2012}, engineering \citep[e.g.][]{STORLIE2009}, environmental sciences \citep[e.g.][]{RATTO2012}, and climate \citep[e.g.][]{Castruccio14, Holden2014}. 
 For agricultural impacts studies, emulation of process-based models allows capturing key relationships between input variables in a lightweight, flexible form that is compatible with economic studies. 
-%Crop model emulation 
 The resultant statistical model can produce yield projections under arbitrary emissions scenarios and is an important diagnostic tool for model comparison and model evaluation.
 
 Interest is rising in applying statistical emulation to crop models, and multiple studies have developed crop model emulators in the past decade.
@@ -124,9 +120,6 @@ All studies have some limitations, however, for assessing global agricultural im
 None of the 2018 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
 Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
-%analyzes four crops (maize, wheat, rice, soybean) based on an unevenly distributed sample of sites and crop models \citep{mcdermid2015agmip}.
-% it's based on many crop models if I'm not mistaken. 
-% but only in one crop model (GCAM) \citep{calvin2019}.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
 GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, and applied nitrogen (CTWN). 
@@ -242,7 +235,8 @@ Models provide global output at 0.5 degree latitude and longitude resolution for
    \caption{
    Example showing results of increased crop yield sensitivity to year-over-year climate variations under climate stress. 
 	Yield distributions are from examples of Figure \ref{fig:yearvclim}, top row, of maize in Iowa, (\textbf{left}) for irrigated maize in scenarios of altered temperature and (\textbf{right}) for rainfed maize in scenarios of altered precipitation.
-	Because yield sensitivities rise under strong warming or drying, distributions of year-over-year crop yields widen in T+6  and P-50\% scenarios relative to present-day simulations, even though all input climate timeseries have identical variance. \textcolor{red}{But precip actually does have greater variance since perturbations are fractional.}  }
+	Because yield sensitivities rise under strong warming or drying, distributions of year-over-year crop yields widen in T+6  and P-50\% scenarios relative to present-day simulations, even though all input climate timeseries have identical variance for temperature. Note: precipitation changes have different variance since the perturbations are fractional.  
+    }
    \label{fig:yearly}
 \end{figure*}
 
@@ -274,11 +268,11 @@ Second, any nonlinearity in crop responses will itself lead to a distinction bet
 % here put the recent paper showing that models don't get damages in moist conditions
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
-The choice is reasonable, since climate model projections of changes in temperature distributions are small relative to existing year-to-year variations, and often inconsistent between models. \textcolor{red}{XX examples from Ziwei, and compare to year-over-year differences in AgMERRA XX...  we have a supdoc figure here...}
+The choice is reasonable, since climate model projections of changes in temperature distributions are small relative to existing year-to-year variations, and often inconsistent between models.
+See supplementa
 Note that even though distributions of climate variables are unchanged in the GGCMI Phase II simulations, the spread in annual yields becomes wider in highly impacted climate states  because of the nonlinearity of yield responses (Figure \ref{fig:yearly}). 
-Higher sensitivity in conditions of extreme climate stress produces greater year-to-year yield variance for all crops except rice, which is typically irrigated and experiences no water stress. \textcolor{red}{Check and explain more} 
-%\textcolor{red}{\cite{Urban2012} Urban et al here, maybe compare numbers?}
-Similar results have been reported in other studies: for example, in a study of \textcolor{red}{explain}, \cite{Urban2012} shows 20\% increase per degree K in variance in U.S.\ maize yields under climate change.
+Higher sensitivity in conditions of extreme climate stress produces greater year-to-year yield variance for all crops except rice, which is typically irrigated and experiences no water stress.
+Similar results have been reported in other studies: for example, in a study of statistical models projecting with a variety of climate models, \cite{Urban2012} shows 20\% increase per degree K in variance in U.S.\ maize yields under climate change.
 
 %\textcolor{red}{UNSURE  - maybe move to discusssion XXXX - The climatological mean response often does not contain a downturn that is present in the year-to-year response for increased precipitation at the extremes... of which models are well know to underestimate \citep{Glotter15,Li2019}.}
 
@@ -304,21 +298,21 @@ Interaction terms are needed since the yield response is expected to depend on i
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}. 
 
-A full third order polynomial with interaction terms for the four regressors (CTWN) has 34 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
-We therefore reduce the number of free parameters through a feature selection process (discussed in detail below), eliminating 11 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
+A full third order polynomial with interaction terms for the four regressors (CTWN) has 35 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
+We therefore reduce the number of free parameters through a feature selection process (discussed in detail below), eliminating 12 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
 The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 \begin{align}
     \label{eqn:features_original}
     Y\ = \ & K_{1}  \\
-    + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N   \nonumber \\
-    + \ & K_{6} C^2   + K_{7} T^2    + K_{8} W^2    + K_{9} N^2 \nonumber \\
-    + \ & K_{10} C W  + K_{11} C N   + K_{12} T W   + K_{13} T N \nonumber \\
-    + \ & K_{14} W N  +{\color{dark-gray}K_{a} C T} + K_{15} T^3  + K_{16} W^3  + {\color{dark-gray}K_{b} C^3} \nonumber \\
-    + \ & {\color{dark-gray}K_{c} N^3} + K_{17} T W N + K_{18} T^2 W + K_{19} W^2 T \nonumber \\
-    + \ & K_{20} W^2 N + {\color{dark-gray}K_{d} C W N} + {\color{dark-gray}K_{e} C T N} + K_{21} N^2 C \nonumber \\
-    + \ & K_{22} N^2 T + K_{23} N^2 W + {\color{dark-gray}K_{f} T^2 N} + {\color{dark-gray}K_{g} T^2 C}  \nonumber \\
-    + \ & {\color{dark-gray}K_{h} W^2 C} + {\color{dark-gray}K_{i} C^2 W} + {\color{dark-gray}K_{j} C^2 T} + {\color{dark-gray}K_{k} C^2 N} \nonumber
+    + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N  + K_{6} C^2 \nonumber \\
+    + \ & K_{7} T^2    + K_{8} W^2    + K_{9} N^2 + K_{10} C W \nonumber \\
+    + \ & K_{11} C N   + K_{12} T W   + K_{13} T N + K_{14} W N \nonumber \\
+    + \ & {\color{dark-gray}K_{a} C T} + K_{15} T^3  + K_{16} W^3  + {\color{dark-gray}K_{b} C^3} + {\color{dark-gray}K_{c} N^3}\nonumber \\
+    + \ & K_{17} T W N + K_{18} T^2 W + K_{19} W^2 + K_{20} W^2 N  \nonumber \\
+    + \ & {\color{dark-gray}K_{d} C W N} + {\color{dark-gray}K_{e} C T N} + {\color{dark-gray}K_{f} C T N} + K_{21} N^2 C \nonumber \\
+    + \ & K_{22} N^2 T + K_{23} N^2 W + {\color{dark-gray}K_{g} T^2 N} + {\color{dark-gray}K_{h} T^2 C}  \nonumber \\
+    + \ & {\color{dark-gray}K_{i} W^2 C} + {\color{dark-gray}K_{j} C^2 W} + {\color{dark-gray}K_{k} C^2 T} + {\color{dark-gray}K_{l} C^2 N} \nonumber
 \end{align}
 
 We do not focus in this study on comparing different functional forms or non-parametric models.
@@ -339,17 +333,15 @@ Since the goal of the emulator is interpolation within the sample space and not 
 
 \begin{figure*}[ht]
 \centering
-   \includegraphics[width=12cm]{figures/model_select_maize_rice.png}
+   \includegraphics[width=16.3cm]{figures/model_select_maize_rice.png}
 	\caption{
-    Illustration of results from the polynomial feature selection process for three different crop models (colors), for \textcolor{red}{global?} maize (\textbf{left}) and rice (\textbf{right}). 
-    Solid lines are Bayesian Ridge regression results and dashed lines those for standard OLS. Rows show four metrics of fit quality and x axes the terms successively tested in the statistical model, in order from left to right.
-    Terms that do not reduce the aggregate error are \textcolor{red}{explain and/or mark} not used in the final model. 
-    \textbf{Top:} log mean absolute error between emulated yield and simulated values calculated with a three fold cross validation process, where the emulator is trained on two thirds of the data and predicts the remaining third.
-    \textbf{Second:} adjusted R$^2$ score for the fit at each model specification. 
-    \textbf{Third:} log mean standard parameter error. The Bayesian Ridge method strongly reduces parameter error and results in more stable estimates. 
-    \textbf{Fourth and fifth}: distribution of the residuals. 
-   %The X- axis indicates terms included in the model at each step progressively where T = temperature, T2 = temperature$^{2}$, TW  = temperature * water and so on. 
-   \textcolor{red}{Bigger font, and ideally swap 2nd and 3rd rows to match order of discussion in text.}
+    Illustration of results from the polynomial feature selection process for three different crop models (colors), for all grid cells with more than 1000 ha cultivated for maize (\textbf{left}) and rice (\textbf{right}). 
+    Solid lines are Bayesian Ridge regression results and dashed lines those for standard OLS. Rows show four metrics of fit quality and x axes the terms successively tested in the statistical model, sequentially added to the model in order from left to right.
+    Terms that do not reduce the aggregate error are marked in {\color{dark-gray} gray} are not included in the final model. 
+    \textbf{a. \& b.:} log mean absolute error between emulated yield and simulated values calculated with a three fold cross validation process, where the emulator is trained on two thirds of the data and predicts the remaining third.
+    \textbf{c. \& d.:} adjusted R$^2$ score for the fit at each model specification. 
+    \textbf{e. \& f.:} log mean standard parameter error. The Bayesian Ridge method strongly reduces parameter error and results in more stable estimates. 
+    \textbf{g. \& h.:} distribution of the residuals.  
 	}
    \label{fig:features}
 \end{figure*}
@@ -399,12 +391,12 @@ Emulation errors become problematic only in certain cases: in models that provid
     Illustration of spatial pattern in baseline yield successfully captured by the emulator.
     Simulated (\textbf{a.}) and emulated (\textbf{b.}) yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
     Absolute yield differences (\textbf{c.}) are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
-    Percent difference (from simulated baseline, \textbf{c.}) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
+    Percent difference (from simulated baseline, \textbf{d.}) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
     Approximately 7\% of grid cells have errors over 20\% different from baseline, but only 3\% of grid cells with current cultivation \citep{Portmann2010} have errors over 20\%.
     Notable exceptions include areas with very low baseline yield in the simulations including, for example, the Sahara, the Andes, and northern Quebec. 
     Percent error weighted by cultivation area globally is essentially zero (see also Table \ref{table:ASE}).
     Performance varies by crop and model. 
-    See Supplementary Online Material for more examples.
+    See Supplementary Material for more examples.
     }
    \label{fig:map_pattern}
 \end{figure*}
@@ -430,9 +422,9 @@ Emulation errors become problematic only in certain cases: in models that provid
     \caption{
     Illustration of variations in yield response across models, which are successfully captured by the emulator. 
     Panels show simulations and emulations from six representative GGCMI models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
-    Models that do not simulate the nitrogen dimension are omitted for clarity. 
+    Three models (PROMET, JULES, and CARAIBN) that do not simulate the nitrogen dimension are omitted for clarity. 
     Models are uncalibrated, producing spread in absolute yields. 
-	While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ LPJ-GUESS here, for all parameter dimensions). Resulting error generally remains small relative to differences across models. \textcolor{red}{Why is there no PROMET in Figure 6? Looks suspicious}
+	While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ LPJ-GUESS here, for all parameter dimensions). Resulting error generally remains small relative to differences across models.
     }
    \label{fig:regression_2}
 \end{figure*}
@@ -593,6 +585,29 @@ Values are below 2\% of baseline yield for half of all model-crop combinations, 
 These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for soybeans and rice) but now also PROMET for both wheats. \textcolor{red}{Why did PROMET wheat not show up in previous figure?}
 Errors are \textcolor{red}{say something about spatial pattern}; see supplemental Figures SXX-SXX for maps. \textcolor{red}{Concluding statement.}
 
+
+\textit{3. Climate RCP validation.}
+The emulator constructed from the GGCMI perturbed mean training set can reliably reproduce a realistic RCP climate scenario (Figure \ref{fig:lpjmlrcp}). 
+This suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change.
+The HADGEM2-ES climate model \citep{Jones2011h} shows comparably standard variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX.)
+\textcolor{red}{we show absolute global production to illustrate the impact of differences in baseline climate between AgMERRA and HADGEM2-ES...}
+The growing season used for calculating the temperature and precipitation changes in the climate model run in especially important here because growing seasons vary dynamically in models based on temperature. 
+In the case shown here, using the growing seasons from the baseline GGCMI Phase II simulations provides the best result because the emulator implicitly includes the model response to changing growing season. 
+If the growing season from the RCP crop model is utilized (an unrealistic use-case because these simulations do not exist for every possible emulator application) you are likely to over- or under-estimate the growing season temperature or precipitation changes depending on the seasonality of weather in the growing season. 
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.5cm]{figures/LPJMLRCP85comp.png}
+  \caption{
+  Simulated global production (black) and emulated global production (red) for four crops from the LPJmL model. 
+  Points show yearly global production values and lines show spline fit.
+  Both simulation and emulation are driven with temperature and precipitation outputs from the HADGEM2-ES climate model \citep{Jones2011h} for RCP 8.5 with Nitrogen and CO$_2$ held fixed.
+  The emulator trained on uniform climatological offset simulation outputs is able to capture the general response of the transient climate run in most cases. 
+  Notable exceptions include low simulated production maize for some years in the 1980s, overestimated historical rice, and a persistent low bias for emulated spring wheat.
+  }
+  \label{fig:lpjmlrcp}
+\end{figure*}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator results and products}
@@ -616,29 +631,8 @@ On the other side, muted responses include soybean, an efficient atmospheric nit
   \label{fig:all_dims}
 \end{figure*}
 
-\begin{figure*}[ht]
-  \centering
-  \includegraphics[width = 16.5cm]{figures/LPJMLRCP85comp.png}
-  \caption{
-  Simulated global production (black) and emulated global production (red) for four crops from the LPJmL model. 
-  Points show yearly global production values and lines show spline fit.
-  Both simulation and emulation are driven with temperature and precipitation outputs from the HADGEM2-ES climate model \citep{Jones2011h} for RCP 8.5 with Nitrogen and CO$_2$ held fixed.
-  The emulator trained on uniform climatological offset simulation outputs is able to capture the general response of the transient climate run in most cases. 
-  Notable exceptions include low simulated production maize for some years in the 1980s, overestimated historical rice, and a persistent low bias for emulated spring wheat.
-  }
-  \label{fig:lpjmlrcp}
-\end{figure*}
-
 Note that these functions are presented here in Figure \ref{fig:all_dims} only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g][]{Sippel2015}. 
-The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude.
-
-The emulator constructed from the GGCMI perturbed mean training set can reliably reproduce a realistic RCP climate scenario (Figure \ref{fig:lpjmlrcp}). 
-This suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change.
-The HADGEM2-ES climate model \citep{Jones2011h} shows comparably standard variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX.)
-\textcolor{red}{we show absolute global production to illustrate the impact of differences in baseline climate between AgMERRA and HADGEM2-ES...}
-The growing season used for calculating the temperature and precipitation changes in the climate model run in especially important here because growing seasons vary dynamically in models based on temperature. 
-In the case shown here, using the growing seasons from the baseline GGCMI Phase II simulations provides the best result because the emulator implicitly includes the model response to changing growing season. 
-If the growing season from the RCP crop model is utilized (an unrealistic use-case because these simulations do not exist for every possible emulator application) you are likely to over- or under-estimate the growing season temperature or precipitation changes depending on the seasonality of weather in the growing season.  
+The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude. 
 
 \begin{figure*}[ht]
     \centering
@@ -660,7 +654,8 @@ If the growing season from the RCP crop model is utilized (an unrealistic use-ca
 \end{figure*}
 
 The emulator can also be used for investigating the contributions of the different major climate drivers to production outcomes as it can project many different climate scenarios or models quickly.
-The emulated crop model yield responses to a high-end climate change scenario (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 5 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale. See supplemental Figures SXX for a winter wheat example.
+The emulated crop model yield responses to a high-end climate change scenario (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 5 climate models from the CMIP-5 archive \citep{Taylor2012} at the decadal scale. 
+See supplemental Figures SXX for a winter wheat example.
 
 The differences between the emulation and the simulations for a uniform T shift are small compared to the differences across different crop models.
 PROMET, the quantitatively most difficult model to emulate for maize is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
@@ -750,31 +745,6 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{table*}[ht]
-    \caption{
-    Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
-    A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
-    The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-    The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
-    * Indicates cases where the OLS linear model fails.
-    } 
-    \label{table:ASE}
-    \begin{tabular}{l | c | c | c | c | c} 
-        \hline
-        \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soybean (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
-        \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
-        \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
-        \textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
-        \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
-        \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
-        \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
-        \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
-        \textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
-        \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
-    \end{tabular}
-\end{table*}
 
 
 
