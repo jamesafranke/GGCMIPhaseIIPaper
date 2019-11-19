@@ -347,8 +347,7 @@ Implications of this choice include that nitrogen interactions are complex and i
 
 \subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91} rather than standard ordinary least squares (OLS). 
-The Bayesian Ridge method reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero, allowing 
-and use of a consistent functional form across all models and locations. 
+The Bayesian Ridge method reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero, allowing the use of a consistent functional form across all models and locations. 
 The choice slightly reduces mean absolute error for some of the high-order interaction terms in the model (Figure \ref{fig:features}, top row) but drastically reduces standard parameter error in the model by stabilizing the estimates (Figure \ref{fig:features}, third row).
 The estimation method scores relatively lower on adjusted $R^2$ for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study. We use adjusted $R^2$ as a metric because additional terms are penalized (Equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features): 
 \begin{equation}
