@@ -188,8 +188,7 @@ Table \ref{table:models} shows the participating models and the number of simula
 See Table \ref{table:inputs} for all values associated with each dimension; we sample across all parameter combinations.
 
 These simulations are repeated for two adaptation scenarios: ``A0'' simulations assume no adaptation in cultivar choice, so that growing seasons shorten in warmer climates, while ``A1'' simulations assume that adaptation in cultivar choice maintains fixed growing seasons. 
-The complete protocol for each modeling group involves up to 43,524 years of global simulated output for each crop.  
-% (4*7*9*3+4*6*9*3)*31, irrigation is one element in W and does not doublicate the full CTWN set. A1 has one element in T less (T=0)
+The complete protocol for each modeling group involves up to 43,524 years of global simulated output for each crop. 
 Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest recommended level of participation consisting of 20\% of the maximum possible simulations; the mean participation level is 65\%. 
 Three models (APSIM-UGOE, EPIC-IIASA, and ORCHIDEE-crop) that contributed data to the CTWN-A experiment \citep{Franke2019a} below this recommended threshold (providing samples under 5\% of the full protocol) could not be robustly emulated with the method described here and so are excluded here.
 
@@ -259,9 +258,9 @@ The effect of nonlinearity may be particularly relevant for precipitation, since
 (Crop yields should drop under excess precipitation as well, but process-based models do not capture losses in saturated conditions well \citep[e.g.][]{Glotter15,Li2019}.) 
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
-\textcolor{red}{The choice is reasonable, since climate model projections of changes in temperature distributions are small relative to existing year-to-year variations}, and often inconsistent between models.}
+\textcolor{red}{The choice is reasonable, since climate model projections of changes in temperature distributions are small relative to existing year-to-year variations, and often inconsistent between models.}
 Temperature variability within the growing season can change significantly in climate model projections. (See supplemental Figure SXX for example variability change under climate change for some example climate models).
-
+At the climatological-mean timescale, the mean changes in temperature and precipitation are sufficient to explain the mean response.
 We test the validity of this assumption in Section \ref{S:4.3}.
 
 Note that even though distributions of climate variables are unchanged in the GGCMI Phase II simulations, the spread in annual yields becomes wider in highly impacted climate states  because of the nonlinearity of yield responses (Figure \ref{fig:yearly}). 
@@ -584,7 +583,7 @@ Errors are spatially heterogeneous. See supplemental Figures SXX-SXX for maps.
 \textit{3. Climate RCP validation.}
 \label{S:4.3}
 Finally, we test the ability of the emulator to reproduce a crop model response driven by an evolving climate scenario.
-We chose a climate model (HADGEM2-ES \citep{Jones2011}) with relatively high variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX).
+We chose a climate model (HADGEM2-ES \citep{Jones2011h}) with relatively high variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX).
 We simulate the LPJmL crop model directly using the climate model outputs and then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output.
 
 The emulator constructed from the GGCMI perturbed mean training set can reliably reproduce a realistic RCP climate scenario (Figure \ref{fig:lpjmlrcp}). 
@@ -596,8 +595,9 @@ The three potential causes for remaining differences are as follows.
 First, the growing season used for calculating the temperature and precipitation changes in the climate model run in especially important here because growing seasons vary dynamically in models based on temperature. 
 In the case shown here, using the growing seasons from the baseline GGCMI Phase II simulations provides the best result because the emulator implicitly includes the crop model response to changing growing season. 
 If the growing season from the RCP crop model is utilized (an unrealistic use-case because these simulations do not exist for every possible emulator application) you are likely to over- or under-estimate the growing season temperature or precipitation changes depending on the seasonality of weather in the growing season. 
-Second, the baseline climate product used do not exactly match. In the Phase 
-Third, 
+Second, the baseline climate product used in each case have different precipitation and temperature representations including potentially important differences in distributions in the historical P and T. 
+This is likely the cause of the historical bias in rice in Figure \ref{fig:lpjmlrcp}. 
+Third, missed relevant changes in distributions in precipitation and temperature at the climatological-mean timescale.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -622,7 +622,6 @@ In general, across model spread is qualitatively similar across different crops 
 Model spread is highest for spring wheat in general across all dimensions.
 Maize has a muted response to CO$_2$ as a C4 plant, and the impacts of temperature are most consistent for soybeans (see also Figure \ref{fig:error_360}).
 Increased precipitation does little to increase global production for all crops except spring wheat, and rice is not generally grown in water-limited conditions so it shows the weakest response to changes in precipitation.
-%However, large increases in precipitation may cause yield losses that are not well-captured by current process-based crop models \citep{Glotter15,Li2019}.
 The nitrogen response is relatively consistent across crops, with most models showing saturation at values less that 200 kg ha$^{-1}$, except for soybeans, an efficient atmospheric nitrogen-fixer.
 
 Note that these functions are presented here in Figure \ref{fig:all_dims} only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g][]{Sippel2015}. 
