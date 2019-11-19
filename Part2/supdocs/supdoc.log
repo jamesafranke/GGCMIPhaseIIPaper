@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 MAR 2019 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 NOV 2019 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.tex
+**supdoc.tex
+(./supdoc.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -22,17 +22,22 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -47,16 +52,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
@@ -297,6 +305,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
@@ -337,6 +346,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
@@ -360,7 +370,8 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \c@tracingmulticols=\count90
 \mult@box=\box26
@@ -408,14 +419,16 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 \mc@col@check@num=\count98
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen120
 \lightrulewidth=\dimen121
@@ -434,9 +447,11 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count101
 \@lastruleclass=\count102
 \@thisrulewidth=\dimen132
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/local
-/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2017/05/13 L3 programming layer (loader) 
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2017/05/13 L3 programming layer (code)
 \c_max_int=\count103
@@ -532,11 +547,13 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen161
 \l__coffin_scaled_total_height_dim=\dimen162
 \l__coffin_scaled_width_dim=\dimen163
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count138
 \l__driver_tmp_box=\box67
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2017/05/13 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count139
 \g__xparse_grabber_int=\count140
@@ -545,21 +562,24 @@ Package: xparse 2017/05/13 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count143
 )
 Package: siunitx 2017/05/19 v2.7g A comprehensive (SI) units package
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen164
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen165
 \extrarowheight=\dimen166
 \NC@list=\toks20
 \extratabsurround=\skip51
 \backup@length=\skip52
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
-y
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box68
@@ -722,22 +742,25 @@ Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
 Package: translator 2010/06/12 ver 1.10
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translator-lang
-uage-mappings.tex))) (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbi
-b.sty
+uage-mappings.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip57
 \bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count161
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count162
 \float@exts=\toks21
 \float@box=\box75
 \@float@everytoks=\toks22
 \@floatcapt=\box76
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
@@ -751,7 +774,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count163
 Package caption Info: float package is loaded.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count164
 \output=\toks23
@@ -768,14 +792,17 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframesep=\dimen190
 \bframebox=\box77
 LaTeX Info: Redefining \\ on input line 3056.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip59
+
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen191
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count171
@@ -815,11 +842,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \fancy@headwidth=\skip62
 \f@ncyO@elh=\skip63
@@ -830,24 +860,31 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@erf=\skip68
 \f@ncyO@olf=\skip69
 \f@ncyO@orf=\skip70
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count183
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip71
 \subfigcapskip=\skip72
@@ -859,28 +896,35 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \c@lofdepth=\count185
 \c@subtable=\count186
 \c@lotdepth=\count187
+
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip75
 \subfig@bottom=\skip76
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen257
 \Gin@req@width=\dimen258
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks28
 \thm@bodyfont=\toks29
@@ -891,8 +935,10 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip78
 \thm@headsep=\skip79
 \dth@everypar=\toks33
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/blindtext/blindtext.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -914,9 +960,11 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count269
 \c@blind@pangramcount=\count270
 \c@blind@pangrammax=\count271
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/hhline.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/arydshln/arydshln.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/arydshln/arydshln.sty
 Package: arydshln 2016/04/28 v1.73 
 \dashlinedash=\dimen259
 \dashlinegap=\dimen260
@@ -938,16 +986,20 @@ Package: arydshln 2016/04/28 v1.73
 \adl@clb=\count281
 \adl@everyvbox=\toks34
 \adl@LTpagetotal=\dimen266
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks35
 \verbatim@line=\toks36
 \verbatim@in@stream=\read2
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
 Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
 
 Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
@@ -963,7 +1015,8 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@cntb=\count284
 \multirow@dima=\skip81
 \bigstrutjot=\dimen267
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 
@@ -972,33 +1025,54 @@ No file ../PhaseIIPaper/main.aux
 LABELS NOT IMPORTED.
  on input line 25.
 
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux
+(./supdoc.aux
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
-
-
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:pdssatrmse' multiply defined.
 
 
-LaTeX Warning: Label `fig:maizeCG' multiply defined.
+LaTeX Warning: Label `fig:pdssatrmseirr' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmse' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmseirr' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmse' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmseirr' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmse' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmseirr' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmse' multiply defined.
+
+
+LaTeX Warning: Label `fig:pdssatrmseirr' multiply defined.
 
 )
 \openout1 = `supdoc.aux'.
@@ -1015,6 +1089,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1133,7 +1208,7 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count285
 \scratchdimen=\dimen268
@@ -1149,6 +1224,7 @@ Package caption Info: End \AtBeginDocument code.
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
+
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -1157,16 +1233,22 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
@@ -1180,6 +1262,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
@@ -1191,362 +1274,367 @@ LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count292
-[1
+ [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <s_crop
-area_irr.png, id=11, 261.778pt x 490.9542pt>
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<s_croparea_irr.png, id=10, 261.778pt x 490.9542pt>
 File: s_croparea_irr.png Graphic file (type png)
-<use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 107.
+ <use s_croparea_irr.png>
+Package pdftex.def Info: s_croparea_irr.png used on input line 57.
 (pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
-<s_croparea.png, id=13, 262.9022pt x 492.0784pt>
+
+<s_croparea.png, id=12, 262.9022pt x 492.0784pt>
 File: s_croparea.png Graphic file (type png)
-<use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 116.
+ <use s_croparea.png>
+Package pdftex.def Info: s_croparea.png used on input line 66.
 (pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
-<s_how_many_simulations.png, id=14, 3613.5pt x 2258.4375pt>
+ [2
+
+ <./s_croparea_irr.png> <./s_croparea.png>]
+<s_how_many_simulations.png, id=19, 3613.5pt x 2258.4375pt>
 File: s_how_many_simulations.png Graphic file (type png)
+
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 125.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 77.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
+ [3
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+ <./s_how_many_simulations.png>]
+<tempyearvclim_maize_EPIC-TAMU.png, id=24, 878.6426pt x 850.6982pt>
+File: tempyearvclim_maize_EPIC-TAMU.png Graphic file (type png)
 
- []
+<use tempyearvclim_maize_EPIC-TAMU.png>
+Package pdftex.def Info: tempyearvclim_maize_EPIC-TAMU.png used on input line 8
+7.
+(pdftex.def)             Requested size: 469.75502pt x 454.814pt.
 
-! Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.128 \end{figure}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+<tempyearvclim_winter_wheat_pDSSAT.png, id=25, 878.6426pt x 850.6982pt>
+File: tempyearvclim_winter_wheat_pDSSAT.png Graphic file (type png)
+
+<use tempyearvclim_winter_wheat_pDSSAT.png>
+Package pdftex.def Info: tempyearvclim_winter_wheat_pDSSAT.png used on input li
+ne 95.
+(pdftex.def)             Requested size: 469.75502pt x 454.814pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2
+<tempyearvclim_soy_pDSSAT.png, id=26, 873.0216pt x 850.6982pt>
+File: tempyearvclim_soy_pDSSAT.png Graphic file (type png)
 
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea_irr.png> 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_croparea.png>] [3 <
-/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_how_many_simulations
-.png>] <s_maize_sim_CG_area_weight_rf.png, id=25, 4516.875pt x 1806.75pt>
-File: s_maize_sim_CG_area_weight_rf.png Graphic file (type png)
-<use s_maize_sim_CG_area_weight_rf.png>
-Package pdftex.def Info: s_maize_sim_CG_area_weight_rf.png used on input line 1
-34.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+<use tempyearvclim_soy_pDSSAT.png>
+Package pdftex.def Info: tempyearvclim_soy_pDSSAT.png used on input line 103.
+(pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_KG_crops_all.png, id=26, 5420.25pt x 2258.4375pt>
-File: s_sim_KG_crops_all.png Graphic file (type png)
-<use s_sim_KG_crops_all.png>
-Package pdftex.def Info: s_sim_KG_crops_all.png used on input line 141.
-(pdftex.def)             Requested size: 469.75502pt x 195.70366pt.
+<tempyearvclim_soy_LPJmL.png, id=27, 873.0216pt x 850.6982pt>
+File: tempyearvclim_soy_LPJmL.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+<use tempyearvclim_soy_LPJmL.png>
+Package pdftex.def Info: tempyearvclim_soy_LPJmL.png used on input line 111.
+(pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
 
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<tempyearvclim_rice_LPJmL.png, id=28, 873.0216pt x 850.6982pt>
+File: tempyearvclim_rice_LPJmL.png Graphic file (type png)
+
+<use tempyearvclim_rice_LPJmL.png>
+Package pdftex.def Info: tempyearvclim_rice_LPJmL.png used on input line 119.
+(pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4
 
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_
-weight_rf.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_sim_
-KG_crops_all.png>] <s_maize_sim_CG.png, id=32, 4516.875pt x 1806.75pt>
-File: s_maize_sim_CG.png Graphic file (type png)
-<use s_maize_sim_CG.png>
-Package pdftex.def Info: s_maize_sim_CG.png used on input line 151.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-<s_maize_sim_CG_area_weight.png, id=33, 4516.875pt x 1806.75pt>
-File: s_maize_sim_CG_area_weight.png Graphic file (type png)
-<use s_maize_sim_CG_area_weight.png>
-Package pdftex.def Info: s_maize_sim_CG_area_weight.png used on input line 159.
-
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-[5
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG.png> 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_maize_sim_CG_area_w
-eight.png>] <s_soy_sim_CG.png, id=39, 4516.875pt x 1806.75pt>
-File: s_soy_sim_CG.png Graphic file (type png)
-<use s_soy_sim_CG.png>
-Package pdftex.def Info: s_soy_sim_CG.png used on input line 169.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-<s_soy_sim_CG_area_weight.png, id=40, 4516.875pt x 1806.75pt>
-File: s_soy_sim_CG_area_weight.png Graphic file (type png)
-<use s_soy_sim_CG_area_weight.png>
-Package pdftex.def Info: s_soy_sim_CG_area_weight.png used on input line 177.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
-
- []
-
-[6
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_soy_sim_CG.png> </
-Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_soy_sim_CG_area_weigh
-t.png>] <s_rice_sim_CG.png, id=46, 4516.875pt x 1806.75pt>
-File: s_rice_sim_CG.png Graphic file (type png)
-<use s_rice_sim_CG.png>
-Package pdftex.def Info: s_rice_sim_CG.png used on input line 187.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
- []
-
-<s_rice_sim_CG_area_weight.png, id=47, 4516.875pt x 1806.75pt>
-File: s_rice_sim_CG_area_weight.png Graphic file (type png)
-<use s_rice_sim_CG_area_weight.png>
-Package pdftex.def Info: s_rice_sim_CG_area_weight.png used on input line 195.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-[7
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_rice_sim_CG.png> <
-/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_rice_sim_CG_area_wei
-ght.png>] <s_winter_wheat_sim_CG.png, id=54, 4516.875pt x 1806.75pt>
-File: s_winter_wheat_sim_CG.png Graphic file (type png)
-<use s_winter_wheat_sim_CG.png>
-Package pdftex.def Info: s_winter_wheat_sim_CG.png used on input line 205.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-<s_winter_wheat_sim_CG_area_weight.png, id=55, 4516.875pt x 1806.75pt>
-File: s_winter_wheat_sim_CG_area_weight.png Graphic file (type png)
-<use s_winter_wheat_sim_CG_area_weight.png>
-Package pdftex.def Info: s_winter_wheat_sim_CG_area_weight.png used on input li
-ne 213.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-[8
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_winter_wheat_sim_C
-G.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_winter_wheat
-_sim_CG_area_weight.png>] <s_spring_wheat_sim_CG.png, id=61, 4516.875pt x 1806.
-75pt>
-File: s_spring_wheat_sim_CG.png Graphic file (type png)
-<use s_spring_wheat_sim_CG.png>
-Package pdftex.def Info: s_spring_wheat_sim_CG.png used on input line 223.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-
- []
-
-<s_spring_wheat_sim_CG_area_weight.png, id=62, 4516.875pt x 1806.75pt>
-File: s_spring_wheat_sim_CG_area_weight.png Graphic file (type png)
-<use s_spring_wheat_sim_CG_area_weight.png>
-Package pdftex.def Info: s_spring_wheat_sim_CG_area_weight.png used on input li
-ne 231.
-(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
+ <./tempyearvclim_maize_EPIC-TAMU.png>] [5 <./tempyearvclim_winter_wheat_pDSSAT
+.png>] [6 <./tempyearvclim_soy_pDSSAT.png>] [7 <./tempyearvclim_soy_LPJmL.png>]
+ [8 <./tempyearvclim_rice_LPJmL.png>]
+<lpjml_grid.png, id=50, 507.76901pt x 364.67442pt>
+File: lpjml_grid.png Graphic file (type png)
+ <use lpjml_grid.png>
+Package pdftex.def Info: lpjml_grid.png used on input line 131.
+(pdftex.def)             Requested size: 469.75502pt x 337.37976pt.
 
 [9
 
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat_sim_C
-G.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_spring_wheat
-_sim_CG_area_weight.png>] <s_wheat_baseline.png, id=68, 1099.10625pt x 504.8862
-5pt>
-File: s_wheat_baseline.png Graphic file (type png)
-<use s_wheat_baseline.png>
-Package pdftex.def Info: s_wheat_baseline.png used on input line 241.
-(pdftex.def)             Requested size: 469.75502pt x 215.78717pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-[10
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_wheat_baseline.png
->] <s_feature_selection.png, id=73, 708.8884pt x 272.0564pt>
-File: s_feature_selection.png Graphic file (type png)
-<use s_feature_selection.png>
-Package pdftex.def Info: s_feature_selection.png used on input line 251.
-(pdftex.def)             Requested size: 469.75502pt x 180.28424pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-[11
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_feature_selection.
-png>] <s_temp.png, id=79, 4516.875pt x 4516.875pt>
-File: s_temp.png Graphic file (type png)
-<use s_temp.png>
-Package pdftex.def Info: s_temp.png used on input line 260.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
-[12
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_temp.png>] <s_wate
-r.png, id=84, 4516.875pt x 4516.875pt>
-File: s_water.png Graphic file (type png)
-<use s_water.png>
-Package pdftex.def Info: s_water.png used on input line 269.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
-[13
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_water.png>] <s_car
-bon.png, id=90, 4516.875pt x 4516.875pt>
-File: s_carbon.png Graphic file (type png)
-<use s_carbon.png>
-Package pdftex.def Info: s_carbon.png used on input line 277.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-[14
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_carbon.png>] <s_ni
-trogen.png, id=95, 4516.875pt x 4516.875pt>
-File: s_nitrogen.png Graphic file (type png)
-<use s_nitrogen.png>
-Package pdftex.def Info: s_nitrogen.png used on input line 285.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-[15
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_nitrogen.png>] <em
-_CTWN_all_crops.png, id=100, 4516.875pt x 4516.875pt>
-File: em_CTWN_all_crops.png Graphic file (type png)
-<use em_CTWN_all_crops.png>
-Package pdftex.def Info: em_CTWN_all_crops.png used on input line 293.
-(pdftex.def)             Requested size: 469.75502pt x 469.70258pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
- []
-
-[16
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/em_CTWN_all_crops.pn
-g>] <testhighlatskde.png, id=105, 506.8536pt x 396.5214pt>
-File: testhighlatskde.png Graphic file (type png)
-<use testhighlatskde.png>
-Package pdftex.def Info: testhighlatskde.png used on input line 302.
-(pdftex.def)             Requested size: 469.75502pt x 367.5026pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
-
- []
-
-[17
-
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/testhighlatskde.png>
-] <s_em_err_JULES.png, id=111, 266.09814pt x 559.94797pt>
-File: s_em_err_JULES.png Graphic file (type png)
-<use s_em_err_JULES.png>
-Package pdftex.def Info: s_em_err_JULES.png used on input line 314.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_em_err_PROMET.png, id=112, 266.09814pt x 559.94797pt>
-File: s_em_err_PROMET.png Graphic file (type png)
-<use s_em_err_PROMET.png>
-Package pdftex.def Info: s_em_err_PROMET.png used on input line 322.
-(pdftex.def)             Requested size: 211.38832pt x 444.82329pt.
-<s_error_360_total.png, id=113, 2258.4375pt x 4968.5625pt>
+ <./lpjml_grid.png>]
+<s_error_360_total.png, id=55, 2258.4375pt x 4968.5625pt>
 File: s_error_360_total.png Graphic file (type png)
+
 <use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png used on input line 333.
+Package pdftex.def Info: s_error_360_total.png used on input line 147.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
-<s_error_810.png, id=114, 2258.4375pt x 4968.5625pt>
+
+<s_error_810.png, id=56, 2258.4375pt x 4968.5625pt>
 File: s_error_810.png Graphic file (type png)
-<use s_error_810.png>
-Package pdftex.def Info: s_error_810.png used on input line 342.
+ <use s_error_810.png>
+Package pdftex.def Info: s_error_810.png used on input line 156.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
+
+<pDSSAT_spatial_error.png, id=57, 504.01099pt x 327.52763pt>
+File: pDSSAT_spatial_error.png Graphic file (type png)
+
+<use pDSSAT_spatial_error.png>
+Package pdftex.def Info: pDSSAT_spatial_error.png used on input line 165.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18
+<LPJmL_spatial_error.png, id=58, 504.01099pt x 327.52763pt>
+File: LPJmL_spatial_error.png Graphic file (type png)
 
- </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_JULES.png> 
-</Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_em_err_PROMET.png>]
-[19 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_360_total
-.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/s_error_810.png
->] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supdoc.aux)
+<use LPJmL_spatial_error.png>
+Package pdftex.def Info: LPJmL_spatial_error.png used on input line 173.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PROMET_spatial_error.png, id=59, 504.01099pt x 327.52763pt>
+File: PROMET_spatial_error.png Graphic file (type png)
+
+<use PROMET_spatial_error.png>
+Package pdftex.def Info: PROMET_spatial_error.png used on input line 181.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<JULES_spatial_error.png, id=60, 504.01099pt x 327.52763pt>
+File: JULES_spatial_error.png Graphic file (type png)
+
+<use JULES_spatial_error.png>
+Package pdftex.def Info: JULES_spatial_error.png used on input line 189.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<EPIC-TAMU_spatial_error.png, id=61, 504.01099pt x 327.52763pt>
+File: EPIC-TAMU_spatial_error.png Graphic file (type png)
+
+<use EPIC-TAMU_spatial_error.png>
+Package pdftex.def Info: EPIC-TAMU_spatial_error.png used on input line 197.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<GEPIC_spatial_error.png, id=62, 504.01099pt x 327.52763pt>
+File: GEPIC_spatial_error.png Graphic file (type png)
+
+<use GEPIC_spatial_error.png>
+Package pdftex.def Info: GEPIC_spatial_error.png used on input line 205.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PEPIC_spatial_error.png, id=63, 504.01099pt x 327.52763pt>
+File: PEPIC_spatial_error.png Graphic file (type png)
+
+<use PEPIC_spatial_error.png>
+Package pdftex.def Info: PEPIC_spatial_error.png used on input line 213.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
+
+ <./s_error_360_total.png> <./s_error_810.png>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (0.76192pt too high) has occurred while \output is active []
+
+
+[11 <./pDSSAT_spatial_error.png> <./LPJmL_spatial_error.png>]
+
+LaTeX Warning: Text page 12 contains only floats.
+
+
+Overfull \vbox (0.76192pt too high) has occurred while \output is active []
+
+
+[12 <./PROMET_spatial_error.png> <./JULES_spatial_error.png>]
+
+LaTeX Warning: Text page 13 contains only floats.
+
+
+Overfull \vbox (0.76192pt too high) has occurred while \output is active []
+
+
+[13 <./EPIC-TAMU_spatial_error.png> <./GEPIC_spatial_error.png>] [14 <./PEPIC_s
+patial_error.png>]
+<pDSSAT_spatial_MSE_ton_ha.png, id=91, 504.01099pt x 327.52763pt>
+File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use pDSSAT_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 227.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+<pDSSAT_spatial_MSE_ton_ha_irr.png, id=92, 504.01099pt x 327.52763pt>
+File: pDSSAT_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use pDSSAT_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha_irr.png used on input line 2
+35.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PROMET_spatial_MSE_ton_ha.png, id=93, 504.01099pt x 327.52763pt>
+File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use PROMET_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 243.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PROMET_spatial_MSE_ton_ha_irr.png, id=94, 504.01099pt x 327.52763pt>
+File: PROMET_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use PROMET_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha_irr.png used on input line 2
+51.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<JULES_spatial_MSE_ton_ha.png, id=95, 504.01099pt x 327.52763pt>
+File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use JULES_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 259.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<JULES_spatial_MSE_ton_ha_irr.png, id=96, 504.01099pt x 327.52763pt>
+File: JULES_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use JULES_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha_irr.png used on input line 26
+7.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<EPIC-TAMU_spatial_MSE_ton_ha.png, id=97, 504.01099pt x 327.52763pt>
+File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use EPIC-TAMU_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 27
+5.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<EPIC-TAMU_spatial_MSE_ton_ha_irr.png, id=98, 504.01099pt x 327.52763pt>
+File: EPIC-TAMU_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use EPIC-TAMU_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha_irr.png used on input lin
+e 283.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<GEPIC_spatial_MSE_ton_ha.png, id=99, 504.01099pt x 327.52763pt>
+File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use GEPIC_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 291.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<GEPIC_spatial_MSE_ton_ha_irr.png, id=100, 504.01099pt x 327.52763pt>
+File: GEPIC_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use GEPIC_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha_irr.png used on input line 29
+9.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PEPIC_spatial_MSE_ton_ha.png, id=101, 504.01099pt x 327.52763pt>
+File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
+
+<use PEPIC_spatial_MSE_ton_ha.png>
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 307.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<PEPIC_spatial_MSE_ton_ha_irr.png, id=102, 504.01099pt x 327.52763pt>
+File: PEPIC_spatial_MSE_ton_ha_irr.png Graphic file (type png)
+
+<use PEPIC_spatial_MSE_ton_ha_irr.png>
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha_irr.png used on input line 31
+5.
+(pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15
+
+ <./pDSSAT_spatial_MSE_ton_ha.png>] [16 <./pDSSAT_spatial_MSE_ton_ha_irr.png> <
+./PROMET_spatial_MSE_ton_ha.png>] [17 <./PROMET_spatial_MSE_ton_ha_irr.png> <./
+JULES_spatial_MSE_ton_ha.png>] [18 <./JULES_spatial_MSE_ton_ha_irr.png> <./EPIC
+-TAMU_spatial_MSE_ton_ha.png>] [19 <./EPIC-TAMU_spatial_MSE_ton_ha_irr.png> <./
+GEPIC_spatial_MSE_ton_ha.png>] [20 <./GEPIC_spatial_MSE_ton_ha_irr.png> <./PEPI
+C_spatial_MSE_ton_ha.png>] [21 <./PEPIC_spatial_MSE_ton_ha_irr.png>]
+(./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15910 strings out of 492995
- 306790 string characters out of 6132704
- 327709 words of memory out of 5000000
- 19243 multiletter control sequences out of 15000+600000
- 12617 words of font info for 50 fonts, out of 8000000 for 9000
+ 15923 strings out of 492995
+ 307459 string characters out of 6132704
+ 328170 words of memory out of 5000000
+ 19252 multiletter control sequences out of 15000+600000
+ 14340 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,10451b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,43p,10394b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/supdocs/supd
-oc.pdf (19 pages, 17885365 bytes).
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on supdoc.pdf (21 pages, 35034994 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
