@@ -538,31 +538,6 @@ The normalized error $e$ for a given model then depends on the particular suite 
 The rationale for the choice is to relate the fidelity of the emulation to the true uncertainty, which we take as the multi-model spread. 
 The metric then has the property that where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
 In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which results not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops. (See also Section \ref{S:5}).
- 
-\begin{table*}[ht]
-    \caption{
-    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed and irrigated crops. 
-    A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated four times). 
-    The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-    The table shows the median grid cell error (as a percentage of baseline yield) over all currently cultivated grid cell \citep{Portmann2010}. 
-    Values in parenthesis indicate the values across irrigated crops.
-    * Indicates cases where the OLS linear model fails. Note that PEPIC has the lowest number of samples (n=130), so is difficult to fit with the OLS.
-    } 
-    \label{table:ASE}
-    \begin{tabular}{l | c | c | c | c | c} 
-        \hline
-        \textbf{Model}     & \textbf{Maize} & \textbf{Soybean} & \textbf{Rice} & \textbf{S. Wheat} & \textbf{W. Wheat} \\ \hline
-        \textbf{CARAIB}    & 0.45      (0.35) & 1.22 (0.50) & 1.67 (0.32) & 0.48 (0.26) & 1.21 (0.47) \\ \hline
-        \textbf{EPIC-TAMU} & 2.08 (0.61) & 4.59 (0.20) & 0.74 (0.27) & 2.81* (0.20) & 1.34 (0.14)  \\ \hline
-        \textbf{JULES}     & \textbf{7.46} (0.03) & \textbf{27.0} (10.21)& \textbf{11.8} (0.23) & \textbf{19.0} (5.23)  & NA  \\ \hline
-        \textbf{GEPIC}     & 3.13 (0.18) & 1.35 (0.20) & 3.12 (0.36) & 2.28 (0.13) & 3.55 (0.20) \\ \hline
-        \textbf{LPJ-GUESS} & 0.66 (0.85) & NA    & NA  & 1.13 (2.83) & 0.67 (0.98)  \\ \hline
-        \textbf{LPJmL}     & 2.04 (0.14) & 1.52 (0.24) & 1.09 (0.22) & 0.51 (0.20) & 0.65 (0.22)  \\ \hline
-        \textbf{pDSSAT}    & 2.82 (0.52) & 2.30 (0.25) & 3.85 (2.30) & 0.51 (0.20) & 3.27 (0.97)  \\ \hline
-        \textbf{PROMET}    & 2.45 (0.30) & 2.96 (1.91) & \textbf{11.8} (1.87) & 4.98 (0.13) & 4.47 (0.21)  \\ \hline
-        \textbf{PEPIC}     & 2.04* (0.79) & 0.82* (3.27) & 1.21* (1.82) & 1.25* (0.54) & 4.33* (0.51) \\ \hline
-    \end{tabular}
-\end{table*}
 
 \textit{2. Out-of-sample validation.}  We also provide a second, more stringent test of emulator performance via a four-fold cross validation (also termed an out-of-sample validation). 
 In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
@@ -579,6 +554,31 @@ The simple randomized sampling protocol for dividing training and test sets can 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
 In this sense the metric is overly conservative, i.e.\ should lead to improved values than under a more realistic sampling strategy. 
 
+\begin{table*}[ht]
+    \caption{
+    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed and irrigated crops. 
+    A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated four times). 
+    The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
+    The table shows the median grid cell error (as a percentage of baseline yield) over all currently cultivated grid cell \citep{Portmann2010}. 
+    Values in parenthesis indicate the values across irrigated crops.
+    * Indicates cases where the OLS linear model fails. Note that PEPIC has the lowest number of samples (n=130), so is difficult to fit with the OLS.
+    } 
+    \label{table:ASE}
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model}     & \textbf{Maize} & \textbf{Soybean} & \textbf{Rice} & \textbf{S. Wheat} & \textbf{W. Wheat} \\ \hline
+        \textbf{CARAIB}    & 0.45      (0.35) & 1.22 (0.50) & 1.67 (0.32) & 0.48 (0.26) & 1.21 (0.47) \\ \hline
+        \textbf{EPIC-TAMU} & 2.08 (0.61) & 4.59 (0.20) & 0.74 (0.27) & 2.81* (0.20) & 1.34 (0.14)  \\ \hline
+        \textbf{JULES}     & \textbf{7.46} (0.03) & \textbf{27.0} (10.21)& \textbf{11.7} (0.23) & \textbf{19.0} (5.23)  & NA  \\ \hline
+        \textbf{GEPIC}     & 3.13 (0.18) & 1.35 (0.20) & 3.12 (0.36) & 2.28 (0.13) & 3.55 (0.20) \\ \hline
+        \textbf{LPJ-GUESS} & 0.66 (0.85) & NA    & NA  & 1.13 (2.83) & 0.67 (0.98)  \\ \hline
+        \textbf{LPJmL}     & 2.04 (0.14) & 1.52 (0.24) & 1.09 (0.22) & 0.51 (0.20) & 0.65 (0.22)  \\ \hline
+        \textbf{pDSSAT}    & 2.82 (0.52) & 2.30 (0.25) & 3.85 (2.30) & 0.51 (0.20) & 3.27 (0.97)  \\ \hline
+        \textbf{PROMET}    & 2.45 (0.30) & 2.96 (1.91) & \textbf{11.8} (1.87) & 4.98 (0.13) & 4.47 (0.21)  \\ \hline
+        \textbf{PEPIC}     & 2.04* (0.79) & 0.82* (3.27) & 1.21* (1.82) & 1.25* (0.54) & 4.33* (0.51) \\ \hline
+    \end{tabular}
+\end{table*}
+
 The resulting error metric is generally low as a percentage of yield.
 Table \ref{table:ASE} shows MSE error by this metric over currently cultivated land for each model-crop combination for rainfed and irrigated crops. 
 Means are weighted by cultivated area and include all simulations in CTWN space. 
@@ -590,10 +590,10 @@ Errors are s; see supplemental Figures SXX-SXX for maps. \textcolor{red}{Conclud
 
 \textit{3. Climate RCP validation.}
 Finally, we test the ability of the emulator to reproduce a crop model response driven by an evolving climate scenario.
-The HADGEM2-ES climate model \citep{Jones2011h} shows comparably standard variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX.)
+We test the emulator on the HADGEM2-ES climate model \citep{Jones2011h} because it exhibits comparably high variability changes for growing season temperature compared to other CMIP-5 models. (See supplemental Figure SXX.)
 The emulator constructed from the GGCMI perturbed mean training set can reliably reproduce a realistic RCP climate scenario (Figure \ref{fig:lpjmlrcp}). 
 This suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change.
-\textcolor{red}{we show absolute global production to illustrate the impact of differences in baseline climate between AgMERRA and HADGEM2-ES...}
+%\textcolor{red}{we show absolute global production to illustrate the impact of differences in baseline climate between AgMERRA and HADGEM2-ES...}
 The growing season used for calculating the temperature and precipitation changes in the climate model run in especially important here because growing seasons vary dynamically in models based on temperature. 
 In the case shown here, using the growing seasons from the baseline GGCMI Phase II simulations provides the best result because the emulator implicitly includes the model response to changing growing season. 
 If the growing season from the RCP crop model is utilized (an unrealistic use-case because these simulations do not exist for every possible emulator application) you are likely to over- or under-estimate the growing season temperature or precipitation changes depending on the seasonality of weather in the growing season. 
