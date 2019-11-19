@@ -453,7 +453,6 @@ Under these conditions, the 3rd order polynomial cannot fit the response, and er
 
 Crop yield responses in all models generally follow similar functional forms at any given location, though with a spread in magnitude (Figure \ref{fig:regression_2}, which shows rainfed maize in northern Iowa in a selection of GGCMI models). Absolute yield differences between models can be substantial because models are uncalibrated.
 In general, models are most similar in their responses to temperature perturbations, and least similar to changes in CO$_2$. That is, CO$_2$ fertilization effects \textit{within} a single model are consistent across locations, but CO$_2$ effects differ strongly \textit{across} models. 
-%Inter-model diversity for a single crop and location is also high . 
 Differences in response shape can lead to some differences in the fidelity of emulation for different crop-model combinations; we evaluate these in more detail in the following section. 
 
 Note that while the nitrogen dimension is important, it is also the most troublesome to emulate in this work because of its limited sampling compared to other dimensions. 
@@ -469,7 +468,7 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 \centering
     \includegraphics[width=16.3cm]{figures/error_grid.png}
     \caption{
-    Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}, \ref{eqn:per_yield}). 
+    Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
     Large columns are crops and large rows models; squares within are T, W scenario pairs. 
     Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
@@ -514,6 +513,7 @@ For a multi-model comparison exercise like GGCMI Phase II, a reasonable though l
 \end{align}
 
 %The emulator is fitted across all available simulation outputs for each grid cell, model, and crop, and then the error is calculated across the each of the simulation scenarios provided by all nine models (See Figure SX for number of simulations in each case). 
+%Problems with emulating PROMET for rice and soybean may have to do with the parametrization of the phenology for those crops which lengthens the growing season and simulated crop failures in some cases. %\textcolor{red}{ PROMET sentence was confusing and surely you can figure out which explanation holds there?}
 
 Evaluation of this metric implies that GGCMI Phase II emulators are generally satisfactory. 
 We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error}. 
@@ -522,7 +522,7 @@ For maize, for example, 4 (CARAIB, GEPIC, LPJmL, and pDSSAT) of the 9 models pro
 A few individual model-crop combinations are particularly problematic, including PROMET for soybeans and rice (only 67\% of cultivated area) and JULES for soybeans and spring wheat (74\% of cultivated area). (See Figures SXX for additional examples). % XX -- I think uyou have to point to supp docs and show examples there of what these bad fits look like. Just versions of your previous figure 6 showing these cases that are worse than LPJ-GUESS. Show what the response curve looks like 
 In crop-model cases where performance is low, it tends to degrade most in the coldest and wettest scenarios, suggesting that decreasing temperature or increasing precipitation is hard to fit with the polynomial because yield increases potentially are saturating in these conditions.
 Emulator performance will also be poor in cases where models show steep yield losses or complete crop failures, because a discontinuity (crop failure) cannot be captured with a 3rd order polynomial. 
-%Problems with emulating PROMET for rice and soybean may have to do with the parametrization of the phenology for those crops which lengthens the growing season and simulated crop failures in some cases. %\textcolor{red}{ PROMET sentence was confusing and surely you can figure out which explanation holds there?}
+
 While Figure \ref{fig:error} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where potential yields are low. 
 Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area with a non-zero baseline yield and with at least 6 models providing simulations.  
 Emulator performance can be poor ($e > 2$) in arid or mountainous zones: the edges of the Sahara, the Near East, S.\ Africa and Southern Australia. 
@@ -541,50 +541,50 @@ In GGCMI Phase II the effect is manifested in the higher normalized errors for s
  
 \begin{table*}[ht]
     \caption{
-    Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
-    A 4-fold stratified k-fold cross validation scheme is utilized where the model is trained on 75\% of the data and validated on the held-out 25\% (repeated four times). 
+    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed and irrigated crops. 
+    A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated four times). 
     The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
-    The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
-    * Indicates cases where the OLS linear model fails.
+    The table shows the median grid cell error (as a percentage of baseline yield) over all currently cultivated grid cell \citep{Portmann2010}. 
+    Values in parenthesis indicate the values across irrigated crops.
+    * Indicates cases where the OLS linear model fails. Note that PEPIC has the lowest number of samples (n=130), so is difficult to fit with the OLS.
     } 
     \label{table:ASE}
     \begin{tabular}{l | c | c | c | c | c} 
         \hline
-        \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soybean (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
-        \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
-        \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
-        \textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
-        \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
-        \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
-        \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
-        \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
-        \textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
-        \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
+        \textbf{Model}     & \textbf{Maize} & \textbf{Soybean} & \textbf{Rice} & \textbf{S. Wheat} & \textbf{W. Wheat} \\ \hline
+        \textbf{CARAIB}    & 0.45      (0.35) & 1.22 (0.50) & 1.67 (0.32) & 0.48 (0.26) & 1.21 (0.47) \\ \hline
+        \textbf{EPIC-TAMU} & 2.08 (0.61) & 4.59 (0.20) & 0.74 (0.27) & 2.81* (0.20) & 1.34 (0.14)  \\ \hline
+        \textbf{JULES}     & \textbf{7.46} (0.03) & \textbf{27.0} (10.21)& \textbf{11.8} (0.23) & \textbf{19.0} (5.23)  & NA  \\ \hline
+        \textbf{GEPIC}     & 3.13 (0.18) & 1.35 (0.20) & 3.12 (0.36) & 2.28 (0.13) & 3.55 (0.20) \\ \hline
+        \textbf{LPJ-GUESS} & 0.66 (0.85) & NA    & NA  & 1.13 (2.83) & 0.67 (0.98)  \\ \hline
+        \textbf{LPJmL}     & 2.04 (0.14) & 1.52 (0.24) & 1.09 (0.22) & 0.51 (0.20) & 0.65 (0.22)  \\ \hline
+        \textbf{pDSSAT}    & 2.82 (0.52) & 2.30 (0.25) & 3.85 (2.30) & 0.51 (0.20) & 3.27 (0.97)  \\ \hline
+        \textbf{PROMET}    & 2.45 (0.30) & 2.96 (1.91) & \textbf{11.8} (1.87) & 4.98 (0.13) & 4.47 (0.21)  \\ \hline
+        \textbf{PEPIC}     & 2.04* (0.79) & 0.82* (3.27) & 1.21* (1.82) & 1.25* (0.54) & 4.33* (0.51) \\ \hline
     \end{tabular}
 \end{table*}
 
-
 \textit{2. Out-of-sample validation.}  We also provide a second, more stringent test of emulator performance via a four-fold cross validation (also termed an out-of-sample validation). 
-In this test the GGCMI Phase II dataset is split randomly into two parts, with 75\% of the data used to train the model and the held-out 25\% used to test the fidelity of the resulting emulator.
+In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
 %is trained on 75\% of the data and tested on the held-out 25\%, and
-We calculate the mean absolute error between emulated (predicted) and actual simulated values across the test set, % (``ground truth'') values across the test set. %the held out 25\% of the simulations. 
-repeat the process four times so that test sets include all data randomly divided, and average the results. 
-As a last step, we normalize the mean absolute error in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
+We calculate the mean square error (MSE) between emulated (predicted) and actual simulated values across the test set, % (``ground truth'') values across the test set. %the held out 25\% of the simulations. 
+repeat the process three times so that test sets include all data randomly divided, and average the results of the three splits. 
+As a last step, we normalize the MSE in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
 Geographic locations with very low baseline yields are especially problematic in this metric because minor disparities result in high errors. 
-For this reason we mask all areas with less than 0.1 ton ha$^{-1}$ baseline yields. 
+For this reason we mask all areas with less than 0.5 ton ha$^{-1}$ baseline yields. 
 We do not compare to yield \textit{changes}; for more detailed potential evaluation metrics see \cite[e.g][]{Castruccio14}.
 Note that one aspect of this test can lead to increased errors and is not representative of the intended use of the emulator. 
 The simple randomized sampling protocol for dividing training and test sets can mean that the training set omits edge simulations (those at the highest or lowest value of CTWN space). 
 %Note that under the conditions of this test, the training set often does not include edge simulations (i.e. those at the highest or lowest value in that dimension).
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
-In this sense the metric is overly conservative, i.e.\ should lead to higher values than under a more realistic sampling strategy. 
-%Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
+In this sense the metric is overly conservative, i.e.\ should lead to improved values than under a more realistic sampling strategy. 
 
 The resulting error metric is generally low as a percentage of yield.
-Table \ref{table:ASE} shows mean \textcolor{red}{absolute} error by this metric over currently cultivated land for each model-crop combination. 
+Table \ref{table:ASE} shows MSE error by this metric over currently cultivated land for each model-crop combination for rainfed and irrigated crops. 
 Means are weighted by cultivated area and include all simulations in CTWN space. 
-Values are below 2\% of baseline yield for half of all model-crop combinations, and below 5\% for all but six problematic combinations, highlighted in bold. 
-These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for soybeans and rice) but now also PROMET for both wheats. \textcolor{red}{Why did PROMET wheat not show up in previous figure?}
+Values are below 5\% for all but six problematic model-crop combinations, highlighted in bold. 
+These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for rice) but now also JULES for maize and rice.
+Error for irrigated emulators are considerably lower and below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybean and winter wheat.
 
 Errors are s; see supplemental Figures SXX-SXX for maps. \textcolor{red}{Concluding statement.}
 
@@ -842,3 +842,28 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 %The ``edge'' cases are then predicted during the prediction phase of cross validation.
 %Such an extrapolation during cross validation is not representative based on the intended use of the emulator, which should only be used within the sample space of the overall training set.
 %(the process is then repeated four times to cover all data in the training set). 
+
+
+\begin{table*}[ht]
+    \caption{
+    Mean absolute error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process for rainfed crops. 
+    A 3-fold stratified k-fold cross validation scheme is utilized where the model is trained on 66\% of the data and validated on the held-out 25\% (repeated four times). 
+    The split does not represent a uniform number of samples in each location or in each model because simulation sampling extent in variable space is heterogeneous. 
+    The table shows the mean error (as a percentage of baseline yield) weighted by hectares grown in each grid cell \citep{Portmann2010}.
+    * Indicates cases where the OLS linear model fails.
+    } 
+    \label{table:ASE}
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model}     & \textbf{Maize (\%)} & \textbf{Soybean (\%)} & \textbf{Rice (\%)} & \textbf{S. Wheat (\%)} & \textbf{W. Wheat (\%)} \\ \hline
+        \textbf{CARAIB}    & 1.15  & 4.20  & 2.33  & 0.36  & 0.53   \\ \hline
+        \textbf{EPIC-TAMU} & 2.46  & 3.35  & 0.56  & 2.10* & 1.38   \\ \hline
+        \textbf{JULES}     & 3.99  & \textbf{20.1} & 2.89  & \textbf{9.90}  & NA     \\ \hline
+        \textbf{GEPIC}     & 2.97  & 0.66  & 2.17  & 1.60  & 2.04   \\ \hline
+        \textbf{LPJ-GUESS} & 0.57  & NA    & NA    & \textcolor{red}{xxxx}  & 0.18   \\ \hline
+        \textbf{LPJmL}     & 2.04  & 1.52  & 1.09  & 0.51  & 0.65   \\ \hline
+        \textbf{pDSSAT}    & 2.91  & 1.95  & 2.23  & 0.44  & 1.79   \\ \hline
+        \textbf{PROMET}    & 4.41  & \textbf{7.48} & \textbf{6.06}  & \textbf{16.8}  & \textbf{7.07}   \\ \hline
+        \textbf{PEPIC}     & 1.30* & 0.72* & 1.16* & 0.63* & 1.65*  \\ \hline
+    \end{tabular}
+\end{table*}
