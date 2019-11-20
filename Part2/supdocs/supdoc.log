@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 NOV 2019 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2019 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,6 +1030,18 @@ LABELS NOT IMPORTED.
 LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
 
 
+LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
+
+
+LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
+
+
+LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
+
+
+LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
+
+
 LaTeX Warning: Label `fig:lpjmlnorm' multiply defined.
 
 
@@ -1282,35 +1294,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<s_croparea_irr.png, id=10, 261.778pt x 490.9542pt>
-File: s_croparea_irr.png Graphic file (type png)
- <use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 57.
-(pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
-
-<s_croparea.png, id=12, 262.9022pt x 492.0784pt>
-File: s_croparea.png Graphic file (type png)
- <use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 66.
-(pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
- [2
-
- <./s_croparea_irr.png> <./s_croparea.png>]
-<s_how_many_simulations.png, id=19, 3613.5pt x 2258.4375pt>
+<s_how_many_simulations.png, id=10, 3613.5pt x 2258.4375pt>
 File: s_how_many_simulations.png Graphic file (type png)
 
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 77.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 55.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
- [3
+ [2
 
  <./s_how_many_simulations.png>]
+<s_croparea_irr.png, id=17, 261.778pt x 490.9542pt>
+File: s_croparea_irr.png Graphic file (type png)
+ <use s_croparea_irr.png>
+Package pdftex.def Info: s_croparea_irr.png used on input line 68.
+(pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
+
+<s_croparea.png, id=18, 262.9022pt x 492.0784pt>
+File: s_croparea.png Graphic file (type png)
+ <use s_croparea.png>
+Package pdftex.def Info: s_croparea.png used on input line 77.
+(pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
+ [3
+
+ <./s_croparea_irr.png> <./s_croparea.png>]
 <tempyearvclim_maize_EPIC-TAMU.png, id=24, 878.6426pt x 850.6982pt>
 File: tempyearvclim_maize_EPIC-TAMU.png Graphic file (type png)
 
 <use tempyearvclim_maize_EPIC-TAMU.png>
 Package pdftex.def Info: tempyearvclim_maize_EPIC-TAMU.png used on input line 8
-7.
+8.
 (pdftex.def)             Requested size: 469.75502pt x 454.814pt.
 
 <tempyearvclim_winter_wheat_pDSSAT.png, id=25, 878.6426pt x 850.6982pt>
@@ -1318,7 +1330,7 @@ File: tempyearvclim_winter_wheat_pDSSAT.png Graphic file (type png)
 
 <use tempyearvclim_winter_wheat_pDSSAT.png>
 Package pdftex.def Info: tempyearvclim_winter_wheat_pDSSAT.png used on input li
-ne 95.
+ne 96.
 (pdftex.def)             Requested size: 469.75502pt x 454.814pt.
 
 
@@ -1328,7 +1340,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: tempyearvclim_soy_pDSSAT.png Graphic file (type png)
 
 <use tempyearvclim_soy_pDSSAT.png>
-Package pdftex.def Info: tempyearvclim_soy_pDSSAT.png used on input line 103.
+Package pdftex.def Info: tempyearvclim_soy_pDSSAT.png used on input line 104.
 (pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
 
 
@@ -1338,7 +1350,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: tempyearvclim_soy_LPJmL.png Graphic file (type png)
 
 <use tempyearvclim_soy_LPJmL.png>
-Package pdftex.def Info: tempyearvclim_soy_LPJmL.png used on input line 111.
+Package pdftex.def Info: tempyearvclim_soy_LPJmL.png used on input line 112.
 (pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
 
 
@@ -1348,7 +1360,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: tempyearvclim_rice_LPJmL.png Graphic file (type png)
 
 <use tempyearvclim_rice_LPJmL.png>
-Package pdftex.def Info: tempyearvclim_rice_LPJmL.png used on input line 119.
+Package pdftex.def Info: tempyearvclim_rice_LPJmL.png used on input line 120.
 (pdftex.def)             Requested size: 469.75502pt x 457.74762pt.
 
 
@@ -1362,265 +1374,306 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <lpjml_grid.png, id=50, 507.76901pt x 364.67442pt>
 File: lpjml_grid.png Graphic file (type png)
  <use lpjml_grid.png>
-Package pdftex.def Info: lpjml_grid.png used on input line 131.
+Package pdftex.def Info: lpjml_grid.png used on input line 132.
 (pdftex.def)             Requested size: 469.75502pt x 337.37976pt.
+
+<jules_soy_bad.png, id=51, 523.81296pt x 683.52966pt>
+File: jules_soy_bad.png Graphic file (type png)
+ <use jules_soy_bad.png>
+Package pdftex.def Info: jules_soy_bad.png used on input line 139.
+(pdftex.def)             Requested size: 469.75502pt x 613.02248pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<jules_soy_southern_germany.png, id=52, 523.81296pt x 683.52966pt>
+File: jules_soy_southern_germany.png Graphic file (type png)
+
+<use jules_soy_southern_germany.png>
+Package pdftex.def Info: jules_soy_southern_germany.png used on input line 146.
+
+(pdftex.def)             Requested size: 469.75502pt x 613.02248pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<promet_rice_bad.png, id=53, 523.81296pt x 683.52966pt>
+File: promet_rice_bad.png Graphic file (type png)
+
+<use promet_rice_bad.png>
+Package pdftex.def Info: promet_rice_bad.png used on input line 153.
+(pdftex.def)             Requested size: 469.75502pt x 613.02248pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<promet_rice_bad_arun.png, id=54, 523.81296pt x 683.52966pt>
+File: promet_rice_bad_arun.png Graphic file (type png)
+
+<use promet_rice_bad_arun.png>
+Package pdftex.def Info: promet_rice_bad_arun.png used on input line 160.
+(pdftex.def)             Requested size: 469.75502pt x 613.02248pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9
 
- <./lpjml_grid.png>]
-<s_error_360_total.png, id=55, 2258.4375pt x 4968.5625pt>
+ <./lpjml_grid.png>] [10 <./jules_soy_bad.png>] [11 <./jules_soy_southern_germa
+ny.png>] [12 <./promet_rice_bad.png>] [13 <./promet_rice_bad_arun.png>]
+<s_error_360_total.png, id=76, 2258.4375pt x 4968.5625pt>
 File: s_error_360_total.png Graphic file (type png)
 
 <use s_error_360_total.png>
-Package pdftex.def Info: s_error_360_total.png used on input line 147.
+Package pdftex.def Info: s_error_360_total.png used on input line 177.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 
-<s_error_810.png, id=56, 2258.4375pt x 4968.5625pt>
+<s_error_810.png, id=77, 2258.4375pt x 4968.5625pt>
 File: s_error_810.png Graphic file (type png)
  <use s_error_810.png>
-Package pdftex.def Info: s_error_810.png used on input line 156.
+Package pdftex.def Info: s_error_810.png used on input line 186.
 (pdftex.def)             Requested size: 211.38832pt x 465.04346pt.
 
-<pDSSAT_spatial_error.png, id=57, 504.01099pt x 327.52763pt>
+<pDSSAT_spatial_error.png, id=78, 504.01099pt x 327.52763pt>
 File: pDSSAT_spatial_error.png Graphic file (type png)
 
 <use pDSSAT_spatial_error.png>
-Package pdftex.def Info: pDSSAT_spatial_error.png used on input line 165.
+Package pdftex.def Info: pDSSAT_spatial_error.png used on input line 195.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<LPJmL_spatial_error.png, id=58, 504.01099pt x 327.52763pt>
+<LPJmL_spatial_error.png, id=79, 504.01099pt x 327.52763pt>
 File: LPJmL_spatial_error.png Graphic file (type png)
 
 <use LPJmL_spatial_error.png>
-Package pdftex.def Info: LPJmL_spatial_error.png used on input line 173.
+Package pdftex.def Info: LPJmL_spatial_error.png used on input line 203.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_spatial_error.png, id=59, 504.01099pt x 327.52763pt>
+<PROMET_spatial_error.png, id=80, 504.01099pt x 327.52763pt>
 File: PROMET_spatial_error.png Graphic file (type png)
 
 <use PROMET_spatial_error.png>
-Package pdftex.def Info: PROMET_spatial_error.png used on input line 181.
+Package pdftex.def Info: PROMET_spatial_error.png used on input line 211.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_error.png, id=60, 504.01099pt x 327.52763pt>
+<JULES_spatial_error.png, id=81, 504.01099pt x 327.52763pt>
 File: JULES_spatial_error.png Graphic file (type png)
 
 <use JULES_spatial_error.png>
-Package pdftex.def Info: JULES_spatial_error.png used on input line 189.
+Package pdftex.def Info: JULES_spatial_error.png used on input line 219.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_error.png, id=61, 504.01099pt x 327.52763pt>
+<EPIC-TAMU_spatial_error.png, id=82, 504.01099pt x 327.52763pt>
 File: EPIC-TAMU_spatial_error.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_error.png>
-Package pdftex.def Info: EPIC-TAMU_spatial_error.png used on input line 197.
+Package pdftex.def Info: EPIC-TAMU_spatial_error.png used on input line 227.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_error.png, id=62, 504.01099pt x 327.52763pt>
+<GEPIC_spatial_error.png, id=83, 504.01099pt x 327.52763pt>
 File: GEPIC_spatial_error.png Graphic file (type png)
 
 <use GEPIC_spatial_error.png>
-Package pdftex.def Info: GEPIC_spatial_error.png used on input line 205.
+Package pdftex.def Info: GEPIC_spatial_error.png used on input line 235.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_error.png, id=63, 504.01099pt x 327.52763pt>
+<PEPIC_spatial_error.png, id=84, 504.01099pt x 327.52763pt>
 File: PEPIC_spatial_error.png Graphic file (type png)
 
 <use PEPIC_spatial_error.png>
-Package pdftex.def Info: PEPIC_spatial_error.png used on input line 213.
+Package pdftex.def Info: PEPIC_spatial_error.png used on input line 243.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
+[14
 
  <./s_error_360_total.png> <./s_error_810.png>]
 
-LaTeX Warning: Text page 11 contains only floats.
+LaTeX Warning: Text page 15 contains only floats.
 
 
 Overfull \vbox (0.76192pt too high) has occurred while \output is active []
 
 
-[11 <./pDSSAT_spatial_error.png> <./LPJmL_spatial_error.png>]
+[15 <./pDSSAT_spatial_error.png> <./LPJmL_spatial_error.png>]
 
-LaTeX Warning: Text page 12 contains only floats.
-
-
-Overfull \vbox (0.76192pt too high) has occurred while \output is active []
-
-
-[12 <./PROMET_spatial_error.png> <./JULES_spatial_error.png>]
-
-LaTeX Warning: Text page 13 contains only floats.
+LaTeX Warning: Text page 16 contains only floats.
 
 
 Overfull \vbox (0.76192pt too high) has occurred while \output is active []
 
 
-[13 <./EPIC-TAMU_spatial_error.png> <./GEPIC_spatial_error.png>] [14 <./PEPIC_s
+[16 <./PROMET_spatial_error.png> <./JULES_spatial_error.png>]
+
+LaTeX Warning: Text page 17 contains only floats.
+
+
+Overfull \vbox (0.76192pt too high) has occurred while \output is active []
+
+
+[17 <./EPIC-TAMU_spatial_error.png> <./GEPIC_spatial_error.png>] [18 <./PEPIC_s
 patial_error.png>]
-<pDSSAT_spatial_MSE_ton_ha.png, id=91, 504.01099pt x 327.52763pt>
+<pDSSAT_spatial_MSE_ton_ha.png, id=111, 504.01099pt x 327.52763pt>
 File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 227.
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 257.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
-<pDSSAT_spatial_MSE_ton_ha_irr.png, id=92, 504.01099pt x 327.52763pt>
+<pDSSAT_spatial_MSE_ton_ha_irr.png, id=112, 504.01099pt x 327.52763pt>
 File: pDSSAT_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha_irr.png>
 Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha_irr.png used on input line 2
-35.
+65.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_spatial_MSE_ton_ha.png, id=93, 504.01099pt x 327.52763pt>
+<PROMET_spatial_MSE_ton_ha.png, id=113, 504.01099pt x 327.52763pt>
 File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 243.
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 273.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_spatial_MSE_ton_ha_irr.png, id=94, 504.01099pt x 327.52763pt>
+<PROMET_spatial_MSE_ton_ha_irr.png, id=114, 504.01099pt x 327.52763pt>
 File: PROMET_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha_irr.png>
 Package pdftex.def Info: PROMET_spatial_MSE_ton_ha_irr.png used on input line 2
-51.
+81.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_MSE_ton_ha.png, id=95, 504.01099pt x 327.52763pt>
+<JULES_spatial_MSE_ton_ha.png, id=115, 504.01099pt x 327.52763pt>
 File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 259.
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 289.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_MSE_ton_ha_irr.png, id=96, 504.01099pt x 327.52763pt>
+<JULES_spatial_MSE_ton_ha_irr.png, id=116, 504.01099pt x 327.52763pt>
 File: JULES_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha_irr.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha_irr.png used on input line 26
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha_irr.png used on input line 29
 7.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_MSE_ton_ha.png, id=97, 504.01099pt x 327.52763pt>
+<EPIC-TAMU_spatial_MSE_ton_ha.png, id=117, 504.01099pt x 327.52763pt>
 File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 27
+Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 30
 5.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_MSE_ton_ha_irr.png, id=98, 504.01099pt x 327.52763pt>
+<EPIC-TAMU_spatial_MSE_ton_ha_irr.png, id=118, 504.01099pt x 327.52763pt>
 File: EPIC-TAMU_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha_irr.png>
 Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha_irr.png used on input lin
-e 283.
+e 313.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_MSE_ton_ha.png, id=99, 504.01099pt x 327.52763pt>
+<GEPIC_spatial_MSE_ton_ha.png, id=119, 504.01099pt x 327.52763pt>
 File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 291.
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 321.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_MSE_ton_ha_irr.png, id=100, 504.01099pt x 327.52763pt>
+<GEPIC_spatial_MSE_ton_ha_irr.png, id=120, 504.01099pt x 327.52763pt>
 File: GEPIC_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha_irr.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha_irr.png used on input line 29
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha_irr.png used on input line 32
 9.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_MSE_ton_ha.png, id=101, 504.01099pt x 327.52763pt>
+<PEPIC_spatial_MSE_ton_ha.png, id=121, 504.01099pt x 327.52763pt>
 File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 307.
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 337.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_MSE_ton_ha_irr.png, id=102, 504.01099pt x 327.52763pt>
+<PEPIC_spatial_MSE_ton_ha_irr.png, id=122, 504.01099pt x 327.52763pt>
 File: PEPIC_spatial_MSE_ton_ha_irr.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha_irr.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha_irr.png used on input line 31
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha_irr.png used on input line 34
 5.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15
+[19
 
- <./pDSSAT_spatial_MSE_ton_ha.png>] [16 <./pDSSAT_spatial_MSE_ton_ha_irr.png> <
-./PROMET_spatial_MSE_ton_ha.png>] [17 <./PROMET_spatial_MSE_ton_ha_irr.png> <./
-JULES_spatial_MSE_ton_ha.png>] [18 <./JULES_spatial_MSE_ton_ha_irr.png> <./EPIC
--TAMU_spatial_MSE_ton_ha.png>] [19 <./EPIC-TAMU_spatial_MSE_ton_ha_irr.png> <./
-GEPIC_spatial_MSE_ton_ha.png>] [20 <./GEPIC_spatial_MSE_ton_ha_irr.png> <./PEPI
-C_spatial_MSE_ton_ha.png>] [21 <./PEPIC_spatial_MSE_ton_ha_irr.png>]
+ <./pDSSAT_spatial_MSE_ton_ha.png>] [20 <./pDSSAT_spatial_MSE_ton_ha_irr.png> <
+./PROMET_spatial_MSE_ton_ha.png>] [21 <./PROMET_spatial_MSE_ton_ha_irr.png> <./
+JULES_spatial_MSE_ton_ha.png>] [22 <./JULES_spatial_MSE_ton_ha_irr.png> <./EPIC
+-TAMU_spatial_MSE_ton_ha.png>] [23 <./EPIC-TAMU_spatial_MSE_ton_ha_irr.png> <./
+GEPIC_spatial_MSE_ton_ha.png>] [24 <./GEPIC_spatial_MSE_ton_ha_irr.png> <./PEPI
+C_spatial_MSE_ton_ha.png>] [25 <./PEPIC_spatial_MSE_ton_ha_irr.png>]
 (./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15923 strings out of 492995
- 307459 string characters out of 6132704
- 328170 words of memory out of 5000000
- 19252 multiletter control sequences out of 15000+600000
+ 15943 strings out of 492995
+ 307985 string characters out of 6132704
+ 327172 words of memory out of 5000000
+ 19268 multiletter control sequences out of 15000+600000
  14340 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,43p,10394b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1631,10 +1684,10 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on supdoc.pdf (21 pages, 35034994 bytes).
+Output written on supdoc.pdf (25 pages, 37784632 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 182 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
