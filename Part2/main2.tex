@@ -523,10 +523,10 @@ In crop-model cases where performance is low, it tends to degrade most in the co
 Emulator performance will also be poor in cases where models show steep yield losses or complete crop failures, because a discontinuity (crop failure) cannot be captured with a 3rd order polynomial. 
 
 While Figure \ref{fig:error} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where potential yields are low. 
-Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area with a non-zero baseline yield and with at least 6 models providing simulations.  
-Emulator performance can be poor ($e > 2$) in arid or mountainous zones: the edges of the Sahara, the Near East, S.\ Africa and Southern Australia. 
+Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area that has non-zero baseline yield and at least 6 models providing simulations.  
+Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the edges of the Sahara, the Near East, S.\ Africa and Southern Australia -- but is much better in regions where crops are grown. 
+Over all-crop model combinations, the emulator produces $e < 1$ for 95\% of currently cultivated area.
 See Figures SXX-SXX for analogous figures for all models.
-Over all crop model combinations, the emulator produces $e < 1$) on average for 95\% of currently cultivated area.
 
 Note that our normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
