@@ -580,11 +580,10 @@ Errors for irrigated emulators are considerably lower, below 1\% in all but 7 cr
 In absolute terms, median grid cell \textcolor{red}{RMS} errors for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold. % for PROMET and JULES where they range from 0.6 - 0.9 ton ha$^{-1}$.
 %Errors are spatially heterogeneous. See supplemental Figures SXX-SXX for maps.
 
-The metric of Table \ref{table:ASE} is relatively simple. %We do not compare to yield \textit{changes};
-For more detailed potential evaluation metrics see \cite[e.g][]{Castruccio14}.
-The simple randomized sampling protocol for dividing training and test sets can mean that the training set omits edge simulations (those at the highest or lowest value of CTWN space). 
+The metric of Table \ref{table:ASE} is relatively simple and can involve some biases. %We do not compare to yield \textit{changes};
+The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
-In this sense the metric is overly conservative, and values would be lower under a more \textcolor{red}{appropriate?} sampling strategy. 
+In this sense the metric is overly conservative, and values would be lower under a more \textcolor{red}{appropriate?} sampling strategy. The metric also does not relate emulation error to yield \textit{changes}. For more detailed potential evaluation metrics see \cite[e.g][]{Castruccio14}.
 
 \textit{3. Validation of emulation of realistic climate projections.}
 \label{S:4.3}
