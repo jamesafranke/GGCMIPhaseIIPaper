@@ -487,10 +487,10 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 \centering
     \includegraphics[width=16.3cm]{figures/CARAIB_spatial_error.png}
     \caption{
-    Illustration of our test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
-    Contour colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
-    White areas are those where crops are not simulated by this model. 
-    Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. 
+    Illustration of our first test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
+    Colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
+    %White areas are those where crops are not simulated by this model. 
+	\textcolor{red}{For consistency, we show $e$ only for geographica areas simulated by all models.} %Models differ in their areas omitted, meaning the number of samples used to calculate the multi-model standard deviation is not spatially consistent in all locations. 
     Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure 1) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. 
     %For CARAIB, emulation of soybean is more problematic, as also shown in Figure \ref{fig:error_360}.
     }
