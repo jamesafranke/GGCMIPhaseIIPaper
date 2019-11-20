@@ -537,9 +537,9 @@ Had we used a spline interpolation, the error would necessarily be zero.
 %(Our second metric involves evaluating on scenarios not included in the training set.)
 Second, the metric scales emulator fidelity not by the magnitude of yield changes in the evaluated model but by the spread in yield changes across models. 
 The normalized error $e$ for a given model then depends on the particular suite of other models considered in the intercomparison exercise.  
-The rationale for the choice is to relate the fidelity of the emulation to the true uncertainty, which we take as the multi-model spread. 
-The metric then has the property that where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
-In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which result not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops. (See also Section \ref{S:5}).
+The rationale for the choice is to relate the fidelity of the emulation to the true uncertainty, which we take as the multi-model spread, but  
+the metric then has the property that where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
+In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which result not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops. %(See also Section \ref{S:5}).
 
 
 \textit{2. Out-of-sample validation.} We provide a second, more stringent test of emulator performance via a three-fold cross validation (also termed an out-of-sample validation). 
@@ -549,7 +549,7 @@ As a last step, we normalize the MSE in each grid cell by dividing by its simula
 
 \begin{table*}[ht]
     \caption{
-	    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
+	    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
     Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
     %The split does not represent a uniform number of samples in each location or in each model. % because simulation sampling extent in variable space is heterogeneous.  --- XX this belongs in text, not in table caption
     Emulator errors considered unacceptable are highlighted in bold. 
@@ -583,7 +583,7 @@ In absolute terms, median grid cell \textcolor{red}{RMS} errors for rainfed crop
 The metric of Table \ref{table:ASE} is relatively simple and can involve some biases. %We do not compare to yield \textit{changes};
 The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
-In this sense the metric is overly conservative, and values would be lower under a more \textcolor{red}{appropriate?} sampling strategy. The metric also does not relate emulation error to yield \textit{changes}. For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
+In this sense the metric is overly conservative, and values would be lower under a more \textcolor{red}{appropriate?} sampling strategy. The metric also does not relate emulation error to yield changes. For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
 
 \textit{3. Validation of emulation of realistic climate projections.}
 \label{S:4.3}
