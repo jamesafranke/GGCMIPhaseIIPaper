@@ -519,10 +519,13 @@ We calculate the mean error for each grid cell, model, and crop in each C,T,W,N 
 A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
 For maize, for example, 4 (CARAIB, GEPIC, LPJmL, and pDSSAT) of the 9 models produce $e < 1$ over 99\% of currently cultivated area and an additional 3 models produce $e < 1$ over 97\% of currently cultivated area. (LPJ-GUESS emulation is lowest in fidelity for maize, as previously shown in Figure \ref{fig:regression_2}, and produces 92\%.) 
 A few individual model-crop combinations are particularly problematic, including PROMET for soybeans and rice (only 67\% of cultivated area) and JULES for soybeans and spring wheat (74\% of cultivated area). (See Figures SXX for additional examples). % XX -- I think uyou have to point to supp docs and show examples there of what these bad fits look like. Just versions of your previous figure 6 showing these cases that are worse than LPJ-GUESS. Show what the response curve looks like 
-In crop-model cases where performance is low, it tends to degrade most in the coldest and wettest scenarios, suggesting that decreasing temperature or increasing precipitation is hard to fit with the polynomial because yield increases potentially are saturating in these conditions.
-Emulator performance will also be poor in cases where models show steep yield losses or complete crop failures, because a discontinuity (crop failure) cannot be captured with a 3rd order polynomial. 
+In crop-model cases where performance is low, it tends to degrade most in the coldest and wettest scenarios, likely because
+%that decreasing temperature or increasing precipitation is hard to fit with the polynomial because 
+yield increases are saturating in these conditions and 
+cannot be captured with a 3rd order polynomial. 
+Emulator performance will also be poor in cases where models show steep yield losses or complete crop failures. %discontinuity (crop failure) 
 
-While Figure \ref{fig:error} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where potential yields are low. 
+While Figure \ref{fig:error_360} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where potential yields are low. 
 Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area that has non-zero baseline yield and at least 6 models providing simulations.  
 Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the edges of the Sahara, the Near East, S.\ Africa and Southern Australia -- but is much better in regions where crops are grown. 
 Over all-crop model combinations, the emulator produces $e < 1$ for 95\% of currently cultivated area.
