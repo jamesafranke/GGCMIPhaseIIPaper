@@ -503,6 +503,7 @@ and one more stringent.
 These are described in detail below. Both metrics assess the ability of the emulator to reproduce model output from the GGCMI Phase II experiment. 
 Finally, we also demonstrate the emulator's ability to reproduce a realistic projection of crop response to an evolving climate run. 
 
+\smallskip
 \textit{1. Normalized error.} We take as our first metric what we term the ``normalized error'', which compares the fidelity of an emulator to the inter-model spread. 
 For a multi-model comparison exercise like GGCMI Phase II, a reasonable though loose emulator criterion is that its errors be small relative to intermodel differences. The normalized error $e$ is defined separately for each C,T,W,N scenario $s$ as the difference between emulated and simulated fractional yield changes, normalized by the standard deviation in simulated changes across all models: 
 
@@ -541,13 +542,21 @@ The rationale for the choice is to relate the fidelity of the emulation to the t
 the metric then has the property that where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
 In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which result not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops. %(See also Section \ref{S:5}).
 
-
+\smallskip
 \textit{2. Out-of-sample validation.} We provide a second, more stringent test of emulator performance via a three-fold cross validation (also termed an out-of-sample validation). 
 In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
 We calculate the mean square error (MSE) between emulated (predicted) and actual simulated values across the test set, repeat the process three times so that test sets include all data randomly divided, and average the results of the three splits. 
 As a last step, we normalize the MSE in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
 
-\begin{table*}[ht]
+The resulting error metric is generally low as a percentage of yield.
+Table \ref{table:ASE} shows MSE error by this metric over currently cultivated land for each model-crop combination for rainfed and irrigated crops and include all simulations in CTWN space. 
+Values are below 5\% for all but six problematic model-crop combinations, highlighted in bold. 
+These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for rice) but now also JULES for maize and rice.
+Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
+In absolute terms, median grid cell \textcolor{red}{RMS} errors for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold. % for PROMET and JULES where they range from 0.6 - 0.9 ton ha$^{-1}$.
+%Errors are spatially heterogeneous. See supplemental Figures SXX-SXX for maps.
+
+\begin{table*}[hb]
     \caption{
 	    Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
     Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
@@ -572,19 +581,13 @@ As a last step, we normalize the MSE in each grid cell by dividing by its simula
 \end{table*}
 
 
-The resulting error metric is generally low as a percentage of yield.
-Table \ref{table:ASE} shows MSE error by this metric over currently cultivated land for each model-crop combination for rainfed and irrigated crops and include all simulations in CTWN space. 
-Values are below 5\% for all but six problematic model-crop combinations, highlighted in bold. 
-These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for rice) but now also JULES for maize and rice.
-Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
-In absolute terms, median grid cell \textcolor{red}{RMS} errors for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold. % for PROMET and JULES where they range from 0.6 - 0.9 ton ha$^{-1}$.
-%Errors are spatially heterogeneous. See supplemental Figures SXX-SXX for maps.
 
 The metric of Table \ref{table:ASE} is relatively simple and can involve some biases. %We do not compare to yield \textit{changes};
 The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
 In this sense the metric is overly conservative, and values would be lower under a more \textcolor{red}{appropriate?} sampling strategy. The metric also does not relate emulation error to yield changes. For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
 
+\smallskip
 \textit{3. Validation of emulation of realistic climate projections.}
 \label{S:4.3}
 Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
@@ -723,20 +726,20 @@ In general, the development of multi-model ensembles involving systematic parame
 
 \begin{acknowledgements}
 We thank Michael Stein and Kevin Schwarzwald, who provided helpful suggestions that contributed to this work. 
-This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. 
+This research was performed as part of the Center for Robust Decision-making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. 
 RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. 
-J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. 
+	J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359 and by an NSF Graduate Research Fellowship, grant \#\textcolor{red}{DGE-1746045}. 
 C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF). 
 C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. 
 P.F.\ and K.W.\ were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). 
 K.W.\ was supported by the IMPREX research project supported by the European Commission under the Horizon 2020 Framework programme, grant \#641811. 
-A.S.\ was supported by the Office of Science of the U.S. Department of Energy as part of the Multi-sector Dynamics Research Program Area. 
+A.S.\ was supported by the Office of Science of the U.S.\ Department of Energy as part of the Multi-sector Dynamics Research Program Area. 
 S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). 
 R.C.I.\ acknowledges support from the Texas Agrilife Research and Extension, Texas A \& M University. 
 This is paper number 35 of the Birmingham Institute of Forest Research. 
 Computing resources were provided by the University of Chicago Research Computing Center (RCC).
-	\textcolor{red}{This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1746045). 
-	Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.}
+%	\textcolor{red}{This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1746045). 
+%	Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.}
 \end{acknowledgements}
 
 \bibliographystyle{copernicus}
