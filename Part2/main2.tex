@@ -113,13 +113,13 @@ like those used in ISIMIP
 Second, it allows making a distinction between year-over-year yield variations and climatological changes, which may involve different responses to the particular climate regressors used \citep[e.g.][]{Ruane2016}. 
 For example, if year-over-year yield variations are driven predominantly by variations in the distribution of temperatures throughout the growing period, and long-term climate changes are driven predominantly by additive mean shifts, then regressing on the mean growing period temperature will produce different yield responses at annual vs.\ climatological timescales.  
 
-Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2014 and 2015 \citep{ruane2014, Markowski2015, Pirttioja2015}, and several recent studies in 2018 and 2019 \citep{FRONZEK20182, Snyder2018, RUIZRAMOS2018}. 
+Systematic parameter sweeps have begun to be used in crop model evaluation and emulation, with early efforts in 2014 and 2015 \citep{ruane2014, Markowski2015, Pirttioja2015}, and several recent studies in 2018 and 2019 \citep{FRONZEK20182, RUIZRAMOS2018,Snyder2018}. 
 These three studies sample multiple perturbations to temperature and precipitation, and two of the three add CO$_2$ as well, for a total of 132, 99 and 220 different combinations, respectively. 
 All take advantage of the structured training set to construct emulators (``response surfaces'') of climatological mean yields, omitting year-over-year variations. 
 All studies have some limitations, however, for assessing global agricultural impacts. 
-None of the 2018 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
-Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
-Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+None of the 2018--2019 papers offer responses in every grid cell globally, most instead focus on a limited number of sites.
+Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018}, while \citet{Snyder2018} analyzes yield responses for four crops from a variety of site-specific crop models. % of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+%Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
 GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, and applied nitrogen (CTWN). 
