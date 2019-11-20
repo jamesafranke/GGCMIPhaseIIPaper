@@ -367,7 +367,7 @@ The estimation method scores relatively lower on adjusted $R^2$ for the simplest
 \end{equation}
 We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 
-An additional diagnostic of a fit is the distribution of residuals. Normally or near-normally distributed residuals indicate the errors around the fit are random and not biased in some way. 
+An additional diagnostic of a fit is the distribution of residuals. Normally or near-normally distributed residuals indicate that errors around the fit are random and not biased in some way. 
 When fitting Equation \ref{eqn:features_original} to the GGCMI Phase II dataset, the distribution of the residuals depends on the number of features included in the regression, the method for estimating the parameters, and the target distribution in the training set. The residuals are only normally distributed (pvalue > 0.05 in the Shapiro–Wilk test) for a single model, PEPIC, for any specification tested here, but %  \citep{Shapiro1965}  
 their skew is relatively small except in a single case, the EPIC-TAMU model for maize (Figure \ref{fig:features}, fourth row).
 While including higher order terms in the model tends to reduce residual skew, the opposite occurs with EPIC-TAMU maize. 
@@ -577,7 +577,7 @@ Table \ref{table:ASE} shows MSE error by this metric over currently cultivated l
 Values are below 5\% for all but six problematic model-crop combinations, highlighted in bold. 
 These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for rice) but now also JULES for maize and rice.
 Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
-In absolute terms, median grid cell RMS errors for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold. % for PROMET and JULES where they range from 0.6 - 0.9 ton ha$^{-1}$.
+In absolute terms, median grid cell \textcolor{red}{RMS} errors for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold. % for PROMET and JULES where they range from 0.6 - 0.9 ton ha$^{-1}$.
 %Errors are spatially heterogeneous. See supplemental Figures SXX-SXX for maps.
 
 The metric of Table \ref{table:ASE} is relatively simple. %We do not compare to yield \textit{changes};
@@ -588,7 +588,7 @@ In this sense the metric is overly conservative, and values would be lower under
 
 \textit{3. Validation of emulation of realistic climate projections.}
 \label{S:4.3}
-Finally, we test the ability of an emulator based on GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
+Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
 For the test, we drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario.
 We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the CMIP5 archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure SXX.) \textcolor{red}{You never introduced or defined CMIP5 before}
  We then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output. The resulting emulated yields reliably reproduce simulated yields under the full climate scenario (Figure \ref{fig:lpjmlrcp}). 
