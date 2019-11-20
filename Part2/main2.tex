@@ -450,7 +450,7 @@ Yield responses to the four main drivers considered here (C, T, W, and N) are al
 Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in t ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
 Emulators do perform poorly in a few regions that involve discontinuous or irregular yield responses. 
-This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rise 4 degrees. 
+This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rises by 4 degrees. 
 Under these conditions, the 3rd order polynomial cannot fit the response, and errors are high. See Section \ref{S:4.1} for additional discussion. 
 
 Crop yield responses in all models generally follow similar functional forms at any given location, though with a spread in magnitude (Figure \ref{fig:regression_2}, which shows rainfed maize in northern Iowa in a selection of GGCMI models). 
@@ -531,10 +531,10 @@ Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the e
 Over all-crop model combinations, the emulator produces $e < 1$ for 95\% of currently cultivated area.
 See Figures SXX-SXX for analogous figures for all models.
 
-Note that our normalized error assessment is relatively forgiving for several reasons. 
+Note that the normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
 Had we used a spline interpolation, the error would necessarily be zero. 
-(Our second metric involves evaluating on scenarios not included in the training set.)
+%(Our second metric involves evaluating on scenarios not included in the training set.)
 Second, the metric scales emulator fidelity not by the magnitude of yield changes in the evaluated model but by the spread in yield changes across models. 
 The normalized error $e$ for a given model then depends on the particular suite of other models considered in the intercomparison exercise.  
 The rationale for the choice is to relate the fidelity of the emulation to the true uncertainty, which we take as the multi-model spread. 
@@ -542,7 +542,7 @@ The metric then has the property that where models differ more widely, the stand
 In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which result not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops. (See also Section \ref{S:5}).
 
 
-\textit{2. Out-of-sample validation.} We also provide a second, more stringent test of emulator performance via a three-fold cross validation (also termed an out-of-sample validation). 
+\textit{2. Out-of-sample validation.} We provide a second, more stringent test of emulator performance via a three-fold cross validation (also termed an out-of-sample validation). 
 In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
 We calculate the mean square error (MSE) between emulated (predicted) and actual simulated values across the test set, repeat the process three times so that test sets include all data randomly divided, and average the results of the three splits. 
 As a last step, we normalize the MSE in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
@@ -553,7 +553,7 @@ As a last step, we normalize the MSE in each grid cell by dividing by its simula
     Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
     %The split does not represent a uniform number of samples in each location or in each model. % because simulation sampling extent in variable space is heterogeneous.  --- XX this belongs in text, not in table caption
     Emulator errors considered unacceptable are highlighted in bold. 
-        Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=120), so is difficult to fit with the OLS.
+        Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=120), so cannot be fit with the OLS and requires the Bayesian Ridge method.
     } 
     \label{table:ASE}
     \begin{tabular}{l | c | c | c | c | c} 
@@ -736,8 +736,8 @@ S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE
 R.C.I.\ acknowledges support from the Texas Agrilife Research and Extension, Texas A \& M University. 
 This is paper number 35 of the Birmingham Institute of Forest Research. 
 Computing resources were provided by the University of Chicago Research Computing Center (RCC).
-This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1746045). 
-Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+	\textcolor{red}{This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. (DGE-1746045). 
+	Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.}
 \end{acknowledgements}
 
 \bibliographystyle{copernicus}
