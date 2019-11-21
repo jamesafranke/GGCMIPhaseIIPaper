@@ -245,13 +245,11 @@ The effect of nonlinearity may be particularly relevant for precipitation, since
 (Crop yields should drop under excess precipitation as well, but process-based models do not capture losses in saturated conditions well \citep[e.g.][]{Glotter15,Li2019}.) 
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
-\textcolor{red}{The choice is reasonable, since
-climate models do not agree on distributional changes. %are small relative to existing year-to-year variations, and
-However, most models do project small mean increases in growing-season temperature variability \textit{in currently cultivated areas? some statement about geographic distribution of changes}, and projected changes can be substantial in more localized regions, though models disagree on spatial patterns.  \textit{For example, in business-as-usual climate projections to the year 2100, region XX in model XX increases by XX, though in model XX the change is only XX}. (See Supplemental Figure SXX for results from multiple climate models).}
-%At the climatological-mean timescale, the mean changes in temperature and precipitation are thought to be sufficient to explain the mean response.
-We therefore explicitly test (in Section \ref{S:4.3}) the assumption that distributional changes are not consequential for climatological mean yields,  %(both within-growing-season and across years)are often assumed not consequential for climatological mean yields, and
-by confirming that an emulator trained on the GGCMI Phase II dataset can successfully reproduce yield changes under a full climate model projection.
-
+The choice is reasonable, since climate models do not agree on distributional changes.
+However, most models do project small mean increases in growing-season temperature variability fro currently cultivated areas for all crops except winter wheat, and projected changes can be substantial in more localized regions, though models disagree on spatial patterns.
+For example, in business-as-usual climate projections to the year 2100, growing season temperature over currently cultivated rice areas in the HadCM3L model increases by 31\%, though in CESM1-0-1 model they decrease by 12\%. 
+(See Supplemental Table S1 for results from multiple climate models for the different crops).
+We therefore explicitly test (in Section \ref{S:4.3}) the assumption that distributional changes are not consequential for climatological mean yields, by confirming that an emulator trained on the GGCMI Phase II dataset can successfully reproduce yield changes under a full climate model projection.
 
 \begin{figure*}[ht]
 \centering
@@ -591,7 +589,7 @@ The metric also does not relate emulation error to yield changes. For more detai
 
 Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
 For the test, we drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario.
-We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure SXX.)
+We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure S35.)
 We then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output. The resulting emulated yields reliably reproduce simulated yields under the full climate scenario (Figure \ref{fig:lpjmlrcp}). 
 
 \textcolor{red}{XX needs edits from here on} The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
