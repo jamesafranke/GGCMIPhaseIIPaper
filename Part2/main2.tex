@@ -499,7 +499,6 @@ For a multi-model comparison exercise like GGCMI Phase II, a reasonable though l
     \label{eqn:error}
 \end{align}
 
-
 Evaluation of this metric implies that GGCMI Phase II emulators are generally satisfactory. 
 We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error}. 
 A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
@@ -527,40 +526,40 @@ In GGCMI Phase II the effect is manifested in the higher normalized errors for s
 
 \smallskip
 \textit{2. Out-of-sample validation.} We provide a second, more stringent test of emulator performance via a three-fold cross validation (also termed an out-of-sample validation). 
-In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
-We calculate the mean square error (MSE) between emulated (predicted) and actual simulated values across the test set, repeat the process three times so that test sets include all data randomly divided, and average the results of the three splits. 
+%In this test the GGCMI Phase II dataset is split randomly into two parts, with 66\% of the data used to train the model and the held-out 33\% used to test the fidelity of the resulting emulator.
+In this test the GGCMI Phase II dataset is split randomly into two parts, with 90\% of the data used to train the model and the held-out 10\% used to test the fidelity of the resulting emulator.
+We calculate the root mean square error (RMSE) between emulated (predicted) and actual simulated values across the test set, repeat the process twice and average the results of the two splits. 
 The split does not represent a uniform number of samples in each location or in each model.
-As a last step, we normalize the MSE in each grid cell by dividing by its simulated yield in the baseline case (T+0, W+0, C=360, N=200). 
+As a last step, we normalize the RMSE in each grid cell by dividing by its simulated yield change in the experiment sampling space in each gridcell. %in the baseline case (T+0, W+0, C=360, N=200). 
 
 \begin{table*}[hb]
     \caption{
-        Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
-        Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
-        Emulator errors considered unacceptable are highlighted in bold. 
+        Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the mean grid cell error as a percentage of baseline yield, over all currently cultivated grid cells weighted by cultivation area. 
+        %(We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
+        Errors are calculated using the 90-10 cross validation scheme described in text, where the model is trained on 90\% of the data and validated on the held-out 10\% (repeated twice). 
         Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=121), so cannot be fit with the OLS and requires the Bayesian Ridge method.
     } 
     \label{table:ASE}
     \begin{tabular}{l | c | c | c | c | c} 
         \hline
         \textbf{Model}     & \textbf{Maize} & \textbf{Soybean} & \textbf{Rice} & \textbf{S. Wheat} & \textbf{W. Wheat} \\ \hline
-        \textbf{CARAIB}    & 0.45 (0.35) & 1.22 (0.50) & 1.67 (0.32) & 0.48 (0.26) & 1.21 (0.47) \\ \hline
-        \textbf{EPIC-TAMU} & 2.08 (0.61) & 4.59 (0.20) & 0.74 (0.27) & 2.81* (0.20) & 1.34 (0.14)  \\ \hline
-        \textbf{JULES}     & \textbf{7.46} (0.03) & \textbf{27.0} (10.21)& \textbf{11.7} (0.23) & \textbf{19.0} (5.23)  & NA  \\ \hline
-        \textbf{GEPIC}     & 3.13 (0.18) & 1.35 (0.20) & 3.12 (0.36) & 2.28 (0.13) & 3.55 (0.20) \\ \hline
-        \textbf{LPJ-GUESS} & 0.66 (0.85) & NA    & NA  & 1.13 (2.83) & 0.67 (0.98)  \\ \hline
-        \textbf{LPJmL}     & 2.04 (0.14) & 1.52 (0.24) & 1.09 (0.22) & 0.51 (0.20) & 0.65 (0.22)  \\ \hline
-        \textbf{pDSSAT}    & 2.82 (0.52) & 2.30 (0.25) & 3.85 (2.30) & 0.51 (0.20) & 3.27 (0.97)  \\ \hline
-        \textbf{PROMET}    & 2.45 (0.30) & 2.96 (1.91) & \textbf{11.8} (1.87) & 4.98 (0.13) & 4.47 (0.21)  \\ \hline
-        \textbf{PEPIC}     & 2.04* (0.79) & 0.82* (3.27) & 1.21* (1.82) & 1.25* (0.54) & 4.33* (0.51) \\ \hline
+        \textbf{CARAIB}    & 0.91 & 2.38 & 2.42 & 1.40  & 1.87    \\ \hline
+        \textbf{EPIC-TAMU} & 1.76 & 2.55 & 1.60 & 1.94* & 1.12    \\ \hline
+        \textbf{JULES}     & 2.64 & 4.02 & 1.70 & 2.15 & NA       \\ \hline
+        \textbf{GEPIC}     & 2.40 & 1.25 & 2.13 & 3.29 & 2.89     \\ \hline
+        \textbf{LPJ-GUESS} & 1.09 & NA   & NA   & 1.30 & 1.21     \\ \hline
+        \textbf{LPJmL}     & 1.81 & 1.32 & 1.08 & 1.05 & 1.28     \\ \hline
+        \textbf{pDSSAT}    & 1.72 & 1.13 & 1.57 & 1.27 & 1.51     \\ \hline
+        \textbf{PROMET}    & 2.69 & 2.70 & 1.84 & 3.74 & 3.36     \\ \hline
+        \textbf{PEPIC}     & 1.79* & 1.87* & 1.39 & 2.29* & 2.87* \\ \hline
     \end{tabular}
 \end{table*}
 
 The resulting error metric is generally low as a percentage of yield.
-Table \ref{table:ASE} shows MSE error by this metric over currently cultivated land for each model-crop combination for rainfed and irrigated crops and include all simulations in CTWN space. 
-Values are below 5\% for all but six problematic model-crop combinations, highlighted in bold. 
-These include the cases flagged previously (JULES for soybeans and spring wheat and PROMET for rice) but now also JULES for maize and rice.
-Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
-In absolute terms, median grid cell root mean square errors (RMSE) for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold.
+Table \ref{table:ASE} shows the RMSE error over currently cultivated land for each model-crop combination for rainfed crops and include all simulations in CTWN space. 
+Values are below 5\% for all cases.  
+%Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
+In absolute terms, mean grid cell root mean square errors (RMSE) for rainfed crops are less than 0.4 ton ha$^{-1}$ for all cases except those marked in bold.
 Errors are not uniformly distributed across space. 
 See Supplemental Figures S23-S34 for maps of cross validation error for each crop and model.
 
@@ -741,6 +740,29 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table*}[hb]
+    \caption{
+        Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
+        Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
+        Emulator errors considered unacceptable are highlighted in bold. 
+        Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=121), so cannot be fit with the OLS and requires the Bayesian Ridge method.
+    } 
+    \label{table:ASE}
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model}     & \textbf{Maize} & \textbf{Soybean} & \textbf{Rice} & \textbf{S. Wheat} & \textbf{W. Wheat} \\ \hline
+        \textbf{CARAIB}    & 0.45 (0.35) & 1.22 (0.50) & 1.67 (0.32) & 0.48 (0.26) & 1.21 (0.47) \\ \hline
+        \textbf{EPIC-TAMU} & 2.08 (0.61) & 4.59 (0.20) & 0.74 (0.27) & 2.81* (0.20) & 1.34 (0.14)  \\ \hline
+        \textbf{JULES}     & \textbf{7.46} (0.03) & \textbf{27.0} (10.21)& \textbf{11.7} (0.23) & \textbf{19.0} (5.23)  & NA  \\ \hline
+        \textbf{GEPIC}     & 3.13 (0.18) & 1.35 (0.20) & 3.12 (0.36) & 2.28 (0.13) & 3.55 (0.20) \\ \hline
+        \textbf{LPJ-GUESS} & 0.66 (0.85) & NA    & NA  & 1.13 (2.83) & 0.67 (0.98)                        \\ \hline
+        \textbf{LPJmL}     & 2.04 (0.14) & 1.52 (0.24) & 1.09 (0.22) & 0.51 (0.20) & 0.65 (0.22)           \\ \hline
+        \textbf{pDSSAT}    & 2.82 (0.52) & 2.30 (0.25) & 3.85 (2.30) & 0.51 (0.20) & 3.27 (0.97)            \\ \hline
+        \textbf{PROMET}    & 2.45 (0.30) & 2.96 (1.91) & \textbf{11.8} (1.87) & 4.98 (0.13) & 4.47 (0.21)  \\ \hline
+        \textbf{PEPIC}     & 2.04* (0.79) & 0.82* (3.27) & 1.21* (1.82) & 1.25* (0.54) & 4.33* (0.51)      \\ \hline
+    \end{tabular}
+\end{table*}
 
 %\textcolor{red}{thisis one ref I found but it may not be the best reference and if we drop the claim of "weeks or even months" we can probably also do without a citation here...}
 %Previous studies have suggested that in all but very arid regions, yields are not sensitive to how precipitation is distributed within a month \citep{Glotter14} although the impact of precipitation distribution within a crop season can be significant \citep{CHALLINOR200499}. 
