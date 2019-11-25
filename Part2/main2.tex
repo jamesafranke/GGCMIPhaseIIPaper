@@ -154,7 +154,7 @@ In the following, we describe the training dataset (Section \ref{S:2}), the stat
         \textbf{LPJmL},     \citet{von_Bloh_implementing_2018} & X & X & X & X & X & X & \textbf{756 / 648}\\ \middlehline
         \textbf{pDSSAT},    \citet{Elliott2014b, JONES2003235} & X & X & X & X & X & X & \textbf{756 / 648}\\ \middlehline
         \textbf{PEPIC},     \citet{LIU2016164, LIU2016}        & X & X & X & X & X & X & 149 / 121\\ \middlehline
-        \textbf{PROMET},    \citet{Hank2015, MAUSER2015, Zabel2019}       & X & X & X & X & X & X & 261 / 232\\
+        \textbf{PROMET},    \citet{Hank2015, MAUSER2015, Zabel2019}  & X & X & X & X & X & -- & 261 / 232\\
         \bottomhline
     \end{tabular}
 \end{table*}
@@ -319,7 +319,7 @@ To reduce the number of terms in our statistical model, we apply a feature selec
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and 
 we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
-We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (120 input combinations, PEPIC). 
+We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (121 input combinations, PEPIC). 
 Feature importance is not uniform due to spatial heterogeneity across models and crops, so we weight the loss function by currently cultivated area during this step. 
 The resulting choice of terms is then applied for all emulators and all crops. 
 Since the goal of the emulator is interpolation within the sample space and not extrapolation, we err on the side of including terms that are useful in at least some cases, because the added predictive ability outweighs the costs to distribution of the residuals or over-fitting.  
@@ -537,7 +537,7 @@ As a last step, we normalize the MSE in each grid cell by dividing by its simula
         Mean squared error of emulator representation of a simulation as a percentage of baseline simulated yield for the cross-validation process, for rainfed and irrigated (parentheses) crops. Values are the median grid cell error as a percentage of baseline yield, over all currently cultivated grid cells with baseline yield $>$ 0.5 ton ha$^{-1}$. (We mask lower-yield locations because they are especially problematic in a yield-normalized metric.) % minor disparities result in high errors. 
         Errors are calculated using the 3-fold stratified k-fold cross validation scheme described in text, where the model is trained on 66\% of the data and validated on the held-out 33\% (repeated three times). 
         Emulator errors considered unacceptable are highlighted in bold. 
-        Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=120), so cannot be fit with the OLS and requires the Bayesian Ridge method.
+        Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=121), so cannot be fit with the OLS and requires the Bayesian Ridge method.
     } 
     \label{table:ASE}
     \begin{tabular}{l | c | c | c | c | c} 
