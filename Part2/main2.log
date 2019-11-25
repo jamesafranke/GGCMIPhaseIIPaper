@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 NOV 2019 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 NOV 2019 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,19 +1189,19 @@ Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 47
 (pdftex.def)             Requested size: 463.78pt x 301.38904pt.
  [15] [16 <./figures/error_grid.png>]
 [17 <./figures/CARAIB_spatial_error.png>] [18]
-<figures/LPJMLRCP85comp.png, id=452, 578.01546pt x 170.70174pt>
+<figures/LPJMLRCP85comp.png, id=452, 585.96516pt x 170.70174pt>
 File: figures/LPJMLRCP85comp.png Graphic file (type png)
 
 <use figures/LPJMLRCP85comp.png>
 Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 579.
-(pdftex.def)             Requested size: 463.78pt x 136.9679pt.
+(pdftex.def)             Requested size: 463.78pt x 135.11075pt.
  [19 <./figures/LPJMLRCP85comp.png>]
-<figures/em_CTWN_all_crops.png, id=467, 562.2606pt x 440.847pt>
+<figures/em_CTWN_all_crops.png, id=467, 562.2606pt x 432.60822pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
 Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 612.
-(pdftex.def)             Requested size: 463.78pt x 363.63599pt.
+(pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 <figures/global_em_maize.png, id=473, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
@@ -1311,7 +1311,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
 Here is how much of TeX's memory you used:
  10864 strings out of 492995
  153608 string characters out of 6132704
- 311380 words of memory out of 5000000
+ 311382 words of memory out of 5000000
  14032 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1333,7 +1333,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main2.pdf (31 pages, 7861560 bytes).
+Output written on main2.pdf (31 pages, 7891208 bytes).
 PDF statistics:
  743 PDF objects out of 1000 (max. 8388607)
  663 compressed objects within 7 object streams
