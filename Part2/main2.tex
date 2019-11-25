@@ -434,6 +434,22 @@ Emulation spatial skill varies across models and crops, with maize being the qua
    \label{fig:regression_2}
 \end{figure*}
 
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=16.3cm]{figures/regression_example_new.png}
+    \caption{
+    }
+   \label{fig:regression}
+\end{figure*}
+
+\begin{figure*}[h!!]
+\centering
+    \includegraphics[width=16.3cm]{figures/regression_example_2_new.png}
+    \caption{
+    }
+   \label{fig:regression_2}
+\end{figure*}
+
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
 Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in t ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
@@ -467,6 +483,14 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
     Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
+    }
+   \label{fig:error_360}
+\end{figure*}
+
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=16.3cm]{figures/error_grid_new.png}
+    \caption{
     }
    \label{fig:error_360}
 \end{figure*}
@@ -555,7 +579,7 @@ As a last step, we normalize the RMSE in each grid cell by dividing by its simul
     \end{tabular}
 \end{table*}
 
-The resulting error metric is generally low as a percentage of yield.
+The resulting error metric is generally low as a percentage of yield change.
 Table \ref{table:ASE} shows the RMSE error over currently cultivated land for each model-crop combination for rainfed crops and include all simulations in CTWN space. 
 Values are below 5\% for all cases.  
 %Errors for irrigated emulators are considerably lower, below 1\% in all but 7 crop-model combinations and below 5\% for all cases except JULES soybeans and winter wheat.
@@ -567,7 +591,8 @@ The metric of Table \ref{table:ASE} is relatively simple and can involve some bi
 The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator.
 In this sense the metric is overly conservative, and values would be lower under a less aggressive sampling strategy (e.g.\ ``leave-one-out''). 
-The metric also does not relate emulation error to yield changes. For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
+%The metric also does not relate emulation error to yield changes. 
+For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
 
 \smallskip
 \textit{3. Validation of emulation of realistic climate projections.}
