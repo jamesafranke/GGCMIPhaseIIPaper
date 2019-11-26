@@ -351,7 +351,7 @@ Since the goal of the emulator is interpolation within the sample space and not 
     + \ & {\color{dark-gray}K_{i} W^2 C} + {\color{dark-gray}K_{j} C^2 W} + {\color{dark-gray}K_{k} C^2 T} + {\color{dark-gray}K_{l} C^2 N} \nonumber
 \end{align}
 
-Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. 
+Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. (JULES and PROMET for example show significant reductions in error for some of the higher order carbon interaction terms).
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
 The feature selection process allows us to eliminate 12 terms, leaving a final polynomial in 23 terms.
 We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. 

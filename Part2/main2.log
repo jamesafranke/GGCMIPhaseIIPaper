@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2019 08:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2019 08:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,7 +995,11 @@ Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 3.
 
-(./main2.aux)
+(./main2.aux
+
+LaTeX Warning: Label `eqn:features_original' multiply defined.
+
+)
 \openout1 = `main2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1134,7 +1138,7 @@ Package pdftex.def Info: figures/hist_year_pr.png used on input line 256.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
  [7 <./figures/phase_II_em_figure_1.png>]
 [8 <./figures/hist_year_t.png> <./figures/hist_year_pr.png>] [9]
-<figures/model_select_maize_rice.png, id=350, 703.1068pt x 525.965pt>
+<figures/model_select_maize_rice.png, id=351, 703.1068pt x 525.965pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
@@ -1310,14 +1314,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 753.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 753.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 753.
  ) 
 Here is how much of TeX's memory you used:
  10867 strings out of 492995
  153645 string characters out of 6132704
- 308930 words of memory out of 5000000
+ 308971 words of memory out of 5000000
  14034 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1339,7 +1343,7 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main2.pdf (31 pages, 7851809 bytes).
+Output written on main2.pdf (31 pages, 7851558 bytes).
 PDF statistics:
  740 PDF objects out of 1000 (max. 8388607)
  660 compressed objects within 7 object streams
