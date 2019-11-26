@@ -314,10 +314,9 @@ Such a high-dimensional model is difficult to fit, especially for a training set
 Our simpler functional form can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
-\subsection{Feature selection}
+\subsection{Feature importance}
 To reduce the number of terms in our statistical model, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
-In this procedure higher-order and interaction terms are added successively to the regression model one by one, and 
-we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
+In this procedure higher-order and interaction terms are added successively to the regression model one by one, and we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (121 input combinations, PEPIC). 
 Feature importance is not uniform due to spatial heterogeneity across models and crops, so we weight the loss function by currently cultivated area during this step. 
@@ -339,13 +338,15 @@ Since the goal of the emulator is interpolation within the sample space and not 
    \label{fig:features}
 \end{figure*}
 
-Feature importance is remarkably consistent across models (Figure \ref{fig:features}). 
+Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. 
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
 The feature selection process allows us to eliminate 12 terms, leaving a final polynomial in 23 terms.
 We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. 
 The eliminated terms include many of those in C: the cubic; the CT, CTN, CTW, and CWN interaction terms; and all higher order interaction terms in C. 
 Finally, we eliminate one 2nd-order interaction term in W and two in T. 
 Implications of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature.  
+
+Feature importance is not constant across space. Additional higher order terms provide error reductions in the ``fringe'' areas where crops are currently not cultivated.
 
 \subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91} rather than standard ordinary least squares (OLS). 
@@ -405,7 +406,7 @@ Emulation spatial skill varies across models and crops, with maize being the qua
 
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=16.3cm]{figures/regression_example_1.png}
+    \includegraphics[width=16.3cm]{figures/regression_example_new.png}
     \caption{
     Illustration of spatial variations in yield response, which are successfully captured by the emulator. 
     Panels show simulations (points) and emulations (lines) of rainfed maize in the pDSSAT model in six example locations selected to represent high-cultivation areas around the globe. 
@@ -422,7 +423,7 @@ Emulation spatial skill varies across models and crops, with maize being the qua
 
 \begin{figure*}[h!!]
 \centering
-    \includegraphics[width=16.3cm]{figures/regression_example_2.png}
+    \includegraphics[width=16.3cm]{figures/regression_example_2_new.png}
     \caption{
     Illustration of variations in yield response across models, again successfully captured by the emulator. 
     Panels show simulations and emulations from six representative GGCMI models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
@@ -430,22 +431,6 @@ Emulation spatial skill varies across models and crops, with maize being the qua
     Models are uncalibrated, producing spread in absolute yields. 
 	While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ LPJ-GUESS here, for all parameter dimensions), but 
     resulting error generally remains small relative to differences across models.
-    }
-   \label{fig:regression_2}
-\end{figure*}
-
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=16.3cm]{figures/regression_example_new.png}
-    \caption{
-    }
-   \label{fig:regression}
-\end{figure*}
-
-\begin{figure*}[h!!]
-\centering
-    \includegraphics[width=16.3cm]{figures/regression_example_2_new.png}
-    \caption{
     }
    \label{fig:regression_2}
 \end{figure*}
@@ -474,7 +459,7 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 \label{S:4.1}
 \begin{figure*}[ht]
 \centering
-    \includegraphics[width=16.3cm]{figures/error_grid.png}
+    \includegraphics[width=16.3cm]{figures/error_grid_new.png}
     \caption{
     Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
@@ -483,14 +468,6 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
     Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
-    }
-   \label{fig:error_360}
-\end{figure*}
-
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=16.3cm]{figures/error_grid_new.png}
-    \caption{
     }
    \label{fig:error_360}
 \end{figure*}
