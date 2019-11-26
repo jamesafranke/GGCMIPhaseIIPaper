@@ -232,9 +232,7 @@ When discrepancies are large, year-over-year responses are generally stronger th
    \label{fig:yearvclim}
 \end{figure*}
 
-
-While differences in responses at different timescales % between year-over-year and climatological temperature responses
-can arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
+While differences in responses at different timescalescan arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
 The mean growing-season value is only a proxy for the distribution of daily climatic conditions that crops are sensitive to, and present-day variations between years can be very different from future forced changes. 
 That is, variations in growing-season \textit{means} from year to year at present are associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates: a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}. % XX not sure this is the right citation for this...
 Changes in temperature distributions have been shown to strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, though precipitation effects should be smaller since crops respond not to rainfall but to soil moisture, which integrates over weeks or even months \citep[e.g.][]{potter2005effects, Glotter14, CHALLINOR200499}. 
@@ -262,7 +260,6 @@ We therefore explicitly test (in Section \ref{S:4.3}) the assumption that distri
    \label{fig:yearly}
 \end{figure*}
 
-
 Note that even though distributions of climate variables are unchanged in the GGCMI Phase II simulations, the spread in annual yields still becomes wider in highly impacted climate states, because of the nonlinearity of yield responses (Figure \ref{fig:yearly}). 
 In the GGCMI Phase II dataset, all crops except rice show  greater year-to-year yield variance  in conditions of extreme climate stress. %, as crop yields become more sensitive to additional perturbations. % because yield sensitivities to perturbations increases. 
 (Rice is typically irrigated and experiences no water stress.) 
@@ -277,7 +274,7 @@ Emulation involves fitting individual regression models from GGCMI Phase II outp
 We discuss here largely emulations of climatological mean crop yield with no growing season adaptation (A0 scenarios), but note that any output of the crop models can potentially be emulated. 
 We provide separate emulations of not only irrigated and rainfed yields but also applied irrigation water (pirrww in mm\ yr$^{-1}$, see \citep{Franke2019a}) in both the A0 and A1 growing season, meaning that each model and crop combination results in six sets of regressions. (See Supplementary Material SXX for more information on additional cases not shown.)
 
-\subsection{Statistical model}
+\subsection{Statistical model and feature importance}
 For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function (Equation \ref{eqn:features_original}). 
 If the climatological mean response is relatively smooth, then a simpler form provides a reasonable fit that allows for some interpretation of resultant parameter weights. 
 A relativity simple parametric form also allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
@@ -285,15 +282,10 @@ By emulating at the grid cell level, we indirectly include any yield response to
 To facilitate potential parameter-by-parameter comparison across crop models, we hold the functional form constant in space, across all crops, and models. 
 That is, the same statistical model is used for all grid cells, models, and rainfed crops. 
 Note however that regressions for irrigated crops do not contain W terms and models that do not sample the nitrogen levels omit the N terms.
+With all higher order terms included (minus $N^{3}$), the resultant model contains 34 terms (Equation \ref{eqn:features_original}). 
+We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. 
+Results shown for the remainder of the paper use this specificaiton.
 
-Both higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
-Interaction terms are needed since the yield response is expected to depend on interactions between the major inputs. 
-For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
-Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}. 
-
-%A full third order polynomial with interaction terms for the four regressors (CTWN) has 35 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
-%We therefore reduce the number of free parameters through a feature selection process (discussed below), eliminating 12 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
-%The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 \begin{align}
     \label{eqn:features_original}
@@ -308,14 +300,18 @@ Other observation-based studies have shown the importance of the interaction bet
     + \ & K_{31} W^2 C + K_{32} C^2 W + K_{33} C^2 T + K_{34} C^2 N \nonumber
 \end{align}
 
-We do not focus in this study on comparing different functional forms or non-parametric models.
+Both higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
+Interaction terms are needed since the yield response is expected to depend on interactions between the major inputs. 
+For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
+Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}.
+
+We do not focus in this study on comparing different functional forms or non-parametric models and instead focus on feature importance.
 Some prior studies have used other statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial. 
 Such a high-dimensional model is difficult to fit, especially for a training set of realistic simulations in which input parameters are highly correlated, and  \citet{BLANC2015} and \citet{BLANC2017}  ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
 Our simpler functional form can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
-\subsection{Feature importance}
-To potentially reduce the number of terms in the statical model to improve the interpretability of the remaining terms, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
+To investigate the relative importantce of terms in the statical model and to improve the interpretability of the terms, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (121 input combinations, PEPIC). 
@@ -354,12 +350,10 @@ Since the goal of the emulator is interpolation within the sample space and not 
 Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. (JULES and PROMET for example show significant reductions in error for some of the higher order carbon interaction terms).
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
 The feature selection process allows us to eliminate 12 terms, leaving a final polynomial in 23 terms.
-We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. 
 The eliminated terms include many of those in C: the cubic; the CT, CTN, CTW, and CWN interaction terms; and all higher order interaction terms in C. 
 Finally, we eliminate one 2nd-order interaction term in W and two in T. 
 Implications of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature.  
-
-%Feature importance is not constant across space. Additional higher order terms provide error reductions in the ``fringe'' areas where crops are currently not cultivated.
+The reduced-form emulator is acceptable across currently cultivated land for all but the JULES and PROMET models. See supplemental for addiontial information. 
 
 \subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91} rather than standard ordinary least squares (OLS). 
@@ -379,12 +373,6 @@ their skew is relatively small except in a single case, the EPIC-TAMU model for 
 While including higher order terms in the model tends to reduce residual skew, the opposite occurs with EPIC-TAMU maize. 
 Higher-order terms for EPIC-TAMU maize increase skew instead, but also reduce error in cross-validation, which is more important in the context of emulation.
 This indicates new predictions from the emulator for EPIC-TAMU will be biased high, but with a low magnitude deviation.  
-%The EPIC-TAMU and pDSSAT crop module emulator residuals are never normally distributed by this metric for any feature specification proposed here.
-
-%Note that we do not show diagnostics for the three models that provided less than 50 simulations and are not included in Table \ref{tab: }. The lowest number of simulations emulated across the full parameter space is 120 (for the PEPIC model).
-%the GGCMI Phase II experiment, the most problematic fits are those for models that provided a limited number of cases 
-%or for low-yield geographic regions where some modeling groups did not run all scenarios. 
-%, since \textcolor{red}{Should this statement move to emulator evaluation? What is the metric of a problematic fit? -- XX JIM XX unacceptable or exploding errors over 100\% of yield almost everywhere.} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -515,7 +503,7 @@ For a multi-model comparison exercise like GGCMI Phase II, a reasonable though l
 Evaluation of this metric implies that GGCMI Phase II emulators are generally satisfactory. 
 We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error}. 
 A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
-Emulator performance is generally satisfactory. For maize, for example, all 9 models produce $e < 1$ over 97\% of currently cultivated area. 
+Emulator performance is generally satisfactory. For maize, for example, all 9 models return $e < 1$ over 97\% of currently cultivated area. 
 %and an additional 3 models produce $e < 1$ over 97\% of currently cultivated area. (LPJ-GUESS emulation is lowest in fidelity for maize, as previously shown in Figure \ref{fig:regression_2}, and produces 92\%.) 
 Three crop model combinations produce $e < 1$ for less than 90\% of cultivated area: PROMET and CARAIB for soybeans (only 79\% and 83\% of cultivated area) JULES for spring wheat (85\% of cultivated area).
 (See Supplemental Figures S10-S13 for examples of worst-case emulator failures for PROMET soy and JULES spring wheat.)
@@ -811,6 +799,10 @@ Any opinions, findings, and conclusions or recommendations expressed in this mat
 %Both responses rise slightly at warmer temperatures.
 %Yield sensitivity to precipitation, on the other hand, is similar for both year-over-year and climatological changes (Figure \ref{fig:yearvclim}, right). 
 %Both responses are highly nonlinear and become more severe with increasing dryness. 
+
+%A full third order polynomial with interaction terms for the four regressors (CTWN) has 35 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
+%We therefore reduce the number of free parameters through a feature selection process (discussed below), eliminating 12 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
+%The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 
 \begin{figure*}[ht]
