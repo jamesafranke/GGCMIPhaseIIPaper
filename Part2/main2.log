@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  25 NOV 2019 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2019 07:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,17 +995,7 @@ Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 3.
 
-(./main2.aux
-
-LaTeX Warning: Label `fig:regression' multiply defined.
-
-
-LaTeX Warning: Label `fig:regression_2' multiply defined.
-
-
-LaTeX Warning: Label `fig:error_360' multiply defined.
-
-)
+(./main2.aux)
 \openout1 = `main2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1149,48 +1139,45 @@ File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 329.
+ 328.
 (pdftex.def)             Requested size: 463.78pt x 346.93732pt.
  [10] [11 <./figures/model_select_maize_rice.png>] <figures/lpjml_maize.png, id
 =380, 504.01099pt x 353.25575pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png used on input line 391.
+Package pdftex.def Info: figures/lpjml_maize.png used on input line 392.
 (pdftex.def)             Requested size: 455.24408pt x 319.08075pt.
 
-<figures/regression_example_new.png, id=382, 594.0594pt x 190.64825pt>
-File: figures/regression_example_new.png Graphic file (type png)
+<figures/regression_example.png, id=382, 594.0594pt x 176.48334pt>
+File: figures/regression_example.png Graphic file (type png)
 
-<use figures/regression_example_new.png>
-Package pdftex.def Info: figures/regression_example_new.png used on input line 
-408.
-(pdftex.def)             Requested size: 463.78pt x 148.84467pt.
+<use figures/regression_example.png>
+Package pdftex.def Info: figures/regression_example.png used on input line 409.
 
-<figures/regression_example_2_new.png, id=384, 594.20393pt x 190.64825pt>
-File: figures/regression_example_2_new.png Graphic file (type png)
+(pdftex.def)             Requested size: 463.78pt x 137.78569pt.
 
-<use figures/regression_example_2_new.png>
-Package pdftex.def Info: figures/regression_example_2_new.png used on input lin
-e 425.
-(pdftex.def)             Requested size: 463.78pt x 148.80394pt.
+<figures/regression_example_2.png, id=384, 594.20393pt x 176.48334pt>
+File: figures/regression_example_2.png Graphic file (type png)
+
+<use figures/regression_example_2.png>
+Package pdftex.def Info: figures/regression_example_2.png used on input line 42
+5.
+(pdftex.def)             Requested size: 463.78pt x 137.748pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] [13 <./figures/lpjml_maize.png>]
-
-LaTeX Warning: Text page 14 contains only floats.
-
-[14 <./figures/regression_example_new.png> <./figures/regression_example_2_new.
-png>] <figures/error_grid_new.png, id=416, 590.30136pt x 237.0456pt>
+[12] [13 <./figures/lpjml_maize.png>] [14 <./figures/regression_example.png> <.
+/figures/regression_example_2.png>]
+<figures/error_grid_new.png, id=415, 590.30136pt x 237.0456pt>
 File: figures/error_grid_new.png Graphic file (type png)
 
 <use figures/error_grid_new.png>
 Package pdftex.def Info: figures/error_grid_new.png used on input line 461.
 (pdftex.def)             Requested size: 463.78pt x 186.24396pt.
 
-<figures/CARAIB_spatial_error.png, id=418, 504.01099pt x 321.6015pt>
+<figures/CARAIB_spatial_error.png, id=417, 504.01099pt x 321.6015pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 
 <use figures/CARAIB_spatial_error.png>
@@ -1199,27 +1186,27 @@ Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 47
 (pdftex.def)             Requested size: 463.78pt x 295.93585pt.
  [15] [16 <./figures/error_grid_new.png>] [17 <./figures/CARAIB_spatial_error.p
 ng>] [18]
-<figures/LPJMLRCP85comp.png, id=455, 585.96516pt x 170.70174pt>
+<figures/LPJMLRCP85comp.png, id=451, 585.96516pt x 170.70174pt>
 File: figures/LPJMLRCP85comp.png Graphic file (type png)
 
 <use figures/LPJMLRCP85comp.png>
-Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 579.
+Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 580.
 (pdftex.def)             Requested size: 463.78pt x 135.11075pt.
  [19 <./figures/LPJMLRCP85comp.png>]
-<figures/em_CTWN_all_crops.png, id=470, 562.2606pt x 432.60822pt>
+<figures/em_CTWN_all_crops.png, id=465, 562.2606pt x 432.60822pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 612.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 616.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
-
-<figures/global_em_maize.png, id=476, 532.19627pt x 212.18472pt>
+ [20]
+<figures/global_em_maize.png, id=477, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 636.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 640.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
- [20] [21 <./figures/em_CTWN_all_crops.png>]
+ [21 <./figures/em_CTWN_all_crops.png>]
 [22 <./figures/global_em_maize.png>] [23] (./main2.bbl [24]
 Underfull \hbox (badness 2253) in paragraph at lines 81--85
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
@@ -1310,59 +1297,48 @@ Underfull \hbox (badness 2707) in paragraph at lines 611--615
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
-[30]) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
+[30]
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
+) [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 733.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 733.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 740.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 740.
  ) 
 Here is how much of TeX's memory you used:
- 10870 strings out of 492995
- 153740 string characters out of 6132704
- 307281 words of memory out of 5000000
+ 10866 strings out of 492995
+ 153633 string characters out of 6132704
+ 308065 words of memory out of 5000000
  14034 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1682b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.17} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
-s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on main2.pdf (31 pages, 7888083 bytes).
+ 43i,10n,40p,1763b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on main2.pdf (31 pages, 7850679 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 668 compressed objects within 7 object streams
- 158 named destinations out of 1000 (max. 500000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 661 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
