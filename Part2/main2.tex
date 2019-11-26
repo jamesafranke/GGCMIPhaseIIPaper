@@ -278,7 +278,7 @@ We discuss here largely emulations of climatological mean crop yield with no gro
 We provide separate emulations of not only irrigated and rainfed yields but also applied irrigation water (pirrww in mm\ yr$^{-1}$, see \citep{Franke2019a}) in both the A0 and A1 growing season, meaning that each model and crop combination results in six sets of regressions. (See Supplementary Material SXX for more information on additional cases not shown.)
 
 \subsection{Statistical model}
-For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
+For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function (Equation \ref{eqn:features_original}). 
 If the climatological mean response is relatively smooth, then a simpler form provides a reasonable fit that allows for some interpretation of resultant parameter weights. 
 A relativity simple parametric form also allows fast model emulation at the grid cell level as opposed to the global or large regional level. 
 By emulating at the grid cell level, we indirectly include any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate, and preserve the spatial resolution of the parent models.
@@ -291,9 +291,9 @@ Interaction terms are needed since the yield response is expected to depend on i
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}. 
 
-A full third order polynomial with interaction terms for the four regressors (CTWN) has 35 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
-We therefore reduce the number of free parameters through a feature selection process (discussed below), eliminating 12 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
-The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
+%A full third order polynomial with interaction terms for the four regressors (CTWN) has 35 total terms (Equation \ref{eqn:features_original}), too many for robust fitting even with the large GGCMI Phase II dataset. 
+%We therefore reduce the number of free parameters through a feature selection process (discussed below), eliminating 12 terms that do not play a significant role in predicting crop yields; these are shown in {\color{dark-gray}gray} in Equation \ref{eqn:features_original}. 
+%The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be well-fitted to crop model response in nearly all regions, with the only exceptions being extremely low-yield regions where crops are not currently grown.
 
 \begin{align}
     \label{eqn:features_original}
@@ -301,11 +301,11 @@ The resulting 23-parameter model (Equation \ref{eqn:features_original}) can be w
     + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N  + K_{6} C^2 \nonumber \\
     + \ & K_{7} T^2    + K_{8} W^2    + K_{9} N^2 + K_{10} C W \nonumber \\
     + \ & K_{11} C N   + K_{12} T W   + K_{13} T N + K_{14} W N \nonumber \\
-    + \ & {\color{dark-gray}K_{a} C T} + K_{15} T^3  + K_{16} W^3  + {\color{dark-gray}K_{b} C^3} + {\color{dark-gray}K_{c} N^3}\nonumber \\
-    + \ & K_{17} T W N + K_{18} T^2 W + K_{19} W^2 + K_{20} W^2 N  \nonumber \\
-    + \ & {\color{dark-gray}K_{d} C W N} + {\color{dark-gray}K_{e} C T N} + {\color{dark-gray}K_{f} C T W} + K_{21} N^2 C \nonumber \\
-    + \ & K_{22} N^2 T + K_{23} N^2 W + {\color{dark-gray}K_{g} T^2 N} + {\color{dark-gray}K_{h} T^2 C}  \nonumber \\
-    + \ & {\color{dark-gray}K_{i} W^2 C} + {\color{dark-gray}K_{j} C^2 W} + {\color{dark-gray}K_{k} C^2 T} + {\color{dark-gray}K_{l} C^2 N} \nonumber
+    + \ & K_{15} C T + K_{16} T^3  + K_{17} W^3  + K_{18} C^3 + {\color{dark-gray}K_{*} N^3} \nonumber \\
+    + \ & K_{19} T W N + K_{20} T^2 W + K_{21} W^2 + K_{22} W^2 N  \nonumber \\
+    + \ & K_{23} C W N + K_{24} C T N + K_{25} C T W + K_{26} N^2 C \nonumber \\
+    + \ & K_{27} N^2 T + K_{28} N^2 W + K_{29} T^2 N + K_{30} T^2 C  \nonumber \\
+    + \ & K_{31} W^2 C + K_{32} C^2 W + K_{33} C^2 T + K_{34} C^2 N \nonumber
 \end{align}
 
 We do not focus in this study on comparing different functional forms or non-parametric models.
@@ -315,7 +315,7 @@ Our simpler functional form can be fit independently at each grid cell while sti
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
 \subsection{Feature importance}
-To reduce the number of terms in our statistical model, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
+To potentially reduce the number of terms in the statical model to improve the interpretability of the remaining terms, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (121 input combinations, PEPIC). 
@@ -337,6 +337,19 @@ Since the goal of the emulator is interpolation within the sample space and not 
 	}
    \label{fig:features}
 \end{figure*}
+
+\begin{align}
+    \label{eqn:features_original}
+    Y\ = \ & K_{1}  \\
+    + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N  + K_{6} C^2 \nonumber \\
+    + \ & K_{7} T^2    + K_{8} W^2    + K_{9} N^2 + K_{10} C W \nonumber \\
+    + \ & K_{11} C N   + K_{12} T W   + K_{13} T N + K_{14} W N \nonumber \\
+    + \ & {\color{dark-gray}K_{a} C T} + K_{15} T^3  + K_{16} W^3  + {\color{dark-gray}K_{b} C^3} + {\color{dark-gray}K_{c} N^3}\nonumber \\
+    + \ & K_{17} T W N + K_{18} T^2 W + K_{19} W^2 + K_{20} W^2 N  \nonumber \\
+    + \ & {\color{dark-gray}K_{d} C W N} + {\color{dark-gray}K_{e} C T N} + {\color{dark-gray}K_{f} C T W} + K_{21} N^2 C \nonumber \\
+    + \ & K_{22} N^2 T + K_{23} N^2 W + {\color{dark-gray}K_{g} T^2 N} + {\color{dark-gray}K_{h} T^2 C}  \nonumber \\
+    + \ & {\color{dark-gray}K_{i} W^2 C} + {\color{dark-gray}K_{j} C^2 W} + {\color{dark-gray}K_{k} C^2 T} + {\color{dark-gray}K_{l} C^2 N} \nonumber
+\end{align}
 
 Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. 
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
