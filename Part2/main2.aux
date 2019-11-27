@@ -331,7 +331,7 @@
 \@LN{204}{9}
 \@LN{205}{9}
 \@LN{206}{9}
-\newlabel{eqn:features_original}{{2}{10}{Statistical model and feature importance}{equation.3.2}{}}
+\newlabel{eqn:features_reduced}{{2}{10}{Statistical model and feature importance}{equation.3.2}{}}
 \@LN{207}{9}
 \@LN{208}{9}
 \@LN{209}{9}
@@ -503,11 +503,11 @@
 \citation{Jones2011h}
 \@LN{351}{18}
 \@LN{352}{18}
-\newlabel{S:4.3}{{4.2}{19}{Emulator performance metrics}{table.caption.11}{}}
 \@LN{353}{18}
+\newlabel{S:4.3}{{4.2}{19}{Emulator performance metrics}{table.caption.11}{}}
+\@LN{354}{18}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  Test of emulator performance in reproducing yield simulations made with a realistic climate projection. Panels show simulated (black) and emulated (red) global production for four crops from the LPJmL model, driven with temperature and precipitation outputs from the HADGEM2-ES climate model for the RCP8.5 scenario. In both cases nitrogen and CO$_2$ are held fixed at 200kg ha-1 and 360ppm. Points show yearly global production change from the 1980-2010 mean lines show 3rd order smoothed mean. The emulator trained on uniform climatological offset outputs is able to capture the general response under a transient climate run. Those differences that are evident -- overestimation of some historical maize years, and muted response for winter wheat -- may be related to differences in baseline climates used. \relax }}{19}{figure.caption.12}}
 \newlabel{fig:lpjmlrcp}{{9}{19}{Test of emulator performance in reproducing yield simulations made with a realistic climate projection. Panels show simulated (black) and emulated (red) global production for four crops from the LPJmL model, driven with temperature and precipitation outputs from the HADGEM2-ES climate model for the RCP8.5 scenario. In both cases nitrogen and CO$_2$ are held fixed at 200kg ha-1 and 360ppm. Points show yearly global production change from the 1980-2010 mean lines show 3rd order smoothed mean. The emulator trained on uniform climatological offset outputs is able to capture the general response under a transient climate run. Those differences that are evident -- overestimation of some historical maize years, and muted response for winter wheat -- may be related to differences in baseline climates used. \relax }{figure.caption.12}{}}
-\@LN{354}{18}
 \@LN{355}{18}
 \@LN{356}{18}
 \@LN{357}{18}
@@ -535,9 +535,9 @@
 \@LN{377}{19}
 \@LN{378}{19}
 \@LN{379}{19}
+\@LN{380}{19}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Emulator results and products}{20}{section.5}}
 \newlabel{S:5}{{5}{20}{Emulator results and products}{section.5}{}}
-\@LN{380}{19}
 \@LN{381}{19}
 \@LN{382}{19}
 \@LN{383}{19}
@@ -558,34 +558,34 @@
 \@LN{398}{19}
 \@LN{399}{19}
 \@LN{400}{19}
+\@LN{401}{19}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces  Emulated global damage functions for the five crops included in GGCMI Phase II for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). Black line shows the multi-model ensemble mean and the shaded area and colored lines show the individual model projections. All other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). Damages are reported as percent change in global production relative to the baseline (1980-2010) case over currently cultivated land. \relax }}{21}{figure.caption.13}}
 \newlabel{fig:all_dims}{{10}{21}{Emulated global damage functions for the five crops included in GGCMI Phase II for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). Black line shows the multi-model ensemble mean and the shaded area and colored lines show the individual model projections. All other covariates held constant at baseline values (T+0K, W+0\%, C = 360ppm, and N = 200kg ha-1). Damages are reported as percent change in global production relative to the baseline (1980-2010) case over currently cultivated land. \relax }{figure.caption.13}{}}
-\@LN{401}{20}
 \@LN{402}{20}
 \@LN{403}{20}
 \@LN{404}{20}
 \@LN{405}{20}
 \@LN{406}{20}
 \@LN{407}{20}
+\@LN{408}{20}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  Illustration of the effects of factors affecting yields in more realistic climate scenarios. Figure shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1980-2010 mean) for three representative crop models, with changes to T only (\textbf  {a}), to T and W (\textbf  {b}), and to T, W, and CO$_2$ (\textbf  {c}). Circles are emulated yearly global production changes for 2010-2100 in scenarios from 5 CMIP-5 climate models, i.e.\ 490 total per crop model, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area). Bold lines are the emulated values over uniform T shifts. Open squares in panel \textbf  {a} are GGCMI Phase II simulated values for each T level (with CWN at baseline). Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure \ref  {fig:regression}.) Mean yields are very similar whether T changes occur as a uniform temperature shift or in a more realistic spatial pattern (compare lines to circles). \textbf  {b:} adding in projected precipitation changes depresses yields slightly for PROMET and increases spread between projections for a given temperature change for the other models. \textbf  {c:} adding in CO$_2$ changes produces very different responses across models. CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. Emulation uncertainty is small compared to the differences across climate and crop models. Square points show the T+6,C=810ppm phase II simulated production change values. \relax }}{22}{figure.caption.14}}
 \newlabel{fig:globe_em}{{11}{22}{Illustration of the effects of factors affecting yields in more realistic climate scenarios. Figure shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1980-2010 mean) for three representative crop models, with changes to T only (\textbf {a}), to T and W (\textbf {b}), and to T, W, and CO$_2$ (\textbf {c}). Circles are emulated yearly global production changes for 2010-2100 in scenarios from 5 CMIP-5 climate models, i.e.\ 490 total per crop model, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area). Bold lines are the emulated values over uniform T shifts. Open squares in panel \textbf {a} are GGCMI Phase II simulated values for each T level (with CWN at baseline). Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure \ref {fig:regression}.) Mean yields are very similar whether T changes occur as a uniform temperature shift or in a more realistic spatial pattern (compare lines to circles). \textbf {b:} adding in projected precipitation changes depresses yields slightly for PROMET and increases spread between projections for a given temperature change for the other models. \textbf {c:} adding in CO$_2$ changes produces very different responses across models. CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. Emulation uncertainty is small compared to the differences across climate and crop models. Square points show the T+6,C=810ppm phase II simulated production change values. \relax }{figure.caption.14}{}}
-\@LN{408}{21}
 \@LN{409}{21}
 \@LN{410}{21}
 \@LN{411}{21}
 \@LN{412}{21}
 \@LN{413}{21}
 \@LN{414}{21}
+\@LN{415}{21}
 \citation{Alexande2006}
 \citation{Kodra2014}
 \citation{Leeds2015}
 \citation{poppick2016}
 \citation{Won16}
 \citation{Haugen2018}
-\@LN{415}{22}
+\@LN{416}{22}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Discussion and conclusions}{23}{section.6}}
 \newlabel{S:6}{{6}{23}{Discussion and conclusions}{section.6}{}}
-\@LN{416}{22}
 \@LN{417}{22}
 \@LN{418}{22}
 \@LN{419}{22}
@@ -614,9 +614,9 @@
 \@LN{442}{22}
 \@LN{443}{22}
 \@LN{444}{22}
+\@LN{445}{22}
 \bibstyle{copernicus}
 \bibdata{bib}
-\@LN{445}{23}
 \@LN{446}{23}
 \@LN{447}{23}
 \@LN{448}{23}
@@ -636,6 +636,7 @@
 \@LN{462}{23}
 \@LN{463}{23}
 \@LN{464}{23}
+\@LN{465}{23}
 \bibcite{Alexande2006}{{1}{2006}{{Alexander et~al.}}{{Alexander, Zhang, Peterson, Caesar, BA, Tank, Haylock, Collins, Trewin, Rahimzadeh, Tagipour, Rupa~Kumar, Revadekar, Griffiths, Vincent, B.~Stephenson, Burn, Aguilar, Brunet, and L.~Vazquez-Aguirre}}}
 \bibcite{AULAKH2005}{{2}{2005}{{Aulakh and Malhi}}{{}}}
 \bibcite{BLANC2017}{{3}{2017}{{Blanc}}{{}}}
@@ -650,7 +651,6 @@
 \bibcite{Ferrise2011}{{12}{2011}{{Ferrise et~al.}}{{Ferrise, Moriondo, and Bindi}}}
 \bibcite{FOLBERTH201221}{{13}{2012}{{Folberth et~al.}}{{Folberth, Gaiser, Abbaspour, Schulin, and Yang}}}
 \bibcite{Franke2019a}{{14}{2019{a}}{{Franke et~al.}}{{Franke, M\"{u}ller, Elliott, Ruane, Snyder, J\"{a}germeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Hank, Hoffmann, Izaurralde, Jacquemin, Jones, Koch, Li, Olin, Phillips, Pugh, Reddy, Wang, Williams, Zabel, and Moyer}}}
-\@LN{465}{24}
 \@LN{466}{24}
 \@LN{467}{24}
 \@LN{468}{24}
@@ -687,6 +687,7 @@
 \@LN{499}{24}
 \@LN{500}{24}
 \@LN{501}{24}
+\@LN{502}{24}
 \bibcite{franke2019ctwnexperiment}{{15}{2019{b}}{{Franke et~al.}}{{Franke, M\"uller, Elliott, Ruane, Jagermeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Francois, Hank, Hoffmann, Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin, Phillips, Pugh, Reddy, Wang, Williams, Zabel, and Moyer}}}
 \bibcite{Frieler2017}{{16}{2017}{{Frieler et~al.}}{{Frieler, Lange, Piontek, Reyer, Schewe, Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel, Murakami, Ostberg, Popp, Riva, Stevanovic, Suzuki, Volkholz, Burke, Ciais, Ebi, Eddy, Elliott, Galbraith, Gosling, Hattermann, Hickler, Hinkel, Hof, Huber, J\IeC {\"a}germeyr, Krysanova, Marc\IeC {\'e}, M\IeC {\"u}ller~Schmied, Mouratiadou, Pierson, Tittensor, Vautard, van Vliet, Biber, Betts, Bodirsky, Deryng, Frolking, Jones, Lotze, Lotze-Campen, Sahajpal, Thonicke, Tian, and Yamagata}}}
 \bibcite{FRONZEK20182}{{17}{2018}{{Fronzek et~al.}}{{Fronzek, Pirttioja, Carter, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M{\"{u}}ller, Nendel, {\"{O}}zt{\"{u}}rk, Perego, Rodr{\'{i}}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao, and R{\"{o}}tter}}}
@@ -697,7 +698,6 @@
 \bibcite{Hansen2000}{{22}{2000}{{Hansen and Jones}}{{}}}
 \bibcite{Haugen2018}{{23}{2018}{{Haugen et~al.}}{{Haugen, Stein, Moyer, and Sriver}}}
 \bibcite{He2016}{{24}{2016}{{He et~al.}}{{He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He, and Li}}}
-\@LN{502}{25}
 \@LN{503}{25}
 \@LN{504}{25}
 \@LN{505}{25}
@@ -734,6 +734,7 @@
 \@LN{536}{25}
 \@LN{537}{25}
 \@LN{538}{25}
+\@LN{539}{25}
 \bibcite{Holden2014}{{25}{2014}{{Holden et~al.}}{{Holden, Edwards, PH, Fraedrich, Lunkeit, E, Labriet, Kanudia, and F}}}
 \bibcite{Holzkamper2012}{{26}{2012}{{Holzk{\"a}mper et~al.}}{{Holzk{\"a}mper, Calanca, and Fuhrer}}}
 \bibcite{Howden2005}{{27}{2005}{{Howden and Crimp}}{{}}}
@@ -750,7 +751,6 @@
 \bibcite{LIU2016164}{{38}{2016{b}}{{Liu et~al.}}{{Liu, Yang, Folberth, Wang, Luo, and Schulin}}}
 \bibcite{LIU2016}{{39}{2016{c}}{{Liu et~al.}}{{Liu, Yang, Liu, Azevedo, Wang, Xu, Abbaspour, and Schulin}}}
 \bibcite{Lobell2010}{{40}{2010}{{Lobell and Burke}}{{}}}
-\@LN{539}{26}
 \@LN{540}{26}
 \@LN{541}{26}
 \@LN{542}{26}
@@ -787,6 +787,7 @@
 \@LN{573}{26}
 \@LN{574}{26}
 \@LN{575}{26}
+\@LN{576}{26}
 \bibcite{Lobell2007}{{41}{2007}{{Lobell and Field}}{{}}}
 \bibcite{MacKay91}{{42}{1991}{{MacKay}}{{}}}
 \bibcite{Markowski2015}{{43}{2015}{{Makowski et~al.}}{{Makowski, Asseng, Ewert, Bassu, Durand, Martre, Adam, Aggarwal, Angulo, Baron, Basso, Bertuzzi, Biernath, Boogaard, Boote, Brisson, Cammarano, Challinor, Conijn, and Wolf}}}
@@ -802,7 +803,6 @@
 \bibcite{Oyebamiji15}{{53}{2015}{{Oyebamiji et~al.}}{{Oyebamiji, Edwards, Holden, Garthwaite, Schaphoff, and Gerten}}}
 \bibcite{scikit-learn}{{54}{2011}{{Pedregosa et~al.}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay}}}
 \bibcite{Pirttioja2015}{{55}{2015}{{Pirttioja et~al.}}{{Pirttioja, Carter, Fronzek, Bindi, Hoffmann, Palosuo, Ruiz-Ramos, Tao, Trnka, Acutis, Asseng, Baranowski, Basso, Bodin, Buis, Cammarano, Deligios, Destain, Dumont, Ewert, Ferrise, Fran{\c {c}}ois, Gaiser, Hlavinka, Jacquemin, Kersebaum, Kollas, Krzyszczak, Lorite, Minet, Minguez, Montesino, Moriondo, M\"{u}ller, Nendel, \"{O}zt\"{u}rk, Perego, Rodr{\'{\i }}guez, Ruane, Ruget, Sanna, Semenov, Slawinski, Stratonovitch, Supit, Waha, Wang, Wu, Zhao, and R\"{o}tter}}}
-\@LN{576}{27}
 \@LN{577}{27}
 \@LN{578}{27}
 \@LN{579}{27}
@@ -840,6 +840,7 @@
 \@LN{611}{27}
 \@LN{612}{27}
 \@LN{613}{27}
+\@LN{614}{27}
 \bibcite{poppick2016}{{56}{2016}{{Poppick et~al.}}{{Poppick, McInerney, Moyer, and Stein}}}
 \bibcite{Portmann2010}{{57}{2010}{{Portmann et~al.}}{{Portmann, Siebert, and Doell}}}
 \bibcite{potter2005effects}{{58}{2005}{{Potter et~al.}}{{Potter, Zhang, Milly, McMahon, and Jakeman}}}
@@ -854,7 +855,6 @@
 \bibcite{ruane2014}{{67}{2014}{{Ruane et~al.}}{{Ruane, McDermid, Rosenzweig, Baigorria, Jones, Romero, and Cecil}}}
 \bibcite{Ruane2015}{{68}{2015}{{Ruane et~al.}}{{Ruane, Goldberg, and Chryssanthacopoulos}}}
 \bibcite{RUIZRAMOS2018}{{69}{2018}{{Ruiz-Ramos et~al.}}{{Ruiz-Ramos, Ferrise, Rodr\IeC {\'\i }guez, Lorite, Bindi, Carter, Fronzek, Palosuo, Pirttioja, Baranowski, Buis, Cammarano, Chen, Dumont, Ewert, Gaiser, Hlavinka, Hoffmann, H\IeC {\"o}hn, Jurecka, Kersebaum, Krzyszczak, Lana, Mechiche-Alami, Minet, Montesino, Nendel, Porter, Ruget, Semenov, Steinmetz, Stratonovitch, Supit, Tao, Trnka, de~Wit, and R\IeC {\"o}tter}}}
-\@LN{614}{28}
 \@LN{615}{28}
 \@LN{616}{28}
 \@LN{617}{28}
@@ -892,6 +892,7 @@
 \@LN{649}{28}
 \@LN{650}{28}
 \@LN{651}{28}
+\@LN{652}{28}
 \bibcite{Schlenker2009}{{70}{2009}{{Schlenker and Roberts}}{{}}}
 \bibcite{Shapiro1965}{{71}{1965}{{Shapiro and Wilk}}{{}}}
 \bibcite{Sippel2015}{{72}{2015}{{Sippel et~al.}}{{Sippel, Zscheischler, Heimann, Otto, Peters, and Mahecha}}}
@@ -906,7 +907,6 @@
 \bibcite{Williams2017}{{81}{2017}{{Williams et~al.}}{{Williams, Gornall, Harper, Wiltshire, Hemming, Quaife, Arkebauer, and Scoby}}}
 \bibcite{Williams2015}{{82}{2015}{{Williams and Falloon}}{{}}}
 \bibcite{Zabel2019}{{83}{2019}{{Zabel et~al.}}{{Zabel, Delzeit, Schneider, Seppelt, Mauser, and V\`{a}clav\'{i}k}}}
-\@LN{652}{29}
 \@LN{653}{29}
 \@LN{654}{29}
 \@LN{655}{29}
@@ -942,14 +942,15 @@
 \@LN{685}{29}
 \@LN{686}{29}
 \@LN{687}{29}
+\@LN{688}{29}
 \bibcite{zhao2017}{{84}{2017}{{Zhao et~al.}}{{Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao, Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre, M\IeC {\"u}ller, Peng, Pe\IeC {\~n}uelas, Ruane, Wallach, Wang, Wu, Liu, Zhu, Zhu, and Asseng}}}
-\@LN{688}{30}
 \@LN{689}{30}
 \@LN{690}{30}
 \@LN{691}{30}
 \@LN{692}{30}
 \@LN{693}{30}
 \@LN{694}{30}
+\@LN{695}{30}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  Root mean squared error of the emulator representation of a simulation as a percentage of baseline simulated yield change for the cross-validation process, for rainfed crops. Values are the mean grid cell error as a percentage of baseline yield, over all currently cultivated grid cells weighted by cultivation area. Errors are calculated using the 90-10 cross validation scheme described in text, where the model is trained on 90\% of the data and validated on the held-out 10\% (repeated twice). Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=121), so cannot be fit with the OLS and requires the Bayesian Ridge method. \relax }}{32}{table.caption.11}}
 \newlabel{table:ASE}{{3}{32}{Root mean squared error of the emulator representation of a simulation as a percentage of baseline simulated yield change for the cross-validation process, for rainfed crops. Values are the mean grid cell error as a percentage of baseline yield, over all currently cultivated grid cells weighted by cultivation area. Errors are calculated using the 90-10 cross validation scheme described in text, where the model is trained on 90\% of the data and validated on the held-out 10\% (repeated twice). Values with * are cases where the OLS linear model fails. PEPIC has the lowest number of samples (n=121), so cannot be fit with the OLS and requires the Bayesian Ridge method. \relax }{table.caption.11}{}}
 \newlabel{LastPage}{{}{32}{}{}{}}

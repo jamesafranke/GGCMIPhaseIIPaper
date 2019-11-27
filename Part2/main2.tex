@@ -266,7 +266,7 @@ In the GGCMI Phase II dataset, all crops except rice show  greater year-to-year 
 This effect has been noted in previous studies. For example, \cite{Urban2012} found an increase in yfield variance of U.S.\ maize of 20\% per degree K temperature rise, using a combination of climate model projections and statistical models trained on present-day yields. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
 
 \textcolor{red}{Note that growing seasons (in the A0 specification) change under different climatological conditions. 
-A shortening of the growing season under a 6 degree applied mean warming results in approximately 8 K warmer mean growing season temperature for maize in Iowa (Figure \ref{fig:yearly}). 
+A shortening of the growing season under a 6 degree applied mean warming results in approximately 7 K warmer mean growing season temperature for maize in Iowa (Figure \ref{fig:yearly}). 
 The effect manifests in the opposite direction for wheat in France, where the shortening growing season tends to reduce the mean temperature change associated with the climatological shifts. 
 We still build the model with the uniform temperature offsets as the regressors (-1, 0, 1, 2, 3, 4, 6), so the emulator implicitly contains this growing season response to temperature.}
 
@@ -288,7 +288,7 @@ That is, the same statistical model is used for all grid cells, models, and rain
 Note however that regressions for irrigated crops do not contain W terms and models that do not sample the nitrogen levels omit the N terms.
 With all higher order terms included (minus $N^{3}$), the resultant model contains 34 terms (Equation \ref{eqn:features_original}). 
 We necessarily omit the N$^3$ term, which cannot be fitted because we sample only three nitrogen levels, but retain other higher-order N terms. 
-Results shown for the remainder of the paper use this specificaiton.
+Results shown for the remainder of the paper use this specification.
 
 
 \begin{align}
@@ -340,7 +340,7 @@ Since the goal of the emulator is interpolation within the sample space and not 
 \end{figure*}
 
 \begin{align}
-    \label{eqn:features_original}
+    \label{eqn:features_reduced}
     Y\ = \ & K_{1}  \\
     + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N  + K_{6} C^2 \nonumber \\
     + \ & K_{7} T^2    + K_{8} W^2    + K_{9} N^2 + K_{10} C W \nonumber \\
@@ -354,11 +354,11 @@ Since the goal of the emulator is interpolation within the sample space and not 
 
 Feature importance is remarkably consistent across models (Figure \ref{fig:features}) with some notable exceptions. (JULES and PROMET for example show significant reductions in error for some of the higher order carbon interaction terms).
 Even though the models exhibit different absolute levels of error, all three models agree remarkably well on feature importance, that is on  which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
-The feature selection process allows us to eliminate 12 terms, leaving a final polynomial in 23 terms.
+The feature selection process allows us to eliminate 12 terms, leaving a final polynomial in 23 terms (Equation \ref{eqn:features_reduced}).
 The eliminated terms include many of those in C: the cubic; the CT, CTN, CTW, and CWN interaction terms; and all higher order interaction terms in C. 
 Finally, we eliminate one 2nd-order interaction term in W and two in T. 
 Implications of this choice include that nitrogen interactions are complex and important, and that water interaction effects are more nonlinear than those in temperature.  
-The reduced-form emulator is acceptable across currently cultivated land for all but the JULES and PROMET models. See supplemental for addiontial information. 
+The reduced-form emulator is acceptable across currently cultivated land for all but the JULES and PROMET models. See supplemental for additional information. 
 
 \subsection{Model fitting}
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91} rather than standard ordinary least squares (OLS). 
@@ -521,7 +521,10 @@ Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the e
 Over all-crop model combinations, the emulator produces $e < 1$ for 95\% of currently cultivated area and 98.5\% of all simulated area.
 See Supplemental Figures in Supplemental Section 5 for analogous figures for all models.
 
-There is a trade off with number of terms included in the model specification. For example, pDSSAT maize, normalized error $e < 1$ for 98.8\% of currently cultivated land with the reduced statistical specification, and 98.3\% of currently cultivated land with all terms included in the emulator. Across all simulated land the value emulator skill increases with additional terms (from 94\% to 99\% of simulated area). In general, additional terms reduce errors in the aggregate, with large gains in emulator skill in ``fringe'' areas where crops are currently not cultivated and for certain models (JULES and PROMET). 
+\textcolor{red}{There is a trade off between the spatial extent of errors as the number of terms included in the statistical specification increases. 
+For example for pDSSAT maize, normalized error $e < 1$ for 98.8\% of currently cultivated land with the reduced statistical specification (Equation \ref{eqn:features_reduced}), and 98.3\% of currently cultivated land with all terms included in the emulator (Equation \ref{eqn:features_original}). 
+Across all simulated land, the emulator skill is higher for the full specification (increasing from 94\% to 99\% of all simulated area).
+In general, additional terms reduce errors in the aggregate, with large gains in emulator skill in ``fringe'' areas where crops are currently not cultivated and for certain models (JULES and PROMET).}
 
 Note that the normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
@@ -569,7 +572,7 @@ Values are below 5\% for all cases.
 In absolute terms, mean grid cell root mean square errors (RMSE) weighted by cultivation area for rainfed crops are less than 0.2 ton ha$^{-1}$ for all cases except JULES soy (0.36 ton ha$^{-1}$).
 Absolute global mean errors across all simulated grid cells (not weighted by cultivation area) are similar but not uniformly distributed across space. 
 The errors for irrigated emulators are generally lower than rainfed emulators in an absolute sense, but are associated with lower yield changes and so result in similar percent values.
-See Supplemental Figures in Supplemental Section 6 for maps of cross validation error for each crop and model.
+See Figures in Supplemental Section 6 for maps of cross validation error for each crop and model.
 
 The metric of Table \ref{table:ASE} is relatively simple and can involve some biases. %We do not compare to yield \textit{changes};
 The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
