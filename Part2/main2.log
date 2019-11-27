@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2019 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 NOV 2019 06:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1138,35 +1138,35 @@ Package pdftex.def Info: figures/hist_year_pr.png used on input line 254.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
  [7 <./figures/phase_II_em_figure_1.png>]
 [8 <./figures/hist_year_t.png> <./figures/hist_year_pr.png>] [9]
-<figures/model_select_maize_rice.png, id=348, 703.1068pt x 525.965pt>
+<figures/model_select_maize_rice.png, id=346, 703.1068pt x 525.965pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 
 <use figures/model_select_maize_rice.png>
 Package pdftex.def Info: figures/model_select_maize_rice.png used on input line
- 325.
+ 329.
 (pdftex.def)             Requested size: 463.78pt x 346.93732pt.
  [10] [11 <./figures/model_select_maize_rice.png>] [12] <figures/lpjml_maize.pn
-g, id=383, 504.01099pt x 353.25575pt>
+g, id=382, 504.01099pt x 353.25575pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png used on input line 394.
+Package pdftex.def Info: figures/lpjml_maize.png used on input line 398.
 (pdftex.def)             Requested size: 455.24408pt x 319.08075pt.
 
-<figures/regression_example.png, id=385, 594.0594pt x 176.48334pt>
+<figures/regression_example.png, id=384, 594.0594pt x 176.48334pt>
 File: figures/regression_example.png Graphic file (type png)
 
 <use figures/regression_example.png>
-Package pdftex.def Info: figures/regression_example.png used on input line 411.
+Package pdftex.def Info: figures/regression_example.png used on input line 415.
 
 (pdftex.def)             Requested size: 463.78pt x 137.78569pt.
 
-<figures/regression_example_2.png, id=387, 594.20393pt x 176.48334pt>
+<figures/regression_example_2.png, id=386, 594.20393pt x 176.48334pt>
 File: figures/regression_example_2.png Graphic file (type png)
 
 <use figures/regression_example_2.png>
-Package pdftex.def Info: figures/regression_example_2.png used on input line 42
-7.
+Package pdftex.def Info: figures/regression_example_2.png used on input line 43
+1.
 (pdftex.def)             Requested size: 463.78pt x 137.748pt.
 
 
@@ -1174,43 +1174,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13 <./figures/lpjml_maize.png>] [14 <./figures/regression_example.png> <./figu
 res/regression_example_2.png>]
-<figures/error_grid_new.png, id=409, 590.30136pt x 237.0456pt>
+<figures/error_grid_new.png, id=410, 590.30136pt x 237.0456pt>
 File: figures/error_grid_new.png Graphic file (type png)
 
 <use figures/error_grid_new.png>
-Package pdftex.def Info: figures/error_grid_new.png used on input line 463.
+Package pdftex.def Info: figures/error_grid_new.png used on input line 467.
 (pdftex.def)             Requested size: 463.78pt x 186.24396pt.
 
-<figures/CARAIB_spatial_error.png, id=411, 504.01099pt x 321.6015pt>
+<figures/CARAIB_spatial_error.png, id=412, 504.01099pt x 321.6015pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 
 <use figures/CARAIB_spatial_error.png>
-Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 47
-8.
+Package pdftex.def Info: figures/CARAIB_spatial_error.png used on input line 48
+2.
 (pdftex.def)             Requested size: 463.78pt x 295.93585pt.
  [15] [16 <./figures/error_grid_new.png>] [17 <./figures/CARAIB_spatial_error.p
 ng>] [18]
-<figures/LPJMLRCP85comp.png, id=446, 585.96516pt x 170.70174pt>
+<figures/LPJMLRCP85comp.png, id=447, 585.96516pt x 170.70174pt>
 File: figures/LPJMLRCP85comp.png Graphic file (type png)
 
 <use figures/LPJMLRCP85comp.png>
-Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 583.
+Package pdftex.def Info: figures/LPJMLRCP85comp.png used on input line 587.
 (pdftex.def)             Requested size: 463.78pt x 135.11075pt.
  [19 <./figures/LPJMLRCP85comp.png>]
-<figures/em_CTWN_all_crops.png, id=459, 562.2606pt x 432.60822pt>
+<figures/em_CTWN_all_crops.png, id=461, 562.2606pt x 432.60822pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 619.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png used on input line 623.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
- [20]
-<figures/global_em_maize.png, id=471, 532.19627pt x 212.18472pt>
+
+<figures/global_em_maize.png, id=467, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
 
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png used on input line 643.
+Package pdftex.def Info: figures/global_em_maize.png used on input line 647.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
- [21 <./figures/em_CTWN_all_crops.png>]
+ [20] [21 <./figures/em_CTWN_all_crops.png>]
 [22 <./figures/global_em_maize.png>] [23] (./main2.bbl [24]
 Underfull \hbox (badness 2253) in paragraph at lines 81--85
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
@@ -1301,22 +1301,22 @@ Underfull \hbox (badness 2707) in paragraph at lines 611--615
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
-[30]) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 743.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 743.
+[30]) [31] [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 747.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 747.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 743.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 743.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 747.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 747.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 743.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 747.
  ) 
 Here is how much of TeX's memory you used:
- 10866 strings out of 492995
- 153631 string characters out of 6132704
- 309217 words of memory out of 5000000
+ 10867 strings out of 492995
+ 153638 string characters out of 6132704
+ 314200 words of memory out of 5000000
  14034 multiletter control sequences out of 15000+600000
  49044 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1338,10 +1338,10 @@ onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main2.pdf (31 pages, 7851351 bytes).
+Output written on main2.pdf (32 pages, 7852155 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 660 compressed objects within 7 object streams
+ 155 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -265,6 +265,10 @@ In the GGCMI Phase II dataset, all crops except rice show  greater year-to-year 
 (Rice is typically irrigated and experiences no water stress.) 
 This effect has been noted in previous studies. For example, \cite{Urban2012} found an increase in yfield variance of U.S.\ maize of 20\% per degree K temperature rise, using a combination of climate model projections and statistical models trained on present-day yields. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
 
+\textcolor{red}{Note that growing seasons (in the A0 specification) change under different climatological conditions. 
+A shortening of the growing season under a 6 degree applied mean warming results in approximately 8 K warmer mean growing season temperature for maize in Iowa (Figure \ref{fig:yearly}). 
+The effect manifests in the opposite direction for wheat in France, where the shortening growing season tends to reduce the mean temperature change associated with the climatological shifts. 
+We still build the model with the uniform temperature offsets as the regressors (-1, 0, 1, 2, 3, 4, 6), so the emulator implicitly contains this growing season response to temperature.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
