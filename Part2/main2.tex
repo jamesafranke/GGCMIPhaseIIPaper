@@ -517,14 +517,14 @@ Emulator performance will also be poor in cases where models show steep yield lo
 
 While Figure \ref{fig:error_360} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where potential yields are low. (See Figures S14-S15 for analogous figures for all cultivated areas and for high CO$_2$.)
 Figure \ref{fig:error} shows normalized error for CARAIB in the T+4 scenario over all simulated area that has non-zero baseline yield and at least 6 models providing simulations.  
-Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the edges of the Sahara, the Near East, S.\ Africa and Southern Australia -- but is much better in regions where crops are grown. 
+Emulator performance can be poor ($e > 2$) in arid or mountainous zones -- the edges of the Sahara, Inner Mongolia, S.\ Africa and Southern Australia -- but is much better in regions where crops are grown. 
 Over all-crop model combinations, the emulator produces $e < 1$ for 95\% of currently cultivated area and 98.5\% of all simulated area.
 See Supplemental Figures in Supplemental Section 5 for analogous figures for all models.
 
 \textcolor{red}{There is a trade off between the spatial extent of errors as the number of terms included in the statistical specification increases. 
-For example for pDSSAT maize, normalized error $e < 1$ for 98.8\% of currently cultivated land with the reduced statistical specification (Equation \ref{eqn:features_reduced}), and 98.3\% of currently cultivated land with all terms included in the emulator (Equation \ref{eqn:features_original}). 
-Across all simulated land, the emulator skill is higher for the full specification (increasing from 94\% to 99\% of all simulated area).
-In general, additional terms reduce errors in the aggregate, with large gains in emulator skill in ``fringe'' areas where crops are currently not cultivated and for certain models (JULES and PROMET).}
+For example for pDSSAT maize on one hand, normalized error $e < 1$ for 98.8\% of currently cultivated land with the reduced statistical specification (Equation \ref{eqn:features_reduced}), and 98.3\% of currently cultivated land with all terms included in the emulator (Equation \ref{eqn:features_original}). 
+Across all simulated land on the other hand, the emulator skill is higher for the full specification (increasing from 94\% to 99\% of all simulated area).
+In general, additional terms reduce errors in the aggregate, with the  largest gains in emulator skill in ``fringe'' areas where crops are currently not cultivated and for certain models (JULES and PROMET).}
 
 Note that the normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
