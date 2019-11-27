@@ -53,7 +53,7 @@
 %S3
 \centering
 \includegraphics[width=\textwidth]{s_how_many_simulations.png}
-\caption{Tile heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. The max number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). Normalized rrror calculations are run over scenarios with max number of models.}
+\caption{Tile heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. The max number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). Normalized error calculations are run over scenarios with max number of models.}
 \label{fig:numbersims}
 \end{figure}
 
@@ -86,7 +86,7 @@
 %S4
 \centering
 \includegraphics[width=\textwidth]{tempyearvclim_maize_EPIC-TAMU.png}
-\caption{Same convention as main text Figure 1 except for multiple gricells in iowa for maize for the EPIC-TAMU model.}
+\caption{Same convention as main text Figure 1 except for multiple gricells in Iowa for maize for the EPIC-TAMU model.}
 \label{fig:epicmaize}
 \end{figure}
 
@@ -135,33 +135,11 @@
 \end{figure}
 
 \begin{figure}[h!]
-%S10
-\includegraphics[width=\textwidth]{jules_soy_bad.png}
-\caption{Example of emulator failure. Simulated and emulated values for JULES soybean in Southern Germany. RMSE = 41\% of baseline yield.}
+%S9
+\includegraphics[width=\textwidth]{pdssat_maize.png}
+\caption{Same convention as Figure 4 in the main text except now pDSSAT maize.}
 \label{fig:lpjmlrice}
 \end{figure}
-
-\begin{figure}[h!]
-%S11
-\includegraphics[width=\textwidth]{jules_soy_southern_germany.png}
-\caption{Example of emulator failure. Simulated and emulated values for JULES soybean in Southern Germany (one grid-cell south of Figure S10). RMSE = 10\% of baseline yield.}
-\label{fig:lpjmlrice}
-\end{figure}
-
-\begin{figure}[h!]
-%S12
-\includegraphics[width=\textwidth]{promet_rice_bad.png}
-\caption{Example of emulator failure. Simulated and emulated values for PROMET rice in Papua New Guinea. RMSE = 67\% of baseline yield.}
-\label{fig:lpjmlrice}
-\end{figure}
-
-\begin{figure}[h!]
-%S13
-\includegraphics[width=\textwidth]{promet_rice_bad_arun.png}
-\caption{Example of emulator failure. Simulated and emulated values for PROMET rice in Arunachal Pradesh. RMSE = 132\% of baseline yield.}
-\label{fig:lpjmlrice}
-\end{figure}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,24 +148,21 @@
 \subsection{Normalized Error}
 
 \begin{figure}[h!]
-%S14
+%S16
 \centering
-\begin{minipage}{.45\textwidth}
-\centering
-\includegraphics[width=\textwidth]{s_error_360_total.png}\\
+\includegraphics[width=15.5cm]{error_grid_360_all.png}
 \caption{The fraction of grid cells (across all grid cells) with normalized emulation error less than 1 for the CO$_2$=360 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. This is in contrast to the fraction of currently cultivated hectares shown in the C360 case in the manuscript and for the C810 case show in the supplemental material. The emulator is marginally more successful over currently cultivated areas than over all grid cells in general.}
-\label{fig:error360total}
-\end{minipage}
-\hspace{.05\linewidth}
-%S15
-\begin{minipage}{.45\textwidth}
+\label{fig:error810}
+\end{figure}
+
+\begin{figure}[h!]
+%S16
 \centering
-\vspace{0pt}
-\includegraphics[width=\textwidth]{s_error_810.png}\\
+\includegraphics[width=15.5cm]{error_grid_810.png}
 \caption{The fraction of currently cultivated hectares with normalized emulation error less than 1 (blue colors contours in Figure A2) for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. See Equations A1 and A2 for normalized error calculation. The yield response is generally easy to emulate over currently cultivated areas (dark blue and light blue).}
 \label{fig:error810}
-\end{minipage}
 \end{figure}
+
 
 \begin{figure}[h!]
 %S16
@@ -260,27 +235,11 @@
 \end{figure}
 
 \begin{figure}[h!]
-%S20
-\centering
-\includegraphics[width=15.5cm]{pDSSAT_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
-\end{figure}
-
-\begin{figure}[h!]
 %S21
 \centering
 \includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha.png}
 \caption{Map of root mean squared error for three fold cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
 \label{fig:pdssatrmse}
-\end{figure}
-
-\begin{figure}[h!]
-%S22
-\centering
-\includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
 \end{figure}
 
 \begin{figure}[h!]
@@ -292,27 +251,11 @@
 \end{figure}
 
 \begin{figure}[h!]
-%S24
-\centering
-\includegraphics[width=15.5cm]{JULES_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
-\end{figure}
-
-\begin{figure}[h!]
 %S25
 \centering
 \includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha.png}
 \caption{Map of root mean squared error for three fold cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
 \label{fig:pdssatrmse}
-\end{figure}
-
-\begin{figure}[h!]
-%S26
-\centering
-\includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
 \end{figure}
 
 \begin{figure}[h!]
@@ -324,14 +267,6 @@
 \end{figure}
 
 \begin{figure}[h!]
-%S28
-\centering
-\includegraphics[width=15.5cm]{GEPIC_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
-\end{figure}
-
-\begin{figure}[h!]
 %S29
 \centering
 \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
@@ -339,12 +274,94 @@
 \label{fig:pdssatrmse}
 \end{figure}
 
+\clearpage
+\subsection{Emulator products}
 \begin{figure}[h!]
-%S30
+%S29
 \centering
-\includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha_irr.png}
-\caption{Same as above for irrigated simulations.}
-\label{fig:pdssatrmseirr}
+\includegraphics[width=15.5cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png}
+\caption{Same convention as Figure 11 in the main text except now for spring wheat. PROMET spring wheat emulator fails in China, resulting in the bias.}
+\label{fig:spring_wheat_prod}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png}
+\caption{Same convention as Figure 11 in the main text except now for soybean. }
+\label{fig:soy_prod}
+\end{figure}
+
+\clearpage
+\subsection{Reduced specification emulator}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_lpjml_maize.png}
+\caption{Same convention as Figure 4 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedlpjml}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_regression_example_1.png}
+\caption{Same convention as Figure 5 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedareas}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_regression_example_2.png}
+\caption{Same convention as Figure 6 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedmodels}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_error_grid.png}
+\caption{Same convention as Figure 7 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedgrid}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_CARAIB_spatial_error.png}
+\caption{Same convention as Figure 8 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedcaraib}
+\end{figure}
+
+
+\begin{figure}[h!]
+%S10
+\includegraphics[width=\textwidth]{jules_soy_bad.png}
+\caption{Example of emulator failure. Simulated and emulated values for JULES soybean in Southern Germany. RMSE = 41\% of baseline yield.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+\begin{figure}[h!]
+%S11
+\includegraphics[width=\textwidth]{jules_soy_southern_germany.png}
+\caption{Example of emulator failure. Simulated and emulated values for JULES soybean in Southern Germany (one grid-cell south of Figure S10). RMSE = 10\% of baseline yield.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+\begin{figure}[h!]
+%S12
+\includegraphics[width=\textwidth]{promet_rice_bad.png}
+\caption{Example of emulator failure. Simulated and emulated values for PROMET rice in Papua New Guinea. RMSE = 67\% of baseline yield.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+\begin{figure}[h!]
+%S13
+\includegraphics[width=\textwidth]{promet_rice_bad_arun.png}
+\caption{Example of emulator failure. Simulated and emulated values for PROMET rice in Arunachal Pradesh. RMSE = 132\% of baseline yield.}
+\label{fig:lpjmlrice}
 \end{figure}
 
 

@@ -263,7 +263,7 @@ We therefore explicitly test (in Section \ref{S:4.3}) the assumption that distri
 Note that even though distributions of climate variables are unchanged in the GGCMI Phase II simulations, the spread in annual yields still becomes wider in highly impacted climate states, because of the nonlinearity of yield responses (Figure \ref{fig:yearly}). 
 In the GGCMI Phase II dataset, all crops except rice show  greater year-to-year yield variance  in conditions of extreme climate stress. %, as crop yields become more sensitive to additional perturbations. % because yield sensitivities to perturbations increases. 
 (Rice is typically irrigated and experiences no water stress.) 
-This effect has been noted in previous studies. For example, \cite{Urban2012} found an increase in yfield variance of U.S.\ maize of \textcolor{red}{20\% per degree K temperature rise}, using a combination of climate model projections and statistical models trained on present-day yields. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
+This effect has been noted in previous studies. For example, \cite{Urban2012} found an increase in yfield variance of U.S.\ maize of 20\% per degree K temperature rise, using a combination of climate model projections and statistical models trained on present-day yields. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -305,13 +305,14 @@ Interaction terms are needed since the yield response is expected to depend on i
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}.
 
-We do not focus in this study on comparing different functional forms or non-parametric models and instead focus on feature importance.
-Some prior studies have used other statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial. 
-Such a high-dimensional model is difficult to fit, especially for a training set of realistic simulations in which input parameters are highly correlated, and  \citet{BLANC2015} and \citet{BLANC2017}  ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
-Our simpler functional form can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
+We do not focus in this study on comparing different functional forms or non-parametric models and instead focus on feature importance in the 3rd order polynomial.
+Some prior studies have used other statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial 
+%Such a high-dimensional model is difficult to fit, especially for a training set of realistic simulations in which input parameters are highly correlated, 
+and ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
+Our functional form and sampling strategy can be fit independently at each grid cell while still providing a satisfactory emulation of all GGCMI crop models and crops. 
 (See Section \ref{S:4} for evaluation of emulator fidelity.)
 
-To investigate the relative importantce of terms in the statical model and to improve the interpretability of the terms, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
+To investigate the relative importance of terms in the statical model and to improve the interpretability of the terms, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance.
 In this procedure higher-order and interaction terms are added successively to the regression model one by one, and we calculate an aggregate mean absolute error with each increasing terms and eliminate those terms that do not contribute significant reductions in error (top row of Figure \ref{fig:features}). 
 Some terms that did not reduce the aggregate error are included if a higher order version of that term provided a decrease in mean squared error: for example, the $T^3$ term cannot be included without also taking the $T^2$ and $T$ terms. 
 We select terms by applying the feature selection process to three example models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU, and one that provided the smallest training set (121 input combinations, PEPIC). 
@@ -436,7 +437,7 @@ Emulation spatial skill varies across models and crops, with maize being the qua
 \end{figure*}
 
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
-Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in t ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
+Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
 Emulators do perform poorly in a few regions that involve discontinuous or irregular yield responses. 
 This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rises by 4 degrees. 
@@ -562,8 +563,9 @@ The resulting error metric is generally low as a percentage of yield change.
 Table \ref{table:ASE} shows the RMSE error over currently cultivated land for each model-crop combination for rainfed crops and include all simulations in CTWN space. 
 Values are below 5\% for all cases.  
 In absolute terms, mean grid cell root mean square errors (RMSE) weighted by cultivation area for rainfed crops are less than 0.2 ton ha$^{-1}$ for all cases except JULES soy (0.36 ton ha$^{-1}$).
-Errors for irrigated emulators similar to the rainfed case, where the absolute errors are generally lower but are associated with yield changes that are also generally lower than the rainfed case.
-Absolute global mean errors across all simulated grid cells (not weighted by cultivation area) are similar but not uniformly distributed across space. See Supplemental Figures S23-S34 for maps of cross validation error for each crop and model.
+Absolute global mean errors across all simulated grid cells (not weighted by cultivation area) are similar but not uniformly distributed across space. 
+The errors for irrigated emulators are generally lower than rainfed emulators in an absolute sense, but are associated with lower yield changes and so result in similar percent values.
+See Supplemental Figures S23-S34 for maps of cross validation error for each crop and model.
 
 The metric of Table \ref{table:ASE} is relatively simple and can involve some biases. %We do not compare to yield \textit{changes};
 The simple randomized sampling protocol for dividing training and test sets may mean that a training set omits edge simulations (those at the highest or lowest value of CTWN space). 
