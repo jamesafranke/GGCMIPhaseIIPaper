@@ -27,7 +27,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\centering{\bf {\large Supplemental Material} \\
+\centering{\bf {\large Supplemental Material 2: all model errors and reduced (23-term) specification} \\
 {\Large The GGCMI phase II emulators: global gridded crop model responses to changes in CO$_2$, temperature, water, and nitrogen (version 1.0)}}\\
 
 \vspace{3mm}
@@ -47,85 +47,6 @@
 
 \renewcommand{\thefigure}{S\arabic{figure}}
 
-
-\section{Experiment Simulation Sampling in Variable Space}
-\begin{figure}[h!]
-%S3
-\centering
-\includegraphics[width=\textwidth]{s_how_many_simulations.png}
-\caption{Tile heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. The max number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). Normalized error calculations are run over scenarios with max number of models.}
-\label{fig:numbersims}
-\end{figure}
-
-\clearpage
-\section{Cultivation Areas}
-\begin{figure}[h!]
-\centering
-%S1
-\begin{minipage}{.45\textwidth}
-    \centering
-    \vspace{0pt}
-    \includegraphics[width=\textwidth]{s_croparea_irr.png}\\
-    \caption{Presently cultivated area for irrigated crops in the real world. The blue contour area indicates grid-cells with more that 20,00 hectares of crop cultivated. The gray contour shows area with more that 10 hectares cultivated. Data from the MIRCA2000 data set for maize, rice, and soy. Winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing season.}
-    \label{fig:irrarea}
-\end{minipage}
-\hspace{.05\linewidth}
-%S2
-\begin{minipage}{.45\textwidth}
-    \centering
-    \vspace{-19mm}
-    \includegraphics[width=\textwidth]{s_croparea.png}\\
-    \caption{Presently cultivated area for rain fed crops in the real world. Conventions as in Figure S1.}
-    \label{fig:rainfed}
-\end{minipage}
-\end{figure}
-
-\clearpage
-\section{Year-to-year vs climatological mean}
-\begin{figure}[h!]
-%S4
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_maize_EPIC-TAMU.png}
-\caption{Same convention as main text Figure 1 except for multiple gricells in Iowa for maize for the EPIC-TAMU model.}
-\label{fig:epicmaize}
-\end{figure}
-
-\begin{figure}[h!]
-%S5
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_winter_wheat_pDSSAT.png}
-\caption{Same convention as above except for winter wheat in France for the pDSSAT model.}
-\label{fig:pdssatwwh}
-\end{figure}
-
-\begin{figure}[h!]
-%S6
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_soy_pDSSAT.png}
-\caption{Same convention as above except for soy in Illinois for the pDSSAT model.}
-\label{fig:pdssatsoy}
-\end{figure}
-
-\begin{figure}[h!]
-%S7
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_soy_LPJmL.png}
-\caption{Same convention as above except for soy in Illinois for the LPJmL model.}
-\label{fig:lpjmlsoy}
-\end{figure}
-
-\begin{figure}[h!]
-%S8
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_rice_LPJmL.png}
-\caption{Same convention as above except for rice in India/Bangladesh for the LPJmL model.}
-\label{fig:lpjmlrice}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
 \section{Yield Response}
 \begin{figure}[h!]
 %S9
@@ -146,23 +67,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Normalized Error}
-
-\begin{figure}[h!]
-%S16
-\centering
-\includegraphics[width=15.5cm]{error_grid_360_all.png}
-\caption{The fraction of grid cells (across all grid cells) with normalized emulation error less than 1 for the CO$_2$=360 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. This is in contrast to the fraction of currently cultivated hectares shown in the C360 case in the manuscript and for the C810 case show in the supplemental material. The emulator is marginally more successful over currently cultivated areas than over all grid cells in general.}
-\label{fig:error810}
-\end{figure}
-
-\begin{figure}[h!]
-%S16
-\centering
-\includegraphics[width=15.5cm]{error_grid_810.png}
-\caption{The fraction of currently cultivated hectares with normalized emulation error less than 1 (blue colors contours in Figure A2) for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. See Equations A1 and A2 for normalized error calculation. The yield response is generally easy to emulate over currently cultivated areas (dark blue and light blue).}
-\label{fig:error810}
-\end{figure}
-
 
 \begin{figure}[h!]
 %S16
@@ -272,24 +176,6 @@
 \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
 \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
 \label{fig:pdssatrmse}
-\end{figure}
-
-\clearpage
-\subsection{Emulator products}
-\begin{figure}[h!]
-%S29
-\centering
-\includegraphics[width=15.5cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png}
-\caption{Same convention as Figure 11 in the main text except now for spring wheat. PROMET spring wheat emulator fails in China, resulting in the bias.}
-\label{fig:spring_wheat_prod}
-\end{figure}
-
-\begin{figure}[h!]
-%S29
-\centering
-\includegraphics[width=15.5cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png}
-\caption{Same convention as Figure 11 in the main text except now for soybean. }
-\label{fig:soy_prod}
 \end{figure}
 
 \clearpage
