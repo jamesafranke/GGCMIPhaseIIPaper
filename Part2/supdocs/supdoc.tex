@@ -80,56 +80,18 @@
 \end{minipage}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\section{Year-to-year vs climatological mean}
-\begin{figure}[h!]
-%S4
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_maize_EPIC-TAMU.png}
-\caption{Same convention as main text Figure 1 except for multiple gricells in Iowa for maize for the EPIC-TAMU model.}
-\label{fig:epicmaize}
-\end{figure}
+\section{Yield Response}
 
-\begin{figure}[h!]
-%S5
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_winter_wheat_pDSSAT.png}
-\caption{Same convention as above except for winter wheat in France for the pDSSAT model.}
-\label{fig:pdssatwwh}
-\end{figure}
 
-\begin{figure}[h!]
-%S6
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_soy_pDSSAT.png}
-\caption{Same convention as above except for soy in Illinois for the pDSSAT model.}
-\label{fig:pdssatsoy}
-\end{figure}
-
-\begin{figure}[h!]
-%S7
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_soy_LPJmL.png}
-\caption{Same convention as above except for soy in Illinois for the LPJmL model.}
-\label{fig:lpjmlsoy}
-\end{figure}
-
-\begin{figure}[h!]
-%S8
-\centering
-\includegraphics[width=\textwidth]{tempyearvclim_rice_LPJmL.png}
-\caption{Same convention as above except for rice in India/Bangladesh for the LPJmL model.}
-\label{fig:lpjmlrice}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Normalized Error}
 
@@ -148,6 +110,40 @@
 \caption{The fraction of currently cultivated hectares with normalized emulation error less than 1 (blue colors contours in Figure A2) for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. See Equations A1 and A2 for normalized error calculation. The yield response is generally easy to emulate over currently cultivated areas (dark blue and light blue).}
 \label{fig:error810}
 \end{figure}
+
+\clearpage
+\section{Comparison to transient climate run simulation}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.3cm]{figures/LPJMLRCP85comp_30N.png}
+  \caption{
+  Same as main text Figure 9 except now only for crops north of 30N latitude.
+  }
+  \label{fig:lpjmlrcp}
+\end{figure*}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.3cm]{figures/LPJMLRCP85comp_tropics.png}
+  \caption{
+  Same as main text Figure 9 except now only for crops between 30N and 30S.
+  }
+  \label{fig:lpjmlrcp}
+\end{figure*}
+
+\clearpage
+\section{A1 Emulator products}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops_A1.png}
+  \caption{
+  Same as main text Figure 10 except now for A1 simualtions. Note: JULES does not provide A1 simulations.
+  }
+  \label{fig:all_dims}
+\end{figure*}
+
 
 \end{document}
 
