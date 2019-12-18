@@ -295,7 +295,7 @@ regressions for irrigated crops do not contain W terms, and regressions for mode
     + \ & K_{31} W^2 C + K_{32} C^2 W + K_{33} C^2 T + K_{34} C^2 N \nonumber
 \end{align}
 
-Results shown througout the paper use this full specification, but we also investigate (in \ref{sec:features} below) whether some terms can be dropped without significant reduction in emulator fidelity.
+Results shown throughout the paper use this full specification, but we also investigate (in \ref{sec:features} below) whether some terms can be dropped without significant reduction in emulator fidelity.
 In general, both higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
 Interaction terms are needed since the yield response is expected to depend on interactions between the major inputs. 
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
@@ -306,7 +306,7 @@ Some prior studies have used other statistical specifications in crop model emul
 %Such a high-dimensional model is difficult to fit, especially for a training set of realistic simulations in which input parameters are highly correlated, 
 and ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
 The GGCMI Phase II dataset allows fitting our simple 3rd order polynomial form independently at each grid cell while still providing a satisfactory emulation for all models and crops. 
-(See Sections \ref{S:4} and \ref{XX} for evaluations of emulator fidelity.)
+(See Sections \ref{S:4} and \ref{S:4.1} for evaluations of emulator fidelity.)
 
 \subsection{Feature importance}
 \label{sec:features}
@@ -382,7 +382,7 @@ New predictions from the emulator for EPIC-TAMU for maize will tend to be biased
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In this section we show illustrations of the GCCMI models yield responses to climate perturbations, and evaluate metrics of emulator performance. 
+In this section we show illustrations of the GCCMI models yield responses to climate perturbations, and evaluate metrics of emulator performance for the full-form polynomial (performance metrics for the 23-term polynomial emulator can be found in the supplemental material).  
 Model emulation with the parametric method used here requires that crop yield responses be sufficiently smooth and continuous to allow fitting with a relatively simple functional form; we demonstrate that this condition largely holds in the GGCMI Phase II simulations. 
 Emulation errors -- discrepancies between emulation and simulation --  are generally small, especially when compared to the differences across crop models or climate model inputs.
 Emulation errors become problematic only in certain, limited geographic locations, usually where crops are currently not grown. 
@@ -426,20 +426,6 @@ Emulation spatial skill varies across models and crops, with maize being the qua
    \label{fig:regression}
 \end{figure*}
 
-\begin{figure*}[h!!]
-\centering
-    \includegraphics[width=16.3cm]{figures/regression_example_2.png}
-    \caption{
-    Illustration of variations in yield response across models, again successfully captured by the emulator. 
-    Panels show simulations and emulations from six representative GGCMI models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
-    Three models (PROMET, JULES, and CARAIB) that do not simulate the nitrogen dimension are omitted for clarity. 
-    Models are uncalibrated, producing spread in absolute yields. 
-	While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ pDSSAT here, for water), but 
-    resulting error generally remains small relative to differences across models.
-    }
-   \label{fig:regression_2}
-\end{figure*}
-
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
 Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. 
 This heterogeneity supports the choice of emulating at the grid cell level. 
@@ -453,6 +439,20 @@ Absolute yield differences between models can be substantial because models are 
 In general, models are most similar in their responses to temperature perturbations, and least similar to changes in CO$_2$. 
 That is, CO$_2$ fertilization effects \textit{within} a single model are consistent across locations, but CO$_2$ effects differ strongly \textit{across} models. 
 Differences in response shape can lead to some differences in the fidelity of emulation for different crop-model combinations; we evaluate these in more detail in the following section. 
+
+\begin{figure*}[h!!]
+\centering
+    \includegraphics[width=16.3cm]{figures/regression_example_2.png}
+    \caption{
+    Illustration of variations in yield response across models, again successfully captured by the emulator. 
+    Panels show simulations and emulations from six representative GGCMI models for rainfed maize in the same Iowa grid cell shown in Figure \ref{fig:regression}, with the same plot conventions. 
+    Three models (PROMET, JULES, and CARAIB) that do not simulate the nitrogen dimension are omitted for clarity. 
+    Models are uncalibrated, producing spread in absolute yields. 
+    While most model responses can readily emulated with a simple polynomial, some response surfaces diverge slightly from the polynomial form, producing emulation error (e.g.\ pDSSAT here, for water), but 
+    resulting error generally remains small relative to differences across models.
+    }
+   \label{fig:regression_2}
+\end{figure*}
 
 Note that while the nitrogen dimension is important, it is also the troublesome to emulate in this work because of its limited sampling compared to other dimensions. 
 The GGCMI Phase II protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
@@ -492,11 +492,13 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 
 Our emulators collectively consist of nearly 3 million individual regressions, so developing concise performance metrics poses a challenge.
 No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics, one relatively loose and one more stringent. 
-These are described in detail below. Both metrics assess the ability of the emulator to reproduce model output from the GGCMI Phase II experiment. 
+These are described in detail below. 
+Both metrics assess the ability of the emulator to reproduce model output from the GGCMI Phase II experiment. 
 Finally, we also demonstrate the emulator's ability to reproduce a realistic projection of crop response to an evolving climate run. 
 
 \smallskip
-\textit{1. Normalized error.} We take as our first metric what we term the ``normalized error'', which compares the fidelity of an emulator to the inter-model spread. 
+\textit{1. Normalized error.} 
+We take as our first metric what we term the ``normalized error'', which compares the fidelity of an emulator to the inter-model spread. 
 For a multi-model comparison exercise like GGCMI Phase II, a reasonable though loose emulator criterion is that its errors be small relative to intermodel differences. The normalized error $e$ is defined separately for each C,T,W,N scenario $s$ as the difference between emulated and simulated fractional yield changes, normalized by the standard deviation in simulated changes across all models: 
 
 \begin{align}
@@ -507,7 +509,7 @@ For a multi-model comparison exercise like GGCMI Phase II, a reasonable though l
 \end{align}
 
 Evaluation of this metric implies that GGCMI Phase II emulators are generally satisfactory. 
-We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error}. 
+We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields, and show the averages over currently cultivated area in Figure \ref{fig:error_360}. 
 A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
 Emulator performance is generally satisfactory. For maize, for example, all 9 models return $e < 1$ over 97\% of currently cultivated area. 
 %and an additional 3 models produce $e < 1$ over 97\% of currently cultivated area. (LPJ-GUESS emulation is lowest in fidelity for maize, as previously shown in Figure \ref{fig:regression_2}, and produces 92\%.) 
@@ -537,14 +539,6 @@ The rationale for the choice is to relate the fidelity of the emulation to the t
 the metric then has the property that where models differ more widely, the standard for emulators becomes less stringent, and vice versa.
 In GGCMI Phase II the effect is manifested in the higher normalized errors for soybeans across all models, which result not because soybean yields are difficult to emulate but because models agree more closely on yield changes for soybeans than for the other crops.
 
-\smallskip
-\textit{2. Out-of-sample validation.} 
-We provide a second, more stringent test of emulator performance via a cross validation (also termed an out-of-sample validation). 
-In this test the GGCMI Phase II dataset is split randomly into two parts, with 90\% of the data used to train the model and the held-out 10\% used to test the fidelity of the resulting emulator.
-We calculate the root mean square error (RMSE) between emulated (predicted) and actual simulated values across the test set, repeat the process twice and average the results of the two splits. 
-The split does not represent a uniform number of samples in each location or in each model.
-As a last step, we normalize the RMSE in each grid cell by dividing by its simulated yield change in the experiment sampling space in each grid cell.
-
 \begin{table*}[ht]
     \caption{
     Root mean squared error of the emulator representation of a simulation as a percentage of simulated yield change for the cross-validation process, for rainfed crops. Values are the mean grid cell error as a percentage of baseline yield, over all currently cultivated grid cells weighted by cultivation area in selected major regions (NA: North America, SA: South America). Global mean values are show in parenthesis. 
@@ -567,6 +561,14 @@ As a last step, we normalize the RMSE in each grid cell by dividing by its simul
     \end{tabular}
 \end{table*}
 
+\smallskip
+\textit{2. Out-of-sample validation.} 
+We provide a second, more stringent test of emulator performance via a cross validation (also termed an out-of-sample validation). 
+In this test the GGCMI Phase II dataset is split randomly into two parts, with 90\% of the data used to train the model and the held-out 10\% used to test the fidelity of the resulting emulator.
+We calculate the root mean square error (RMSE) between emulated (predicted) and actual simulated values across the test set, repeat the process twice and average the results of the two splits. 
+The split does not represent a uniform number of samples in each location or in each model.
+As a last step, we normalize the RMSE in each grid cell by dividing by its simulated yield change in the experiment sampling space in each grid cell.
+
 The resulting error metric is generally low as a percentage of yield change.
 Table \ref{table:ASE} shows the RMSE error over currently cultivated land in major producing regions and globally for each model-crop combination for rainfed crops and include all simulations in CTWN space. 
 Values are below 5\% for all cases.  
@@ -582,8 +584,13 @@ In this sense the metric is overly conservative, and values would be lower under
 For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
 
 \smallskip
-\textit{3. Validation of emulation of realistic climate projections.}
 \label{S:4.3}
+\textit{3. Validation of emulation of realistic climate projections.}
+Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
+For the test, we drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario.
+We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure S35.)
+We then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output. 
+The resulting emulated yields reliably reproduce simulated yields under the full climate scenario (Figure \ref{fig:lpjmlrcp}). 
 
 \begin{figure*}[ht]
   \centering
@@ -598,12 +605,6 @@ For more detailed potential evaluation metrics see e.g.\ \citet{Castruccio14}.
   \label{fig:lpjmlrcp}
 \end{figure*}
 
-Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario.
-For the test, we drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario.
-We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure S35.)
-We then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output. 
-The resulting emulated yields reliably reproduce simulated yields under the full climate scenario (Figure \ref{fig:lpjmlrcp}). 
-
 Globally, the effects of distributional changes are relatively small for all crops except winter wheat (Figure 9). 
 That, is production changes estimated with the climatological-mean emulator are very similar to those simulated under a realistic climate projection. 
 Global simulated maize, rice, and winter wheat yields decline by 29.6, 50.6, and 29.6\% by 2100, while emulated yields decline by 28.7, 49.7, and 26.3\%.  
@@ -611,9 +612,10 @@ Global simulated maize, rice, and winter wheat yields decline by 29.6, 50.6, and
 Distributional effects are are expected to be strongest effects at high latitudes, because wintertime variability reduces strongly at high latitudes, potentially mitigating some yield losses. 
 For crops north of 30 degrees latitude,  the mean-climatological emulator underestimates damages in 2100 in maize, rice, and winter wheat by approximately 20\% (Supplemental Figure XX). 
 The mean climatological change appears to capture ~80\% percent of the production change in the extra-tropics. 
-Effects grow as the region of interest is restricted to still higher latitudes. By contrast, emulated crop yields at lower latitudes (< 30 degrees) show almost no bias because variability in the tropics is small, so that mean changes dominate under climate change (Supplemental Figure XX).
+Effects grow as the region of interest is restricted to still higher latitudes. 
+By contrast, emulated crop yields at lower latitudes (< 30 degrees) show almost no bias because variability in the tropics is small, so that mean changes dominate under climate change (Supplemental Figure XX).
 
-\textcolor{red}{XX needs edits from here on} %The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
+\textcolor{red}{XX needs edits from here on... unsure if we need this paragraph} %The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
 %The year-to-year emulation does not match the yearly simulated values (Figure \ref{fig:lpjmlrcp}, points) as well as the climatological mean (Figure \ref{fig:lpjmlrcp}, lines), indicating the importance of the growing season temperature distribution at the yearly time scale. 
 %We do not intend the emulator to be used to project yearly yields.
 The three potential causes for remaining differences on top of distributional changes are as follows.
