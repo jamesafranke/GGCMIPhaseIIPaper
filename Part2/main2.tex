@@ -441,7 +441,8 @@ Emulation spatial skill varies across models and crops, with maize being the qua
 \end{figure*}
 
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
-Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. This heterogeneity supports the choice of emulating at the grid cell level. 
+Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. 
+This heterogeneity supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
 Emulators do perform poorly in a few regions that involve discontinuous or irregular yield responses. 
 This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rises by 4 degrees. 
@@ -603,6 +604,15 @@ For the test, we drive the LPJmL crop model (representative among GGCMI Phase II
 We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. (See Supplemental Figure S35.)
 We then drive the LPJmL emulator with the climatological anomalies for precipitation and temperature calculated from the HADGEM2-ES output. 
 The resulting emulated yields reliably reproduce simulated yields under the full climate scenario (Figure \ref{fig:lpjmlrcp}). 
+
+Globally, the effects of distributional changes are relatively small for all crops except winter wheat (Figure 9). 
+That, is production changes estimated with the climatological-mean emulator are very similar to those simulated under a realistic climate projection. 
+Global simulated maize, rice, and winter wheat yields decline by 29, 50, and 29\% by 2100, while emulated yields decline by 27, 47, and 25\%.  
+(Spring wheat is nearly immune to distributional changes in climate at all latitudes.)  
+Distributional effects are are expected to be strongest effects at high latitudes, because wintertime variability reduces strongly at high latitudes, potentially mitigating some yield losses. 
+For crops north of 30 degrees latitude,  the mean-climatological emulator underestimates damages in 2100 in maize, rice, and winter wheat by approximately 20\% (Supplemental Figure XX). 
+The mean climatological change appears to capture ~80\% percent of the production change in the extra-tropics. 
+Effects grow as the region of interest is restricted to still higher latitudes. By contrast, emulated crop yields at lower latitudes (< 30 degrees) show almost no bias because variaibility in the tropics is small, so that mean changes dominate under climate change (Supplemental Figure XX).
 
 \textcolor{red}{XX needs edits from here on} The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
 The year-to-year emulation does not match the yearly simulated values (Figure \ref{fig:lpjmlrcp}, points) as well as the climatological mean (Figure \ref{fig:lpjmlrcp}, lines), indicating the importance of the growing season temperature distribution at the yearly time scale. 
