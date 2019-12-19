@@ -27,7 +27,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\centering{\bf {\large Supplemental Material 1} \\
+\centering{\bf {\large Supplemental Material} \\
 {\Large The GGCMI phase II emulators: global gridded crop model responses to changes in CO$_2$, temperature, water, and nitrogen (version 1.0)}}\\
 
 \vspace{3mm}
@@ -53,7 +53,11 @@
 %S3
 \centering
 \includegraphics[width=\textwidth]{s_how_many_simulations.png}
-\caption{Tile heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. The max number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). Normalized error calculations are run over scenarios with max number of models.}
+\caption{
+Heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. 
+The max number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). 
+Normalized error calculations are run over scenarios with max number of models.
+}
 \label{fig:numbersims}
 \end{figure}
 
@@ -66,7 +70,12 @@
     \centering
     \vspace{0pt}
     \includegraphics[width=\textwidth]{s_croparea_irr.png}\\
-    \caption{Presently cultivated area for irrigated crops in the real world. The blue contour area indicates grid-cells with more that 20,00 hectares of crop cultivated. The gray contour shows area with more that 10 hectares cultivated. Data from the MIRCA2000 data set for maize, rice, and soy. Winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing season.}
+    \caption{
+    Presently cultivated area for irrigated crops in the real world. 
+    The blue contour area indicates grid-cells with more that 20,00 hectares of crop cultivated. 
+    The gray contour shows area with more that 10 hectares cultivated. Data from the MIRCA2000 data set for maize, rice, and soy. 
+    Winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing season
+    }
     \label{fig:irrarea}
 \end{minipage}
 \hspace{.05\linewidth}
@@ -84,7 +93,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\section{Yield Response}
+\section{Yield Response for A1 Simulations}
 
 
 
@@ -98,16 +107,12 @@
 \begin{figure}[h!]
 %S16
 \centering
-\includegraphics[width=15.5cm]{error_grid_360_all.png}
-\caption{The fraction of grid cells (across all grid cells) with normalized emulation error less than 1 for the CO$_2$=360 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. This is in contrast to the fraction of currently cultivated hectares shown in the C360 case in the manuscript and for the C810 case show in the supplemental material. The emulator is marginally more successful over currently cultivated areas than over all grid cells in general.}
-\label{fig:error810}
-\end{figure}
-
-\begin{figure}[h!]
-%S16
-\centering
 \includegraphics[width=15.5cm]{error_grid_810.png}
-\caption{The fraction of currently cultivated hectares with normalized emulation error less than 1 (blue colors contours in Figure A2) for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. See Equations A1 and A2 for normalized error calculation. The yield response is generally easy to emulate over currently cultivated areas (dark blue and light blue).}
+\caption{
+The fraction of currently cultivated hectares with normalized emulation error less than 1 (blue colors contours in Figure A2) for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. 
+See Equations A1 and A2 for normalized error calculation. 
+The yield response is generally easy to emulate over currently cultivated areas (dark blue and light blue).
+}
 \label{fig:error810}
 \end{figure}
 
@@ -123,17 +128,18 @@
   \label{fig:lpjmlrcp}
 \end{figure*}
 
-\begin{figure*}[ht]
-  \centering
-  \includegraphics[width = 16.3cm]{figures/LPJMLRCP85comp_tropics.png}
-  \caption{
-  Same as main text Figure 9 except now only for crops between 30N and 30S.
-  }
-  \label{fig:lpjmlrcp}
-\end{figure*}
 
 \clearpage
-\section{A1 Emulator products}
+\section{Emulator products}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops_color.png}
+  \caption{
+  Same as main text Figure 10 except now each model is shown in color.
+  }
+  \label{fig:all_dims}
+\end{figure*}
 
 \begin{figure*}[ht]
   \centering
@@ -143,6 +149,212 @@
   }
   \label{fig:all_dims}
 \end{figure*}
+
+
+\clearpage
+\section{Reduced specification emulator details}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_lpjml_maize.png}
+\caption{Same convention as Figure 4 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedlpjml}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_regression_example_1.png}
+\caption{Same convention as Figure 5 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedareas}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_regression_example_2.png}
+\caption{Same convention as Figure 6 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedmodels}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_error_grid.png}
+\caption{Same convention as Figure 7 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedgrid}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{reduced_CARAIB_spatial_error.png}
+\caption{Same convention as Figure 8 in the main text except now with the reduced (23-term) emulator specification.}
+\label{fig:reducedcaraib}
+\end{figure}
+
+
+\begin{figure}[h!]
+%S10
+\includegraphics[width=\textwidth]{JULES_soy_bad.png}
+\caption{Example of emulator failure. Simulated and emulated values for JULES soybean in Southern Germany. RMSE = 41\% of baseline yield.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+\begin{figure}[h!]
+%S13
+\includegraphics[width=\textwidth]{promet_rice_bad_arun.png}
+\caption{Example of emulator failure. Simulated and emulated values for PROMET rice in Arunachal Pradesh. RMSE = 132\% of baseline yield.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Part 2   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Yield Responses for other crops and models}
+\begin{figure}[h!]
+%S9
+\includegraphics[width=\textwidth]{lpjml_grid.png}
+\caption{Same convention as Figure 4 in the main text except now for all crops.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+\begin{figure}[h!]
+%S9
+\includegraphics[width=\textwidth]{pdssat_maize.png}
+\caption{Same convention as Figure 4 in the main text except now pDSSAT maize.}
+\label{fig:lpjmlrice}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Normalized Error for all models}
+
+\begin{figure}[h!]
+%S16
+\centering
+\includegraphics[width=15.5cm]{pDSSAT_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for pDSSAT.}
+\label{fig:pdssatnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S17
+\centering
+\includegraphics[width=15.5cm]{LPJmL_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for LPJmL.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S18
+\centering
+\includegraphics[width=15.5cm]{PROMET_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for PROMET.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S19
+\centering
+\includegraphics[width=15.5cm]{JULES_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for JULES.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S20
+\centering
+\includegraphics[width=15.5cm]{EPIC-TAMU_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for EPIC-TAMU.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S21
+\centering
+\includegraphics[width=15.5cm]{GEPIC_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for GEPIC.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+\begin{figure}[h!]
+%S22
+\centering
+\includegraphics[width=15.5cm]{PEPIC_spatial_error.png}
+\caption{Same convention as main text Figure 8 except now for PEPIC.}
+\label{fig:lpjmlnorm}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Cross validation error for all models}
+
+\begin{figure}[h!]
+%S19
+\centering
+\includegraphics[width=15.5cm]{pDSSAT_spatial_MSE_ton_ha.png}
+\caption{Root mean squared error for three-fold cross validation for the pDSSAT model for rainfed crops.}
+\label{fig:pdssatrmse}
+\end{figure}
+
+\begin{figure}[h!]
+%S21
+\centering
+\includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha.png}
+\caption{Map of root mean squared error for three fold cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
+\label{fig:pdssatrmse}
+\end{figure}
+
+\begin{figure}[h!]
+%S23
+\centering
+\includegraphics[width=15.5cm]{JULES_spatial_MSE_ton_ha.png}
+\caption{Map of root mean squared error for three fold cross validation process for the JULES model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
+\label{fig:pdssatrmse}
+\end{figure}
+
+\begin{figure}[h!]
+%S25
+\centering
+\includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha.png}
+\caption{Map of root mean squared error for three fold cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
+\label{fig:pdssatrmse}
+\end{figure}
+
+\begin{figure}[h!]
+%S27
+\centering
+\includegraphics[width=15.5cm]{GEPIC_spatial_MSE_ton_ha.png}
+\caption{Map of root mean squared error for three fold cross validation process for the GEPIC model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
+\label{fig:pdssatrmse}
+\end{figure}
+
+\begin{figure}[h!]
+%S29
+\centering
+\includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
+\caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of baseline yield in each gridcell.}
+\label{fig:pdssatrmse}
+\end{figure}
+
 
 
 \end{document}

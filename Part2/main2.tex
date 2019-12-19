@@ -119,7 +119,7 @@ All take advantage of the structured training set to construct emulators (``resp
 All the 2018--2019 papers have some limitations, however, for assessing global agricultural impacts, including that
 none evaluate responses in every grid cell globally.
 Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZRAMOS2018} and cover only 1--4 individual sites. 
-\citet{Snyder2018} analyzes five crops over $\sim$1000 sites with individual site-specific crop models, and extrapolates to estimate mean latitudinal responses. % of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
+\citet{Snyder2018} analyzes five crops over $\sim$1000 sites with individual site-specific crop models, and extrapolates in space to estimate mean latitudinal responses. % of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 %Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
@@ -190,7 +190,7 @@ three models (APSIM-UGOE, EPIC-IIASA, and ORCHIDEE-crop) contributed data %to th
 below the recommended threshold ($<$ 5\% of the full protocol) and are excluded here since they could not be robustly emulated. 
 Table \ref{table:models} shows the participating models and the number of simulation scenarios that each provides, and Supplemental Figure S1 shows model sampling density. Table \ref{table:inputs} shows the specified input values; we sample across all parameter combinations. 
 
-Each individual crop model simulation is run for 31 years over historic weather for the period of 1980-2010, with added uniform perturbations to any of the CTWN variables.
+Each individual crop model simulation is run for 31 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
 Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} as these groups have specific sub-daily input data requirements. 
 Temperature perturbations are applied as additive mean shifts, water supply as fractional multipliers to precipitation (except in the irrigated W$_{\infty}$ case), and CO$_2$ and nitrogen application levels are specified as fixed values. 
 Models provide near-global output at 0.5 degree latitude and longitude resolution for each simulation year, including areas not currently cultivated. 
@@ -206,7 +206,7 @@ The year-over-year response can be significantly different from the forced clima
 Emulation then becomes relatively straightforward, since changes in time-averaged yields are also considerably smoother than those in year-to-year yield response.
 
 In the GGCMI Phase II simulation output dataset, year-over-year responses to weather are often quantitatively distinct from responses to climatological shifts, with the discrepancy especially strong in wheat and rice. 
-This behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated and rainfed maize and wheat in representative locations; open circles and black lines show the climatological mean response, and solid circles and colored lines the responses for the 30 individual years in individual scenarios.  
+The difference in behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated and rainfed maize and wheat in representative locations; open circles and black lines show the climatological mean response, and solid circles and colored lines the responses for the 30 individual years in individual scenarios.  
 %Year-over-year and climatological responses do not generally match,  
 When discrepancies are large, year-over-year responses are generally stronger than climatological ones, but exact responses differ by crop and region and even by model within GGCMI Phase II. 
 
@@ -245,7 +245,7 @@ In the GGCMI Phase II experiment, the imposed perturbations involve no changes i
 The choice is reasonable, since climate models do not agree on distributional changes.
 Most models do project small mean increases in growing-season temperature variability in cultivated areas, and can produce substantial local changes, but models disagree on spatial patterns.
 For example, in business-as-usual climate projections to the year 2100 in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, growing season temperature variability over currently cultivated rice areas increases by 31\% in HadCM3L but decreases by 12\%in CESM1-0-1. 
-(See Supplemental Table S1 for results from multiple climate models for the different crops).
+%(See Supplemental Table S1 for results from multiple climate models for the different crops).
 We therefore explicitly test the assumption that distributional changes are not consequential for climatological mean yields: in Section \ref{S:4.2}, we confirm that an emulator trained on the GGCMI Phase II dataset can successfully reproduce yield changes under a full climate model projection.
 
 \begin{figure*}[ht]
@@ -312,8 +312,7 @@ The GGCMI Phase II dataset allows fitting our simple 3rd order polynomial form i
 
 Because a simpler statistical model may improve the interpretability of its parameter weights, we also develop a reduced version that is satisfactory for most models and crops (Equation \ref{eqn:features_reduced}).
 %\textcolor{red}{It may be preferred by some users for simplicity or for ease of interpretation of the parameter weights.}
-To identify terms that can be omitted, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance. Higher-order and interaction terms are successively added to the regression model, and in each case we calculate an aggregate mean absolute error (weighted by by currently cultivated area) and eliminate those terms that do not contribute significantly to reducing error. The procedure is illustrated in Figure \ref{fig:features}. We develop our reduced statistical model by considering yields over currently cultivated land in three models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU), and one that provided the smallest training set (121 input combinations, PEPIC).   %To account for spatial heterogeneity across models and crops, we weight the loss function by currently cultivated area during this step.
-%Feature importance is remarkably consistent across these models, 
+To identify terms that can be omitted, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance. Higher-order and interaction terms are successively added to the regression model, and in each case we calculate an aggregate mean absolute error (weighted by by currently cultivated area) and eliminate those terms that do not contribute significantly to reducing error. The procedure is illustrated in Figure \ref{fig:features}. We develop our reduced statistical model by considering yields over currently cultivated land in three models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU), and one that provided the smallest training set (121 input combinations, PEPIC).
 Although models exhibit different absolute levels of error, all three agree remarkably well on feature importance, i.e.\ on which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
  
 \begin{figure*}[ht]
@@ -428,10 +427,10 @@ Emulator spatial skill varies across models and crops, with maize being the quan
 
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
 Figure \ref{fig:regression} illustrates geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. While CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, precipitation response is stronger in more arid locations and nitrogen responses appear strongly soil-dependent. 
-This heterogeneity supports the choice of emulating at the grid cell level. 
+The heterogeneity in response supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
 Emulators do perform poorly in a few regions that involve discontinuous or irregular yield responses. 
-This condition is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rises by 4 degrees. 
+Poor performance is illustrated here with maize from the PROMET model in northern Canada, which is considered too cold for maize at present (0 ton ha$^{-1}$ yield), but which shows an abrupt rise to moderate yields once temperature rises by 4 degrees. 
 Under these conditions, the 3rd order polynomial cannot fit the response, and errors are high. See Section \ref{S:4.1} for additional discussion. 
 
 Crop yield responses in all models generally follow similar functional forms at any given location, though with a spread in magnitude (Figure \ref{fig:regression_2}, which shows rainfed maize in northern Iowa in a selection of GGCMI models). 
@@ -596,11 +595,8 @@ We first drive the LPJmL crop model (representative among GGCMI Phase II models)
 We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HadGEM2-ES \citep{Jones2011h, Martin2011}. 
 We then drive the LPJmL emulator with the HadGEM2-ES yearly-growing season anomalies from the historical climatology, and evaluate how well the resulting emulated yields reproduce those simulated under the full climate scenario. 
 The comparison suggests that globally, the results of future distributional shifts on climatological yields are small relative to the effects of mean changes (Figure \ref{fig:lpjmlrcp}). 
-In this climate scenario and crop model, global emulated and simulated production changes in 2100 match to 1--5\%: simulated production of maize, rice, winter and spring wheat decline by 28, 47, 24, and 44\%, respectively, while emulated production declines by 27, 46, 24, and 43\%. 
-\textcolor{red}{something about decadal variability??}
-% XXX - you said "climatological"; are you really driving with 30-year means rather than year-over-year anomalies? 
-%Globally, the effects of distributional changes are relatively small for all crops except winter wheat (Figure 9). 
-%That, is yield changes estimated with the climatological-mean emulator are very similar to those simulated under a realistic climate projection. 
+In this climate scenario and crop model, global emulated and simulated production changes in 2095 match to 1--5\%: simulated production of maize, rice, winter and spring wheat decline by 28, 47, 24, and 44\%, respectively, while emulated production declines by 27, 46, 24, and 43\%. 
+\textcolor{red}{The emulator is also able to capture the projected decadal variability in yields (likely ENSO precipitation), though differences in individual years can still be large.}
 
 \begin{figure*}[ht]
   \centering
@@ -609,14 +605,13 @@ In this climate scenario and crop model, global emulated and simulated productio
   Test of emulator performance in reproducing yield simulations made with a realistic climate projection. 
   Panels show simulated (black) and emulated (red) global production for four crops from the LPJmL model, driven with temperature and precipitation outputs from the HadGEM2-ES climate model for the RCP8.5 scenario. 
   In both cases nitrogen and CO$_2$ are held fixed, at 200 kg ha-1 and 360 ppm.
-  Points show yearly global production change from the 1980-2010 baseline, and lines show a 10-year running mean. 
-  See text for discussion of relating the HadGEM2-ES temperature timeseries to the appropriate offset used in emulation. Differences in 1980-2010 yields result because the HadGEM2-ES historical climate timeseries differs slightly from the AGMERRA timeseries used in GGCMI Phase II. 
+  Points show yearly global production change from the 1981-2010 baseline, and lines show a 10-year running mean. 
+  See text for discussion of relating the HadGEM2-ES temperature timeseries to the appropriate offset used in emulation. Differences in 1981-2010 yields result because the HadGEM2-ES historical climate timeseries differs slightly from the AGMERRA timeseries used in GGCMI Phase II. 
   Emulators trained on uniform climatological offsets reproduce well the simulated production response under a realistic climate scenario (production changes match to $\sim$5\%). 
   }
   \label{fig:lpjmlrcp}
 \end{figure*}
 
- 
 Distributional effects are expected to be stronger at high latitudes, because temperature and precipitation variability are larger there, so that changes in variability can be correspondingly more important. 
 %because wintertime variability declines strongly there, potentially mitigating some yield losses. 
 \textcolor{red}{North of 30 degrees latitude (where 20\% of rice is cultivated), the climatological-mean emulator developed here does indeed underestimate year-2100 damages in rice by approximately 20\% (Supplemental Figure XX). 
@@ -629,9 +624,9 @@ It is worth noting two complications involved in comparing emulated to simulated
 First, it is not trivial to choose how to relate temperature or precipitation in the evolving climate scenario to the $T$ and $P$ offsets used as regressors to the emulator. 
 Using growing-season mean temperature can lead to complications if crop models assume that growing season lengths shift under climate change. 
 For consistency, we match the temperature changes in the climate scenario to their equivalent emulator regressors by calculating means over the fixed baseline growing season. 
-This choice ensures that the emulation is appropriately matched to the simulation.
-Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1980-2010) yield of winter wheat simulated by LPJmL using the AGMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
-To minimize the effects of different historical climate assumptions, we drive the emulator with the anomaly of the climate scenario from its own 1980-2010 mean. 
+The choice of growing season ensures that the emulation is appropriately matched to the simulation.
+Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AGMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
+To minimize the effects of different historical climate assumptions, we drive the emulator with the anomaly of the climate scenario from its own 1981-2010 mean. 
 Even with this choice, biases in the historical climate timeseries can mean that trends in emulated and simulated yield changes do not match well during the baseline period, as discussed in Section 2.2. In Figure \ref{fig:lpjmlrcp}, this effect is evident in maize and spring wheat.
 
 %The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
@@ -652,7 +647,7 @@ Even with this choice, biases in the historical climate timeseries can mean that
   Emulated global damage functions for the five crops included in GGCMI Phase II for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
   Black line shows the multi-model ensemble mean and the shaded area and colored lines show the individual model projections. 
   All other covariates held constant at baseline values (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
-  Damages are reported as percent change in global production relative to the baseline (1980-2010) case over currently cultivated land.
+  Damages are reported as percent change in global production relative to the baseline (1981-2010) case over currently cultivated land.
   Note that the N response should be small in soybeans since they are efficient N fixers, and CO$_2$ response should be smallest in maize since it is a C4 grass.
   }
   \label{fig:all_dims}
@@ -660,7 +655,7 @@ Even with this choice, biases in the historical climate timeseries can mean that
 
 Because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale, it can be used for a variety of applications, including construction of continuous damage functions in a flexible format. 
 As an example, we present global damage functions constructed from the 4D emulation, for all four dimensions tested in this study (Figure \ref{fig:all_dims}) with the ensemble median and ensemble spread shown in bold line and ribbon. 
-This is helpful in the crop model intercomparison project context for diagnosing model differences. 
+Using the emulators in this way is helpful in the crop model intercomparison project context for diagnosing model differences. 
 In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Model spread is highest for spring wheat in general across all dimensions.
 Maize has a muted response to CO$_2$ as a C4 plant, and the impacts of temperature are most consistent for soybeans (see also Figure \ref{fig:error_360}).
@@ -675,7 +670,7 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     \includegraphics[width = 16.3cm]{figures/global_em_maize.png}
     \caption{
     Illustration of the effects of factors affecting yields in more realistic climate scenarios. 
-    Figure shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1980-2010 mean) for three representative crop models, with changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and CO$_2$ (\textbf{c}).
+    Figure shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1981-2010 mean) for three representative crop models, with changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and CO$_2$ (\textbf{c}).
     Circles are emulated yearly global production changes for 2010-2100 in scenarios from 5 CMIP-5 climate models, i.e.\ 490 total per crop model, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area).
     Bold lines are the emulated values over uniform T shifts. 
     Open squares in panel \textbf{a} are GGCMI Phase II simulated values for each T level (with CWN at baseline).  
@@ -703,7 +698,7 @@ That is, projected temperature change distribution in space do not matter that m
 Precipitation changes introduce some noise because different climate models have different P response for a given temperature change. 
 PROMET shows a near uniform reduction in yields with precipitation effects included.
 Including the direct effects of elevated CO$_2$ introduces the largest intermodel uncertainty with different crop models showing very different responses. 
-This difference in model response to CO$_2$ is much larger than differences resulting from different climate model sensitivity to CO$_2$ (T(CO$_2$)).
+The difference in model response to CO$_2$ is much larger than differences resulting from different climate model sensitivity to CO$_2$ (T(CO$_2$)).
 Individual climate model sensitives can be seen in the separation in the PROMET response to CO$_2$.
 Emulation based on GGCMI climatological mean shifts is useful for realistic scenarios and emulator errors are small compared to climate model differences and tiny compared to crop model differences.
 
@@ -719,25 +714,21 @@ Emulation based on GGCMI climatological mean shifts is useful for realistic scen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and conclusions} 
 \label{S:6}
-We show that the systematic parameter sampling in the GGCMI Phase II experiments allow emulating climatological crop yield responses with a relatively simple statistical model. 
+In this work we describe a new class of global gridded crop model emulators for maize, soy, rice and wheat for nine process based crop models as part of the GGCMI project.
+We show that the systematic parameter sampling in the GGCMI Phase II experiments allow emulating climatological crop yield responses with a relatively simple statistical model.
 The sampling provides information on the influence of multiple interacting factors in a way that realistic climate model simulations cannot, and allows isolating long-term impacts from confounding factors that lead to different year-over-year responses. 
 The use of a parametric statistical model in turn offers the possibility of physical interpretation of parameter values that can assist in model intercomparison and evaluation. 
-
-We show that the year-to-year response is indeed different than the climatological mean response. 
-
 We show that the polynomial emulation of the mean-climatological response is feasible, with out of sample prediction errors less than 5\% of yield changes both regionally and at the global scale.
+Critically, we show that emulation based on uniform climate shifts is able to sufficiently reproduce the response of a crop model driven by a more realistic climate scenario at the global scale, with some relatively minor errors for rice at high latitudes.
 
-We show that emulation based on uniform climate shifts is able to sufficiently reproduce the response of a crop model driven by a more realistic climate scenario, with some relativly minor losses in the higher latitudes and for winter wheat.
-
-The emulator can be used to develop standalone damage functions at any geographic scale bigger that 0.5 degree, as a proxy for crop model sensitivity testing, or integrated into a larger IAM framework. 
-
+The emulator can be used to develop standalone damage functions at any geographic scale bigger that 0.5 degree, as a proxy for crop model sensitivity testing, or integrated directly into a larger IAM framework. 
 The yield output for a single GGCMI Phase II model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$20 MB, a reduction of nearly three orders of magnitude.
 One-thousand years of global 0.5 degree yields (appropriately 40,000 grid cell locations) can be emulated in 20 seconds on a laptop computer. 
 
 Several cautions should be noted when using the emulator. 
 While the emulator allows estimating agricultural impacts under arbitrary climate scenarios, extrapolation outside the sample space should be avoided. 
 Emulators by design reduce the complexity of process-based simulations and can thus deviate from the raw simulation output. 
-This limitation is especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
+Deviations from the simulation are especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
 Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so they should not be used for impacts projections of absolute yields except in conjunction with historical yield information. 
 Finally, because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample potential changes in climate variability, which may be important at high latitude locations.
 Although such changes are uncertain and remain poorly characterized in climate models and crop models \citep[e.g.][]{Alexande2006, Kodra2014}, follow-up experiments may wish to consider them. 
