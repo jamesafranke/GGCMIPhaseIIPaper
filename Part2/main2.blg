@@ -5,42 +5,42 @@ The style file: copernicus.bst
 Database file #1: bib.bib
 You've used 84 entries,
             2811 wiz_defined-function locations,
-            1621 strings with 36271 characters,
-and the built_in function-call counts, 113975 in all, are:
-= -- 11640
-> -- 6954
-< -- 19
-+ -- 2791
-- -- 2238
-* -- 8101
-:= -- 12386
+            1618 strings with 37197 characters,
+and the built_in function-call counts, 116992 in all, are:
+= -- 11803
+> -- 7404
+< -- 18
++ -- 2941
+- -- 2388
+* -- 8407
+:= -- 12839
 add.period$ -- 84
 call.type$ -- 84
-change.case$ -- 913
+change.case$ -- 963
 chr.to.int$ -- 81
 cite$ -- 252
-duplicate$ -- 9993
-empty$ -- 4915
-format.name$ -- 2506
-if$ -- 22365
+duplicate$ -- 10103
+empty$ -- 4967
+format.name$ -- 2654
+if$ -- 22926
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 1322
+missing$ -- 1372
 newline$ -- 261
 num.names$ -- 336
-pop$ -- 4904
+pop$ -- 5062
 preamble$ -- 1
-purify$ -- 912
+purify$ -- 962
 quote$ -- 0
-skip$ -- 5841
+skip$ -- 5891
 stack$ -- 0
-substring$ -- 3949
-swap$ -- 8919
+substring$ -- 3956
+swap$ -- 9028
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 753
 warning$ -- 0
-while$ -- 432
+while$ -- 433
 width$ -- 0
 write$ -- 1015

@@ -344,6 +344,27 @@ Makowski, D., Asseng, S., Ewert, F., Bassu, S., Durand, J., Martre, P., Adam,
   Datasets for Studying Climate Effects, p. 1100, World Scientific Publishing
   Co, \doi{10.13140/RG.2.1.5173.8328}, 2015.
 
+\bibitem[{Martin et~al.(2011)Martin, Bellouin, Collins, Culverwell, Halloran,
+  Hardiman, Hinton, Jones, McDonald, McLaren, O'Connor, Roberts, Rodriguez,
+  Woodward, Best, Brooks, Brown, Butchart, Dearden, Derbyshire, Dharssi,
+  Doutriaux-Boucher, Edwards, Falloon, Gedney, Gray, Hewitt, Hobson,
+  Huddleston, Hughes, Ineson, Ingram, James, Johns, Johnson, Jones, Jones,
+  Joshi, Keen, Liddicoat, Lock, Maidens, Manners, Milton, Rae, Ridley, Sellar,
+  Senior, Totterdell, Verhoef, Vidale, and Wiltshire}]{Martin2011}
+Martin, T. H. D. T. G.~M., Bellouin, N., Collins, W.~J., Culverwell, I.~D.,
+  Halloran, P.~R., Hardiman, S.~C., Hinton, T.~J., Jones, C.~D., McDonald,
+  R.~E., McLaren, A.~J., O'Connor, F.~M., Roberts, M.~J., Rodriguez, J.~M.,
+  Woodward, S., Best, M.~J., Brooks, M.~E., Brown, A.~R., Butchart, N.,
+  Dearden, C., Derbyshire, S.~H., Dharssi, I., Doutriaux-Boucher, M., Edwards,
+  J.~M., Falloon, P.~D., Gedney, N., Gray, L.~J., Hewitt, H.~T., Hobson, M.,
+  Huddleston, M.~R., Hughes, J., Ineson, S., Ingram, W.~J., James, P.~M.,
+  Johns, T.~C., Johnson, C.~E., Jones, A., Jones, C.~P., Joshi, M.~M., Keen,
+  A.~B., Liddicoat, S., Lock, A.~P., Maidens, A.~V., Manners, J.~C., Milton,
+  S.~F., Rae, J. G.~L., Ridley, J.~K., Sellar, A., Senior, C.~A., Totterdell,
+  I.~J., Verhoef, A., Vidale, P.~L., and Wiltshire, A.: The HadGEM2 family of
+  Met Office Unified Model climate configurations, Geoscientific Model
+  Development, 4, 723--757, \doi{10.5194/gmd-4-723-2011}, 2011.
+
 \bibitem[{Mauser et~al.(2015)Mauser, Klepper, Zabel, Delzeit, Hank,
   Putzenlechner, and Calzadilla}]{MAUSER2015}
 Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
@@ -556,11 +577,6 @@ Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   damages to {U}.{S}. crop yields under climate change, Proceedings of the
   National Academy of Sciences, 106, 15\,594--15\,598,
   \doi{10.1073/pnas.0906865106}, 2009.
-
-\bibitem[{Shapiro and Wilk(1965)}]{Shapiro1965}
-Shapiro, S. and Wilk, M.: {An analysis of variance test for normality (complete
-  samples)†}, Biometrika, 52, 591--611, \doi{10.1093/biomet/52.3-4.591},
-  1965.
 
 \bibitem[{Sippel et~al.(2015)Sippel, Zscheischler, Heimann, Otto, Peters, and
   Mahecha}]{Sippel2015}
