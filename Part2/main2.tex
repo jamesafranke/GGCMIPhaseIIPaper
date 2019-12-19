@@ -383,11 +383,12 @@ While including higher-order terms in the statistical model generally reduces re
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emulator evaluation}
 \label{S:4}
-In this section we show illustrations of GGCMI model yield responses yield responses to climate perturbations and evaluate the ability of our emulators to reproduce them.   
+In this section we show illustrations of GGCMI model yield responses to climate perturbations and evaluate the ability of our emulators to reproduce them.   
 Model emulation with the parametric method used here requires that crop yield responses be sufficiently smooth and continuous to allow fitting with a relatively simple functional form; this condition largely holds in the GGCMI Phase II simulations. 
 In this section we evaluate metrics of emulator performance for the 34-term polynomial of Equation \ref{eqn:features_original}; see Supplementary Materials Section \ref{XX} for analogous evaluation of the 23-term polynomial of Equation \ref{eqn:features_reduced}.
 We find that emulation errors -- discrepancies between emulation and simulation --  are generally small, especially when compared to the differences across crop models or climate model inputs.
 Emulation errors become problematic only in certain, limited geographic locations, usually where crops are not currently grown. 
+We also separately assess the emulator's ability to reproduce crop yields in a more realistic future simulation driven by a climate model projection, and find that the effects of changes in variability not included in the GGCMI Phase II training set remain small relative to the effects of mean changes.
 
 \subsection{Yield response}
 Crop yields show strong spatial differentiation across geographic regions, and emulators are able to readily reproduce these. Figure \ref{fig:map_pattern} illustrates the spatial yield pattern under current climate for one crop and model (maize in LPJmL). Absolute emulation errors are low --  99.8\% of grid cells have errors below 0.5 tons ha$^{-1}$ -- but 
@@ -497,7 +498,7 @@ Our emulators collectively consist of nearly 3 million individual regressions, s
 No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics below, one relatively loose and one more stringent. 
 %These are described in detail below. 
 Both metrics assess the ability of the emulator to reproduce simulated crop yields in the GGCMI Phase II experiment. 
-We also separately assess the emulator's ability to reproduce crop yields in a more realistic future simulation driven by a climate model projection. In this section we show only results from emulators based on the 34-term Equation \ref{eqn:features_original};
+ In this section we show only results from emulators based on the 34-term Equation \ref{eqn:features_original};
 see Supplementary Material Section \ref{XX} for analogous assessment of emulators based on the 23-term Equation \ref{eqn:features_reduced}.
 
 \smallskip
@@ -597,7 +598,7 @@ For additional discussion of more detailed potential evaluation metrics, see e.g
 
 \smallskip
 \label{S:4.3}
-\textit{3. Validation of emulation of realistic climate projections.}
+\subsection{Emulation of realistic climate projections}
 Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. The goal is to assess whether future changes in temperature and precipitation distributions (either within-growing-season or interannual) have strong enough effects on yields that they would invalidate a GGCMI-based emulator.
 We first drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario (Supplemental Figure \textcolor{red}{S35}).
 We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HADGEM2-ES \citep{Jones2011h}. 
