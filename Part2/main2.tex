@@ -615,12 +615,13 @@ The emulator also reproduces decadal variation in yields, which is especially st
   \label{fig:lpjmlrcp}
 \end{figure*}
 
-Distributional effects are expected to be stronger at high latitudes, because temperature and precipitation variability are larger there, so that changes in variability can be correspondingly more important. 
+Distributional effects might be expected to be stronger at high latitudes, because temperature and precipitation variability are larger there, so that changes in variability can be correspondingly more important. 
 %because wintertime variability declines strongly there, potentially mitigating some yield losses. 
-\textcolor{red}{North of 30 degrees latitude (where 20\% of rice is cultivated), the climatological-mean emulator developed here does indeed underestimate year-2100 damages in rice by approximately 20\% (Supplemental Figure XX). 
-That is, the mean climatological emulator captures $\sim$80\% percent of yield changes in the extra-tropics for rice. 
-Spring wheat, winter wheat, and maize, on the other hand, appear nearly immune to distributional changes in climate at all latitudes.} 
-The difference between emulated and simulated yields grows as the region of interest is restricted to still higher latitudes. 
+Most crops however (spring wheat, winter wheat, and maize) show no emulator bias that grows with latitude.
+Rice is the exception: north of 30 degrees latitude (where only 20\% of global rice is cultivated), the climatological-mean emulator underestimates losses under climate change (by 2100, losses of 39\% vs.\ 50\% in simulations), leaving a 9\% low bias in emulated end-of-century rice yields (Supplemental Figure XX). 
+%That is, the mean climatological emulator captures $\sim$80\% percent of yield changes in the extra-tropics for rice. 
+
+%The difference between emulated and simulated yields grows as the region of interest is restricted to still higher latitudes. 
 %At low latitudes, by contrast (< 30 degrees), emulated crop yields show almost no bias (Supplemental Material Figure XX), as expected since variability in the tropics is so small that mean changes dominate future yield responses.
 
 It is worth noting two complications involved in comparing emulated to simulated yields under a realistic climate change scenario, as in Figure \ref{fig:lpjmlrcp}.
@@ -630,7 +631,7 @@ For consistency, we match the temperature changes in the climate scenario to the
 The choice of growing season ensures that the emulation is appropriately matched to the simulation.
 Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AGMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
 To minimize the effects of different historical climate assumptions, we drive the emulator with the anomaly of the climate scenario from its own 1981-2010 mean. 
-Even with this choice, biases in the historical climate timeseries can mean that trends in emulated and simulated yield changes do not match well during the baseline period, as discussed in Section 2.2. In Figure \ref{fig:lpjmlrcp}, this effect is evident in maize and spring wheat.
+Biases in the historical climate timeseries could in theory produce discrepancies between emulated and simulated yield changes, as discussed in Section 2.2, but appear to play little role in the LPJmL comparison of Figure \ref{fig:lpjmlrcp}.
 
 %The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
 %The year-to-year emulation does not match the yearly simulated values (Figure \ref{fig:lpjmlrcp}, points) as well as the climatological mean (Figure \ref{fig:lpjmlrcp}, lines), indicating the importance of the growing season temperature distribution at the yearly time scale. 
