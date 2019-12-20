@@ -629,9 +629,9 @@ First, it is not trivial to choose how to relate temperature or precipitation in
 Using growing-season mean temperature can lead to complications if crop models assume that growing season lengths shift under climate change. 
 For consistency, we match the temperature changes in the climate scenario to their equivalent emulator regressors by calculating means over the fixed baseline growing season. 
 The choice of growing season ensures that the emulation is appropriately matched to the simulation.
-Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AGMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
+Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AgMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
 To minimize the effects of different historical climate assumptions, we drive the emulator with the anomaly of the climate scenario from its own 1981-2010 mean. 
-Biases in the historical climate timeseries could in theory produce discrepancies between emulated and simulated yield changes, as discussed in Section 2.2, but appear to play little role in the LPJmL comparison of Figure \ref{fig:lpjmlrcp}.
+Bias in the historical climate timeseries could in theory produce discrepancies between emulated and simulated yield changes because of the nonlinearities discussed in Section 2.2, but appear to play little role in the LPJmL comparison of Figure \ref{fig:lpjmlrcp}.
 
 %The ability of our emulator to capture ... suggests that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change on longer timescales. 
 %The year-to-year emulation does not match the yearly simulated values (Figure \ref{fig:lpjmlrcp}, points) as well as the climatological mean (Figure \ref{fig:lpjmlrcp}, lines), indicating the importance of the growing season temperature distribution at the yearly time scale. 
@@ -648,11 +648,11 @@ Biases in the historical climate timeseries could in theory produce discrepancie
   \centering
   \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops.png}
   \caption{
-  Emulated global damage functions for the five crops included in GGCMI Phase II for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
-  Black line shows the multi-model ensemble mean and the shaded area and colored lines show the individual model projections. 
-  All other covariates held constant at baseline values (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
-  Damages are reported as percent change in global production relative to the baseline (1981-2010) case over currently cultivated land.
-  Note that the N response should be small in soybeans since they are efficient N fixers, and CO$_2$ response should be smallest in maize since it is a C4 grass.
+  Emulated global damage functions for the five GCCMI Phase II crops over the four dimensions varied: CO$_2$, temperature, water, and nitrogen.
+  Black line shows the multi-model mean and shaded area and colored lines the individual models. 
+ Each panel shows response to one covariate, with all others held constant at baseline values. % (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
+  Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
+	As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 grass. Spring wheat has the largest intermodel spread and soybeans the smallest. For an analogous figure identifying each model, see Supplementary Figure SXX.
   }
   \label{fig:all_dims}
 \end{figure*}
@@ -673,20 +673,19 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     \centering
     \includegraphics[width = 16.3cm]{figures/global_em_maize.png}
     \caption{
-    Illustration of the effects of factors affecting yields in more realistic climate scenarios. 
-    Figure shows emulated yield changes for maize on currently cultivated land under RCP8.5 (relative to 1981-2010 mean) for three representative crop models, with changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and CO$_2$ (\textbf{c}).
-    Circles are emulated yearly global production changes for 2010-2100 in scenarios from 5 CMIP-5 climate models, i.e.\ 490 total per crop model, with x-axis the mean T shift over all grid cells where maize are grown (unweighted by within-cell cultivated area).
-    Bold lines are the emulated values over uniform T shifts. 
-    Open squares in panel \textbf{a} are GGCMI Phase II simulated values for each T level (with CWN at baseline).  
-    Emulations capture simulated behavior well (compare squares to lines), with the exception of PROMET at extreme temperature change. (See also Figure \ref{fig:regression}.)
-    Mean yields are very similar whether T changes occur as a uniform temperature shift or in a more realistic spatial pattern (compare lines to circles). 
-    \textbf{b:} adding in projected precipitation changes depresses yields slightly for PROMET and increases spread between projections for a given temperature change for the other models. 
-    \textbf{c:} adding in CO$_2$ changes produces very different responses across models. 
-    CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
-    Emulation uncertainty is small compared to the differences across climate and crop models.
-    Square points in \textbf{c} show the T+6, C = 810 ppm Phase II simulated production change values.
-    Since maize CO2 response is expected to be small, PROMET CO$_2$ fertilization effect shown here is likely an overestimate. 
-    Separate climate model sensitives to CO$_2$ can be seen in the clustering of points for PROMET in panel \textbf{c}.
+    Illustration of the factors affecting yields in more realistic climate scenarios, for three different crop models. 
+	Figure shows emulated yield changes (relative to 1981-2010) for maize on currently cultivated land under RCP8.5 climate projections from 5 representative CMIP-5 climate models, using changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and C (\textbf{c}).  Circles are emulated yearly global production changes to 2100 (90 years $\times$ 5 climate timeseries = 450 per crop model), with x-axis the mean historical growing-season T shift over all grid cells where maize is grown (unweighted by within-cell cultivated area).
+	\textbf{a:} Using only temperature changes allows comparing regional simulated and emulated values. Open squares are simulated values for each T level, with CWN at baseline; bold lines are emulated values over uniform T shifts (repeated in each panel). Emulation uncertainty (compare squares to lines) is small relative to differences across climate and crop models, and
+    %Emulations capture simulated behavior well (compare squares to lines).  
+    mean yield changes are similar whether T changes are applied as a uniform shift or in a more realistic spatial pattern (compare lines to circles). 
+    \textbf{b:} Adding in precipitation changes increases yield spread across climate projections and depresses yield slightly for PROMET. 
+    \textbf{c:} Adding in CO$_2$ changes has different effect across models. 
+	CO$_2$ fertilization is small in pDSSAT and moderate in LPJmL but very large in PROMET. 
+	The separation of groups of points in PROMET (gold) results because CMIP-5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES and MIROC. %(ranging from XX-XX K/doubling). 
+    %Separate climate model sensitives to CO$_2$ can be seen in the clustering of points for PROMET in panel \textbf{c}.
+	In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \cite{riahi2007}. 
+    For comparison, open squares in \textbf{c} show GGCMI-II simulated production changes at T+6, W=0, C=810 ppm.
+        %Since maize CO2 response is expected to be small, PROMET CO$_2$ fertilization effect shown here is likely an overestimate. 
     }
     \label{fig:globe_em}
 \end{figure*}
