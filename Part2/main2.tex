@@ -629,7 +629,7 @@ First, it is not trivial to choose how to relate temperature or precipitation in
 Using growing-season mean temperature can lead to complications if crop models assume that growing season lengths shift under climate change. 
 For consistency, we match the temperature changes in the climate scenario to their equivalent emulator regressors by calculating means over the fixed baseline growing season. 
 The choice of growing season ensures that the emulation is appropriately matched to the simulation.
-Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AGMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
+Second, while the emulator outputs an estimated yield change, the baseline from which that yield change is calculated will be different between simulation and emulation, because the historical climate timeseries are not identical. For example, the baseline (1981-2010) yield of winter wheat simulated by LPJmL using the AgMERRA timeseries as part of GGCMI Phase II is 7\% lower than that simulated using the HadGEM2-ES timeseries. 
 To minimize the effects of different historical climate assumptions, we drive the emulator with the anomaly of the climate scenario from its own 1981-2010 mean. 
 Bias in the historical climate timeseries could in theory produce discrepancies between emulated and simulated yield changes because of the nonlinearities discussed in Section 2.2, but appear to play little role in the LPJmL comparison of Figure \ref{fig:lpjmlrcp}.
 
@@ -648,11 +648,11 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
   \centering
   \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops.png}
   \caption{
-  Emulated global damage functions for the five crops included in GGCMI Phase II for the four dimensions varied: CO$_2$, temperature, water, and nitrogen (collectively ``CTWN''). 
-  Black line shows the multi-model ensemble mean and the shaded area and colored lines show the individual model projections. 
-  All other covariates held constant at baseline values (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
-  Damages are reported as percent change in global production relative to the baseline (1981-2010) case over currently cultivated land.
-  Note that the N response should be small in soybeans since they are efficient N fixers, and CO$_2$ response should be smallest in maize since it is a C4 grass.
+  Emulated global damage functions for the five GCCMI Phase II crops over the four dimensions varied: CO$_2$, temperature, water, and nitrogen.
+  Black line shows the multi-model mean and shaded area and colored lines the individual models. 
+ Each panel shows response to one covariate, with all others held constant at baseline values. % (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
+  Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
+	As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 grass. Spring wheat has the largest intermodel spread and soybeans the smallest. For an analogous figure identifying each model, see Supplementary Figure SXX.
   }
   \label{fig:all_dims}
 \end{figure*}
