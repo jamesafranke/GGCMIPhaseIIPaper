@@ -358,7 +358,7 @@ We use the implementation of the Bayesian Ridge estimator from the scikit-learn 
 An additional diagnostic of fit quality is the distribution of residuals: normally or near-normally distributed residuals imply that errors around the fit are random and unbiased. 
 When fitting Equation \ref{eqn:features_original} to the GGCMI Phase II dataset, the distribution of the residuals depends on the number of features included in the regression, the method for estimating the parameters, and the target distribution in the training set. The residuals are only normally distributed (pvalue > 0.05 in the Shapiro–Wilk test) for a single model, PEPIC, for any specification tested here, but their skew is relatively small except in a single case, EPIC-TAMU maize (Figure \ref{fig:features}, fourth row).
 While including higher-order terms in the statistical model generally reduces residual skew, for EPIC-TAMU maize it increases skew instead, but also reduces the error in cross-validation, which we consider more important in the context of emulation.
-The residual distribution suggests that projections using the emulator for EPIC-TAMU maize will tend to be biased high, but the overall magnitude of the errors will likely be below 2\% of yield changes based on cross validation.
+The residual distribution suggests that projections using the EPIC-TAMU maize emulator will tend to be biased high, but in practice the overall magnitude of these errors is below 2\% of yield changes. (See Section 4.2.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
