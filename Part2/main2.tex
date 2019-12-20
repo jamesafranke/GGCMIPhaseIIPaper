@@ -123,8 +123,7 @@ Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZR
 %Snyder et al. analyzes yield responses for four crops from a variety of voluntarily submitted site-specific crop model results, but extrapolates from a network of site yield to latitude zone responses due to data limitations.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
-GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, and applied nitrogen (CTWN). 
-%with two counterfactual assumptions on growing season adaptation (A: none vs. regaining growing season length) \citep{franke2019ctwnexperiment,minoli2019adaptation} .
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, applied nitrogen, and two counterfactual assumptions on growing season adaptation (``A0'': none and ``A1'': regaining growing season length) \citep[CTWN-A, ][]{franke2019ctwnexperiment,minoli2019adaptation} . %important to mention A dimension at first mention, as you refer to it in the following table already. Just to avoid confusion.
 The experiment is designed to allow diagnosing the impacts on crop yields of both individual factors and their joint effects, and to allow construction of crop model emulators.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
@@ -182,11 +181,11 @@ In the following, we describe the training dataset (Section \ref{S:2}), the stat
     \end{tabular}\\
 \end{table*}
 
-The GGCMI Phase II simulations are described in detail in \citet{Franke2019a}, but we summarize briefly here. 
+The GGCMI Phase II simulations are described in detail in \citet{franke2019ctwnexperiment}, but we summarize briefly here. 
 The experiment involves nine different globally gridded crop models, each simulating multiple crops (maize, rice, soybean, and spring and winter wheat) across a systematic parameter sweep of as many as 756 combinations, each driven by a historical climate timeseries with systematic perturbations to CO$_2$, temperature, water supply, and nitrogen application (CTWN). The simulation protocol involves 4 levels of atmospheric CO$_2$, 7 of temperature, 9 of water supply, and 3 of applied nitrogen, and simulations are repeated for two adaptation scenarios: ``A0'' simulations assume no adaptation in cultivar choice, so that growing seasons shorten in warmer climates, and ``A1'' simulations assume that adaptation in cultivar choice maintains fixed growing seasons.
 The complete protocol for each modeling group involves up to 43,524 years of global simulated output for each crop. 
 Because the computational demand is high, modeling groups were allowed to submit at various specified levels of participation, with the lowest recommended level of participation consisting of 20\% of the maximum possible simulations. The mean participation level is 65\%, but  
-three models (APSIM-UGOE, EPIC-IIASA, and ORCHIDEE-crop) contributed data %to the CTWN-A experiment %\citep{Franke2019a} 
+three models (APSIM-UGOE, EPIC-IIASA, and ORCHIDEE-crop) contributed data %to the CTWN-A experiment %\citep{franke2019ctwnexperiment} 
 below the recommended threshold ($<$ 5\% of the full protocol) and are excluded here since they could not be robustly emulated. 
 Table \ref{table:models} shows the participating models and the number of simulation scenarios that each provides, and Supplemental Figure S1 shows model sampling density. Table \ref{table:inputs} shows the specified input values; we sample across all parameter combinations. 
 
@@ -231,7 +230,7 @@ When discrepancies are large, year-over-year responses are generally stronger th
    \label{fig:yearvclim}
 \end{figure*}
 
-While differences in responses at different timescalescan arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
+While differences in responses at different timescales can arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
 The mean growing-season value is only a proxy for the distribution of daily climatic conditions that crops are sensitive to, and present-day variations between years can be very different from future forced changes. 
 That is, variations in growing-season \textit{means} from year to year at present are associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates: a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}. % XX not sure this is the right citation for this...
 Changes in temperature distributions have been shown to strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, though precipitation effects should be smaller since crops respond not to rainfall but to soil moisture, which integrates over weeks or even months \citep[e.g.][]{potter2005effects, Glotter14, CHALLINOR200499}. 
@@ -244,7 +243,8 @@ The effect of nonlinearity may be particularly relevant for precipitation, since
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions. % (reasonable since summertime change are expected to be small \textcolor{red}{cite}).
 The choice is reasonable, since climate models do not agree on distributional changes.
 Most models do project small mean increases in growing-season temperature variability in cultivated areas, and can produce substantial local changes, but models disagree on spatial patterns.
-For example, in business-as-usual climate projections to the year 2100 in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, growing season temperature variability over currently cultivated rice areas increases by 31\% in HadCM3L but decreases by 12\%in CESM1-0-1. 
+For example, in the high-end (Representative Concentration Pathway (RCP) 8.5 \citep{riahi2011rcp})
+ climate projections to the year 2100 in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, growing season temperature variability over currently cultivated rice areas increases by 31\% in HadCM3L but decreases by 12\% in CESM1-0-1. 
 %(See Supplemental Table S1 for results from multiple climate models for the different crops).
 We therefore explicitly test the assumption that distributional changes are not consequential for climatological mean yields: in Section \ref{S:4.2}, we confirm that an emulator trained on the GGCMI Phase II dataset can successfully reproduce yield changes under a full climate model projection.
 
@@ -270,7 +270,7 @@ Increased variance has been noted in previous studies. For example, \cite{Urban2
 \label{S:3}
 Emulation involves fitting individual regression models from GGCMI Phase II output for each crop and model and 0.5 degree geographic pixel; the regressors are the applied perturbations in CO$_2$, temperature, water, and nitrogen (CTWN). 
 We discuss here largely emulations of climatological mean crop yield with no growing season adaptation (A0 scenarios), but note that any output of the crop models can potentially be emulated. 
-We provide separate emulations of not only irrigated and rainfed yields but also applied irrigation water (pirrww in mm\ yr$^{-1}$, see \citep{Franke2019a}) in both the A0 and A1 growing season, meaning that each model and crop combination results in six sets of regressions. (See Supplemental Material SXX for more information on additional cases not shown.)
+We provide separate emulations of not only irrigated and rainfed yields but also applied irrigation water (pirrww in mm\ yr$^{-1}$, see \citep{franke2019ctwnexperiment}) in both the A0 and A1 growing season, meaning that each model and crop combination results in six sets of regressions. (See Supplemental Material SXX for more information on additional cases not shown.)
 
 \subsection{Statistical model}
 For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
@@ -312,7 +312,7 @@ The GGCMI Phase II dataset allows fitting our simple 3rd order polynomial form i
 
 Because a simpler statistical model may improve the interpretability of its parameter weights, we also develop a reduced version that is satisfactory for most models and crops (Equation \ref{eqn:features_reduced}).
 %\textcolor{red}{It may be preferred by some users for simplicity or for ease of interpretation of the parameter weights.}
-To identify terms that can be omitted, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance. Higher-order and interaction terms are successively added to the regression model, and in each case we calculate an aggregate mean absolute error (weighted by by currently cultivated area) and eliminate those terms that do not contribute significantly to reducing error. The procedure is illustrated in Figure \ref{fig:features}. We develop our reduced statistical model by considering yields over currently cultivated land in three models: two that provided the complete set of 672 rainfed simulations (pDSSAT, EPIC-TAMU), and one that provided the smallest training set (121 input combinations, PEPIC).
+To identify terms that can be omitted, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance. Higher-order and interaction terms are successively added to the regression model, and in each case we calculate an aggregate mean absolute error (weighted by by currently cultivated area) and eliminate those terms that do not contribute significantly to reducing error. The procedure is illustrated in Figure \ref{fig:features}. We develop our reduced statistical model by considering yields over currently cultivated land in three models: two that provided the complete set of 672 rainfed simulations, i.e. without the W$_{\infty}$ simulations,  (pDSSAT, EPIC-TAMU), and one that provided the smallest training set (121 input combinations, PEPIC).
 Although models exhibit different absolute levels of error, all three agree remarkably well on feature importance, i.e.\ on which terms reduce error and which provide no predictive benefit. (Agreement means that line slopes match in Figure \ref{fig:features}.) 
  
 \begin{figure*}[ht]
@@ -521,7 +521,7 @@ See Supplemental Figures SXX-SXX for examples of worst-case emulator failures. %
 %the full 34-term emulator produces $e < 1$ over 95\% of currently cultivated area but 98.5\% of all simulated area. \textcolor{red}{Really? this seems impossible}
 
 While Figure \ref{fig:error_360} shows only currently cultivated land, performance can be worse in locations where crops are not currently cultivated, or on marginal lands where current potential yields are low. (In general, emulator performance is poor anywhere that models show steep yield changes once some threshold has been reached, whether these are abrupt gains or complete crop failures.) 
-Figure \ref{fig:error} illustrates this effect for CARAIB in the T+4 scenario, showing normalized error over all simulated area with non-zero baseline yield and at least 6 models providing simulations. CARAIB emulator performance is generally good where crops are grown but can be poor ($e > 2$) in arid or mountainous zones, e.g.\ the edges of the Sahara, Inner Mongolia, S.\ Africa and Southern Australia. (See Supplemental Material Section XX for analogous figures for all crop and model combinations and for multiple climate perturbations.)
+Figure \ref{fig:error} illustrates this effect for CARAIB in the T+4 scenario, showing normalized error over all simulated area with non-zero baseline yield and at least 6 models providing simulations. CARAIB emulator performance is generally good where crops are grown but can be poor ($e > 2$) in arid or mountainous zones, e.g.\ the edges of the Sahara, Inner Mongolia, South Africa and Southern Australia. (See Supplemental Material Section XX for analogous figures for all crop and model combinations and for multiple climate perturbations.)
 Note that the choice of statistical model for emulation involves a trade-off in the spatial pattern of errors: adding terms to the statistical model increases emulator fidelity in problematic ``fringe'' areas where crops are currently not cultivated, but reduces it slightly over high-yield areas.
 %the spatial extent of errors as the number of terms included in the statistical specification increases. 
 For example, CARAIB maize emulators have normalized error $e < 1$ over 98.8\% of currently cultivated land with the reduced 23-term Equation \ref{eqn:features_reduced} but only 98.5\% with the 34-term Equation \ref{eqn:features_original}. 
@@ -593,7 +593,7 @@ For additional discussion of more detailed potential evaluation metrics, see e.g
 \label{S:4.3}
 \subsection{Emulation of realistic climate projections}
 Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. The goal is to assess whether effects of future changes in temperature and precipitation distributions  are strong enough to compromise a GGCMI-based emulator.
-We first drive the LPJmL crop model (representative of GGCMI  model) with climate model output under the business-as-usual RCP 8.5 scenario (Supplemental Figure XX).
+We first drive the LPJmL crop model (representative of GGCMI  model) with climate model output under the high-end RCP 8.5 scenario (Supplemental Figure XX).
 We choose for this purpose the a  climate model (HadGEM2-ES) with relatively high change in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive \citep{Jones2011h, Martin2011}. 
 We then drive the LPJmL emulator with the HadGEM2-ES yearly-growing season anomalies, and evaluate how well the resulting emulated yields reproduce those simulated under the full climate scenario. 
 The comparison suggests that globally, the results of future distributional shifts on climatological yields are negligible relative to the effects of mean changes (Figure \ref{fig:lpjmlrcp}). 
@@ -652,7 +652,7 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
   Black line shows the multi-model mean and shaded area and colored lines the individual models. 
   Each panel shows response to one covariate, with all others held constant at baseline values. % (T+0 K, W+0 \%, C = 360 ppm, and N = 200 kg ha-1). 
   Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
-	As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 grass. Spring wheat has the largest intermodel spread and soybeans the smallest. For an analogous figure identifying each model, see Supplementary Figure SXX.
+	As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 crop. Spring wheat has the largest intermodel spread and soybeans the smallest. For an analogous figure identifying each model, see Supplementary Figure SXX.
   }
   \label{fig:all_dims}
 \end{figure*}
@@ -685,13 +685,13 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
 	The separation of groups of points in PROMET (gold) results because CMIP-5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES and MIROC. %(sranging from XX-XX K/doubling). %Separate climate model sensitives to CO$_2$ can be seen in the clustering of points for PROMET in panel \textbf{c}.
 	In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \cite{riahi2007}. 
     For comparison, open squares in \textbf{c} show GGCMI-II simulated production changes at T+6, W=0, C=810 ppm.
-    %Since maize CO2 response is expected to be small, PROMET CO$_2$ fertilization effect shown here is likely an overestimate. 
+    %Since maize CO$_2$ response is expected to be small, PROMET CO$_2$ fertilization effect shown here is likely an overestimate. 
     }
     \label{fig:globe_em}
 \end{figure*}
 
 The emulator can also be used for investigating the contributions of the different major climate drivers to production outcomes as it can project many different climate scenarios or models quickly.
-The emulated crop model yield responses to a high-end climate change scenario (Representative Concentration Pathway (RCP) 8.5) are shown in Figure \ref{fig:globe_em} for 5 climate models from the CMIP-5 archive \citep{Taylor2012} at the yearly scale. 
+The emulated crop model yield responses to climate scenarios for RCP 8.5 for 5 climate models from the CMIP-5 archive \citep{Taylor2012} are shown in Figure \ref{fig:globe_em} at the yearly scale. 
 
 The differences between the emulation and the simulations for a uniform T shift are small compared to the differences across different crop models.
 PROMET, the most quantitatively difficult models to emulate for maize, is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
@@ -735,7 +735,7 @@ Deviations from the simulation are especially prominent in models with limited s
 Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so they should not be used for impacts projections of absolute yields except in conjunction with historical yield information. 
 Finally, because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample potential changes in climate variability, which may be important at high latitude locations.
 Although such changes are uncertain and remain poorly characterized in climate models and crop models \citep[e.g.][]{Alexande2006, Kodra2014}, follow-up experiments may wish to consider them. 
-Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes in the marginal distributions or temporal dependence of temperature and precipitation (e.g.\ \citet{Leeds2015, poppick2016, Won16} and \citet{Haugen2018}).
+Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes in the marginal distributions or temporal dependence of temperature and precipitation \citep[e.g.][]{Leeds2015, poppick2016, Won16, Haugen2018}.
 
 The GGCMI Phase II dataset and emulators invite a broad range of potential future avenues of analysis, especially because emulation allows statistical distillation of the large dataset (40 billion simulated yields) into a tractable form. 
 Potential studies might include a detailed examination of interaction terms between the major input drivers, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes or variability, and evaluation of geographic shifts in optimal growing regions. 
