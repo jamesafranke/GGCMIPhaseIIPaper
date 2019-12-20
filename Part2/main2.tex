@@ -346,7 +346,8 @@ Additional terms in the statistical model also help emulation in some geographic
 To fit the parameters $K$, we use a Bayesian Ridge regularization method \citep{MacKay91} rather than standard ordinary least squares (OLS). 
 The Bayesian Ridge method reduces volatility in parameter estimates when the sampling is sparse, by weighting parameter estimates towards zero, allowing the use of a consistent functional form across all models and locations. 
 The choice slightly reduces mean absolute error for some of the high-order interaction terms in the model (Figure \ref{fig:features}, top row) but drastically reduces standard parameter error in the model by stabilizing the estimates (Figure \ref{fig:features}, third row).
-The estimation method scores relatively lower on adjusted $R^2$ for the simplest parameter specifications, but reaches parity with the OLS at the number of terms included in this study. We use adjusted $R^2$ as a metric because additional terms are penalized (Equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features): 
+The estimation method scores relatively lower on adjusted $R^2$ for the simplest parameter specifications, but quickly reaches parity with the OLS. 
+We use adjusted $R^2$ as a metric because additional terms are penalized (Equation \ref{eqn:rsquare}, where $n$ is the number of samples and $k$ is the number of features): 
 \begin{equation}
 	\centering
     \label{eqn:rsquare}
@@ -357,7 +358,7 @@ We use the implementation of the Bayesian Ridge estimator from the scikit-learn 
 An additional diagnostic of fit quality is the distribution of residuals: normally or near-normally distributed residuals imply that errors around the fit are random and unbiased. 
 When fitting Equation \ref{eqn:features_original} to the GGCMI Phase II dataset, the distribution of the residuals depends on the number of features included in the regression, the method for estimating the parameters, and the target distribution in the training set. The residuals are only normally distributed (pvalue > 0.05 in the Shapiro–Wilk test) for a single model, PEPIC, for any specification tested here, but their skew is relatively small except in a single case, EPIC-TAMU maize (Figure \ref{fig:features}, fourth row).
 While including higher-order terms in the statistical model generally reduces residual skew, for EPIC-TAMU maize it increases skew instead, but also reduces the error in cross-validation, which we consider more important in the context of emulation.
-The residual distribution suggests that projections using the emulator for EPIC-TAMU maize will tend to be biased high, but the overall magnitude of the errors will be below 2\% of yield changes.
+The residual distribution suggests that projections using the emulator for EPIC-TAMU maize will tend to be biased high, but the overall magnitude of the errors will likely be below 2\% of yield changes based on cross validation.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -412,7 +413,7 @@ Emulator spatial skill varies across models and crops, with maize being the quan
 
 Yield responses to the four main drivers considered here (C, T, W, and N) are also quite diverse across locations, crops, and models, but in nearly all cases the local climatological mean responses are smooth enough to permit emulation with the functional form used here.
 Figure \ref{fig:regression} illustrates the geographic diversity of responses within a single crop and model, for rainfed maize in pDSSAT. 
-While the CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, the  precipitation response is stronger in more arid locations and the nitrogen responses appear strongly soil-dependent. 
+While the CO$_2$ responses (in ton ha$^{-1}$/ppm) are quite similar, the  precipitation response is stronger in more arid locations and the nitrogen responses appear strongly location-dependent. 
 The heterogeneity in response supports the choice of emulating at the grid cell level. 
 In regions with current cultivation, yields evolve smoothly across the space sampled, and the polynomial fit captures the climatological-mean response to perturbations well. 
 Emulators do perform poorly in a few regions that involve discontinuous or irregular yield responses. 
