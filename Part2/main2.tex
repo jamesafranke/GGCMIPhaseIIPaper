@@ -382,9 +382,9 @@ The residual distribution suggests that projections using the emulator for EPIC-
 In this section we show illustrations of GGCMI model yield responses to climate perturbations and evaluate the ability of our emulators to reproduce them.   
 Model emulation with the parametric method used here requires that crop yield responses be sufficiently smooth and continuous to allow fitting with a relatively simple functional form; this condition largely holds in the GGCMI Phase II simulations. 
 In this section we evaluate metrics of emulator performance for the 34-term polynomial of Equation \ref{eqn:features_original}; see Supplemental Materials Section XX for analogous evaluation of the 23-term polynomial of Equation \ref{eqn:features_reduced}.
-We find that emulation errors -- discrepancies between emulation and simulation --  are generally small, especially when compared to the differences across crop models or climate model inputs.
+We find that emulation errors -- discrepancies between emulation and simulation --  are generally small, especially when compared to the differences across crop models or  to projected yield changes. %climate model inputs.
 Emulation errors become problematic only in certain, limited geographic locations, usually where crops are not currently grown. 
-We also separately assess the emulator's ability to reproduce crop yields in a more realistic future simulation driven by a climate model projection, and find that the effects of changes in variability not included in the GGCMI Phase II training set remain small relative to the effects of mean changes.
+We also separately assess the emulator's ability to reproduce crop yields in a more realistic future simulation driven by a climate model projection, and find that the effects of changes in variability not included in the GGCMI Phase II training set are generalaly negligible relative to the effects of mean changes.
 
 \subsection{Yield response}
 Crop yields show strong spatial differentiation across geographic regions, and emulators are able to readily reproduce these. Figure \ref{fig:map_pattern} illustrates the spatial yield pattern under current climate for one crop and model (maize in LPJmL). Absolute emulation errors are low --  99.8\% of grid cells have errors below 0.5 tons ha$^{-1}$ -- but 
@@ -514,7 +514,8 @@ Emulator performance is illustrated in Figure \ref{fig:error_360}, which shows a
 Over all crops and models, the average normalized error $e < 1$ over 95\% of currently cultivated area.
 For maize, the most tractable crop to emulate, all 9 models return $e < 1$ over 97\% of currently cultivated area. 
 Only three crop-model combinations are problematic, returning $e < 1$ over less than 90\% of cultivated area: PROMET and CARAIB for soybeans (79\% and 83\%), and JULES for spring wheat (85\%).
-Misfits are diverse across models, but typically large discontinues in yield response (e.g.\ PROMET rice in Southern China ), or a higher order interaction between C and T or C and W (e.g.\ JULES soy in Germany) are responsible. 
+Misfits typically occur when models show strong discontinuities in yield response (as shown in Figure \ref{fig:regression}), or when carbon fertilization gains interact nonlinearly with changes in temperature or water. %(e.g.\ JULES soy in Germany) are responsible. 
+Including higher-order C terms helps in the latter case but does not reduce emulator errors to zero. 
 See Supplemental Figures SXX-SXX for examples of worst-case emulator failures. % for PROMET soy and JULES spring wheat.
 %In crop-model cases where performance is low, it tends to degrade most in the coldest and wettest scenarios, likely because yield increases are saturating in these conditions and cannot be captured with a 3rd order polynomial. 
 %the full 34-term emulator produces $e < 1$ over 95\% of currently cultivated area but 98.5\% of all simulated area. \textcolor{red}{Really? this seems impossible}
@@ -591,13 +592,14 @@ For additional discussion of more detailed potential evaluation metrics, see e.g
 \smallskip
 \label{S:4.3}
 \subsection{Emulation of realistic climate projections}
-Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. The goal is to assess whether future changes in temperature and precipitation distributions (either within-growing-season or interannual) have strong enough effects on yields that they would invalidate a GGCMI-based emulator.
-We first drive the LPJmL crop model (representative among GGCMI Phase II models) with climate model output under the business-as-usual RCP 8.5 scenario (Supplemental Figure XX).
-We choose for this purpose a climate model with relatively high changes in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, HadGEM2-ES \citep{Jones2011h, Martin2011}. 
-We then drive the LPJmL emulator with the HadGEM2-ES yearly-growing season anomalies from the historical climatology, and evaluate how well the resulting emulated yields reproduce those simulated under the full climate scenario. 
-The comparison suggests that globally, the results of future distributional shifts on climatological yields are small relative to the effects of mean changes (Figure \ref{fig:lpjmlrcp}). 
-In this climate scenario and crop model, global emulated and simulated production changes in 2095 match to 1--5\%: simulated production of maize, rice, winter and spring wheat decline by 28, 47, 24, and 44\%, respectively, while emulated production declines by 27, 46, 24, and 43\%. 
-\textcolor{red}{The emulator is also able to capture the projected decadal variability in yields (likely ENSO precipitation), though differences in individual years can still be large.}
+Finally, we test the ability of an emulator based on the GGCMI Phase II perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. The goal is to assess whether effects of future changes in temperature and precipitation distributions  are strong enough to compromise a GGCMI-based emulator.
+We first drive the LPJmL crop model (representative of GGCMI  model) with climate model output under the business-as-usual RCP 8.5 scenario (Supplemental Figure XX).
+We choose for this purpose the a  climate model (HadGEM2-ES) with relatively high change in growing-season temperature variability relative to other models in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive \citep{Jones2011h, Martin2011}. 
+We then drive the LPJmL emulator with the HadGEM2-ES yearly-growing season anomalies, and evaluate how well the resulting emulated yields reproduce those simulated under the full climate scenario. 
+The comparison suggests that globally, the results of future distributional shifts on climatological yields are negligible relative to the effects of mean changes (Figure \ref{fig:lpjmlrcp}). 
+In the LPJmL example of Figure \ref{fig:lpjmlrcp}, emulated and simulated global production in the last decade of the simulation are identical to within 1.5\% for all crops. 
+%: simulated production of maize, rice, winter and spring wheat decline by 28, 47, 24, and 44\%, respectively, while emulated production declines by 27, 46, 24, and 43\%. 
+The emulator also reproduces decadal variation in yields, which is especially strong in spring wheat that is grown in northern latitudes, and even captures much of the residual year-over-year yield variability. (R$^2$ of emulated vs.\ simulated annual yield anomalies relative to the 10-year running mean is 0.8 for spring wheat and $\sim$0.3 for all other crops).
 
 \begin{figure*}[ht]
   \centering
@@ -607,8 +609,8 @@ In this climate scenario and crop model, global emulated and simulated productio
   Panels show simulated (black) and emulated (red) global production for four crops from the LPJmL model, driven with temperature and precipitation outputs from the HadGEM2-ES climate model for the RCP8.5 scenario. 
   In both cases nitrogen and CO$_2$ are held fixed, at 200 kg ha-1 and 360 ppm.
   Points show yearly global production change from the 1981-2010 baseline, and lines show a 10-year running mean. 
-  See text for discussion of relating the HadGEM2-ES temperature timeseries to the appropriate offset used in emulation. Differences in 1981-2010 yields result because the HadGEM2-ES historical climate timeseries differs slightly from the AGMERRA timeseries used in GGCMI Phase II. 
-  Emulators trained on uniform climatological offsets reproduce well the simulated production response under a realistic climate scenario (production changes match to $\sim$5\%). 
+  See text for discussion of relating the HadGEM2-ES temperature timeseries to the appropriate offset used in emulation. %Differences in 1981-2010 yields result because the HadGEM2-ES historical climate timeseries differs slightly from the AGMERRA timeseries used in GGCMI Phase II. 
+  Emulators trained on uniform climatological offsets reproduce well the simulated production response under a realistic climate scenario: yields at end of century match to within 1.5\%. 
   }
   \label{fig:lpjmlrcp}
 \end{figure*}
