@@ -282,7 +282,7 @@ regressions for irrigated crops do not contain W terms, and regressions for mode
 
 \vspace{-0.2in}
 \begin{align}
-    \label{eqn:features_original}
+    \hspace{10mm}  \label{eqn:features_original}
     Y\ = \ & K_{1}  \\
     + \ & K_{2} C    + K_{3} T     + K_{4} W   + K_{5} N  + K_{6} C^2 \nonumber \\
     + \ & K_{7} T^2  + K_{8} W^2   + K_{9} N^2 + K_{10} C W \nonumber \\
@@ -332,7 +332,7 @@ Although models exhibit different absolute levels of error, all three agree rema
 
 \vspace{-0.2in}
 \begin{align}
-    \label{eqn:features_reduced}
+        \hspace{10mm} \label{eqn:features_reduced}
     Y\ = \ & K_{1}  \\
     + \ & K_{2} C     + K_{3} T      + K_{4} W      + K_{5} N  + K_{6} C^2 \nonumber \\
     + \ & K_{7} T^2    + K_{8} W^2    + K_{9} N^2 + K_{10} C W \nonumber \\
@@ -366,7 +366,7 @@ The estimation method scores relatively lower on adjusted $R^2$ for the simplest
 \begin{equation}
 	\centering
     \label{eqn:rsquare}
-    R^{2}_{adj} = 1 - \frac{(n-1) \cdot (1 - R^{2})}{n - k}
+        \hspace{10mm} R^{2}_{adj} = 1 - \frac{(n-1) \cdot (1 - R^{2})}{n - k}
 \end{equation}
 We use the implementation of the Bayesian Ridge estimator from the scikit-learn package in Python \citep{scikit-learn}. 
 
@@ -618,7 +618,7 @@ The emulator also reproduces decadal variation in yields, which is especially st
 Distributional effects might be expected to be stronger at high latitudes, because temperature and precipitation variability are larger there, so that changes in variability can be correspondingly more important. 
 %because wintertime variability declines strongly there, potentially mitigating some yield losses. 
 Most crops however (spring wheat, winter wheat, and maize) show no emulator bias that grows with latitude.
-Rice is the exception: north of 30 degrees latitude (where only 20\% of global rice is cultivated), the climatological-mean emulator underestimates losses under climate change (by 2100, losses of 39\% vs.\ 50\% in simulations), leaving a 9\% low bias in emulated end-of-century rice yields (Supplemental Figure XX). 
+Rice is the exception: north of 30 degrees latitude (where only 20\% of global rice is cultivated), the climatological-mean emulator underestimates losses under climate change (by 2100, losses of 39\% vs.\ 49\% in simulations), leaving a 10\% low bias in emulated end-of-century rice yields (Supplemental Figure XX). 
 %That is, the mean climatological emulator captures $\sim$80\% percent of yield changes in the extra-tropics for rice. 
 
 %The difference between emulated and simulated yields grows as the region of interest is restricted to still higher latitudes. 
@@ -683,7 +683,7 @@ The global coverage of the GGCMI Phase II simulations allows impacts modelers to
     \textbf{c:} Adding in CO$_2$ changes has different effects across models: 
 	CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
 	The separation of groups of points in PROMET (gold) results because CMIP-5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES and MIROC. %(sranging from XX-XX K/doubling). %Separate climate model sensitives to CO$_2$ can be seen in the clustering of points for PROMET in panel \textbf{c}.
-	In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \cite{riahi2007}. 
+	In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \citep{Riahi2007}. 
     For comparison, open squares in \textbf{c} show GGCMI-II simulated production changes at T+6, W=0, C=810 ppm.
     %Since maize CO2 response is expected to be small, PROMET CO$_2$ fertilization effect shown here is likely an overestimate. 
     }
