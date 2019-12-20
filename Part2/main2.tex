@@ -253,7 +253,7 @@ Note that even though distributions of climate variables are unchanged in the GG
 In the GGCMI Phase II dataset, all crops except rice show  greater year-to-year yield variance in conditions of extreme climate stress.
 (Rice is typically irrigated and experiences no water stress.) 
 Increased variance has been noted in previous studies. 
-For example, \cite{Urban2012} used statistical models trained on present-day yields to find a projected future increase in yield variance of U.S.\ maize of 20\% per degree K temperature rise. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
+For example, \citet{Urban2012} used statistical models trained on present-day yields to find a projected future increase in yield variance of U.S.\ maize of 20\% per degree K temperature rise. While the authors do not diagnose a specific cause of that increase, they discuss multiple potential mechanisms, including nonlinearity in responses. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -608,6 +608,10 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
 \section{Emulator results and products}
 \label{S:5}
 
+The crop model emulators developed here can be used for a variety of applications, because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale. One use is construction of continuous agricultural damage functions in a flexible format. 
+As an example, we present in  Figure \ref{fig:all_dims} global damage functions over the four dimensions tested in this study, constructed from the 4D emulation of each crop model;  the ensemble median is shown as a bold line.
+These damage functions are useful not only for impacts assessments but in diagnosing commonalities and differences between crop models. 
+
 \begin{figure*}[ht]
   \centering
   \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops.png}
@@ -616,21 +620,17 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
   Black line shows the multi-model mean and shaded area and colored lines the individual models. 
   Each panel shows response to one covariate for rainfed crops, with all others held constant at baseline values (e.g.\ C = 360 ppm, N = 200 kg ha$^{-1}$). 
   Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
-  %As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 crop. Spring wheat has the largest inter-model spread and soybeans the smallest. 
+  As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 crop. Spring wheat has the largest inter-model spread and soybeans the smallest. 
   For an analogous figure identifying each crop model, see Supplemental Figure S11.
   }
   \label{fig:all_dims}
 \end{figure*}
 
-The crop model emulators developed here can be used for a variety of applications, because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale. One use is construction of continuous agricultural damage functions in a flexible format. 
-As an example, we present in  Figure \ref{fig:all_dims} global damage functions over the four dimensions tested in this study, constructed from the 4D emulation of each crop model;  the ensemble median is shown as a bold line.
-These damage functions are useful not only for impacts assessments but in diagnosing commonalities and differences between crop models. 
-
 %In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
 Figure \ref{fig:all_dims} allows drawing some immediate insights about potential crop responses to changes and the level of model agreement on those responses. %Maize has a muted response to CO$_2$ as a C4 plant, and the impacts of temperature are most consistent for soybeans .
 In most cases, models agree on the sign of responses to individual factors, but the spread in model responses is of similar order as the median response. Inter-model spreads are largest for spring wheat and smallest for soybeans, as also shown in Figure \ref{fig:error_360}.
 Model responses to individual factors conform to expectations. In nearly all crop models, damages from reduced precipitation exceed benefits from increased precipitation, for all crops except spring wheat. Spring wheat is grown in high latitudes where rainfall may be limiting; by contrast rice, which is generally grown in water-limited conditions, shows the weakest precipitation benefit.
- (Note that these damage functions do not consider whether increased precipitation might permit cultivation in new areas, and also that crop models generally do represent damages from excess soil moisture well \cite{XX}.)
+(Note that these damage functions do not consider whether increased precipitation might permit cultivation in new areas, and also that crop models generally do represent damages from excess soil moisture well \citep{Li2019}.)
 As expected, the CO$_2$ response is smallest for maize, which is a C4 grass, and the nitrogen response is smallest for soybeans, which are efficient nitrogen fixers. Nitrogen responses are relatively similar in crops other than soybeans, and most models show saturation beginning at values less that 200 kg ha$^{-1}$.
 
 \textcolor{red}{XX unedited from here on.}
