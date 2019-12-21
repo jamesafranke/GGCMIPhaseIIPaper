@@ -384,7 +384,7 @@ Emulator spatial skill varies across models and crops, with maize being the quan
     \caption{
     Illustration of spatial pattern in baseline yield successfully captured by the emulator:
     simulated (\textbf{a.}) and emulated (\textbf{b.}) yield under historical (1981-2010) conditions for rainfed maize from the LPJmL model.
-    Absolute yield differences (\textbf{c.}) are less that 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
+    Absolute yield differences (\textbf{c.}) are less than 0.5 ton ha$^{-1}$ in almost all (99.8\%) grid cells across the globe.
     Percent difference (from simulated baseline, \textbf{d.}) is below 5\% in most (75\%) grid cells currently cultivated in the real world.
     Approximately 7\% of all grid cells, but only 3\% of currently cultivated grid cell, have emulated yields that differ from the baseline simulation by more than 20\%.
     Notable exceptions include areas with very low simulated baseline yield, including for example the Sahara, the Andes, and northern Quebec. 
@@ -455,7 +455,7 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
     Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
     We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
     Large columns are crops and large rows models; squares within are T, W scenario pairs. 
-    Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less that 1 indicating the the error between the emulation and simulation less that one standard deviation of the ensemble simulation spread. 
+    Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less than 1 indicating the the error between the emulation and simulation less than one standard deviation of the ensemble simulation spread. 
     Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
     JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
     Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
@@ -591,7 +591,7 @@ Emulators also reproduce decadal variations in yields, which are especially stro
 
 Distributional effects might be expected to be stronger at high latitudes, because temperature and precipitation variability are larger there, so that changes in variability can be correspondingly more important. 
 However, most crops (spring wheat, winter wheat, and maize) show no emulator bias that grows with latitude.
-Rice is the exception: the climatological-mean emulator slightly overpredicts yield losses in the tropics and underpredicts losses at higher latitudes. Poleward of 30 degrees latitude, where only 20\% of global rice is cultivated, the emulator projects yield reductions of 39\% by end-of-century vs.\ 49\% in simulations (Supplemental Figure S9).
+Rice is the exception: the climatological-mean emulator slightly overpredicts yield losses in the tropics and underpredicts losses at higher latitudes (where little rice is currently grown). Poleward of 30 degrees latitude, the LPJmL simulation under the HadGEM2 RCP scenario shows a 49\% reduction in rice yields by end-of-century (without growing-season adaptation), but the GGCMI-based emulator produces a reduction of only 39\% (Supplemental Figure S9). These losses are concentrated in the lower mid-latitudes: only 20\% of global rice is cultivated poleward of 30 degrees, and only 1\% poleward of 45 degrees.
 %i.e.\ emulated 10\% low bias in emulated end-of-century rice yields 
 
 It is worth noting two complications involved in comparing emulated to simulated yields under a realistic climate change scenario, as in Figure \ref{fig:lpjmlrcp}.
@@ -608,11 +608,8 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
 \section{Emulator results and products}
 \label{S:5}
 
-The crop model emulators developed here can be used for a variety of applications, because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale. One use is construction of continuous agricultural damage functions in a flexible format. 
-As an example, we present in  Figure \ref{fig:all_dims} global damage functions over the four dimensions tested in this study, constructed from the 4D emulation of each crop model;  the ensemble median is shown as a bold line.
-These damage functions are useful not only for impacts assessments but in diagnosing commonalities and differences between crop models. 
 
-\begin{figure*}[ht]
+\begin{figure*}[h!]
   \centering
   \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops.png}
   \caption{
@@ -620,57 +617,77 @@ These damage functions are useful not only for impacts assessments but in diagno
   Black line shows the multi-model mean and shaded area and colored lines the individual models. 
   Each panel shows response to one covariate for rainfed crops, with all others held constant at baseline values (e.g.\ C = 360 ppm, N = 200 kg ha$^{-1}$). 
   Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
-  As expected, the N response is smallest in soybeans, which are efficient nitrogen fixers, and the CO$_2$ response smallest in maize, which is a C4 crop. Spring wheat has the largest inter-model spread and soybeans the smallest. 
+  As expected, the N response is smallest in soybeans, which are nitrogen fixers, and the C response smallest in maize, which is a C4 crop. %Spring wheat has the largest inter-model spread and soybeans the smallest. 
   For an analogous figure identifying each crop model, see Supplemental Figure S11.
   }
   \label{fig:all_dims}
 \end{figure*}
 
+The crop model emulators developed here can be used for a variety of applications, because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale. One use is construction of continuous agricultural damage functions in a flexible format. 
+As an example, we present in  Figure \ref{fig:all_dims} global damage functions over the four dimensions tested in this study, constructed from the 4D emulation of each crop model. %  the ensemble median is shown as a bold line.
+
+These damage functions are useful in diagnosing commonalities and differences in the responses of crop models. 
 %In general, across model spread is qualitatively similar across different crops and different dimensions with some notable exceptions. 
-Figure \ref{fig:all_dims} allows drawing some immediate insights about potential crop responses to changes and the level of model agreement on those responses. %Maize has a muted response to CO$_2$ as a C4 plant, and the impacts of temperature are most consistent for soybeans .
-In most cases, models agree on the sign of responses to individual factors, but the spread in model responses is of similar order as the median response. Inter-model spreads are largest for spring wheat and smallest for soybeans, as also shown in Figure \ref{fig:error_360}.
+%Figure \ref{fig:all_dims} allows drawing some immediate insights about potential crop responses to changes and the level of model agreement on those responses. %Maize has a muted response to CO$_2$ as a C4 plant, and the impacts of temperature are most consistent for soybeans .
+In most cases, models agree on the sign of responses to individual factors, but the spread in model responses is comparable to the median response. Inter-model spreads are largest for spring wheat and smallest for soybeans, as also shown in Figure \ref{fig:error_360}.
 Model responses to individual factors conform to expectations. In nearly all crop models, damages from reduced precipitation exceed benefits from increased precipitation, for all crops except spring wheat. Spring wheat is grown in high latitudes where rainfall may be limiting; by contrast rice, which is generally grown in water-limited conditions, shows the weakest precipitation benefit.
 (Note that these damage functions do not consider whether increased precipitation might permit cultivation in new areas, and also that crop models generally do represent damages from excess soil moisture well \citep{Li2019}.)
-As expected, the CO$_2$ response is smallest for maize, which is a C4 grass, and the nitrogen response is smallest for soybeans, which are efficient nitrogen fixers. Nitrogen responses are relatively similar in crops other than soybeans, and most models show saturation beginning at values less that 200 kg ha$^{-1}$.
+As expected, the CO$_2$ response is smallest for maize, which is a C4 grass, and the nitrogen response is smallest for soybeans, which are efficient nitrogen fixers. Nitrogen responses are relatively similar in crops other than soybeans, and most models show saturation beginning at values less than 200 kg ha$^{-1}$.
 
-\textcolor{red}{XX unedited from here on.}
-Note that these functions are presented here in Figure \ref{fig:all_dims} only as examples and do not represent true global projections, because they are developed from simulation data with a uniform temperature shift while increases in global mean temperature should manifest non-uniformly in space and distributions \citep[e.g][]{Sippel2015}. 
-The global coverage of the GGCMI Phase II simulations allows impacts modelers to apply arbitrary geographically-varying climate projections, as well as arbitrary aggregation masks, to develop damage functions for any climate scenario and any geopolitical or geographic level bigger than 0.5 degrees in latitude and longitude. 
+The GGCMI Phase II emulators are also intended as a tool for impacts assessments.
+The T and P functions presented in Figure \ref{fig:all_dims} are not true global projections, because they emulate the conseqeunces of a uniform shifts across the globe. %\citep[e.g][]{Sippel2015}. 
+However, analogous damage functions can be generated based on more realistic spatial patterns of changes in temperature and precipitation in climate model output. 
+The global coverage of GGCMI Phase II allows impacts modelers to apply arbitrary geographically-varying climate projections  to develop damage functions for any climate scenario and for any desired geopolitical or geographic region larger than 0.5 degrees in latitude and longitude. In Figure \ref{fig:globe_em}, we show emulated maize responses for three crop models under the RCP8.5 scenario from 5 climate models from the CMIP-5 archive \citep{Taylor2012}, as a function of mean growing-season temperature over currently cultivated land.
+
 
 \begin{figure*}[ht]
     \centering
     \includegraphics[width = 16.3cm]{figures/global_em_maize.png}
     \caption{
     Illustration of the factors affecting yields in more realistic climate scenarios, for three different crop models. 
-    Figure shows emulated yield changes (relative to 1981-2010) for maize on currently cultivated land under RCP8.5 climate projections from 5 representative CMIP-5 climate models, using changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and C (\textbf{c}). 
+	Figure shows emulated yield changes (relative to 1981-2010) for maize (both rainfed and irrigated) on currently cultivated land under RCP8.5 climate projections from 5 representative CMIP-5 climate models, using changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and C (\textbf{c}).  X-axis is the mean growing-season temperature change over cultivated land, computed using the historical growing season; note these values will be higher than the corresponding global mean temperature change.
     Circles are emulated yearly global production changes to 2100 (90 years $\times$ 5 climate timeseries = 450 per crop model), with x-axis the mean historical growing-season T shift over all grid cells where maize is grown (unweighted by within-cell cultivated area).
     \textbf{a:} Using only temperature changes allows comparing regional simulated and emulated values. Open squares are simulated values for each T level, with CWN at baseline; bold lines are emulated values over uniform T shifts (repeated in each panel). Emulation uncertainty (compare squares to lines) is small relative to differences across climate and crop models, and 
     mean yield changes are similar whether T changes are applied as a uniform shift or in a more realistic spatial pattern (compare lines to circles). 
-    \textbf{b:} Adding in precipitation changes increases yield spread across climate projections and depresses yield slightly for PROMET. 
-    \textbf{c:} Adding in CO$_2$ changes has different effects across models: 
-    CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
+    \textbf{b:} Adding in precipitation changes increases yield spread across climate projections and depresses yield slightly. 
+    \textbf{c:}  CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
     The separation of groups of points in PROMET (gold) results because CMIP-5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES and MIROC.
     In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \citep{riahi2011rcp}. 
-    For comparison, open squares in \textbf{c} show GGCMI-II simulated production changes at T+6, W=0, C=810 ppm.
-    (See Supplemental Figures S13 and S14 for more crops.)
+	For comparison, open squares in \textbf{c} show GGCMI-II simulated production changes at T+6, W=0, C=810 ppm. (Note that  in these climate projections, mean CO$_2$ levels when T $>$ 5.8 degrees is 912 ppm.)
+	See Supplemental Figures S13--14 for analogous figures for other crops (spring wheat and soybeans).
     }
     \label{fig:globe_em}
 \end{figure*}
 
-The emulator can also be used for investigating the contributions of the different major climate drivers to production outcomes as it can project many different climate scenarios or models quickly.
-The emulated crop model yield responses to climate scenarios for RCP 8.5 for 5 climate models from the CMIP-5 archive \citep{Taylor2012} are shown in Figure \ref{fig:globe_em} at the yearly scale. 
+%The emulator can also be used for investigating the contributions of the different major climate drivers to production outcomes as it can project many different climate scenarios or models quickly.
 
-The differences between the emulation and the simulations for a uniform T shift are small compared to the differences across different crop models.
-PROMET, the most quantitatively difficult models to emulate for maize, is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
-The uniform temperature shift over growing area is not very different from realistic scenarios (though it biases LPJmL low). 
-That is, projected temperature change distribution in space do not matter that much over currently cultivated area, but are likely important to production in high latitude regions which will warm much faster than lower latitudes.
 
-Precipitation changes introduce some noise because different climate models have different P response for a given temperature change. 
-PROMET shows a near uniform reduction in yields with precipitation effects included.
-Including the direct effects of elevated CO$_2$ introduces the largest inter-model uncertainty with different crop models showing very different responses. 
-The difference in model response to CO$_2$ is much larger than differences resulting from different climate model sensitivity to CO$_2$ (T(CO$_2$)).
-Individual climate model sensitives can be seen in the separation in the PROMET response to CO$_2$.
-Emulation based on GGCMI climatological mean shifts is useful for realistic scenarios and emulator errors are small compared to climate model differences and tiny compared to crop model differences.
+% POINT 1 can split out factors to determine effects of main drivers
+% for some models, T is main factor that matters (pDSSAT), but for others (PROMET) CO2 effect is even larger 
+% for spring wheat (Figure 13)
+% squares in right panel being aligned mean there are limited interactions between C and W terms, LPJmL shows more. Bigger effect even in Spring wheat (Figure S13).
+% spatial pattern of warming doesn't affect maize much but it can matter for soybeans (Figure S14)
+% CO2 effect increases spread - T to W relationship is more similar than T to C relationship? but W change doesn't make a big different 
+The emulated responses of Figure \ref{fig:globe_em} allow diagnosing the factors of greatest importance to projected yield changes under future climate change. In the maize example here, temperature is the overwhelmingly dominant factor for pDSSAT, but CO$_2$ responses are far larger in PROMET. (CO$_2$ is important across models for spring wheat, see Figure S13.) For all crop models, the aggregated effects of precipitation changes are negative, exacerbating yield losses (compare T and T+W cases), because precipitation actually declines over maize cultivation regions, especially in Central and S.\ America. Precipitation effects are relatively small, however, as manifested in two ways: as only a small mean shift in yield projections for individual crop models (compare T and T+W cases), and as a relatively small increase in the spread of points here at a given temperature, despite the fact that the climate projections used involve different relationships between temperature and precipitation change.  By contrast, the carbon fertilization response for PROMET is so large that the distinctions becomes clear between yields calculated with climate models of different sensitivities. % Figure \ref{fig:globe_em} also demonstrates the importance of a C-W interaction term for LPJmL maize yields: while adding W changes reduces yields, and adding C changes increases them, the joint effect of W+C changes is more positive than that of C alone (compare open squares to circles in T+W+C case). %This interaction effect likely reflects the fact that the CO$_2$ fertilization effect is more important in cases where water is limiting.   
+
+%Precipitation changes introduce some noise because different climate models have different P response for a given temperature change. 
+%PROMET shows a near uniform reduction in yields with precipitation effects included.
+%Including the direct effects of elevated CO$_2$ introduces the largest inter-model uncertainty with different crop models showing very different responses. 
+%The difference in model response to CO$_2$ is much larger than differences resulting from different climate model sensitivity to CO$_2$ (T(CO$_2$)).
+%Individual climate model sensitives can be seen in the separation in the PROMET response to CO$_2$.
+
+%Emulation based on GGCMI climatological mean shifts is useful for realistic scenarios and emulator errors are small compared to climate model differences and tiny compared to crop model differences.
+% POINT 2 errors of emulation are much smaller than differences across crop models or even across different climate simulations
+%The differences between the emulation and the simulations for a uniform T shift are small compared to the differences across different crop models.
+Disaggregating the factors driving crop yield changes also highlights the fact that errors of emulation are much smaller than differences across crop models or even across different climate simulations.
+PROMET is included here because it is the most quantitatively difficult models to emulate for maize, with the largest emulation errors. %is shown in Figure \ref{fig:globe_em} to illustrate that emulation error at the global production scale is still small compared to the spread across crop models or the spread across climate projections when all factors are included.
+The scale of emulator error can be seen by comparing open squares to lines in the left panel of Figure \ref{fig:globe_em}; these show emulated and simulated values under uniform temperature shifts.
+The distinction between yield changes under uniform temperature shifts and under more realistic patterns of warming is also small; compare to soybeans in Figure S14. 
+%for maize, whose production is relatively restricted in latitude (56\% of global production in LPJmL is between 30--50 degrees absolute latitude)
+
+%The pattern oYield changes under the uniform temperature shift over growing area is not very different from realistic scenarios (though it biases LPJmL low). 
+%That is, projected temperature change distribution in space do not matter that much over currently cultivated area, but are likely important to production in high latitude regions which will warm much faster than lower latitudes.
+
 
 %Finally, the emulator constructed from the GGCMI perturbed mean training set reliably reproduces a realistic RCP scenario indicating that the temperature distribution in a location within the growing season is relatively insignificant when compared to the mean change.
 %First, the spatial pattern of temperature change under a realistic climate scenario is relatively insignificant at the global mean production level.
@@ -682,6 +699,9 @@ Emulation based on GGCMI climatological mean shifts is useful for realistic scen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% largest ever crop modeling exercise - over 50% of calories, allows global-scale emulation
+% recap that it's useful even in realistic scenarios.
+% Alexander
 \section{Discussion and conclusions} 
 \label{S:6}
 In this work we describe a new class of global gridded crop model emulators for maize, soy, rice and wheat for nine process based crop models as part of the GGCMI project.
