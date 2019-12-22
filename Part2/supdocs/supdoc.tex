@@ -94,6 +94,10 @@ and Elisabeth Moyer$^{1, 2}$
 \renewcommand{\thefigure}{S\arabic{figure}}
 
 \section{Experiment simulation sampling in variable space}
+\begin{flushleft}
+Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. We compare models against each other for simulation levels where all 9 models provided simulations. 
+\end{flushleft}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{s_how_many_simulations.png}
@@ -101,6 +105,7 @@ and Elisabeth Moyer$^{1, 2}$
   Heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. 
   The maximum number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). 
   Normalized error calculations are run over scenarios with maximum number of models.
+  Black boxes are the ``baseline'' cases for rainfed and irrigated simulations.
   }
   \label{fig:numbersims}
 \end{figure}
@@ -134,11 +139,18 @@ and Elisabeth Moyer$^{1, 2}$
 
 \clearpage
 \section{Variability changes in future climate projections}
+\begin{flushleft}
+The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields from changes in variability would decrease the effectiveness of the emulator.
+In this section we show some examples of the changes in variability across climate model projections. We utilize the HadCM model for our evaluation of this impact.
+Climate models disagree about changes in variability.
+\end{flushleft}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png}
   \caption{
-	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. Heatmap shows the ratio in standard deviation in temperature compared to preindustrial values, using 30-year detrended timeseries from for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.   
+	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. The heatmap shows the ratio in standard deviation in temperature compared to preindustrial values, using 30-year detrended timeseries from for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.
+    Blue indicates a decrease in variability and red an increase.
    Climate model disagreement about changes in variability is substantial, though most project slight increases during summer. The HadCM3 model, used later in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa.
   }
 	% XX EJM - need more numbers here, and should ideally change the plot so that the Pacific is not centered - instead center on land and cut the Pacific in half. If Ziwei cannot do this before submission time, OK to do it later.
@@ -294,8 +306,9 @@ PROMET is the most sensitive model of all the models for rice in C, T, and W.
 PROMET is the quantitatively lowest performing model for soybeans when compared to the historical FAO data for the top 10 producing countries. 
 JULES is the most sensitive model of all the models for soybeans in C, T, and W. 
 For spring wheat, JULES is a high outlier in C, the most sensitive model in W and T, and shows an extra inflection point in the global temperature response not seen in any of the other models.
-
+\end{flushleft}
 \smallskip
+\begin{flushleft}
 CARAIB on the other hand (the other model that does not simulate different levels of nitrogen), was originally developed as a vegetation model in the early 90's and has a longer history of agricultural focus. It is the least sensitive model in T for rice and spring wheat, and is nearest to the ensemble mean in maize and winter wheat. 
 In W, it is the least sensitive model for maize, and the wheats, the second least sensitive model for soybeans, and nearest to the ensemble mean for rice. 
 For C, it is the nearest to the ensemble mean for the wheats and soy and unremarkable for rice. 
