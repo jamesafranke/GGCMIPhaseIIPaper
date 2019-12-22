@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Experiment simulation sampling in variable space}{2}
 \contentsline {section}{\numberline {2}Cultivation areas}{3}
-\contentsline {section}{\numberline {3}Yield response for A1 simulations}{4}
+\contentsline {section}{\numberline {3}Yield response for A1 (growing season adaptation) simulations}{4}
 \contentsline {section}{\numberline {4}Normalized error for other cases}{5}
 \contentsline {section}{\numberline {5}Comparison to transient climate run simulation}{7}
 \contentsline {section}{\numberline {6}Emulator products}{8}
