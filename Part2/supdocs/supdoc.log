@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 DEC 2019 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 DEC 2019 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,244 +1252,247 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count292
- (./supdoc.toc
-[1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+ (./supdoc.toc)
 \tf@toc=\write3
 \openout3 = `supdoc.toc'.
 
 
-[2] <s_how_many_simulations.png, id=15, 3613.5pt x 2258.4375pt>
+[1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<s_how_many_simulations.png, id=13, 3613.5pt x 2258.4375pt>
 File: s_how_many_simulations.png Graphic file (type png)
 
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 98.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 99.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
- [3
+ [2
 
  <./s_how_many_simulations.png>]
-<s_croparea_irr.png, id=21, 261.778pt x 490.9542pt>
+<s_croparea_irr.png, id=20, 261.778pt x 490.9542pt>
 File: s_croparea_irr.png Graphic file (type png)
  <use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 114.
+Package pdftex.def Info: s_croparea_irr.png used on input line 115.
 (pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
 
-Underfull \hbox (badness 1052) in paragraph at lines 120--120
+Underfull \hbox (badness 1052) in paragraph at lines 121--121
 \OT1/cmr/m/n/10.95 ir-ri-gated crops in the real world. The
  []
 
-<s_croparea.png, id=22, 262.9022pt x 492.0784pt>
+<s_croparea.png, id=21, 262.9022pt x 492.0784pt>
 File: s_croparea.png Graphic file (type png)
  <use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 128.
+Package pdftex.def Info: s_croparea.png used on input line 129.
 (pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
- [4
+ [3
 
  <./s_croparea_irr.png> <./s_croparea.png>]
-<tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png, id=28, 528.93674pt x 226
+<tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png, id=27, 528.93674pt x 226
 .82536pt>
 File: tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png Graphic file (type p
 ng)
  <use tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png>
 Package pdftex.def Info: tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png u
-sed on input line 138.
+sed on input line 139.
 (pdftex.def)             Requested size: 463.78pt x 198.89394pt.
- [5
+ [4
 
  <./tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png>]
-<regression_exampleA1.png, id=33, 594.0594pt x 179.51868pt>
+<regression_exampleA1.png, id=32, 594.0594pt x 179.51868pt>
 File: regression_exampleA1.png Graphic file (type png)
 
 <use regression_exampleA1.png>
-Package pdftex.def Info: regression_exampleA1.png used on input line 157.
+Package pdftex.def Info: regression_exampleA1.png used on input line 160.
 (pdftex.def)             Requested size: 463.78pt x 140.15547pt.
 
-<regression_exampleA1_2.png, id=34, 594.20393pt x 179.51868pt>
+<regression_exampleA1_2.png, id=33, 594.20393pt x 179.51868pt>
 File: regression_exampleA1_2.png Graphic file (type png)
 
 <use regression_exampleA1_2.png>
-Package pdftex.def Info: regression_exampleA1_2.png used on input line 169.
+Package pdftex.def Info: regression_exampleA1_2.png used on input line 172.
 (pdftex.def)             Requested size: 463.78pt x 140.11711pt.
- [6
+ [5
 
  <./regression_exampleA1.png> <./regression_exampleA1_2.png>] <error_grid_810.p
-ng, id=40, 590.30136pt x 237.0456pt>
+ng, id=39, 590.30136pt x 237.0456pt>
 File: error_grid_810.png Graphic file (type png)
 
 <use error_grid_810.png>
-Package pdftex.def Info: error_grid_810.png used on input line 194.
+Package pdftex.def Info: error_grid_810.png used on input line 197.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
-<error_grid_360_cultivated_A1.png, id=41, 590.30136pt x 237.0456pt>
+<error_grid_360_cultivated_A1.png, id=40, 590.30136pt x 237.0456pt>
 File: error_grid_360_cultivated_A1.png Graphic file (type png)
 
 <use error_grid_360_cultivated_A1.png>
 Package pdftex.def Info: error_grid_360_cultivated_A1.png used on input line 20
-5.
+8.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<error_grid_360_cultivated_IWD.png, id=42, 590.30136pt x 237.0456pt>
+<error_grid_360_cultivated_IWD.png, id=41, 590.30136pt x 237.0456pt>
 File: error_grid_360_cultivated_IWD.png Graphic file (type png)
 
 <use error_grid_360_cultivated_IWD.png>
 Package pdftex.def Info: error_grid_360_cultivated_IWD.png used on input line 2
-14.
+17.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7
+[6
 
- <./error_grid_810.png>] [8 <./error_grid_360_cultivated_A1.png> <./error_grid_
+ <./error_grid_810.png>] [7 <./error_grid_360_cultivated_A1.png> <./error_grid_
 360_cultivated_IWD.png>]
-<LPJMLRCP85comp_30N.png, id=55, 586.68787pt x 170.70174pt>
+<LPJMLRCP85comp_30N.png, id=53, 586.68787pt x 170.70174pt>
 File: LPJMLRCP85comp_30N.png Graphic file (type png)
 
 <use LPJMLRCP85comp_30N.png>
-Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 231.
+Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 234.
 (pdftex.def)             Requested size: 463.78pt x 134.94666pt.
- [9
+ [8
 
  <./LPJMLRCP85comp_30N.png>]
-<em_CTWN_all_crops_color.png, id=60, 562.2606pt x 432.60822pt>
+<em_CTWN_all_crops_color.png, id=58, 562.2606pt x 432.60822pt>
 File: em_CTWN_all_crops_color.png Graphic file (type png)
 
 <use em_CTWN_all_crops_color.png>
-Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 246.
+Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 249.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
-<em_CTWN_all_crops_A1.png, id=61, 562.2606pt x 432.60822pt>
+<em_CTWN_all_crops_A1.png, id=59, 562.2606pt x 432.60822pt>
 File: em_CTWN_all_crops_A1.png Graphic file (type png)
 
 <use em_CTWN_all_crops_A1.png>
-Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 255.
+Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 258.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
+[9
 
- <./em_CTWN_all_crops_color.png>] [11 <./em_CTWN_all_crops_A1.png>]
-<LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png, id=70, 532.19627pt x 212
+ <./em_CTWN_all_crops_color.png>] [10 <./em_CTWN_all_crops_A1.png>]
+<LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png, id=68, 532.19627pt x 212
 .18472pt>
 File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png Graphic file (type p
 ng)
  <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png u
-sed on input line 267.
+sed on input line 270.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
-<LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png, id=71, 532.19627pt x 212.18472pt>
+<LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png, id=69, 532.19627pt x 212.18472pt>
 File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png Graphic file (type png)
 <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png used on in
-put line 275.
+put line 278.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
- [12
+ [11
 
  <./LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png> <./LPJmL_pDSSAT_PROME
-T_RCP85_all_cases_soy.png>] <reduced_lpjml_maize.png, id=77, 505.02277pt x 359.
+T_RCP85_all_cases_soy.png>] <reduced_lpjml_maize.png, id=75, 505.02277pt x 359.
 32645pt>
 File: reduced_lpjml_maize.png Graphic file (type png)
 
 <use reduced_lpjml_maize.png>
-Package pdftex.def Info: reduced_lpjml_maize.png used on input line 302.
+Package pdftex.def Info: reduced_lpjml_maize.png used on input line 306.
 (pdftex.def)             Requested size: 441.01772pt x 313.79578pt.
 
-<reduced_regression_example_1.png, id=78, 612.70506pt x 202.06693pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<reduced_regression_example_1.png, id=76, 612.70506pt x 202.06693pt>
 File: reduced_regression_example_1.png Graphic file (type png)
 
 <use reduced_regression_example_1.png>
-Package pdftex.def Info: reduced_regression_example_1.png used on input line 30
-9.
+Package pdftex.def Info: reduced_regression_example_1.png used on input line 31
+3.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_regression_example_2.png, id=79, 612.70506pt x 202.06693pt>
+<reduced_regression_example_2.png, id=77, 612.70506pt x 202.06693pt>
 File: reduced_regression_example_2.png Graphic file (type png)
 
 <use reduced_regression_example_2.png>
-Package pdftex.def Info: reduced_regression_example_2.png used on input line 31
-6.
+Package pdftex.def Info: reduced_regression_example_2.png used on input line 32
+0.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_error_grid.png, id=80, 590.30136pt x 237.0456pt>
+<reduced_error_grid.png, id=78, 590.30136pt x 237.0456pt>
 File: reduced_error_grid.png Graphic file (type png)
 
 <use reduced_error_grid.png>
-Package pdftex.def Info: reduced_error_grid.png used on input line 323.
+Package pdftex.def Info: reduced_error_grid.png used on input line 327.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_CARAIB_spatial_error.png, id=81, 504.01099pt x 327.52763pt>
+<reduced_CARAIB_spatial_error.png, id=79, 504.01099pt x 327.52763pt>
 File: reduced_CARAIB_spatial_error.png Graphic file (type png)
 
 <use reduced_CARAIB_spatial_error.png>
 Package pdftex.def Info: reduced_CARAIB_spatial_error.png used on input line 33
-2.
+6.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_global_em_maize.png, id=82, 532.19627pt x 212.18472pt>
+<reduced_global_em_maize.png, id=80, 532.19627pt x 212.18472pt>
 File: reduced_global_em_maize.png Graphic file (type png)
 
 <use reduced_global_em_maize.png>
-Package pdftex.def Info: reduced_global_em_maize.png used on input line 341.
+Package pdftex.def Info: reduced_global_em_maize.png used on input line 345.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_soy_bad.png, id=83, 516.15234pt x 676.59174pt>
+<JULES_soy_bad.png, id=81, 516.15234pt x 676.59174pt>
 File: JULES_soy_bad.png Graphic file (type png)
  <use JULES_soy_bad.png>
-Package pdftex.def Info: JULES_soy_bad.png used on input line 349.
+Package pdftex.def Info: JULES_soy_bad.png used on input line 353.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_rice_bad.png, id=84, 516.15234pt x 676.59174pt>
+<PROMET_rice_bad.png, id=82, 516.15234pt x 676.59174pt>
 File: PROMET_rice_bad.png Graphic file (type png)
 
 <use PROMET_rice_bad.png>
-Package pdftex.def Info: PROMET_rice_bad.png used on input line 360.
+Package pdftex.def Info: PROMET_rice_bad.png used on input line 364.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13
+[12
 
- <./reduced_lpjml_maize.png>] [14 <./reduced_regression_example_1.png> <./reduc
-ed_regression_example_2.png> <./reduced_error_grid.png>] [15 <./reduced_CARAIB_
-spatial_error.png> <./reduced_global_em_maize.png>] [16 <./JULES_soy_bad.png>] 
-[17 <./PROMET_rice_bad.png>]
-<lpjml_grid.png, id=111, 507.76901pt x 364.67442pt>
+] [13 <./reduced_lpjml_maize.png> <./reduced_regression_example_1.png>]
+[14 <./reduced_regression_example_2.png> <./reduced_error_grid.png>] [15 <./red
+uced_CARAIB_spatial_error.png> <./reduced_global_em_maize.png>] [16 <./JULES_so
+y_bad.png>] [17 <./PROMET_rice_bad.png>]
+<lpjml_grid.png, id=112, 507.76901pt x 364.67442pt>
 File: lpjml_grid.png Graphic file (type png)
  <use lpjml_grid.png>
-Package pdftex.def Info: lpjml_grid.png used on input line 389.
+Package pdftex.def Info: lpjml_grid.png used on input line 393.
 (pdftex.def)             Requested size: 469.75502pt x 337.37976pt.
 
-<pdssat_maize.png, id=112, 504.01099pt x 353.25575pt>
+<pdssat_maize.png, id=113, 504.01099pt x 353.25575pt>
 File: pdssat_maize.png Graphic file (type png)
  <use pdssat_maize.png>
-Package pdftex.def Info: pdssat_maize.png used on input line 395.
+Package pdftex.def Info: pdssat_maize.png used on input line 399.
 (pdftex.def)             Requested size: 469.75502pt x 329.25214pt.
 
 
@@ -1498,68 +1501,68 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [18
 
  <./lpjml_grid.png>] [19 <./pdssat_maize.png>]
-<pDSSAT_spatial_error.png, id=122, 504.01099pt x 321.6015pt>
+<pDSSAT_spatial_error.png, id=123, 504.01099pt x 321.6015pt>
 File: pDSSAT_spatial_error.png Graphic file (type png)
 
 <use pDSSAT_spatial_error.png>
-Package pdftex.def Info: pDSSAT_spatial_error.png used on input line 412.
+Package pdftex.def Info: pDSSAT_spatial_error.png used on input line 416.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
-<LPJmL_spatial_error.png, id=123, 504.01099pt x 321.6015pt>
+<LPJmL_spatial_error.png, id=124, 504.01099pt x 321.6015pt>
 File: LPJmL_spatial_error.png Graphic file (type png)
 
 <use LPJmL_spatial_error.png>
-Package pdftex.def Info: LPJmL_spatial_error.png used on input line 418.
+Package pdftex.def Info: LPJmL_spatial_error.png used on input line 422.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_spatial_error.png, id=124, 504.01099pt x 321.6015pt>
+<PROMET_spatial_error.png, id=125, 504.01099pt x 321.6015pt>
 File: PROMET_spatial_error.png Graphic file (type png)
 
 <use PROMET_spatial_error.png>
-Package pdftex.def Info: PROMET_spatial_error.png used on input line 424.
+Package pdftex.def Info: PROMET_spatial_error.png used on input line 428.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_error.png, id=125, 504.01099pt x 321.6015pt>
+<JULES_spatial_error.png, id=126, 504.01099pt x 321.6015pt>
 File: JULES_spatial_error.png Graphic file (type png)
 
 <use JULES_spatial_error.png>
-Package pdftex.def Info: JULES_spatial_error.png used on input line 430.
+Package pdftex.def Info: JULES_spatial_error.png used on input line 434.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_error.png, id=126, 504.01099pt x 321.6015pt>
+<EPIC-TAMU_spatial_error.png, id=127, 504.01099pt x 321.6015pt>
 File: EPIC-TAMU_spatial_error.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_error.png>
-Package pdftex.def Info: EPIC-TAMU_spatial_error.png used on input line 436.
+Package pdftex.def Info: EPIC-TAMU_spatial_error.png used on input line 440.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_error.png, id=127, 504.01099pt x 321.6015pt>
+<GEPIC_spatial_error.png, id=128, 504.01099pt x 321.6015pt>
 File: GEPIC_spatial_error.png Graphic file (type png)
 
 <use GEPIC_spatial_error.png>
-Package pdftex.def Info: GEPIC_spatial_error.png used on input line 442.
+Package pdftex.def Info: GEPIC_spatial_error.png used on input line 446.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_error.png, id=128, 504.01099pt x 321.6015pt>
+<PEPIC_spatial_error.png, id=129, 504.01099pt x 321.6015pt>
 File: PEPIC_spatial_error.png Graphic file (type png)
 
 <use PEPIC_spatial_error.png>
-Package pdftex.def Info: PEPIC_spatial_error.png used on input line 448.
+Package pdftex.def Info: PEPIC_spatial_error.png used on input line 452.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1580,59 +1583,59 @@ LaTeX Warning: Text page 22 contains only floats.
 LaTeX Warning: Text page 23 contains only floats.
 
 [23 <./GEPIC_spatial_error.png> <./PEPIC_spatial_error.png>]
-<pDSSAT_spatial_MSE_ton_ha.png, id=148, 504.01099pt x 321.6015pt>
+<pDSSAT_spatial_MSE_ton_ha.png, id=150, 504.01099pt x 321.6015pt>
 File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 463.
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 467.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
-<PROMET_spatial_MSE_ton_ha.png, id=149, 504.01099pt x 321.6015pt>
+<PROMET_spatial_MSE_ton_ha.png, id=151, 504.01099pt x 321.6015pt>
 File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 469.
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 473.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_MSE_ton_ha.png, id=150, 504.01099pt x 321.6015pt>
+<JULES_spatial_MSE_ton_ha.png, id=152, 504.01099pt x 321.6015pt>
 File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 475.
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 479.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_MSE_ton_ha.png, id=151, 504.01099pt x 321.6015pt>
+<EPIC-TAMU_spatial_MSE_ton_ha.png, id=153, 504.01099pt x 321.6015pt>
 File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha.png>
 Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 48
-1.
+5.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_MSE_ton_ha.png, id=152, 504.01099pt x 321.6015pt>
+<GEPIC_spatial_MSE_ton_ha.png, id=154, 504.01099pt x 321.6015pt>
 File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 487.
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 491.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_MSE_ton_ha.png, id=153, 504.01099pt x 321.6015pt>
+<PEPIC_spatial_MSE_ton_ha.png, id=155, 504.01099pt x 321.6015pt>
 File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 493.
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 497.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1646,34 +1649,31 @@ spatial_MSE_ton_ha.png>] [27 <./PEPIC_spatial_MSE_ton_ha.png>] (./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
- )
-(\end occurred inside a group at level 2)
-
-### simple group (level 2) entered at line 66 ({)
-### simple group (level 1) entered at line 65 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 15981 strings out of 492995
- 308859 string characters out of 6132704
+ 15982 strings out of 492995
+ 308863 string characters out of 6132704
  329198 words of memory out of 5000000
  19301 multiletter control sequences out of 15000+600000
- 18384 words of font info for 73 fonts, out of 8000000 for 9000
+ 18385 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,10394b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on supdoc.pdf (27 pages, 35733757 bytes).
+ 39i,8n,43p,10394b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on supdoc.pdf (27 pages, 35765356 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 214 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
