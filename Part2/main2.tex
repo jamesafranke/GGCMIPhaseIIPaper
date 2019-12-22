@@ -67,14 +67,14 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-Statistical emulation of process-based crop models provides the opportunity to combine advantageous features of statistical and process-based crop models.  
-The Global Gridded Model Intercomparison Project (GGCMI) Phase II consists of a set of simulations run on a suit of process based models with an explicit goal of producing a structured training dataset for crop model emulator development across four dimensions: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). 
-These training datasets are available for two contrasting assumptions on growing season adaption: fixed growing seasons (through adaptation in cultivar choice) and growing seasons shortening in warmer climates (assuming no adaptation in cultivar choice).
-In this study we present the construction of a set of crop model emulators of mean-climatological yield for nine process-based crop models and five crops. 
-After presenting the rationale and technical implementation of the emulator construction, we evaluate the emulator performance and discuss the general applicability of these emulators as well as individual cases, where the emulators show unexpected behavior.
+Statistical emulation allows combining advantageous features of statistical and process-based crop models for understanding the effects of future climate changes on crop yields.  We describe here the development of emulators for nine process-based crop models and five crops using output from the Global Gridded Model Intercomparison Project (GGCMI) Phase II. The GGCMI Phase II experiment %involves simulations by a suite of process-based models and 
+	is designed with the explicit goal of producing a structured training dataset for emulator development that samples across four dimensions relevant to crop yields: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). 
+Simulations are run under two different adaption assumptions: that growing seasons shorten in warmer climates, and that cultivar choice allows growing seasons to remain fixed.  The dataset allows emulating the climatological mean yield response without relying on interannual variations; we show that these are quantitatively different.
+Climatological mean yield responses can be readily captured with a simple polynomial in nearly all locations, with errors significant only in some marginal lands where crops are not currently grown. 
+%rationale and technical implementation of the emulator construction, we evaluate the emulator performance and discuss the general applicability of these emulators as well as individual cases, where the emulators show unexpected behavior.
 %The GGCMI Phase II systematic parameter sweep protocol allows disentangling the climate-driven mean response from year-over-year variations; we show that the two responses have very different relationships to standard climate metrics such as mean growing season temperature. 
-The climatological mean yield response can be readily represented with a simple polynomial in almost all locations where crops are currently grown, permitting a tool that captures model responses in a lightweight, computationally tractable form. 
-The crop model emulators presented here should therefore facilitate both model comparison and integrated assessment of climate impacts.
+In general, emulation errors are negligible relative to differences across crop models or even across climate model scenarios. We demonstrate that the resulting GGCMI emulators can reproduce yields under realistic future climate simulations, even though the GGCMI Phase II dataset is constructed with uniform CTWN offsets, suggesting that effects of changes in temperature and precipitation distributions are small relative to those of changing means. The resulting emulators therefore capture relevant crop model responses in a lightweight, computationally tractable form, providing a tool that can facilitate model comparison, diagnosis of interacting factors affecting yields, and integrated assessment of climate impacts.
+%of mean-climatological yields
 \end{abstract}
 
 %\copyrightstatement{TEXT}
@@ -119,7 +119,7 @@ Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182,RUIZR
 \citet{Snyder2018} analyzes five crops over $\sim$1000 sites with individual site-specific crop models, and extrapolates in space to estimate mean latitudinal responses.
 
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase II effort. 
-GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, applied nitrogen, and two counterfactual assumptions on growing season adaptation (``A0'': none and ``A1'': regaining growing season length) \citep[CTWN-A, ][]{franke2019ctwnexperiment,minoli2019adaptation}.
+GGCMI Phase II, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, applied nitrogen, and two different assumptions on growing season adaptation (``A0'': none and ``A1'': retaining growing season length) \citep[CTWN-A, ][]{franke2019ctwnexperiment,minoli2019adaptation}.
 The experiment is designed to allow diagnosing the impacts on crop yields of both individual factors and their joint effects, and to allow construction of crop model emulators.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
 
@@ -185,11 +185,11 @@ Because the computational demand is high, modeling groups were allowed to submit
 Table \ref{table:models} shows the participating models and the number of simulation scenarios that each provides, and Supplemental Figure S1 shows model sampling density. Table \ref{table:inputs} shows the specified input values; we sample across all parameter combinations. 
 
 Each individual crop model simulation is run for 31 years over historic weather for the period of 1981-2010, with added uniform perturbations to any of the CTWN variables.
-Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei} as these groups have specific sub-daily input data requirements. 
+Historical weather is taken for most models from the AgMERRA \citep{Ruane2015} historical daily climate data product, but the PROMET model uses the ERA-Interim reanalysis \citep{dee2011era} and the JULES model uses a bias-corrected version of ERA-Interim, WFDEI \citep[WATCH-Forcing-Data-ERA-Interim,][]{weedon2014wfdei} as these groups have specific sub-daily input data requirements. 
 Temperature perturbations are applied as additive mean shifts, water supply as fractional multipliers to precipitation (except in the irrigated W$_{\infty}$ case), and CO$_2$ and nitrogen application levels are specified as fixed values. 
 Models provide near-global output at 0.5 degree latitude and longitude resolution for each simulation year, including areas not currently cultivated. 
 In analyses where we distinguish yields over currently cultivated land, we use the masks of \citet{Portmann2010}. 
-See Supplemental Figures S2 and S3 for maps of cultivation area.
+(See Supplemental Figures S2--3 for maps of cultivated area.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,17 +224,17 @@ When discrepancies are large, year-over-year responses are generally stronger th
 
 While differences in responses at different timescales can arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
 The mean growing-season value is only a proxy for the distribution of daily climatic conditions that crops are sensitive to, and present-day variations between years can be very different from future forced changes. 
-That is, variations in growing-season \textit{means} from year to year at present are associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates: a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}. % XX not sure this is the right citation for this...
+That is, present-day variations in growing-season \textit{means} from year to year may be associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates: a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}. % XX not sure this is the right citation for this...
 Changes in temperature distributions have been shown to strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, though precipitation effects should be smaller since crops respond not to rainfall but to soil moisture, which integrates over weeks or even months \citep[e.g.][]{potter2005effects, Glotter14, CHALLINOR200499}. 
 
 A second factor of importance is that any nonlinearity in crop responses will itself lead to a distinction between climatological and year-over-year fits, even if distributional differences are negligible. 
 Given the interannual variations in the climate timeseries, the mean annual yield response to a perturbation is not the same as the response of the climatological mean yield. 
 The effect of nonlinearity may be particularly relevant for precipitation, since model crop yields drop steeply and nonlinearly with increasing dryness. 
-(Crop yields should drop under excess precipitation as well, but process-based models do not capture losses in saturated conditions well, see \citet{Glotter15,Li2019}.) 
+(Crop yields should drop under excess precipitation as well, but process-based models do not capture losses in saturated conditions well \citep{Glotter15,Li2019}.) 
 
 In the GGCMI Phase II experiment, the imposed perturbations involve no changes in underlying distributions.
 The choice is reasonable, since climate models do not agree on distributional changes.
-Most models do project small mean increases in growing-season temperature variability in cultivated areas, and can produce substantial local changes, but models disagree on spatial patterns.
+Most models do project small mean increases in growing-season temperature variability in cultivated areas, and can produce substantial local changes, but models disagree on spatial patterns (Supplemental Figure \ref{fig:lpjmlrcp}).
 For example, in the high-end (Representative Concentration Pathway (RCP) 8.5 \citep{riahi2011rcp}) climate projections to the year 2100 in the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, growing season temperature variability over currently cultivated rice areas increases by 31\% in HadCM3L but decreases by 12\% in CESM1-0-1. 
 We therefore explicitly test the assumption that distributional changes are not consequential for climatological mean yields: in Section \ref{S:4.3}, we confirm that an emulator trained on the GGCMI Phase II dataset can successfully reproduce yield changes under a full climate model projection.
 
@@ -261,7 +261,7 @@ For example, \citet{Urban2012} used statistical models trained on present-day yi
 \label{S:3}
 Emulation involves fitting individual regression models from GGCMI Phase II output for each crop and model and 0.5 degree geographic pixel; the regressors are the applied perturbations in CO$_2$, temperature, water, and nitrogen (CTWN). 
 We discuss here largely emulations of climatological mean crop yields with no growing season adaptation (A0 scenarios), but note that any output of the crop models can potentially be emulated. 
-We provide separate emulations of irrigated and rainfed yields and applied irrigation water (pirrww in mm\ yr$^{-1}$) in both A0 and A1 scenarios, meaning that each model and crop combination results in six sets of regressions. See Supplemental Material 3, 4, and 6 for more information on these additional emulation cases.
+We provide separate emulations of irrigated and rainfed yields and applied irrigation water (pirrww in mm\ yr$^{-1}$) in both A0 and A1 scenarios, meaning that each model and crop combination results in six sets of regressions. See Supplemental Material Sections 3, 4, and 6 for these additional emulation cases.
 
 \subsection{Statistical model}
 For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
