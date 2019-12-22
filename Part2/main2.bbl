@@ -1,4 +1,4 @@
-\begin{thebibliography}{85}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -6,17 +6,6 @@
   \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
   \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
-
-\bibitem[{Alexander et~al.(2006)Alexander, Zhang, Peterson, Caesar, BA, Tank,
-  Haylock, Collins, Trewin, Rahimzadeh, Tagipour, Rupa~Kumar, Revadekar,
-  Griffiths, Vincent, B.~Stephenson, Burn, Aguilar, Brunet, and
-  L.~Vazquez-Aguirre}]{Alexande2006}
-Alexander, L., Zhang, X., Peterson, T., Caesar, J., BA, G., Tank, A., Haylock,
-  M., Collins, D., Trewin, B., Rahimzadeh, F., Tagipour, A., Rupa~Kumar, K.,
-  Revadekar, J., Griffiths, G., Vincent, L., B.~Stephenson, D., Burn, J.,
-  Aguilar, E., Brunet, M., and L.~Vazquez-Aguirre, J.: Global Observed Changes
-  in Daily Climate Extremes of Temperature and Precipitation, Journal of
-  Geophysical Research, 111, \doi{10.1029/2005JD006290}, 2006.
 
 \bibitem[{Aulakh and Malhi(2005)}]{AULAKH2005}
 Aulakh, M.~S. and Malhi, S.~S.: Interactions of {N}itrogen with {O}ther
@@ -50,11 +39,6 @@ Challinor, A., Wheeler, T., Craufurd, P., Slingo, J., and Grimes, D.: Design
   \doi{https://doi.org/10.1016/j.agrformet.2004.01.002},
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168192304000085},
   2004.
-
-\bibitem[{Chang et~al.(2016)Chang, Stein, Wang, Kotamarthi, and Moyer}]{Won16}
-Chang, W., Stein, M., Wang, J., Kotamarthi, V., and Moyer, E.: Changes in
-  Spatio-temporal Precipitation Patterns in Changing Climate Conditions,
-  Journal of Climate, 29, \doi{10.1175/JCLI-D-15-0844.1}, 2016.
 
 \bibitem[{Conti et~al.(2009)Conti, Gosling, Oakley, and O'Hagan}]{OHAGAN2010}
 Conti, S., Gosling, J.~P., Oakley, J.~E., and O'Hagan, A.: Gaussian process
@@ -97,25 +81,10 @@ Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
   \doi{10.1016/j.agee.2012.01.026}, 2012.
 
-\bibitem[{Franke et~al.(2019{\natexlab{a}})Franke, M\"{u}ller, Elliott, Ruane,
-  Snyder, J\"{a}germeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Hank,
-  Hoffmann, Izaurralde, Jacquemin, Jones, Koch, Li, Olin, Phillips, Pugh,
-  Reddy, Wang, Williams, Zabel, and Moyer}]{Franke2019a}
-Franke, J., M\"{u}ller, C., Elliott, J., Ruane, A., Snyder, A., J\"{a}germeyr,
-  J., Balkovic, J., Ciais, P., Dury, M., Falloon, P., Folberth,
-  C.~Fran{\c{c}}ois, L., Hank, T., Hoffmann, M., Izaurralde, R., Jacquemin, I.,
-  Jones, C.~Khabarov, N., Koch, M., Li, M.~Liu, W., Olin, S., Phillips, M.,
-  Pugh, T., Reddy, A., Wang, X., Williams, K., Zabel, F., and Moyer, E.: The
-  {G}{G}{C}{M}{I} phase {I}{I} experiment: global gridded crop model
-  simulations under uniform changes in {C}{O}$_2$, temperature, water, and
-  nitrogen levels (protocol version 1.0)., Geoscientific Model Development, in
-  open review, 2019{\natexlab{a}}.
-
-\bibitem[{Franke et~al.(2019{\natexlab{b}})Franke, M\"uller, Elliott, Ruane,
-  Jagermeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Francois, Hank,
-  Hoffmann, Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin,
-  Phillips, Pugh, Reddy, Wang, Williams, Zabel, and
-  Moyer}]{franke2019ctwnexperiment}
+\bibitem[{Franke et~al.(2019)Franke, M\"uller, Elliott, Ruane, Jagermeyr,
+  Balkovic, Ciais, Dury, Falloon, Folberth, Francois, Hank, Hoffmann,
+  Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin, Phillips, Pugh,
+  Reddy, Wang, Williams, Zabel, and Moyer}]{franke2019ctwnexperiment}
 Franke, J., M\"uller, C., Elliott, J., Ruane, A.~C., Jagermeyr, J., Balkovic,
   J., Ciais, P., Dury, M., Falloon, P., Folberth, C., Francois, L., Hank, T.,
   Hoffmann, M., Izaurralde, R.~C., Jacquemin, I., Jones, C., Khabarov, N.,
@@ -125,8 +94,7 @@ Franke, J., M\"uller, C., Elliott, J., Ruane, A.~C., Jagermeyr, J., Balkovic,
   \chem{CO_2}, temperature, water, and nitrogen levels (protocol version 1.0),
   Geoscientific Model Development Discussions, 2019, 1--30,
   \doi{10.5194/gmd-2019-237},
-  \urlprefix\url{https://www.geosci-model-dev-discuss.net/gmd-2019-237/},
-  2019{\natexlab{b}}.
+  \urlprefix\url{https://www.geosci-model-dev-discuss.net/gmd-2019-237/}, 2019.
 
 \bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
   Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel,
@@ -201,12 +169,6 @@ Hansen, J. and Jones, J.: Scaling-up crop models for climate variability
   applications, Agricultural Systems, 65, 43 -- 72,
   \doi{10.1016/S0308-521X(00)00025-1}, 2000.
 
-\bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
-Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
-  temperature distributions in a large ensemble of climate simulations using
-  quantile regression, Journal of Climate, 31, 8573--8588,
-  \doi{10.1175/JCLI-D-17-0782.1}, 2018.
-
 \bibitem[{He et~al.(2016)He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He,
   and Li}]{He2016}
 He, W., Yang, J., Zhou, W., Drury, C., Yang, X., D.~Reynolds, W., Wang, H., He,
@@ -268,17 +230,6 @@ Jones, J., Hoogenboom, G., Porter, C., Boote, K., Batchelor, W., Hunt, L.,
   Wilkens, P., Singh, U., Gijsman, A., and Ritchie, J.: The {DSSAT} cropping
   system model, European Journal of Agronomy, 18, 235 -- 265,
   \doi{10.1016/S1161-0301(02)00107-7}, 2003.
-
-\bibitem[{Kodra and Ganguly(2014)}]{Kodra2014}
-Kodra, E. and Ganguly, A.: Asymmetry of projected increases in extreme
-  temperature distributions, Scientific reports, 4, 5884,
-  \doi{10.1038/srep05884}, 2014.
-
-\bibitem[{Leeds et~al.(2015)Leeds, Moyer, and Stein}]{Leeds2015}
-Leeds, W.~B., Moyer, E.~J., and Stein, M.~L.: Simulation of future climate
-  under changing temporal covariance structures, Advances in Statistical
-  Climatology, Meteorology and Oceanography, 1, 1--14,
-  \doi{10.5194/ascmo-1-1-2015}, 2015.
 
 \bibitem[{Li et~al.(2019)Li, Guan, Schnitkey, DeLucia, and Peng}]{Li2019}
 Li, Y., Guan, K., Schnitkey, G.~D., DeLucia, E., and Peng, B.: Excessive
@@ -372,6 +323,17 @@ Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
   future demand without the need for cropland expansion, Nature Communications,
   6, \doi{10.1038/ncomms9946}, 2015.
 
+\bibitem[{Minoli et~al.(2019)Minoli, Müller, Elliott, Ruane, Jägermeyr,
+  Zabel, Dury, Folberth, François, Hank, Jacquemin, Liu, Olin, and
+  Pugh}]{minoli2019adaptation}
+Minoli, S., Müller, C., Elliott, J., Ruane, A.~C., Jägermeyr, J., Zabel, F.,
+  Dury, M., Folberth, C., François, L., Hank, T., Jacquemin, I., Liu, W.,
+  Olin, S., and Pugh, T.~A.: Global response patterns of major rainfed crops to
+  adaptation by maintaining current growing periods and irrigation, Earth's
+  Future, 0, \doi{10.1029/2018EF001130},
+  \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EF001130},
+  2019.
+
 \bibitem[{Mistry et~al.(2017)Mistry, Wing, and De~Cian}]{Mistry2017}
 Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
   responsiveness of crop yields: {U}{S} evidence and implications for the
@@ -456,12 +418,6 @@ Pirttioja, N., Carter, T., Fronzek, S., Bindi, M., Hoffmann, H., Palosuo, T.,
   model ensemble analysis using impact response surfaces, Climate Research, 65,
   87--105, \doi{10.3354/cr01322}, 2015.
 
-\bibitem[{Poppick et~al.(2016)Poppick, McInerney, Moyer, and
-  Stein}]{poppick2016}
-Poppick, A., McInerney, D.~J., Moyer, E.~J., and Stein, M.~L.: Temperatures in
-  transient climates: Improved methods for simulations with evolving temporal
-  covariances, Ann. Appl. Stat., 10, 477--505, \doi{10.1214/16-AOAS903}, 2016.
-
 \bibitem[{Portmann et~al.(2010)Portmann, Siebert, and Doell}]{Portmann2010}
 Portmann, F., Siebert, S., and Doell, P.: {MIRCA}2000 - {G}lobal {M}onthly
   {I}rrigated and {R}ainfed Crop {A}reas around the {Y}ear 2000: {A} {N}ew
@@ -495,9 +451,12 @@ Razavi, S., Tolson, B.~A., and Burn, D.~H.: Review of surrogate modeling in
   water resources, Water Resources Research, 48, \doi{10.1029/2011WR011527},
   2012.
 
-\bibitem[{Riahi and Nakicenovic(2007)}]{Riahi2007}
-Riahi, K. and Nakicenovic, N.~e.: Greenhouse Gases - Integrated Assessment,
-  Technological Forecasting and Social Change, Special Issue, 2007.
+\bibitem[{Riahi et~al.(2011)Riahi, Rao, Krey, Cho, Chirkov, Fischer,
+  Kindermann, Nakicenovic, and Rafaj}]{riahi2011rcp}
+Riahi, K., Rao, S., Krey, V., Cho, C., Chirkov, V., Fischer, G., Kindermann,
+  G., Nakicenovic, N., and Rafaj, P.: RCP 8.5—A scenario of comparatively
+  high greenhouse gas emissions, Climatic Change, 109, 33,
+  \doi{10.1007/s10584-011-0149-y}, 2011.
 
 \bibitem[{Roberts et~al.(2017)Roberts, Braun, R~Sinclair, B~Lobell, and
   Schlenker}]{Roberts2017}
@@ -581,13 +540,6 @@ Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   damages to {U}.{S}. crop yields under climate change, Proceedings of the
   National Academy of Sciences, 106, 15\,594--15\,598,
   \doi{10.1073/pnas.0906865106}, 2009.
-
-\bibitem[{Sippel et~al.(2015)Sippel, Zscheischler, Heimann, Otto, Peters, and
-  Mahecha}]{Sippel2015}
-Sippel, S., Zscheischler, J., Heimann, M., Otto, F. E.~L., Peters, J., and
-  Mahecha, M.~D.: Quantifying changes in climate variability and extremes:
-  Pitfalls and their overcoming, Geophysical Research Letters, 42, 9990--9998,
-  \doi{10.1002/2015GL066307}, 2015.
 
 \bibitem[{Snyder et~al.(2019)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
 Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
