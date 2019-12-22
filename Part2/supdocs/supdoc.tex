@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
@@ -27,8 +27,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\centering{\bf {\large Supplemental Material} \\
-{\Large The GGCMI phase II emulators: global gridded crop model responses to changes in CO$_2$, temperature, water, and nitrogen (version 1.0)}}\\
+
+\centering{
+\bf {\large Supplemental Material} \\
+{\Large The GGCMI phase II emulators: global gridded crop model responses to changes in CO$_2$, temperature, water, and nitrogen (version 1.0)}
+}\\
 
 \vspace{3mm}
 
@@ -80,6 +83,7 @@ and Elisabeth Moyer$^{1, 2}$
 {\footnotesize 18. School of Geography, Earth and Environmental Sciences, University of Birmingham, Birmingham, UK.}  \\
 {\footnotesize 19. Birmingham Institute of Forest Research, University of Birmingham, Birmingham, UK.} \\
 }
+
 \tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,14 +137,13 @@ and Elisabeth Moyer$^{1, 2}$
   \centering
   \includegraphics[width = 16.3cm]{tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png}
   \caption{
-	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. Heatmap shows the ratio in standard deviation in temperature compared to preindustrial values, using 30-year detrended timeseries from \textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.   
+	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. Heatmap shows the ratio in standard deviation in temperature compared to preindustrial values, using 30-year detrended timeseries from for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.   
    Climate model disagreement about changes in variability is substantial, though most project slight increases during summer. The HadCM3 model, used later in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa.
   }
 	% XX EJM - need more numbers here, and should ideally change the plot so that the Pacific is not centered - instead center on land and cut the Pacific in half. If Ziwei cannot do this before submission time, OK to do it later.
 	% HadCML has decreases in variability over N. America and Europe; would be  best to try again with another climate model - again can do after submission but be prepared to defend your assertions. It could be that the rice differences are because rice is grown in the places where varaibility increases
   \label{fig:lpjmlrcp}
 \end{figure}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,11 +181,13 @@ This section shows parallel figures to the main text for A1 simulations. Tempera
 
 \clearpage
 \section{Normalized error for other cases}
+\begin{flushleft}
 In manuscript Figure 7 we show normalized error for the A0 emulators over all rainfed crops, models, and T and W values for 
 baseline CO$_2$ and nitrogen levels (360 ppm and 200 kg ha-1). Here we show normalized error for the A0 emulators of rainfed crops at higher CO$_2$ (Figure S6), for the A1 emulators of rainfed crops at baseline values (Figure S7), and for the A0 emulators of irrigated crops at 
 baseline values (Figure S8). 
 Results are generally similar, except normalized errors at higher CO$_2$ are generally lower because model disagreement is larger, and some model emulators for irrigation water demand are under-performing (LPJ-GUESS and CARAIB for some crops).
 A1 errors are similar to A0 errors across crops and models with a few exceptions: LPJmL rice, pDSSAT spring wheat, and PROMET winter wheat.
+\end{flushleft}
 
 \begin{figure}[h!]
   \centering
@@ -214,7 +219,13 @@ A1 errors are similar to A0 errors across crops and models with a few exceptions
 \end{figure}
 
 \clearpage
-\section{Comparison to transient climate run simulation}
+\section{Comparison to transient climate run simulation at high latitude}
+\begin{flushleft}
+We test the emulator against crop model simulations driven by a transient climate run (which contains some variability changes) at high latitude to gage the impact in variability changes that are not captured by the emulator. 
+High latitudes are isolated here in contrast to Figure 9 in the main text because changes in variability are thought to matter most in this region.
+Changes in variability are matter little for all crops except rice north of 30N latitude. Very little rice is grown in the higher latitudes (20\% north of 30N and 1\% north of 45N).
+\end{flushleft}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{LPJMLRCP85comp_30N.png}
@@ -226,7 +237,10 @@ A1 errors are similar to A0 errors across crops and models with a few exceptions
 
 \clearpage
 \section{Emulator products}
+\begin{flushleft}
 In this section we present some additional emulator products to illustrate potential emulator applications. 
+\end{flushleft}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{em_CTWN_all_crops_color.png}
@@ -252,7 +266,7 @@ In this section we present some additional emulator products to illustrate poten
   \centering
   \includegraphics[width = 16.3cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png}
   \caption{
-	  Illustration of the factors affecting yields in more realistic climate scenarios for \textcolor{red}{rainfed} spring wheat. Conventions as in  main text Figure 11. Large emulator errors in PROMET spring wheat temperature response (panel \textbf{a}, compare open squares to line) are driven by Southern China, where discontinuities in yield responses make emulation problematic. (See Figure in Supplmental Material Section S10).
+	  Illustration of the factors affecting yields in more realistic climate scenarios for rainfed and irrigated (current mix) spring wheat. Conventions as in  main text Figure 11. Large emulator errors in PROMET spring wheat temperature response (panel \textbf{a}, compare open squares to line) are driven by Southern China, where discontinuities in yield responses make emulation problematic. (See Figure in Supplmental Material Section S10).
 	  }
 \end{figure}
 
@@ -260,7 +274,7 @@ In this section we present some additional emulator products to illustrate poten
   \centering
   \includegraphics[width = 16.3cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png}
   \caption{
-	  Illustration of the factors affecting yields in more realistic climate scenarios for \textcolor{red}{rainfed} soy. Conventions as in main text Figure 11. The split in PROMET soybean temperature response (panel \textbf{a}, note distinct groups of points) results from the model's sensitivity to differences in spatial patterns of temperature change across climate models. 
+	  Illustration of the factors affecting yields in more realistic climate scenarios for rainfed and irrigated (current mix) soy. Conventions as in main text Figure 11. The split in PROMET soybean temperature response (panel \textbf{a}, note distinct groups of points) results from the model's sensitivity to differences in spatial patterns of temperature change across climate models. 
   }
 \end{figure}
 
@@ -367,6 +381,9 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
 
 \clearpage
 \section{Yield Responses for other crops and models}
+\begin{flushleft}
+We present some additional yield response spatial patterns for other crops for the LPJmL model and for pDSSAT for maize for reference. 
+\end{flushleft}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{lpjml_grid.png}
@@ -386,7 +403,9 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
 
 \clearpage
 \section{Normalized Error for all models}
+\begin{flushleft}
 In this section we present maps of normalized error $e$ with the same convention as Figure 8 in the main text for all models for completeness. 
+\end{flushleft}
 
 \begin{figure}[h!]
   \centering
@@ -435,7 +454,9 @@ In this section we present maps of normalized error $e$ with the same convention
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Cross validation error for all models}
-In this section we present maps of cross validation error (values found in main text Table 3). Errors are generally low as a percentage of yield change in each grid cell.
+\begin{flushleft}
+In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell. Errors can be above 10\% of yield change for the out-of-sample test foe
+\end{flushleft}
 
 \begin{figure}[h!]
   \centering
