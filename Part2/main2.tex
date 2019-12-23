@@ -707,32 +707,36 @@ Note that the pattern-related yield effects are actually relatively small for ma
 % Alexander
 \section{Discussion and conclusions} 
 \label{S:6}
-In this work we describe a new class of global gridded crop model emulators for 5 crops (maize, soy, rice and spring and winter wheat) for 9 process-based crop models, based on the  GGCMI Phase II dataset.
-The systematic parameter sampling of the GGCMI Phase II experiment allows emulating climatological-mean crop yield responses with a relatively simple statistical model.
-The sampling provides information on the influence of multiple interacting factors in a way that realistic climate model simulations cannot, and allows isolating long-term impacts from confounding factors that lead to different year-over-year responses. 
-The use of a parametric statistical model in turn offers the possibility of physical interpretation of parameter values that can assist in model intercomparison and evaluation. 
-We show that the polynomial emulation of the mean-climatological response is feasible, with out of sample prediction errors less than 5\% of yield changes both regionally and at the global scale.
+In this work we describe a new class of global gridded crop model emulators for 5 crops (maize, soy, rice and spring and winter wheat) and 9 process-based crop models, based on the  GGCMI Phase II dataset.
+The systematic parameter sampling of the GGCMI Phase II experiment allows emulating climatological-mean crop yield responses with a relatively simple statistical model and isolating long-term impacts from confounding factors that lead to different year-over-year responses. Across all models, emulation errors over currently cultivated land never exceed 5\% of yield changes at either global or regional scale. 
+The systematic sampling provides information on the influence of multiple interacting factors in a way that realistic climate model simulations cannot, and the use of a parametric statistical model allows physical interpretation of parameter values. While emulators based on the GGCMI Phase II protocol of uniform perturbations to historical climate will not reproduce any effects of changing variability in futre climate projections (any temperature variability changes or precipitation variability changes other than multiplicative mean shifts), in practice these effects appear to be small, at least on the regionally aggregated level. 
+% XX maybe leave this out as too long... In an exercise with the LPJmL model run over a realistic climate scenario, simulated and emulated crop yields match to within 1.5\%.  These results suggest that emulation based on a structured uniform-perturbation experiment can provide a powerful tool for diagnosing factors driving future crop yield changes in process-based crop models. %Emulators provide a lightweight, flexible tool for both model diagnosis and impacts assessments.
 
-Finally, we show that emulation based on uniform climate shifts is able to sufficiently reproduce the response of a crop model driven by a more realistic climate scenario at the global scale, with some relatively minor errors for rice at high latitudes.
-Excellent agreement between emulation and simulation at the temporally aggregate timescale shows the value of the emulator as an impacts assessment tool.
-The emulator can be used to develop standalone damage functions at any geographic scale bigger that 0.5 degree, as a proxy for crop model sensitivity testing, or integrated directly into a larger IAM framework. 
-The yield output for a single GGCMI Phase II model that simulates all scenarios and all five crops is $\sim$12.5 GB; the emulator is $\sim$20 MB, a reduction of nearly three orders of magnitude.
-One-thousand years of global 0.5 degree yields (appropriately 40,000 grid cell locations) can be emulated in 20 seconds on a laptop computer. 
+%, we show that emulation based on uniform climate shifts is able to sufficiently reproduce the response of a crop model driven by a more realistic climate scenario at the global scale, with some relatively minor errors for rice at high latitudes.
+%Excellent agreement between emulation and simulation at the temporally aggregate timescale shows the value of the emulator as an impacts assessment tool.
 
-Several cautions should be noted when using the emulator. 
-While the emulator allows estimating agricultural impacts under arbitrary climate scenarios, extrapolation outside the sample space should be avoided. 
-Emulators by design reduce the complexity of process-based simulations and can thus deviate from the raw simulation output. 
-Deviations from the simulation are especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
-Additionally, because the simulation protocol was designed to focus on change in yield under climate perturbations and not on replicating real-world yields, the models are not formally calibrated so they should not be used for impacts projections of absolute yields except in conjunction with historical yield information. 
-Finally, because the GGCMI Phase II simulations apply uniform perturbations to historical climate inputs, they do not sample potential changes in climate variability, which appear to be relatively small for most crops at the global scale, may be important for some crops at high latitude locations and where crops are not currently cultivated. 
+%providing a lightweight, flexible tool The use of a parametric statistical model in turn offers the possibility of physical interpretation of parameter values that can assist in model intercomparison and evaluation. 
+%We show that the polynomial emulation of the mean-climatological response is feasible, with out of sample prediction errors less than 5\% of yield changes both regionally and at the global scale.
+
+Emulators provide powerful tools for both model comparison and impacts assessments by capturing the responses of process-based crop models in a lightweight form. The emulators provide over three orders of magnitude reduction in data storage: the yield output for a single crop model that simulates all GGCMIP Phase II scenarios for 5 crops is $\sim$12.5 GB; equivalent global gridded emulator parameters are only $\sim$20 MB and allow emulation of arbitrary future scenarios. Computational requirements are nearly negligible: a thousand years of global 0.5 degree yields, i.e\ $\sim$40,000 individual yield projections, can be emulated in 20 seconds on a laptop computer. 
+The emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. 
+
+Several cautions should be noted when using the emulators presented here. 
+First, extrapolation outside the GGCMI Phase II sample space should be avoided; we have not formally tested the utility of these functional forms in extrapolating beyond a training set. % extrapolation is unwise in general, and we have not formally tested the utility of these functional forms in predictions made outside the range of a training set. 
+%Emulators by design reduce the complexity of process-based simulations and can thus deviate from the raw simulation output. 
+%Deviations from the simulation are especially prominent in models with limited sampling or in geographic regions outside the current cultivated area.
+Second, while the emulators are valuable for understanding the shape of yield responses and the factors that drive them, the absolute values of emulated yields should be treated with caution. Because the GGCMI Phase II simulation protocol was designed to focus on changes in yield and not on replicating real-world yields, most models are not formally calibrated, and their
+emulators should be used for absolute impacts projections only in combination with historical yield data. 
 %Becasue such changes are uncertain and remain poorly characterized in climate models and crop models %\citep[e.g.][]{Alexande2006, Kodra2014}
-Follow-up experiments may wish to focus of the impacts of variability changes by testing crop models on specified variability changes in temperature and precipitation in a fashion similar to GGCMI phase II. 
+
+%Follow-up experiments may wish to focus of the impacts of variability changes by testing crop models on specified variability changes in temperature and precipitation in a fashion similar to GGCMI phase II. 
 %Several recent studies have described procedures for generating simulations that combine historical data with model projections of changes in the marginal distributions or temporal dependence of temperature and precipitation \citep[e.g.][]{Leeds2015, poppick2016, Won16, Haugen2018}.
 
-The GGCMI Phase II dataset and emulators invite a broad range of potential future avenues of analysis, especially because emulation allows statistical distillation of the large dataset (40 billion simulated yields) into a tractable form. 
-Potential studies might include a detailed examination of interaction terms between the major input drivers, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes or variability, and evaluation of geographic shifts in optimal growing regions. 
-The dataset also enables studies of emulation itself, including a more systematic evaluation of different statistical and machine learning model specifications.
-In general, the development of multi-model ensembles involving systematic parameters sweeps has large promise for better understanding potential future crop responses and for improving process-based crop models.
+The GGCMI Phase II dataset and emulators invite a broad range of potential future avenues of analysis. %, especially because emulation allows distillation of the large dataset into a tractable form. 
+Potential future studies could include a detailed examination of interaction terms, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes or interannual variability, and evaluation of geographic shifts in optimal growing regions. 
+Studies of yield responses to changes in growing-season variability would require new simulations, but the GGCMI Phase II emulators provide a ready means of testing the null hypothesis that such effects are small. Similar structured training sets could be constructed to directly study responses to variability changes: see e.g.\ \citet{poppick2016, Haugen2018} for methods of constructing synthetic climate timeseries with altered variability. 
+The GGCMI Phase II dataset also enables studies of emulation itself, including more systematic evaluation of statistical model specifications or machine learning methods. 
+In general, the GGCMI Phase II experiment demonstrates the promise and utility of systematic parameters sweeps for improving understanding of the factors driving crop responses and for evaluating and improving process-based crop models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \codedataavailability{The polynomial emulator parameter matrices for all crop model emulators are available at {doi.org/XXXXX}}
