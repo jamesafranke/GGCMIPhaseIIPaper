@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 DEC 2019 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 DEC 2019 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,67 +1236,63 @@ vari-abil-ity ap-pli-ca-tions, Agri-cul-tural Sys-tems, 65, 43 -- 72,
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 183--187
+Underfull \hbox (badness 1490) in paragraph at lines 189--193
 \T1/ptm/m/n/9 A spa-tiotem-po-ral em-u-la-tor of fu-ture cli-mate change for im
 -pacts as-sess-ment, Geo-sci-en-tific Model De-vel-op-ment, 7, 433--451,
  []
 
 [27]
-Underfull \hbox (badness 1147) in paragraph at lines 269--273
+Underfull \hbox (badness 1147) in paragraph at lines 275--279
 []\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., A
 b-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 269--273
+Underfull \hbox (badness 1424) in paragraph at lines 275--279
 \T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti
 -va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
  []
 
 [28]
-Underfull \hbox (badness 1292) in paragraph at lines 422--427
+Underfull \hbox (badness 1292) in paragraph at lines 434--439
 \T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-
 i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
  []
 
 [29]
-Underfull \hbox (badness 1005) in paragraph at lines 450--453
+Underfull \hbox (badness 1005) in paragraph at lines 462--465
 []\T1/ptm/m/n/9 Razavi, S., Tol-son, B. A., and Burn, D. H.: Re-view of sur-ro-
 gate mod-el-ing in wa-ter re-sources, Wa-ter Re-sources Re-search, 48,
  []
 
 [30]
-Underfull \hbox (badness 3735) in paragraph at lines 583--587
+Underfull \hbox (badness 3735) in paragraph at lines 595--599
 []\T1/ptm/m/n/9 Warszawski, L., Frieler, K., Hu-ber, V., Pi-o-ntek, F., Serdecz
 ny, O., and Schewe, J.: The Inter-Sectoral Im-pact Model In-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 583--587
+Underfull \hbox (badness 2707) in paragraph at lines 595--599
 \T1/ptm/m/n/9 ter-com-par-i-son Project (ISI^^UMIP): Project frame-work, Pro-ce
 ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
  []
 
 ) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 769.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 769.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 776.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 776.
  (./main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 769.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 769.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 769.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 776.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 776.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 776.
  ) 
 Here is how much of TeX's memory you used:
- 10836 strings out of 492995
- 153222 string characters out of 6132704
- 319690 words of memory out of 5000000
- 14012 multiletter control sequences out of 15000+600000
+ 10840 strings out of 492995
+ 153278 string characters out of 6132704
+ 319678 words of memory out of 5000000
+ 14014 multiletter control sequences out of 15000+600000
  48730 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,2366b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,40p,2366b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1315,10 +1311,10 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main2.pdf (31 pages, 7860678 bytes).
+Output written on main2.pdf (31 pages, 7861950 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
- 150 named destinations out of 1000 (max. 500000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 674 compressed objects within 7 object streams
+ 152 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
