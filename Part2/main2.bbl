@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -168,6 +168,12 @@ Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
 Hansen, J. and Jones, J.: Scaling-up crop models for climate variability
   applications, Agricultural Systems, 65, 43 -- 72,
   \doi{10.1016/S0308-521X(00)00025-1}, 2000.
+
+\bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
+Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
+  temperature distributions in a large ensemble of climate simulations using
+  quantile regression, Journal of Climate, 31, 8573--8588,
+  \doi{10.1175/JCLI-D-17-0782.1}, 2018.
 
 \bibitem[{He et~al.(2016)He, Yang, Zhou, Drury, Yang, D.~Reynolds, Wang, He,
   and Li}]{He2016}
@@ -417,6 +423,12 @@ Pirttioja, N., Carter, T., Fronzek, S., Bindi, M., Hoffmann, H., Palosuo, T.,
   precipitation effects on wheat yield across a {E}uropean transect: a crop
   model ensemble analysis using impact response surfaces, Climate Research, 65,
   87--105, \doi{10.3354/cr01322}, 2015.
+
+\bibitem[{Poppick et~al.(2016)Poppick, McInerney, Moyer, and
+  Stein}]{poppick2016}
+Poppick, A., McInerney, D.~J., Moyer, E.~J., and Stein, M.~L.: Temperatures in
+  transient climates: Improved methods for simulations with evolving temporal
+  covariances, Ann. Appl. Stat., 10, 477--505, \doi{10.1214/16-AOAS903}, 2016.
 
 \bibitem[{Portmann et~al.(2010)Portmann, Siebert, and Doell}]{Portmann2010}
 Portmann, F., Siebert, S., and Doell, P.: {MIRCA}2000 - {G}lobal {M}onthly
