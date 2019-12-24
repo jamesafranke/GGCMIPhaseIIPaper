@@ -95,17 +95,17 @@ and Elisabeth Moyer$^{1, 2}$
 
 \section{Experiment simulation sampling in variable space}
 \begin{flushleft}
-Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. We compare models against each other for simulation levels where all 9 models provided simulations. 
+	Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. Figure \ref{fig:numbersims} compares sampling density in the models used in the emulator analysis. 
 \end{flushleft}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{s_how_many_simulations.png}
   \caption{
-  Heatmap illustrates number of model simulations provided for each of the scenarios in the variable space. 
-  The maximum number is 9, the number of models included in the emulator analysis (excluding three models not included in the emulator analysis). 
-  Normalized error calculations are run over scenarios with maximum number of models.
-  Black boxes are the ``baseline'' cases for rainfed and irrigated simulations.
+  Heatmap illustrating the number of model simulations provided for each of the scenarios in CTWN variable space. 
+  The maximum number is 9, the number of models included in the emulator analysis. (That is, we exclude here the three GGCMI Phase II models not included in the emulator analysis.) 
+  Black boxes mark the ``baseline'' cases for rainfed and irrigated simulations.
+	Normalized error calculations are run only over scenarios in which 9 models contribute simulations (pink boxes).
   }
   \label{fig:numbersims}
 \end{figure}
@@ -119,10 +119,10 @@ Simulation sampling across the defined variable space is not uniform tn the GGCM
     \vspace{0pt}
     \includegraphics[width=\textwidth]{s_croparea_irr.png}\\
     \caption{
-    Presently cultivated area for irrigated crops in the real world. 
-    The blue contour area indicates grid-cells with more that 20,00 hectares of crop cultivated. 
-    The gray contour shows area with more that 10 hectares cultivated. Data from the MIRCA2000 data set for maize, rice, and soy. 
-    Winter and spring wheat areas are adapted from MIRCA2000 data and sorted by growing season
+	    Presently cultivated area in the real world for irrigated (left) and rainfed (right) crops, from the MIRCA2000 dataset \citep{Portmann2010}. 
+    Blue areas show grid-cells with more that 20,00 hectares of crop cultivated, and 
+    gray areas those with more that 10 hectares cultivated. Data are taken directly from the MIRCA2000 dataset  for maize, rice, and soy. 
+    Winter and spring wheat areas are adapted from MIRCA2000 and sorted by growing season.
     }
     \label{fig:irrarea}
 \end{minipage}
@@ -132,7 +132,7 @@ Simulation sampling across the defined variable space is not uniform tn the GGCM
     \centering
     \vspace{-19mm}
     \includegraphics[width=\textwidth]{s_croparea.png}\\
-    \caption{Presently cultivated area for rainfed crops in the real world. Conventions as in Figure S1.}
+    \caption{XX.}
     \label{fig:rainfed}
 \end{minipage}
 \end{figure}
@@ -140,22 +140,22 @@ Simulation sampling across the defined variable space is not uniform tn the GGCM
 \clearpage
 \section{Variability changes in future climate projections}
 \begin{flushleft}
-The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields from changes in variability would decrease the effectiveness of the emulator.
-In this section we show some examples of the changes in variability across climate model projections. We utilize the HadCM model for our evaluation of this impact.
-Climate models disagree about changes in variability.
+The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields driven by changing variability would decrease the practical utility of the emulator for impacts assessments.
+Figure \ref{fig:var} shows examples of changes in variability across representative climate model in the CMIP-5 archive. We use the HadGEM2 model for assessing the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections.
 \end{flushleft}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png}
   \caption{
-	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. The heatmap shows the ratio in standard deviation in temperature compared to preindustrial values, using 30-year detrended timeseries from for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.
+	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. The heatmap shows the ratio in standard deviation in temperature  relative to preindustrial, using 30-year detrended timeseries \textcolor{red}{for future, XX-XX years after the forcing change}, for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.
     Blue indicates a decrease in variability and red an increase.
-   Climate model disagreement about changes in variability is substantial, though most project slight increases during summer. The HadCM3 model, used later in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa.
+   Climate models disagree about changes in variability, though most project slight increases during summer. The HadGEM2 model, used in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa. 
+	\textcolor{red}{HadGEM2}.
   }
 	% XX EJM - need more numbers here, and should ideally change the plot so that the Pacific is not centered - instead center on land and cut the Pacific in half. If Ziwei cannot do this before submission time, OK to do it later.
 	% HadCML has decreases in variability over N. America and Europe; would be  best to try again with another climate model - again can do after submission but be prepared to defend your assertions. It could be that the rice differences are because rice is grown in the places where varaibility increases
-  \label{fig:lpjmlrcp}
+  \label{fig:var}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,7 +164,7 @@ Climate models disagree about changes in variability.
 \clearpage
 \section{Yield response for A1 (growing season adaptation) simulations}
 \begin{flushleft}
-This section shows parallel figures to the main text for A1 simulations. Temperature responses are less for A1 simulation compared to A0 simulations because growing seasons are modified under warming via genetics in the A1 simulations.
+	This section shows illustrations of emulator ability to capture yield changes in A1 simulations; compare to main text Figures 5 and 6 showing A0 simulations. Responses to CWN factors are similar in both but responses to T are substantially weaker in A1simulations, in which growing season length does not contract in warmer future conditions.
 \end{flushleft}
 
 \begin{figure}[h!]
@@ -198,18 +198,20 @@ This section shows parallel figures to the main text for A1 simulations. Tempera
 \section{Normalized error for other cases}
 \begin{flushleft}
 In manuscript Figure 7 we show normalized error for the A0 emulators over all rainfed crops, models, and T and W values for 
-baseline CO$_2$ and nitrogen levels (360 ppm and 200 kg ha-1). Here we show normalized error for the A0 emulators of rainfed crops at higher CO$_2$ (Figure S6), for the A1 emulators of rainfed crops at baseline values (Figure S7), and for the A0 emulators of irrigated crops at 
-baseline values (Figure S8). 
-Results are generally similar, except normalized errors at higher CO$_2$ are generally lower because model disagreement is larger, and some model emulators for irrigation water demand are under-performing (LPJ-GUESS and CARAIB for some crops).
-A1 errors are similar to A0 errors across crops and models with a few exceptions: LPJmL rice, pDSSAT spring wheat, and PROMET winter wheat.
+	baseline CO$_2$ and nitrogen levels (360 ppm and 200 kg ha-1). Here we show normalized error in some alternate cases for comparison: \textit{Figure S6:} A0 emulators of rainfed crops at higher CO$_2$, \textit{Figure S7:} A1 emulators of rainfed crops at baseline values, \textit{Figure S8):} A0 emulators of irrigated crops at 
+baseline values. 
+Results are generally similar, with a few exceptions. Normalized errors at higher CO$_2$ are generally lower because model disagreement is larger, lowering the denominator. Some model emulators for irrigation water demand are under-performing: LPJ-GUESS and CARAIB for some crops.
+A1 errors are larger than A0 errors for several crops and models: LPJmL rice, pDSSAT spring wheat, and PROMET winter wheat.
 \end{flushleft}
+
+\vspace{1in}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=15.5cm]{error_grid_810.png}
   \caption{
-  The fraction of currently cultivated hectares with normalized emulation error less than 1 for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. 
-  Figure convention is as in main text Figure 7.
+  Fraction of currently cultivated hectares with normalized emulation error less than 1 for the CO$_2$=810 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case for the temperature and precipitation perturbations scenarios provided by all 9 models included in the emulator analysis. 
+  Figure convention as in main text Figure 7.
   The yield response is generally easy to emulate over currently cultivated areas (black regions).
   }
   \label{fig:error810}
@@ -219,7 +221,7 @@ A1 errors are similar to A0 errors across crops and models with a few exceptions
   \centering
   \includegraphics[width=15.5cm]{error_grid_360_cultivated_A1.png}
   \caption{
-  The fraction of currently cultivated hectares with normalized emulation error less than 1 for A1 yield emulation for CO$_2$=310 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case. Figure convention is the same as main text Figure 7.
+  Fraction of currently cultivated hectares with normalized emulation error less than 1 for A1 yield emulation for CO$_2$=310 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case. Figure convention as in main text Figure 7.
   }
   \label{fig:error810}
 \end{figure}
@@ -228,7 +230,7 @@ A1 errors are similar to A0 errors across crops and models with a few exceptions
   \centering
   \includegraphics[width=15.5cm]{error_grid_360_cultivated_IWD.png}
   \caption{
-  The fraction of currently cultivated hectares with normalized emulation error less than 1 for irrigated water demand emulation for CO$_2$=310 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case. Figure convention is the same as main text Figure 7.
+  Fraction of currently cultivated hectares with normalized emulation error less than 1 for irrigated water demand emulation for CO$_2$=310 ppm and 200 kg~N ha$^{-1}$ yr$^{-1}$ case. Figure convention as in main text Figure 7.
   }
   \label{fig:error810}
 \end{figure}
@@ -236,31 +238,32 @@ A1 errors are similar to A0 errors across crops and models with a few exceptions
 \clearpage
 \section{Comparison to transient climate run simulation at high latitude}
 \begin{flushleft}
-We test the emulator against crop model simulations driven by a transient climate run (which contains some variability changes) at high latitude to gage the impact in variability changes that are not captured by the emulator. 
-High latitudes are isolated here in contrast to Figure 9 in the main text because changes in variability are thought to matter most in this region.
-Changes in variability are matter little for all crops except rice north of 30N latitude. Very little rice is grown in the higher latitudes (20\% north of 30N and 1\% north of 45N).
+In manuscript Section 4.3 we test the emulator against crop model simulations driven by a more realistic future climate projection to evaluate the impact of future variability changes that are not captured by the emulator. 
+	Figure \ref{fig:lpjmlrcp} below isolates the mid- and high latitudes; compare to manuscript Figure 9 that shows global currently cultivated land. 
+	Results are generally unchanged by the restriction in latitude except for rice, which is typically grown in tropics and subtropics: 20\% of global rice production is grown north of 30N and 1\% north of 45N, with even less in the Southern hemisphere, only 0.8\%  south of 30S and none south of 45S.
 \end{flushleft}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{LPJMLRCP85comp_30N.png}
   \caption{
-  Illustration of the ability of the emulator to capture an RCP simulation, again for the HadCM model, for crops north of 30N latitude. Figure convention is the same as main text Figure 9.
-  }
+  Illustration of the ability of the emulator to capture a more realistic future climate simulation, as in main text Figure 9 but here restricted to latitudes north of 30N.}
   \label{fig:lpjmlrcp}
 \end{figure}
 
 \clearpage
 \section{Emulator products}
 \begin{flushleft}
-In this section we present some additional emulator products to illustrate potential emulator applications. 
+This section amplifies on manuscript Section 5 with additional figures analogout to manuscript Figures 10 and 11. 
 \end{flushleft}
+
+\vspace{0.3in}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{em_CTWN_all_crops_color.png}
   \caption{
-  Same as main text Figure 10 except now each model is shown in color.
+	  As in main text Figure 10 except now each model is shown in color. Not all models simulate every crop (JULES does not simulate winter wheat, and LPJ-GUESS does not simulate rice or soy) and three do not simulate the N response (CARAIB, JULES, and PROMET). For crops simulated, JULES and LPJ-GUES are often the outliers in strong CO$_2$ responses. LPJmL has the weakest N response for all crops, and pDSSAT has the strongest T response for maize.  
   }
   \label{fig:all_dims}
 \end{figure}
@@ -269,8 +272,7 @@ In this section we present some additional emulator products to illustrate poten
   \centering
   \includegraphics[width = 16.3cm]{em_CTWN_all_crops_A1.png}
   \caption{
-  Emulated damage functions for rainfed crops for A1 (growing season adaptation) simulations. Note: JULES does not provide A1 simulations. Same convention as main text Figure 10.
-  Temperature responses are generally flatter than for A0 simulations.
+  Emulated damage functions for rainfed crops for A1 (growing season adaptation) simulations, with conventions as in main text Figure 10 showing A0.  Temperature responses are generally flatter than for A0 simulations, but responses to other factors are similar.  Note that JULES does not provide A1 simulations. 
   }
   \label{fig:all_dims}
 \end{figure}
@@ -281,7 +283,7 @@ In this section we present some additional emulator products to illustrate poten
   \centering
   \includegraphics[width = 16.3cm]{LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png}
   \caption{
-	  Illustration of the factors affecting yields in more realistic climate scenarios for rainfed and irrigated (current mix) spring wheat. Conventions as in  main text Figure 11. Large emulator errors in PROMET spring wheat temperature response (panel \textbf{a}, compare open squares to line) are driven by Southern China, where discontinuities in yield responses make emulation problematic. (See Figure in Supplemental Material Section S11).
+	  Illustration of the factors affecting yields in more realistic climate scenarios for rainfed and irrigated (current mix) spring wheat. Conventions as in  main text Figure 11. Large emulator errors in PROMET spring wheat temperature response (panel \textbf{a}, compare open squares to line) are driven by Southern China, where discontinuities in yield responses make emulation problematic. (See Supplemental Material Section S11).
 	  }
 \end{figure}
 
@@ -297,42 +299,44 @@ In this section we present some additional emulator products to illustrate poten
 \section{Reduced specification (23-term) emulator examples}
 \smallskip
 \begin{flushleft}
-In this section we present parallel figures for the reduced-form emulator (23-term) for reference. 
+In this section we present analogous figures to those in the main text for the reduced-form (23-term) emulator. 
 Issues with the reduced-form model are most prominent in PROMET for rice and soy, and JULES soy and spring wheat. 
-Some potential causes behind this difference in ease of emulation are as follows.
-First, we do not emulate PROMET or JULES in the nitrogen dimension (CARAIB is the other model that does not do N). 
-Both JULES and PROMET models are land system process models, originally developed with a broad focus, and have relatively recently (2015) been adapted for managed vegetation (i.e. agriculture).
-PROMET is the most sensitive model of all the models for rice in C, T, and W. 
-PROMET is the quantitatively lowest performing model for soybeans when compared to the historical FAO data for the top 10 producing countries. 
-JULES is the most sensitive model of all the models for soybeans in C, T, and W. 
-For spring wheat, JULES is a high outlier in C, the most sensitive model in W and T, and shows an extra inflection point in the global temperature response not seen in any of the other models.
+We identify several potential factors that may in some way contribute to these models showing qualitatively different responses that require additional terms for emulation.
+	\begin{itemize}
+		\item PROMET and JULES do not allow nitrogen variation. (However, CARAIB also cannot vary N and is readily emulatable with the 23-term specification.) 
+		\item Both JULES and PROMET models are land system process models, originally developed with a broad focus, which have been adapted for managed vegetation (agriculture) only recently (2015). (CARAIB, by contrast, was originally developed as a vegetation model in the early 90's and has a longer history of agricultural focus.)
+		\item Both PROMET and JULES have anomalously strong responses to individual factors in those crops problematic to emulate. PROMET is the most sensitive model of all the models for rice in C, T, and W, and JULES for soybeans in C, T, and W. For spring wheat, JULES is a high outlier in C, the most sensitive model in W and T, and shows an extra inflection point in the global temperature response not seen in any of the other models.
+		\item PROMET is the quantitatively lowest-performing model for soybeans when compared to the historical FAO data for the top 10 producing countries. 
+		\end{itemize}
 \end{flushleft}
-\smallskip
-\begin{flushleft}
-CARAIB on the other hand (the other model that does not simulate different levels of nitrogen), was originally developed as a vegetation model in the early 90's and has a longer history of agricultural focus. It is the least sensitive model in T for rice and spring wheat, and is nearest to the ensemble mean in maize and winter wheat. 
-In W, it is the least sensitive model for maize, and the wheats, the second least sensitive model for soybeans, and nearest to the ensemble mean for rice. 
-For C, it is the nearest to the ensemble mean for the wheats and soy and unremarkable for rice. 
-However, CARAIB is the most sensitive model for maize in the C dimension (though this is relatively less sensitive than most other responses for other models the other crops).
-\end{flushleft}
+%\smallskip
+%\begin{flushleft}
+%CARAIB on the other hand (the other model that does not simulate different levels of nitrogen), was originally developed as a vegetation model in the early 90's and has a longer history of agricultural focus. It is the least sensitive model in T for rice and spring wheat, and is nearest to the ensemble mean in maize and winter wheat. 
+%In W, it is the least sensitive model for maize, and the wheats, the second least sensitive model for soybeans, and nearest to the ensemble mean for rice. 
+%For C, it is the nearest to the ensemble mean for the wheats and soy and unremarkable for rice. 
+%However, CARAIB is the most sensitive model for maize in the C dimension (though this is relatively less sensitive than most other responses for other models the other crops).
+%\end{flushleft}
 
+% 15.5
+\vspace{-0.1in}
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=15.5cm]{reduced_lpjml_maize.png}
-  \caption{Same convention as Figure 4 in the main text except now with the reduced (23-term) emulator specification.}
+  \includegraphics[width=11.cm]{reduced_lpjml_maize.png}
+  \caption{As in manuscript Figure 4,  simulated (a.) and emulated (b.) yield under historical conditions for rainfed LPJmL maize, but here for the reduced (23-term) emulator specification. Emulator performance is worse primarily where crops are not currently grown.}
   \label{fig:reducedlpjml}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=15.5cm]{reduced_regression_example_1.png}
-  \caption{Same convention as Figure 5 in the main text except now with the reduced (23-term) emulator specification.}
+	\caption{As in manuscript Figure 5, emulator performance in selected high-yield regions for rainfed pDSSAT maize (and one region for PROMET), but now with the reduced (23-term) emulator specification. Emulator performance is similar.}
   \label{fig:reducedareas}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=15.5cm]{reduced_regression_example_2.png}
-  \caption{Same convention as Figure 6 in the main text except now with the reduced (23-term) emulator specification.}
+  \caption{As in manuscript Figure 6, emulator performance across models for rainfed maize in one grid cell in Iowa, but now with the 23-term emulator specification. Note that JULES and PROMET are not shown.}
   \label{fig:reducedmodels}
 \end{figure}
 
@@ -340,7 +344,7 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
   \centering
   \includegraphics[width=15.5cm]{reduced_error_grid.png}
   \caption{
-  Same convention as Figure 7 in the main text except now with the reduced (23-term) emulator specification.
+  As in manuscript Figure 7, normalized error of all 9 models emulated on currently cultivated land, over all crops and all sampled T and W inputs, with CO$_2$ and nitrogen held fixed at baseline values, now with the reduced (23-term) emulator specification. Degradation of performance is most evident in JULES soy and spring wheat and PROMET rice and soy.
   }
   \label{fig:reducedgrid}
 \end{figure}
@@ -349,7 +353,7 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
   \centering
   \includegraphics[width=15.5cm]{reduced_CARAIB_spatial_error.png}
   \caption{
-  Same convention as Figure 8 in the main text except now with the reduced (23-term) emulator specification.
+  As in manuscript Figure 8, normalized error for rainfed crops in CARAIB for the T+4 scenario, but here with the reduced (23-term) emulator specification. Degradation of performance is most evident in marginal lands where crops are not currently grown.
   }
   \label{fig:reducedcaraib}
 \end{figure}
@@ -358,7 +362,7 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
   \centering
   \includegraphics[width = 16.3cm]{reduced_global_em_maize.png}
   \caption{
-  Same convention as Figure 11 in the main text except now with the reduced (23-term) emulator specification. The C response here is different than the full-form emulator because it does not contain many of the higher order C ($C^{3}$, $C^{2} * T$ ...) interaction terms. This results in substantial differences for PROMET. 
+  As in manuscript Figure 11, rainfed maize on currently cultivated land, but here with the reduced (23-term) emulator specification. Note that strong C response for PROMET is different here than with the full-form emulator, because higher order C ($C^{3}$, $C^{2} * T$ ...) interaction terms are needed for accurate emulation. 
   }
 \end{figure}
 
@@ -366,9 +370,9 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
   \centering
   \includegraphics[width=14cm]{JULES_soy_bad.png}
   \caption{
-  Example of emulator failure. 
-  Simulated and emulated values for JULES soybean in Southern Germany. RMSE = 41\% of baseline yield for the reduced form (23-term) emulator.
-  The downturn in yields as C and W increase can only be captured by the higher order C interaction terms. 
+  Example of emulator failure, showing failure induced becuase of strongly interacting terms. 
+  Simulated and emulated values for JULES soybeans in Southern Germany. RMSE = 41\% of baseline yield for the reduced form (23-term) emulator.
+  The downturn in yields as C and W increase can only be captured by the higher order C interaction terms of the full 34-term specification. 
   }
   \label{fig:lpjmlrice}
 \end{figure}
@@ -377,9 +381,9 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
   \centering
   \includegraphics[width=14cm]{PROMET_rice_bad.png}
   \caption{
-  Example of emulator failure. Simulated and emulated values for PROMET rice in Arunachal Pradesh. RMSE = 132\% of baseline yield for red (reduced fit).
+	  Example of emulator failure, showing failure induced by abrupt changes in yields. Simulated and emulated values for PROMET rice in India (Arunachal Pradesh). RMSE = 132\% of baseline yield for red (reduced fit).
   The step change in the yields around 0 K at higher water specifications cannot be captured by any third order polynomial. 
-  Both emulator specifications fail in this example.
+  Both 23- and 34- emulator specifications fail in this example.
   }
   \label{fig:lpjmlrice}
 \end{figure}
@@ -400,18 +404,19 @@ However, CARAIB is the most sensitive model for maize in the C dimension (though
 \clearpage
 \section{Yield Responses for other crops and models}
 \begin{flushleft}
-We present some additional yield response spatial patterns for other crops for the LPJmL model and for pDSSAT for maize for reference. 
+	Spatial patterns of yields are well captured for all crops and models. Manuscript Figure 4 illustrated this using LPJmL maize; for reference, we show here yield response spatial patterns for other crops and models.  
+
 \end{flushleft}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{lpjml_grid.png}
-  \caption{Spatial yield response and emulator error for LPJmL for all crops included in the stud. Same convention as Figure 4 in the main text.}
+  \caption{Spatial yield response and emulator error for LPJmL for all 5 GGCMI Phase II crops. Convention as in manuscript Figure 4.}
   \label{fig:lpjmlrice}
 \end{figure}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{pdssat_maize.png}
-  \caption{Spatial yield response and emulator error for pDSSAT for maize.Same convention as Figure 4 in the main text.}
+  \caption{Spatial yield response and emulator error for pDSSAT for maize. Convention as in manuscript Figure 4. pDSSAT absolute yields are significantly higher than those in LPJmL but spatial patterns are similar.}
   \label{fig:lpjmlrice}
 \end{figure}
 
@@ -422,7 +427,7 @@ We present some additional yield response spatial patterns for other crops for t
 \clearpage
 \section{Normalized Error for all models}
 \begin{flushleft}
-In this section we present maps of normalized error $e$ with the same convention as Figure 8 in the main text for all models for completeness. 
+For completeness, this section provides maps of normalized error $e$ with the same convention as manuscript Figure 8 text for all models. 
 \end{flushleft}
 
 \begin{figure}[h!]
