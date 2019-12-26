@@ -141,7 +141,10 @@ and Elisabeth Moyer$^{1, 2}$
 \section{Variability changes in future climate projections}
 \begin{flushleft}
 The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields driven by changing variability would decrease the practical utility of the emulator for impacts assessments.
-Figure \ref{fig:var} shows examples of changes in variability across representative climate model in the CMIP-5 archive. We use the HadGEM2 model for assessing the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections.
+Figure \ref{fig:var} shows examples of changes in variability across representative climate model in the CMIP-5 archive. 
+We use the HadGEM2 model for assessing the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections.
+Most crop models included in GGCMI phase II take daily minimum and maximum temperature (PROMET and JULES take sub-daily temperature) as inputs. 
+Changes in variability for minimum and maximum temperature are similar in the HadGEM2 model, so we show only maximum temperature for simplicity. 
 \end{flushleft}
 
 \begin{figure}[h!]
@@ -158,13 +161,15 @@ Figure \ref{fig:var} shows examples of changes in variability across representat
   \label{fig:var}
 \end{figure}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Yield response for A1 (growing season adaptation) simulations}
 \begin{flushleft}
-	This section shows illustrations of emulator ability to capture yield changes in A1 simulations; compare to main text Figures 5 and 6 showing A0 simulations. Responses to CWN factors are similar in both but responses to T are substantially weaker in A1simulations, in which growing season length does not contract in warmer future conditions.
+	This section shows illustrations of emulator ability to capture yield changes in A1 simulations; compare to main text Figures 5 and 6 showing A0 simulations. Responses to CWN factors are similar in both but responses to T are substantially weaker in A1 simulations, in which growing season length does not contract in warmer future conditions.
 \end{flushleft}
 
 \begin{figure}[h!]
@@ -404,7 +409,7 @@ We identify several potential factors that may in some way contribute to these m
 \clearpage
 \section{Yield Responses for other crops and models}
 \begin{flushleft}
-	Spatial patterns of yields are well captured for all crops and models. Manuscript Figure 4 illustrated this using LPJmL maize; for reference, we show here yield response spatial patterns for other crops and models.  
+Spatial patterns of yields are well captured for all crops and models. Manuscript Figure 4 illustrated this using LPJmL maize; for reference, we show here yield response spatial patterns for other crops and models.  
 
 \end{flushleft}
 
@@ -423,6 +428,63 @@ We identify several potential factors that may in some way contribute to these m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Cross validation error for all models}
+\begin{flushleft}
+In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell. Errors can be above 10\% of yield change for the out-of-sample test in some regions for some crops, most noatably spring wheat in southern China in the PROMET model.
+\end{flushleft}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{pDSSAT_spatial_MSE_ton_ha.png}
+  \caption{Root mean squared error for three-fold cross validation for the pDSSAT model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha.png}
+  \caption{Map of root mean squared error for three fold cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{JULES_spatial_MSE_ton_ha.png}
+  \caption{Map of root mean squared error for three fold cross validation process for the JULES model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha.png}
+  \caption{Map of root mean squared error for three fold cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{GEPIC_spatial_MSE_ton_ha.png}
+  \caption{Map of root mean squared error for three fold cross validation process for the GEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
+  \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+\end{figure}
+
+\end{document}
+
+
+
+
+
+
+
+
 
 \clearpage
 \section{Normalized Error for all models}
@@ -471,56 +533,6 @@ For completeness, this section provides maps of normalized error $e$ with the sa
   \includegraphics[width=15.5cm]{PEPIC_spatial_error.png}
   \caption{Normalized error $e$ for PEPIC. Same convention as main text Figure 8.}
 \end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
-\section{Cross validation error for all models}
-\begin{flushleft}
-In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell. Errors can be above 10\% of yield change for the out-of-sample test foe
-\end{flushleft}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{pDSSAT_spatial_MSE_ton_ha.png}
-  \caption{Root mean squared error for three-fold cross validation for the pDSSAT model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{JULES_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the JULES model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{GEPIC_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the GEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
-\end{figure}
-
-\end{document}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
