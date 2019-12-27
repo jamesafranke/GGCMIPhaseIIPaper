@@ -141,27 +141,79 @@ and Elisabeth Moyer$^{1, 2}$
 \section{Variability changes in future climate projections}
 \begin{flushleft}
 The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields driven by changing variability would decrease the practical utility of the emulator for impacts assessments.
-Figure \ref{fig:var} shows examples of changes in variability across representative climate model in the CMIP-5 archive. 
+Figure S3-S5 shows examples of changes in variability across representative climate model in the CMIP-5 archive. 
 We use the HadGEM2 model for assessing the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections.
 Most crop models included in GGCMI phase II take daily minimum and maximum temperature (PROMET and JULES take sub-daily temperature) as inputs. 
-Changes in variability for minimum and maximum temperature are similar in the HadGEM2 model, so we show only maximum temperature for simplicity. 
+Changes in variability are typically larger for maximum temperature than for minimum temperature in the climate models included here (some models show decreases in variability in minimum daily temperatures).
+Table S1 shows summaries for each crop and model weighted by production at the global scale. 
 \end{flushleft}
+
+%\begin{figure}[h!]
+  %\centering
+  %\includegraphics[width = 16.3cm]{tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png}
+  %\caption{
+	  %Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. The heatmap shows the ratio in standard deviation in temperature  relative to preindustrial, using 30-year detrended timeseries \textcolor{red}{for future, XX-XX years after the forcing change}, for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.
+    %Blue indicates a decrease in variability and red an increase.
+   %Climate models disagree about changes in variability, though most project slight increases during summer. The HadGEM2 model, used in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa. 
+	%\textcolor{red}{HadGEM2}.
+  %}
+	% XX EJM - need more numbers here, and should ideally change the plot so that the Pacific is not centered - instead center on land and cut the Pacific in half. If Ziwei cannot do this before submission time, OK to do it later.
+	% HadCML has decreases in variability over N. America and Europe; would be  best to try again with another climate model - again can do after submission but be prepared to defend your assertions. It could be that the rice differences are because rice is grown in the places where varaibility increases
+  %\label{fig:var}
+%\end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width = 16.3cm]{tas_Amon_LRM6_abrupt4x_control_LF_maps_JJA_final.png}
+  \includegraphics[width = 14cm]{HadGEM2-ES_var_change_min.png}
   \caption{
-	  Change in hemispheric-summer temperature variability for selected models in the CMIP-5 archive for an abrupt 4xCO$_2$ forcing. The heatmap shows the ratio in standard deviation in temperature  relative to preindustrial, using 30-year detrended timeseries \textcolor{red}{for future, XX-XX years after the forcing change}, for JJA (northern hemisphere) and DJF (southern hemisphere).  %\textcolor{red}{1981-2010 and 2071-2100} for JJA and DJF.
+    Change in growing season daily minimum temperature variability for the HadGEM2 model for selected crops under RCP 8.5 at the end of century. 
+    The heatmap shows the percentage change in standard deviation in daily minimum temperature relative to 1981-2010 using a 30-year mean of within-growing-season variability for 2070-2099.
     Blue indicates a decrease in variability and red an increase.
-   Climate models disagree about changes in variability, though most project slight increases during summer. The HadGEM2 model, used in examples here, exhibits relatively strong variability changes, with strong increases in Central and South America, East Asia, and Africa. 
-	\textcolor{red}{HadGEM2}.
+    Maps are masked to show only currently cultivated areas.
+    Strong percentage increases in the tropics are typically due to very low variability in the baseline.
   }
-	% XX EJM - need more numbers here, and should ideally change the plot so that the Pacific is not centered - instead center on land and cut the Pacific in half. If Ziwei cannot do this before submission time, OK to do it later.
-	% HadCML has decreases in variability over N. America and Europe; would be  best to try again with another climate model - again can do after submission but be prepared to defend your assertions. It could be that the rice differences are because rice is grown in the places where varaibility increases
+  \label{fig:var}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width = 14cm]{HadGEM2-ES_var_change_max.png}
+  \caption{
+  Convention same as S3 except now for daily maximum temperature. Changes in daily maximum temperature variability are generally higher than daily minimum temperature.
+  }
+  \label{fig:var}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width = 14cm]{other_models_var_change_max.png}
+  \caption{
+  Convention same as S3 except now for daily maximum temperature for maize for other selected CMIP-5 models. HadGEM2 has the strongest change in variability for maize and the other crops.
+  }
   \label{fig:var}
 \end{figure}
 
 
+\begin{table*}[h!]
+{\small
+    \caption{
+    Global production-weighted change in growing season daily maximum temperature variability as a percentage of baseline variability for the five climate models included in the ISIMIP project. 
+    Mean within-growing season temperature standard deviation across 30 growing seasons for the baseline case (1981-2010) is compared to the end of century (2070-2099) under RCP8.5.
+    LPJmL model simulated yields and current cultivation area (MIRCA) are used to weight values by production.
+    Values in parenthesis are the change in variability by the same metric for daily minimum temperature within the growing season.
+    The HadGEM2-ES model is highlighted in bold because we use this model for our emulator evaluation in the main text. We select the HadGEM2-ES model because it shows the highest changes in variability.
+    }
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model} & \textbf{Maize \%} & \textbf{Soybean \%} & \textbf{Rice \%} & \textbf{S. Wheat \%} & \textbf{W. Wheat \%} \\ \hline
+        \textbf{HadGEM2-ES}     & \textbf{9.7 (2.1)}  & \textbf{10.4 (-0.6)}  & \textbf{10.1 (-3.3)}  & \textbf{6.4 (4.7)}  & \textbf{3.6 (1.7)}  \\ \hline
+        \textbf{GFDL-ESM2M}     & 3.6 (0.9)  & 3.4 (0.6)  & 2.7 (-0.3)  & 1.2 (-0.3) & 2.0 (1.0)  \\ \hline
+        \textbf{NorESM1-M}      & 6.7 (-1.1)  & 6.5 (-4.0)  & 5.9 (-3.5)  & 4.5 (3.3)  & 2.4 (0.8)    \\ \hline
+        \textbf{IPSL-CM5A-LR}   & 3.3 (3.3)  & 3.4 (0.6)  & 3.4 (1.4)  & 1.4 (2.3)  & 1.2 (1.3)  \\ \hline
+        \textbf{MIROC-ESM} & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
+    \end{tabular}
+}
+\end{table*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
