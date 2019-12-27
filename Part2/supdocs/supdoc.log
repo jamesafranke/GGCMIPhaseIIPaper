@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1814,70 +1814,58 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 488.
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 489.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 <PROMET_spatial_MSE_ton_ha.png, id=134, 504.01099pt x 321.6015pt>
 File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 494.
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 495.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <JULES_spatial_MSE_ton_ha.png, id=135, 504.01099pt x 321.6015pt>
 File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 500.
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 501.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <EPIC-TAMU_spatial_MSE_ton_ha.png, id=136, 504.01099pt x 321.6015pt>
 File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha.png>
 Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 50
-6.
+7.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <GEPIC_spatial_MSE_ton_ha.png, id=137, 504.01099pt x 321.6015pt>
 File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 512.
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 513.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <PEPIC_spatial_MSE_ton_ha.png, id=138, 504.01099pt x 321.6015pt>
 File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 518.
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 519.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
+ [22
 
+ <./pDSSAT_spatial_MSE_ton_ha.png>]
+[23 <./PROMET_spatial_MSE_ton_ha.png> <./JULES_spatial_MSE_ton_ha.png>]
+[24 <./EPIC-TAMU_spatial_MSE_ton_ha.png> <./GEPIC_spatial_MSE_ton_ha.png>]
+[25 <./PEPIC_spatial_MSE_ton_ha.png>] [26
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22
-
- <./pDSSAT_spatial_MSE_ton_ha.png>] [23 <./PROMET_spatial_MSE_ton_ha.png>]
-[24 <./JULES_spatial_MSE_ton_ha.png>] [25 <./EPIC-TAMU_spatial_MSE_ton_ha.png>]
-[26 <./GEPIC_spatial_MSE_ton_ha.png> <./PEPIC_spatial_MSE_ton_ha.png>] [27
-
-]
-(./supdoc.aux)
+] (./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'supdoc.run.xml'.
 \openout1 = `supdoc.run.xml'.
@@ -1906,10 +1894,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on supdoc.pdf (27 pages, 29142277 bytes).
+Output written on supdoc.pdf (26 pages, 29141899 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

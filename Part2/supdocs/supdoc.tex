@@ -46,7 +46,7 @@
 \centering{{\footnotesize James Franke$^{1, 2}$, 
 Christoph M\"{u}ller$^3$, 
 Joshua Elliott$^{2, 4}$, 
-Alexander Ruane$^5$, 
+Alex C.\ Ruane$^5$, 
 Jonas J\"{a}germeyr$^{3, 2, 4, 5}$,\\ 
 Abigail Snyder$^6$, 
 Marie Dury$^{7}$, 
@@ -54,14 +54,14 @@ Pete Falloon$^{8}$,
 Christian Folberth$^9$, 
 Louis Fran{\c{c}}ois$^{7}$, 
 Tobias Hank$^{10}$, \\ 
-Cesar Izaurralde$^{11, 12}$,
+R.\ Cesar Izaurralde$^{11, 12}$,
 Ingrid Jacquemin$^7$, 
 Curtis Jones$^{11}$, 
 Michelle Li$^{2, 13}$, 
 Wenfeng Liu$^{14, 15}$,\\
 Stefan Olin$^{16}$, 
 Meridel Phillips$^{5, 17}$, 
-Thomas Pugh$^{18, 19}$, 
+Thomas A.\ M.\ Pugh$^{18, 19}$, 
 Ashwan Reddy$^{11}$, 
 Karina Williams$^{8}$, \\
 Ziwei Wang$^{1, 2}$, 
@@ -135,7 +135,7 @@ and Elisabeth Moyer$^{1, 2}$
 \section{Variability changes in future climate projections}
 \begin{justify}
 Because the GGCMI Phase II simulation dataset does not sample across changes in climate variability, large impacts to yields driven by future changing variability would decrease the practical utility of the emulator for impacts assessments.
-	We therefore assess the scale of potential future changes in temperature variability, in RCP8.5 simulations from the five climate models used in ISIMP \parencite[the Inter-Sectoral Impact Model Intercomparison Project][]{Warszawski3228, Frieler2017}.
+	We therefore assess the scale of potential future changes in temperature variability, in RCP8.5 simulations from the five climate models used in ISIMP \parencite[the Inter-Sectoral Impact Model Intercomparison Project;][]{Warszawski3228, Frieler2017}.
  In manuscript section 4.3 we use one of these climate simulations, that from HadGEM2-ES, to assess the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections. We choose the HadGEM2-ES model because it shows the largest variability changes, and therefore provides a stricter test of the utility of a GGCMI emulator.
  Table S1 summarizes daily T$_{max}$ variability changes for each crop and model weighted by production. 
 	Figures S3 and S4 below show changes in variability in minimum and maximum temperatures in the HadGEM2 simulation for each crop growing season and area, and Figure S5 shows changes in daily T$_{max}$ variability for maize across the 4 additional ISIMIP climate simulations. (Compare to Figure S3 upper left panel.)
@@ -480,43 +480,44 @@ Spatial patterns of yields are well captured for all crops and models. Manuscrip
 \clearpage
 \section{Cross validation error for all models}
 \begin{justify}
-In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell. Errors can be above 10\% of yield change for the out-of-sample test in some regions for some crops, most notably spring wheat in southern China in the PROMET model.
+In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell.
+Errors above 10\% of yield change in the out-of-sample test occur very rarely; the only significant instance is spring wheat in southern China in the PROMET model.
 \end{justify}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{pDSSAT_spatial_MSE_ton_ha.png}
-  \caption{Root mean squared error for three-fold cross validation for the pDSSAT model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Root mean squared error for cross validation for the pDSSAT model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{PROMET_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Map of root mean squared error for cross validation process for the PROMET model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{JULES_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the JULES model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Map of root mean squared error for cross validation process for the JULES model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{EPIC-TAMU_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Map of root mean squared error for cross validation process for the EPIC-TAMU model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{GEPIC_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the GEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Map of root mean squared error for cross validation process for the GEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
-  \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
+  \caption{Map of root mean squared error for cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
 \clearpage
@@ -525,11 +526,6 @@ In this section we present maps of cross validation error (values found in main 
 %\bibliographystyle{Plain}
 
 \end{document}
-
-
-
-
-
 
 
 
