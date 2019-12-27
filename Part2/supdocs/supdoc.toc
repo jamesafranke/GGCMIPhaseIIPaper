@@ -1,10 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\contentsline {section}{\numberline {1}Experiment simulation sampling in variable space and cultivated areas}{2}
+\contentsline {section}{\numberline {1}Sampling in variable space and cultivated area}{2}
 \contentsline {section}{\numberline {2}Variability changes in future climate projections}{4}
 \contentsline {section}{\numberline {3}Yield response for A1 (growing season adaptation) simulations}{7}
 \contentsline {section}{\numberline {4}Normalized error for other cases}{8}
-\contentsline {section}{\numberline {5}Comparison to transient climate run simulation at high latitude}{10}
+\contentsline {section}{\numberline {5}Emulation of yields in a realistic climate simulation at high latitude}{10}
 \contentsline {section}{\numberline {6}Emulator products}{11}
 \contentsline {section}{\numberline {7}Reduced specification (23-term) emulator examples}{14}
-\contentsline {section}{\numberline {8}Yield Responses for other crops and models}{20}
+\contentsline {section}{\numberline {8}Yield responses for other crops and models}{20}
 \contentsline {section}{\numberline {9}Cross validation error for all models}{22}

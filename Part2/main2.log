@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,9 +1205,10 @@ File: figures/global_em_maize.png Graphic file (type png)
 Package pdftex.def Info: figures/global_em_maize.png used on input line 645.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
  [22] [23 <./figures/global_em_maize.png>]
-Overfull \hbox (62.73775pt too wide) in paragraph at lines 724--724
+Overfull \hbox (64.98775pt too wide) in paragraph at lines 724--724
 []\T1/ptm/m/n/9 The poly-no-mial em-u-la-tor pa-ram-e-ter ma-tri-ces for all cr
-op model em-u-la-tors are avail-able at https://doi.org/10.5281/zenodo.3592453
+op model em-u-la-tors are avail-able at https://doi.org/10.5281/zenodo.3592453.
+ 
  []
 
 [24] (./main2.bbl [25]
@@ -1316,7 +1317,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main2.pdf (31 pages, 7861903 bytes).
+Output written on main2.pdf (31 pages, 7861872 bytes).
 PDF statistics:
  755 PDF objects out of 1000 (max. 8388607)
  674 compressed objects within 7 object streams
