@@ -2,7 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
-\setlength{\columnsep}{1mm}
+%\setlength{\columnsep}{1mm}
 \usepackage{amsfonts}
 \usepackage{booktabs}
 \usepackage{siunitx}
@@ -21,6 +21,7 @@
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{xr}
+\usepackage[document]{ragged2e}
 %\usepackage[style=authoryear]{biblatex}
 %\addbibresource{bib.bib}
 %\usepackage{natbib}
@@ -99,22 +100,21 @@ and Elisabeth Moyer$^{1, 2}$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
 
-\section{Experiment simulation sampling in variable space and cultivated areas}
-\begin{flushleft}
-	Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. 
-  Figure \ref{fig:numbersims} compares sampling density in the models used in the emulator analysis. 
-\end{flushleft}
+\section{Sampling in variable space and cultivated area}
+\begin{justify}
+	Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment, with only some models providing all cases in the protocol. 
+  Figure \ref{fig:numbersims} compares the sampling density of the models used in the emulator analysis. 
+\end{justify}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{s_how_many_simulations.png}
   \caption{
-  Heatmap illustrating the number of model simulations provided for each of the scenarios in CTWN variable space. 
-  The maximum number is 9, the number of models included in the emulator analysis. (That is, we exclude here the three GGCMI Phase II models not included in the emulator analysis.) 
-  Black boxes mark the ``baseline'' cases for rainfed and irrigated simulations.
-	Normalized error calculations are run only over scenarios in which 9 models contribute simulations (pink boxes).
-  }
+  Heatmap illustrating the number of models providing simulations for each of the scenarios in CTWN variable space. Black boxes mark the ``baseline'' cases for rainfed and irrigated simulations.
+	The maximum number is 9, the number of models included in the emulator analysis. (That is, we exclude here the three GGCMI Phase II models not included in the emulator analysis.)  For cases with N levels lower than 200 kg/ha, the maximum number of models is 6 since three models (CARAIB, JULES, and PROMET) do not represent varying N levels. One model (GEPIC) provided additional simulations at T+5 not specified by the protocol; these are not used in emulation.
+  	Normalized error calculations are run only over scenarios in which 9 models contribute simulations (pink boxes).  }
   \label{fig:numbersims}
 \end{figure}
 
@@ -133,14 +133,38 @@ and Elisabeth Moyer$^{1, 2}$
 
 \clearpage
 \section{Variability changes in future climate projections}
-\begin{flushleft}
-The GGCMI Phase II simulation dataset does not sample changes in climate variability. Large impacts to yields driven by changing variability would decrease the practical utility of the emulator for impacts assessments.
-Figure S3-S5 shows examples of changes in variability across representative climate model in the CMIP-5 archive. 
-We use the HadGEM2 model for assessing the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections.
-Most crop models included in GGCMI phase II take daily minimum and maximum temperature (PROMET and JULES take sub-daily temperature) as inputs. 
-Changes in variability are typically larger for maximum temperature than for minimum temperature in the climate models included here (some models show decreases in variability in minimum daily temperatures).
-Table S1 shows summaries for each crop and model weighted by production at the global scale. 
-\end{flushleft}
+\begin{justify}
+Because the GGCMI Phase II simulation dataset does not sample across changes in climate variability, large impacts to yields driven by future changing variability would decrease the practical utility of the emulator for impacts assessments.
+	We therefore assess the scale of potential future changes in temperature variability, in RCP8.5 simulations from the five climate models used in ISIMP \parencite[the Inter-Sectoral Impact Model Intercomparison Project][]{Warszawski2014, Frieler2017}.
+ In manuscript section 4.3 we use one of these climate simulations, that from HadGEM2-ES, to assess the ability of GGCMI emulators to reproduce yield changes simulated under more realistic climate projections. We choose the HadGEM2-ES model because it shows the largest variability changes, and therefore provides a stricter test of the utility of a GGCMI emulator.
+ Table S1 summarizes daily T$_{max}$ variability changes for each crop and model weighted by production. 
+	Figures S3 and S4 below show changes in variability in minimum and maximum temperatures in the HadGEM2 simulation for each crop growing season and area, and Figure S5 shows changes in daily T$_{max}$ variability for maize across the 4 additional ISIMIP climate simulations. (Compare to Figure S3 upper left panel.)
+	Most crop models included in GGCMI phase II take daily minimum and maximum temperature as inputs, though PROMET and JULES take sub-daily temperature inputs.
+	  
+%Changes in variability are typically larger for maximum temperature than for minimum temperature in the climate models included here (some models show decreases in variability in minimum daily temperatures).
+
+\end{justify}
+
+\begin{table}[ht]
+{\small
+    \caption{
+	    Global production-weighted fractional change in growing season daily maximum temperature variability under RCP8.5 for the five climate models included in the ISIMIP project (a subset of the CMIP-5 archive). 
+    Value for each crop and model is mean within-growing season temperature standard deviation across 30 growing seasons of 2070-2099 relative to that for 1981-2010, with grid-cell values weighted by 
+	   LPJmL model simulated yields and current cultivation area (MIRCA).
+    Values in parenthesis are the change in variability by the same metric for daily minimum temperature within the growing season.
+    The HadGEM2-ES model is highlighted in bold because this model is used for our emulator evaluation in manuscript Section 4.3. The HadGEM2-ES model is chosen because it shows the highest changes in variability.
+    }
+    \begin{tabular}{l | c | c | c | c | c} 
+        \hline
+        \textbf{Model}        & \textbf{Maize \%} & \textbf{Soybean \%} & \textbf{Rice \%} & \textbf{S. Wheat \%} & \textbf{W. Wheat \%} \\ \hline
+        \textbf{HadGEM2-ES}   & \textbf{9.7 (2.1)}  & \textbf{10.4 (-0.6)}  & \textbf{10.1 (-3.3)}  & \textbf{6.4 (4.7)}  & \textbf{3.6 (1.7)}  \\ \hline
+        \textbf{GFDL-ESM2M}   & 3.6 (0.9)  & 3.4 (0.6)  & 2.7 (-0.3)  & 1.2 (-0.3) & 2.0 (1.0)  \\ \hline
+        \textbf{NorESM1-M}    & 6.7 (-1.1)  & 6.5 (-4.0)  & 5.9 (-3.5)  & 4.5 (3.3)  & 2.4 (0.8)    \\ \hline
+        \textbf{IPSL-CM5A-LR} & 3.3 (3.3)  & 3.4 (0.6)  & 3.4 (1.4)  & 1.4 (2.3)  & 1.2 (1.3)  \\ \hline
+        \textbf{MIROC-ESM}    & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
+    \end{tabular}
+}
+\end{table}
 
 %\begin{figure}[h!]
   %\centering
@@ -160,11 +184,10 @@ Table S1 shows summaries for each crop and model weighted by production at the g
   \centering
   \includegraphics[width = 14cm]{HadGEM2-ES_var_change_min.png}
   \caption{
-    Change in growing season daily minimum temperature variability for the HadGEM2 model for selected crops under RCP 8.5 at the end of century. 
-    The heatmap shows the percentage change in standard deviation in daily minimum temperature relative to 1981-2010 using a 30-year mean of within-growing-season variability for 2070-2099.
-    Blue indicates a decrease in variability and red an increase.
-    Maps are masked to show only currently cultivated areas.
-    Strong percentage increases in the tropics are typically due to very low variability in the baseline.
+	  Change in within-growing-season daily minimum temperature variability by the end of century under RCP8.5 for the HadGEM2 model, computed for selected crops. 
+	Heatmap shows the percentage change for 2070-2099 relative to 1981-2010 over currently cultivated areas, with red indicating increases and blue decreases. 
+	To determine the change we compute the mean standard deviation of daily T$_{min}$ in each historical growing season and take the mean across all 30 years; this metric therefore includes changes both in seasonality and in short-term variations but excludes interannual variability and longer-term trends. For winter wheat, growing-season variability reductions reflect the dampening of the seasonal cycle (stronger warming in winter). 
+	Strong percentage increases in the tropics reflect very low variability in the baseline. Production-weighted mean changes across crops range from -3\% for rice to +5\% for spring wheat (Table S1). Note that changes may differ if calculated using an ensemble of simulations rather than a single projection as is done here.
   }
   \label{fig:var}
 \end{figure}
@@ -173,7 +196,7 @@ Table S1 shows summaries for each crop and model weighted by production at the g
   \centering
   \includegraphics[width = 14cm]{HadGEM2-ES_var_change_max.png}
   \caption{
-  Convention same as S3 except now for daily maximum temperature. Changes in daily maximum temperature variability are generally higher than daily minimum temperature.
+  As in Figure S3 except now for daily maximum temperature. Changes in daily maximum temperature variability are generally higher than those for daily minimum temperature.
   }
   \label{fig:var}
 \end{figure}
@@ -182,41 +205,21 @@ Table S1 shows summaries for each crop and model weighted by production at the g
   \centering
   \includegraphics[width = 14cm]{other_models_var_change_max.png}
   \caption{
-  Convention same as S3 except now for daily maximum temperature for maize for other selected CMIP-5 models. HadGEM2 has the strongest change in variability for maize and the other crops.
+  As in Figure S4, change in daily maximum temperature variability, except now for maize only, for the remaining 4 ISIMIP climate simulations. Values are lower on average than for HadGEM2-ES but patterns can differ.
   }
   \label{fig:var}
 \end{figure}
 
 
-\begin{table}[ht]
-{\small
-    \caption{
-    Global production-weighted change in growing season daily maximum temperature variability as a percentage of baseline variability for the five climate models included in the ISIMIP project. 
-    Mean within-growing season temperature standard deviation across 30 growing seasons for the baseline case (1981-2010) is compared to the end of century (2070-2099) under RCP8.5.
-    LPJmL model simulated yields and current cultivation area (MIRCA) are used to weight values by production.
-    Values in parenthesis are the change in variability by the same metric for daily minimum temperature within the growing season.
-    The HadGEM2-ES model is highlighted in bold because we use this model for our emulator evaluation in the main text. We select the HadGEM2-ES model because it shows the highest changes in variability.
-    }
-    \begin{tabular}{l | c | c | c | c | c} 
-        \hline
-        \textbf{Model}        & \textbf{Maize \%} & \textbf{Soybean \%} & \textbf{Rice \%} & \textbf{S. Wheat \%} & \textbf{W. Wheat \%} \\ \hline
-        \textbf{HadGEM2-ES}   & \textbf{9.7 (2.1)}  & \textbf{10.4 (-0.6)}  & \textbf{10.1 (-3.3)}  & \textbf{6.4 (4.7)}  & \textbf{3.6 (1.7)}  \\ \hline
-        \textbf{GFDL-ESM2M}   & 3.6 (0.9)  & 3.4 (0.6)  & 2.7 (-0.3)  & 1.2 (-0.3) & 2.0 (1.0)  \\ \hline
-        \textbf{NorESM1-M}    & 6.7 (-1.1)  & 6.5 (-4.0)  & 5.9 (-3.5)  & 4.5 (3.3)  & 2.4 (0.8)    \\ \hline
-        \textbf{IPSL-CM5A-LR} & 3.3 (3.3)  & 3.4 (0.6)  & 3.4 (1.4)  & 1.4 (2.3)  & 1.2 (1.3)  \\ \hline
-        \textbf{MIROC-ESM}    & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
-    \end{tabular}
-}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Yield response for A1 (growing season adaptation) simulations}
-\begin{flushleft}
+\begin{justify}
 	This section shows illustrations of emulator ability to capture yield changes in A1 simulations; compare to main text Figures 5 and 6 showing A0 simulations. Responses to CWN factors are similar in both but responses to T are substantially weaker in A1 simulations, in which growing season length does not contract in warmer future conditions.
-\end{flushleft}
+\end{justify}
 
 \begin{figure}[h!]
 \centering
@@ -247,13 +250,13 @@ Table S1 shows summaries for each crop and model weighted by production at the g
 
 \clearpage
 \section{Normalized error for other cases}
-\begin{flushleft}
+\begin{justify}
 In manuscript Figure 7 we show normalized error for the A0 emulators over all rainfed crops, models, and T and W values for 
 	baseline CO$_2$ and nitrogen levels (360 ppm and 200 kg ha-1). Here we show normalized error in some alternate cases for comparison: \textit{Figure S6:} A0 emulators of rainfed crops at higher CO$_2$, \textit{Figure S7:} A1 emulators of rainfed crops at baseline values, \textit{Figure S8):} A0 emulators of irrigated crops at 
 baseline values. 
 Results are generally similar, with a few exceptions. Normalized errors at higher CO$_2$ are generally lower because model disagreement is larger, lowering the denominator. Some model emulators for irrigation water demand are under-performing: LPJ-GUESS and CARAIB for some crops.
 A1 errors are larger than A0 errors for several crops and models: LPJmL rice, pDSSAT spring wheat, and PROMET winter wheat.
-\end{flushleft}
+\end{justify}
 
 \vspace{1in}
 
@@ -287,13 +290,14 @@ A1 errors are larger than A0 errors for several crops and models: LPJmL rice, pD
 \end{figure}
 
 \clearpage
-\section{Comparison to transient climate run simulation at high latitude}
-\begin{flushleft}
+\section{Emulation of yields in a realistic climate simulation at high latitude}
+\begin{justify}
 In manuscript Section 4.3 we test the emulator against crop model simulations driven by a more realistic future climate projection to evaluate the impact of future variability changes that are not captured by the emulator. 
 	Figure \ref{fig:lpjmlrcp} below isolates the mid- and high latitudes; compare to manuscript Figure 9 that shows global currently cultivated land. 
-	Results are generally unchanged by the restriction in latitude except for rice, which is typically grown in tropics and subtropics: 20\% of global rice production is grown north of 30N and 1\% north of 45N, with even less in the Southern hemisphere, only 0.8\%  south of 30S and none south of 45S.
-\end{flushleft}
+	Results are generally unchanged by the restriction in latitude except for rice, which is typically grown in tropics and subtropics: only 20\% of global rice production is grown north of 30N and 1\% north of 45N, with even less in the Southern hemisphere, only 0.8\%  south of 30S and none south of 45S.
+\end{justify}
 
+\vspace{0.5in}
 \begin{figure}[h!]
   \centering
   \includegraphics[width = 16.3cm]{LPJMLRCP85comp_30N.png}
@@ -304,9 +308,9 @@ In manuscript Section 4.3 we test the emulator against crop model simulations dr
 
 \clearpage
 \section{Emulator products}
-\begin{flushleft}
+\begin{justify}
 This section amplifies on manuscript Section 5 with additional figures analogout to manuscript Figures 10 and 11. 
-\end{flushleft}
+\end{justify}
 
 \vspace{0.3in}
 
@@ -349,7 +353,7 @@ This section amplifies on manuscript Section 5 with additional figures analogout
 \clearpage
 \section{Reduced specification (23-term) emulator examples}
 \smallskip
-\begin{flushleft}
+\begin{justify}
 In this section we present analogous figures to those in the main text for the reduced-form (23-term) emulator. 
 Issues with the reduced-form model are most prominent in PROMET for rice and soy, and JULES soy and spring wheat. 
 We identify several potential factors that may in some way contribute to these models showing qualitatively different responses that require additional terms for emulation.
@@ -359,14 +363,14 @@ We identify several potential factors that may in some way contribute to these m
 		\item Both PROMET and JULES have anomalously strong responses to individual factors in those crops problematic to emulate. PROMET is the most sensitive model of all the models for rice in C, T, and W, and JULES for soybeans in C, T, and W. For spring wheat, JULES is a high outlier in C, the most sensitive model in W and T, and shows an extra inflection point in the global temperature response not seen in any of the other models.
 		\item PROMET is the quantitatively lowest-performing model for soybeans when compared to the historical FAO data for the top 10 producing countries. 
 		\end{itemize}
-\end{flushleft}
+\end{justify}
 %\smallskip
-%\begin{flushleft}
+%\begin{justify}
 %CARAIB on the other hand (the other model that does not simulate different levels of nitrogen), was originally developed as a vegetation model in the early 90's and has a longer history of agricultural focus. It is the least sensitive model in T for rice and spring wheat, and is nearest to the ensemble mean in maize and winter wheat. 
 %In W, it is the least sensitive model for maize, and the wheats, the second least sensitive model for soybeans, and nearest to the ensemble mean for rice. 
 %For C, it is the nearest to the ensemble mean for the wheats and soy and unremarkable for rice. 
 %However, CARAIB is the most sensitive model for maize in the C dimension (though this is relatively less sensitive than most other responses for other models the other crops).
-%\end{flushleft}
+%\end{justify}
 
 % 15.5
 \vspace{-0.1in}
@@ -453,11 +457,11 @@ We identify several potential factors that may in some way contribute to these m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\section{Yield Responses for other crops and models}
-\begin{flushleft}
+\section{Yield responses for other crops and models}
+\begin{justify}
 Spatial patterns of yields are well captured for all crops and models. Manuscript Figure 4 illustrated this using LPJmL maize; for reference, we show here yield response spatial patterns for other crops and models.  
 
-\end{flushleft}
+\end{justify}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{lpjml_grid.png}
@@ -476,9 +480,9 @@ Spatial patterns of yields are well captured for all crops and models. Manuscrip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Cross validation error for all models}
-\begin{flushleft}
+\begin{justify}
 In this section we present maps of cross validation error (values found in main text Table 3 are aggregated up from the grid cell level). Errors are generally low as a percentage of yield change in each grid cell. Errors can be above 10\% of yield change for the out-of-sample test in some regions for some crops, most noatably spring wheat in southern China in the PROMET model.
-\end{flushleft}
+\end{justify}
 
 \begin{figure}[h!]
   \centering
@@ -533,9 +537,9 @@ In this section we present maps of cross validation error (values found in main 
 
 \clearpage
 \section{Normalized Error for all models}
-\begin{flushleft}
+\begin{justify}
 For completeness, this section provides maps of normalized error $e$ with the same convention as manuscript Figure 8 text for all models. 
-\end{flushleft}
+\end{justify}
 
 \begin{figure}[h!]
   \centering
