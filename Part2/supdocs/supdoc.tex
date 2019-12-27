@@ -23,8 +23,11 @@
 \usepackage{xr}
 %\usepackage[style=authoryear]{biblatex}
 %\addbibresource{bib.bib}
-\usepackage{natbib}
-\bibliographystyle{authoryear}
+%\usepackage{natbib}
+%\bibliographystyle{authoryear}
+\usepackage[backend=bibtex8,style=authoryear,natbib]{biblatex}
+\addbibresource{bib.bib}
+
 
 %\externaldocument{../PhaseIIPaper/main}
 %\biboptions{authoryear, comma}
@@ -120,7 +123,7 @@ and Elisabeth Moyer$^{1, 2}$
     \centering
     \includegraphics[width=14cm]{cult_area.png}\\
     \caption{
-    Presently cultivated area in the real world for rainfed (left) and irrigated (right) crops, from the MIRCA2000 dataset (\cite{Portmann2010}). 
+    Presently cultivated area in the real world for rainfed (left) and irrigated (right) crops, from the MIRCA2000 dataset \parencite{Portmann2010}. 
     %Blue areas show grid-cells with more that 20,00 hectares of crop cultivated, and gray areas those with more that 10 hectares cultivated. 
     Data are taken directly from the MIRCA2000 dataset  for maize, rice, and soy. 
     Winter and spring wheat areas are adapted from MIRCA2000 and sorted by growing season.
@@ -196,12 +199,12 @@ Table S1 shows summaries for each crop and model weighted by production at the g
     }
     \begin{tabular}{l | c | c | c | c | c} 
         \hline
-        \textbf{Model} & \textbf{Maize \%} & \textbf{Soybean \%} & \textbf{Rice \%} & \textbf{S. Wheat \%} & \textbf{W. Wheat \%} \\ \hline
-        \textbf{HadGEM2-ES}     & \textbf{9.7 (2.1)}  & \textbf{10.4 (-0.6)}  & \textbf{10.1 (-3.3)}  & \textbf{6.4 (4.7)}  & \textbf{3.6 (1.7)}  \\ \hline
-        \textbf{GFDL-ESM2M}     & 3.6 (0.9)  & 3.4 (0.6)  & 2.7 (-0.3)  & 1.2 (-0.3) & 2.0 (1.0)  \\ \hline
-        \textbf{NorESM1-M}      & 6.7 (-1.1)  & 6.5 (-4.0)  & 5.9 (-3.5)  & 4.5 (3.3)  & 2.4 (0.8)    \\ \hline
-        \textbf{IPSL-CM5A-LR}   & 3.3 (3.3)  & 3.4 (0.6)  & 3.4 (1.4)  & 1.4 (2.3)  & 1.2 (1.3)  \\ \hline
-        \textbf{MIROC-ESM} & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
+        \textbf{Model}        & \textbf{Maize \%} & \textbf{Soybean \%} & \textbf{Rice \%} & \textbf{S. Wheat \%} & \textbf{W. Wheat \%} \\ \hline
+        \textbf{HadGEM2-ES}   & \textbf{9.7 (2.1)}  & \textbf{10.4 (-0.6)}  & \textbf{10.1 (-3.3)}  & \textbf{6.4 (4.7)}  & \textbf{3.6 (1.7)}  \\ \hline
+        \textbf{GFDL-ESM2M}   & 3.6 (0.9)  & 3.4 (0.6)  & 2.7 (-0.3)  & 1.2 (-0.3) & 2.0 (1.0)  \\ \hline
+        \textbf{NorESM1-M}    & 6.7 (-1.1)  & 6.5 (-4.0)  & 5.9 (-3.5)  & 4.5 (3.3)  & 2.4 (0.8)    \\ \hline
+        \textbf{IPSL-CM5A-LR} & 3.3 (3.3)  & 3.4 (0.6)  & 3.4 (1.4)  & 1.4 (2.3)  & 1.2 (1.3)  \\ \hline
+        \textbf{MIROC-ESM}    & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
     \end{tabular}
 }
 \end{table}
@@ -513,7 +516,8 @@ In this section we present maps of cross validation error (values found in main 
   \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
 
-\bibliography{bib}
+\clearpage
+%\bibliography{bib}
 \printbibliography
 %\bibliographystyle{Plain}
 

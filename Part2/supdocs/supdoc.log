@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,13 +1012,265 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip80
-\bibsep=\skip81
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count284
-) (./supdoc.aux
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count285
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count286
+\decimalpart=\count287
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count288
+\c@listtotal=\count289
+\c@listcount=\count290
+\c@liststart=\count291
+\c@liststop=\count292
+\c@citecount=\count293
+\c@citetotal=\count294
+\c@multicitecount=\count295
+\c@multicitetotal=\count296
+\c@instcount=\count297
+\c@maxnames=\count298
+\c@minnames=\count299
+\c@maxitems=\count300
+\c@minitems=\count301
+\c@citecounter=\count302
+\c@savedcitecounter=\count303
+\c@uniquelist=\count304
+\c@uniquename=\count305
+\c@refsection=\count306
+\c@refsegment=\count307
+\c@maxextratitle=\count308
+\c@maxextratitleyear=\count309
+\c@maxextrayear=\count310
+\c@maxextraalpha=\count311
+\c@abbrvpenalty=\count312
+\c@highnamepenalty=\count313
+\c@lownamepenalty=\count314
+\c@maxparens=\count315
+\c@parenlevel=\count316
+\blx@tempcnta=\count317
+\blx@tempcntb=\count318
+\blx@tempcntc=\count319
+\blx@maxsection=\count320
+\blx@maxsegment@0=\count321
+\blx@notetype=\count322
+\blx@parenlevel@text=\count323
+\blx@parenlevel@foot=\count324
+\blx@sectionciteorder@0=\count325
+\labelnumberwidth=\skip80
+\labelalphawidth=\skip81
+\biblabelsep=\skip82
+\bibitemsep=\skip83
+\bibnamesep=\skip84
+\bibinitsep=\skip85
+\bibparsep=\skip86
+\bibhang=\skip87
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\c@mincomprange=\count326
+\c@maxcomprange=\count327
+\c@mincompwidth=\count328
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count329
+\c@savedafterword=\count330
+\c@annotator=\count331
+\c@savedannotator=\count332
+\c@author=\count333
+\c@savedauthor=\count334
+\c@bookauthor=\count335
+\c@savedbookauthor=\count336
+\c@commentator=\count337
+\c@savedcommentator=\count338
+\c@editor=\count339
+\c@savededitor=\count340
+\c@editora=\count341
+\c@savededitora=\count342
+\c@editorb=\count343
+\c@savededitorb=\count344
+\c@editorc=\count345
+\c@savededitorc=\count346
+\c@foreword=\count347
+\c@savedforeword=\count348
+\c@holder=\count349
+\c@savedholder=\count350
+\c@introduction=\count351
+\c@savedintroduction=\count352
+\c@namea=\count353
+\c@savednamea=\count354
+\c@nameb=\count355
+\c@savednameb=\count356
+\c@namec=\count357
+\c@savednamec=\count358
+\c@translator=\count359
+\c@savedtranslator=\count360
+\c@shortauthor=\count361
+\c@savedshortauthor=\count362
+\c@shorteditor=\count363
+\c@savedshorteditor=\count364
+\c@labelname=\count365
+\c@savedlabelname=\count366
+\c@institution=\count367
+\c@savedinstitution=\count368
+\c@lista=\count369
+\c@savedlista=\count370
+\c@listb=\count371
+\c@savedlistb=\count372
+\c@listc=\count373
+\c@savedlistc=\count374
+\c@listd=\count375
+\c@savedlistd=\count376
+\c@liste=\count377
+\c@savedliste=\count378
+\c@listf=\count379
+\c@savedlistf=\count380
+\c@location=\count381
+\c@savedlocation=\count382
+\c@organization=\count383
+\c@savedorganization=\count384
+\c@origlocation=\count385
+\c@savedoriglocation=\count386
+\c@origpublisher=\count387
+\c@savedorigpublisher=\count388
+\c@publisher=\count389
+\c@savedpublisher=\count390
+\c@language=\count391
+\c@savedlanguage=\count392
+\c@pageref=\count393
+\c@savedpageref=\count394
+\shorthandwidth=\skip88
+\shortjournalwidth=\skip89
+\shortserieswidth=\skip90
+\shorttitlewidth=\skip91
+\shortauthorwidth=\skip92
+\shorteditorwidth=\skip93
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count395
+\c@textcitetotal=\count396
+\c@textcitemaxnames=\count397
+\c@biburlnumpenalty=\count398
+\c@biburlucpenalty=\count399
+\c@biburllcpenalty=\count400
+\c@smartand=\count401
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count402
+\c@bbx:relatedtotal=\count403
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count404
+\@quotereset=\count405
+
+(./supdoc.aux
 
 LaTeX Warning: Label `fig:var' multiply defined.
 
@@ -1046,18 +1298,18 @@ LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
 )
 \openout1 = `supdoc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1179,31 +1431,18 @@ Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
+\scratchcounter=\count406
 \scratchdimen=\dimen268
 \scratchbox=\box81
-\nofMPsegments=\count286
-\nofMParguments=\count287
+\nofMPsegments=\count407
+\nofMParguments=\count408
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count288
+\MPscratchCnt=\count409
 \MPscratchDim=\dimen269
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
+\MPnumerator=\count410
+\makeMPintoPDFobject=\count411
 \everyMPtoPDFconversion=\toks38
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1212,19 +1451,6 @@ Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -1237,20 +1463,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Redefining \end@dblfloat\ for use with subfigure
-\c__siunitx_mathsf_int=\count291
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout4 = `supdoc-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'supdoc.bbl' found.
+(./supdoc.bbl)
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
+\c__siunitx_mathsf_int=\count412
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count292
+\c__siunitx_mathtt_int=\count413
  (./supdoc.toc)
-\tf@toc=\write3
-\openout3 = `supdoc.toc'.
+\tf@toc=\write5
+\openout5 = `supdoc.toc'.
 
 
 [1
@@ -1260,7 +1499,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: s_how_many_simulations.png Graphic file (type png)
 
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 108.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 111.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
  [2
 
@@ -1268,7 +1507,7 @@ Package pdftex.def Info: s_how_many_simulations.png used on input line 108.
 <cult_area.png, id=20, 504.01099pt x 739.3221pt>
 File: cult_area.png Graphic file (type png)
  <use cult_area.png>
-Package pdftex.def Info: cult_area.png used on input line 121.
+Package pdftex.def Info: cult_area.png used on input line 124.
 (pdftex.def)             Requested size: 398.33858pt x 584.31754pt.
 
 
@@ -1279,14 +1518,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: HadGEM2-ES_var_change_min.png Graphic file (type png)
 
 <use HadGEM2-ES_var_change_min.png>
-Package pdftex.def Info: HadGEM2-ES_var_change_min.png used on input line 158.
+Package pdftex.def Info: HadGEM2-ES_var_change_min.png used on input line 161.
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
 <HadGEM2-ES_var_change_max.png, id=26, 504.01099pt x 327.52763pt>
 File: HadGEM2-ES_var_change_max.png Graphic file (type png)
 
 <use HadGEM2-ES_var_change_max.png>
-Package pdftex.def Info: HadGEM2-ES_var_change_max.png used on input line 171.
+Package pdftex.def Info: HadGEM2-ES_var_change_max.png used on input line 174.
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
 
@@ -1296,7 +1535,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: other_models_var_change_max.png Graphic file (type png)
 
 <use other_models_var_change_max.png>
-Package pdftex.def Info: other_models_var_change_max.png used on input line 180
+Package pdftex.def Info: other_models_var_change_max.png used on input line 183
 .
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
@@ -1304,12 +1543,12 @@ Package pdftex.def Info: other_models_var_change_max.png used on input line 180
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--207
+Underfull \hbox (badness 10000) in paragraph at lines 200--210
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--207
+Underfull \hbox (badness 10000) in paragraph at lines 200--210
 
  []
 
@@ -1325,14 +1564,14 @@ LaTeX Warning: Text page 5 contains only floats.
 File: regression_exampleA1.png Graphic file (type png)
 
 <use regression_exampleA1.png>
-Package pdftex.def Info: regression_exampleA1.png used on input line 220.
+Package pdftex.def Info: regression_exampleA1.png used on input line 223.
 (pdftex.def)             Requested size: 463.78pt x 140.15547pt.
 
 <regression_exampleA1_2.png, id=41, 594.20393pt x 179.51868pt>
 File: regression_exampleA1_2.png Graphic file (type png)
 
 <use regression_exampleA1_2.png>
-Package pdftex.def Info: regression_exampleA1_2.png used on input line 232.
+Package pdftex.def Info: regression_exampleA1_2.png used on input line 235.
 (pdftex.def)             Requested size: 463.78pt x 140.11711pt.
  [7
 
@@ -1341,7 +1580,7 @@ ng, id=48, 590.30136pt x 237.0456pt>
 File: error_grid_810.png Graphic file (type png)
 
 <use error_grid_810.png>
-Package pdftex.def Info: error_grid_810.png used on input line 259.
+Package pdftex.def Info: error_grid_810.png used on input line 262.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 <error_grid_360_cultivated_A1.png, id=49, 590.30136pt x 237.0456pt>
@@ -1349,7 +1588,7 @@ File: error_grid_360_cultivated_A1.png Graphic file (type png)
 
 <use error_grid_360_cultivated_A1.png>
 Package pdftex.def Info: error_grid_360_cultivated_A1.png used on input line 27
-0.
+3.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
@@ -1360,7 +1599,7 @@ File: error_grid_360_cultivated_IWD.png Graphic file (type png)
 
 <use error_grid_360_cultivated_IWD.png>
 Package pdftex.def Info: error_grid_360_cultivated_IWD.png used on input line 2
-79.
+82.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
@@ -1374,7 +1613,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: LPJMLRCP85comp_30N.png Graphic file (type png)
 
 <use LPJMLRCP85comp_30N.png>
-Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 296.
+Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 299.
 (pdftex.def)             Requested size: 463.78pt x 134.94666pt.
  [10
 
@@ -1383,14 +1622,14 @@ Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 296.
 File: em_CTWN_all_crops_color.png Graphic file (type png)
 
 <use em_CTWN_all_crops_color.png>
-Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 312.
+Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 315.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 <em_CTWN_all_crops_A1.png, id=68, 562.2606pt x 432.60822pt>
 File: em_CTWN_all_crops_A1.png Graphic file (type png)
 
 <use em_CTWN_all_crops_A1.png>
-Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 321.
+Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 324.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 
@@ -1405,40 +1644,40 @@ File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png Graphic file (type p
 ng)
  <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png u
-sed on input line 332.
+sed on input line 335.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
 <LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png, id=78, 532.19627pt x 212.18472pt>
 File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png Graphic file (type png)
 <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png used on in
-put line 340.
+put line 343.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
  [13
 
  <./LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png> <./LPJmL_pDSSAT_PROME
 T_RCP85_all_cases_soy.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 354.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 357.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 357.
 
 <reduced_lpjml_maize.png, id=85, 505.02277pt x 359.32645pt>
 File: reduced_lpjml_maize.png Graphic file (type png)
 
 <use reduced_lpjml_maize.png>
-Package pdftex.def Info: reduced_lpjml_maize.png used on input line 372.
+Package pdftex.def Info: reduced_lpjml_maize.png used on input line 375.
 (pdftex.def)             Requested size: 312.9803pt x 222.69237pt.
 
 <reduced_regression_example_1.png, id=86, 612.70506pt x 202.06693pt>
 File: reduced_regression_example_1.png Graphic file (type png)
 
 <use reduced_regression_example_1.png>
-Package pdftex.def Info: reduced_regression_example_1.png used on input line 37
-9.
+Package pdftex.def Info: reduced_regression_example_1.png used on input line 38
+2.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
@@ -1449,7 +1688,7 @@ File: reduced_regression_example_2.png Graphic file (type png)
 
 <use reduced_regression_example_2.png>
 Package pdftex.def Info: reduced_regression_example_2.png used on input line 38
-6.
+9.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
@@ -1459,7 +1698,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: reduced_error_grid.png Graphic file (type png)
 
 <use reduced_error_grid.png>
-Package pdftex.def Info: reduced_error_grid.png used on input line 393.
+Package pdftex.def Info: reduced_error_grid.png used on input line 396.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
@@ -1470,7 +1709,7 @@ File: reduced_CARAIB_spatial_error.png Graphic file (type png)
 
 <use reduced_CARAIB_spatial_error.png>
 Package pdftex.def Info: reduced_CARAIB_spatial_error.png used on input line 40
-2.
+5.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
@@ -1480,7 +1719,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: reduced_global_em_maize.png Graphic file (type png)
 
 <use reduced_global_em_maize.png>
-Package pdftex.def Info: reduced_global_em_maize.png used on input line 411.
+Package pdftex.def Info: reduced_global_em_maize.png used on input line 414.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
 
@@ -1489,7 +1728,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <JULES_soy_bad.png, id=91, 516.15234pt x 676.59174pt>
 File: JULES_soy_bad.png Graphic file (type png)
  <use JULES_soy_bad.png>
-Package pdftex.def Info: JULES_soy_bad.png used on input line 419.
+Package pdftex.def Info: JULES_soy_bad.png used on input line 422.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
@@ -1499,7 +1738,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: PROMET_rice_bad.png Graphic file (type png)
 
 <use PROMET_rice_bad.png>
-Package pdftex.def Info: PROMET_rice_bad.png used on input line 430.
+Package pdftex.def Info: PROMET_rice_bad.png used on input line 433.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
@@ -1514,13 +1753,13 @@ ng>] [19 <./PROMET_rice_bad.png>]
 <lpjml_grid.png, id=122, 507.76901pt x 364.67442pt>
 File: lpjml_grid.png Graphic file (type png)
  <use lpjml_grid.png>
-Package pdftex.def Info: lpjml_grid.png used on input line 460.
+Package pdftex.def Info: lpjml_grid.png used on input line 463.
 (pdftex.def)             Requested size: 469.75502pt x 337.37976pt.
 
 <pdssat_maize.png, id=123, 504.01099pt x 353.25575pt>
 File: pdssat_maize.png Graphic file (type png)
  <use pdssat_maize.png>
-Package pdftex.def Info: pdssat_maize.png used on input line 466.
+Package pdftex.def Info: pdssat_maize.png used on input line 469.
 (pdftex.def)             Requested size: 469.75502pt x 329.25214pt.
 
 
@@ -1533,14 +1772,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 482.
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 485.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 <PROMET_spatial_MSE_ton_ha.png, id=133, 504.01099pt x 321.6015pt>
 File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 488.
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 491.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1550,7 +1789,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 494.
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 497.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1561,7 +1800,7 @@ File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha.png>
 Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 50
-0.
+3.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1571,7 +1810,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 506.
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 509.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
@@ -1581,38 +1820,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 512.
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 515.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./supdoc.bbl)
-! Undefined control sequence.
-l.517 \printbibliography
-                        
-? s
-OK, entering \scrollmode...
 [22
 
  <./pDSSAT_spatial_MSE_ton_ha.png>] [23 <./PROMET_spatial_MSE_ton_ha.png> <./JU
 LES_spatial_MSE_ton_ha.png>] [24 <./EPIC-TAMU_spatial_MSE_ton_ha.png> <./GEPIC_
-spatial_MSE_ton_ha.png>] [25 <./PEPIC_spatial_MSE_ton_ha.png>] (./supdoc.aux)
+spatial_MSE_ton_ha.png>] [25 <./PEPIC_spatial_MSE_ton_ha.png>] [26
+
+]
+(./supdoc.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
+Package logreq Info: Writing requests to 'supdoc.run.xml'.
+\openout1 = `supdoc.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 15978 strings out of 492995
- 308415 string characters out of 6132704
- 330391 words of memory out of 5000000
- 19298 multiletter control sequences out of 15000+600000
- 18732 words of font info for 74 fonts, out of 8000000 for 9000
+ 22020 strings out of 492995
+ 421298 string characters out of 6132704
+ 628651 words of memory out of 5000000
+ 25282 multiletter control sequences out of 15000+600000
+ 19033 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,43p,10375b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,74p,10375b,1617s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
@@ -1621,11 +1865,12 @@ al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on supdoc.pdf (25 pages, 29114992 bytes).
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on supdoc.pdf (26 pages, 29127005 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 208 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,61 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{Portmann2010}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PF}{%
+         family={Portmann},
+         familyi={P\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Siebert},
+         familyi={S\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Doell},
+         familyi={D\bibinitperiod},
+         given={Petra},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PFSSDP1}
+    \strng{fullhash}{PFSSDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1029/2008GB003435
+    \endverb
+    \field{pages}{GB1011}
+    \field{title}{{MIRCA}2000 - {G}lobal {M}onthly {I}rrigated and {R}ainfed
+  Crop {A}reas around the {Y}ear 2000: {A} {N}ew {H}igh-{R}esolution {D}ata
+  {S}et for {A}gricultural and {H}ydrological {M}odeling}
+    \field{volume}{24}
+    \field{journaltitle}{Global Biogeochemical Cycles}
+    \field{month}{03}
+    \field{year}{2010}
+  \endentry
+\endsortlist
+\endinput
