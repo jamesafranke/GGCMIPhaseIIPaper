@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 08:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 09:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,16 +743,9 @@ Package: translator 2010/06/12 ver 1.10
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translator-lang
 uage-mappings.tex)))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip57
-\bibsep=\skip58
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count161
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count162
+\c@float@type=\count161
 \float@exts=\toks21
 \float@box=\box75
 \@float@everytoks=\toks22
@@ -772,21 +765,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen184
 \caption@hangindent=\dimen185
 )
-\c@ContinuedFloat=\count163
+\c@ContinuedFloat=\count162
 Package caption Info: float package is loaded.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count164
+\linenopenalty=\count163
 \output=\toks23
-\linenoprevgraf=\count165
+\linenoprevgraf=\count164
 \linenumbersep=\dimen186
 \linenumberwidth=\dimen187
-\c@linenumber=\count166
-\c@pagewiselinenumber=\count167
-\c@LN@truepage=\count168
-\c@internallinenumber=\count169
-\c@internallinenumbers=\count170
+\c@linenumber=\count165
+\c@pagewiselinenumber=\count166
+\c@LN@truepage=\count167
+\c@internallinenumber=\count168
+\c@internallinenumbers=\count169
 \quotelinenumbersep=\dimen188
 \bframerule=\dimen189
 \bframesep=\dimen190
@@ -795,7 +788,7 @@ LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip59
+\@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -805,13 +798,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count171
+\inf@bad=\count170
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count172
-\leftroot@=\count173
+\uproot@=\count171
+\leftroot@=\count172
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count174
-\DOTSCASE@=\count175
+\classnum@=\count173
+\DOTSCASE@=\count174
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -820,15 +813,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen192
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count176
-\c@MaxMatrixCols=\count177
+\macc@depth=\count175
+\c@MaxMatrixCols=\count176
 \dotsspace@=\muskip16
-\c@parentequation=\count178
-\dspbrk@lvl=\count179
+\c@parentequation=\count177
+\dspbrk@lvl=\count178
 \tag@help=\toks24
-\row@=\count180
-\column@=\count181
-\maxfields@=\count182
+\row@=\count179
+\column@=\count180
+\maxfields@=\count181
 \andhelp@=\toks25
 \eqnshift@=\dimen193
 \alignsep@=\dimen194
@@ -837,8 +830,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \totwidth@=\dimen197
 \lineht@=\dimen198
 \@envbody=\toks26
-\multlinegap=\skip60
-\multlinetaggap=\skip61
+\multlinegap=\skip58
+\multlinetaggap=\skip59
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -851,15 +844,15 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip62
-\f@ncyO@elh=\skip63
-\f@ncyO@erh=\skip64
-\f@ncyO@olh=\skip65
-\f@ncyO@orh=\skip66
-\f@ncyO@elf=\skip67
-\f@ncyO@erf=\skip68
-\f@ncyO@olf=\skip69
-\f@ncyO@orf=\skip70
+\fancy@headwidth=\skip60
+\f@ncyO@elh=\skip61
+\f@ncyO@erh=\skip62
+\f@ncyO@olh=\skip63
+\f@ncyO@orh=\skip64
+\f@ncyO@elf=\skip65
+\f@ncyO@erf=\skip66
+\f@ncyO@olf=\skip67
+\f@ncyO@orf=\skip68
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -882,27 +875,27 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count183
+\Gread@gobject=\count182
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip71
-\subfigcapskip=\skip72
+\subfigtopskip=\skip69
+\subfigcapskip=\skip70
 \subfigcaptopadj=\dimen199
-\subfigbottomskip=\skip73
+\subfigbottomskip=\skip71
 \subfigcapmargin=\dimen256
-\subfiglabelskip=\skip74
-\c@subfigure=\count184
-\c@lofdepth=\count185
-\c@subtable=\count186
-\c@lotdepth=\count187
+\subfiglabelskip=\skip72
+\c@subfigure=\count183
+\c@lofdepth=\count184
+\c@subtable=\count185
+\c@lotdepth=\count186
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip75
-\subfig@bottom=\skip76
+\subfig@top=\skip73
+\subfig@bottom=\skip74
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -931,9 +924,9 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headfont=\toks30
 \thm@notefont=\toks31
 \thm@headpunct=\toks32
-\thm@preskip=\skip77
-\thm@postskip=\skip78
-\thm@headsep=\skip79
+\thm@preskip=\skip75
+\thm@postskip=\skip76
+\thm@headsep=\skip77
 \dth@everypar=\toks33
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/blindtext/blindtext.sty
@@ -942,24 +935,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count188
-\c@Blindtext=\count189
-\c@blind@countparstart=\count190
-\blind@countxx=\count191
-\blindtext@numBlindtext=\count192
-\blind@countyy=\count193
-\c@blindlist=\count194
-\c@blindlistlevel=\count195
-\c@blindlist@level=\count196
-\blind@listitem=\count197
-\c@blind@listcount=\count198
-\c@blind@levelcount=\count199
-\blind@mathformula=\count266
-\blind@Mathformula=\count267
-\c@blind@randomcount=\count268
-\c@blind@randommax=\count269
-\c@blind@pangramcount=\count270
-\c@blind@pangrammax=\count271
+\c@blindtext=\count187
+\c@Blindtext=\count188
+\c@blind@countparstart=\count189
+\blind@countxx=\count190
+\blindtext@numBlindtext=\count191
+\blind@countyy=\count192
+\c@blindlist=\count193
+\c@blindlistlevel=\count194
+\c@blindlist@level=\count195
+\blind@listitem=\count196
+\c@blind@listcount=\count197
+\c@blind@levelcount=\count198
+\blind@mathformula=\count199
+\blind@Mathformula=\count266
+\c@blind@randomcount=\count267
+\c@blind@randommax=\count268
+\c@blind@pangramcount=\count269
+\c@blind@pangrammax=\count270
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
@@ -974,16 +967,16 @@ Package: arydshln 2016/04/28 v1.73
 \adl@depth=\dimen263
 \adl@depthsave=\dimen264
 \adl@finaldepth=\dimen265
-\adl@columns=\count272
-\adl@ncol=\count273
-\adl@currentcolumn=\count274
-\adl@currentcolumnsave=\count275
-\adl@totalheight=\count276
-\adl@totalheightsave=\count277
-\adl@dash=\count278
-\adl@gap=\count279
-\adl@cla=\count280
-\adl@clb=\count281
+\adl@columns=\count271
+\adl@ncol=\count272
+\adl@currentcolumn=\count273
+\adl@currentcolumnsave=\count274
+\adl@totalheight=\count275
+\adl@totalheightsave=\count276
+\adl@dash=\count277
+\adl@gap=\count278
+\adl@cla=\count279
+\adl@clb=\count280
 \adl@everyvbox=\toks34
 \adl@LTpagetotal=\dimen266
 )
@@ -1007,25 +1000,25 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 )
-\@dblbotnum=\count282
-\c@dblbotnumber=\count283
+\@dblbotnum=\count281
+\c@dblbotnumber=\count282
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip80
-\multirow@cntb=\count284
-\multirow@dima=\skip81
+\multirow@colwidth=\skip78
+\multirow@cntb=\count283
+\multirow@dima=\skip79
 \bigstrutjot=\dimen267
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-
-Package xr Warning: 
-No file ../PhaseIIPaper/main.aux
-LABELS NOT IMPORTED.
- on input line 25.
-
-(./supdoc.aux
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip80
+\bibsep=\skip81
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count284
+) (./supdoc.aux
 
 LaTeX Warning: Label `fig:var' multiply defined.
 
@@ -1053,18 +1046,18 @@ LaTeX Warning: Label `fig:lpjmlrice' multiply defined.
 )
 \openout1 = `supdoc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1245,11 +1238,11 @@ e
 ))
 Redefining \end@dblfloat\ for use with subfigure
 \c__siunitx_mathsf_int=\count291
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1267,55 +1260,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: s_how_many_simulations.png Graphic file (type png)
 
 <use s_how_many_simulations.png>
-Package pdftex.def Info: s_how_many_simulations.png used on input line 103.
+Package pdftex.def Info: s_how_many_simulations.png used on input line 108.
 (pdftex.def)             Requested size: 469.75502pt x 293.57272pt.
  [2
 
  <./s_how_many_simulations.png>]
-<s_croparea_irr.png, id=20, 261.778pt x 490.9542pt>
-File: s_croparea_irr.png Graphic file (type png)
- <use s_croparea_irr.png>
-Package pdftex.def Info: s_croparea_irr.png used on input line 120.
-(pdftex.def)             Requested size: 211.38832pt x 396.4646pt.
+<cult_area.png, id=20, 504.01099pt x 739.3221pt>
+File: cult_area.png Graphic file (type png)
+ <use cult_area.png>
+Package pdftex.def Info: cult_area.png used on input line 121.
+(pdftex.def)             Requested size: 398.33858pt x 584.31754pt.
 
 
-Package natbib Warning: Citation `Portmann2010' on page 3 undefined on input li
-ne 126.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package natbib Warning: Citation `Portmann2010' on page 3 undefined on input li
-ne 126.
-
-<s_croparea.png, id=21, 262.9022pt x 492.0784pt>
-File: s_croparea.png Graphic file (type png)
- <use s_croparea.png>
-Package pdftex.def Info: s_croparea.png used on input line 134.
-(pdftex.def)             Requested size: 211.38832pt x 395.66801pt.
- [3
-
- <./s_croparea_irr.png> <./s_croparea.png>]
-<HadGEM2-ES_var_change_min.png, id=27, 504.01099pt x 327.52763pt>
+[3 <./cult_area.png>]
+<HadGEM2-ES_var_change_min.png, id=25, 504.01099pt x 327.52763pt>
 File: HadGEM2-ES_var_change_min.png Graphic file (type png)
 
 <use HadGEM2-ES_var_change_min.png>
-Package pdftex.def Info: HadGEM2-ES_var_change_min.png used on input line 167.
+Package pdftex.def Info: HadGEM2-ES_var_change_min.png used on input line 158.
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
-<HadGEM2-ES_var_change_max.png, id=28, 504.01099pt x 327.52763pt>
+<HadGEM2-ES_var_change_max.png, id=26, 504.01099pt x 327.52763pt>
 File: HadGEM2-ES_var_change_max.png Graphic file (type png)
 
 <use HadGEM2-ES_var_change_max.png>
-Package pdftex.def Info: HadGEM2-ES_var_change_max.png used on input line 180.
+Package pdftex.def Info: HadGEM2-ES_var_change_max.png used on input line 171.
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<other_models_var_change_max.png, id=29, 504.01099pt x 327.52763pt>
+<other_models_var_change_max.png, id=27, 504.01099pt x 327.52763pt>
 File: other_models_var_change_max.png Graphic file (type png)
 
 <use other_models_var_change_max.png>
-Package pdftex.def Info: other_models_var_change_max.png used on input line 189
+Package pdftex.def Info: other_models_var_change_max.png used on input line 180
 .
 (pdftex.def)             Requested size: 398.33858pt x 258.85893pt.
 
@@ -1323,65 +1304,63 @@ Package pdftex.def Info: other_models_var_change_max.png used on input line 189
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--216
+Underfull \hbox (badness 10000) in paragraph at lines 197--207
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--216
+Underfull \hbox (badness 10000) in paragraph at lines 197--207
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [4
+
 
  <./HadGEM2-ES_var_change_min.png>]
 
 LaTeX Warning: Text page 5 contains only floats.
 
 [5 <./HadGEM2-ES_var_change_max.png> <./other_models_var_change_max.png>]
-[6] <regression_exampleA1.png, id=42, 594.0594pt x 179.51868pt>
+[6] <regression_exampleA1.png, id=40, 594.0594pt x 179.51868pt>
 File: regression_exampleA1.png Graphic file (type png)
 
 <use regression_exampleA1.png>
-Package pdftex.def Info: regression_exampleA1.png used on input line 229.
+Package pdftex.def Info: regression_exampleA1.png used on input line 220.
 (pdftex.def)             Requested size: 463.78pt x 140.15547pt.
 
-<regression_exampleA1_2.png, id=43, 594.20393pt x 179.51868pt>
+<regression_exampleA1_2.png, id=41, 594.20393pt x 179.51868pt>
 File: regression_exampleA1_2.png Graphic file (type png)
 
 <use regression_exampleA1_2.png>
-Package pdftex.def Info: regression_exampleA1_2.png used on input line 241.
+Package pdftex.def Info: regression_exampleA1_2.png used on input line 232.
 (pdftex.def)             Requested size: 463.78pt x 140.11711pt.
  [7
 
  <./regression_exampleA1.png> <./regression_exampleA1_2.png>] <error_grid_810.p
-ng, id=50, 590.30136pt x 237.0456pt>
+ng, id=48, 590.30136pt x 237.0456pt>
 File: error_grid_810.png Graphic file (type png)
 
 <use error_grid_810.png>
-Package pdftex.def Info: error_grid_810.png used on input line 268.
+Package pdftex.def Info: error_grid_810.png used on input line 259.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
-<error_grid_360_cultivated_A1.png, id=51, 590.30136pt x 237.0456pt>
+<error_grid_360_cultivated_A1.png, id=49, 590.30136pt x 237.0456pt>
 File: error_grid_360_cultivated_A1.png Graphic file (type png)
 
 <use error_grid_360_cultivated_A1.png>
 Package pdftex.def Info: error_grid_360_cultivated_A1.png used on input line 27
-9.
+0.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<error_grid_360_cultivated_IWD.png, id=52, 590.30136pt x 237.0456pt>
+<error_grid_360_cultivated_IWD.png, id=50, 590.30136pt x 237.0456pt>
 File: error_grid_360_cultivated_IWD.png Graphic file (type png)
 
 <use error_grid_360_cultivated_IWD.png>
 Package pdftex.def Info: error_grid_360_cultivated_IWD.png used on input line 2
-88.
+79.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
@@ -1391,27 +1370,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  <./error_grid_810.png>] [9 <./error_grid_360_cultivated_A1.png> <./error_grid_
 360_cultivated_IWD.png>]
-<LPJMLRCP85comp_30N.png, id=64, 586.68787pt x 170.70174pt>
+<LPJMLRCP85comp_30N.png, id=62, 586.68787pt x 170.70174pt>
 File: LPJMLRCP85comp_30N.png Graphic file (type png)
 
 <use LPJMLRCP85comp_30N.png>
-Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 305.
+Package pdftex.def Info: LPJMLRCP85comp_30N.png used on input line 296.
 (pdftex.def)             Requested size: 463.78pt x 134.94666pt.
  [10
 
  <./LPJMLRCP85comp_30N.png>]
-<em_CTWN_all_crops_color.png, id=69, 562.2606pt x 432.60822pt>
+<em_CTWN_all_crops_color.png, id=67, 562.2606pt x 432.60822pt>
 File: em_CTWN_all_crops_color.png Graphic file (type png)
 
 <use em_CTWN_all_crops_color.png>
-Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 321.
+Package pdftex.def Info: em_CTWN_all_crops_color.png used on input line 312.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
-<em_CTWN_all_crops_A1.png, id=70, 562.2606pt x 432.60822pt>
+<em_CTWN_all_crops_A1.png, id=68, 562.2606pt x 432.60822pt>
 File: em_CTWN_all_crops_A1.png Graphic file (type png)
 
 <use em_CTWN_all_crops_A1.png>
-Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 330.
+Package pdftex.def Info: em_CTWN_all_crops_A1.png used on input line 321.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 
@@ -1420,107 +1399,107 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [11
 
  <./em_CTWN_all_crops_color.png>] [12 <./em_CTWN_all_crops_A1.png>]
-<LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png, id=79, 532.19627pt x 212
+<LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png, id=77, 532.19627pt x 212
 .18472pt>
 File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png Graphic file (type p
 ng)
  <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png u
-sed on input line 341.
+sed on input line 332.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
-<LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png, id=80, 532.19627pt x 212.18472pt>
+<LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png, id=78, 532.19627pt x 212.18472pt>
 File: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png Graphic file (type png)
 <use LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png>
 Package pdftex.def Info: LPJmL_pDSSAT_PROMET_RCP85_all_cases_soy.png used on in
-put line 349.
+put line 340.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
  [13
 
  <./LPJmL_pDSSAT_PROMET_RCP85_all_cases_spring_wheat.png> <./LPJmL_pDSSAT_PROME
 T_RCP85_all_cases_soy.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 363.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 354.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 363.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
 
-<reduced_lpjml_maize.png, id=87, 505.02277pt x 359.32645pt>
+<reduced_lpjml_maize.png, id=85, 505.02277pt x 359.32645pt>
 File: reduced_lpjml_maize.png Graphic file (type png)
 
 <use reduced_lpjml_maize.png>
-Package pdftex.def Info: reduced_lpjml_maize.png used on input line 381.
+Package pdftex.def Info: reduced_lpjml_maize.png used on input line 372.
 (pdftex.def)             Requested size: 312.9803pt x 222.69237pt.
 
-<reduced_regression_example_1.png, id=88, 612.70506pt x 202.06693pt>
+<reduced_regression_example_1.png, id=86, 612.70506pt x 202.06693pt>
 File: reduced_regression_example_1.png Graphic file (type png)
 
 <use reduced_regression_example_1.png>
-Package pdftex.def Info: reduced_regression_example_1.png used on input line 38
-8.
+Package pdftex.def Info: reduced_regression_example_1.png used on input line 37
+9.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_regression_example_2.png, id=89, 612.70506pt x 202.06693pt>
+<reduced_regression_example_2.png, id=87, 612.70506pt x 202.06693pt>
 File: reduced_regression_example_2.png Graphic file (type png)
 
 <use reduced_regression_example_2.png>
-Package pdftex.def Info: reduced_regression_example_2.png used on input line 39
-5.
+Package pdftex.def Info: reduced_regression_example_2.png used on input line 38
+6.
 (pdftex.def)             Requested size: 441.01772pt x 145.44798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_error_grid.png, id=90, 590.30136pt x 237.0456pt>
+<reduced_error_grid.png, id=88, 590.30136pt x 237.0456pt>
 File: reduced_error_grid.png Graphic file (type png)
 
 <use reduced_error_grid.png>
-Package pdftex.def Info: reduced_error_grid.png used on input line 402.
+Package pdftex.def Info: reduced_error_grid.png used on input line 393.
 (pdftex.def)             Requested size: 441.01772pt x 177.10374pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_CARAIB_spatial_error.png, id=91, 504.01099pt x 327.52763pt>
+<reduced_CARAIB_spatial_error.png, id=89, 504.01099pt x 327.52763pt>
 File: reduced_CARAIB_spatial_error.png Graphic file (type png)
 
 <use reduced_CARAIB_spatial_error.png>
-Package pdftex.def Info: reduced_CARAIB_spatial_error.png used on input line 41
-1.
+Package pdftex.def Info: reduced_CARAIB_spatial_error.png used on input line 40
+2.
 (pdftex.def)             Requested size: 441.01772pt x 286.59596pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<reduced_global_em_maize.png, id=92, 532.19627pt x 212.18472pt>
+<reduced_global_em_maize.png, id=90, 532.19627pt x 212.18472pt>
 File: reduced_global_em_maize.png Graphic file (type png)
 
 <use reduced_global_em_maize.png>
-Package pdftex.def Info: reduced_global_em_maize.png used on input line 420.
+Package pdftex.def Info: reduced_global_em_maize.png used on input line 411.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_soy_bad.png, id=93, 516.15234pt x 676.59174pt>
+<JULES_soy_bad.png, id=91, 516.15234pt x 676.59174pt>
 File: JULES_soy_bad.png Graphic file (type png)
  <use JULES_soy_bad.png>
-Package pdftex.def Info: JULES_soy_bad.png used on input line 428.
+Package pdftex.def Info: JULES_soy_bad.png used on input line 419.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PROMET_rice_bad.png, id=94, 516.15234pt x 676.59174pt>
+<PROMET_rice_bad.png, id=92, 516.15234pt x 676.59174pt>
 File: PROMET_rice_bad.png Graphic file (type png)
 
 <use PROMET_rice_bad.png>
-Package pdftex.def Info: PROMET_rice_bad.png used on input line 439.
+Package pdftex.def Info: PROMET_rice_bad.png used on input line 430.
 (pdftex.def)             Requested size: 398.33858pt x 522.17484pt.
 
 
@@ -1532,16 +1511,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ed_regression_example_2.png>] [16 <./reduced_error_grid.png> <./reduced_CARAIB_
 spatial_error.png>] [17 <./reduced_global_em_maize.png>] [18 <./JULES_soy_bad.p
 ng>] [19 <./PROMET_rice_bad.png>]
-<lpjml_grid.png, id=124, 507.76901pt x 364.67442pt>
+<lpjml_grid.png, id=122, 507.76901pt x 364.67442pt>
 File: lpjml_grid.png Graphic file (type png)
  <use lpjml_grid.png>
-Package pdftex.def Info: lpjml_grid.png used on input line 469.
+Package pdftex.def Info: lpjml_grid.png used on input line 460.
 (pdftex.def)             Requested size: 469.75502pt x 337.37976pt.
 
-<pdssat_maize.png, id=125, 504.01099pt x 353.25575pt>
+<pdssat_maize.png, id=123, 504.01099pt x 353.25575pt>
 File: pdssat_maize.png Graphic file (type png)
  <use pdssat_maize.png>
-Package pdftex.def Info: pdssat_maize.png used on input line 475.
+Package pdftex.def Info: pdssat_maize.png used on input line 466.
 (pdftex.def)             Requested size: 469.75502pt x 329.25214pt.
 
 
@@ -1550,67 +1529,70 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [20
 
  <./lpjml_grid.png>] [21 <./pdssat_maize.png>]
-<pDSSAT_spatial_MSE_ton_ha.png, id=134, 504.01099pt x 321.6015pt>
+<pDSSAT_spatial_MSE_ton_ha.png, id=132, 504.01099pt x 321.6015pt>
 File: pDSSAT_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use pDSSAT_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 497.
+Package pdftex.def Info: pDSSAT_spatial_MSE_ton_ha.png used on input line 482.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
-<PROMET_spatial_MSE_ton_ha.png, id=135, 504.01099pt x 321.6015pt>
+<PROMET_spatial_MSE_ton_ha.png, id=133, 504.01099pt x 321.6015pt>
 File: PROMET_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PROMET_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 503.
+Package pdftex.def Info: PROMET_spatial_MSE_ton_ha.png used on input line 488.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<JULES_spatial_MSE_ton_ha.png, id=136, 504.01099pt x 321.6015pt>
+<JULES_spatial_MSE_ton_ha.png, id=134, 504.01099pt x 321.6015pt>
 File: JULES_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use JULES_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 509.
+Package pdftex.def Info: JULES_spatial_MSE_ton_ha.png used on input line 494.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<EPIC-TAMU_spatial_MSE_ton_ha.png, id=137, 504.01099pt x 321.6015pt>
+<EPIC-TAMU_spatial_MSE_ton_ha.png, id=135, 504.01099pt x 321.6015pt>
 File: EPIC-TAMU_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use EPIC-TAMU_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 51
-5.
+Package pdftex.def Info: EPIC-TAMU_spatial_MSE_ton_ha.png used on input line 50
+0.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GEPIC_spatial_MSE_ton_ha.png, id=138, 504.01099pt x 321.6015pt>
+<GEPIC_spatial_MSE_ton_ha.png, id=136, 504.01099pt x 321.6015pt>
 File: GEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use GEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 521.
+Package pdftex.def Info: GEPIC_spatial_MSE_ton_ha.png used on input line 506.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PEPIC_spatial_MSE_ton_ha.png, id=139, 504.01099pt x 321.6015pt>
+<PEPIC_spatial_MSE_ton_ha.png, id=137, 504.01099pt x 321.6015pt>
 File: PEPIC_spatial_MSE_ton_ha.png Graphic file (type png)
 
 <use PEPIC_spatial_MSE_ton_ha.png>
-Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 527.
+Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 512.
 (pdftex.def)             Requested size: 441.01772pt x 281.41043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package natbib Warning: There were undefined citations.
-
+(./supdoc.bbl)
+! Undefined control sequence.
+l.517 \printbibliography
+                        
+? s
+OK, entering \scrollmode...
 [22
 
  <./pDSSAT_spatial_MSE_ton_ha.png>] [23 <./PROMET_spatial_MSE_ton_ha.png> <./JU
@@ -1621,13 +1603,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15980 strings out of 492995
- 308487 string characters out of 6132704
- 330209 words of memory out of 5000000
- 19300 multiletter control sequences out of 15000+600000
+ 15978 strings out of 492995
+ 308415 string characters out of 6132704
+ 330391 words of memory out of 5000000
+ 19298 multiletter control sequences out of 15000+600000
  18732 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,43p,10394b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,43p,10375b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1640,10 +1622,10 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on supdoc.pdf (25 pages, 28834154 bytes).
+Output written on supdoc.pdf (25 pages, 29114992 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
+ 196 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

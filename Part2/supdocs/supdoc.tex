@@ -6,7 +6,6 @@
 \usepackage{amsfonts}
 \usepackage{booktabs}
 \usepackage{siunitx}
-\usepackage[authoryear,round]{natbib}
 \usepackage{float}
 \usepackage[font={small}]{caption}
 \usepackage[labelfont=bf]{caption}
@@ -22,7 +21,12 @@
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{xr}
-\externaldocument{../PhaseIIPaper/main}
+%\usepackage[style=authoryear]{biblatex}
+%\addbibresource{bib.bib}
+\usepackage{natbib}
+\bibliographystyle{authoryear}
+
+%\externaldocument{../PhaseIIPaper/main}
 %\biboptions{authoryear, comma}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,9 +97,10 @@ and Elisabeth Moyer$^{1, 2}$
 
 \renewcommand{\thefigure}{S\arabic{figure}}
 
-\section{Experiment simulation sampling in variable space}
+\section{Experiment simulation sampling in variable space and cultivated areas}
 \begin{flushleft}
-	Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. Figure \ref{fig:numbersims} compares sampling density in the models used in the emulator analysis. 
+	Simulation sampling across the defined variable space is not uniform tn the GGCMI Phase II experiment. 
+  Figure \ref{fig:numbersims} compares sampling density in the models used in the emulator analysis. 
 \end{flushleft}
 
 \begin{figure}[h!]
@@ -111,30 +116,16 @@ and Elisabeth Moyer$^{1, 2}$
 \end{figure}
 
 \clearpage
-\section{Cultivated areas}
 \begin{figure}[h!]
-\centering
-\begin{minipage}{.45\textwidth}
     \centering
-    \vspace{0pt}
-    \includegraphics[width=\textwidth]{s_croparea_irr.png}\\
+    \includegraphics[width=14cm]{cult_area.png}\\
     \caption{
-	    Presently cultivated area in the real world for irrigated (left) and rainfed (right) crops, from the MIRCA2000 dataset \citep{Portmann2010}. 
-    Blue areas show grid-cells with more that 20,00 hectares of crop cultivated, and 
-    gray areas those with more that 10 hectares cultivated. Data are taken directly from the MIRCA2000 dataset  for maize, rice, and soy. 
+    Presently cultivated area in the real world for rainfed (left) and irrigated (right) crops, from the MIRCA2000 dataset (\cite{Portmann2010}). 
+    %Blue areas show grid-cells with more that 20,00 hectares of crop cultivated, and gray areas those with more that 10 hectares cultivated. 
+    Data are taken directly from the MIRCA2000 dataset  for maize, rice, and soy. 
     Winter and spring wheat areas are adapted from MIRCA2000 and sorted by growing season.
     }
     \label{fig:irrarea}
-\end{minipage}
-\hspace{.05\linewidth}
-%S2
-\begin{minipage}{.45\textwidth}
-    \centering
-    \vspace{-19mm}
-    \includegraphics[width=\textwidth]{s_croparea.png}\\
-    \caption{XX.}
-    \label{fig:rainfed}
-\end{minipage}
 \end{figure}
 
 \clearpage
@@ -194,7 +185,7 @@ Table S1 shows summaries for each crop and model weighted by production at the g
 \end{figure}
 
 
-\begin{table*}[h!]
+\begin{table}[ht]
 {\small
     \caption{
     Global production-weighted change in growing season daily maximum temperature variability as a percentage of baseline variability for the five climate models included in the ISIMIP project. 
@@ -213,7 +204,7 @@ Table S1 shows summaries for each crop and model weighted by production at the g
         \textbf{MIROC-ESM} & 4.0 (1.2)  & 3.1 (0.1)  & 0.4 (-5.1)  & 2.2 (-0.3)  & 2.6 (2.3)  \\ \hline
     \end{tabular}
 }
-\end{table*}
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -480,12 +471,6 @@ Spatial patterns of yields are well captured for all crops and models. Manuscrip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Cross validation error for all models}
 \begin{flushleft}
@@ -527,6 +512,10 @@ In this section we present maps of cross validation error (values found in main 
   \includegraphics[width=15.5cm]{PEPIC_spatial_MSE_ton_ha.png}
   \caption{Map of root mean squared error for three fold cross validation process for the PEPIC model for rainfed crops. Values shown as a percentage of yield change in each grid cell.}
 \end{figure}
+
+\bibliography{bib}
+\printbibliography
+%\bibliographystyle{Plain}
 
 \end{document}
 
