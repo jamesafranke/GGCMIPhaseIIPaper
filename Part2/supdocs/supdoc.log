@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 DEC 2019 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1863,10 +1863,6 @@ Package pdftex.def Info: PEPIC_spatial_MSE_ton_ha.png used on input line 519.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'supdoc.run.xml'.
 \openout1 = `supdoc.run.xml'.
 
@@ -1894,7 +1890,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on supdoc.pdf (26 pages, 29141899 bytes).
+Output written on supdoc.pdf (26 pages, 29141895 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
