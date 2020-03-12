@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main2"] 1581524307 "main2.aux" "main2.bbl" "main2" 1581524317
+["bibtex main2"] 1581524307 "main2.aux" "main2.bbl" "main2" 1581542095
   "./copernicus.bst" 1400594604 39039 195b64fc943aa9550129b5d6dca7d4f1 ""
   "bib.bib" 1576868070 87898 eff668cecf851fa0fd833f9f0cc9018d ""
-  "main2.aux" 1581524317 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
+  "main2.aux" 1581542094 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
   (generated)
-  "main2.blg"
   "main2.bbl"
-["pdflatex"] 1581524307 "main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf" "main2" 1581524317
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux" 1581524317 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
+  "main2.blg"
+["pdflatex"] 1581542084 "main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf" "main2" 1581542095
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux" 1581542094 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -181,14 +181,14 @@
   "figures/phase_II_em_figure_1.png" 1574110950 680121 f2a12ba434de7ccc5fb266896c98213b ""
   "figures/regression_example.png" 1574770040 691963 90bf9c05a75b4dca2b0aa4e0b99bbb18 ""
   "figures/regression_example_2.png" 1574770043 518376 19171f07dc327a889cc704da23402dfd ""
-  "main2.aux" 1581524317 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
+  "main2.aux" 1581542094 48250 e79bf2a2cd58aa6ab9f6dec8e97f0564 "pdflatex"
   "main2.bbl" 1581524307 37030 7e54ffa8c1a28d3046a941df897e901e "bibtex main2"
-  "main2.tex" 1581524275 94256 e2022f82735ce4257e2c523befbb398f ""
+  "main2.tex" 1581542083 94260 c4700db0b1f2531c94db33a0e1070cf8 ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "main2.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.log"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux"
+  "main2.aux"
   "main2.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf"
   "main2.pdf"

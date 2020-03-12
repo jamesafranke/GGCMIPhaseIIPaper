@@ -140,6 +140,29 @@ and Elisabeth Moyer$^{1, 2}$\\
 \label{fig:precip_rea}
 \end{figure}
 
+
+\clearpage
+\section{Model Details}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{model_table.png}
+    \caption{
+        Notes: (NA where not applicable)
+        $a$ D: daily time-step; M: monthly time-step; H: hourly time-step; WG: use monthly climate data interpolated to daily using a weather-generator
+        $b$ Ta: average temperature, Tmn: minimum temperature, Tmx: maximum temperature, cld: percentage of cloud cover, sun: fraction of sunshine hours; RH: relative humidity; WS: wind speed; Vap: vapour pressure, Rad: radiation
+        $c$ Source of soil property inputs (e.g., source of basic soil properties), plus method for manipulation to derive parameters required by the model); AWC: Available Water Capacity 141; HYD: hydraulic soil parameters; THM: thermal parameters; HWSD: Harmonized world soil database 142; STC: soil texture classification based on the USDA soil texture classification (http://ufdc.ufl.edu/IR00003107/00001); ISRIC-WISE 143; ROSETTA 144
+        $d$ Number of years for spin up (x); OM: organic matter, C: organic carbon; N: organic nitrogen; NH3: ammonia; NO3: nitrate; H2O: soil water; P: phosphorus; CR: crop residues; Tsoil: soil temperature
+        $e$ calibration of model parameters other than the ones described in the original model description
+        $f$ PHU+V: prescribed externally computed phenological heat unit requirements and vernalization (winter wheat) per crop and grid cell to meet prescribed harvest date on average (1980-2010); HI: harvest index
+        $g$ Irrigation rules: depth of soil moisture measured (cm) / critical lower soil moisture threshold to trigger irrigation event (\%); / upper soil moisture threshold to stop irrigation (\%); / irrigation application efficiency (\%); no WS: no water stress
+        $h$ Irrigation rules: EPIC-based models: water stress in crop to trigger automatic irrigation (\%); / irrigation efficiency - runoff from irrigation water (\%); / maximum of annual irrigation volume (mm); / maximum of single irrigation volume allowed (mm); / minimum of single irrigation volume allowed (mm)
+        $i$ Remove residue or not (Yes/No)
+        $j$ ET0: LSM: land surface model, complex computation of energy and water vapor fluxes
+    }
+    \label{fig:models}
+\end{figure}
+
 \clearpage
 \section{Results}
 \begin{figure}[h!]
