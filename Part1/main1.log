@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  13 MAR 2020 07:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  13 MAR 2020 07:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -622,19 +622,21 @@ LaTeX Warning: Text page 17 contains only floats.
 LaTeX Warning: Text page 19 contains only floats.
 
 [19 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/maize_sim_CG_T.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_W.png>] [20 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_C.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/rice_sim_CG_T.png>] [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
+Overfull \hbox (72.39052pt too wide) in paragraph at lines 647--649
+\T1/ptm/m/n/10 not in-cluded here. While we ac-knowl-edge that these mech-a-nisms ex-ist (e.g. Decker et al. 2017 see https://iopscience.iop.org/article/10.1088/1748-
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/ptm/b/n/9 Spring
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23] [24] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl [25] [26]
+[24] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl [25] [26]
 Underfull \hbox (badness 2253) in paragraph at lines 123--128
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
  []
@@ -670,12 +672,12 @@ Underfull \hbox (badness 1292) in paragraph at lines 509--514
  []
 
 [30] [31]) [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 720.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 720.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 723.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
  (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 720.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 720.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 720.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 723.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 723.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 723.
  ) 
 Here is how much of TeX's memory you used:
  10639 strings out of 481242
@@ -686,7 +688,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  49i,10n,46p,2055b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (32 pages, 13209938 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (32 pages, 13210410 bytes).
 PDF statistics:
  800 PDF objects out of 1000 (max. 8388607)
  726 compressed objects within 8 object streams
