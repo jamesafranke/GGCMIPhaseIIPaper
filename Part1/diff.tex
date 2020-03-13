@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL main1submitted.tex   Tue Mar 10 19:13:09 2020
-%DIF ADD main1.tex            Fri Mar 13 11:06:52 2020
+%DIF ADD main1.tex            Fri Mar 13 13:12:09 2020
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 \usepackage{url}
 \Urlmuskip=0mu plus 1mu % for better line break in very long globus URLs
@@ -152,7 +152,7 @@ But process-based models still struggle with some important details, including r
 }\DIFaddend Long-term projections therefore retain considerable uncertainty \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
 \citep{WOLF2002217, JAGTAP200273, Iizumi2010, ANGULO201332, Asseng2013, Asseng2015}}\hspace{0pt}%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citep{WOLF2002217, JAGTAP200273, 2zumi2010, ANGULO201332, Asseng2013, Asseng2015}}\hspace{0pt}%DIFAUXCMD
+\citep{WOLF2002217, JAGTAP200273, iizumi2010, ANGULO201332, Asseng2013, Asseng2015}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend . 
 
 Model intercomparison projects such as the Agricultural Model Intercomparison and Improvement Project \citep[AgMIP, ][]{ROSENZWEIG2013} are crucial in quantifying uncertainties in model projections \citep{Rosenzweig2014}. Intercomparison projects have also been used to develop protocols for evaluating overall model performance \citep{Elliott2015, muller_global_2017} and to assess the representation of individual physical mechanisms such as water stress and CO$_2$ fertilization \citep[e.g.][]{Schauberger2017}.
@@ -222,11 +222,7 @@ The dataset is designed to allow researchers to:
 The GGCMI Phase \DIFdelbegin \DIFdel{I }\DIFdelend \DIFaddbegin \DIFadd{1 }\DIFaddend intercomparison was a relatively limited computational exercise, requiring yield simulations for 19 crops across a total of 310 model-years of historical scenarios, and had the participation of 14 modeling groups.
 The GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend protocol is substantially larger, involving over 1400 individual 30-year global scenarios, or over 42,000 model-years; 12 modeling groups nevertheless participated. To reduce the computational load, the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend protocol reduces the number crops to 5 (maize, rice, soybean, spring wheat, and winter wheat). 
 The reduced set of crops includes the three major global cereals and the major legume and accounts for over 50\% of human calories in 2016: nearly 3.5 billion tons or 32\% of total global crop production by weight \citep{FAOSTAT}. 
-This set of major crops has the advantage of historical yield data globally available at sub-national scale \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
-\citep{Ray2012,iizumi_historical_2014}}\hspace{0pt}%DIFAUXCMD
-}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citep{Ray2012,2zumi_historical_2014}}\hspace{0pt}%DIFAUXCMD
-}\DIFaddend , and has been frequently used in subsequent analyses \citep[e.g.][]{muller_global_2017,porwollik_spatial_2016}.
+This set of major crops has the advantage of historical yield data globally available at sub-national scale \citep{Ray2012,iizumi_historical_2014}, and has been frequently used in subsequent analyses \citep[e.g.][]{muller_global_2017,porwollik_spatial_2016}.
 
 The Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend protocol involves a suite of uniform perturbations from a historical climate timeseries.
 The baseline climate scenario for GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend is one of the weather products used in Phase \DIFdelbegin \DIFdel{I}\DIFdelend \DIFaddbegin \DIFadd{1}\DIFaddend , daily climate inputs for 1980-2010 from the 0.5 degree NASA AgMERRA (``Agricultural''-modified Modern Era Retrospective analysis for Research and Applications) gridded re-analysis product. AgMERRA is specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}. 
@@ -311,7 +307,7 @@ Selection criterion involve a combination of soil suitability indices at 10 arc-
 \DIFaddbegin \DIFadd{Currently cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \mbox{%DIFAUXCMD
 \citep{Portmann2010}}\hspace{0pt}%DIFAUXCMD
 .
-}\DIFaddend Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the \DIFdelbegin \DIFdel{IIASA }\DIFdelend \DIFaddbegin \DIFadd{2ASA }\DIFaddend (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
+}\DIFaddend Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the IIASA (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
 All modeling groups simulate the minimum required coverage, but some provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia (Figure \ref{fig:crop_area}, right).
 
@@ -367,11 +363,18 @@ A growing season is assigned to winter wheat if all of the following hold, and t
   \item{the monthly mean temperature is below freezing point (<0$^\circ$C) at most for 5 months per year (i.e. winter is not too long)}
   \item{the coldest 3 months of a year are below 10$^\circ$C (i.e.\ there is a winter)}
   \item{the season start date fits the criteria that:}
-  \item[]{\begin{itemize}  
+  \DIFdelbegin %DIFDELCMD < \item[]{\begin{itemize}  
+%DIFDELCMD <       \item{if in the N.\ hemisphere, it is after the warmest \textit{or} before the coldest month of the year (as winter is around the end/beginning of the calendar year)}
+%DIFDELCMD <       \item{if in the S.\ hemisphere, it is after the warmest \textit{and} before the coldest month of the year (as winter is in the middle of the calendar year)}
+%DIFDELCMD <       \end{itemize}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \item[]{
+    \begin{itemize}  
       \item{if in the N.\ hemisphere, it is after the warmest \textit{or} before the coldest month of the year (as winter is around the end/beginning of the calendar year)}
       \item{if in the S.\ hemisphere, it is after the warmest \textit{and} before the coldest month of the year (as winter is in the middle of the calendar year)}
-      \end{itemize}}
-\end{itemize}
+      \end{itemize}
+      }
+\DIFaddend \end{itemize}
 
 Nitrogen (N) application is standardized in timing across models. 
 N fertilizer is applied in two doses, as is often the norm in actual practice, to reduce losses to the environment. 
@@ -401,7 +404,7 @@ Models employ a variety of approaches for the core modules such as primary produ
 For primary production, site-based models employ light use efficiency approaches and ecosystem models use photosynthesis approaches.
 For evapotranspiration, most models use Priestley-Taylor, Penman-Monteith or Hargreaves schemes, but JULES and PROMET utilize a land surface model approach instead. 
 Note that models that share a common genealogy may still use different schemes for evapotranspiration:
-for example, EPIC-TAMU uses Penman-Monteith and EPIC-2ASA uses Hargreaves.
+for example, EPIC-TAMU uses Penman-Monteith and EPIC-IIASA uses Hargreaves.
 To describe soils, most models use either the Harmonized World Soil Database (HWSD) from the FAO \mbox{%DIFAUXCMD
 \citep{FAOSOIL2008} }\hspace{0pt}%DIFAUXCMD
 or the ISRIC-WISE database \mbox{%DIFAUXCMD
@@ -426,7 +429,7 @@ Each model provides the same set of CTWN simulations across all its modeled crop
     {\textbf{\DIFaddFL{CARAIB}}\DIFaddFL{,        \mbox{%DIFAUXCMD
 \citet{Dury2011, Pirttioja2015}}\hspace{0pt}%DIFAUXCMD
 }}  & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\textbf{\DIFaddFL{252 / 216}}}\\ \middlehline
-    {\textbf{\DIFaddFL{EPIC-2ASA}}\DIFaddFL{,    \mbox{%DIFAUXCMD
+    {\textbf{\DIFaddFL{EPIC-IIASA}}\DIFaddFL{,    \mbox{%DIFAUXCMD
 \citet{BALKOVIC2014}}\hspace{0pt}%DIFAUXCMD
 }} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{39 / 0}}\\  \middlehline
     {\textbf{\DIFaddFL{EPIC-TAMU}}\DIFaddFL{,     \mbox{%DIFAUXCMD
@@ -465,7 +468,7 @@ Each model provides the same set of CTWN simulations across all its modeled crop
 Not all modeling groups provided simulations for the full protocol described above. 
 Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
 These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with }\textit{\DIFadd{full}} \DIFadd{(12) and }\textit{\DIFadd{low}} \DIFadd{(4) options for the C $\cdot$ N variables, and }\textit{\DIFadd{full}} \DIFadd{(63), }\textit{\DIFadd{reduced}} \DIFadd{(31), and }\textit{\DIFadd{minimum}} \DIFadd{(9) options for T $\cdot$ W variables (described below). 
-All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase 2, some models provided a more limited set of A1 scenarios. Of these, EPIC-2ASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
+All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase 2, some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
 }
 
 \DIFadd{The different participation levels are defined by combining the CxN sets with the TxW sets:
@@ -480,7 +483,7 @@ All participating modeling groups provided identical coverage of the CTWN parame
 However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the nitrogen dimension. 
 Two models followed }\textit{\DIFadd{high}} \DIFadd{with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
 One model (PEPIC) followed }\textit{\DIFadd{mid}} \DIFadd{but included an additional C level. 
-Three models approximately followed }\textit{\DIFadd{low}} \DIFadd{with APSIM-UGOE and EPIC-2ASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
+Three models approximately followed }\textit{\DIFadd{low}} \DIFadd{with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
 }
 
 \DIFadd{The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
@@ -980,7 +983,7 @@ Crop yield changes under climate perturbations also show distinct geographic pat
 In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
 \DIFdelbegin \DIFdel{Models }\DIFdelend \DIFaddbegin \DIFadd{In the A0 simulation, models }\DIFaddend show robust decreases in yields at low latitudes, and highly uncertain ensemble mean increases at most high latitudes.
 \DIFaddbegin \DIFadd{Low latitude yield reductions are due in part to shortenting of the growing season under warming and in part to the direct effects of higher temperature.
-In the A1 simulations where growing seasons lenght does not change, temperture related reductions in yield are more muted (see Supplemental Figure S8).
+In the A1 simulations where growing seasons lenght does not change, temperture related reductions in yield are more muted (see Supplemental Figure S14).
 }\DIFaddend Models show some increases in high mountain regions that are currently cold-limited \DIFaddbegin \DIFadd{in both A0 and A1 simulations}\DIFaddend .
 
 Projections of strong yield growth at higher latitudes should be treated with caution, since the effects evident in Figure \ref{fig:maizesoybaseline} are due in part to inaccuracies in model representations of present-day crop yields. 
@@ -1135,7 +1138,7 @@ Data are published in crop- and GGCM-specific packages, in order to break down t
     {\textbf{Model}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}\\ \middlehline
     {\textbf{APSIM-UGOE}} & {2582531} & {2582535} & {2582533} & {2582537} & {2582539}\\ \middlehline
     {\textbf{CARAIB}} & {2582522} & {2582508} & {2582504} & {2582516} & {2582499}\\ \middlehline
-    {\textbf{\DIFdelbeginFL \DIFdelFL{EPIC-IIASA}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{EPIC-2ASA}\DIFaddendFL }} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
+    {\textbf{EPIC-IIASA}} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
     {\textbf{EPIC-TAMU}} & {2582349} & {2582367} & {2582352} & {2582392} & {2582418}\\ \middlehline
     {\textbf{JULES}} & {2582543} & {2582547} & {2582545} & {--} & {2582551}\\ \middlehline
     {\textbf{GEPIC}} & {2582247} & {2582258} & {2582251} & {2582260} & {2582263}\\ \middlehline

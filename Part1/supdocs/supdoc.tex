@@ -36,7 +36,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \centering{\bf {\large Supplemental Material} \\
-{\Large The GGCMI Phase II experiment: global gridded crop model simulations under uniform changes in CO$_2$, temperature, water, and nitrogen levels (protocol version 1.0)}}\\
+{\Large The GGCMI Phase 2 experiment: global gridded crop model simulations under uniform changes in CO$_2$, temperature, water, and nitrogen levels (protocol version 1.0)}}\\
 
 \vspace{3mm}
 
@@ -129,7 +129,7 @@ and Elisabeth Moyer$^{1, 2}$\\
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{s_precip_rea.png}
-    \caption{Comparison across the three reanalysis products used in GGCMI Phase II. Values are aggregated across cultivation area based on the MIRCA2000 dataset.}
+    \caption{Comparison across the three reanalysis products used in GGCMI Phase 2. Values are aggregated across cultivation area based on the MIRCA2000 dataset.}
     \label{fig:precip_rea}
 \end{figure}
 
@@ -142,6 +142,7 @@ and Elisabeth Moyer$^{1, 2}$\\
 
 \clearpage
 \section{Model Details}
+
 \vspace{-4mm}
 \begin{table}[h!]
     \centering
@@ -162,6 +163,22 @@ and Elisabeth Moyer$^{1, 2}$\\
     \includegraphics[width=\textwidth]{model_table.png}
     \label{fig:models}
 \end{table}
+
+Calibration procedures for growing season recalibration in the A1 scenarios:
+\begin{itemize}
+    \item APSIM-UGOE: default cultivars with forced harvest at given maturity days
+    \item CARAIB: harvest forced on the same day as in the A0 simulation
+    \item EPIC-IIASA: Potential Heat Units (PHU) were calculated for each crop and grid cell based on grid-specific input sowing and harvesting dates using the background weather dataset
+    \item EPIC-TAMU: An algorithm was written to calculate the heat units required to reach maturity for a particular crop and location. These heat units were calculated for each year in the weather record, and PHU was set as the average heat units from this time series.
+    \item GEPIC: Crop- and pixel-specific potential heat units (PHU) were estimated ex ante based on input sowing dates, harvest dates, and 31 year monthly means of minimum and maximum temperatures using a program provided by the EPIC development team. The resulting long-term average PHU were subsequently used as a model input parameter.
+    \item JULES: Thermal times from emergence to flowering and flowering to harvest, were created by iteratively working out which thermal times would produce the right harvest dates for each crop in each gridbox (using the sowing and maturity dates provided by GGCMI and calculating harvest dates using table 11 in the Phase 1 protocol) using a 3hrly WFDEI climatology for the years 1991-2000 inclusive. The thermal time between emergence and flowering was assumed to be a crop-specific constant fraction of the thermal time between emergence and harvest. These thermal times were then prescribed as crop- and grid-cell specific values.
+    \item LPJ-GUESS: In a preparatory simulation run with unlimited growing season length, the accumulated phenological heat units (PHU) at the given maturity date were recorded per crop, year and grid cell. These heat units were averaged over all years and then prescribed as crop- and grid-cell specific values.
+    \item LPJmL: In a preparatory simulation run with unlimited growing season length, the accumulated phenological heat units (PHU) at the given maturity date were recorded per crop, year and grid cell. These heat units were averaged over all years and then prescribed as crop- and grid-cell specific values.
+    \item ORCHIDEE-crop: Crop-specific thermal times from emergence to flowering and flowering to harvest were created from default datasets of cultivars, by a testing simulation during 2000s, we chose the cultivar best matching the  calendar provided by the protocol.
+    \item pDSSAT: ran a calibration simulation in the baseline period, proportionally adjusting the phenological GDD parameters (p1 and p5 for grains) to produce thr target average growing season length over the baseline period. The resulting calibrated parameters were used for future simulations. 
+    \item PEPIC: used averaged month temperature across the study period, prescribed growing season, and crop-specific base temperature to estimate PHU for each grid and crop
+    \item PROMET: In a preparatory sensitivity analysis, simulation runs with unlimited growing season length were carried out for different cultivars. A 'cultivar factor' was set to a crop, year and grid cell specific value that reproduces the statistical growing season. This 'cultivar factor'  was averaged over all 30 years and then prescribed as crop- and grid-cell specific values.
+\end{itemize}
 
 \clearpage
 \section{Results}

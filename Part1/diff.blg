@@ -1,13 +1,16 @@
 This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diff.aux
+Case mismatch error between cite keys Iizumi_historical_2014 and iizumi_historical_2014
+---line 167 of file diff.aux
+ : \citation{Iizumi_historical_2014
+ :                                 }
+I'm skipping whatever remains of this command
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "2zumi2010"
-Warning--I didn't find a database entry for "2zumi_historical_2014"
 You've used 88 entries,
             2811 wiz_defined-function locations,
-            1612 strings with 43275 characters,
+            1610 strings with 43245 characters,
 and the built_in function-call counts, 131170 in all, are:
 = -- 12179
 > -- 9814
@@ -46,4 +49,4 @@ warning$ -- 0
 while$ -- 449
 width$ -- 0
 write$ -- 1049
-(There were 2 warnings)
+(There was 1 error message)
