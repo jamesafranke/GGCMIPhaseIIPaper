@@ -654,69 +654,88 @@ We expect that the GGCMI Phase 2 simulations will yield multiple insights in fut
 Potential applications include, as mentioned, the construction of emulators and yield response surfaces that can be used for both model diagnosis and impacts assessment. Specific studies could include analyzing the drivers of temperature-related yield losses (which may be due to both direct thermal effects or to shortening growing seasons); the benefits of adaption; interactions between CO$_2$ and water or other CTWN factors affecting yield; changes in nitrogen use efficiency; geographic shifts in regional production; regional differences in yield sensitivities to CTWN-A factors. Emulators based on the dataset can be used to identify hotspots of crop system vulnerability, and to conduct rapid assessment of new climate projections.  In general, the development of multi-model ensembles involving systematic parameter sweeps has large promise both for increasing understanding of potential future crop responses and for improving process-based crop models.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{sloppypar}
-\codedataavailability{The simulation outputs of the mandatory 7 output variables (Table \ref{table:outputs}) are available on zenodo.org. 
-See Appendix \ref{A:1} for data DOIs. 
-All other simulation output variables are available upon request to the corresponding author. 
-The scripts for generating the spring wheat and winter wheat growing seasons and second fertilizer dates and the quality screening script is available at https://github.com/RDCEP/ggcmi/blob/phase2/.
-All input data are available via globus.org (registration required, free of charge):
-Minimum cropland mask is available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
-choose the file boolean\_cropmask\_ggcmi\_phase2.nc4
-Growing period data for wheat is now divided up into winter and spring wheat, available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
-whereas all other growing season data (maize, rice, soybean) are the same as in Phase 1 (version 1.25), available at
-\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
-}
-\end{sloppypar}
-
-\appendix
-\section{}
-\subsection{Data Access}
-\label{A:1}
-Simulation yield output datasets can be found at the DOIs located in table \ref{table:dataloc}. 
-Data are published in crop- and GGCM-specific packages, in order to break down the overall data amount into manageable packages (<50GB per archive).
-
-\begin{table*}[h]
-  \caption{DOI's for model data outputs. All model output data can be found at https://doi.org/10.5281/zenodo/XX. Where XX is the value listed in the table.} 
-  \label{table:dataloc}
-  \begin{tabular}{p{3cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
-    \tophline
-    {\textbf{Model}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}\\ \middlehline
-    {\textbf{APSIM-UGOE}} & {2582531} & {2582535} & {2582533} & {2582537} & {2582539}\\ \middlehline
-    {\textbf{CARAIB}} & {2582522} & {2582508} & {2582504} & {2582516} & {2582499}\\ \middlehline
-    {\textbf{EPIC-IIASA}} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
-    {\textbf{EPIC-TAMU}} & {2582349} & {2582367} & {2582352} & {2582392} & {2582418}\\ \middlehline
-    {\textbf{JULES}} & {2582543} & {2582547} & {2582545} & {--} & {2582551}\\ \middlehline
-    {\textbf{GEPIC}} & {2582247} & {2582258} & {2582251} & {2582260} & {2582263}\\ \middlehline
-    {\textbf{LPJ-GUESS}} & {2581625} & {--} & {--} & {2581638} & {2581640}\\  \middlehline
-    {\textbf{LPJmL}} & {2581356} & {2581498} & {2581436} & {2581565} & {2581606}\\ \middlehline
-    {\textbf{ORCHIDEE-crop}} & {2582441} & {--} & {2582445} & {2582449} & {--}\\ \middlehline
-    {\textbf{pDSSAT}} & {2582111} & {2582147} & {2582127} & {2582163} & {2582178}\\ \middlehline
-    {\textbf{PEPIC}} & {2582341} & {2582433} & {2582343} & {2582439} & {2582455}\\ \middlehline
-    {\textbf{PROMET}} & {2582467} & {2582488} & {2582479} & {2582490} & {2582492}\\
-    \bottomhline
-  \end{tabular}
-\end{table*}
-\noappendix %% use this to mark the end of the appendix section
-
-\authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
-
-\competinginterests{The authors declare no competing interests.}
-
 \begin{acknowledgements}
-This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. 
-RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. 
-J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. 
-C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF). 
-C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. 
-P.F.\ and K.W.\ were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). 
-K.W.\ was supported by the IMPREX research project supported by the European Commission under the Horizon 2020 Framework programme, grant \#641811. 
-S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). 
-R.C.I.\ acknowledges support from the Texas Agrilife Research and 634 Extension, Texas A \& M University. 
-This is paper number 35 of the Birmingham Institute of Forest Research. 
-Computing resources were provided by the University of Chicago Research Computing Center (RCC).
-\end{acknowledgements}
+    This research was performed as part of the Center for Robust 
+    Decision-Making on Climate and Energy Policy (RDCEP) at the University 
+    of Chicago, and was supported through a variety of sources.
+    RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making 
+    Under Uncertainty program.
+    J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359.
+    C.M.\ was supported by the MACMIT project (01LN1317A) funded through the 
+    German Federal Ministry of Education and Research (BMBF).
+    C.F.\ was supported by the European Research Council Synergy grant 
+    \#ERC-2013-SynG-610028 Imbalance-P.
+    P.F.\ and K.W.\ were supported  by the Newton Fund through the Met 
+    Office Climate Science for Service Partnership Brazil (CSSP Brazil).
+    K.W.\ was supported by the IMPREX research project supported by the 
+    European Commission under the Horizon 2020 Framework programme, grant 
+    \#641811.
+    S.O.\ acknowledges support from the Swedish strong research areas BECC 
+    and MERGE together with support from LUCCI (Lund University Centre for 
+    studies of Carbon Cycle and Climate Interactions).
+    R.C.I.\ acknowledges support from the Texas Agrilife Research and 634 
+    Extension, Texas A \& M University.
+    This is paper number 35 of the Birmingham Institute of Forest Research.
+    Computing resources were provided by the University of Chicago Research 
+    Computing Center (RCC).
+    \end{acknowledgements}
+    
+    \authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., 
+    J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., 
+    M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the 
+    simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and 
+    J.F., E.M., and C.M.\ prepared the manuscript.}
+    
+    \competinginterests{The authors declare no competing interests.}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \codedataavailability{
+    \begin{sloppypar}
+    The simulation outputs of the mandatory 7 output variables (Table 
+    \ref{table:outputs}) are available on zenodo.org.  See Table 
+    \ref{table:dataloc} for data DOIs. Data are published in crop- and 
+    GGCM-specific packages, in order to break down the overall data amount 
+    into manageable packages (<50GB per archive).
+    All other simulation output variables are available upon request to the 
+    corresponding author.
+    \end{sloppypar}
+    
+    \begin{table*}[h]
+       \caption{DOI's for model data outputs. All model output data can be 
+    found at https://doi.org/10.5281/zenodo/XX. Where XX is the value listed 
+    in the table.}
+       \label{table:dataloc}
+       \begin{tabular}{p{3cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
+         \tophline
+    {\textbf{Model}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}\\ \middlehline
+         {\textbf{APSIM-UGOE}} & {2582531} & {2582535} & {2582533} & {2582537} & {2582539}\\ \middlehline
+         {\textbf{CARAIB}} & {2582522} & {2582508} & {2582504} & {2582516} & {2582499}\\ \middlehline
+         {\textbf{EPIC-IIASA}} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
+         {\textbf{EPIC-TAMU}} & {2582349} & {2582367} & {2582352} & {2582392} & {2582418}\\ \middlehline
+         {\textbf{JULES}} & {2582543} & {2582547} & {2582545} & {--} & {2582551}\\ \middlehline
+         {\textbf{GEPIC}} & {2582247} & {2582258} & {2582251} & {2582260} & {2582263}\\ \middlehline
+         {\textbf{LPJ-GUESS}} & {2581625} & {--} & {--} & {2581638} & {2581640}\\  \middlehline
+         {\textbf{LPJmL}} & {2581356} & {2581498} & {2581436} & {2581565} & {2581606}\\ \middlehline
+         {\textbf{ORCHIDEE-crop}} & {2582441} & {--} & {2582445} & {2582449} & {--}\\ \middlehline
+         {\textbf{pDSSAT}} & {2582111} & {2582147} & {2582127} & {2582163} & {2582178}\\ \middlehline
+         {\textbf{PEPIC}} & {2582341} & {2582433} & {2582343} & {2582439} & {2582455}\\ \middlehline
+         {\textbf{PROMET}} & {2582467} & {2582488} & {2582479} & {2582490} & {2582492}\\
+         \bottomhline
+       \end{tabular}
+    \end{table*}
+    
+\begin{sloppypar}
+The scripts for generating the spring wheat and winter wheat 
+growing seasons and second fertilizer dates and the quality screening 
+script is available at https://github.com/RDCEP/ggcmi/blob/phase2/.
+All input data are available via globus.org (registration required, free 
+of charge):Minimum cropland mask is available at\url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
+choose the file boolean\_cropmask\_ggcmi\_phase2.nc4
+Growing period data for wheat is now divided up into winter and spring 
+wheat, available at \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
+whereas all other growing season data (maize, rice, soybean) are the 
+same as in Phase 1 (version 1.25), available at \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
+\end{sloppypar}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 \bibliographystyle{copernicus}
@@ -726,3 +745,92 @@ Computing resources were provided by the University of Chicago Research Computin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+We expect that the GGCMI Phase 2 simulations will yield multiple 
+insights in future studies.
+Potential applications include, as mentioned, the construction of 
+emulators and yield response surfaces that can be used for both model 
+diagnosis and impacts assessment. Specific studies could include 
+analyzing the drivers of temperature-related yield losses (which may be 
+due to both direct thermal effects or to shortening growing seasons); 
+the benefits of adaption; interactions between CO$_2$ and water or other 
+CTWN factors affecting yield; changes in nitrogen use efficiency; 
+geographic shifts in regional production; regional differences in yield 
+sensitivities to CTWN-A factors. Emulators based on the dataset can be 
+used to identify hotspots of crop system vulnerability, and to conduct 
+rapid assessment of new climate projections.  In general, the 
+development of multi-model ensembles involving systematic parameter 
+sweeps has large promise both for increasing understanding of potential 
+future crop responses and for improving process-based crop models.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\begin{sloppypar}
+    \codedataavailability{The simulation outputs of the mandatory 7 output variables (Table \ref{table:outputs}) are available on zenodo.org. 
+    See Appendix \ref{A:1} for data DOIs. 
+    All other simulation output variables are available upon request to the corresponding author. 
+    The scripts for generating the spring wheat and winter wheat growing seasons and second fertilizer dates and the quality screening script is available at https://github.com/RDCEP/ggcmi/blob/phase2/.
+    All input data are available via globus.org (registration required, free of charge):
+    Minimum cropland mask is available at
+    \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2Fphase2.masks\%2F}
+    choose the file boolean\_cropmask\_ggcmi\_phase2.nc4
+    Growing period data for wheat is now divided up into winter and spring wheat, available at
+    \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version2.0\%2F}
+    whereas all other growing season data (maize, rice, soybean) are the same as in Phase 1 (version 1.25), available at
+    \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
+    }
+    \end{sloppypar}
+    
+    \appendix
+    \section{}
+    \subsection{Data Access}
+    \label{A:1}
+    Simulation yield output datasets can be found at the DOIs located in table \ref{table:dataloc}. 
+    Data are published in crop- and GGCM-specific packages, in order to break down the overall data amount into manageable packages (<50GB per archive).
+    
+    \begin{table*}[h]
+      \caption{DOI's for model data outputs. All model output data can be found at https://doi.org/10.5281/zenodo/XX. Where XX is the value listed in the table.} 
+      \label{table:dataloc}
+      \begin{tabular}{p{3cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
+        \tophline
+        {\textbf{Model}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}\\ \middlehline
+        {\textbf{APSIM-UGOE}} & {2582531} & {2582535} & {2582533} & {2582537} & {2582539}\\ \middlehline
+        {\textbf{CARAIB}} & {2582522} & {2582508} & {2582504} & {2582516} & {2582499}\\ \middlehline
+        {\textbf{EPIC-IIASA}} & {2582453} & {2582461} & {2582457} & {2582463} & {2582465}\\  \middlehline
+        {\textbf{EPIC-TAMU}} & {2582349} & {2582367} & {2582352} & {2582392} & {2582418}\\ \middlehline
+        {\textbf{JULES}} & {2582543} & {2582547} & {2582545} & {--} & {2582551}\\ \middlehline
+        {\textbf{GEPIC}} & {2582247} & {2582258} & {2582251} & {2582260} & {2582263}\\ \middlehline
+        {\textbf{LPJ-GUESS}} & {2581625} & {--} & {--} & {2581638} & {2581640}\\  \middlehline
+        {\textbf{LPJmL}} & {2581356} & {2581498} & {2581436} & {2581565} & {2581606}\\ \middlehline
+        {\textbf{ORCHIDEE-crop}} & {2582441} & {--} & {2582445} & {2582449} & {--}\\ \middlehline
+        {\textbf{pDSSAT}} & {2582111} & {2582147} & {2582127} & {2582163} & {2582178}\\ \middlehline
+        {\textbf{PEPIC}} & {2582341} & {2582433} & {2582343} & {2582439} & {2582455}\\ \middlehline
+        {\textbf{PROMET}} & {2582467} & {2582488} & {2582479} & {2582490} & {2582492}\\
+        \bottomhline
+      \end{tabular}
+    \end{table*}
+    \noappendix %% use this to mark the end of the appendix section
+    
+    \authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
+    
+    \competinginterests{The authors declare no competing interests.}
+    
+    \begin{acknowledgements}
+    This research was performed as part of the Center for Robust Decision-Making on Climate and Energy Policy (RDCEP) at the University of Chicago, and was supported through a variety of sources. 
+    RDCEP is funded by NSF grant \#SES-1463644 through the Decision Making Under Uncertainty program. 
+    J.F.\ was supported by the NSF NRT program, grant \#DGE-1735359. 
+    C.M.\ was supported by the MACMIT project (01LN1317A) funded through the German Federal Ministry of Education and Research (BMBF). 
+    C.F.\ was supported by the European Research Council Synergy grant \#ERC-2013-SynG-610028 Imbalance-P. 
+    P.F.\ and K.W.\ were supported  by the Newton Fund through the Met Office Climate Science for Service Partnership Brazil (CSSP Brazil). 
+    K.W.\ was supported by the IMPREX research project supported by the European Commission under the Horizon 2020 Framework programme, grant \#641811. 
+    S.O.\ acknowledges support from the Swedish strong research areas BECC and MERGE together with support from LUCCI (Lund University Centre for studies of Carbon Cycle and Climate Interactions). 
+    R.C.I.\ acknowledges support from the Texas Agrilife Research and 634 Extension, Texas A \& M University. 
+    This is paper number 35 of the Birmingham Institute of Forest Research. 
+    Computing resources were provided by the University of Chicago Research Computing Center (RCC).
+    \end{acknowledgements}
