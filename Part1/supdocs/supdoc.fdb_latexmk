@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584124361 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf" "supdoc" 1584124408
+["pdflatex"] 1584124361 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf" "supdoc" 1584128347
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.aux" 1584124408 6700 cd49368f3baf4bf27be3b53af6de0391 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" 1584124359 14581 1489f9ad5102a9d21efe1f979742234a ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" 1584128345 14581 1489f9ad5102a9d21efe1f979742234a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1480098696 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -123,10 +123,10 @@
   "s_sim_CG_W_area.png" 1564776219 1365637 ec74cb5d4fa7439cbcb770765cb2f5d4 ""
   "s_temp_rea.png" 1564071794 5186155 603bfe0aa2ceb8e3f42a3d1767d3af33 ""
   "supdoc.aux" 1584124408 6700 cd49368f3baf4bf27be3b53af6de0391 "pdflatex"
-  "supdoc.tex" 1584124359 14581 1489f9ad5102a9d21efe1f979742234a ""
+  "supdoc.tex" 1584128345 14581 1489f9ad5102a9d21efe1f979742234a ""
   (generated)
-  "supdoc.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf"
   "supdoc.log"
   "supdoc.pdf"
+  "supdoc.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.log"
