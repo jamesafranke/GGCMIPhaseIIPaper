@@ -1,10 +1,10 @@
 This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diff.aux
-Case mismatch error between cite keys Iizumi_historical_2014 and iizumi_historical_2014
----line 167 of file diff.aux
- : \citation{Iizumi_historical_2014
- :                                 }
+Case mismatch error between cite keys iizumi2010 and Iizumi2010
+---line 106 of file diff.aux
+ : \citation{iizumi2010
+ :                     }
 I'm skipping whatever remains of this command
 The style file: copernicus.bst
 Database file #1: bib.bib
