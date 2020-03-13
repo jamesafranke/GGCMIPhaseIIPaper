@@ -131,7 +131,7 @@ In the sections that follow, we describe the experimental goals and protocols; t
 The guiding scientific rationale of GGCMI Phase 2 is to provide a comprehensive, systematic evaluation of the response of process-based crop models to critical interacting factors, including CO$_2$, temperature, water, and applied nitrogen under two contrasting assumptions on growing season adaptation (CTWN-A). 
 The dataset is designed to allow researchers to:
 \begin{itemize}
-    \item Enhance understanding of modelsâ sensitivity to climate and nitrogen drivers.
+    \item Enhance understanding of models sensitivity to climate and nitrogen drivers.
     \item Study the interactions between climate variables and nitrogen inputs in driving modeled yield impacts. 
     \item Characterize differences in crop responses to climate change across the Earth's climate regions.
     \item Provide a dataset that allows statistical emulation of crop model responses for downstream modelers.
@@ -459,7 +459,7 @@ Most models (9 of 12, all but  CARAIB, JULES, and PROMET) have been evaluated in
 Evaluating the performance of crop models in the GGCMI Phase 2 archive is complicated by the artificial nature of the protocol: the settings in the CTWN-A experiment design do not reflect actual conditions in the real world. 
 The protocol includes one scenario of near-historical climate inputs (T$_0$, W$_0$, C$_{360}$), but the prescribed uniform nitrogen application levels do not reflect real-world fertilizer practices. Models also omit detailed calibrations to reflect the performance of historical cultivars. 
 
-We provide a partial evaluation of the modelsâ skill in reproducing crop yield characteristics using the methodology of \citet{muller_global_2017}, developed for GGCMI Phase 1.
+We provide a partial evaluation of the models' skill in reproducing crop yield characteristics using the methodology of \citet{muller_global_2017}, developed for GGCMI Phase 1.
 \citet{muller_global_2017} evaluate how well model crop yield responses in a historical run capture real-world yield variations driven by year-to-year temperature and precipitation variations. 
 Following this approach, we compare yields in the GGCMI Phase 2 baseline simulations with detrended historical yields from the Food and Agriculture Organization of the United Nations \citep{FAOSTAT} by calculating the Pearson product moment correlation coefficient over 26 years of yield.
 The procedure is sensitive to the detrending method and the area mask used to aggregate yields; we use a 5-year running mean removal and the MIRCA2000 cultivation area mask for aggregation. 
@@ -678,18 +678,14 @@ Potential applications include, as mentioned, the construction of emulators and 
     This is paper number 35 of the Birmingham Institute of Forest Research.
     Computing resources were provided by the University of Chicago Research 
     Computing Center (RCC).
-    \end{acknowledgements}
+\end{acknowledgements}
     
-    \authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M., 
-    J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., 
-    M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the 
-    simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and 
-    J.F., E.M., and C.M.\ prepared the manuscript.}
+\authorcontribution{J.E., C.M, and A.R.\ designed the research. C.M.,  J.J., J.B., P.C., M.D., P.F., C.F., L.F., M.H., C.I., I.J., C.J., N.K., M.K., W.L., S.O., M.P., T.P., A.R., X.W., K.W., and F.Z.\ performed the simulations. J.F., J.J., C.M., and E.M.\ performed the analysis and J.F., E.M., and C.M.\ prepared the manuscript.}
     
-    \competinginterests{The authors declare no competing interests.}
+\competinginterests{The authors declare no competing interests.}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    \codedataavailability{
+\codedataavailability{
     \begin{sloppypar}
     The simulation outputs of the mandatory 7 output variables (Table 
     \ref{table:outputs}) are available on zenodo.org.  See Table 
@@ -736,6 +732,7 @@ wheat, available at \url{https://app.globus.org/file-manager?origin_id=e4c16e81-
 whereas all other growing season data (maize, rice, soybean) are the 
 same as in Phase 1 (version 1.25), available at \url{https://app.globus.org/file-manager?origin_id=e4c16e81-6d04-11e5-ba46-22000b92c6ec&origin_path=\%2FAgMIP.input\%2Fother.inputs\%2FAGMIP_GROWING_SEASON.HARM.version1.25\%2F}
 \end{sloppypar}
+}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 \bibliographystyle{copernicus}
