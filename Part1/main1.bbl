@@ -1,4 +1,4 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{87}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -89,6 +89,11 @@ Challinor, A.~J., M{\"u}ller, C., Asseng, S., Deva, C., Nicklin, K.~J.,
   Wallach, D., Vanuytrecht, E., Whitfield, S., Ramirez-Villegas, J., and
   Koehler, A.-K.: Improving the use of crop models for risk assessment and
   climate change adaptation, Agricultural systems, 159, 296--306, 2018.
+
+\bibitem[{Decker et~al.(2017)Decker, Ma, and Pitman}]{Decker2017}
+Decker, M., Ma, S., and Pitman, A.: Local land{\textendash}atmosphere feedbacks
+  limit irrigation demand, Environmental Research Letters, 12, 054\,003,
+  \doi{10.1088/1748-9326/aa65a6}, 2017.
 
 \bibitem[{Dee et~al.(2011)Dee, Uppala, Simmons, Berrisford, Poli, Kobayashi,
   Andrae, Balmaseda, Balsamo, Bauer et~al.}]{dee2011era}
@@ -305,7 +310,7 @@ Iizumi, T., Nishimori, M., and Yokozawa, M.: Diagnostics of Climate Model
   Climatology, 49, 574--591, \doi{10.1175/2009JAMC2225.1}, 2010.
 
 \bibitem[{Iizumi et~al.(2014)Iizumi, Yokozawa, Sakurai, Travasso, Romanenkov,
-  Oettli, Newby, Ishigooka, and Furuya}]{iizumi_historical_2014}
+  Oettli, Newby, Ishigooka, and Furuya}]{Iizumi_historical_2014}
 Iizumi, T., Yokozawa, M., Sakurai, G., Travasso, M.~I., Romanenkov, V., Oettli,
   P., Newby, T., Ishigooka, Y., and Furuya, J.: Historical changes in global
   yields: major cereal and legume crops from 1982 to 2006, Global Ecology and

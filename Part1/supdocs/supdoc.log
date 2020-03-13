@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  12 MAR 2020 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  13 MAR 2020 11:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,6 +482,15 @@ LaTeX Warning: Label `fig:carbon' multiply defined.
 
 LaTeX Warning: Label `fig:carbontemp' multiply defined.
 
+
+LaTeX Warning: Label `fig:carbontemp' multiply defined.
+
+
+LaTeX Warning: Label `fig:carbontemp' multiply defined.
+
+
+LaTeX Warning: Label `fig:carbontemp' multiply defined.
+
 )
 \openout1 = `supdoc.aux'.
 
@@ -602,85 +611,128 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [3
 
  </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_precip_rea.png>] [4 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_temp_rea.png>]
+<model_table.png, id=30, 903.375pt x 710.655pt>
+File: model_table.png Graphic file (type png)
+<use model_table.png>
+Package pdftex.def Info: model_table.png  used on input line 162.
+(pdftex.def)             Requested size: 469.75502pt x 369.54272pt.
+ [5
 
-LaTeX Warning: File `model_table.png' not found on input line 149.
-
-
-/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex:149: Package pdftex.def Error: File `model_table.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 ...aphics[width=\textwidth]{model_table.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Float too large for page by 38.45393pt on input line 164.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5
-
-] [6]
-<s_sim_CG_T.png, id=38, 4516.875pt x 5420.25pt>
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/model_table.png>]
+<s_sim_CG_T.png, id=35, 4516.875pt x 5420.25pt>
 File: s_sim_CG_T.png Graphic file (type png)
 <use s_sim_CG_T.png>
-Package pdftex.def Info: s_sim_CG_T.png  used on input line 170.
+Package pdftex.def Info: s_sim_CG_T.png  used on input line 171.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
-<s_sim_CG_W.png, id=39, 4516.875pt x 5420.25pt>
+<s_sim_CG_W.png, id=36, 4516.875pt x 5420.25pt>
 File: s_sim_CG_W.png Graphic file (type png)
 <use s_sim_CG_W.png>
-Package pdftex.def Info: s_sim_CG_W.png  used on input line 177.
+Package pdftex.def Info: s_sim_CG_W.png  used on input line 178.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_C.png, id=40, 4516.875pt x 5420.25pt>
+<s_sim_CG_C.png, id=37, 4516.875pt x 5420.25pt>
 File: s_sim_CG_C.png Graphic file (type png)
 <use s_sim_CG_C.png>
-Package pdftex.def Info: s_sim_CG_C.png  used on input line 184.
+Package pdftex.def Info: s_sim_CG_C.png  used on input line 185.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_TC.png, id=41, 4516.875pt x 5420.25pt>
+<s_sim_CG_TC.png, id=38, 4516.875pt x 5420.25pt>
 File: s_sim_CG_TC.png Graphic file (type png)
 <use s_sim_CG_TC.png>
-Package pdftex.def Info: s_sim_CG_TC.png  used on input line 191.
+Package pdftex.def Info: s_sim_CG_TC.png  used on input line 192.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_T_irr.png, id=42, 4516.875pt x 5420.25pt>
+<s_sim_CG_T_irr.png, id=39, 4516.875pt x 5420.25pt>
 File: s_sim_CG_T_irr.png Graphic file (type png)
 <use s_sim_CG_T_irr.png>
-Package pdftex.def Info: s_sim_CG_T_irr.png  used on input line 198.
+Package pdftex.def Info: s_sim_CG_T_irr.png  used on input line 199.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_T_area.png, id=43, 4516.875pt x 5420.25pt>
+<s_sim_CG_T_area.png, id=40, 4516.875pt x 5420.25pt>
 File: s_sim_CG_T_area.png Graphic file (type png)
 <use s_sim_CG_T_area.png>
-Package pdftex.def Info: s_sim_CG_T_area.png  used on input line 205.
+Package pdftex.def Info: s_sim_CG_T_area.png  used on input line 206.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_W_area.png, id=44, 4516.875pt x 5420.25pt>
+<s_sim_CG_W_area.png, id=41, 4516.875pt x 5420.25pt>
 File: s_sim_CG_W_area.png Graphic file (type png)
 <use s_sim_CG_W_area.png>
-Package pdftex.def Info: s_sim_CG_W_area.png  used on input line 212.
+Package pdftex.def Info: s_sim_CG_W_area.png  used on input line 213.
 (pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<s_sim_CG_C_area.png, id=45, 4516.875pt x 5420.25pt>
+<s_sim_CG_C_area.png, id=42, 4516.875pt x 5420.25pt>
 File: s_sim_CG_C_area.png Graphic file (type png)
 <use s_sim_CG_C_area.png>
-Package pdftex.def I
+Package pdftex.def Info: s_sim_CG_C_area.png  used on input line 220.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<s_sim_CG_TC_area.png, id=43, 4516.875pt x 5420.25pt>
+File: s_sim_CG_TC_area.png Graphic file (type png)
+<use s_sim_CG_TC_area.png>
+Package pdftex.def Info: s_sim_CG_TC_area.png  used on input line 227.
+(pdftex.def)             Requested size: 469.75502pt x 563.6431pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<maize_sim_CG_T_A1.png, id=44, 4516.875pt x 1806.75pt>
+File: maize_sim_CG_T_A1.png Graphic file (type png)
+<use maize_sim_CG_T_A1.png>
+Package pdftex.def Info: maize_sim_CG_T_A1.png  used on input line 234.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<maize_sim_CG_N2.png, id=45, 4516.875pt x 1806.75pt>
+File: maize_sim_CG_N2.png Graphic file (type png)
+<use maize_sim_CG_N2.png>
+Package pdftex.def Info: maize_sim_CG_N2.png  used on input line 241.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rice_sim_CG_irrwat.png, id=46, 4516.875pt x 1806.75pt>
+File: rice_sim_CG_irrwat.png Graphic file (type png)
+<use rice_sim_CG_irrwat.png>
+Package pdftex.def Info: rice_sim_CG_irrwat.png  used on input line 248.
+(pdftex.def)             Requested size: 469.75502pt x 187.88103pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6
+
+ </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_T.png>] [7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_W.png>] [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_C.png>] [9 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_TC.png>] [10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_T_irr.png>] [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_T_area.png>] [12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_W_area.png>] [13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_C_area.png>] [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/s_sim_CG_TC_area.png>] [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/maize_sim_CG_T_A1.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/maize_sim_CG_N2.png>] [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/rice_sim_CG_irrwat.png>] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8664 strings out of 481242
+ 165590 string characters out of 5918005
+ 405254 words of memory out of 5000000
+ 23773 multiletter control sequences out of 15000+600000
+ 543361 words of font info for 68 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,45p,2365b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf (16 pages, 20304069 bytes).
+PDF statistics:
+ 115 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+

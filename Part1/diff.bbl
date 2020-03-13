@@ -1,4 +1,4 @@
-\begin{thebibliography}{89}
+\begin{thebibliography}{88}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -90,6 +90,11 @@ Challinor, A.~J., M{\"u}ller, C., Asseng, S., Deva, C., Nicklin, K.~J.,
   Koehler, A.-K.: Improving the use of crop models for risk assessment and
   climate change adaptation, Agricultural systems, 159, 296--306, 2018.
 
+\bibitem[{Decker et~al.(2017)Decker, Ma, and Pitman}]{Decker2017}
+Decker, M., Ma, S., and Pitman, A.: Local land{\textendash}atmosphere feedbacks
+  limit irrigation demand, Environmental Research Letters, 12, 054\,003,
+  \doi{10.1088/1748-9326/aa65a6}, 2017.
+
 \bibitem[{Dee et~al.(2011)Dee, Uppala, Simmons, Berrisford, Poli, Kobayashi,
   Andrae, Balmaseda, Balsamo, Bauer et~al.}]{dee2011era}
 Dee, D.~P., Uppala, S., Simmons, A., Berrisford, P., Poli, P., Kobayashi, S.,
@@ -135,13 +140,6 @@ Elliott, J., M\"uller, C., Deryng, D., Chryssanthacopoulos, J., Boote, K.~J.,
   Sheffield, J.: The {G}lobal {G}ridded {C}rop {M}odel {I}ntercomparison: data
   and modeling protocols for {P}hase 1 (v1.0), Geoscientific Model Development,
   8, 261--277, \doi{10.5194/gmd-2016-207}, 2015.
-
-\bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
-  and Taylor}]{Eyring2016}
-Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
-  R.~J., and Taylor, K.~E.: Overview of the Coupled Model Intercomparison
-  Project Phase 6 (CMIP6) experimental design and organization, Geoscientific
-  Model Development, 9, 1937--1958, \doi{10.5194/gmdd-8-10539-2015}, 2016.
 
 \bibitem[{{FAO}(2018)}]{FAOSTAT}
 {FAO}: {FAOSTAT} Database, \urlprefix\url{http://www.fao.org/faostat/en/home},
@@ -289,13 +287,6 @@ Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
   temperature distributions in a large ensemble of climate simulations using
   quantile regression, Journal of Climate, 31, 8573--8588,
   \doi{10.1175/JCLI-D-17-0782.1}, 2018.
-
-\bibitem[{Holmes et~al.(2016)Holmes, Woollings, Hawkins, and
-  de~Vries}]{Holmes2016}
-Holmes, C.~R., Woollings, T., Hawkins, E., and de~Vries, H.: Robust Future
-  Changes in Temperature Variability under Greenhouse Gas Forcing and the
-  Relationship with Thermal Advection, Journal of Climate, 29, 2221--2236,
-  \doi{10.1175/JCLI-D-14-00735.1}, 2016.
 
 \bibitem[{Holzworth et~al.(2014)Holzworth, Huth, deVoil, Zurcher, Herrmann,
   McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall,

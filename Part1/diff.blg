@@ -3,44 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diff.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
-You've used 89 entries,
+Warning--I didn't find a database entry for "2zumi2010"
+Warning--I didn't find a database entry for "2zumi_historical_2014"
+You've used 88 entries,
             2811 wiz_defined-function locations,
-            1617 strings with 43610 characters,
-and the built_in function-call counts, 132856 in all, are:
-= -- 12385
-> -- 9889
+            1612 strings with 43275 characters,
+and the built_in function-call counts, 131170 in all, are:
+= -- 12179
+> -- 9814
 < -- 16
-+ -- 3753
-- -- 3214
-* -- 10141
-:= -- 15461
-add.period$ -- 89
-call.type$ -- 89
-change.case$ -- 1245
-chr.to.int$ -- 87
-cite$ -- 267
-duplicate$ -- 10566
-empty$ -- 5368
-format.name$ -- 3487
-if$ -- 25870
++ -- 3718
+- -- 3190
+* -- 10041
+:= -- 15306
+add.period$ -- 88
+call.type$ -- 88
+change.case$ -- 1235
+chr.to.int$ -- 86
+cite$ -- 264
+duplicate$ -- 10397
+empty$ -- 5301
+format.name$ -- 3460
+if$ -- 25535
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1673
-newline$ -- 276
-num.names$ -- 357
-pop$ -- 5833
+missing$ -- 1658
+newline$ -- 273
+num.names$ -- 353
+pop$ -- 5749
 preamble$ -- 1
-purify$ -- 1243
+purify$ -- 1233
 quote$ -- 0
-skip$ -- 6059
+skip$ -- 5960
 stack$ -- 0
-substring$ -- 3833
-swap$ -- 9331
+substring$ -- 3759
+swap$ -- 9170
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 798
+type$ -- 789
 warning$ -- 0
-while$ -- 455
+while$ -- 449
 width$ -- 0
-write$ -- 1061
+write$ -- 1049
+(There were 2 warnings)
