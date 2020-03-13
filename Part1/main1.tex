@@ -205,11 +205,11 @@ A GGCMI Phase II simulation therefore represents a possible future state that \t
 The GGCMI Phase II simulations are intended to be used for climate impact assessment not directly but instead as a ``training set'' for statistical emulation of each crop model. Once an emulator is constructed from the outputs described here, it can be driven with growing-season climate anomalies from any climate model projection.  The protocol does not involve any simulated changes in climate variability, but
 \cite{Franke2020} demonstrate that these effects are relatively minor and that GGCMI Phase II emulators can effectively reproduce crop model yields under realistic future climate scenarios.
 
-The area simulated in the GGCMI Phase II protocol extends considerably outside currently cultivated areas, because cultivation will likely shift under climate change.
-Figure \ref{fig:crop_area} shows the present-day cultivated area of rainfed crops (left), and model coverage (right). 
-(See Supplemental Figure S1-2 that for irrigated crops.) 
+The area simulated in the GGCMI Phase II protocol extends considerably outside currently cultivated areas, because cultivation may shift under climate change.
+Figure \ref{fig:crop_area} shows both the present-day cultivated area of rainfed crops (left) and model coverage (right).
+ (See Supplemental Figure S1-2 for currently cultivated area for irrigated crops; model coverage is the same.) 
 Each model covers all currently cultivated areas and much of the uncultivated land area, run at 0.5 degree spatial resolution. 
-To reduce the computational burden, the protocol requires simulation over only 80\% of Earth land surface area, omitting  areas assumed to remain non-arable even under an extreme climate change. Regions that may be omitted include Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and Central Australia.
+To reduce the computational burden, the protocol requires simulation over only 80\% of Earth land surface area, omitting  areas assumed to remain non-arable even under an extreme climate change, including Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and Central Australia.
 The protocol also allows omitting regions judged unsuitable for cropland for non-climatic reasons. 
 Selection criterion involve a combination of soil suitability indices at 10 arc-minute resolution and excludes those 0.5 degree grid cells in which at least 90\% of the area is masked as unsuitable according to any single index, and which do not contain any currently cultivated cropland. 
 Currently cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}.
@@ -219,7 +219,7 @@ All modeling groups simulate the minimum required coverage, but some provide sim
 
 \subsection{Harmonization between models}
 The 12 models included in GGCMI Phase II are all process-based crop models that are widely used in impacts assessments (Table \ref{table:models}).
-Although some models share a common base (e.g.\ the LPJ family or the EPIC family of models), they have subsequently developed independently.  
+Although some models share a common base (e.g.\ the LPJ or EPIC families of models), they have subsequently developed independently.  
 Wherever possible, the GGCMI Phase II protocol harmonizes inputs, but differences in model structure mean that several key factors cannot be fully standardized across the experiment. 
 These include soil treatment (which affects soil organic matter and carry-over effects of soil moisture across growing years) and baseline climate inputs.  
 
@@ -235,10 +235,10 @@ These differences are relatively small compared to the perturbations tested in t
 Planting dates and growing season lengths are standardized across models, following the procedure described in \citet{Elliott2015} for the \textit{fullharm} setting. 
 (The exception is that Phase II, unlike Phase I, uses identical growing seasons for rainfed and irrigated cases, to allow for direct comparison of simulations along the W dimension.) % (See Table \ref{table:inputs}.) 
 This harmonization is important because the parametrization of growing seasons can have strong effects on simulated yields \citep{muller_global_2017, Jag2018}.
-In all the GGCMI Phase II crop models, sowing dates are prescribed directly, but the length of the growing season is a product of crop phenology, which in turn is mostly driven by phenological parameters and temperature. 
+In all the GGCMI Phase II crop models, sowing dates are prescribed directly, but the length of the growing season is a product of crop phenology, which is driven mostly by phenological parameters and temperature. 
 Modelers were therefore asked to adjust their phenological parameters so that the average growing season length of the baseline scenario (C=360, T=0, W=0) matched the harmonization target. 
-(The one exception to the harmonization protocol described above involves CARAIB, whose team kept their own growing season specifications rather than tuning to standard lengths.)
-Two aspects of this procedure should be noted. First, the target growing seasons used in GGCMI Phase II are crop- and location-specific.
+(The one exception to this harmonization protocol involves CARAIB, whose team kept their own growing season specifications rather than tuning to standard lengths.)
+Two aspects of the procedure should be noted. First, the target growing seasons used in GGCMI Phase II are crop- and location-specific.
 For example, present-day maize is sown in March in Spain, in July in Indonesia, and in December in Namibia \citep{Portmann2010}.
 Second, because temperature varies between years in the 30-year baseline climatology, realized growing season length will still vary in individual years even after harmonization. 
 
