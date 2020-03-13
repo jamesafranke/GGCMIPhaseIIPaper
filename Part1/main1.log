@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  12 MAR 2020 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  12 MAR 2020 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,10 +538,10 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<figures/number_of_models.png, id=205, 558.50256pt x 570.78847pt>
+<figures/number_of_models.png, id=199, 558.50256pt x 570.78847pt>
 File: figures/number_of_models.png Graphic file (type png)
 <use figures/number_of_models.png>
-Package pdftex.def Info: figures/number_of_models.png  used on input line 145.
+Package pdftex.def Info: figures/number_of_models.png  used on input line 147.
 (pdftex.def)             Requested size: 426.79134pt x 436.17273pt.
  [4]
 
@@ -550,68 +550,68 @@ LaTeX Warning: Text page 5 contains only floats.
 [5 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/number_of_models.png>] [6] [7] [8] [9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 291.
+               Default added (so using `tbp') on input line 293.
 
 [10] [11]
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 375--375
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 378--378
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 []|\T1/ptm/b/n/9 Spring
  []
 
 [12] [13]
-<figures/validation_top.png, id=443, 618.19759pt x 236.03381pt>
+<figures/validation_top.png, id=435, 618.19759pt x 236.03381pt>
 File: figures/validation_top.png Graphic file (type png)
 <use figures/validation_top.png>
-Package pdftex.def Info: figures/validation_top.png  used on input line 437.
+Package pdftex.def Info: figures/validation_top.png  used on input line 440.
 (pdftex.def)             Requested size: 412.56496pt x 157.52234pt.
-<figures/validation_bottom1.jpg, id=444, 12729.5575pt x 7542.1775pt>
+<figures/validation_bottom1.jpg, id=436, 12729.5575pt x 7542.1775pt>
 File: figures/validation_bottom1.jpg Graphic file (type jpg)
 <use figures/validation_bottom1.jpg>
-Package pdftex.def Info: figures/validation_bottom1.jpg  used on input line 438.
+Package pdftex.def Info: figures/validation_bottom1.jpg  used on input line 441.
 (pdftex.def)             Requested size: 412.56496pt x 244.43887pt.
  [14]
 
 LaTeX Warning: Text page 15 contains only floats.
 
 [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/validation_top.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/validation_bottom1.jpg>]
-<figures/baselinecomp_yield_5.png, id=478, 560.95975pt x 570.78847pt>
+<figures/baselinecomp_yield_5.png, id=474, 560.95975pt x 570.78847pt>
 File: figures/baselinecomp_yield_5.png Graphic file (type png)
 <use figures/baselinecomp_yield_5.png>
-Package pdftex.def Info: figures/baselinecomp_yield_5.png  used on input line 477.
+Package pdftex.def Info: figures/baselinecomp_yield_5.png  used on input line 482.
 (pdftex.def)             Requested size: 426.79134pt x 434.28276pt.
-<figures/soy_highlats.png, id=480, 956.8548pt x 456.4252pt>
+<figures/soy_highlats.png, id=476, 956.8548pt x 456.4252pt>
 File: figures/soy_highlats.png Graphic file (type png)
 <use figures/soy_highlats.png>
-Package pdftex.def Info: figures/soy_highlats.png  used on input line 493.
+Package pdftex.def Info: figures/soy_highlats.png  used on input line 498.
 (pdftex.def)             Requested size: 426.79134pt x 203.57867pt.
-<figures/maize_sim_CG_T.png, id=484, 4516.875pt x 1806.75pt>
+<figures/maize_sim_CG_T.png, id=480, 4516.875pt x 1806.75pt>
 File: figures/maize_sim_CG_T.png Graphic file (type png)
 <use figures/maize_sim_CG_T.png>
-Package pdftex.def Info: figures/maize_sim_CG_T.png  used on input line 508.
+Package pdftex.def Info: figures/maize_sim_CG_T.png  used on input line 513.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/soy_sim_CG_W.png, id=485, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_W.png, id=481, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_W.png Graphic file (type png)
 <use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png  used on input line 509.
+Package pdftex.def Info: figures/soy_sim_CG_W.png  used on input line 514.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/soy_sim_CG_C.png, id=486, 4516.875pt x 1806.75pt>
+<figures/soy_sim_CG_C.png, id=482, 4516.875pt x 1806.75pt>
 File: figures/soy_sim_CG_C.png Graphic file (type png)
 <use figures/soy_sim_CG_C.png>
-Package pdftex.def Info: figures/soy_sim_CG_C.png  used on input line 531.
+Package pdftex.def Info: figures/soy_sim_CG_C.png  used on input line 536.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/rice_sim_CG_T.png, id=487, 4516.875pt x 1806.75pt>
+<figures/rice_sim_CG_T.png, id=483, 4516.875pt x 1806.75pt>
 File: figures/rice_sim_CG_T.png Graphic file (type png)
 <use figures/rice_sim_CG_T.png>
-Package pdftex.def Info: figures/rice_sim_CG_T.png  used on input line 532.
+Package pdftex.def Info: figures/rice_sim_CG_T.png  used on input line 537.
 (pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
  [16]
 
@@ -621,17 +621,20 @@ LaTeX Warning: Text page 17 contains only floats.
 
 LaTeX Warning: Text page 19 contains only floats.
 
-[19 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/maize_sim_CG_T.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_W.png>] [20 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_C.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/rice_sim_CG_T.png>] [21] [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
+[19 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/maize_sim_CG_T.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_W.png>] [20 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_C.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/rice_sim_CG_T.png>] [21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
 []|\T1/ptm/b/n/9 Spring
  []
 
-[24] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl [25] [26]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23] [24] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl [25] [26]
 Underfull \hbox (badness 2253) in paragraph at lines 123--128
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
  []
@@ -667,26 +670,26 @@ Underfull \hbox (badness 1292) in paragraph at lines 523--528
  []
 
 [30] [31] [32]) [33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 714.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 714.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 720.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 720.
  (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 714.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 714.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 714.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 720.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 720.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 720.
  ) 
 Here is how much of TeX's memory you used:
  10646 strings out of 481242
  156039 string characters out of 5918005
- 509808 words of memory out of 5000000
+ 509562 words of memory out of 5000000
  25496 multiletter control sequences out of 15000+600000
  579072 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,10n,46p,2055b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (33 pages, 13211485 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (33 pages, 13211145 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 749 compressed objects within 8 object streams
+ 816 PDF objects out of 1000 (max. 8388607)
+ 741 compressed objects within 8 object streams
  152 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
