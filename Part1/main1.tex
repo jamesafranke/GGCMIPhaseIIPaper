@@ -82,7 +82,7 @@ The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment, an ac
 In this paper we describe the GGCMI Phase II experimental protocol and its simulation data archive. 
 Twelve crop models simulate five crops with systematic uniform perturbations of historical climate, varying CO$_2$, temperature, water supply, and applied nitrogen (``CTWN'') for rainfed and irrigated agriculture, and a second set of simulations represents a type of adaptation by allowing the adjustment of growing season length.
 We present some crop yield results to illustrate general characteristics of the simulations and potential uses of the GGCMI Phase II archive. 
-For example, modeled yields show robust decreases to warmer temperatures in almost all regions, with a nonlinear dependence that indicates yields in warmer baseline locations have greater temperature sensitivity. 
+For example, in cases without adaptation, modeled yields show robust decreases to warmer temperatures in almost all regions, with a nonlinear dependence that means yields in warmer baseline locations have greater temperature sensitivity. 
 Inter-model uncertainty is qualitatively similar across all the four input dimensions, but is largest in high-latitude regions where crops may be grown in the future.
 \end{abstract}
 
@@ -97,7 +97,7 @@ Although forecasts of future yields reductions can be made with simple statistic
 
 Process-based models are necessary for understanding crop yields in novel conditions not included in historical data, including higher CO$_2$ levels, out-of-sample combinations of rainfall and temperature, cultivation in areas where crops are not currently grown, and differing management practices \citep[e.g.][]{pugh_climate_2016, Roberts2017,minoli2019modelling}. Process-based models have therefore been widely used in studies on future food security \citep{wheeler2013climate, Elliott14, frieler2017assessing}, options for climate mitigation \citep{muller2015} and adaptation \citep{challinor2018improving}, and future sustainable development \citep{humpenoder2018large, jagermeyr_reconciling_2017}.
 Process-based models also allow for the global gridded simulations needed for understanding the global dynamics of agricultural trade, including cultivation area changes and crop selection switching under climate change \citep{rosenzweig2018,ruane2018} because global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}. 
-Global crop model experiments are needed for systematic climate change assessments \citep{muller_global_2017} which must consider inter-regional differences need to be considered as in economic assessments \citep[e.g.][]{Nelson2014, Wiebe_2015}.
+Global crop model experiments are needed for systematic climate change assessments \citep{muller_global_2017}, which must consider inter-regional differences \citep[e.g.][]{Nelson2014, Wiebe_2015}.
 
 Modeling crop responses, however, continues to be challenging, as crop growth is a function of complex interactions between climate inputs, soil, and management practices \citep{Boote13,rotter2011}. 
 Models tend to agree broadly in major response patterns, including a reasonable representation of the spatial pattern in historical yields of major crops and projections of shifts in yield under future climate scenarios \citep[e.g.][]{Elliott2015, muller_global_2017}. 
@@ -108,9 +108,7 @@ Long-term projections therefore retain considerable uncertainty \citep{WOLF20022
 Model intercomparison projects such as the Agricultural Model Intercomparison and Improvement Project \citep[AgMIP, ][]{ROSENZWEIG2013} are crucial in quantifying uncertainties in model projections \citep{Rosenzweig2014}. Intercomparison projects have also been used to develop protocols for evaluating overall model performance \citep{Elliott2015, muller_global_2017} and to assess the representation of individual physical mechanisms such as water stress and CO$_2$ fertilization \citep[e.g.][]{Schauberger2017}.
 However, to date, few such projects have systematically sampled critical factors that may interact strongly in affecting crop yields. 
 A number of modeling exercises in the last five years have begun to use systematic parameter sweeps in crop model evaluation and emulation \citep[e.g.][]{ruane2014, Markowski2015, Pirttioja2015,FRONZEK20182, Snyder2018, RUIZRAMOS2018}, but all involve limited sites and most also limited crops and scenarios. 
-Climate change does not only affect overall temperature and precipitation levels, but also their distribution within growing seasons \citep[e.g.][]{Holmes2016}. 
-While crop model simulations based on climate projections from climate models as e.g. from the CMIP \citep[Coupled Model Intercomparison Project, see][]{Eyring2016} archive as used by \citet[e.g.][]{Rosenzweig2014} can more realistically inform climate change impact assessments, an analysis of model sensitivities and response types is hampered by such non-systematic experiments. 
-The GGCMI Phase II experiment is designed for scrutinizing model behavior and sensitivities as well as for crop model emulator design and does not fully replace crop model simulations with sophisticated climate scenarios. 
+%Climate change does not only affect overall temperature and precipitation levels, but also their distribution within growing seasons \citep[e.g.][]{Holmes2016}.  While crop model simulations based on climate projections from climate models as e.g. from the CMIP \citep[Coupled Model Intercomparison Project, see][]{Eyring2016} archive as used by \citet[e.g.][]{Rosenzweig2014} can more realistically inform climate change impact assessments, an analysis of model sensitivities and response types is hampered by such non-systematic experiments.  The GGCMI Phase II experiment is designed for scrutinizing model behavior and sensitivities as well as for crop model emulator design and does not fully replace crop model simulations with sophisticated climate scenarios. 
 
 The Global Gridded Crop Model Intercomparison (GGCMI) Phase II experiment is the first global gridded crop model intercomparison involving a systematic parameter sweep across critical interacting factors.
 GGCMI Phase II is an activity of AgMIP, and a continuation of a multi-model comparison exercise begun in 2014. 
@@ -162,16 +160,8 @@ The Phase II protocol involves a suite of uniform perturbations from a historica
 The baseline climate scenario for GGCMI Phase II is one of the weather products used in Phase I, daily climate inputs for 1980-2010 from the 0.5 degree NASA AgMERRA (``Agricultural''-modified Modern Era Retrospective analysis for Research and Applications) gridded re-analysis product. AgMERRA is specifically designed for agricultural modeling, with satellite-corrected precipitation \citep{Ruane2015}. 
 The experimental protocol consists of 9 levels for water supply perturbations, 7 for temperature, 4 for CO$_2$, and 3 for applied nitrogen, for a total of 756 simulations (Table \ref{table:inputs}), 672 for rainfed agriculture and an additional 84 for irrigated (W$_{\infty}$).  
 Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to 2100) under business-as-usual emissions. 
-Values for nitrogen application levels are intended to cover a wide range of potentials. 
-Because the same values are applied across all crops and regions, many individual cases will not be realistic e.g.\ any N application to soybeans or high  in presently less-industrialized areas .
-The resulting GGCMI Phase II dataset therefore captures the distribution of crop model responses over the range of potential future climate and management conditions.
+Values for nitrogen application levels are intended to cover a wide range of potentials. The resulting GGCMI Phase II dataset captures the distribution of crop model responses over a wide range of potential future climate and management conditions.
  
-In irrigated simulations, crops are assumed to have no water constraints, i.e. all crop water requirements are fulfilled regardless of local water supply limitations.
-Given that the irrigated scenario (W$_{\infty}$) is one element of the water supply levels, irrigated simulations use the same growing seasons and areas as all other simulations.
-All other water supply levels are implemented as relative variations of precipitation.
-Note that both irrigated and fully rainfed systems are simulated with global coverage, independent of their actual occurrence. 
-This allows for better analysis of model sensitivities and responses to water limitations. 
-In the GGCMI Phase II experiment, irrigated systems are simulated using rainfed growing seasons so that the two simulation sets are directly comparable even though in reality irrigated growing seasons can be in different periods of the year than rainfed growing seasons \citep{Portmann2010}.
 
 \begin{table}[t]
   \caption{
@@ -192,27 +182,37 @@ Bold font indicates the `baseline' or historical level for each dimension. One m
   \end{tabular}\\
 \end{table}
 
-While all perturbations are applied uniformly across the historical timeseries, they are applied in different ways. 
-While precipitation perturbations are applied as fractional changes, temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature timeseries for each grid cell.
-CO$_2$ and nitrogen levels are specified as discrete values applied uniformly over all grid cells. 
-The protocol samples over all possible permutations of individual perturbations.
-This choice means that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with particular climate changes, e.g.\ higher temperatures. 
 
-Temperature and precipitation perturbations from historical climatology are applied within the growing season so that the T+1 simulations represent a 1 $^{\circ}$C warmer growing season.
-For example, winters may likely warm faster than summers \citep[e.g.][]{Haugen2018} so that a 1 $^{\circ}$C warmer year under climate change may be only some fraction of a degree warmer during the growing season.
-Likewise, temperature and precipitation perturbations are applied uniformly in space in GGCMI Phase II so that the T+1 is 1 $^{\circ}$C warmer everywhere.
-Higher latitudes may warm faster than lower latitudes \citep[e.g.][]{Hansen1997} so that a 1 $^{\circ}$C change in the growing season in Canada, for example, may not equate to a 1 $^{\circ}$C global mean temperature rise.
-Changes in temperature and precipitation under realistic climate change will likewise not be spatially or temporally uniform, so in order to use the GGCMI Phase II simulations for climate impact assessment, one must emulate the Phase II simulation outputs and then drive the emulator with growing season climate anomalies calculated from a climate model RCP run within the growing season in each location.
-See \cite{Franke2020} for more details on GGCMI emulator construction for impact assessment.
+The protocol samples over all possible permutations of individual perturbations, i.e.\ all values are applied across all crops and regions, so that the protocol includes  many combinations that are not realistic.  For example, we simulate high N application to soybeans, which are N-fixers and need little fertilizer. % or high N application in developing countriesxx 
+This choice also means that CO$_2$ changes are applied independently of changes in climate variables, so that higher CO$_2$ is not associated with higher temperatures or other particular climate changes. The purpose of the experiment is not to produce individual scenarios that represent realistic future states, but to sample over a wide range of parameter space to enable understanding the factors that drive agricultural changes. 
 
-Each model is run at 0.5 degree spatial resolution and covers all currently cultivated areas and much of the uncultivated land area. 
-Figure \ref{fig:crop_area}, left, shows the present-day cultivated area of rainfed crops and Supplemental Figure S1-2 that for irrigated crops. 
-Cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}.
-Coverage extends considerably outside currently cultivated areas because cultivation will likely shift under climate change.  
-To reduce the computational burden, however, the protocol requires simulation only over 80\% of Earth land surface area.  
-Areas are not simulated if they are assumed to remain non-arable even under an extreme climate change; these regions include Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and Central Australia.
-The protocol also eliminates regions judged unsuitable for cropland for non-climatic reasons. 
+While all CTWN perturbations are applied uniformly across the historical timeseries, they are applied in different ways. 
+CO$_2$ and nitrogen levels are specified as discrete values applied uniformly over all grid cells.
+Temperature perturbations are applied as absolute offsets from the daily mean, minimum, and maximum temperature timeseries for each grid cell, and 
+water perturbations are applied as fractional changes to daily precipitation. 
+The irrigated scenario (W$_{\infty}$) is a particular case of water supply levels, in which crops are assumed to have no water constraints. That is, all crop water requirements are fulfilled regardless of local water supply limitations.
+ To facilitate comparison, irrigated simulations use the same growing seasons as all other simulations, even though in reality irrigated growing seasons may be different \citep{Portmann2010}, and irrigated and rainfed cases  
+ are both simulated with near-global coverage. %, independent of their actual occurrence. 
+%This allows for better analysis of model sensitivities and responses to water limitations.  In the GGCMI Phase II experiment, irrigated systems are simulated using rainfed growing seasons so that the two simulation sets are directly comparable even though in reality irrigated growing seasons can be in different periods of the year than rainfed growing seasons .
+
+The uniform perturbations of the GGCMI Phase II protocol require some care in interpretation. Temperature and precipitation perturbations should be considered as differences from historical climatology within the growing season only. That is, a T+1 simulation represents a 1 $^{\circ}$C warmer growing season, not a 1 $^{\circ}$C warmer annual mean temperature.
+(The distinction is important because in climate projections, winters generally warm more than summers \citep[e.g.][]{Haugen2018}.) 
+A GGCMI Phase II perturbation case also represents a set of plausible values applied to individual grid cells, not a consistent and realistic future scenario under a global mean climate shift.
+In the protocol used, temperature and precipitation perturbations are applied uniformly in space, but future changes in temperature and precipitation will not be spatially or temporally uniform.
+In a realistic climate projection, higher latitudes generally warm more strongly than lower latitudes \citep[e.g.][]{Hansen1997}, and the northern high latitudes warm more quickly than the southern ones.
+An individual GGCMI Phase Ii simulation therefore represents a  possible future state that \textit{could} occur in each grid cell, but not one that would in reality occur simultaneously in all grid cells across the globe.  % that the T+1 is 1 $^{\circ}$C warmer everywhere.
+ % so that a 1 $^{\circ}$C change in the growing season in Canada, for example, may not equate to a 1 $^{\circ}$C global mean temperature rise.
+The GGCMI Phase II simulations are intended to be used for climate impact assessment not directly but instead as a ``training set'' for statistical emulation of each crop model. Once an emulator is constructed from the outputs described here, it can be driven with growing-season climate anomalies from nay climate model projection. 
+See \cite{Franke2020} for a demonstration of the efficacy of GGCMI Phase II emulators in reproducing crop model yields under realistic future climate scenarios.
+
+The area simulated in the GGCMI Phase II protocol extends considerably outside currently cultivated areas, because cultivation will likely shift under climate change.
+Figure \ref{fig:crop_area} shows the present-day cultivated area of rainfed crops (left), and model coverage (right). 
+(See Supplemental Figure S1-2 that for irrigated crops.) 
+Each model covers all currently cultivated areas and much of the uncultivated land area, run at 0.5 degree spatial resolution. 
+To reduce the computational burden, the protocol requires simulation over only 80\% of Earth land surface area, omitting  areas assumed to remain non-arable even under an extreme climate change. Regions that may be omitted include Greenland, far-northern Canada, Siberia, Antarctica, the Gobi and Sahara Deserts, and Central Australia.
+The protocol also allows omitting regions judged unsuitable for cropland for non-climatic reasons. 
 Selection criterion involve a combination of soil suitability indices at 10 arc-minute resolution and excludes those 0.5 degree grid cells in which at least 90\% of the area is masked as unsuitable according to any single index, and which do not contain any currently cultivated cropland. 
+Currently cultivated areas are provided by the MIRCA2000 (Monthly Irrigated and Rainfed Crop Area) data product \citep{Portmann2010}.
 Soil suitability indices measure excess salt, oxygen availability, rooting conditions, toxicities, and workability, and are provided by the IIASA (International Institute for Applied Systems Analysis) Global Agro-Ecological Zone model \citep[GAEZ, ][]{gaez}. 
 The procedure follows that proposed by \citet{pugh_climate_2016}. 
 All modeling groups simulate the minimum required coverage, but some provide simulations that extend into masked zones, including e.g.\ the Sahara Desert and Central Australia (Figure \ref{fig:crop_area}, right).
@@ -233,21 +233,21 @@ Differences are largest for rice, with ERA-Interim 1$^\circ$C cooler.
 These differences are relatively small compared to the perturbations tested in the protocol.
 
 Planting dates and growing season lengths are standardized across models, following the procedure described in \citet{Elliott2015} for the \textit{fullharm} setting. 
-In contrast to GGCMI Phase I \citep{Elliott2015}, we here assume identical growing seasons for rainfed and irrigated scenarios, to allow for direct comparability of simulations along the W dimension, in which irrigation (W$_{\infty}$) is one element. (See Table \ref{table:inputs}.) 
-While sowing dates are prescribed directly and held fixed in models, the length of the growing season is a product of crop phenology, which in turn is mostly driven by phenological parameters and temperature. 
-Modelers are asked to adjust the phenological parameters so that growing season length of the baseline scenario (C=360, T=0, W=0) on average matches the harmonization target. 
-Harmonizing between models is important because the parametrization of growing seasons can have strong effects on simulated yields \citep{muller_global_2017, Jag2018}.
-However, given that temperature varies between years, individual years can vary from the harmonization target.
-Growing seasons are harmonized across models but are crop- and location-specific.
-For example, at present maize is sown in March in Spain, in July in Indonesia, and in December in Namibia \citep{Portmann2010}.
-The one exception to the harmonization protocol described above involves CARAIB, which kept their own growing season specifications rather than tuning to standard lengths.
- 
-Because harvest dates are a function of climate parameters, simulations with the harmonized phenological parameters described above generally result in shorter growing seasons in future warmer scenarios. 
-We denote these simulations as ``A0'' experiments, where 0 denotes ``no adaptation''. 
-To account for potential adaptation in crop cultivars, the GGCMI Phase II protocol includes a second set of experiments, ``A1'', that assume that cultivars are modified to adjust to changes along the T dimension in the CTWN experiment. 
-For these simulations, modelers adjust parameters in each temperature scenario to hold growing season length approximately constant. 
+(The exception is that Phase II, unlike Phase I, uses identical growing seasons for rainfed and irrigated cases, to allow for direct comparison of simulations along the W dimension.) % (See Table \ref{table:inputs}.) 
+This harmonization is important because the parametrization of growing seasons can have strong effects on simulated yields \citep{muller_global_2017, Jag2018}.
+In all the GGCMI Phase II crop models, sowing dates are prescribed directly, but the length of the growing season is a product of crop phenology, which in turn is mostly driven by phenological parameters and temperature. 
+Modelers were therefore asked to adjust their phenological parameters so that the average growing season length of the baseline scenario (C=360, T=0, W=0) matched the harmonization target. 
+(The one exception to the harmonization protocol described above involves CARAIB, whose team kept their own growing season specifications rather than tuning to standard lengths.)
+Two aspects of this procedure should be noted. First, the target growing seasons used in GGCMI Phase II are crop- and location-specific.
+For example, present-day maize is sown in March in Spain, in July in Indonesia, and in December in Namibia \citep{Portmann2010}.
+Second, because temperature varies between years in the 30-year baseline climatology, realized growing season length will still vary in individual years even after harmonization. 
+
+The dependence of harvest dates on climate parameters means that in a model with phenological parameters tuned to match target growing seasons in the baseline climate, growing seasons will nevertheless alter under climate change. In general, warmer future scenarios produce shorter growing seasons.
+We denote simulations that allow these future changes as ``A0'' experiments, where 0 denotes ``no adaptation''. 
+ The GGCMI Phase II protocol includes a second set of experiments, ``A1'', that assume that future cultivars are modified to adjust to changes along the T dimension in the CTWN experiment.  %To account for potential adaptation in crop cultivars,
+For these simulations, modelers adjust phenological parameters for each temperature scenario to hold growing season length approximately constant. 
 (CARAIB simulations follow the same principle, fixing growing season length at their baseline levels.) 
-That is, each model is run with seven different cultivar parameter sets in the A1 simulations (one per warming level) and the cultivar parameters in A0 and A1 are identical for T=0. 
+That is, the A1 simulations require running a model with seven different choices of cultivar parameters, one per warming level. Parameter settings for T=0 are identical in both A0 and A1. 
 The A1 simulations roughly capture the case in which adaptive crop cultivar choice ensures that crops reach maturity at roughly the same time as in the current temperature regime. 
 This assumption is simplistic, and does not reflect realistic opportunities and limitations to adaptation \citep{vadez2012adaptation,challinor2018improving}, but provides some insight into how crop modifications could alter projected impacts on yields and is sufficiently easy to implement in a large model intercomparison project as GGCMI.
 
@@ -283,11 +283,85 @@ In LPJmL, LPJ-GUESS and APSIM, soil mineralization is a part of model treatments
 Some additional differences in model structure mean that several key factors are not standardized across the experiment. 
 For example, carry-over effects across growing years including residue management and soil moisture are treated differently across models.
 
-\subsection{Output data products}
-All models in GGCMI Phase II provide 7 mandatory output variables if available (Table \ref{table:outputs}, bold).
-For each scenario, 0.5 degree grid cell and crop, models provide 30-year timeseries of annual crop yields in units of tons ha$^{-1}$ year$^{-1}$, as well as all available variables of the following seven: total aboveground biomass yield, the dates of planting, anthesis and maturity, applied irrigation water in irrigated scenarios, and total evapotranspiration. 
-Note that some models do not compute some mandatory outputs, e.g. CARAIB does not compute the thesis date.
-Besides these mandatory 7 data products, the protocol requests any or all of 18 optional additional output variables (Table \ref{table:outputs}, plain text).
+
+\section{Models contributing}
+\label{S:3}
+
+The twelve models participating in GGCMI Phase II are listed in Table \ref{table:models}. 
+Models differ substantially in structure and parameterization and can be separated into two broad categories: site-based (field-scale) models, and global ecosystem models.
+The 6 site-based models are APSIM, pDSSAT, and the EPIC family of models; the 6 ecosystem models are LPJmL, LPJ-GUESS, PROMET, CARAIB, ORCHIDEE, and JULES.
+Models employ a variety of approaches for the core modules such as primary production or evapotranspiration.
+For primary production, site-based models employ light use efficiency approaches and ecosystem models use photosynthesis approaches.
+For evapotranspiration, most models use Priestley-Taylor, Penman-Monteith or Hargreaves schemes, but JULES and PROMET utilize a land surface model approach instead. 
+Note that models that share a common genealogy may still use different schemes for evapotranspiration:
+for example, EPIC-TAMU uses Penman-Monteith and EPIC-IIASA uses Hargreaves.
+To describe soils, most models use either the Harmonized World Soil Database (HWSD) from the FAO \citep{FAOSOIL2008} or the ISRIC-WISE database \citep{BatjesL2008} or a derivation thereof.
+Supplemental Table S1 provides details on these model characteristics as well as on implementation, including spin-up, calibration other than growing season, residue management, and irrigation rules,
+
+\begin{table*}[t]
+\caption{
+Models included in GGCMI Phase II and the number of CTWN-A simulations performed. 
+The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
+Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM-UGOE does not simulate winter wheat.)
+}
+\label{table:models}
+  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
+    \tophline
+    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
+    {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
+    {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
+    {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
+    {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{JULES},         \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
+    {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
+    {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
+    {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--}  & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
+    {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+    {\textbf{PROMET},        \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
+    {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
+    \bottomhline
+  \end{tabular}
+\end{table*}
+
+Table \ref{table:models} also descibes the simulation output contibution of each model to the GGCMI Phase II archive.
+Not all modeling groups provided simulations for the full protocol described above. 
+Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
+These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with \textit{full} (12) and \textit{low} (4) options for the C $\cdot$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\cdot$ W variables (described below). 
+All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase II, some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
+
+The different participation levels are defined by combining the CxN sets with the TxW sets:
+\begin{itemize}
+  \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
+  \item{\textbf{high}: 362 simulations (all 12 CxN combinations  $\cdot$ \textit{reduced} TxW set of 31 combinations)}
+  \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{reduced} TxW set of 31 combinations)}
+  \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{minimum} TxW set of 9 combinations)}
+\end{itemize}
+
+\noindent Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with bold text in the last column of Table \ref{table:models}. 
+However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the nitrogen dimension. 
+Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
+One model (PEPIC) followed \textit{mid} but included an additional C level. 
+Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
+
+The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
+\begin{itemize}
+  \item \textit{full} as 12 pairs, with 4 C values (360, 510, 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$)
+  \item \textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200
+\end{itemize}
+    
+For the TxW space we specify:
+\begin{itemize}
+  \item \textit{full} as all 7 T levels and 9W levels.
+  \item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
+  \item \textit{minimum} as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
+\end{itemize}
+
+\section{Output data products}
+All models in GGCMI Phase II provide 30-year timeseries of annual crop yields 
+for each scenario, 0.5 degree grid cell and crop, in units of tons ha$^{-1}$ year$^{-1}$. They also provide all available variables of the following 6: total aboveground biomass yield; the dates of planting, anthesis and maturity; applied irrigation water in irrigated scenarios; and total evapotranspiration.  We term these 7 variables the ``mandatory'' outputs, but note that some models do not compute all of them, e.g.\ CARAIB does not compute the anthesis date.
+Besides these 7 ``mandatory'' data products (Table \ref{table:outputs}, bold), the protocol requests any or all of 18 ``optional'' additional output variables (Table \ref{table:outputs}, plain text).
 Participating modeling groups provided between 3 (PEPIC) and 18 (APSIM-UGOE) of these optional variables. 
 
 \begin{table}[]
@@ -351,80 +425,6 @@ In the AgMERRA timeseries used for GGCMI Phase II, the first year provided is 19
 In the northern hemisphere, for summer crops like maize (sown in spring 1980 and harvested in fall 1980), the first harvest record would be of 1980, but for winter wheat (sown in fall 1980 and harvested in spring 1981) the first harvest record would be of 1981. Output files report the sequence of growing periods rather than calendar years. 
 While there is generally one sowing event per calendar year (since simulations with harmonized growing seasons do not permit double-cropping), in some cases harvest events may skip or repeat within a calendar year.
 For example, because soybeans in North Carolina are typically harvested well into December, some calendar years may include no harvest (if it is not completed until after Dec. 31) or two harvests (one in January and one 11 months later in the following December). 
-
-\section{Models contributing}
-\label{S:3}
-
-The twelve models participating in GGCMI Phase II are listed in Table \ref{table:models}. 
-Models differ substantially in structure and parameterization and can be separated into two broad categories: site-based (field-scale) models, and global ecosystem models.
-Site based models include APSIM, pDSSAT, and the EPIC family of models and ecosystem models include LPJmL, LPJ-GUESS, PROMET, CARAIB, ORCHIDEE, and JULES.
-Models employ a variety of approaches for the core modules such as primary production or evapotranspiration.
-For completes details including on spin-up, calibration other than growing season, residue management, and irrigation rules, see Supplemental Table S1.
-For primary production, site-based models employ light use efficiency approaches and ecosystem models use photosynthesis approaches.
-For evapotranspiration, most models use Priestley-Taylor, Penman-Monteith or Hargreaves schemes, but JULES and PROMET utilize a land surface model approach instead. 
-Notes that models that share a common genealogy may still use different schemes for evapotranspiration.
-For example EPIC-TAMU uses the Penman-Monteith and EPIC-IIASA uses the Hargreaves scheme.
-For soils most models utilize either the Harmonized World Soil Database (HWSD) from the FAO \citep{FAOSOIL2008} or the ISRIC-WISE database \citep{BatjesL2008} or a derivation thereof.
-
-\begin{table*}[t]
-\caption{
-Models included in GGCMI Phase II and the number of CTWN-A simulations performed. 
-The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
-Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM-UGOE does not simulate winter wheat.)
-}
-\label{table:models}
-  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
-    \tophline
-    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
-    {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
-    {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
-    {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
-    {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{JULES},         \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
-    {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
-    {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
-    {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--}  & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
-    {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
-    {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
-    {\textbf{PROMET},        \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
-    {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
-    \bottomhline
-  \end{tabular}
-\end{table*}
-
-Table \ref{table:models} also descibes the simulation output contibution of each model to the GGCMI Phase II archive.
-Not all modeling groups provided simulations for the full protocol described above. 
-Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
-These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with \textit{full} (12) and \textit{low} (4) options for the C $\cdot$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\cdot$ W variables (described below). 
-All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase II, some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
-
-The different participation levels are defined by combining the CxN sets with the TxW sets:
-\begin{itemize}
-  \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
-  \item{\textbf{high}: 362 simulations (all 12 CxN combinations  $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-  \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-  \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{minimum} TxW set of 9 combinations)}
-\end{itemize}
-
-\noindent Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with bold text in the last column of Table \ref{table:models}. 
-However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the nitrogen dimension. 
-Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
-One model (PEPIC) followed \textit{mid} but included an additional C level. 
-Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
-
-The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
-\begin{itemize}
-  \item \textit{full} as 12 pairs, with 4 C values (360, 510, 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$)
-  \item \textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200
-\end{itemize}
-    
-For the TxW space we specify:
-\begin{itemize}
-  \item \textit{full} as all 7 T levels and 9W levels.
-  \item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
-  \item \textit{minimum} as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
-\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
