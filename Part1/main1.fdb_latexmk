@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main1"] 1584135653 "main1.aux" "main1.bbl" "main1" 1584135665
+["bibtex main1"] 0 "main1.aux" "main1.bbl" "main1" 0
   "./copernicus.bst" 1400594604 39039 195b64fc943aa9550129b5d6dca7d4f1 ""
   "bib.bib" 1584102704 93748 ee9ccebbc79db2cb5b7185e1ccd9e070 ""
-  "main1.aux" 1584135665 49165 ed3f8c11aa4c6c240e30e4e39e921a52 "pdflatex"
+  "main1.aux" 0 -1 0 "pdflatex"
   (generated)
-  "main1.blg"
   "main1.bbl"
-["pdflatex"] 1584135653 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1584135665
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux" 1584135665 49165 ed3f8c11aa4c6c240e30e4e39e921a52 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" 1584135639 81481 47a555565f95bb64ab31d1053f162059 ""
+  "main1.blg"
+["pdflatex"] 1584136604 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1584136604
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux" 1584136604 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" 1584136589 81548 a44cf7fc1808fa53feb9578c1d257719 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -165,13 +165,13 @@
   "figures/soy_sim_CG_W.png" 1566506317 357552 688609844771ab2658e8f8f8d37883b4 ""
   "figures/validation_bottom1.jpg" 1564770831 3860006 56d1c5a737257c5fb7e3f37879d291d2 ""
   "figures/validation_top.png" 1563408151 980182 d806052212d280b3be6745daca3a0ea1 ""
-  "main1.aux" 1584135665 49165 ed3f8c11aa4c6c240e30e4e39e921a52 "pdflatex"
-  "main1.bbl" 1584135653 45343 fd190cbbb16849e886e3b623e9ce642b "bibtex main1"
-  "main1.tex" 1584135639 81481 47a555565f95bb64ab31d1053f162059 ""
+  "main1.aux" 0 -1 0 "pdflatex"
+  "main1.bbl" 0 -1 0 "bibtex main1"
+  "main1.tex" 1584136589 81548 a44cf7fc1808fa53feb9578c1d257719 ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "main1.log"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.log"
-  "main1.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf"
+  "main1.log"
   "main1.pdf"
+  "main1.aux"
