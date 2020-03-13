@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL main1submitted.tex   Tue Mar 10 19:13:09 2020
-%DIF ADD main1.tex            Fri Mar 13 13:12:09 2020
+%DIF ADD main1.tex            Fri Mar 13 14:59:55 2020
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 \usepackage{url}
 \Urlmuskip=0mu plus 1mu % for better line break in very long globus URLs
@@ -140,8 +140,16 @@ Multiple studies using different crop or climate models concur in projecting sha
 Although forecasts of future yields reductions can be made with simple statistical models based on regressions in historical weather data, process-based models, which simulate the effect of temperature, water and nutrient availability, and atmospheric CO2 concentration on the process of photosynthesis and the biology and phenology of individual crops, play a critical role in assessing the impacts of climate change.
 
 Process-based models are necessary for understanding crop yields in novel conditions not included in historical data, including higher CO$_2$ levels, out-of-sample combinations of rainfall and temperature, cultivation in areas where crops are not currently grown, and differing management practices \citep[e.g.][]{pugh_climate_2016, Roberts2017,minoli2019modelling}. Process-based models have therefore been widely used in studies on future food security \citep{wheeler2013climate, Elliott14, frieler2017assessing}, options for climate mitigation \citep{muller2015} and adaptation \citep{challinor2018improving}, and future sustainable development \citep{humpenoder2018large, jagermeyr_reconciling_2017}.
-Process-based models also allow for the global gridded simulations needed for understanding the global dynamics of agricultural trade, including cultivation area changes and crop selection switching under climate change \citep{rosenzweig2018,ruane2018} because global market mechanisms may strongly modulate climate change impacts \citep{Stevanovic2016,hasegawa2018risk}. 
-Global crop model experiments are needed for systematic climate change assessments \citep{muller_global_2017}\DIFaddbegin \DIFadd{, which must consider inter-regional differences \mbox{%DIFAUXCMD
+\DIFdelbegin \DIFdel{Process-based models also allow for the }\DIFdelend \DIFaddbegin \DIFadd{They are a necessity for }\DIFaddend global gridded simulations\DIFdelbegin \DIFdel{needed for }\DIFdelend \DIFaddbegin \DIFadd{, which allow }\DIFaddend understanding the global dynamics of agricultural trade, \DIFdelbegin \DIFdel{including cultivation area changes and crop selection switching under climate change \mbox{%DIFAUXCMD
+\citep{rosenzweig2018,ruane2018} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend because global market mechanisms \DIFdelbegin \DIFdel{may strongly modulate climate change impacts }\DIFdelend \DIFaddbegin \DIFadd{can strongly modulate the economic impacts of regional yield changes }\DIFaddend \citep{Stevanovic2016,hasegawa2018risk}. 
+Global \DIFdelbegin \DIFdel{crop model experiments are needed for systematic climate change  assessments \mbox{%DIFAUXCMD
+\citep{muller_global_2017}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{simulations are especially necessary in studying agricultural effects of climate change  \mbox{%DIFAUXCMD
+\citep{muller_global_2017}}\hspace{0pt}%DIFAUXCMD
+, since systematic climate assessments must account for cultivation area changes and crop selection switching \mbox{%DIFAUXCMD
+\citep{rosenzweig2018,ruane2018} }\hspace{0pt}%DIFAUXCMD
+and must consider inter-regional differences \mbox{%DIFAUXCMD
 \citep[e.g.][]{Nelson2014, Wiebe_2015}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend .
 
@@ -502,7 +510,9 @@ For each scenario, 0.5 degree grid cell and crop, models }\DIFdelend \DIFaddbegi
 
 \section{\DIFadd{Output data products}}
 \DIFadd{All models in GGCMI Phase 2 }\DIFaddend provide 30-year timeseries of annual crop yields 
-\DIFaddbegin \DIFadd{for each scenario, 0.5 degree grid cell and crop, }\DIFaddend in units of tons ha$^{-1}$ year$^{-1}$\DIFdelbegin \DIFdel{, as well as }\DIFdelend \DIFaddbegin \DIFadd{. They also provide all available variables of the following 6: }\DIFaddend total aboveground biomass yield; the dates of planting, anthesis \DIFdelbegin \DIFdel{, }\DIFdelend and maturity; applied irrigation water in irrigated scenarios; and total \DIFdelbegin \DIFdel{evapotranspirtation.  (Note that several }\DIFdelend \DIFaddbegin \DIFadd{evapotranspiration.  We term these 7 variables the ``mandatory'' outputs, but note that some }\DIFaddend models do not \DIFdelbegin \DIFdel{output }\DIFdelend \DIFaddbegin \DIFadd{compute all of them, e.g.\ CARAIB does not compute }\DIFaddend the anthesis date.
+\DIFaddbegin \DIFadd{for each scenario, 0.5 degree grid cell and crop, }\DIFaddend in units of tons ha$^{-1}$ year$^{-1}$\DIFdelbegin \DIFdel{, as well as }\DIFdelend \DIFaddbegin \DIFadd{. They also provide all available variables of the following 6: }\DIFaddend total aboveground biomass yield; the dates of planting, anthesis \DIFdelbegin \DIFdel{, }\DIFdelend and maturity; applied irrigation water in irrigated scenarios; and total \DIFdelbegin \DIFdel{evapotranspirtation. 
+(Note that several }\DIFdelend \DIFaddbegin \DIFadd{evapotranspiration. 
+We term these 7 variables the ``mandatory'' outputs, but note that some }\DIFaddend models do not \DIFdelbegin \DIFdel{output }\DIFdelend \DIFaddbegin \DIFadd{compute all of them, e.g.\ CARAIB does not compute }\DIFaddend the anthesis date.
 \DIFdelbegin \DIFdel{)
 Besides these mandatory }\DIFdelend \DIFaddbegin \DIFadd{Besides these }\DIFaddend 7 \DIFdelbegin \DIFdel{data products, }\DIFdelend \DIFaddbegin \DIFadd{``mandatory'' data products (Table \ref{table:outputs}, bold), }\DIFaddend the protocol requests any or all of 18 \DIFdelbegin \DIFdel{optional }\DIFdelend \DIFaddbegin \DIFadd{``optional'' }\DIFaddend additional output variables (Table \ref{table:outputs}, plain text).
 Participating modeling groups provided between 3 (PEPIC) and 18 (APSIM-UGOE) of these optional variables. 
@@ -1010,11 +1020,11 @@ The responses highlighted here are qualitatively similar across all crops includ
 For all crops, warming scenarios with precipitation held constant produce yield decreases in most regions. 
 These impacts are robust for even moderate climate perturbations. 
 For rainfed maize, even a 1$^\circ$C temperature increase with other factors held constant produces a median regional decline in potential yield that exceeds the variance across models, in all but the ``cold-continental'' regions (Figure \ref{fig:maizerice}a). 
-The remaining areas (``warm temperate'', ``equatorial'', and ``arid'') account for nearly three-quarters of global maize production. In the high-latitude ``cold-continental'' region, potential yield changes are positive but highly uncertain, for the reasons discussed previously; uncertainties are larger even for maize than for soybeans. 
+The remaining areas (``warm temperate'', ``equatorial'', and ``arid'') account for nearly three-quarters of global maize production. 
+In the high-latitude ``cold-continental'' region, potential yield changes are positive but highly uncertain, for the reasons discussed previously; uncertainties are larger even for maize than for soybeans. 
 (Compare Figures \ref{fig:maizerice}a and \ref{fig:maizerice}b.) 
-Temperature effects are somewhat nonlinear, with the largest impacts for maize in the warm ``tropical'' region  
-\DIFdelbegin \DIFdel{. 
-}\DIFdelend (For soybeans, temperature effects are more complex; see Supplemental Figure S5\DIFdelbegin \DIFdel{.)}\DIFdelend \DIFaddbegin \DIFadd{). 
+Temperature effects are somewhat nonlinear, with the largest impacts for maize in the warm ``tropical'' region \DIFdelbegin \DIFdel{. 
+(For }\DIFdelend \DIFaddbegin \DIFadd{(for }\DIFaddend soybeans, temperature effects are more complex; see Supplemental Figure S5\DIFdelbegin \DIFdel{.)}\DIFdelend \DIFaddbegin \DIFadd{). 
 }\DIFaddend Precipitation effects on rainfed crops are more strongly nonlinear. 
 The curvature of the precipitation response can be seen by eye in Figure \ref{fig:maizerice}b: soybean yields are strongly negatively impacted by reduced rainfall, peak under increased precipitation of 20\%, and actually decline at higher precipitation levels. 
 

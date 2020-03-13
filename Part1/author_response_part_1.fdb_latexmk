@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584123785 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.pdf" "author_response_part_1" 1584123786
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.aux" 1584123785 4525 1b0aa181f47e6cac38a605013c64c080 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.tex" 1584123781 28088 da056686c42f90046ac6a9ac0b5336e2 ""
+["pdflatex"] 1584129595 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.pdf" "author_response_part_1" 1584129597
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.aux" 1584129596 5159 f53b202dbcf2f37eb9f73931477b93f2 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.tex" 1584129593 32291 71a86d8507519ec6dc2dd71d33b0e8a0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -134,14 +134,14 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1581524086 4770827 b2142e54036931eaa6bae4330bc3a30d ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1581524186 8256624 54907bd9292a838a2d65f3c933a145f5 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "author_response_part_1.aux" 1584123785 4525 1b0aa181f47e6cac38a605013c64c080 "pdflatex"
-  "author_response_part_1.tex" 1584123781 28088 da056686c42f90046ac6a9ac0b5336e2 ""
+  "author_response_part_1.aux" 1584129596 5159 f53b202dbcf2f37eb9f73931477b93f2 "pdflatex"
+  "author_response_part_1.tex" 1584129593 32291 71a86d8507519ec6dc2dd71d33b0e8a0 ""
   "copernicus.cfg" 1550506594 44412 e29c579f8c1ba96145631d0d59baede1 ""
   "copernicus.cls" 1539008036 100918 ee4f2fab69647a082d8672eef605691a ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.pdf"
   "author_response_part_1.pdf"
   "author_response_part_1.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.pdf"
   "author_response_part_1.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/author_response_part_1.log"
