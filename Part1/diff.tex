@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL main1submitted.tex   Tue Mar 10 19:13:09 2020
-%DIF ADD main1.tex            Fri Mar 13 14:59:55 2020
+%DIF ADD main1.tex            Fri Mar 13 16:26:30 2020
 \documentclass[gmd, manuscript]{copernicus} %final manuscript
 \usepackage{url}
 \Urlmuskip=0mu plus 1mu % for better line break in very long globus URLs
@@ -157,11 +157,7 @@ Modeling crop responses, however, continues to be challenging, as crop growth is
 Models tend to agree broadly in major response patterns, including a reasonable representation of the spatial pattern in historical yields of major crops and projections of shifts in yield under future climate scenarios \citep[e.g.][]{Elliott2015, muller_global_2017}. 
 But process-based models still struggle with some important details, including reproducing historical year-to-year variability in many regions \citep[e.g.][]{muller_global_2017, Jag2018}, reproducing historical yields when driven by reanalysis weather \citep[e.g.][]{Glotter14}, and low sensitivity to extreme events \citep[e.g.][]{Glotter15,schewe2019}. 
 \DIFaddbegin \DIFadd{Global models pose additional challenges due to variable input data quality and limited ability for model calibration.
-}\DIFaddend Long-term projections therefore retain considerable uncertainty \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
-\citep{WOLF2002217, JAGTAP200273, Iizumi2010, ANGULO201332, Asseng2013, Asseng2015}}\hspace{0pt}%DIFAUXCMD
-}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citep{WOLF2002217, JAGTAP200273, iizumi2010, ANGULO201332, Asseng2013, Asseng2015}}\hspace{0pt}%DIFAUXCMD
-}\DIFaddend . 
+}\DIFaddend Long-term projections therefore retain considerable uncertainty \citep{WOLF2002217, JAGTAP200273, Iizumi2010, ANGULO201332, Asseng2013, Asseng2015}. 
 
 Model intercomparison projects such as the Agricultural Model Intercomparison and Improvement Project \citep[AgMIP, ][]{ROSENZWEIG2013} are crucial in quantifying uncertainties in model projections \citep{Rosenzweig2014}. Intercomparison projects have also been used to develop protocols for evaluating overall model performance \citep{Elliott2015, muller_global_2017} and to assess the representation of individual physical mechanisms such as water stress and CO$_2$ fertilization \citep[e.g.][]{Schauberger2017}.
 However, to date, few such projects have systematically sampled critical factors that may interact strongly in affecting crop yields. 
@@ -220,7 +216,7 @@ The dataset is designed to allow researchers to:
   \centering
   \includegraphics[width=15cm]{figures/number_of_models.png}
   \caption{
-  \textbf{Left panel:}Cultivated areas for maize, rice, and soybean are taken from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. Blue indicates grid cells with more that 20,000 hectares (10\% of the equatorial grid cell) and gray contour shows gridcells with more that 10 hectares cultivated. 
+  \textbf{Left panel:} Cultivated areas for maize, rice, and soybean \DIFdelbeginFL \DIFdelFL{are taken }\DIFdelendFL from the MIRCA2000 (``Monthly Irrigated and Rainfed Crop Areas around the year 2000'') dataset \citep{Portmann2010}. Blue indicates grid cells with more that 20,000 hectares (10\% of the equatorial grid cell) and gray contour shows gridcells with more that 10 hectares cultivated. 
   Areas for winter and spring wheat areas are adapted from MIRCA2000 and two other sources; see text for details.  For irrigated crops, see supplemental Figure S1.
   \textbf{Right panel:} Number of models providing simulations for each grid cell.  
   All models provide the minimum areal coverage of the GGCMI Phase \DIFdelbeginFL \DIFdelFL{II }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{2 }\DIFaddendFL protocol, but some provide extra coverage at high latitudes or in arid or otherwise unsuitable areas.}
@@ -241,7 +237,6 @@ Given that the irrigated scenario (W$_{\infty}$) is one element of the water sup
 All other water supply levels are implemented as relative variations of precipitation.
 }\DIFdelend Values of climate variable perturbations are selected to represent reasonable ranges for changes over the medium term (to 2100) under business-as-usual emissions. 
 \DIFaddbegin \DIFadd{Values for nitrogen application levels are intended to cover a wide range of potentials. }\DIFaddend The resulting GGCMI Phase \DIFdelbegin \DIFdel{II dataset therefore }\DIFdelend \DIFaddbegin \DIFadd{2 dataset }\DIFaddend captures the distribution of crop model responses over \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{a wide }\DIFaddend range of potential future climate \DIFaddbegin \DIFadd{and management }\DIFaddend conditions.
-
 
 \begin{table}[t]
   \caption{
@@ -279,8 +274,8 @@ water perturbations are applied as fractional changes to daily precipitation.
 The irrigated scenario (W$_{\infty}$) is a particular case of water supply levels, in which crops are assumed to have no water constraints. That is, all crop water requirements are fulfilled regardless of local water supply limitations.
  To facilitate comparison, irrigated simulations use the same growing seasons as all other simulations, even though in reality irrigated growing seasons may be different \mbox{%DIFAUXCMD
 \citep{Portmann2010}}\hspace{0pt}%DIFAUXCMD
-, and irrigated and rainfed cases  
- are both simulated with near-global coverage. %DIF > , independent of their actual occurrence. 
+, and both irrigated and rainfed cases  
+ are simulated with near-global coverage. %DIF > , independent of their actual occurrence. 
 %DIF > This allows for better analysis of model sensitivities and responses to water limitations.  In the GGCMI Phase 2 experiment, irrigated systems are simulated using rainfed growing seasons so that the two simulation sets are directly comparable even though in reality irrigated growing seasons can be in different periods of the year than rainfed growing seasons .
 }
 
@@ -295,7 +290,7 @@ In a realistic climate projection, higher latitudes generally warm more strongly
 , and the northern high latitudes warm more quickly than the southern ones.
 A GGCMI Phase 2 simulation therefore represents a possible future state that }\textit{\DIFadd{could}} \DIFadd{occur in each grid cell, but not one that would in reality occur simultaneously in all grid cells across the globe.  %DIF >  that the T+1 is 1 $^{\circ}$C warmer everywhere.
  %DIF >  so that a 1 $^{\circ}$C change in the growing season in Canada, for example, may not equate to a 1 $^{\circ}$C global mean temperature rise.
-The GGCMI Phase 2 simulations are intended to be used for climate impact assessment not directly but instead as a ``training set'' for statistical emulation of each crop model. Once an emulator is constructed from the outputs described here, it can be driven with growing-season climate anomalies from any climate model projection.  The protocol does not involve any simulated changes in climate variability, but
+The GGCMI Phase 2 simulations are intended to be used for climate impact assessment not directly but instead as a ``training set'' for statistical emulation of each crop model. Once an emulator is constructed from the outputs described here, it can be driven with growing-season climate anomalies from any climate model projection.  The GGCMI Phase 2 protocol does not involve any simulated changes in climate variability, but
 \mbox{%DIFAUXCMD
 \cite{Franke2020} }\hspace{0pt}%DIFAUXCMD
 demonstrate that these effects are relatively minor and that GGCMI Phase 2 emulators can effectively reproduce crop model yields under realistic future climate scenarios.
@@ -326,12 +321,12 @@ Wherever possible, the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbe
 These include soil treatment (which affects soil organic matter and carry-over effects of soil moisture across growing years) and baseline climate inputs.  
 
 While 10 of the 12 models participating in GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend use the AgMERRA historical daily climate data product, two models require sub-daily input data and thus use different baseline climate inputs:
-PROMET uses ERA-Interim reanalysis \citep{dee2011era}; JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, selecting WFDEI version with precipitation bias-corrected against the CRU TS3.101/TS3.21 precipitation totals \citep{harris_cru_2014}.
+PROMET uses ERA-Interim reanalysis \citep{dee2011era}\DIFdelbegin \DIFdel{; }\DIFdelend \DIFaddbegin \DIFadd{, and }\DIFaddend JULES uses a bias-corrected version of ERA-Interim, the 3-hour WFDEI (WATCH-Forcing-Data-ERA-Interim) \citep{weedon2014wfdei}, \DIFdelbegin \DIFdel{selecting }\DIFdelend \DIFaddbegin \DIFadd{specifically the }\DIFaddend WFDEI version with precipitation bias-corrected against the CRU TS3.101/TS3.21 precipitation totals \citep{harris_cru_2014}.
 The data products show some differences (Figures S3-S4, which compare data products over currently cultivated areas for each crop). 
-For example, for maize, ERA-Interim daily precipitation is biased high from that in AgMERRA by 7\% (< 1 sigma), while mean daily precipitation in WFDEI is only 3\% higher. 
-Precipitation differences are largest in wheat areas, where ERA-Interim is substantially wetter (+60mm year$^{-1}$ or 10\%). 
-Temperatures for maize are very similar between data products, with ERA-Interim 0.45$^\circ$C cooler and WFDEI 0.1$^\circ$C warmer. 
-Differences are largest for rice, with ERA-Interim 1$^\circ$C cooler. 
+For example, for \DIFdelbegin \DIFdel{maize}\DIFdelend \DIFaddbegin \DIFadd{maize-growing areas}\DIFaddend , ERA-Interim daily precipitation is biased high from that in AgMERRA by 7\% (< 1 sigma), while mean daily precipitation in WFDEI is only 3\% higher. 
+Precipitation differences are largest in wheat areas, where ERA-Interim is substantially wetter (+\DIFdelbegin \DIFdel{60mm }\DIFdelend \DIFaddbegin \DIFadd{60 mm }\DIFaddend year$^{-1}$ or 10\%). 
+\DIFdelbegin \DIFdel{Temperatures for maize are very similar between data products}\DIFdelend \DIFaddbegin \DIFadd{Temperature differences are largest for rice}\DIFaddend , with ERA-Interim \DIFdelbegin \DIFdel{0.45}\DIFdelend \DIFaddbegin \DIFadd{1}\DIFaddend $^\circ$C cooler \DIFdelbegin \DIFdel{and WFDEI 0.1$^\circ$C warmer. 
+Differences are largest for rice, }\DIFdelend \DIFaddbegin \DIFadd{than AgMERRA, and smaller for other crops, e.g.\ maize }\DIFaddend with ERA-Interim \DIFdelbegin \DIFdel{1}\DIFdelend \DIFaddbegin \DIFadd{0.45}\DIFaddend $^\circ$C cooler \DIFaddbegin \DIFadd{and WFDEI 0.1$^\circ$C warmer}\DIFaddend . 
 These differences are relatively small compared to the perturbations tested in the protocol.
 
 Planting dates and growing season lengths are standardized across models, following the procedure described in \citet{Elliott2015} for the \textit{fullharm} setting. 
@@ -350,7 +345,7 @@ Two aspects of the procedure should be noted. First, the target growing seasons 
 For example, \DIFdelbegin \DIFdel{at present }\DIFdelend \DIFaddbegin \DIFadd{present-day }\DIFaddend maize is sown in March in Spain, in July in Indonesia, and in December in Namibia \citep{Portmann2010}.
 \DIFdelbegin \DIFdel{The one exception to the harmonization protocol described above involves CARAIB, which for technical reasons kept their own growing season specifications rather than tuning to standard lengths}\DIFdelend \DIFaddbegin \DIFadd{Second, because temperature varies between years in the 30-year baseline climatology, realized growing season length will still vary in individual years even after harmonization}\DIFaddend . 
 
-\DIFdelbegin \DIFdel{Because harvest dates are a function of climate parameters , simulations with the harmonized phenological parameters described above generally result in shorter }\DIFdelend \DIFaddbegin \DIFadd{The dependence of harvest dates on climate parameters means that in a model with phenological parameters tuned to match target }\DIFaddend growing seasons in \DIFdelbegin \DIFdel{future warmer scenarios}\DIFdelend \DIFaddbegin \DIFadd{the baseline climate, growing seasons will nevertheless alter under climate change. In general, warmer future scenarios produce shorter growing seasons}\DIFaddend .
+\DIFdelbegin \DIFdel{Because harvest dates are a function of climate parameters , simulations with the harmonized phenological parameters described above generally result in shorter }\DIFdelend \DIFaddbegin \DIFadd{The dependence of harvest dates on climate parameters means that growing seasons will alter under climate change in a model with phenological parameters tuned to match target }\DIFaddend growing seasons in \DIFdelbegin \DIFdel{future warmer scenarios}\DIFdelend \DIFaddbegin \DIFadd{the baseline climate. In general, warmer future scenarios produce shorter growing seasons}\DIFaddend .
 We denote \DIFdelbegin \DIFdel{these simulations }\DIFdelend \DIFaddbegin \DIFadd{simulations that allow these future changes }\DIFaddend as ``A0'' experiments, where 0 denotes ``no adaptation''. 
  \DIFdelbegin \DIFdel{To account for potential adaptation in crop cultivars, the GGCMI Phase II }\DIFdelend \DIFaddbegin \DIFadd{The GGCMI Phase 2 }\DIFaddend protocol includes a second set of experiments, ``A1'', that assume that \DIFaddbegin \DIFadd{future }\DIFaddend cultivars are modified to adjust to changes along the T dimension in the CTWN experiment.  %DIF > To account for potential adaptation in crop cultivars,
 For these simulations, modelers adjust \DIFdelbegin \DIFdel{parameters }\DIFdelend \DIFaddbegin \DIFadd{phenological parameters for each temperature scenario }\DIFaddend to hold growing season length approximately constant\DIFdelbegin \DIFdel{across the different warming scenarios}\DIFdelend . 
@@ -398,119 +393,10 @@ In LPJmL, LPJ-GUESS and APSIM, soil mineralization is a part of model treatments
 Some additional differences in model structure mean that several key factors are not standardized across the experiment. 
 For example, carry-over effects across growing years including residue management and soil moisture are treated differently across models.
 
-
-\DIFdelbegin \subsection{\DIFdel{Output data products}}
-%DIFAUXCMD
-\addtocounter{subsection}{-1}%DIFAUXCMD
-\DIFdel{All models }\DIFdelend \DIFaddbegin \section{\DIFadd{Models contributing}}
-\label{S:3}
-
-\DIFadd{The twelve models participating }\DIFaddend in GGCMI Phase \DIFdelbegin \DIFdel{II provide 7 mandatory output variables if available (Table \ref{table:outputs}, bold}\DIFdelend \DIFaddbegin \DIFadd{2 are listed in Table \ref{table:models}. 
-Models differ substantially in structure and parameterization and can be separated into two broad categories: site-based (field-scale) models, and global ecosystem models.
-The 6 site-based models are APSIM, pDSSAT, and the EPIC family of models; the 6 ecosystem models are LPJmL, LPJ-GUESS, PROMET, CARAIB, ORCHIDEE, and JULES.
-Models employ a variety of approaches for the core modules such as primary production or evapotranspiration.
-For primary production, site-based models employ light use efficiency approaches and ecosystem models use photosynthesis approaches.
-For evapotranspiration, most models use Priestley-Taylor, Penman-Monteith or Hargreaves schemes, but JULES and PROMET utilize a land surface model approach instead. 
-Note that models that share a common genealogy may still use different schemes for evapotranspiration:
-for example, EPIC-TAMU uses Penman-Monteith and EPIC-IIASA uses Hargreaves.
-To describe soils, most models use either the Harmonized World Soil Database (HWSD) from the FAO \mbox{%DIFAUXCMD
-\citep{FAOSOIL2008} }\hspace{0pt}%DIFAUXCMD
-or the ISRIC-WISE database \mbox{%DIFAUXCMD
-\citep{BatjesL2008} }\hspace{0pt}%DIFAUXCMD
-or a derivation thereof.
-Supplemental Table S1 provides details on these model characteristics as well as on implementation, including spin-up, calibration other than growing season, residue management, and irrigation rules,
-}
-
-\begin{table*}[t]
-\caption{
-\DIFaddFL{Models included in GGCMI Phase 2 and the number of CTWN-A simulations performed. 
-The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
-Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM-UGOE does not simulate winter wheat.)
-}}
-\label{table:models}
-  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
-    \tophline
-    {\textbf{\DIFaddFL{Model (Key Citations)}}}&{\textbf{\DIFaddFL{Maize}}}&{\textbf{\DIFaddFL{Soybean}}}&{\textbf{\DIFaddFL{Rice}}}&{\textbf{\DIFaddFL{Winter wheat}}}&{\textbf{\DIFaddFL{Spring wheat}}}&{\textbf{\DIFaddFL{N dim.}}}&{\textbf{\DIFaddFL{Sims per crop (A0 / A1)}}}\\ \middlehline
-    {\textbf{\DIFaddFL{APSIM-UGOE}}\DIFaddFL{,    \mbox{%DIFAUXCMD
-\citet{KEATING2003267, HOLZWORTH2014327}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{44 / 36}}\\ \middlehline
-    {\textbf{\DIFaddFL{CARAIB}}\DIFaddFL{,        \mbox{%DIFAUXCMD
-\citet{Dury2011, Pirttioja2015}}\hspace{0pt}%DIFAUXCMD
-}}  & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\textbf{\DIFaddFL{252 / 216}}}\\ \middlehline
-    {\textbf{\DIFaddFL{EPIC-IIASA}}\DIFaddFL{,    \mbox{%DIFAUXCMD
-\citet{BALKOVIC2014}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{39 / 0}}\\  \middlehline
-    {\textbf{\DIFaddFL{EPIC-TAMU}}\DIFaddFL{,     \mbox{%DIFAUXCMD
-\citet{Izaurralde06}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\textbf{\DIFaddFL{756 / 648}}}\\ \middlehline
-    {\textbf{\DIFaddFL{JULES}}\DIFaddFL{,         \mbox{%DIFAUXCMD
-\citet{Osborne2015, Williams2015, Williams2017}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\textbf{\DIFaddFL{252 / 0}}}\\ \middlehline
-    {\textbf{\DIFaddFL{GEPIC}}\DIFaddFL{,         \mbox{%DIFAUXCMD
-\citet{LIU2007478, FOLBERTH201221}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{430 / 181}}\\ \middlehline
-    {\textbf{\DIFaddFL{LPJ-GUESS}}\DIFaddFL{,     \mbox{%DIFAUXCMD
-\citet{Lindeskog2013, Olin2015}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\DIFaddFL{--}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\textbf{\DIFaddFL{756 / 648}}}\\  \middlehline
-    {\textbf{\DIFaddFL{LPJmL}}\DIFaddFL{,         \mbox{%DIFAUXCMD
-\citet{von_Bloh_implementing_2018}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\textbf{\DIFaddFL{756 / 648}}}\\ \middlehline
-    {\textbf{\DIFaddFL{ORCHIDEE-crop}}\DIFaddFL{, \mbox{%DIFAUXCMD
-\citet{Wu2016}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{--}}  & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{--}} & {\DIFaddFL{X}} & {\DIFaddFL{33 / 0}}\\ \middlehline
-    {\textbf{\DIFaddFL{pDSSAT}}\DIFaddFL{,        \mbox{%DIFAUXCMD
-\citet{Elliott2014b, JONES2003235}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\textbf{\DIFaddFL{756 / 648}}}\\ \middlehline
-    {\textbf{\DIFaddFL{PEPIC}}\DIFaddFL{,         \mbox{%DIFAUXCMD
-\citet{LIU2016164, LIU2016}}\hspace{0pt}%DIFAUXCMD
-}}  & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{149 / 121}}\\ \middlehline
-    {\textbf{\DIFaddFL{PROMET}}\DIFaddFL{,        \mbox{%DIFAUXCMD
-\citet{Hank2015, MAUSER2015}}\hspace{0pt}%DIFAUXCMD
-}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{X}} & {\DIFaddFL{261 / 232}}\\ \middlehline
-    {\DIFaddFL{Totals}} & {\DIFaddFL{12}} & {\DIFaddFL{10}} & {\DIFaddFL{11}} & {\DIFaddFL{10}} & {\DIFaddFL{11}} & {\DIFaddFL{10}} & {\DIFaddFL{5240 | 3378}}\\
-    \bottomhline
-  \end{tabular}
-\end{table*}
-
-\DIFadd{Table \ref{table:models} also descibes the simulation output contibution of each model to the GGCMI Phase 2 archive.
-Not all modeling groups provided simulations for the full protocol described above. 
-Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
-These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with }\textit{\DIFadd{full}} \DIFadd{(12) and }\textit{\DIFadd{low}} \DIFadd{(4) options for the C $\cdot$ N variables, and }\textit{\DIFadd{full}} \DIFadd{(63), }\textit{\DIFadd{reduced}} \DIFadd{(31), and }\textit{\DIFadd{minimum}} \DIFadd{(9) options for T $\cdot$ W variables (described below). 
-All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase 2, some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
-}
-
-\DIFadd{The different participation levels are defined by combining the CxN sets with the TxW sets:
-}\begin{itemize}
-  \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
-  \item{\textbf{high}: 362 simulations (all 12 CxN combinations  $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-  \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-  \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{minimum} TxW set of 9 combinations)}
-\end{itemize}
-
-\noindent \DIFadd{Of the 12 models submitting data, 6 followed the }\textit{\DIFadd{full}} \DIFadd{protocol; these are marked with bold text in the last column of Table \ref{table:models}. 
-However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the nitrogen dimension. 
-Two models followed }\textit{\DIFadd{high}} \DIFadd{with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
-One model (PEPIC) followed }\textit{\DIFadd{mid}} \DIFadd{but included an additional C level. 
-Three models approximately followed }\textit{\DIFadd{low}} \DIFadd{with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
-}
-
-\DIFadd{The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
-}\begin{itemize}
-  \item \textit{\DIFadd{full}} \DIFadd{as 12 pairs, with 4 C values (360, 510, 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$}\DIFaddend )
-  \DIFdelbegin \DIFdel{.
-For each scenario, 0.5 degree grid cell and crop, models }\DIFdelend \DIFaddbegin \item \textit{\DIFadd{low}} \DIFadd{as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200
-}\end{itemize}
-
-\DIFadd{For the TxW space we specify:
-}\begin{itemize}
-  \item \textit{\DIFadd{full}} \DIFadd{as all 7 T levels and 9W levels.
-  }\item \textit{\DIFadd{reduced}} \DIFadd{as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
-  }\item \textit{\DIFadd{minimum}} \DIFadd{as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
-}\end{itemize}
-
-\section{\DIFadd{Output data products}}
-\DIFadd{All models in GGCMI Phase 2 }\DIFaddend provide 30-year timeseries of annual crop yields 
-\DIFaddbegin \DIFadd{for each scenario, 0.5 degree grid cell and crop, }\DIFaddend in units of tons ha$^{-1}$ year$^{-1}$\DIFdelbegin \DIFdel{, as well as }\DIFdelend \DIFaddbegin \DIFadd{. They also provide all available variables of the following 6: }\DIFaddend total aboveground biomass yield; the dates of planting, anthesis \DIFdelbegin \DIFdel{, }\DIFdelend and maturity; applied irrigation water in irrigated scenarios; and total \DIFdelbegin \DIFdel{evapotranspirtation. 
+\subsection{Output data products}
+All models in GGCMI Phase \DIFdelbegin \DIFdel{II provide 7 mandatory output variables if available (Table \ref{table:outputs}, bold).
+For }\DIFdelend \DIFaddbegin \DIFadd{2 provide 30-year timeseries of annual crop yields 
+for }\DIFaddend each scenario, 0.5 degree grid cell and crop, \DIFdelbegin \DIFdel{models provide 30-year timeseries of annual crop yields }\DIFdelend in units of tons ha$^{-1}$ year$^{-1}$\DIFdelbegin \DIFdel{, as well as }\DIFdelend \DIFaddbegin \DIFadd{. They also provide all available variables of the following 6: }\DIFaddend total aboveground biomass yield; the dates of planting, anthesis \DIFdelbegin \DIFdel{, }\DIFdelend and maturity; applied irrigation water in irrigated scenarios; and total \DIFdelbegin \DIFdel{evapotranspirtation. 
 (Note that several }\DIFdelend \DIFaddbegin \DIFadd{evapotranspiration. 
 We term these 7 variables the ``mandatory'' outputs, but note that some }\DIFaddend models do not \DIFdelbegin \DIFdel{output }\DIFdelend \DIFaddbegin \DIFadd{compute all of them, e.g.\ CARAIB does not compute }\DIFaddend the anthesis date.
 \DIFdelbegin \DIFdel{)
@@ -579,281 +465,87 @@ In the northern hemisphere, for summer crops like maize (sown in spring 1980 and
 While there is generally one sowing event per calendar year (since simulations with harmonized growing seasons do not permit double-cropping), in some cases harvest events may skip or repeat within a calendar year.
 For example, because soybeans in North Carolina are typically harvested well into December, some calendar years may include no harvest (if it is not completed until after Dec. 31) or two harvests (one in January and one 11 months later in the following December). 
 
-\DIFdelbegin \section{\DIFdel{Models contributing}}
-%DIFAUXCMD
-\addtocounter{section}{-1}%DIFAUXCMD
-%DIFDELCMD < \label{S:3}
-%DIFDELCMD < \begin{table*}[t]
-%DIFDELCMD < %%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Models included in GGCMI Phase II and the number of CTWN-A simulations performed. 
+\section{Models contributing}
+\label{S:3}
+\DIFaddbegin 
+
+\DIFadd{The 12 models participating in GGCMI Phase 2 are listed in Table \ref{table:models}. 
+Models differ substantially in structure and parameterization and can be separated into two broad categories: site-based (field-scale) models, and global ecosystem models.
+The 6 site-based models are APSIM, pDSSAT, and the EPIC family of models; the 6 ecosystem models are LPJmL, LPJ-GUESS, PROMET, CARAIB, ORCHIDEE, and JULES.
+Models employ a variety of approaches for the core modules such as primary production or evapotranspiration.
+For primary production, site-based models employ light use efficiency approaches and ecosystem models use photosynthesis approaches.
+For evapotranspiration, most models use Priestley-Taylor, Penman-Monteith or Hargreaves schemes, but JULES and PROMET utilize a land surface model approach instead. 
+Note that models that share a common genealogy may still use different schemes for evapotranspiration:
+for example, EPIC-TAMU uses Penman-Monteith and EPIC-IIASA uses Hargreaves.
+To describe soils, most models use either the Harmonized World Soil Database (HWSD) from the FAO \mbox{%DIFAUXCMD
+\citep{FAOSOIL2008} }\hspace{0pt}%DIFAUXCMD
+or the ISRIC-WISE database \mbox{%DIFAUXCMD
+\citep{BatjesL2008} }\hspace{0pt}%DIFAUXCMD
+or a derivation thereof.
+Supplemental Table S1 provides details on these model characteristics as well as on implementation, including spin-up, calibration other than growing season, residue management, and irrigation rules,
+}
+
+\DIFaddend \begin{table*}[t]
+\caption{
+Models included in GGCMI Phase \DIFdelbeginFL \DIFdelFL{II }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{2 }\DIFaddendFL and the number of CTWN-A simulations performed. 
 The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing length) experiments, since T0 is not simulated under A1. ``N-Dim.'' indicates whether the models are able to represent varying nitrogen levels.
 Each model provides the same set of CTWN simulations across all its modeled crops, but some models omit individual crops. (For example, APSIM-UGOE does not simulate winter wheat.)
-}}
-%DIFAUXCMD
-%DIFDELCMD < \label{table:models}
-%DIFDELCMD <   \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
-%DIFDELCMD <     \tophline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{Model (Key Citations)}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Maize}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Soybean}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Rice}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Winter wheat}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Spring wheat}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{N dim.}}%DIFAUXCMD
-%DIFDELCMD < }&{%%%
-\textbf{\DIFdelFL{Sims per crop (A0 / A1)}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{APSIM-UGOE}}%DIFAUXCMD
-\DIFdelFL{,   \mbox{%DIFAUXCMD
-\citet{KEATING2003267, HOLZWORTH2014327}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{44 / 36}%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{CARAIB}}%DIFAUXCMD
-\DIFdelFL{,       \mbox{%DIFAUXCMD
-\citet{Dury2011, Pirttioja2015}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < }  & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{252 / 216}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{EPIC-IIASA}}%DIFAUXCMD
-\DIFdelFL{,   \mbox{%DIFAUXCMD
-\citet{BALKOVIC2014}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{39 / 0}%DIFDELCMD < }\\  \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{EPIC-TAMU}}%DIFAUXCMD
-\DIFdelFL{,    \mbox{%DIFAUXCMD
-\citet{Izaurralde06}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{756 / 648}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{JULES}}%DIFAUXCMD
-\DIFdelFL{,        \mbox{%DIFAUXCMD
-\citet{Osborne2015, Williams2015, Williams2017}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{252 / 0}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{GEPIC}}%DIFAUXCMD
-\DIFdelFL{,        \mbox{%DIFAUXCMD
-\citet{LIU2007478, FOLBERTH201221}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{430 / 181}%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{LPJ-GUESS}}%DIFAUXCMD
-\DIFdelFL{,    \mbox{%DIFAUXCMD
-\citet{Lindeskog2013, Olin2015}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{756 / 648}}%DIFAUXCMD
-%DIFDELCMD < }\\  \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{LPJmL}}%DIFAUXCMD
-\DIFdelFL{,        \mbox{%DIFAUXCMD
-\citet{von_Bloh_implementing_2018}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{756 / 648}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{ORCHIDEE-crop}}%DIFAUXCMD
-\DIFdelFL{, \mbox{%DIFAUXCMD
-\citet{Wu2016}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < }  & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{--}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{33 / 0}%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{pDSSAT}}%DIFAUXCMD
-\DIFdelFL{,       \mbox{%DIFAUXCMD
-\citet{Elliott2014b, JONES2003235}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\textbf{\DIFdelFL{756 / 648}}%DIFAUXCMD
-%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{PEPIC}}%DIFAUXCMD
-\DIFdelFL{,        \mbox{%DIFAUXCMD
-\citet{LIU2016164, LIU2016}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < }  & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{149 / 121}%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\textbf{\DIFdelFL{PROMET}}%DIFAUXCMD
-\DIFdelFL{,       \mbox{%DIFAUXCMD
-\citet{Hank2015, MAUSER2015}}\hspace{0pt}%DIFAUXCMD
-}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{X}%DIFDELCMD < } & {%%%
-\DIFdelFL{261 / 232}%DIFDELCMD < }\\ \middlehline
-%DIFDELCMD <     {%%%
-\DIFdelFL{Totals}%DIFDELCMD < } & {%%%
-\DIFdelFL{12}%DIFDELCMD < } & {%%%
-\DIFdelFL{10}%DIFDELCMD < } & {%%%
-\DIFdelFL{11}%DIFDELCMD < } & {%%%
-\DIFdelFL{10}%DIFDELCMD < } & {%%%
-\DIFdelFL{11}%DIFDELCMD < } & {%%%
-\DIFdelFL{10}%DIFDELCMD < } & {%%%
-\DIFdelFL{5240 | 3378}%DIFDELCMD < }\\
-%DIFDELCMD <     \bottomhline
-%DIFDELCMD <   \end{tabular}
-%DIFDELCMD < \end{table*}
-%DIFDELCMD < 
+}
+\label{table:models}
+  \begin{tabular}{p{6cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1cm} p{1.9cm}}
+    \tophline
+    {\textbf{Model (Key Citations)}}&{\textbf{Maize}}&{\textbf{Soybean}}&{\textbf{Rice}}&{\textbf{Winter wheat}}&{\textbf{Spring wheat}}&{\textbf{N dim.}}&{\textbf{Sims per crop (A0 / A1)}}\\ \middlehline
+    {\textbf{APSIM-UGOE},    \citet{KEATING2003267, HOLZWORTH2014327}} & {X} & {X} & {X} & {--} & {X} & {X} & {44 / 36}\\ \middlehline
+    {\textbf{CARAIB},        \citet{Dury2011, Pirttioja2015}}  & {X} & {X} & {X} & {X} & {X} & {--} & {\textbf{252 / 216}}\\ \middlehline
+    {\textbf{EPIC-IIASA},    \citet{BALKOVIC2014}} & {X} & {X} & {X} & {X} & {X} & {X} & {39 / 0}\\  \middlehline
+    {\textbf{EPIC-TAMU},     \citet{Izaurralde06}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{JULES},         \citet{Osborne2015, Williams2015, Williams2017}} & {X} & {X} & {X} & {--} & {X} & {--} & {\textbf{252 / 0}}\\ \middlehline
+    {\textbf{GEPIC},         \citet{LIU2007478, FOLBERTH201221}} & {X} & {X} & {X} & {X} & {X} & {X} & {430 / 181}\\ \middlehline
+    {\textbf{LPJ-GUESS},     \citet{Lindeskog2013, Olin2015}} & {X} & {--} & {--} & {X} & {X} & {X} & {\textbf{756 / 648}}\\  \middlehline
+    {\textbf{LPJmL},         \citet{von_Bloh_implementing_2018}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{ORCHIDEE-crop}, \citet{Wu2016}} & {X} & {--}  & {X} & {X} & {--} & {X} & {33 / 0}\\ \middlehline
+    {\textbf{pDSSAT},        \citet{Elliott2014b, JONES2003235}} & {X} & {X} & {X} & {X} & {X} & {X} & {\textbf{756 / 648}}\\ \middlehline
+    {\textbf{PEPIC},         \citet{LIU2016164, LIU2016}}  & {X} & {X} & {X} & {X} & {X} & {X} & {149 / 121}\\ \middlehline
+    {\textbf{PROMET},        \citet{Hank2015, MAUSER2015}} & {X} & {X} & {X} & {X} & {X} & {X} & {261 / 232}\\ \middlehline
+    {Totals} & {12} & {10} & {11} & {10} & {11} & {10} & {5240 | 3378}\\
+    \bottomhline
+  \end{tabular}
+\end{table*}
 
-%DIFDELCMD < %%%
-\DIFdel{The simulation output contributions of the 12 crop models to the GGCMI Phase II archive are described in Table \ref{table:models}.
+\DIFdelbegin \DIFdel{The simulation output contributions of the 12 crop models }\DIFdelend \DIFaddbegin \DIFadd{Table \ref{table:models} also descibes the simulation output contibution of each model }\DIFaddend to the GGCMI Phase \DIFdelbegin \DIFdel{II archiveare described in Table \ref{table:models}}\DIFdelend \DIFaddbegin \DIFadd{2 archive}\DIFaddend .
 Not all modeling groups provided simulations for the full protocol described above. 
 Given the substantial computational requirements, different participation tiers were specified to allow submission of smaller sub-sets of the full protocol. 
-These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with }\textit{\DIFdel{full}} %DIFAUXCMD
-\DIFdel{(12) and }\textit{\DIFdel{low}} %DIFAUXCMD
-\DIFdel{(4) options for the C $\cdot$ N variables, and }\textit{\DIFdel{full}} %DIFAUXCMD
-\DIFdel{(63), }\textit{\DIFdel{reduced}} %DIFAUXCMD
-\DIFdel{(31), and }\textit{\DIFdel{minimum}} %DIFAUXCMD
-\DIFdel{(9) options for T $\cdot$ W variables (described below). 
-All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase II, some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
-}%DIFDELCMD < 
+These subsets were designed as alternate samples across the 4 dimensions of the CTWN space,with \textit{full} (12) and \textit{low} (4) options for the C $\cdot$ N variables, and \textit{full} (63), \textit{reduced} (31), and \textit{minimum} (9) options for T $\cdot$ W variables (described below). 
+All participating modeling groups provided identical coverage of the CTWN parameter space for different crops, but most differed in CTWN coverage of A0 and A1 scenarios. Since the adaptation dimension was defined as a secondary priority for GGCMI Phase \DIFdelbegin \DIFdel{II}\DIFdelend \DIFaddbegin \DIFadd{2}\DIFaddend , some models provided a more limited set of A1 scenarios. Of these, EPIC-IIASA, JULES, and ORCHIDEE-crop provided no A1 scenarios.
 
-%DIFDELCMD < %%%
-\DIFdel{The different participation levels are defined by combining the CxN sets with the TxW sets:
-}%DIFDELCMD < \begin{itemize}
-\begin{itemize}%DIFAUXCMD
-%DIFDELCMD <   \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
-%DIFDELCMD <   \item{\textbf{high}: 362 simulations (all 12 CxN combinations  $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-%DIFDELCMD <   \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{reduced} TxW set of 31 combinations)}
-%DIFDELCMD <   \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{minimum} TxW set of 9 combinations)}
+The different participation levels are defined by combining the CxN sets with the TxW sets:
+\begin{itemize}
+  \item{\textbf{full}: all 756 A0 simulations (all 12 CxN * all 63 TxW)}
+  \item{\textbf{high}: 362 simulations (all 12 CxN combinations  $\cdot$ \textit{reduced} TxW set of 31 combinations)}
+  \item{\textbf{mid}: 124 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{reduced} TxW set of 31 combinations)}
+  \item{\textbf{low}: 36 simulations (\textit{low} 4 CxN combinations $\cdot$ \textit{minimum} TxW set of 9 combinations)}
+\end{itemize}
 
-\end{itemize}%DIFAUXCMD
-%DIFDELCMD < \end{itemize}
-%DIFDELCMD < 
-
-%DIFDELCMD < \noindent %%%
-\DIFdel{Of the 12 models submitting data, 6 followed the }\textit{\DIFdel{full}} %DIFAUXCMD
-\DIFdel{protocol; these are marked with italic text in Table \ref{table:models}. 
+\noindent Of the 12 models submitting data, 6 followed the \textit{full} protocol; these are marked with \DIFdelbegin \DIFdel{italic text in }\DIFdelend \DIFaddbegin \DIFadd{bold text in the last column of }\DIFaddend Table \ref{table:models}. 
 However, note that two of these models (CARAIB and JULES) cannot represent nitrogen effects explicitly and so do not sample over the nitrogen dimension. 
-Two models followed }\textit{\DIFdel{high}} %DIFAUXCMD
-\DIFdel{with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
-One model (PEPIC) followed }\textit{\DIFdel{mid}} %DIFAUXCMD
-\DIFdel{but included an additional C level. 
-Three models approximately followed }\textit{\DIFdel{low}} %DIFAUXCMD
-\DIFdel{with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
-}%DIFDELCMD < 
+Two models followed \textit{high} with minor modifications (GEPIC adding an additional T level and PROMET omitting the intermediate N level). 
+One model (PEPIC) followed \textit{mid} but included an additional C level. 
+Three models approximately followed \textit{low} with APSIM-UGOE and EPIC-IIASA providing some additional TxW levels and ORCHIDEE-crop omitting some TxW combinations.  
 
-%DIFDELCMD < %%%
-\DIFdel{The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
-}%DIFDELCMD < \begin{itemize}
-\begin{itemize}%DIFAUXCMD
-%DIFDELCMD <   \item %%%
-\item%DIFAUXCMD
-\textit{\DIFdel{full}} %DIFAUXCMD
-\DIFdel{as 12 pairs, with 4 C values (360, 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$)
-  }%DIFDELCMD < \item %%%
-\item%DIFAUXCMD
-\textit{\DIFdel{low}} %DIFAUXCMD
-\DIFdel{as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200
-}
-\end{itemize}%DIFAUXCMD
-%DIFDELCMD < \end{itemize}
-%DIFDELCMD <     
+The combinations of perturbation values in the CxN and TxW parameter spaces used in the various participation levels are chosen to provide maximum coverage over plausible future values. For the CxN space, we specify:
+\begin{itemize}
+  \item \textit{full} as 12 pairs, with 4 C values (360, \DIFaddbegin \DIFadd{510, }\DIFaddend 660, 810 ppm) and 3 N (10, 60, 200 kg ha$^{-1}$ yr$^{-1}$)
+  \item \textit{low} as only 4 pairs: C360\_N10, C360\_N200, C660\_N60, C810\_N200
+\end{itemize}
 
-%DIFDELCMD < %%%
-\DIFdel{For the TxW space we specify:
-}%DIFDELCMD < \begin{itemize}
-\begin{itemize}%DIFAUXCMD
-%DIFDELCMD <   \item %%%
-\item%DIFAUXCMD
-\textit{\DIFdel{full}} %DIFAUXCMD
-\DIFdel{as all 7 T levels and 9W levels.
-  }%DIFDELCMD < \item %%%
-\item%DIFAUXCMD
-\textit{\DIFdel{reduced}} %DIFAUXCMD
-\DIFdel{as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
-  }%DIFDELCMD < \item %%%
-\item%DIFAUXCMD
-\textit{\DIFdel{minimum}} %DIFAUXCMD
-\DIFdel{as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
-}
-\end{itemize}%DIFAUXCMD
-%DIFDELCMD < \end{itemize}
-%DIFDELCMD < 
+For the TxW space we specify:
+\begin{itemize}
+  \item \textit{full} as all 7 T levels and 9W levels.
+  \item \textit{reduced} as 31 alternating combinations, with different Ws for even Ts than for odd Ts. For even Ts (i.e.\ T0,T2,T4,T6), we use W = -50,-20,0,+30 = 4$\cdot$4 = 16 pairs. For odd Ts (i.e.\ T-1,T1,T3) , we use W = -30, -10, +10, +30, inf = 3$\cdot$5 = 15 pairs.
+  \item \textit{minimum} as 9 combinations: T-1W-10, T0W10, T1W-30, T2W-50, T2W20, T3W30, T4W0, T4Winf, T6W-20
+\end{itemize}
 
-%DIFDELCMD < %%%
-\DIFdelend %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -881,8 +573,8 @@ To illustrate the properties of the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdel
 
 \DIFaddbegin \DIFadd{All models participating in GGCMI Phase 2 have be evaluated against histoircal yields and site specific experimental data.
 Most models (9 of 12, all but  CARAIB, JULES, and PROMET) have been evaluated in their global setup in the GGCMI Phase 1 evaluation exercise \mbox{%DIFAUXCMD
-\citep{muller_global_2017} }\hspace{0pt}%DIFAUXCMD
-or have later used that online tool for the evaluation of subsequent model versions \mbox{%DIFAUXCMD
+\citep{muller_global_2017}}\hspace{0pt}%DIFAUXCMD
+, and many have used the GGCMI Phase 1 online tool to similarly evaluate subsequent model versions \mbox{%DIFAUXCMD
 \citep[e.g.][]{von_Bloh_implementing_2018}}\hspace{0pt}%DIFAUXCMD
 .
 }\DIFaddend Evaluating the performance of crop models in the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend archive is complicated by the artificial nature of the protocol: the settings in the CTWN-A experiment design do not reflect actual conditions in the real world. 
@@ -989,12 +681,12 @@ For example, pDSSAT is the best model for maize in the US, LPJmL and GEPIC are b
 Crop models in the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend ensemble show broadly consistent responses to climate and management perturbations in most regions, with a strong negative impact of increased temperature in all but the coldest regions. 
 Mapping the distribution of baseline yields and yield changes shows the geographic dependencies that underlie these results. 
 Absolute yield potentials show strong spatial variation, with much of the Earth's surface area unsuitable for any of these crops (Figure \ref{fig:maizesoybaseline}, left).
-Crop yield changes under climate perturbations also show distinct geographic patterns (Figure \ref{fig:maizesoybaseline}, right, which shows fractional yield differences between the T+4 scenario and the baseline scenario with historical climatology).
+Crop yield changes under climate perturbations also show distinct geographic patterns (Figure \ref{fig:maizesoybaseline}, right, which shows fractional yield differences between the \DIFaddbegin \DIFadd{baseline and }\DIFaddend T+4 \DIFdelbegin \DIFdel{scenario and the baseline scenario with historical climatology}\DIFdelend \DIFaddbegin \DIFadd{A0 scenarios}\DIFaddend ).
 In general, models agree most on yield response in regions where yield potentials are currently high and therefore where crops are currently grown. 
-\DIFdelbegin \DIFdel{Models }\DIFdelend \DIFaddbegin \DIFadd{In the A0 simulation, models }\DIFaddend show robust decreases in yields at low latitudes, and highly uncertain ensemble mean increases at most high latitudes.
-\DIFaddbegin \DIFadd{Low latitude yield reductions are due in part to shortenting of the growing season under warming and in part to the direct effects of higher temperature.
-In the A1 simulations where growing seasons lenght does not change, temperture related reductions in yield are more muted (see Supplemental Figure S14).
-}\DIFaddend Models show some increases in high mountain regions that are currently cold-limited \DIFaddbegin \DIFadd{in both A0 and A1 simulations}\DIFaddend .
+\DIFdelbegin \DIFdel{Models }\DIFdelend \DIFaddbegin \DIFadd{In A0 simulations, models }\DIFaddend show robust decreases in yields at low latitudes, and highly uncertain ensemble mean increases at most high latitudes.
+\DIFdelbegin \DIFdel{Models }\DIFdelend \DIFaddbegin \DIFadd{Low latitude yield reductions are due in part to shortenting of the growing season under warming and in part to the direct effects of higher temperature.
+In A1 simulations, where growing seasons length does not change, temperature-related reductions in yield are more muted (see Supplemental Figure S14).
+In both A0 and A1 simulations, models }\DIFaddend show some increases in high mountain regions that are currently cold-limited.
 
 Projections of strong yield growth at higher latitudes should be treated with caution, since the effects evident in Figure \ref{fig:maizesoybaseline} are due in part to inaccuracies in model representations of present-day crop yields. 
 For example, at latitudes north of 45$^\circ$, the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend models collectively suggest strong (but uncertain) growth in soybean yields under warmer conditions (Figure \ref{fig:maizesoybaseline}, g). 
@@ -1009,13 +701,13 @@ Those models that most accurately reproduce present-day high-latitude soybean yi
 Apparent future yield increases in the multi-model mean are driven by the least realistic simulations.
 
 The GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend exercise offers the opportunity to examine and characterize not just crop response to a single temperature change but nonlinearities in responses and interactions between factors. 
-We illustrate a few of these relationships in Figures \ref{fig:maizerice}-\ref{fig:soywheat} \DIFdelbegin \DIFdel{, choosing }\DIFdelend \DIFaddbegin \DIFadd{using A0 simualtions to capture maximum effect.
-We choose }\DIFaddend crops and factors whose effects are reasonably well understood. 
+We illustrate a few of these relationships in Figures \ref{fig:maizerice}-\ref{fig:soywheat} \DIFdelbegin \DIFdel{, choosing }\DIFdelend \DIFaddbegin \DIFadd{using A0 simulations to capture maximum climate effects.
+We choose }\DIFaddend crops and factors whose effects are reasonably well understood\DIFaddbegin \DIFadd{, and show that these are reproduced in models}\DIFaddend . 
 It is expected, for instance, that increases in precipitation should buffer the effects of warmer temperatures and that CO$_2$ increases should reduce damage to crops in scenarios where water is limited. 
 Models generally confirm expected behavior but also provide insight into unforeseen interactions. 
 To show geographic effects, we divide model responses in Figures \ref{fig:maizerice}-\ref{fig:soywheat} by the primary K\"{o}ppen-Geiger climate regions \citep{rubel2010}, showing the yield changes across all simulated grid cells in each region. 
 In each panel we examine relationships between two factors, showing yield response against one for several scenarios of the other, in box plots that show the inter-model spread. 
-The responses highlighted here are qualitatively similar across all crops included in this study (Supplemental Figures S5 - \DIFdelbegin \DIFdel{S8}\DIFdelend \DIFaddbegin \DIFadd{S9 for all simulated area and S10 - S13 for cultivated area only}\DIFaddend ). 
+The responses highlighted here are qualitatively similar across all crops included in this study (Supplemental Figures \DIFdelbegin \DIFdel{S5 - S8}\DIFdelend \DIFaddbegin \DIFadd{S5--S9 for all simulated area and S10--S13 for cultivated area only}\DIFaddend ). 
 
 For all crops, warming scenarios with precipitation held constant produce yield decreases in most regions. 
 These impacts are robust for even moderate climate perturbations. 
@@ -1054,9 +746,8 @@ For example, for soy, raising CO$_2$ to 510 ppm actually outweighs the multi-mod
 All crops show similar behavior, but note that model uncertainties for wheat are substantially higher than those for other crops. 
 (Compare Figure \ref{fig:soywheat}a for soy and Supplemental Figure S7 for wheat).
 
-\DIFaddbegin \DIFadd{As noted previously, the adaptation simulations involve significatly reduced climate impacts compared to A0 simulastions shown here. 
-See Supplemental Figures S14 for example reponses to temperature change in the A1 sceaniros. 
-Supplemental Figures S15 and S16 show the response in the nitrogen and dimension and a an irrigation water demand response example.
+\DIFaddbegin \DIFadd{We show some additional cases in Supplemental Material. As noted previously, the A1 adaptation simulations involve significatly moderated temperature impacts relative to the A0 simulastions shown here (Supplemental Figure S14).  
+Supplemental Figures S15 and S16 show the response in the nitrogen dimension and an irrigation water demand response example.
 }
 
 \DIFaddend \section{Discussion and Conclusions} 
@@ -1066,37 +757,48 @@ While previous crop model intercomparison projects in the climate change context
 \citep[e.g][]{Rosenzweig2014}}\hspace{0pt}%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
 \citep[e.g.][]{Rosenzweig2014}}\hspace{0pt}%DIFAUXCMD
-}\DIFaddend , the use of systematic input parameter variations in GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend (with up to 756 scenarios) allows not only comparing yield sensitivities to changing climate and management inputs but also evaluating the complex interactions between important driving factors: CO$_2$, temperature, water supply, and applied Nitrogen. 
+}\DIFaddend , the use of systematic input parameter variations in GGCMI Phase \DIFdelbegin \DIFdel{II (}\DIFdelend \DIFaddbegin \DIFadd{2, }\DIFaddend with up to 756 scenarios\DIFdelbegin \DIFdel{) }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend allows not only comparing yield sensitivities to changing climate and management inputs but also evaluating the complex interactions between important driving factors: CO$_2$, temperature, water supply, and applied \DIFdelbegin \DIFdel{Nitrogen}\DIFdelend \DIFaddbegin \DIFadd{nitrogen}\DIFaddend . 
 The global extent of the experiment also allows identifying geographic shifts in high potential yield locations. 
-With 12 participating models and 31 simulation years per scenario the complete database constitutes over 150,000 years of gridded global yield simulation output for each crop.
+With 12 participating models and 31 simulation years per scenario\DIFaddbegin \DIFadd{, }\DIFaddend the complete database constitutes over 150,000 years of gridded global yield simulation output for each crop.
 
 Preliminary results shown here highlight some of the insights facilitated by the simulation exercise and lend confidence in the models. 
-In validation tests of simulations of the historical scenario, year-over-year correlations in modeled and actual country-level yields are similar to those of GGCMI Phase \DIFdelbegin \DIFdel{I. }\DIFdelend \DIFaddbegin \DIFadd{1. 
-}\DIFaddend In simulations on scenarios with perturbed climate and management factors, models generally agree on changes driven outside the high latitudes, with changes at nearly all perturbation levels exceeding the inter-model spread. \DIFdelbegin \DIFdel{(}\DIFdelend At high latitudes, differences are often driven by differences in model treatment of crop response to current cold conditions. 
+In validation tests of \DIFdelbegin \DIFdel{simulations of the historical scenario}\DIFdelend \DIFaddbegin \DIFadd{historical simulations}\DIFaddend , year-over-year correlations in modeled and actual country-level yields are similar to those of GGCMI Phase \DIFdelbegin \DIFdel{I. In simulations on }\DIFdelend \DIFaddbegin \DIFadd{1. 
+In simulations of }\DIFaddend scenarios with perturbed climate and management factors, models \DIFdelbegin \DIFdel{generally }\DIFdelend \DIFaddbegin \DIFadd{broadly }\DIFaddend agree on changes \DIFdelbegin \DIFdel{driven }\DIFdelend outside the high latitudes, with \DIFaddbegin \DIFadd{the magnitude of }\DIFaddend changes at nearly all perturbation levels exceeding the inter-model spread. \DIFdelbegin \DIFdel{(}\DIFdelend At high latitudes, differences \DIFdelbegin \DIFdel{are often driven by differences in model treatment of crop response to }\DIFdelend \DIFaddbegin \DIFadd{between models may result from differences in their assumed yields in }\DIFaddend current cold conditions. 
 \DIFdelbegin \DIFdel{) 
-}\DIFdelend In simulations with multiple perturbations, interactions between major yield drivers (temperature and precipitation in Figure \ref{fig:maizerice}, precipitation and CO$_2$ in Figure \ref{fig:soywheat}) generally follow expectations and produce physically reasonable responses in crop yields.
+}\DIFdelend In simulations with multiple perturbations, interactions between major yield drivers (\DIFaddbegin \DIFadd{e.g.\ }\DIFaddend temperature and precipitation in Figure \ref{fig:maizerice}, \DIFaddbegin \DIFadd{or }\DIFaddend precipitation and CO$_2$ in Figure \ref{fig:soywheat}) generally follow expectations and produce physically reasonable responses in crop yields.
 
-Users should however be aware of some limitations of the experiment that affect its potential applications. 
-First, absolute model yield values in the historical scenario will generally not match observed yields. 
-In order to match current yields, process-based models must generally be re-tuned to account for the constant evolution of crop cultivar genetics and management practice \citep[e.g.][]{JONES2017b}. 
-The historical scenario also includes no trend in CO$_2$, and scenarios assume unrealistic globally uniform nitrogen application levels \citep{Elliott2015}. 
-GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend is intended as a study of model-projected changes under broad climate change, which may not be as sensitive to the adjustments needed to reproduce present-day yields. 
-Note however that the models used in this exercise cannot simulate some potential climate-related yield changes: those due to factors such as pests, diseases, and weeds.
+Users should however be aware of some limitations of the \DIFaddbegin \DIFadd{GGCMI Phase 2 }\DIFaddend experiment that affect its potential applications. 
+First, absolute model yield values in the \DIFdelbegin \DIFdel{historical }\DIFdelend \DIFaddbegin \DIFadd{baseline }\DIFaddend scenario will generally not match observed yields. 
+In order to match current yields, process-based models must \DIFdelbegin \DIFdel{generally }\DIFdelend be re-tuned to account for the constant evolution of crop cultivar genetics and management practice \citep[e.g.][]{JONES2017b}. 
+\DIFdelbegin \DIFdel{The historical scenario also includes no trend in CO$_2$, and scenarios assume unrealistic globally uniform nitrogen application levels \mbox{%DIFAUXCMD
+\citep{Elliott2015}}\hspace{0pt}%DIFAUXCMD
+. 
+GGCMI Phase II }\DIFdelend \DIFaddbegin \DIFadd{GGCMI Phase 2 }\DIFaddend is intended as a study of model-projected changes under \DIFdelbegin \DIFdel{broad }\DIFdelend \DIFaddbegin \DIFadd{future }\DIFaddend climate change, which \DIFdelbegin \DIFdel{may not be as sensitive }\DIFdelend \DIFaddbegin \DIFadd{are assumed insensitivee }\DIFaddend to the adjustments needed to reproduce present-day yields. 
+\DIFdelbegin \DIFdel{Note however that the models used in this exercise cannot simulate some potential climate-related yield changes: those due to factors such as pests, diseases, and weeds. }\DIFdelend \DIFaddbegin \DIFadd{The historical scenario also includes no trend in CO$_2$, and no individual case involves realistic country-specific nitrogen application levels \mbox{%DIFAUXCMD
+\citep{Elliott2015}}\hspace{0pt}%DIFAUXCMD
+. (The baseline value is defined as 200 kg ha$^{-1}$.)
+}\DIFaddend 
 
+%DIF >  SAVE 
 The second major caveat is that no individual GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend simulation is itself a realistic future yield projection. 
-The uniform applied offsets in temperature and precipitation sample over potential changes, but projections of climate change involve spatially heterogeneous warming and precipitation changes. 
-\DIFdelbegin \DIFdel{GGCMI Phase II }\DIFdelend \DIFaddbegin \DIFadd{As such it also remains challenging to evaluate model performance as the actual growing conditions have to be interpolated between the uniform input levels used in the GGCMI Phase 2 setup. 
-GGCMI Phase 2 }\DIFaddend simulation results can be used for impacts projection, but only with the construction of an emulator of crop yield response to climatological changes, that is then driven by a realistic climate projection.
-\DIFdelbegin \DIFdel{However, note that }\DIFdelend \DIFaddbegin \DIFadd{Note that while }\DIFaddend the experiment does not sample over potential changes in the higher-order moments in the distributions in temperature and precipitation\DIFaddbegin \DIFadd{, we shown these higher-order changes matter little for an impact assessment under a transient climate run such as an RCP from CMIP-5 when conducted with emulators developed from the GGCMI Phase 2 simulations \mbox{%DIFAUXCMD
+The uniform applied offsets in temperature and precipitation sample over potential changes, \DIFdelbegin \DIFdel{but projections of climate change involve }\DIFdelend \DIFaddbegin \DIFadd{and do not individually capture the }\DIFaddend spatially heterogeneous warming and precipitation changes \DIFaddbegin \DIFadd{expected in realistic climate projections}\DIFaddend . 
+GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend simulation results can be used for impacts projection, but only with the construction of an emulator of crop yield response to climatological changes, \DIFdelbegin \DIFdel{that is then driven by a realistic climate projection.
+However, note that the }\DIFdelend \DIFaddbegin \DIFadd{which can then by driven by arbitrary climate scenarios.
+Such emulators are shown to accurately reproduce crop model output under realistic climate projections, even though the GGCMI Phase II }\DIFaddend experiment
+does not sample over potential changes in the higher-order moments in \DIFdelbegin \DIFdel{the distributions in }\DIFdelend temperature and precipitation \DIFdelbegin \DIFdel{.
+}\DIFdelend \DIFaddbegin \DIFadd{distributions \mbox{%DIFAUXCMD
 \citep{Franke2020}}\hspace{0pt}%DIFAUXCMD
-}\DIFaddend .
-
-\DIFaddbegin \DIFadd{XXX -separate paragraph?? A final caveat is that since simulations are run off-line and therefore do not contain any feedbacks between the atmosphere and land such as irrigation impacts on humidity.
-As most simulation studies on climate change impacts on crop yields, the simulations here are driven by external weather data, i.e. feedbacks from plant growth (e.g. albedo, evapotranspiration) and management (e.g. irrigation) on the atmosphere are not included here. 
-While we acknowledge that these mechanisms exist \mbox{%DIFAUXCMD
+.
+Note that some climate-related factors that can affect yield changes cannot not be captured by the GGCMI Phase 2 models in any usage, since models do not include representations of pests, diseases, and weeds. Off-line crop model simulations can also not capture any feedbacks on the climate from land use, such as irrigation impacts on humidity \mbox{%DIFAUXCMD
 \citep[e.g.][]{Decker2017}}\hspace{0pt}%DIFAUXCMD
-, these feedbacks need to be explored in more specialized analyzes, as they require an Earth-system model analysis framework, which is in conflict with the design of systematic offsets in climatic drivers.
-}
+.
+}\DIFaddend 
+
+%DIF > As such it also remains challenging to evaluate model performance as the actual growing conditions have to be interpolated between the uniform input levels used in the GGCMI Phase 2 setup. 
+\DIFaddbegin 
+
+%DIF > XXX -separate paragraph?? As most simulation studies on climate change impacts on crop yields, the simulations here are driven by external weather data, i.e. feedbacks from plant growth (e.g. albedo, evapotranspiration) and management (e.g. irrigation) on the atmosphere are not included here. 
+%DIF > While we acknowledge that these mechanisms exist , these feedbacks need to be explored in more specialized analyzes, as they require an Earth-system model analysis framework, which is in conflict with the design of systematic offsets in climatic drivers.
 
 \DIFaddend We expect that the GGCMI Phase \DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{2 }\DIFaddend simulations will yield multiple insights in future studies. 
 Potential applications include, as mentioned, the construction of emulators and yield response surface, as well as studies of issues such as the benefits of adaptation \DIFaddbegin \DIFadd{(including parsing to what degree yeild losses are due to shortenting growing seasons or the direct effects of higher temperture)}\DIFaddend , interactions between the CTWN factors affecting yield \DIFaddbegin \DIFadd{--especially between CO$_2$ and water}\DIFaddend , changes in nitrogen use efficiency, geographic shifts in regional production, investigation of core sensitivities to \DIFdelbegin \DIFdel{CTWN/A }\DIFdelend \DIFaddbegin \DIFadd{CTWN-A }\DIFaddend by region and farm system, identification of hotspots of crop system vulnerability, rapid assessment of new climate projections, and many others. 
