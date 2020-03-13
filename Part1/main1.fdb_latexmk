@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584142081 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1584142081
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux" 1584142081 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" 1584142066 88307 fae1919a6064688078f7666f209afe96 ""
+["pdflatex"] 1584142364 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1584142364
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux" 1584142364 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" 1584142350 88384 0b9c8893deff39d2fd7cb4a6ad894fb3 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm" 1480098688 7040 b2bd27e2bfe6f6948cbc3239cae7444f ""
@@ -143,10 +143,10 @@
   "figures/validation_bottom1.jpg" 1564770831 3860006 56d1c5a737257c5fb7e3f37879d291d2 ""
   "figures/validation_top.png" 1563408151 980182 d806052212d280b3be6745daca3a0ea1 ""
   "main1.aux" 0 -1 0 "pdflatex"
-  "main1.tex" 1584142066 88307 fae1919a6064688078f7666f209afe96 ""
+  "main1.tex" 1584142350 88384 0b9c8893deff39d2fd7cb4a6ad894fb3 ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.log"
   "main1.log"
-  "main1.aux"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf"
+  "main1.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.log"
