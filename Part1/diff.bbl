@@ -1,4 +1,4 @@
-\begin{thebibliography}{88}
+\begin{thebibliography}{89}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -289,6 +289,13 @@ Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
   temperature distributions in a large ensemble of climate simulations using
   quantile regression, Journal of Climate, 31, 8573--8588,
   \doi{10.1175/JCLI-D-17-0782.1}, 2018.
+
+\bibitem[{Holmes et~al.(2016)Holmes, Woollings, Hawkins, and
+  de~Vries}]{Holmes2016}
+Holmes, C.~R., Woollings, T., Hawkins, E., and de~Vries, H.: Robust Future
+  Changes in Temperature Variability under Greenhouse Gas Forcing and the
+  Relationship with Thermal Advection, Journal of Climate, 29, 2221--2236,
+  \doi{10.1175/JCLI-D-14-00735.1}, 2016.
 
 \bibitem[{Holzworth et~al.(2014)Holzworth, Huth, deVoil, Zurcher, Herrmann,
   McLean, Chenu, van Oosterom, Snow, Murphy, Moore, Brown, Whish, Verrall,
