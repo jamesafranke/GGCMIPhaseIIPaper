@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1584124361 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf" "supdoc" 1584128347
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.aux" 1584124408 6700 cd49368f3baf4bf27be3b53af6de0391 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" 1584128345 14581 1489f9ad5102a9d21efe1f979742234a ""
+["pdflatex"] 1584144871 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf" "supdoc" 1584144917
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.aux" 1584144917 6700 661802cf924b3b2a99cbc9a31b60cb14 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.tex" 1584144824 14584 c378ead474faf824a1b139a14d2c5e8b ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1480098696 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -107,7 +107,7 @@
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "maize_sim_CG_N2.png" 1584053721 319586 6ec2133beb6d185ec6ba6d073ed6f524 ""
   "maize_sim_CG_T_A1.png" 1584056330 363713 abd40686ffb7b12a042de27bc7e89db7 ""
-  "model_table.png" 1584049420 511472 74378de812f6eaf054e4d1ea3c81753a ""
+  "model_table.png" 1584144787 384230 57bab08414ce1472074c1a3a1070c65c ""
   "rice_sim_CG_irrwat.png" 1557413343 334921 f2286ac0c4383276256a7f83e75575af ""
   "s_croparea.png" 1548711579 1836882 c759f1c413c2f303652a5482c2e13036 ""
   "s_croparea_irr.png" 1548711579 1784259 63f3086fe505caccb87ed82b080ed322 ""
@@ -122,11 +122,11 @@
   "s_sim_CG_W.png" 1564070175 1369292 3e54c3e668b6e19ad86e074f493c4b10 ""
   "s_sim_CG_W_area.png" 1564776219 1365637 ec74cb5d4fa7439cbcb770765cb2f5d4 ""
   "s_temp_rea.png" 1564071794 5186155 603bfe0aa2ceb8e3f42a3d1767d3af33 ""
-  "supdoc.aux" 1584124408 6700 cd49368f3baf4bf27be3b53af6de0391 "pdflatex"
-  "supdoc.tex" 1584128345 14581 1489f9ad5102a9d21efe1f979742234a ""
+  "supdoc.aux" 1584144917 6700 661802cf924b3b2a99cbc9a31b60cb14 "pdflatex"
+  "supdoc.tex" 1584144824 14584 c378ead474faf824a1b139a14d2c5e8b ""
   (generated)
-  "supdoc.log"
   "supdoc.pdf"
-  "supdoc.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/supdocs/supdoc.pdf"
+  "supdoc.log"
+  "supdoc.aux"
