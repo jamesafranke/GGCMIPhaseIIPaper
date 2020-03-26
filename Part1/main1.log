@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  25 MAR 2020 08:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  26 MAR 2020 08:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,6 +397,7 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count284
 \pdfmajorversion=\count285
+Package hyperref Info: Option `final' set `true' on input line 4421.
 Package hyperref Info: Option `bookmarks' set `false' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
@@ -453,9 +454,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \c@reaction=\count293
 \tabularwidth=\dimen188
 Package color Info: Redefining color bgcol on input line 2486.
-Package color Info: Redefining color textcol on input line 2490.
-Package color Info: Redefining color bgcol on input line 2491.
-Package color Info: Redefining color barcol on input line 2492.
 )
 LaTeX Info: Redefining \vec on input line 3.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
@@ -529,30 +527,64 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 86.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
+Underfull \hbox (badness 2126) in paragraph at lines 75--85
+[][]\T1/ptm/b/n/10 Abstract.[] \T1/ptm/m/n/10 Con-cerns about food se-cu-rity un-der cli-mate
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 85.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 86.
- [1
+(Font)              scaled to size 4.74998pt on input line 85.
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<figures/number_of_models.png, id=195, 558.50256pt x 570.78847pt>
-File: figures/number_of_models.png Graphic file (type png)
-<use figures/number_of_models.png>
-Package pdftex.def Info: figures/number_of_models.png  used on input line 142.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 7869) in paragraph at lines 110--117
+[]\T1/ptm/m/n/10 The Global Grid-ded Crop Model In-ter-com-par-i-son
+ []
+
+[2]
+<Fig1.png, id=192, 558.50256pt x 570.78847pt>
+File: Fig1.png Graphic file (type png)
+<use Fig1.png>
+Package pdftex.def Info: Fig1.png  used on input line 142.
 (pdftex.def)             Requested size: 426.79134pt x 436.17273pt.
- [4]
 
-LaTeX Warning: Text page 5 contains only floats.
+Underfull \hbox (badness 1199) in paragraph at lines 156--161
+\T1/ptm/m/n/10 for 1980-2010 from the 0.5 de-gree NASA Ag-MERRA
+ []
 
-[5 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/number_of_models.png>] [6] [7] [8] [9]
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 286.
 
-[10] [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 218--225
+\T1/ptm/m/n/10 ver-sion of ERA-Interim, the 3-hour WFDEI (WATCH-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5] [6] [7]
 Overfull \hbox (4.05501pt too wide) in paragraph at lines 371--371
 []|\T1/ptm/b/n/9 Soybean| 
  []
@@ -567,126 +599,569 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--371
 []|\T1/ptm/b/n/9 Spring
  []
 
-[12] [13]
-<figures/validation_top.png, id=424, 618.19759pt x 236.03381pt>
-File: figures/validation_top.png Graphic file (type png)
-<use figures/validation_top.png>
-Package pdftex.def Info: figures/validation_top.png  used on input line 434.
-(pdftex.def)             Requested size: 412.56496pt x 157.52234pt.
-<figures/validation_bottom1.jpg, id=425, 12729.5575pt x 7542.1775pt>
-File: figures/validation_bottom1.jpg Graphic file (type jpg)
-<use figures/validation_bottom1.jpg>
-Package pdftex.def Info: figures/validation_bottom1.jpg  used on input line 435.
-(pdftex.def)             Requested size: 412.56496pt x 244.43887pt.
- [14]
 
-LaTeX Warning: Text page 15 contains only floats.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/validation_top.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/validation_bottom1.jpg>]
-<figures/baselinecomp_yield_5.png, id=463, 560.95975pt x 570.78847pt>
-File: figures/baselinecomp_yield_5.png Graphic file (type png)
-<use figures/baselinecomp_yield_5.png>
-Package pdftex.def Info: figures/baselinecomp_yield_5.png  used on input line 476.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+[]\T1/ptm/m/it/10 low \T1/ptm/m/n/10 as only 4 pairs: C360_N10, C360_N200,
+ []
+
+<Fig2.png, id=391, 690.54839pt x 675.46843pt>
+File: Fig2.png Graphic file (type png)
+<use Fig2.png>
+Package pdftex.def Info: Fig2.png  used on input line 434.
+(pdftex.def)             Requested size: 412.56496pt x 403.56294pt.
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig2.png>]
+<Fig3.png, id=455, 560.95975pt x 570.78847pt>
+File: Fig3.png Graphic file (type png)
+<use Fig3.png>
+Package pdftex.def Info: Fig3.png  used on input line 475.
 (pdftex.def)             Requested size: 426.79134pt x 434.28276pt.
-<figures/soy_highlats.png, id=465, 956.8548pt x 456.4252pt>
-File: figures/soy_highlats.png Graphic file (type png)
-<use figures/soy_highlats.png>
-Package pdftex.def Info: figures/soy_highlats.png  used on input line 492.
+<Fig4.png, id=457, 956.8548pt x 456.4252pt>
+File: Fig4.png Graphic file (type png)
+<use Fig4.png>
+Package pdftex.def Info: Fig4.png  used on input line 491.
 (pdftex.def)             Requested size: 426.79134pt x 203.57867pt.
-<figures/maize_sim_CG_T.png, id=469, 4516.875pt x 1806.75pt>
-File: figures/maize_sim_CG_T.png Graphic file (type png)
-<use figures/maize_sim_CG_T.png>
-Package pdftex.def Info: figures/maize_sim_CG_T.png  used on input line 507.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/soy_sim_CG_W.png, id=470, 4516.875pt x 1806.75pt>
-File: figures/soy_sim_CG_W.png Graphic file (type png)
-<use figures/soy_sim_CG_W.png>
-Package pdftex.def Info: figures/soy_sim_CG_W.png  used on input line 508.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/soy_sim_CG_C.png, id=471, 4516.875pt x 1806.75pt>
-File: figures/soy_sim_CG_C.png Graphic file (type png)
-<use figures/soy_sim_CG_C.png>
-Package pdftex.def Info: figures/soy_sim_CG_C.png  used on input line 530.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
-<figures/rice_sim_CG_T.png, id=472, 4516.875pt x 1806.75pt>
-File: figures/rice_sim_CG_T.png Graphic file (type png)
-<use figures/rice_sim_CG_T.png>
-Package pdftex.def Info: figures/rice_sim_CG_T.png  used on input line 531.
-(pdftex.def)             Requested size: 426.79134pt x 170.70569pt.
- [16]
+<Fig5.png, id=461, 690.54839pt x 555.01843pt>
+File: Fig5.png Graphic file (type png)
+<use Fig5.png>
+Package pdftex.def Info: Fig5.png  used on input line 506.
+(pdftex.def)             Requested size: 426.79134pt x 343.03232pt.
+<Fig6.png, id=462, 690.54839pt x 556.06169pt>
+File: Fig6.png Graphic file (type png)
+<use Fig6.png>
+Package pdftex.def Info: Fig6.png  used on input line 528.
+(pdftex.def)             Requested size: 426.79134pt x 343.67711pt.
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Text page 17 contains only floats.
 
-[17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/baselinecomp_yield_5.png>] [18 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_highlats.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Text page 19 contains only floats.
+ [12 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig3.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/maize_sim_CG_T.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_W.png>] [20 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/soy_sim_CG_C.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/figures/rice_sim_CG_T.png>] [21] [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig4.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig5.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/Fig6.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
 []|\T1/ptm/b/n/9 Spring
  []
 
-(/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl [24] [25]
-Underfull \hbox (badness 2253) in paragraph at lines 128--133
-[]\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 718--718
+\T1/ptm/m/n/9 grow-ing sea-sons and sec-ond fer-til-izer dates and the qual-ity
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 128--133
-\T1/ptm/m/n/9 al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors (pSIMS), En-vi-ron-men-tal Mod-elling and Soft-ware, 62, 509--516,
- []
-
-[26]
-Underfull \hbox (badness 1152) in paragraph at lines 245--250
-[]\T1/ptm/m/n/9 Hank, T., Bach, H., and Mauser, W.: Us-ing a Re-mote Sensing-Supported Hydro-Agroecological Model for Field-Scale Sim-u-la-
+Underfull \hbox (badness 2856) in paragraph at lines 718--718
+\T1/ptm/m/n/9 All in-put data are avail-able via globus.org (reg-is-tra-tion re-
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 245--250
-\T1/ptm/m/n/9 tion of Het-ero-ge-neous Crop Growth and Yield: Ap-pli-ca-tion for Wheat in Cen-tral Eu-rope, Re-mote Sens-ing, 7, 3934--3965,
- []
-
-[27]
-Underfull \hbox (badness 1147) in paragraph at lines 396--400
-[]\T1/ptm/m/n/9 Liu, W., Yang, H., Liu, J., Azevedo, L. B., Wang, X., Xu, Z., Ab-baspour, K. C., and Schulin, R.: Global as-sess-ment of ni-
+Underfull \hbox (badness 3460) in paragraph at lines 718--718
+\T1/ptm/m/n/9 quired, free of charge): Min-i-mum crop-land mask is avail-
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 396--400
-\T1/ptm/m/n/9 tro-gen losses and trade-offs with yields from ma-jor crop cul-ti-va-tions, Sci-ence of The To-tal En-vi-ron-ment, 572, 526 -- 537,
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
+\T1/ptm/m/n/9 able at[]$https : / / app . globus . org / ^^\le-[]manager ? origin _ id =
  []
 
-[28]
-Underfull \hbox (badness 1292) in paragraph at lines 514--519
-\T1/ptm/m/n/9 A New High-Resolution Data Set for Agri-cul-tural and Hy-dro-log-i-cal Mod-el-ing, Global Bio-geo-chem-i-cal Cy-cles, 24, GB1011,
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
+\T1/ptm/m/n/9 e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path =
  []
 
-[29] [30]) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 727.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 727.
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
+\T1/ptm/m/n/9 the file boolean_cropmask_ggcmi_phase2.nc4 Grow-ing pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
+\T1/ptm/m/n/9 id = e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _ path =
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 718--718
+\T1/ptm/m/n/9 %2FAgMIP . input % 2Fother . inputs % 2FAGMIP _ GROWING _
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 718--718
+\T1/ptm/m/n/9 SEASON . HARM . version2 . 0 % 2F$[] whereas all other grow-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--718
+\T1/ptm/m/n/9 origin _ id = e4c16e81-[]6d04-[]11e5-[]ba46-[]22000b92c6ec & origin _
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+[]\T1/ptm/m/n/9 Allen, R., Pereira, L., Dirk, R., and Smith, M.: Crop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+\T1/ptm/m/n/9 evapotranspiration-Guidelines for com-put-ing crop wa-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+[]\T1/ptm/m/n/9 Angulo, C., Röt-ter, R., Lock, R., En-ders, A., Fronzek,
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 17--21
+\T1/ptm/m/n/9 S., and Ew-ert, F.: Im-pli-ca-tion of crop model cal-i-bra-
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 17--21
+\T1/ptm/m/n/9 tion strate-gies for as-sess-ing re-gional im-pacts of cli-mate
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 17--21
+\T1/ptm/m/n/9 change in Eu-rope, Agric. For. Me-te-o-rol., 170, 32 -- 46,
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 63--68
+[]\T1/ptm/m/n/9 Balkovi£, J., van der Velde, M., Skalský, R., Xiong, W.,
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 63--68
+\T1/ptm/m/n/9 Fol-berth, C., Khabarov, N., Smirnov, A., Mueller, N. D.,
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 63--68
+\T1/ptm/m/n/9 path-ways, Global and Plan-e-tary Change, 122, 107 -- 121,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+[]\T1/ptm/m/n/9 Bodirsky, B. L., Rolin-ski, S., Biewald, A., Weindl, I.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+\T1/ptm/m/n/9 Popp, A., and Lotze-Campen, H.: Global Food De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+\T1/ptm/m/n/9 mand Sce-nar-ios for the 21st Cen-tury, PLOS ONE,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+\T1/ptm/m/n/9 10, 1--27, https://doi.org/[]10.1371/journal.pone.0139201[],
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \hbox (badness 3780) in paragraph at lines 128--133
+\T1/ptm/m/n/9 jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 128--133
+\T1/ptm/m/n/9 par-al-lel sys-tem for in-te-grat-ing im-pact mod-els and sec-tors
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 137--143
+\T1/ptm/m/n/9 T., Iza-u-r-ralde, R. C., Mueller, N. D., Ray, D. K., Rosen-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 233--237
+[]\T1/ptm/m/n/9 Glotter, M., El-liott, J., McIn-er-ney, D., Best, N., Fos-ter, I.,
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 233--237
+\T1/ptm/m/n/9 and Moyer, E. J.: Eval-u-at-ing the util-ity of dy-nam-i-cal
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 233--237
+\T1/ptm/m/n/9 of the Na-tional Academy of Sci-ences, 111, 8776--8781,
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 258--263
+[]\T1/ptm/m/n/9 Harris, I., Jones, P., Os-born, T., and Lis-ter, D.: Up-dated
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 258--263
+\T1/ptm/m/n/9 CRU TS3.10 Dataset, In-ter-na-tional Jour-nal of Cli-ma-tol-ogy,
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 258--263
+\T1/ptm/m/n/9 34, 623--642, https://doi.org/[]10.1002/joc.3711[], []$https : / / rmets .
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 273--277
+[]\T1/ptm/m/n/9 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Es-ti-mat-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 273--277
+\T1/ptm/m/n/9 ing changes in tem-per-a-ture dis-tri-bu-tions in a large en-sem-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+[]\T1/ptm/m/n/9 Izaurralde, R., Williams, J., Mcgill, W., Rosen-berg, N.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+\T1/ptm/m/n/9 and Quiroga Jakas, M.: Sim-u-lat-ing soil C dy-nam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+\T1/ptm/m/n/9 ics with EPIC: Model de-scrip-tion and test-ing against
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+\T1/ptm/m/n/9 long-term data, Eco-log-i-cal Mod-elling, 192, 362--384,
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 327--330
+[]\T1/ptm/m/n/9 Jägermeyr, J. and Frieler, K.: Spa-tial vari-a-tions in crop
+ []
+
+
+Underfull \hbox (badness 4582) in paragraph at lines 327--330
+\T1/ptm/m/n/9 grow-ing sea-sons piv-otal to re-pro-duce global fluc-tu-a-tions
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 327--330
+\T1/ptm/m/n/9 in maize and wheat yields, Sci-ence Ad-vances, 4, 4517,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 366--373
+\T1/ptm/m/n/9 M., Holz-worth, D., Huth, N., Har-g-reaves, J., Meinke, H.,
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 389--393
+[]\T1/ptm/m/n/9 Liu, W., Yang, H., Fol-berth, C., Wang, X., Luo, Q., and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--393
+\T1/ptm/m/n/9 Schulin, R.: Global in-ves-ti-ga-tion of im-pacts of PET
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--393
+\T1/ptm/m/n/9 meth-ods on sim-u-lat-ing crop-water re-la-tions for maize,
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 389--393
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 221, 164 -- 175,
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 413--417
+[]\T1/ptm/m/n/9 Mauser, W., Klep-per, G., Zabel, F., Delzeit, R., Hank, T.,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 413--417
+\T1/ptm/m/n/9 Putzen-lech-ner, B., and Calzadilla, A.: Global biomass pro-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 413--417
+\T1/ptm/m/n/9 duc-tion po-ten-tials ex-ceed ex-pected fu-ture de-mand with-out
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+[]\T1/ptm/m/n/9 McGrath, J. M. and Lo-bell, D. B.: Re-gional dis-par-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+\T1/ptm/m/n/9 ties in the CO2fertilization ef-fect and im-pli-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+\T1/ptm/m/n/9 for crop yields, En-vi-ron-men-tal Re-search Let-ters, 8,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
+\T1/ptm/m/n/9 014054, https://doi.org/[]10.1088/1748-9326/8/1/014054[],
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \hbox (badness 3514) in paragraph at lines 449--457
+[]\T1/ptm/m/n/9 Müller, C., El-liott, J., Chrys-san-tha-copou-los, J., Ar-neth, A.,
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 462--469
+[]\T1/ptm/m/n/9 Nelson, G. C., Mens-brug-ghe, D., Aham-mad, H., Blanc, E.,
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 480--484
+[]\T1/ptm/m/n/9 Osborne, T., Gor-nall, J., Hooker, J., Williams, K., Wilt-shire,
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 480--484
+\T1/ptm/m/n/9 A., Betts, R., and Wheeler, T.: JULES-crop: a parametri-
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 480--484
+\T1/ptm/m/n/9 sa-tion of crops in the Joint UK Land En-vi-ron-ment Sim-
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 480--484
+\T1/ptm/m/n/9 u-la-tor, Geo-sci-en-tific Model De-vel-op-ment, 8, 1139--1155,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 524--531
+[]\T1/ptm/m/n/9 Porwollik, V., Müller, C., El-liott, J., Chrys-san-tha-copou-los, J.,
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 524--531
+\T1/ptm/m/n/9 J., Ciais, P., Deryng, D., Fol-berth, C., Iza-u-r-ralde, R. C.,
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 524--531
+\T1/ptm/m/n/9 A., and Wu, X.: Spa-tial and tem-po-ral un-cer-tainty of crop
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 555--561
+\T1/ptm/m/n/9 As-seng, S., Basso, B., Ew-ert, F., Wal-lach, D., Baig-or-ria,
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 555--561
+\T1/ptm/m/n/9 ies, Agri-cul-tural and For-est Me-te-o-rol-ogy, 170, 166 -- 182,
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 565--571
+\T1/ptm/m/n/9 C., Ar-neth, A., Boote, K. J., Fol-berth, C., Glot-ter, M.,
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 565--571
+\T1/ptm/m/n/9 Khabarov, N., Neu-mann, K., Pi-o-ntek, F., Pugh, T. A. M.,
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 565--571
+\T1/ptm/m/n/9 Schmid, E., Ste-hfest, E., Yang, H., and Jones, J. W.: As-
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 576--585
+[]\T1/ptm/m/n/9 Rosenzweig, C., Ru-ane, A. C., An-tle, J., El-liott, J., Ash-
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 576--585
+\T1/ptm/m/n/9 A: Math-e-mat-i-cal, Phys-i-cal and En-gi-neer-ing Sci-ences, 376,
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 593--598
+\T1/ptm/m/n/9 Jones, J. W., Romero, C. C., and Ce-cil, L. D.: Carbon-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 601--605
+[]\T1/ptm/m/n/9 Ruane, A. C., Gold-berg, R., and Chrys-san-tha-copou-los,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--605
+\T1/ptm/m/n/9 J.: Cli-mate forc-ing datasets for agri-cul-tural mod-el-ing:
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 601--605
+\T1/ptm/m/n/9 Merged prod-ucts for gap-filling and his-tor-i-cal cli-mate se-
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 601--605
+\T1/ptm/m/n/9 ries es-ti-ma-tion, Agric. For-est Me-te-o-rol., 200, 233--248,
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 641--644
+[]\T1/ptm/m/n/9 Sacks, W. J., Deryng, D., Fo-ley, J. A., and Ra-mankutty,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--644
+\T1/ptm/m/n/9 N.: Crop plant-ing dates: an anal-y-sis of global pat-
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 641--644
+\T1/ptm/m/n/9 terns, Global Ecol-ogy and Bio-geog-ra-phy, 19, 607--620,
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 684--689
+[]\T1/ptm/m/n/9 Stevanovi¢, M., Popp, A., Lotze-Campen, H., Di-et-rich, J. P.,
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 684--689
+\T1/ptm/m/n/9 Müller, C., Bon-sch, M., Schmitz, C., Bodirsky, B. L.,
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 684--689
+\T1/ptm/m/n/9 Humpenöder, F., and Weindl, I.: The im-pact of high-end
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 684--689
+\T1/ptm/m/n/9 cli-mate change on agri-cul-tural wel-fare, Sci-ence Ad-vances,
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 684--689
+\T1/ptm/m/n/9 2, https://doi.org/[]10.1126/sciadv.1501452[], []$https : / / advances .
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 747--750
+[]\T1/ptm/m/n/9 Wolf, J. and Oi-jen, M.: Mod-elling the de-pen-dence of Eu-
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 747--750
+\T1/ptm/m/n/9 ro-pean potato yields on changes in cli-mate and CO2,
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 747--750
+\T1/ptm/m/n/9 Agri-cul-tural and For-est Me-te-o-rol-ogy, 112, 217 -- 231,
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 755--762
+\T1/ptm/m/n/9 lec, T., Bern-hofer, C., Grün-wald, T., Moureaux, C., Man-
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 755--762
+\T1/ptm/m/n/9 agro-land sur-face model: model de-scrip-tion and eval-u-a-tion
+ []
+
+) [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
  (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 727.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 727.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 727.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 724.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 724.
  ) 
 Here is how much of TeX's memory you used:
- 10635 strings out of 481242
- 155939 string characters out of 5918005
- 509305 words of memory out of 5000000
- 25490 multiletter control sequences out of 15000+600000
- 579072 words of font info for 96 fonts, out of 8000000 for 9000
+ 10600 strings out of 481242
+ 154641 string characters out of 5918005
+ 517959 words of memory out of 5000000
+ 25478 multiletter control sequences out of 15000+600000
+ 572868 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,10n,46p,2055b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,46p,2055b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (31 pages, 13210187 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf (21 pages, 37743322 bytes).
 PDF statistics:
- 795 PDF objects out of 1000 (max. 8388607)
- 722 compressed objects within 8 object streams
- 147 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 725 compressed objects within 8 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
