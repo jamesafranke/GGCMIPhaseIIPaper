@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main1"] 1585230282 "main1.aux" "main1.bbl" "main1" 1585230305
+["bibtex main1"] 1585230282 "main1.aux" "main1.bbl" "main1" 1585230564
   "./copernicus.bst" 1400594604 39039 195b64fc943aa9550129b5d6dca7d4f1 ""
   "bib.bib" 1584102704 93748 ee9ccebbc79db2cb5b7185e1ccd9e070 ""
   "main1.aux" 1585230305 59825 e7f622a629a71be95a4e8f0120cabfb8 "pdflatex"
   (generated)
-  "main1.blg"
   "main1.bbl"
-["pdflatex"] 1585230282 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1585230305
+  "main1.blg"
+["pdflatex"] 1585230282 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf" "main1" 1585230564
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.aux" 1585230305 59825 e7f622a629a71be95a4e8f0120cabfb8 ""
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.tex" 1585230259 79016 1a8a0eea7bc9e570230d92be03c8b967 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -160,8 +160,8 @@
   "main1.tex" 1585230259 79016 1a8a0eea7bc9e570230d92be03c8b967 ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
+  "main1.log"
   "main1.aux"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.pdf"
-  "main1.pdf"
-  "main1.log"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part1/main1.log"
+  "main1.pdf"
