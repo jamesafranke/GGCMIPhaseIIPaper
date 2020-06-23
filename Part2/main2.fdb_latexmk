@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main2"] 0 "main2.aux" "main2.bbl" "main2" 0
+["bibtex main2"] 1592939866 "main2.aux" "main2.bbl" "main2" 1592939877
   "./copernicus.bst" 1400594604 39039 195b64fc943aa9550129b5d6dca7d4f1 ""
   "bib.bib" 1576868070 87898 eff668cecf851fa0fd833f9f0cc9018d ""
-  "main2.aux" 0 -1 0 "pdflatex"
+  "main2.aux" 1592939876 48884 cac09a8de43a4ba2a118d2f6c721fd52 "pdflatex"
   (generated)
   "main2.blg"
   "main2.bbl"
-["pdflatex"] 1592939581 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf" "main2" 1592939581
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux" 1592939581 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex" 1592939570 90096 bbac5916814bf28fb55fd429a5033f98 ""
+["pdflatex"] 1592939866 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf" "main2" 1592939877
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux" 1592939876 48884 cac09a8de43a4ba2a118d2f6c721fd52 ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.tex" 1592939842 90097 539e3ecd4516098cff0558bd1f984fa9 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -51,6 +51,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1480098711 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1480098733 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1480098733 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1480098733 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1480098733 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -178,16 +179,16 @@
   "figures/hist_year_t.png" 1571236366 94329 052eeec2ae01b377dd96227c167480a9 ""
   "figures/lpjml_maize.png" 1574692164 1738469 56f524947c44b25b78cc65c2a058e602 ""
   "figures/model_select_maize_rice.png" 1574096210 888629 1115c495f1094e7a51313f294eb31b5b ""
-  "figures/phase_II_em_figure_1.png" 1592932485 833530 3f49331a8b360307fc0ebeeb9fbaba4f ""
+  "figures/phase_II_em_figure_1.png" 1592939660 833550 c0490943460a9b0013ace96664bad11b ""
   "figures/regression_example.png" 1574770040 691963 90bf9c05a75b4dca2b0aa4e0b99bbb18 ""
   "figures/regression_example_2.png" 1574770043 518376 19171f07dc327a889cc704da23402dfd ""
-  "main2.aux" 0 -1 0 "pdflatex"
-  "main2.bbl" 0 -1 0 "bibtex main2"
-  "main2.tex" 1592939570 90096 bbac5916814bf28fb55fd429a5033f98 ""
+  "main2.aux" 1592939876 48884 cac09a8de43a4ba2a118d2f6c721fd52 "pdflatex"
+  "main2.bbl" 1592939866 37030 7e54ffa8c1a28d3046a941df897e901e "bibtex main2"
+  "main2.tex" 1592939842 90097 539e3ecd4516098cff0558bd1f984fa9 ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
   (generated)
-  "main2.aux"
-  "main2.pdf"
   "main2.log"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.log"
   "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf"
+  "main2.aux"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.log"
+  "main2.pdf"
