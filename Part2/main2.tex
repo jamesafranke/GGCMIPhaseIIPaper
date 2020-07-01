@@ -126,7 +126,7 @@ In this paper we describe a set of globally-gridded crop model emulators develop
 GGCMI Phase~2, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, applied nitrogen, and two different assumptions on growing season adaptation (``A0'': none and ``A1'': retaining growing season length) \citep[CTWN-A,][]{franke2020ctwnexperiment,minoli2019adaptation}.
 The experiment is designed to allow diagnosing the impacts on crop yields of both individual factors and their joint effects, and to allow construction of crop model emulators.
 In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
-Section \ref{S:2} summarizes the rationale of the GGCMI Phase~2 CTNW-A experiment as described in full detail by \citet{franke2020ctwnexperiment} and proposes the rationale for climatological-mean yield emulation
+Section \ref{S:2} summarizes the rationale of the GGCMI Phase~2 CTWN-A experiment as described in full detail by \citet{franke2020ctwnexperiment} and proposes the rationale for climatological-mean yield emulation
 before Section \ref{S:3} details the emulator design.
 
 % Readers may want to skip to section Section \ref{S:3} for emulator details.
@@ -736,12 +736,12 @@ The multi-model ensemble emulation method presented here allows some future mode
 As individual process-based models are more skillful for different crops in different regions, the emulators for separate crop models could be stitched together based on regional model skill.
 Similar structured training sets could be constructed to directly study responses to variability changes: see e.g.\ \citet{poppick2016, Haugen2018} for methods of constructing synthetic climate timeseries with altered variability. 
 The GGCMI Phase~2 dataset can be used as a testbed for examining the ability of statistical models using more detailed within-season regressors to capture both year-over-year and climatological changes, and for more systematic studies of emulation itself, including evaluation of alternate statistical specifications or machine learning methods.
-While we tested the importance of differnt dimesions across area with current cultivation, future work may wish to test if these relationships are constant across space and in regions without current cultivation.
+While we tested the importance of different dimensions across area with current cultivation, future work may wish to test if these relationships are constant across space and in regions without current cultivation.
 In general, the GGCMI Phase~2 experiment demonstrates the promise and utility of systematic parameter sweeps for improving understanding of the factors driving crop responses and for evaluating and improving process-based crop models.
 Our emulators that have been trained on this GGCMI Phase~2 experiment data set help to 
 \begin{itemize}
   \item make flexible use of the crop model simulations in follow up studies and
-  \item condense model differences to a sizeable set of parameters, facilitating better entry points for identifiying causes for diverging model behavior.
+  \item condense model differences to a sizeable set of parameters, facilitating better entry points for identifying causes for diverging model behavior.
 \end{itemize}
 With the development, evaluation, and publication of the emulator sets we hope to enable further research in these fields.
 
