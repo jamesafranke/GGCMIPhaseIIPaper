@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{91}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -39,6 +39,12 @@ Challinor, A., Wheeler, T., Craufurd, P., Slingo, J., and Grimes, D.: Design
   \doi{https://doi.org/10.1016/j.agrformet.2004.01.002},
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0168192304000085},
   2004.
+
+\bibitem[{Challinor et~al.(2014)Challinor, Watson, Lobell, Howden, Smith, and
+  Chhetri}]{Challinor2014}
+Challinor, A., Watson, J., Lobell, D., Howden, S., Smith, D., and Chhetri, N.:
+  A meta-analysis of crop yield under climate change and adaptation, Nature
+  Climate Change, 4, 287 -- 291, \doi{10.1038/nclimate2153}, 2014.
 
 \bibitem[{Conti et~al.(2009)Conti, Gosling, Oakley, and O'Hagan}]{OHAGAN2010}
 Conti, S., Gosling, J.~P., Oakley, J.~E., and O'Hagan, A.: Gaussian process
@@ -81,20 +87,20 @@ Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
   \doi{10.1016/j.agee.2012.01.026}, 2012.
 
-\bibitem[{Franke et~al.(2019)Franke, M\"uller, Elliott, Ruane, Jagermeyr,
-  Balkovic, Ciais, Dury, Falloon, Folberth, Francois, Hank, Hoffmann,
+\bibitem[{Franke et~al.(2020)Franke, M\"uller, Elliott, Ruane, J\"agermeyr,
+  Balkovic, Ciais, Dury, Falloon, Folberth, Fran\c{c}ois, Hank, Hoffmann,
   Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin, Phillips, Pugh,
-  Reddy, Wang, Williams, Zabel, and Moyer}]{franke2019ctwnexperiment}
-Franke, J., M\"uller, C., Elliott, J., Ruane, A.~C., Jagermeyr, J., Balkovic,
-  J., Ciais, P., Dury, M., Falloon, P., Folberth, C., Francois, L., Hank, T.,
-  Hoffmann, M., Izaurralde, R.~C., Jacquemin, I., Jones, C., Khabarov, N.,
-  Koch, M., Li, M., Liu, W., Olin, S., Phillips, M., Pugh, T. A.~M., Reddy, A.,
-  Wang, X., Williams, K., Zabel, F., and Moyer, E.: The GGCMI Phase II
-  experiment: global gridded crop model simulations under uniform changes in
-  \chem{CO_2}, temperature, water, and nitrogen levels (protocol version 1.0),
-  Geoscientific Model Development Discussions, 2019, 1--30,
-  \doi{10.5194/gmd-2019-237},
-  \urlprefix\url{https://www.geosci-model-dev-discuss.net/gmd-2019-237/}, 2019.
+  Reddy, Wang, Williams, Zabel, and Moyer}]{franke2020ctwnexperiment}
+Franke, J.~A., M\"uller, C., Elliott, J., Ruane, A.~C., J\"agermeyr, J.,
+  Balkovic, J., Ciais, P., Dury, M., Falloon, P.~D., Folberth, C.,
+  Fran\c{c}ois, L., Hank, T., Hoffmann, M., Izaurralde, R.~C., Jacquemin, I.,
+  Jones, C., Khabarov, N., Koch, M., Li, M., Liu, W., Olin, S., Phillips, M.,
+  Pugh, T. A.~M., Reddy, A., Wang, X., Williams, K., Zabel, F., and Moyer,
+  E.~J.: The GGCMI Phase 2 experiment: global gridded crop model simulations
+  under uniform changes in \chem{CO_2}, temperature, water, and nitrogen levels
+  (protocol version 1.0), Geoscientific Model Development, 13, 2315--2336,
+  \doi{10.5194/gmd-13-2315-2020},
+  \urlprefix\url{https://gmd.copernicus.org/articles/13/2315/2020/}, 2020.
 
 \bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
   Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel,
@@ -168,6 +174,18 @@ Hank, T., Bach, H., and Mauser, W.: Using a {R}emote {S}ensing-{S}upported
 Hansen, J. and Jones, J.: Scaling-up crop models for climate variability
   applications, Agricultural Systems, 65, 43 -- 72,
   \doi{10.1016/S0308-521X(00)00025-1}, 2000.
+
+\bibitem[{Hasegawa et~al.(2018)Hasegawa, Fujimori, Havl{\'\i}k, Valin,
+  Bodirsky, Doelman, Fellmann, Kyle, Koopman, Lotze-Campen, Mason-D’Croz,
+  Ochi, Domínguez, Stehfest, Sulser, Tabeau, Takahashi, Takakura, Hans~van
+  Meij~and, Wiebe, and Witzke}]{hasegawa2018risk}
+Hasegawa, T., Fujimori, S., Havl{\'\i}k, P., Valin, H., Bodirsky, B.~L.,
+  Doelman, J.~C., Fellmann, T., Kyle, P., Koopman, J.~F., Lotze-Campen, H.,
+  Mason-D’Croz, D., Ochi, Y., Domínguez, I.~P., Stehfest, E., Sulser, T.~B.,
+  Tabeau, A., Takahashi, K., Takakura, J., Hans~van Meij~and, W.-J. v.~Z.,
+  Wiebe, K., and Witzke, P.: Risk of increased food insecurity under stringent
+  global climate change mitigation policy, Nature Climate Change, 8, 699--703,
+  2018.
 
 \bibitem[{Haugen et~al.(2018)Haugen, Stein, Moyer, and Sriver}]{Haugen2018}
 Haugen, M., Stein, M., Moyer, E., and Sriver, R.: Estimating changes in
@@ -329,8 +347,16 @@ Mauser, W., Klepper, G., Zabel, F., Delzeit, R., Hank, T., Putzenlechner, B.,
   future demand without the need for cropland expansion, Nature Communications,
   6, \doi{10.1038/ncomms9946}, 2015.
 
-\bibitem[{Minoli et~al.(2019)Minoli, Müller, Elliott, Ruane, Jägermeyr,
-  Zabel, Dury, Folberth, François, Hank, Jacquemin, Liu, Olin, and
+\bibitem[{Minoli et~al.(2019{\natexlab{a}})Minoli, Egli, Rolinski, and
+  Müller}]{minoli2019modeling}
+Minoli, S., Egli, D.~B., Rolinski, S., and Müller, C.: Modelling cropping
+  periods of grain crops at the global scale, Global and Planetary Change, 174,
+  35 -- 46, \doi{https://doi.org/10.1016/j.gloplacha.2018.12.013},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S092181811830362X},
+  2019{\natexlab{a}}.
+
+\bibitem[{Minoli et~al.(2019{\natexlab{b}})Minoli, Müller, Elliott, Ruane,
+  Jägermeyr, Zabel, Dury, Folberth, François, Hank, Jacquemin, Liu, Olin, and
   Pugh}]{minoli2019adaptation}
 Minoli, S., Müller, C., Elliott, J., Ruane, A.~C., Jägermeyr, J., Zabel, F.,
   Dury, M., Folberth, C., François, L., Hank, T., Jacquemin, I., Liu, W.,
@@ -338,7 +364,7 @@ Minoli, S., Müller, C., Elliott, J., Ruane, A.~C., Jägermeyr, J., Zabel, F.,
   adaptation by maintaining current growing periods and irrigation, Earth's
   Future, 0, \doi{10.1029/2018EF001130},
   \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018EF001130},
-  2019.
+  2019{\natexlab{b}}.
 
 \bibitem[{Mistry et~al.(2017)Mistry, Wing, and De~Cian}]{Mistry2017}
 Mistry, M.~N., Wing, I.~S., and De~Cian, E.: Simulated vs. empirical weather
@@ -351,12 +377,58 @@ Moore, F.~C., Baldos, U., Hertel, T., and Diaz, D.: New science of climate
   change impacts on agriculture implies higher social cost of carbon, Nature
   Communications, 8, \doi{10.1038/s41467-017-01792-x}, 2017.
 
+\bibitem[{M\"{u}ller et~al.(2017)M\"{u}ller, Elliott, Chryssanthacopoulos,
+  Arneth, Balkovic, Ciais, Deryng, Folberth, Glotter, Hoek, Iizumi, Izaurralde,
+  Jones, Khabarov, Lawrence, Liu, Olin, Pugh, Ray, Reddy, Rosenzweig, Ruane,
+  Sakurai, Schmid, Skalsky, Song, Wang, de~Wit, and Yang}]{muller_global_2017}
+M\"{u}ller, C., Elliott, J., Chryssanthacopoulos, J., Arneth, A., Balkovic, J.,
+  Ciais, P., Deryng, D., Folberth, C., Glotter, M., Hoek, S., Iizumi, T.,
+  Izaurralde, R.~C., Jones, C., Khabarov, N., Lawrence, P., Liu, W., Olin, S.,
+  Pugh, T. A.~M., Ray, D.~K., Reddy, A., Rosenzweig, C., Ruane, A.~C., Sakurai,
+  G., Schmid, E., Skalsky, R., Song, C.~X., Wang, X., de~Wit, A., and Yang, H.:
+  Global gridded crop model evaluation: benchmarking, skills, deficiencies and
+  implications, Geoscientific Model Development, 10, 1403--1422,
+  \doi{10.5194/gmd-10-1403-2017}, 2017.
+
+\bibitem[{Müller et~al.(2015)Müller, Elliott, Chryssanthacopoulos, Deryng,
+  Folberth, Pugh, and Schmid}]{Muller_2015_implications}
+Müller, C., Elliott, J., Chryssanthacopoulos, J., Deryng, D., Folberth, C.,
+  Pugh, T. A.~M., and Schmid, E.: Implications of climate mitigation for future
+  agricultural production, Environmental Research Letters, 10, 125\,004,
+  \doi{10.1088/1748-9326/10/12/125004},
+  \urlprefix\url{https://doi.org/10.1088%2F1748-9326%2F10%2F12%2F125004}, 2015.
+
 \bibitem[{Nakamura et~al.(1997)Nakamura, Osaki, Koike, Hanba, Wada, and
   Tadano}]{Nakamura97}
 Nakamura, T., Osaki, M., Koike, T., Hanba, Y.~T., Wada, E., and Tadano, T.:
   Effect of {C}{O}2 enrichment on carbon and nitrogen interaction in wheat and
   soybean, Soil Science and Plant Nutrition, 43, 789--798,
   \doi{10.1080/00380768.1997.10414645}, 1997.
+
+\bibitem[{Nelson et~al.(2014{\natexlab{a}})Nelson, Mensbrugghe, Ahammad, Blanc,
+  Calvin, Hasegawa, Havlik, Heyhoe, Kyle, Lotze-Campen, Lampe, Mason~d'Croz,
+  Meijl, Müller, Reilly, Robertson, Sands, Schmitz, Tabeau, Takahashi, Valin,
+  and Willenbockel}]{nelson2014}
+Nelson, G.~C., Mensbrugghe, D., Ahammad, H., Blanc, E., Calvin, K., Hasegawa,
+  T., Havlik, P., Heyhoe, E., Kyle, P., Lotze-Campen, H., Lampe, M.,
+  Mason~d'Croz, D., Meijl, H., Müller, C., Reilly, J., Robertson, R., Sands,
+  R.~D., Schmitz, C., Tabeau, A., Takahashi, K., Valin, H., and Willenbockel,
+  D.: Agriculture and climate change in global scenarios: why don't the models
+  agree, Agricultural Economics, 45, 85--101, \doi{doi.org/10.1111/agec.12091},
+  2014{\natexlab{a}}.
+
+\bibitem[{Nelson et~al.(2014{\natexlab{b}})Nelson, Valin, Sands, Havl{\'\i}k,
+  Ahammad, Deryng, Elliott, Fujimori, Hasegawa, Heyhoe, Kyle, von Lampe,
+  Lotze-Campen, d’Croz, van Meijl, van~der Mensbrugghe, M\"uller, Popp,
+  Robertson, Robinson, Schmid, abd Andrzej~Tabeau, and
+  Willenbockel}]{nelson2014climate}
+Nelson, G.~C., Valin, H., Sands, R.~D., Havl{\'\i}k, P., Ahammad, H., Deryng,
+  D., Elliott, J., Fujimori, S., Hasegawa, T., Heyhoe, E., Kyle, P., von Lampe,
+  M., Lotze-Campen, H., d’Croz, D.~M., van Meijl, H., van~der Mensbrugghe,
+  D., M\"uller, C., Popp, A., Robertson, R., Robinson, S., Schmid, E., abd
+  Andrzej~Tabeau, C.~S., and Willenbockel, D.: Climate change effects on
+  agriculture: Economic responses to biophysical shocks, Proceedings of the
+  National Academy of Sciences, 111, 3274--3279, 2014{\natexlab{b}}.
 
 \bibitem[{O'Hagan(2006)}]{OHAGAN2006}
 O'Hagan, A.: Bayesian analysis of computer code outputs: A tutorial,
@@ -559,6 +631,15 @@ Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
   Model Development, 12, 1319--1350, \doi{10.5194/gmd-12-1319-2019},
   \urlprefix\url{https://www.geosci-model-dev.net/12/1319/2019/}, 2019.
 
+\bibitem[{Stevanovi{\'c} et~al.(2016)Stevanovi{\'c}, Popp, Lotze-Campen,
+  Dietrich, M{\"u}ller, Bonsch, Schmitz, Bodirsky, Humpen{\"o}der, and
+  Weindl}]{Stevanovic2016}
+Stevanovi{\'c}, M., Popp, A., Lotze-Campen, H., Dietrich, J.~P., M{\"u}ller,
+  C., Bonsch, M., Schmitz, C., Bodirsky, B.~L., Humpen{\"o}der, F., and Weindl,
+  I.: The impact of high-end climate change on agricultural welfare, Science
+  Advances, 2, \doi{10.1126/sciadv.1501452},
+  \urlprefix\url{https://advances.sciencemag.org/content/2/8/e1501452}, 2016.
+
 \bibitem[{Storlie et~al.(2009)Storlie, Swiler, Helton, and
   Sallaberry}]{STORLIE2009}
 Storlie, C.~B., Swiler, L.~P., Helton, J.~C., and Sallaberry, C.~J.:
@@ -590,6 +671,13 @@ von Bloh, W., Schaphoff, S., M\"uller, C., Rolinski, S., Waha, K., and Zaehle,
   hydrology and crop growth model {LPJ}m{L} (version 5.0), Geoscientific Model
   Development, 11, 2789--2812, \doi{10.5194/gmd-11-2789-2018}, 2018.
 
+\bibitem[{Waha et~al.(2012)Waha, van Bussel, Müller, and Bondeau}]{waha2012}
+Waha, K., van Bussel, L. G.~J., Müller, C., and Bondeau, A.: Climate-driven
+  simulation of global crop sowing dates, Global Ecology and Biogeography, 21,
+  247--259, \doi{10.1111/j.1466-8238.2011.00678.x},
+  \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1466-8238.2011.00678.x},
+  2012.
+
 \bibitem[{Warszawski et~al.(2014)Warszawski, Frieler, Huber, Piontek,
   Serdeczny, and Schewe}]{Warszawski3228}
 Warszawski, L., Frieler, K., Huber, V., Piontek, F., Serdeczny, O., and Schewe,
@@ -603,6 +691,17 @@ Weedon, G.~P., Balsamo, G., Bellouin, N., Gomes, S., Best, M.~J., and Viterbo,
   P.: The WFDEI meteorological forcing data set: WATCH Forcing Data methodology
   applied to ERA-Interim reanalysis data, Water Resources Research, 50,
   7505--7514, 2014.
+
+\bibitem[{Wiebe et~al.(2015)Wiebe, Lotze-Campen, Sands, Tabeau, van~der
+  Mensbrugghe, Biewald, Bodirsky, Islam, Kavallari, Mason-D'Croz, Müller,
+  Popp, Robertson, Robinson, van Meijl, and Willenbockel}]{Wiebe_2015}
+Wiebe, K., Lotze-Campen, H., Sands, R., Tabeau, A., van~der Mensbrugghe, D.,
+  Biewald, A., Bodirsky, B., Islam, S., Kavallari, A., Mason-D'Croz, D.,
+  Müller, C., Popp, A., Robertson, R., Robinson, S., van Meijl, H., and
+  Willenbockel, D.: Climate change impacts on agriculture in 2050 under a range
+  of plausible socioeconomic and emissions scenarios, Environmental Research
+  Letters, 10, 085\,010, \doi{10.1088/1748-9326/10/8/085010},
+  \urlprefix\url{https://doi.org/10.1088%2F1748-9326%2F10%2F8%2F085010}, 2015.
 
 \bibitem[{Williams et~al.(2017)Williams, Gornall, Harper, Wiltshire, Hemming,
   Quaife, Arkebauer, and Scoby}]{Williams2017}
@@ -625,6 +724,12 @@ Zabel, F., Delzeit, R., Schneider, J.~M., Seppelt, R., Mauser, W., and
   intensification on agricultural markets and biodiversity, Nature
   Communications, 10, 2844, \doi{10.1038/s41467-019-10775-z},
   \urlprefix\url{http://www.nature.com/articles/s41467-019-10775-z}, 2019.
+
+\bibitem[{Zhao et~al.(2016)Zhao, Piao, Wang, Huang, Ciais, Elliott, Huang,
+  Janssens, Li, Lian et~al.}]{zhao2016plausible}
+Zhao, C., Piao, S., Wang, X., Huang, Y., Ciais, P., Elliott, J., Huang, M.,
+  Janssens, I.~A., Li, T., Lian, X., et~al.: Plausible rice yield losses under
+  future climate warming, Nature plants, 3, 1--5, 2016.
 
 \bibitem[{Zhao et~al.(2017)Zhao, Liu, Piao, Wang, Lobell, Huang, Huang, Yao,
   Bassu, Ciais, Durand, Elliott, Ewert, Janssens, Li, Lin, Liu, Martre,
