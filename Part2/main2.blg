@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main2.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "franke2020experiment"
-You've used 91 entries,
+You've used 92 entries,
             2811 wiz_defined-function locations,
-            1668 strings with 40826 characters,
-and the built_in function-call counts, 130515 in all, are:
-= -- 13087
-> -- 8449
+            1673 strings with 41156 characters,
+and the built_in function-call counts, 132252 in all, are:
+= -- 13270
+> -- 8560
 < -- 17
-+ -- 3340
-- -- 2730
-* -- 9451
-:= -- 14389
-add.period$ -- 91
-call.type$ -- 91
-change.case$ -- 1089
-chr.to.int$ -- 87
-cite$ -- 273
-duplicate$ -- 11166
-empty$ -- 5468
-format.name$ -- 3015
-if$ -- 25550
++ -- 3385
+- -- 2766
+* -- 9573
+:= -- 14573
+add.period$ -- 92
+call.type$ -- 92
+change.case$ -- 1103
+chr.to.int$ -- 88
+cite$ -- 276
+duplicate$ -- 11317
+empty$ -- 5535
+format.name$ -- 3054
+if$ -- 25889
 int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 1536
-newline$ -- 282
-num.names$ -- 364
-pop$ -- 5611
+missing$ -- 1555
+newline$ -- 285
+num.names$ -- 368
+pop$ -- 5687
 preamble$ -- 1
-purify$ -- 1089
+purify$ -- 1103
 quote$ -- 0
-skip$ -- 6556
+skip$ -- 6648
 stack$ -- 0
-substring$ -- 4373
-swap$ -- 10008
+substring$ -- 4437
+swap$ -- 10149
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 816
+type$ -- 825
 warning$ -- 0
-while$ -- 474
+while$ -- 480
 width$ -- 0
-write$ -- 1103
-(There was 1 warning)
+write$ -- 1115

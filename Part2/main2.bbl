@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -219,6 +219,14 @@ Holzk{\"a}mper, A., Calanca, P., and Fuhrer, J.: Statistical crop models:
 Howden, S. and Crimp, S.: Assessing dangerous climate change impacts on
   Australia's wheat industry, Modelling and Simulation Society of Australia and
   New Zealand, pp. 505--511, \doi{-}, 2005.
+
+\bibitem[{Hsiang et~al.(2017)Hsiang, Kopp, Jina, Rising, Delgado, Mohan,
+  Rasmussen, Muir-Wood, Wilson, Oppenheimer, Larsen, and
+  Houser}]{hsiang_estimating_2017}
+Hsiang, S., Kopp, R., Jina, A., Rising, J., Delgado, M., Mohan, S., Rasmussen,
+  D.~J., Muir-Wood, R., Wilson, P., Oppenheimer, M., Larsen, K., and Houser,
+  T.: Estimating economic damage from climate change in the {United} {States},
+  Science, 356, 1362--1369, \doi{10.1126/science.aal4369}, 2017.
 
 \bibitem[{Ingestad(1977)}]{Torsten77}
 Ingestad, T.: Nitrogen and {P}lant {G}rowth; {M}aximum {E}fficiency of
@@ -625,7 +633,7 @@ Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   National Academy of Sciences, 106, 15\,594--15\,598,
   \doi{10.1073/pnas.0906865106}, 2009.
 
-\bibitem[{Snyder et~al.(2019)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
+\bibitem[{Snyder et~al.(2019)Snyder, Calvin, Phillips, and Ruane}]{snyder2018}
 Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
   emulator for use in GCAM and similar models:Persephone v1.0, Geoscientific
   Model Development, 12, 1319--1350, \doi{10.5194/gmd-12-1319-2019},
