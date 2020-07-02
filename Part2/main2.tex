@@ -591,10 +591,10 @@ See Supplemental Material Section 9 for maps of cross validation RMSE for each c
     \end{tabular}
 \end{table*}
 
-Note that this metric is relatively simple and may be over-conservative.
+Note that this relatively simple metric may be over-conservative.
 The randomized sampling protocol for dividing training and test sets can mean that a training set omits edge simulations at the highest or lowest value in CTWN space. 
 The test prediction then involves extrapolating out of the training set range (e.g.\ predicting a T+6 case when the training set extends only to T+4), an improper use of an emulator. 
-Values would be lower under a different sampling strategy (e.g.\ ``leave-one-out''). 
+RMSE values would be lower if we had used a more careful sampling strategy that precluded extrapolation (e.g.\ ``leave-one-out''). 
 For additional discussion of more detailed potential evaluation metrics, see e.g.\ \citet{Castruccio14}.
 
 \smallskip
