@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL old_submission.tex   Thu Jul  2 15:22:36 2020
-%DIF ADD main2.tex            Thu Jul  2 15:23:26 2020
+%DIF ADD main2.tex            Thu Jul  2 15:35:44 2020
 %\documentclass[gmd, manuscript]{copernicus} %final manuscript
 \documentclass[gmdd]{copernicus} %final manuscript
 \definecolor{dark-gray}{gray}{0.4}
@@ -586,44 +586,38 @@ The polynomial fit also cannot capture the well-documented saturation effect of 
 
 \subsection{Emulator performance metrics}
 \label{S:4.2}
-\DIFdelbegin %DIFDELCMD < \begin{figure*}[ht]
-%DIFDELCMD < \centering
-%DIFDELCMD <     \includegraphics[width=16.3cm]{figures/error_grid_new.png}
-%DIFDELCMD <     %%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
-    We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
-    Large columns are crops and large rows models; squares within are T, W scenario pairs. 
-    Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less than 1 indicating the the error between the emulation and simulation less than one standard deviation of the ensemble simulation spread. 
-    Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
-    JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
-    Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
-    }}
-   %DIFAUXCMD
-%DIFDELCMD < \label{fig:error_360}
-%DIFDELCMD < \end{figure*}
-%DIFDELCMD < %%%
-\DIFdelend 
+\DIFaddbegin 
 
-\DIFdelbegin %DIFDELCMD < \begin{figure*}[ht]
-%DIFDELCMD < \centering
-%DIFDELCMD <     \includegraphics[width=16.3cm]{figures/CARAIB_spatial_error.png}
-%DIFDELCMD <     %%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Illustration of our first test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
-    Colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
-    For consistency, we show $e$ only for geographic areas simulated by at least six models and where baseline yields are greater than 0.5 ton ha$^{-1}$.
-    Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure S2-S3) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. 
-    }}
-   %DIFAUXCMD
-%DIFDELCMD < \label{fig:error}
-%DIFDELCMD < \end{figure*}
-%DIFDELCMD < 
+\DIFaddend \begin{figure*}[ht]
+    \centering
+        \includegraphics[width=16.3cm]{figures/error_grid_new.png}
+        \caption{
+        Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
+        We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
+        Large columns are crops and large rows models; squares within are T, W scenario pairs. 
+        Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less than 1 indicating the \DIFdelbeginFL \DIFdelFL{the }\DIFdelendFL error between the emulation and simulation less than one standard deviation of the ensemble simulation spread. 
+        Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
+        JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
+        Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
+        }
+       \label{fig:error_360}
+    \end{figure*}
 
+    \DIFdelbegin %DIFDELCMD < \begin{figure*}[ht]
 %DIFDELCMD < %%%
-\DIFdelend Our emulators collectively consist of nearly 3 million individual regressions, so developing concise performance metrics poses a challenge.
+\DIFdelendFL \DIFaddbeginFL \begin{figure*}[h!]
+        \DIFaddendFL \centering
+            \includegraphics[width=16.3cm]{figures/CARAIB_spatial_error.png}
+            \caption{
+            Illustration of our first test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
+            Colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
+            For consistency, we show $e$ only for geographic areas simulated by at least six models and where baseline yields are greater than 0.5 ton ha$^{-1}$.
+            Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure S2-S3) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. 
+            }
+           \label{fig:error}
+        \end{figure*}
+
+Our emulators collectively consist of nearly 3 million individual regressions, so developing concise performance metrics poses a challenge.
 No general agreed-upon criteria exist for defining an acceptable crop model emulator, so we present two different metrics below, one relatively loose and one more stringent.  
 Both metrics assess the ability of the emulator to reproduce simulated crop yields in the GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend experiment. 
 In this section we show only results from emulators based on the 34-term Equation \ref{eqn:features_original};
@@ -644,23 +638,7 @@ For a multi-model comparison exercise like GGCMI Phase\DIFdelbegin \DIFdel{II}\D
 \noindent We calculate the mean error for each grid cell, model, and crop in each C,T,W,N scenario by comparing emulated and simulated yields. 
 A normalized error $e<1$ means that any deviation of the emulation from the simulation is less than 1 standard deviation of the inter-model spread.
 
-\DIFaddbegin \begin{figure*}[ht]
-\centering
-    \includegraphics[width=16.3cm]{figures/error_grid_new.png}
-    \caption{
-    \DIFaddFL{Assessment of emulator performance over currently cultivated areas based on normalized error (Equations \ref{eqn:error}). 
-    We show performance of all 9 models emulated, over all crops and all sampled T and W inputs (``ir.'' indicates the irrigated W$_{\infty}$ setting), but with CO$_2$ and nitrogen held fixed at baseline values. 
-    Large columns are crops and large rows models; squares within are T, W scenario pairs. 
-    Colors denote the fraction of currently cultivated hectares (``area frac'') for each crop with normalized area $e$ less than 1 indicating the error between the emulation and simulation less than one standard deviation of the ensemble simulation spread. 
-    Of the possible 63 scenarios at a single CO$_2$ and N value, we consider only those for which all 9 (8 for rice, soybean, and winter wheat) models submitted data (Figure S1) so the model ensemble standard deviation can be calculated uniformly in each case. 
-    JULES did not simulate winter wheat and LPJ-GUESS did not simulate rice and soybean. Emulator performance is generally satisfactory, with some exceptions. 
-    Emulator failures (significant areas of poor performance) occur for individual crop-model combinations, with performance generally degrading for colder and wetter scenarios.
-    }}
-   \label{fig:error_360}
-\end{figure*}
-
-
-\DIFaddend Evaluation of this metric implies that GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend emulators are generally satisfactory. 
+Evaluation of this metric implies that GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend emulators are generally satisfactory. 
 Emulator performance is illustrated in Figure \ref{fig:error_360}, which shows all models and crops crops over currently cultivated area.
 Over all crops and models, the average normalized error $e < 1$ over 95\% of currently cultivated area.
 For maize, the most tractable crop to emulate, all 9 models return $e < 1$ over 97\% of currently cultivated area. 
@@ -679,20 +657,7 @@ Over simulated }\DIFdelend \DIFaddbegin \DIFadd{reduced 23-term Equation \ref{eq
 The effect is reversed over }\DIFaddend uncultivated land, \DIFaddbegin \DIFadd{with }\DIFaddend CARAIB maize emulators \DIFdelbegin \DIFdel{have }\DIFdelend \DIFaddbegin \DIFadd{showing }\DIFaddend $e < 1$ \DIFdelbegin \DIFdel{for only 88.7}\DIFdelend \DIFaddbegin \DIFadd{over 93.7}\DIFaddend \% of area with the \DIFdelbegin \DIFdel{reduced Equation \ref{eqn:features_reduced} but 93.7\% with the }\DIFdelend full Equation \DIFdelbegin \DIFdel{\ref{eqn:features_original}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eqn:features_original} but only over 88.7\% of area with the reduced Equation \ref{eqn:features_reduced}}\DIFaddend . 
 
 
-\DIFaddbegin \begin{figure*}[h!]
-\centering
-    \includegraphics[width=16.3cm]{figures/CARAIB_spatial_error.png}
-    \caption{
-    \DIFaddFL{Illustration of our first test of emulator performance, applied to the CARAIB model for the T+4 scenario for rainfed crops. 
-    Colors indicate the normalized emulator error $e$, where $e > 1$ means that emulator error exceeds the multi-model standard deviation. 
-    For consistency, we show $e$ only for geographic areas simulated by at least six models and where baseline yields are greater than 0.5 ton ha$^{-1}$.
-    Emulator performance is generally good relative to model spread in areas where crops are currently cultivated (compare to Figure S2-S3) and in temperate zones in general; emulation issues occur primarily in marginal areas with low yield potentials. 
-    }}
-   \label{fig:error}
-\end{figure*}
-
-
-\DIFaddend Note that the normalized error assessment is relatively forgiving for several reasons. 
+Note that the normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
 Had we used a spline interpolation, the error would necessarily be zero. 
 Second, the metric scales emulator fidelity not by the magnitude of yield changes in the evaluated model but by the spread in yield changes across models. 
@@ -754,7 +719,7 @@ For additional discussion of more detailed potential evaluation metrics, see e.g
 \subsection{Emulation of realistic climate projections}
 Finally, we test the ability of an emulator based on the GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. 
 \DIFdelbegin \DIFdel{The goal is }\DIFdelend \DIFaddbegin \DIFadd{Our emulators are trained only on growing-season means, and the GGCI Phase 2 exercise involved only changes in means. We therefore seek }\DIFaddend to assess whether \DIFdelbegin \DIFdel{effects of future changes in }\DIFdelend \DIFaddbegin \DIFadd{changes in the higher moments of }\DIFaddend temperature and precipitation distributions \DIFdelbegin \DIFdel{are strong enough to }\DIFdelend \DIFaddbegin \DIFadd{in a climate projection might have effects that lead to significant emulator error. Note that we are not asking whether year-over-year climate variability matters to crop yields; this point is well-established \mbox{%DIFAUXCMD
-\cite{RayXX}}\hspace{0pt}%DIFAUXCMD
+\cite{ray_climate_2015}}\hspace{0pt}%DIFAUXCMD
 . The question instead is whether a realistic future climate projections involves }{\it \DIFadd{changes}} \DIFadd{in variablity large enough that they }\DIFaddend compromise an emulator based on the GGCMI Phase\DIFdelbegin \DIFdel{II dataset. 
  We first drive }\DIFdelend \DIFaddbegin \DIFadd{~2 dataset. 
  }

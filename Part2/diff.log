@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  2 JUL 2020 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  2 JUL 2020 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3153,55 +3153,58 @@ Package pdftex.def Info: figures/regression_example_2.png  used on input line 5
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <./figures/regression_example.png>] [16 <./figures/regression_example_2.png
->]
-<figures/error_grid_new.png, id=506, 590.30136pt x 237.0456pt>
+[15 <./figures/regression_example.png>]
+<figures/error_grid_new.png, id=496, 590.30136pt x 237.0456pt>
 File: figures/error_grid_new.png Graphic file (type png)
 <use figures/error_grid_new.png>
-Package pdftex.def Info: figures/error_grid_new.png  used on input line 649.
+Package pdftex.def Info: figures/error_grid_new.png  used on input line 593.
 (pdftex.def)             Requested size: 463.78pt x 186.24396pt.
- [17] [18 <./figures/error_grid_new.png>]
-<figures/CARAIB_spatial_error.png, id=534, 504.01099pt x 321.6015pt>
+<figures/CARAIB_spatial_error.png, id=498, 504.01099pt x 321.6015pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 <use figures/CARAIB_spatial_error.png>
 Package pdftex.def Info: figures/CARAIB_spatial_error.png  used on input line 6
-84.
+10.
 (pdftex.def)             Requested size: 463.78pt x 295.93585pt.
- [19 <./figures/CARAIB_spatial_error.png>]
 
-Package natbib Warning: Citation `RayXX' on page 20 undefined on input line 758
-.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./figures/regression_example_2.png>] [17 <./figures/error_grid_new.png>]
+[18 <./figures/CARAIB_spatial_error.png>] [19]
+
+Package natbib Warning: Citation `ray_climate_2015' on page 20 undefined on inp
+ut line 723.
 
 [20]
-Overfull \hbox (117.30994pt too wide) in paragraph at lines 762--776
+Overfull \hbox (117.30994pt too wide) in paragraph at lines 727--741
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []   |   []   |   []
  []
 
-[21]
-<figures/LPJMLRCP85comp.png, id=576, 585.96516pt x 170.70174pt>
+<figures/LPJMLRCP85comp.png, id=566, 585.96516pt x 170.70174pt>
 File: figures/LPJMLRCP85comp.png Graphic file (type png)
 <use figures/LPJMLRCP85comp.png>
-Package pdftex.def Info: figures/LPJMLRCP85comp.png  used on input line 784.
+Package pdftex.def Info: figures/LPJMLRCP85comp.png  used on input line 749.
 (pdftex.def)             Requested size: 463.78pt x 135.11075pt.
- [22 <./figures/LPJMLRCP85comp.png>]
-<figures/em_CTWN_all_crops.png, id=584, 562.2606pt x 432.60822pt>
+[21]
+<figures/em_CTWN_all_crops.png, id=578, 562.2606pt x 432.60822pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png  used on input line 818.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png  used on input line 783.
 
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/global_em_maize.png, id=591, 532.19627pt x 212.18472pt>
+[22 <./figures/LPJMLRCP85comp.png>] [23 <./figures/em_CTWN_all_crops.png>]
+<figures/global_em_maize.png, id=596, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png  used on input line 855.
+Package pdftex.def Info: figures/global_em_maize.png  used on input line 820.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
-[23] [24 <./figures/em_CTWN_all_crops.png>] [25 <./figures/global_em_maize.png>
-] [26] [27] [28] (./diff.bbl [29]
+
+[24] [25 <./figures/global_em_maize.png>] [26] [27] [28] (./diff.bbl [29]
 Underfull \hbox (badness 2253) in paragraph at lines 71--75
 []\T1/ptm/m/n/9 Elliott, J., Kelly, D., Chrys-san-tha-copou-los, J., Glot-ter, 
 M., Jhun-jh-nuwala, K., Best, N., Wilde, M., and Fos-ter, I.: The par-
@@ -3277,17 +3280,21 @@ ed-ings of the Na-tional Academy of Sci-ences, 111, 3228--3232,
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1041.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1041.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1006.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1006.
 (./diff.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1041.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1041.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1041.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1006.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1006.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1006.
  ) 
 Here is how much of TeX's memory you used:
  18750 strings out of 481242
  281727 string characters out of 5918005
- 669726 words of memory out of 5000000
+ 665773 words of memory out of 5000000
  33529 multiletter control sequences out of 15000+600000
  577428 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3311,10 +3318,10 @@ ts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/local/texlive/2017/texmf-dist
 type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on diff.pdf (37 pages, 7940375 bytes).
+Output written on diff.pdf (37 pages, 7928937 bytes).
 PDF statistics:
- 913 PDF objects out of 1000 (max. 8388607)
- 823 compressed objects within 9 object streams
+ 912 PDF objects out of 1000 (max. 8388607)
+ 822 compressed objects within 9 object streams
  172 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
