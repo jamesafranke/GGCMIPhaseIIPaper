@@ -318,11 +318,12 @@ The GGCMI Phase~2 dataset allows fitting our simple 3rd order polynomial form in
 \subsection{Feature importance and reduced statistical model}
 \label{sec:features}
 
-Because a simpler statistical model may improve the interpretability of its parameter weights, we also develop a reduced version that is satisfactory for most models and crops (Equation \ref{eqn:features_reduced}).
+Because a simpler statistical model may improve the interpretability of its parameter weights, we also develop a reduced 23-term version that is satisfactory for most models and crops (Equation \ref{eqn:features_reduced}, with the 11 removed terms shown in  {\color{dark-gray} gray}).
 To identify terms that can be omitted, we apply a feature selection cross-validation process in which terms in the polynomial are tested for importance. 
 Higher-order and interaction terms are successively added to the regression model, and in each case we calculate an aggregate mean absolute error (weighted by by currently cultivated area) and eliminate those terms that do not contribute significantly to reducing error. 
 The procedure is illustrated in Figure \ref{fig:features}. We develop our reduced statistical model by considering yields over currently cultivated land in three models: two that provided the complete set of 672 rainfed simulations, i.e. without the W$_{\infty}$ simulations,  (pDSSAT, EPIC-TAMU), and one that provided the smallest training set (121 input combinations, PEPIC).
 Although models exhibit different absolute levels of error, all three agree remarkably well on feature importance, i.e.\ on which terms reduce error and which provide no predictive benefit. Agreement is indicated by matching line slopes in Figure \ref{fig:features}. 
+Results of the feature selection process suggest that 11 terms can be omitted with negligible impact on emulator fidelity.
  
 \begin{figure*}[ht]
 \centering
@@ -339,7 +340,6 @@ Although models exhibit different absolute levels of error, all three agree rema
    \label{fig:features}
 \end{figure*}
 
-Results of the feature selection process suggest that 11 terms can be omitted with negligible impact on emulator fidelity, producing the 23-term statistical model of Equation \ref{eqn:features_reduced} (with removed terms shown in  {\color{dark-gray} gray}).
 
 \vspace{-0.3in}
 \begin{align}
