@@ -242,7 +242,7 @@ When discrepancies are large, year-to-year responses are generally stronger than
 
 While differences in responses at different timescales can arise for many reasons, including memory in the crop model or lurking covariates, the most likely explanation here is that the regressors used, mean growing-season temperature or precipitation, do not fully describe the conditions that affect crop yields. 
 The mean growing-season value is only a proxy for the distribution of daily climatic conditions that crops are sensitive to, and present-day variations between years can be very different from future forced changes. 
-That is, present-day variations in growing-season \textit{means} from year to year may be associated with changes in growing-season \textit{distributions} that are unrelated to any changes in future warmer climates: a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}.
+That is, present-day variations in growing-season \textit{means} from year to year may be associated with changes in growing-season \textit{distributions} that are unrelated to changes in future warmer climates: that is, a warm year at present may be quite different from a warm year in the future \citep[e.g.][]{Ruane2016}.
 Changes in temperature distributions have been shown to strongly affect crop yields \citep[e.g.][]{Hansen2000, Gadgil2002}, though precipitation effects should be smaller since crops respond not to rainfall but to soil moisture, which integrates over weeks or even months \citep[e.g.][]{potter2005effects, Glotter14, CHALLINOR200499}. 
 
 A second factor of importance is that any nonlinearity in crop responses will itself lead to a distinction between climatological and year-to-year fits, even if distributional differences are negligible. 
@@ -282,13 +282,11 @@ We discuss here largely emulations of climatological mean crop yields with no gr
 We provide separate emulations of irrigated and rainfed yields and applied irrigation water (pirrww in mm\ yr$^{-1}$) in both A0 and A1 scenarios, meaning that each model and crop combination results in six sets of regressions. See Supplemental Material Sections 3, 4, and 6 for these additional emulation cases.
 
 \subsection{Statistical model}
-For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function. 
+For the statistical model of crop yields as a function of CTWN, we choose a relatively simple parametric model with a 3rd-order polynomial basis function (Equation \ref{eqn:features_original}).
 If the climatological mean response is relatively smooth, then a simpler form provides a reasonable fit that allows for some interpretation of resultant parameter weights. 
-A relativity simple parametric form also allows fast model emulation at the grid cell level, rather than requiring spatial aggregation. 
+A relatively simple parametric form also allows fast model emulation at the grid cell level, rather than requiring spatial aggregation. 
 Emulating at the grid cell level preserves the spatial resolution of the parent models, and means that emulators indirectly includes any yield response to geographically distributed factors such as soil type, insolation, and the baseline climate.
 
-The 3rd-order polynomial CTWN model contains 34 terms (Equation \ref{eqn:features_original}), since the N$^3$ term is omitted, as it cannot be fitted in a training set sampling only three nitrogen levels. 
-To facilitate comparing emulators parameter by parameter, we hold this functional form across locations, crops, and models, other than several necessary distinctions: regressions for irrigated crops do not contain W terms, and regressions for models that do not sample the nitrogen levels omit the N terms. 
 
 \vspace{-0.3in}
 \begin{align}
@@ -304,17 +302,18 @@ To facilitate comparing emulators parameter by parameter, we hold this functiona
         + \ & K_{32} W^3   + K_{33} W^2 N + K_{34} W N^2 + {\color{dark-gray}K_{*} N^3} \nonumber
 \end{align}
 
-Results shown throughout the paper use this full specification, but we also investigate (in Section \ref{sec:features} below) whether some terms can be dropped without significant reduction in emulator fidelity.
-In general, both higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
+The 3rd-order polynomial CTWN model of Equation \ref{eqn:features_original} contains 34 terms, since the N$^3$ term is omitted, as it cannot be fitted in a training set sampling only three nitrogen levels. 
+To facilitate comparing emulators parameter by parameter, we hold this functional form across locations, crops, and models, other than several necessary distinctions: regressions for irrigated crops do not contain W terms, and regressions for models that do not sample the nitrogen levels omit the N terms. 
+Results shown throughout the paper use this full specification, but we also show (in Section \ref{sec:features} below) thaat for all but two models, 11 terms can be dropped without significant reduction in emulator fidelity. The higher specification of the 34 term model aids primarily in regions where crops are not currently grown. Most modeling groups submitted a sufficiently large training set that the 34-term model can be fit with standard Ordinary Least Squares (OLS), but for models with lower sampling, it must be fit with a Bayesian Ridge regression method. (See Section \ref{S:4} for 
+for evaluation of the fidelity of emulators constructed with Equation \ref{eqn:features_original}.)
+
+We do not focus in this study on comparing other functional forms or non-parametric models.
+In general, higher-order and interaction terms are expected to be important for representing crop yields. Higher order terms are needed because crop yield responses to weather are well-documented to be nonlinear: e.g.\ \citet{Schlenker2009} for T perturbations and \citet{He2016} for W (precipitation). 
 Interaction terms are needed since the yield response is expected to depend on interactions between the major inputs. 
 For example, \citet{Lobell2007} and \citet{Tebaldi2008} showed that in real-world yields (with C and N fixed), the joint distribution in T and W is needed to explain observed yield variance.  
 Other observation-based studies have shown the importance of the interaction between W and N \citep[e.g.][]{AULAKH2005}, and between N and C \citep{Mitsuru92, Nakamura97}.
-
-We do not focus in this study on comparing other functional forms or non-parametric models.
-Some prior studies have used other statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial and ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
+Some prior studies have used even more complex statistical specifications in crop model emulation: for example, \citet{BLANC2015} and \citet{BLANC2017} use a 39 term fractional polynomial and ``borrow information across space'' by fitting grid points simultaneously across soil region in a panel regression. 
 The GGCMI Phase~2 dataset allows fitting our simple 3rd order polynomial form independently at each grid cell while still providing a satisfactory emulation for all models and crops. 
-The 34 term model is acceptable for most cases considering the number of simulation samples. For models with lower sampling, the 34-terms are problematic for a standard OLS method. The Bayesian Ridge regression applied in this study is  stable and prevents overfitting for those cases as shown by the low out of sample errors in Section \ref{S:4}.
-See Section \ref{S:4} for evaluation of the fidelity of emulators constructed with Equation \ref{eqn:features_original}.
 
 \subsection{Feature importance and reduced statistical model}
 \label{sec:features}
