@@ -462,7 +462,7 @@ That is, CO$_2$ fertilization effects \textit{within} a single model are consist
 \end{figure*}
 
 Note that while the nitrogen dimension is important, it is also the most troublesome to emulate in the GGCMI Phase~2 experiment because of its limited sampling. 
-The GGCMI Phase~2 protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially unphysical results. 
+The GGCMI Phase~2 protocol specified only three nitrogen levels (10, 60 and 200 kg~N y$^{-1}$ ha$^{-1}$), so a third-order fit would be over-determined but a second-order fit can result in potentially non-physical results. 
 Steep and nonlinear declines in yield with lower nitrogen levels mean that some regressions imply a peak in yield between the 100 and 200 kg~N y$^{-1}$ ha$^{-1}$ levels (Figure \ref{fig:regression_2}, right). 
 While reduced yields under high nitrogen levels are physically possible and could reflect over-application at particular times in the growing period, they are implausible at the magnitude shown here and likely an artifact of the fit. 
 The Bayesian Ridge estimator mitigates the `peak-decline effect' in the nitrogen dimension relative to ordinary least squares, but does not entirely remove it. 
@@ -552,7 +552,7 @@ Actual simulation cases included in each training split vary by model depending 
 As a last step, we normalize the RMSE in each grid cell by dividing by the simulated yield change.
 
 The resulting error metric is generally low.
-Table \ref{table:ASE} shows the yield-change-normalized RMSE for rainfed crops in all models over currently cultivated land, both in selected major producing regions and in the global average. We include all simulations in th CTWN space and report the average error value in Table \ref{table:ASE}. 
+Table \ref{table:ASE} shows the yield-change-normalized RMSE for rainfed crops in all models over currently cultivated land, both in selected major producing regions and in the global average. We include all simulations in the CTWN space and report the average error value in Table \ref{table:ASE}. 
 Mean grid cell RMSE is below 5\% of yield changes in all cases, or in absolute terms 
 less than 0.2 ton ha$^{-1}$ for all except JULES soybean simulations, which is 0.36 ton ha$^{-1}$ in the global mean.
 For irrigated crops, absolute emulator errors are generally lower, but since irrigated crops experience lower yield changes across the C,T,W,N scenarios the fractional errors are similar. 
