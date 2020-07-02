@@ -555,17 +555,17 @@ In GGCMI Phase~2 the effect is manifested in the higher normalized errors for so
 
 \smallskip
 \textit{2. Out-of-sample validation.} 
-We provide a second, more stringent test of emulator performance via a cross validation (also termed an out-of-sample validation). 
-In this test the GGCMI Phase~2 dataset is split randomly into two parts, with 90\% of the data used to train the model and the held-out 10\% used to test the fidelity of the resulting emulator.
-We calculate the root mean square error (RMSE) between emulated (predicted) and actual simulated values across the test set, repeat the process twice, and average the results of the two splits. 
-Actual simulation cases included in each training split vary by model depending on simulation model sampling and are too extensive to list in detail here.
-As a last step, we normalize the RMSE in each grid cell by dividing by the simulated yield change.
+We provide a second, more stringent test of emulator performance via a 3-fold cross validation (also termed an out-of-sample validation). 
+In this test the GGCMI Phase~2 dataset is split randomly into two parts, with 90\% of the data used to train (calibrate) the model and the held-out 10\% used to test (evaluate) the fidelity of the resulting emulator. The procedure is repeated three times; in each case we calculate the root mean square error (RMSE) between the emulated (predicted) and actual simulated test set values, and then average the three results. The result is a single metric for each grid cell for each model-crop combination.
+%Actual simulation cases included in each training split vary by model depending on simulation model sampling and are too extensive to list in detail here.
+As a last step, we normalize the error metric for each grid cell by dividing by its maximum yield change over the entire CTWN dataset. (Since all models have submitted the extreme T+6 scenario, this normalization choice is not problematic.) Note that this validation exercise is independent of the procedure for generating the final published emulator values, which are generated using the full CTWN dataset.
 
 The resulting error metric is generally low.
 Table \ref{table:ASE} shows the yield-change-normalized RMSE for rainfed crops in all models over currently cultivated land, both in selected major producing regions and in the global average. We include all simulations in the CTWN space and report the average error value in Table \ref{table:ASE}. 
-Mean grid cell RMSE is below 5\% of yield changes in all cases, or in absolute terms 
-less than 0.2 ton ha$^{-1}$ for all except JULES soybean simulations, which is 0.36 ton ha$^{-1}$ in the global mean.
-For irrigated crops, absolute emulator errors are generally lower, but since irrigated crops experience lower yield changes across the C,T,W,N scenarios the fractional errors are similar. 
+Global mean grid cell RMSE is below 5\% of maximum yield changes in all cases, or in absolute terms 
+less than 0.2 ton ha$^{-1}$ for all except JULES soybean simulations (0.36 ton ha$^{-1}$).
+Emulators for rainfed and irrigated crops have similar fractional errors, but since  
+irrigated crops experience lower yield changes across the CTWN scenarios, they also have lower absolute errors. 
 See Supplemental Material Section 9 for maps of cross validation RMSE for each crop and model.
 
 \begin{table*}[ht]
