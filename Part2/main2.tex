@@ -128,9 +128,7 @@ Two involve many crop models but only one crop (wheat) \citep{FRONZEK20182, RUIZ
 In this paper we describe a set of globally-gridded crop model emulators developed from the new parameter-sweep dataset of the Global Gridded Crop Model Intercomparison (GGCMI) Phase~2 effort. 
 GGCMI Phase~2, a part of the Agricultural Model Intercomparison and Improvement Project (AgMIP) \citep{ROSENZWEIG2013, Rosenzweig2014}, provides the first near-global-coverage systematic parameter sweep of multi-model crop simulations consisting of up to 756 combinations in CO$_2$, temperature, water supply, applied nitrogen, and two different assumptions on growing season adaptation (``A0'': none and ``A1'': retaining growing season length) \citep[CTWN-A,][]{franke2020ctwnexperiment,minoli2019adaptation}.
 The experiment is designed to allow diagnosing the impacts on crop yields of both individual factors and their joint effects, and to allow construction of crop model emulators.
-In the following, we describe the training dataset (Section \ref{S:2}), the statistical model used for emulation (Section \ref{S:3}), measures of emulator fidelity (Section \ref{S:4}), and examples of preliminary results (Section \ref{S:5}). 
-Section \ref{S:2} summarizes the rationale of the GGCMI Phase~2 CTWN-A experiment as described in full detail by \citet{franke2020ctwnexperiment} and proposes the rationale for climatological-mean yield emulation
-before Section \ref{S:3} details the emulator design.
+In Section \ref{S:2} following, we describe the training dataset, including the GGCMI Phase 2 experimental protocol and model participation (Section \ref{S:2a}) and the models' differing year-over-year and climatologicaal mean responses. Section \ref{S:3} describes the statistical model used for emulation, Section \ref{S:4} evaluates measures of emulator fidelity, and Section \ref{S:5} shows examples of preliminary results. 
 
 % Readers may want to skip to section Section \ref{S:3} for emulator details.
  
@@ -140,6 +138,7 @@ before Section \ref{S:3} details the emulator design.
 \section{Training dataset}
 \label{S:2}
 \subsection{The GGCMI Phase~2 dataset}
+\label{S:2a}
 \vspace{-0.2in}
 \begin{table*}[ht]
     \caption{
@@ -212,7 +211,7 @@ In analyses where we distinguish yields over currently cultivated land, we use t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Climatological vs. year-to-year response}
-
+\label{S:2b}
 The central metric in assessments of climate change impacts on crop yields is the change in multi-annual means \citep[e.g.][]{Schlenker2009, Challinor2014, Rosenzweig2014, Muller_2015_implications, zhao2016plausible, hsiang_estimating_2017}
 and many impact assessments building on projected climate change impacts on crop yields work with multi-annual yields, as their analysis frameworks require information on long-term effects rather than year-to-year variability \citep[e.g.][]{nelson2014climate, Stevanovic2016, Wiebe_2015, hasegawa2018risk, snyder2018}.
 Changes in extremes or year-to-year variability are other metrics of interest, but often not explicitly considered in integrated climate change impact assessments or land-use change projections that require light-weight flexible emulators, so that we emulate the climatological mean response.
