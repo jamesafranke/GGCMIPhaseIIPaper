@@ -253,7 +253,7 @@ The effect of nonlinearity may be particularly relevant for precipitation, since
 In the GGCMI Phase~2 experiment, the imposed perturbations involve no changes in underlying distributions.
 The choice is reasonable, since climate models do not agree on distributional changes.
 Most models do project small mean increases in growing-season temperature variability in cultivated areas, and can produce substantial local changes, but models disagree on spatial patterns.
-For example, in models of the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive, in the the high-end RCP (Representative Concentration Pathway) 8.5 climate projections to the year 2100 \citep{riahi2011rcp}, growing season daily maximum temperature variability over currently cultivated rice areas (weighted by production) increases by 10\% in HadGEM2-ES but only by 0.4\% in MIROC-ESM-CHEM. (See Supplemental Section S2.)
+For example, in models of the Coupled Model Intercomparison Project Phase 5 (CMIP5) archive, in the the high-end RCP (Representative Concentration Pathway) 8.5 climate projections to the year 2100 \citep{riahi2011rcp}, growing season daily maximum temperature variability over currently cultivated rice areas (weighted by production) increases by 10\% in HadGEM2-ES but only by 0.4\% in MIROC-ESM-CHEM. (See Supplemental Section S2.)
 We therefore explicitly test the assumption that distributional changes are not consequential for climatological mean yields: in Section 4.3, we confirm that an emulator trained on the GGCMI Phase~2 dataset can successfully reproduce yield changes under a full climate model projection.
 
 \begin{figure*}[ht]
@@ -603,7 +603,7 @@ For additional discussion of more detailed potential evaluation metrics, see e.g
 Finally, we test the ability of an emulator based on the GGCMI Phase~2 perturbed mean training set to reproduce the response of a crop model driven by a realistic evolving climate scenario. 
 Our emulators are trained only on growing-season means, and the GGCI Phase 2 exercise involved only changes in means. We therefore seek to assess whether changes in the higher moments of temperature and precipitation distributions in a climate projection might have effects that lead to significant emulator error. Note that we are not asking whether year-over-year climate variability matters to crop yields; this point is well-established \cite{RayXX}. The question instead is whether a realistic future climate projections involves {\it changes} in variablity large enough that they compromise an emulator based on the GGCMI Phase~2 dataset. 
  
-To assess this potential error, we generate new crop model simulations using the LPJmL crop model (taken as a representative of GGCMI models), driven by aci climate simulation from the the Coupled Model Intercomparison Project Phase 5 (CMIP-5) archive \citep{Jones2011h, Martin2011, Taylor2012}.
+To assess this potential error, we generate new crop model simulations using the LPJmL crop model (taken as a representative of GGCMI models), driven by aci climate simulation from the the Coupled Model Intercomparison Project Phase 5 (CMIP5) archive \citep{Jones2011h, Martin2011, Taylor2012}.
 To maximize any potential bias, we choose a climate model (HadGEM2-ES) that exhibits relatively large changes in growing-season temperature variability among CMIP5 members (Supplemental Table S1), and use the high-end RCP 8.5 scenario. We also hold CO$_2$ fixed to emphasize the results of temperature and precipitation changes, in the absence of the beneficial effects of increased CO$_2$. 
 We then compare the resulting simulated yields to the output of the  GGCMI LPJmL emulator driven by the HadGEM2-ES yearly growing-season T and P anomalies (Figure \ref{fig:lpjmlrcp}).
 The GGCMI LPJmL emulator is able to capture the yield changes well: for all crops, emulated and simulated global production in the last decade of the simulation are identical to within 1.5\%.
@@ -652,8 +652,8 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
     \centering
     \includegraphics[width = 16.3cm]{figures/em_CTWN_all_crops.png}
     \caption{
-    Emulated global damage functions for the five crops over the four CTWN dimensions varied.
-    Black line shows the multi-model mean and shaded area and colored lines the individual models (not all models provided all crops or simulate the N dimension, so the number of models in each case varies). 
+    Emulated global damage functions for the five crops over the four CTWN dimensions varied in GGCMI Phase 2.
+    Black line shows the multi-model mean and shaded area and colored lines the individual models. (The number of models in each case varies, because some models did not provide all crops or simulate the N dimension.) 
     Each panel shows response to one covariate for rainfed crops, with all others held constant at baseline values (e.g.\ C = 360 ppm, N = 200 kg ha$^{-1}$). 
     Damages are reported as percent change in global production over currently cultivated land relative to the 1981-2010 baseline. Note that y-axis ranges are not uniform.
     As expected, the N response is smallest in soybeans, which are nitrogen fixers, and the C response smallest in maize, which is a C4 crop.
@@ -674,7 +674,7 @@ Note that these damage functions do not consider whether increased precipitation
 The GGCMI Phase~2 emulators are also intended as a tool for impacts assessments.
 The T and W functions presented in Figure \ref{fig:all_dims} are not true global projections, because they emulate the consequences of uniform shifts across the globe.
 However, the emulator allows building analogous damage functions based on climate model output, which has more realistic spatial patterns of changes in temperature and precipitation. 
-In Figure \ref{fig:globe_em}, we show emulated maize responses for 3 crop models under the RCP8.5 scenario, using output from 3 climate models from the CMIP-5 archive (HadGEM2-ES, GFDL-ESM2M, IPSL-CM5A-LR). 
+In Figure \ref{fig:globe_em}, we show emulated maize responses for 3 crop models under the RCP8.5 scenario, using output from 3 climate models from the CMIP5 archive. 
 Losses are shown as a function of mean growing-season temperature over currently cultivated land. While these damages functions aggregate over all currently cultivated land, the global coverage of GGCMI Phase~2 allows impacts modelers to develop damage functions for any desired geopolitical or geographic region larger than 0.5 degrees in latitude and longitude. 
 
 
@@ -683,14 +683,14 @@ Losses are shown as a function of mean growing-season temperature over currently
     \includegraphics[width = 16.3cm]{figures/global_em_maize.png}
     \caption{
     Illustration of the use of the emulator to study the factors affecting yields in more realistic climate scenario.
-    Figure shows emulated yield changes (relative to 1981-2010) for maize (both rainfed and irrigated) on currently cultivated land under RCP8.5 climate projections from 5 representative CMIP-5 climate models, using changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and C (\textbf{c}).  
-    X-axis is the mean growing-season temperature change over cultivated land, computed using the historical growing season; note these values will be higher than the corresponding global mean temperature change.
+	Figure shows emulated yield changes (relative to 1981-2010) for maize (both rainfed and irrigated) on currently cultivated land under RCP8.5 climate projections from 3 representative CMIP5 climate models ((HadGEM2-ES, GFDL-ESM2M, and IPSL-CM5A-LR), using changes to T only (\textbf{a}), to T and W (\textbf{b}), and to T, W, and C (\textbf{c}).  
+    The x-axis is the mean growing-season temperature change over cultivated land, computed using the historical growing season; note that these values will be higher than the corresponding global mean temperature change.
     Dots are emulated yearly global production changes to 2100 (90 years $\times$ 5 climate timeseries = 450 per crop model), with x-axis the mean historical growing-season T shift over all grid cells where maize is grown (unweighted by within-cell cultivated area).
     \textbf{a:} Using only temperature changes allows comparing regional simulated and emulated values. 
     Open squares are GGCMI Phase~2 simulated values for each T level, with CWN held at baseline; bold lines are emulated values over uniform delta T shifts (repeated in each panel). Emulation uncertainty (compare squares to lines) is small relative to differences across climate and crop models, and mean yield changes are similar whether T changes are applied as a uniform shift or in a more realistic spatial pattern (compare lines to dots). 
     \textbf{b:} Adding in precipitation changes increases yield spread across climate projections and depresses yield slightly. 
     \textbf{c:}  CO$_2$ fertilization is small in pDSSAT, moderate in LPJmL, and very large in PROMET. 
-    The separation of groups of points in PROMET (gold) results because CMIP-5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES.
+    The separation of groups of points in PROMET (gold) results because CMIP5 climate sensitivities differ by nearly a factor of two; points at far right are under HadGEM2-ES.
     No squares are shown in panel \textbf{b.} because the regular offsets of both T and W are not directly comparable to GCM-specific changes of T and W under an RCP.
     In RCP8.5, the 30-year-average CO$_2$ at end of century is 807 ppm \citep{riahi2011rcp}. 
 	For comparison, open squares in \textbf{c} show GGCMI-2 simulated production changes at T+6, W=0, C=810 ppm. (Note that  in these climate projections, mean CO$_2$ levels when T $>$ 5.8 degrees is 912 ppm.)
