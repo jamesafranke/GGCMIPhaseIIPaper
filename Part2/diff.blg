@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: diff.aux
+Case mismatch error between cite keys snyder2018 and Snyder2018
+---line 61 of file diff.aux
+ : \citation{snyder2018
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys snyder2018 and Snyder2018
+---line 67 of file diff.aux
+ : \citation{snyder2018
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys snyder2018 and Snyder2018
+---line 122 of file diff.aux
+ : \citation{snyder2018
+ :                     }
+I'm skipping whatever remains of this command
+The style file: copernicus.bst
+Database file #1: bib.bib
+Warning--I didn't find a database entry for "franke2019ctwnexperiment"
+You've used 92 entries,
+            2811 wiz_defined-function locations,
+            1675 strings with 41188 characters,
+and the built_in function-call counts, 132252 in all, are:
+= -- 13270
+> -- 8560
+< -- 17
++ -- 3385
+- -- 2766
+* -- 9573
+:= -- 14573
+add.period$ -- 92
+call.type$ -- 92
+change.case$ -- 1103
+chr.to.int$ -- 88
+cite$ -- 276
+duplicate$ -- 11317
+empty$ -- 5535
+format.name$ -- 3054
+if$ -- 25889
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 1555
+newline$ -- 285
+num.names$ -- 368
+pop$ -- 5687
+preamble$ -- 1
+purify$ -- 1103
+quote$ -- 0
+skip$ -- 6648
+stack$ -- 0
+substring$ -- 4437
+swap$ -- 10149
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 825
+warning$ -- 0
+while$ -- 480
+width$ -- 0
+write$ -- 1115
+(There were 3 error messages)
