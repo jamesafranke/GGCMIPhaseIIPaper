@@ -1,63 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diff.aux
-Case mismatch error between cite keys snyder2018 and Snyder2018
----line 61 of file diff.aux
- : \citation{snyder2018
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys snyder2018 and Snyder2018
----line 67 of file diff.aux
- : \citation{snyder2018
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys snyder2018 and Snyder2018
----line 122 of file diff.aux
- : \citation{snyder2018
- :                     }
-I'm skipping whatever remains of this command
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "franke2019ctwnexperiment"
-You've used 92 entries,
+Warning--I didn't find a database entry for "RayXX"
+You've used 93 entries,
             2811 wiz_defined-function locations,
-            1675 strings with 41188 characters,
-and the built_in function-call counts, 132252 in all, are:
-= -- 13270
-> -- 8560
+            1677 strings with 41198 characters,
+and the built_in function-call counts, 134946 in all, are:
+= -- 13502
+> -- 8815
 < -- 17
-+ -- 3385
-- -- 2766
-* -- 9573
-:= -- 14573
-add.period$ -- 92
-call.type$ -- 92
-change.case$ -- 1103
++ -- 3479
+- -- 2850
+* -- 9798
+:= -- 14902
+add.period$ -- 93
+call.type$ -- 93
+change.case$ -- 1133
 chr.to.int$ -- 88
-cite$ -- 276
-duplicate$ -- 11317
-empty$ -- 5535
-format.name$ -- 3054
-if$ -- 25889
-int.to.chr$ -- 5
+cite$ -- 279
+duplicate$ -- 11501
+empty$ -- 5619
+format.name$ -- 3141
+if$ -- 26406
+int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 1555
-newline$ -- 285
-num.names$ -- 368
-pop$ -- 5687
+missing$ -- 1590
+newline$ -- 288
+num.names$ -- 372
+pop$ -- 5805
 preamble$ -- 1
-purify$ -- 1103
+purify$ -- 1133
 quote$ -- 0
-skip$ -- 6648
+skip$ -- 6758
 stack$ -- 0
-substring$ -- 4437
-swap$ -- 10149
+substring$ -- 4501
+swap$ -- 10324
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 825
+type$ -- 834
 warning$ -- 0
-while$ -- 480
+while$ -- 486
 width$ -- 0
-write$ -- 1115
-(There were 3 error messages)
+write$ -- 1128
+(There was 1 warning)

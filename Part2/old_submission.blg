@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: old_submission.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "franke2019ctwnexperiment"
-You've used 79 entries,
+You've used 80 entries,
             2811 wiz_defined-function locations,
-            1587 strings with 35265 characters,
-and the built_in function-call counts, 109940 in all, are:
-= -- 11221
-> -- 6786
+            1595 strings with 35977 characters,
+and the built_in function-call counts, 112630 in all, are:
+= -- 11453
+> -- 7041
 < -- 17
-+ -- 2718
-- -- 2187
-* -- 7819
-:= -- 11950
-add.period$ -- 79
-call.type$ -- 79
-change.case$ -- 885
-chr.to.int$ -- 77
-cite$ -- 237
-duplicate$ -- 9602
-empty$ -- 4690
-format.name$ -- 2436
-if$ -- 21567
++ -- 2811
+- -- 2271
+* -- 8040
+:= -- 12279
+add.period$ -- 80
+call.type$ -- 80
+change.case$ -- 915
+chr.to.int$ -- 78
+cite$ -- 240
+duplicate$ -- 9786
+empty$ -- 4774
+format.name$ -- 2523
+if$ -- 22084
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1272
-newline$ -- 246
-num.names$ -- 316
-pop$ -- 4722
+missing$ -- 1307
+newline$ -- 249
+num.names$ -- 320
+pop$ -- 4840
 preamble$ -- 1
-purify$ -- 885
+purify$ -- 915
 quote$ -- 0
-skip$ -- 5650
+skip$ -- 5763
 stack$ -- 0
-substring$ -- 3811
-swap$ -- 8606
+substring$ -- 3875
+swap$ -- 8779
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 708
+type$ -- 717
 warning$ -- 0
-while$ -- 410
+while$ -- 416
 width$ -- 0
-write$ -- 956
-(There was 1 warning)
+write$ -- 969

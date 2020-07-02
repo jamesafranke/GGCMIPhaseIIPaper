@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{93}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -538,6 +538,12 @@ Ratto, M., Castelletti, A., and Pagano, A.: Emulation techniques for the
   Environmental Modelling \& Software, 34, 1 -- 4,
   \doi{10.1016/j.envsoft.2011.11.003}, 2012.
 
+\bibitem[{Ray et~al.(2015)Ray, Gerber, MacDonald, and West}]{ray_climate_2015}
+Ray, D.~K., Gerber, J.~S., MacDonald, G.~K., and West, P.~C.: Climate variation
+  explains a third of global crop yield variability, Nature Communications, 6,
+  5989, \doi{10.1038/ncomms6989},
+  \urlprefix\url{http://www.nature.com/articles/ncomms6989}, 2015.
+
 \bibitem[{Razavi et~al.(2012)Razavi, Tolson, and Burn}]{Razavi2012}
 Razavi, S., Tolson, B.~A., and Burn, D.~H.: Review of surrogate modeling in
   water resources, Water Resources Research, 48, \doi{10.1029/2011WR011527},
@@ -633,7 +639,7 @@ Schlenker, W. and Roberts, M.~J.: Nonlinear temperature effects indicate severe
   National Academy of Sciences, 106, 15\,594--15\,598,
   \doi{10.1073/pnas.0906865106}, 2009.
 
-\bibitem[{Snyder et~al.(2019)Snyder, Calvin, Phillips, and Ruane}]{snyder2018}
+\bibitem[{Snyder et~al.(2019)Snyder, Calvin, Phillips, and Ruane}]{Snyder2018}
 Snyder, A., Calvin, K.~V., Phillips, M., and Ruane, A.~C.: A crop yield change
   emulator for use in GCAM and similar models:Persephone v1.0, Geoscientific
   Model Development, 12, 1319--1350, \doi{10.5194/gmd-12-1319-2019},

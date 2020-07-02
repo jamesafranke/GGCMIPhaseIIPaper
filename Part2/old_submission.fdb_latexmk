@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex old_submission"] 1593639796 "old_submission.aux" "old_submission.bbl" "old_submission" 1593639807
+["bibtex old_submission"] 1593721380 "old_submission.aux" "old_submission.bbl" "old_submission" 1593721391
   "./copernicus.bst" 1400594604 39039 195b64fc943aa9550129b5d6dca7d4f1 ""
-  "bib.bib" 1593639105 93753 1d97f51626c0ab216a85f3b295da86b1 ""
-  "old_submission.aux" 1593639806 47953 09b9e598ce4f20de54af7d9f74e3b418 "pdflatex"
+  "bib.bib" 1593721355 94632 0733562e8bfe06c3bdc36f2cc6f9a455 ""
+  "old_submission.aux" 1593721390 48257 b244e54df20db42577b45ed61acaecdb "pdflatex"
   (generated)
-  "old_submission.bbl"
   "old_submission.blg"
-["pdflatex"] 1593639796 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.pdf" "old_submission" 1593639807
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.aux" 1593639806 47953 09b9e598ce4f20de54af7d9f74e3b418 ""
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.tex" 1593639764 94259 1c78ea786400ac4f4b0b5ec174a5b412 ""
+  "old_submission.bbl"
+["pdflatex"] 1593721380 "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.tex" "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.pdf" "old_submission" 1593721391
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.aux" 1593721390 48257 b244e54df20db42577b45ed61acaecdb ""
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.tex" 1593721356 94259 7c663271cdb8498a29042391484e0f89 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -183,12 +183,12 @@
   "figures/regression_example.png" 1574770040 691963 90bf9c05a75b4dca2b0aa4e0b99bbb18 ""
   "figures/regression_example_2.png" 1574770043 518376 19171f07dc327a889cc704da23402dfd ""
   "natbib.sty" 1400594604 36896 52c8390773d6d422f163602cfe494377 ""
-  "old_submission.aux" 1593639806 47953 09b9e598ce4f20de54af7d9f74e3b418 "pdflatex"
-  "old_submission.bbl" 1593639796 36028 85b5fc48a38d6feacd4e8ccb15cd2edd "bibtex old_submission"
-  "old_submission.tex" 1593639764 94259 1c78ea786400ac4f4b0b5ec174a5b412 ""
+  "old_submission.aux" 1593721390 48257 b244e54df20db42577b45ed61acaecdb "pdflatex"
+  "old_submission.bbl" 1593721380 37040 1712dd622f060da7884a2ebb4f409238 "bibtex old_submission"
+  "old_submission.tex" 1593721356 94259 7c663271cdb8498a29042391484e0f89 ""
   (generated)
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.log"
-  "old_submission.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.pdf"
   "old_submission.pdf"
   "old_submission.aux"
-  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.pdf"
+  "old_submission.log"
+  "/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/old_submission.log"
