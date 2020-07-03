@@ -715,8 +715,6 @@ Specific findings of this work include that:
     \item Emulators trained on the GGCMI Phase~2 dataset, which samples over uniform climate perturbations, can effectively reproduce the behavior of crop models driven by realistic future projections of future T and P changes. This result suggests that any projected changes in weather distributions (temperature and precipitation variability) have relatively little effect on crop model yield responses relative to changes in means, at least on the regionally aggregated level. %  the higher-order moments of the weather distribution matter very little compared to the change in the mean
 	    %While emulators based on the GGCMI Phase~2 protocol of uniform perturbations to historical climate will not reproduce any effects of changing variability in future climate projections (any temperature variability changes or precipitation variability changes other than multiplicative mean shifts), in practice these effects appear to be small, at least on the regionally aggregated level. 
 
-    \item 
-
  	 %5
 	\item The GGCMI emulators should provide a powerful tools for both model comparison and impacts assessments. The emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. Emulators can also be used to study differences across crop models in responses to individual drivers of yield changes, making them useful for model comparison and improvement.
 
@@ -746,13 +744,13 @@ The GGCMI Phase~2 models are not formally calibrated and so the emulators should
 %(the emulator intercept provided is an uncalibrated proxy of historical mean yields).
 Third, neither growing season specification tested in GGCMI Phase 2 (A0 and A1) accounts for a major potential adaptation pathway under climate change, a shift to earlier or later planting dates \citep{waha2012,minoli2019modeling}. 
 %This may be a significant factor, especially in the northern latitudes where agriculture may become viable in the future. More research in needed in this area.
-And finally, the emulator should not be used to predict individual yearly yields, as the forced climatological mean yield response does not necessarily track with the yield response to mean growing season weather in a single year. The emulator cannot then provide a measure of changing yield variance, and should not be used to evaluate extremes.
+And finally, the emulator should not be used to predict individual yearly yields, as the forced climatological mean yield response will not match the response to mean growing season weather in a single year. The emulator cannot provide a measure of changing yield variance, and should not be used to evaluate extremes.
 %in the near term, as the yield response to a 6K warmer year will not be the same as the 6K warmer climatological mean.
 %While we acknowledge that the omission of addressing year-to-year variability in our emulators limits their applicability to some assessments of climate change impacts (e.g. analyses of extreme events), changes in average conditions can be well reproduced by the emulators. 
 
 In summary, the GGCMI Phase~2 dataset and emulators invite a broad range of potential future avenues of analysis.
 Future studies using the emulators described here could include a detailed examination of interaction terms, robust quantification of model sensitivities to input drivers, and evaluation of geographic shifts in optimal growing regions. 
-The large suite of crop models emulated lends itself particularly well to model comparison efforts, including identifying locations of model consensus (or lack thereof) and identifying causes of model differences.
+The large suite of crop models emulated lends itself particularly well to model comparison efforts, including identifying locations of model consensus (or lack thereof) and causes of model differences.
 Studies of yield responses to changes in growing-season variability would require new simulations, but the emulators presented here provide a ready means of testing the null hypothesis that such effects are small.
 Similar structured training sets could be constructed to directly study responses to variability changes: see e.g.\ \citet{poppick2016, Haugen2018} for methods of constructing synthetic climate timeseries with altered variability. 
 The GGCMI Phase~2 dataset can be used as a testbed for examining the ability of statistical models using more detailed within-season regressors to capture both year-over-year and climatological changes, and for more systematic studies of emulation itself, including evaluation of alternate statistical specifications or machine learning methods.
