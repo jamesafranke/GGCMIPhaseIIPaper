@@ -1,7 +1,7 @@
 %% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL old_submission.tex   Thu Jul  2 15:22:36 2020
-%DIF ADD main2.tex            Thu Jul  2 19:12:53 2020
+%DIF ADD main2.tex            Thu Jul  2 22:51:14 2020
 %\documentclass[gmd, manuscript]{copernicus} %final manuscript
 \documentclass[gmdd]{copernicus} %final manuscript
 \definecolor{dark-gray}{gray}{0.4}
@@ -196,7 +196,7 @@ GGCMI Phase\DIFdelbegin \DIFdel{II}\DIFdelend \DIFaddbegin \DIFadd{~2}\DIFaddend
 \citep[CTWN-A,][]{franke2020ctwnexperiment,minoli2019adaptation}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend .
 The experiment is designed to allow diagnosing the impacts on crop yields of both individual factors and their joint effects, and to allow construction of crop model emulators.
-In \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{S:2} }\DIFaddend following, we describe the training dataset\DIFdelbegin \DIFdel{(Section \ref{S:2}) , the }\DIFdelend \DIFaddbegin \DIFadd{, including the GGCMI Phase 2 experimental protocol and model participation (Section \ref{S:2a}) and the models' differing year-over-year and climatological mean responses. Section \ref{S:3} describes the }\DIFaddend statistical model used for emulation\DIFdelbegin \DIFdel{(Section \ref{S:3}), }\DIFdelend \DIFaddbegin \DIFadd{, Section \ref{S:4} evaluates }\DIFaddend measures of emulator fidelity\DIFdelbegin \DIFdel{(Section \ref{S:4}), and }\DIFdelend \DIFaddbegin \DIFadd{, and Section \ref{S:5} shows }\DIFaddend examples of preliminary results\DIFdelbegin \DIFdel{(Section \ref{S:5})}\DIFdelend . 
+In \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{S:2} }\DIFaddend following, we describe the training dataset\DIFdelbegin \DIFdel{(Section \ref{S:2}) , the }\DIFdelend \DIFaddbegin \DIFadd{, including the GGCMI Phase 2 experimental protocol and model participation (Section \ref{S:2a}) and the models' differing year-over-year and climatological mean responses (Section \ref{S:2b}). Section \ref{S:3} describes the }\DIFaddend statistical model used for emulation\DIFdelbegin \DIFdel{(Section \ref{S:3}), }\DIFdelend \DIFaddbegin \DIFadd{, Section \ref{S:4} evaluates }\DIFaddend measures of emulator fidelity\DIFdelbegin \DIFdel{(Section \ref{S:4}), and }\DIFdelend \DIFaddbegin \DIFadd{, and Section \ref{S:5} shows }\DIFaddend examples of preliminary results\DIFdelbegin \DIFdel{(Section \ref{S:5})}\DIFdelend . 
 
 %DIF >  Readers may want to skip to section Section \ref{S:3} for emulator details.
  \DIFaddbegin 
@@ -206,9 +206,11 @@ In \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{S:2} }
 \section{Training dataset}
 \label{S:2}
 \subsection{The GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend dataset}
-\DIFaddbegin \label{S:2a}
-\DIFaddend \vspace{-0.2in}
-\begin{table*}[ht]
+\DIFdelbegin %DIFDELCMD < \vspace{-0.2in}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{S:2a}
+%DIF > \vspace{-0.2in}
+\DIFaddend \begin{table*}[ht]
     \caption{
     Crop models included in GGCMI Phase\DIFdelbeginFL \DIFdelFL{II }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{~2 }\DIFaddendFL emulators and the number of CTWN-A (Carbon \DIFaddbeginFL \DIFaddFL{dioxide}\DIFaddendFL , Temperature, Water, Nitrogen, Adaptation) simulations performed for each model. 
     The maximum number is 756 for A0 (no adaptation) experiments, and 648 for A1 (maintaining growing \DIFaddbeginFL \DIFaddFL{season }\DIFaddendFL length) experiments, since T0 is not simulated under A1. 
@@ -295,23 +297,27 @@ This may be a shortcoming if targeting absolute yield levels, but when focusing 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Climatological vs. year-to-year response}
+\subsection{Climatological vs. year-to-year \DIFdelbegin \DIFdel{response}\DIFdelend \DIFaddbegin \DIFadd{responses}\DIFaddend }
 \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdel{We emulate the climatological mean response, because that is the response of interest in assessments of }\DIFdelend \DIFaddbegin \label{S:2b}
-\DIFadd{The central metric in assessments of climate change impacts on crop yields is the change in multi-annual means \mbox{%DIFAUXCMD
-\citep[e.g.][]{Schlenker2009, Challinor2014, Rosenzweig2014, Muller_2015_implications, zhao2016plausible, hsiang_estimating_2017}
-}\hspace{0pt}%DIFAUXCMD
-and many impact assessments building on projected }\DIFaddend climate change impacts \DIFdelbegin \DIFdel{. 
-The }\DIFdelend \DIFaddbegin \DIFadd{on crop yields work with multi-annual yields, as their analysis frameworks require information on long-term effects rather than }\DIFaddend year-to-year \DIFaddbegin \DIFadd{variability \mbox{%DIFAUXCMD
+\DIFdel{We emulate the climatological mean response, because that is the response of interest }\DIFdelend \DIFaddbegin \label{S:2b}
+\DIFadd{The central metric }\DIFaddend in assessments of climate change impacts \DIFdelbegin \DIFdel{. 
+The }\DIFdelend \DIFaddbegin \DIFadd{on crop yields is the change in multi-annual means \mbox{%DIFAUXCMD
+\citep[e.g.][]{Schlenker2009, Challinor2014, Rosenzweig2014, Muller_2015_implications, zhao2016plausible, hsiang_estimating_2017}}\hspace{0pt}%DIFAUXCMD
+.
+Agricultural impacts assessments work with multi-annual yields, as their analysis frameworks require information on long-term effects %DIF >  rather than year-to-year variability 
+\mbox{%DIFAUXCMD
 \citep[e.g.][]{nelson2014climate, Stevanovic2016, Wiebe_2015, hasegawa2018risk, Snyder2018}}\hspace{0pt}%DIFAUXCMD
 .
-Changes in extremes or year-to-year variability are other metrics of interest, but often not explicitly considered in integrated climate change impact assessments or land-use change projections that require light-weight flexible emulators, so that we emulate the climatological mean response.
-Additionally, the year-to-year }\DIFaddend response can be significantly different from the forced climatological one, so we do not \DIFaddbegin \DIFadd{attempt to }\DIFaddend use information from year-to-year variability but instead emulate the aggregated mean yield in each 30-year simulation. 
-Emulation then becomes relatively straightforward, since changes in time-averaged yields are also considerably smoother than those in year-to-year yield response.
+Changes in extremes or }\DIFaddend year-to-year \DIFdelbegin \DIFdel{response can be significantly different from the forced climatological one, so we do not use information from year-to-year }\DIFdelend variability \DIFdelbegin \DIFdel{but instead emulate the }\DIFdelend \DIFaddbegin \DIFadd{are other metrics of potential interest, but are often not explicitly considered in integrated climate change impact assessments or land-use change projections. %DIF >  that require light-weight flexible emulators, 
+%DIF > Additionally, the year-to-year response can be significantly different from the forced climatological one, so we do not attempt to use information from year-to-year variability but instead emulate  
+For this reason we emulate the climatological mean response, i.e.\ the change in }\DIFaddend aggregated mean yield in each 30-year simulation.
+Emulation then becomes relatively straightforward, since changes in time-averaged yields are \DIFdelbegin \DIFdel{also }\DIFdelend considerably smoother than those in year-to-year yield response.
+\DIFdelbegin %DIFDELCMD < 
 
-In the GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend simulation output dataset, year-to-year responses to weather are often quantitatively distinct from responses to climatological shifts, with the discrepancy especially strong in wheat and rice. 
+%DIFDELCMD < %%%
+\DIFdelend In the GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend simulation output dataset, year-to-year responses to weather are \DIFaddbegin \DIFadd{also }\DIFaddend often quantitatively distinct from responses to climatological shifts, with the discrepancy especially strong in wheat and rice. 
 The difference in behavior is illustrated in Figure \ref{fig:yearvclim}, which shows irrigated and rainfed maize and wheat in representative locations\DIFdelbegin \DIFdel{; open circles and black lines show the climatological mean response, and solid circles and colored lines the responses for the 30 individual years in individual scenarios}\DIFdelend .
 When discrepancies are large, year-to-year responses are generally stronger than climatological ones, but exact responses differ by crop and region and even by model within GGCMI Phase\DIFdelbegin \DIFdel{II. 
 }\DIFdelend \DIFaddbegin \DIFadd{~2. 
@@ -508,7 +514,7 @@ We analyze here results using the 34-term polynomial of Equation \ref{eqn:featur
 
 \subsection{Yield response}
 \label{S:4.1}
-Crop yields show strong spatial differentiation across geographic regions, and emulators are able to readily reproduce these. Figure \ref{fig:map_pattern} illustrates the spatial yield pattern under current climate for one crop and model (maize in LPJmL). Absolute emulation errors are low --  99.8\% of grid cells have errors below 0.5 tons ha$^{-1}$ -- but 
+Crop yields show strong spatial differentiation across geographic regions, and emulators are able to readily reproduce these \DIFaddbegin \DIFadd{patterns}\DIFaddend . Figure \ref{fig:map_pattern} \DIFdelbegin \DIFdel{illustrates the spatial yield pattern }\DIFdelend \DIFaddbegin \DIFadd{shows one example of simulated and emulated yields }\DIFaddend under current climate\DIFdelbegin \DIFdel{for one crop and model (}\DIFdelend \DIFaddbegin \DIFadd{, using }\DIFaddend maize in LPJmL\DIFdelbegin \DIFdel{)}\DIFdelend . Absolute emulation errors \DIFaddbegin \DIFadd{for this model-crop combination }\DIFaddend are low --  99.8\% of grid cells  have errors below 0.5 tons ha$^{-1}$ -- but 
 emulation errors as a percentage of baseline yield can be large in areas with low potential yield and no current cultivation in the real world (e.g.\ the Sahara, Patagonia).
 These regions are not currently viable for agriculture and may never become viable even under extreme climate change.  
 Emulator spatial skill varies across models and crops, with maize being the quantitatively easiest to emulate across all models and locations.
@@ -653,7 +659,7 @@ For example, \DIFaddbegin \DIFadd{over currently cultivated land, }\DIFaddend CA
 Over simulated }\DIFdelend \DIFaddbegin \DIFadd{reduced 23-term Equation \ref{eqn:features_reduced}. 
 The effect is reversed over }\DIFaddend uncultivated land, \DIFaddbegin \DIFadd{with }\DIFaddend CARAIB maize emulators \DIFdelbegin \DIFdel{have }\DIFdelend \DIFaddbegin \DIFadd{showing }\DIFaddend $e < 1$ \DIFdelbegin \DIFdel{for only 88.7}\DIFdelend \DIFaddbegin \DIFadd{over 93.7}\DIFaddend \% of area with the \DIFdelbegin \DIFdel{reduced Equation \ref{eqn:features_reduced} but 93.7\% with the }\DIFdelend full Equation \DIFdelbegin \DIFdel{\ref{eqn:features_original}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eqn:features_original} but only over 88.7\% of area with the reduced Equation \ref{eqn:features_reduced}}\DIFaddend .  
 
-Note that the normalized error assessment is relatively forgiving for several reasons. 
+\DIFdelbegin \DIFdel{Note that the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend normalized error assessment is relatively forgiving for several reasons. 
 First, it is an in-sample validation, with the emulation evaluated against the simulations actually used to train the emulator. 
 Had we used a spline interpolation, the error would necessarily be zero. 
 Second, the metric scales emulator fidelity not by the magnitude of yield changes in the evaluated model but by the spread in yield changes across models. 
@@ -791,7 +797,7 @@ Bias in the historical climate timeseries could in theory produce discrepancies 
 \end{figure*}
 
 The crop model emulators developed here can be used for a variety of applications, because the emulator transforms the discrete simulation samples into a continuous response surface at any geographic scale. One use is construction of continuous agricultural damage functions in a flexible format. 
-As an example, we present in  Figure \ref{fig:all_dims} global damage functions over each of the four dimensions tested in this study, constructed from the 4D emulation of each crop model.
+As an example, we present in Figure \ref{fig:all_dims} global damage functions over each of the four dimensions tested in this study, constructed from the 4D emulation of each crop model.
 %DIF <   the ensemble median is shown as a bold line.
 
 These damage functions are useful in diagnosing commonalities and differences in the responses of crop models. 
@@ -874,7 +880,7 @@ Note that the pattern-related yield effects are actually relatively small for ma
 In this work we describe a new class of global gridded crop model emulators for 5 crops (maize, soy, rice and spring and winter wheat) and 9 process-based crop models, based on the GGCMI Phase\DIFdelbegin \DIFdel{II dataset.
 The systematic parameter sampling of the GGCMI Phase II experiment allows emulating }\DIFdelend \DIFaddbegin \DIFadd{~2 dataset, a set of crop model simulations run with systematic perturbations to carbon, temperature, precipitation, and nitrogen (CTWN). The goal of this project is to provide a lightweight tool that reproduces the output of large numerical simulations of process-based crop models. The resulting emulators should provide useful tools both for diagnosing crop model behavior and for climate impacts assessment, at least of large-scale time-averaged responses.
   %DIF > \item we emulate mean climatological yields against mean growing season weather drivers (+ CO$_2$ and applied nitrogen)
-Specific findings of this work include that
+Specific findings of this work include that:
 }\begin{itemize}
 		%DIF > 2.2
     \item \DIFadd{In crop models, the climatological mean yield responses to uniform perturbations in growing-season mean temperature and precipitation are very distinct from responses to historical weather fluctuations associated with the same mean differences. This result suggests that when emulating crop models, care must be taken if considering responses on both short and long timescales. The large GGCMI Phase~2 experiment allows us to emulate }\DIFaddend climatological-mean \DIFdelbegin \DIFdel{crop yield }\DIFdelend responses with a \DIFdelbegin \DIFdel{relatively }\DIFdelend simple statistical model \DIFaddbegin \DIFadd{without relying on the ``natural experiment'' of year-over-year variations. 
@@ -896,35 +902,37 @@ While emulators based on the GGCMI PhaseII protocol of uniform perturbations to 
 
  	 %DIF < , we show that emulation based on uniform climate shifts is able to sufficiently reproduce the response of a crop model driven by a more realistic climate scenario at the global scale, with some relatively minor errors for rice at high latitudes.
 %DIF < Excellent agreement between emulation and simulation at the temporally aggregate timescale shows the value of the emulator as an impacts assessment tool.
-%DIF > 5
-	\DIFaddbegin \item \DIFadd{The emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. Emulators can also be used to study differences across crop models in sensitivity to major drivers of yield change in a climate context, making them a useful tool for crop model comparison and improvement.
-}\DIFaddend 
+\DIFdelbegin %DIFDELCMD < 
 
-		     %DIF < providing a lightweight, flexible tool The use of a parametric statistical model in turn offers the possibility of physical interpretation of parameter values that can assist in model intercomparison and evaluation. 
+%DIFDELCMD < %%%
+%DIF < providing a lightweight, flexible tool The use of a parametric statistical model in turn offers the possibility of physical interpretation of parameter values that can assist in model intercomparison and evaluation. 
 %DIF < We show that the polynomial emulation of the mean-climatological response is feasible, with out of sample prediction errors less than 5\% of yield changes both regionally and at the global scale.
-%DIF > \item under climate change change in the long-term, 
+%DIFDELCMD < 
 
-\DIFdelbegin \DIFdel{Emulators provide }\DIFdelend \DIFaddbegin \end{itemize}
+%DIFDELCMD < %%%
+\DIFdel{Emulators provide }\DIFdelend %DIF > 5
+	\DIFaddbegin \item \DIFadd{The GGCMI emulators should provide a }\DIFaddend powerful tools for both model comparison and impacts assessments\DIFdelbegin \DIFdel{by capturing the responses of }\DIFdelend \DIFaddbegin \DIFadd{. The emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. Emulators can also be used to study differences across crop models in responses to individual drivers of yield changes, making them useful for model comparison and improvement.
+}
+
+		     %DIF > \item under climate change change in the long-term, 
+
+\end{itemize}
 
 %DIF > XX --- UTILITY --- XX
-\DIFadd{The emulators presented here should provide a }\DIFaddend powerful tools for both model comparison and impacts assessments by capturing the responses of process-based crop models in a lightweight form. 
-\DIFdelbegin \DIFdel{The emulators provide over }\DIFdelend \DIFaddbegin \DIFadd{While an emulator will never be more }\textit{\DIFadd{accurate}} \DIFadd{then the parent model, they have multiple advantages over computationally intensive process-based models. 
-The systematic sampling of the GGCMI Phase 2 experiment provides information on the influence of multiple interacting factors in a way that realistic climate model simulations cannot. 
-The use of a parametric statistical model allows physical interpretation of parameter values that helps in understanding differences between crop models. 
-Finally, the emulators facilitate incorporating crop model responses into impacts assessments, by allowing computationally tractable reproduction of yield responses to arbitrary future scenarios.
-Data storage requirements are reduced by }\DIFaddend three orders of magnitude\DIFdelbegin \DIFdel{reduction in data storage}\DIFdelend : the yield output for a single crop model \DIFdelbegin \DIFdel{that simulates all GGCMIP PhaseII }\DIFdelend \DIFaddbegin \DIFadd{simulating all GGCMI Phase~2 }\DIFaddend scenarios for 5 crops is $\sim$12.5 GB\DIFdelbegin \DIFdel{; }\DIFdelend \DIFaddbegin \DIFadd{, while the }\DIFaddend equivalent global gridded emulator parameters are only $\sim$20 MB\DIFdelbegin \DIFdel{and allow emulation of arbitrary future scenarios}\DIFdelend . 
-Computational requirements are nearly negligible: a thousand years of global 0.5 degree yields, i.e\ $\sim$40,000,000 individual yield projections, can be emulated in 20 seconds on a laptop computer. 
-The \DIFdelbegin \DIFdel{emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. 
-}\DIFdelend \DIFaddbegin \DIFadd{resulting tool should assist in climate impacts analyses, such as in agricultural economics \mbox{%DIFAUXCMD
-\citep{Stevanovic2016}}\hspace{0pt}%DIFAUXCMD
-, including 
-addressing the uncertainty embedded in the crop model choice \mbox{%DIFAUXCMD
-\citep{muller_global_2017}}\hspace{0pt}%DIFAUXCMD
-. 
-Their flexibility and low computational requirements make them particularly suitable for applications in integrated climate change impact assessments and projections of land-use change \mbox{%DIFAUXCMD
+
+\DIFadd{While an emulator that captures the response of a }\DIFaddend process-based crop models in a lightweight form  \DIFdelbegin \DIFdel{. The emulators provide over }\DIFdelend \DIFaddbegin \DIFadd{will never be more }\textit{\DIFadd{accurate}} \DIFadd{then its parent model, it can have multiple advantages over a numerical simulation. 
+Emulation over the systematic sampling of the GGCMI Phase 2 experiment provides information on the influence of multiple interacting factors in a way that individual, more realistic process-based model runs cannot. 
+Because we use a parametric statistical model, fitted parameter values can be physical interpreted to help understand differences between crop models. 
+The flexibility and low computational requirements of emulators also make them particularly suitable for applications in integrated climate change impact assessments and projections of land-use change \mbox{%DIFAUXCMD
 \citep[e.g.][]{nelson2014}}\hspace{0pt}%DIFAUXCMD
 .
-}\DIFaddend 
+Data storage requirements are reduced by }\DIFaddend three orders of magnitude\DIFdelbegin \DIFdel{reduction in data storage}\DIFdelend : the yield output for a single crop model \DIFdelbegin \DIFdel{that simulates all GGCMIP PhaseII }\DIFdelend \DIFaddbegin \DIFadd{simulating all GGCMI Phase~2 }\DIFaddend scenarios for 5 crops is $\sim$12.5 GB\DIFdelbegin \DIFdel{; }\DIFdelend \DIFaddbegin \DIFadd{, while the }\DIFaddend equivalent global gridded emulator parameters are only $\sim$20 MB\DIFdelbegin \DIFdel{and allow emulation of arbitrary future scenarios}\DIFdelend . 
+Computational requirements are nearly negligible: a thousand years of global 0.5 degree yields, i.e\ $\sim$40,000,000 individual yield projections, can be emulated in 20 seconds on a laptop computer. The \DIFdelbegin \DIFdel{emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework}\DIFdelend \DIFaddbegin \DIFadd{resulting suite of emulators should find considerable use in climate impacts analyses \mbox{%DIFAUXCMD
+\citep[e.g.][]{Stevanovic2016}}\hspace{0pt}%DIFAUXCMD
+, and allow  
+explicit evaluation of the uncertainty embedded in the choice of climate and crop models \mbox{%DIFAUXCMD
+\citep{muller_global_2017}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . 
 
 %DIF > XX--- CAVEATS --- XX
 Several cautions should be noted when using the emulators presented here. 
@@ -937,21 +945,24 @@ This constraint is important given the strong warming expected under business-as
 \DIFdelbegin \DIFdel{Because the GGCMI PhaseII experiment was designed to focus on yield changes and not on replicating real-world yields, most }\DIFdelend %DIF > Because the GGCMI Phase~2 experiment was designed to focus on yield changes and not on replicating real-world yields, most models are not formally calibrated to historical yields in the baseline scenario. 
 \DIFaddbegin \DIFadd{The GGCMI Phase~2 }\DIFaddend models are not formally calibrated \DIFdelbegin \DIFdel{, and their
 }\DIFdelend \DIFaddbegin \DIFadd{and so the }\DIFaddend emulators should be used for absolute \DIFdelbegin \DIFdel{impacts }\DIFdelend projections only in combination with historical \DIFdelbegin \DIFdel{yield data.
-}\DIFdelend \DIFaddbegin \DIFadd{data.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{The GGCMI Phase II }\DIFdelend \DIFaddbegin \DIFadd{data.
 %DIF > (the emulator intercept provided is an uncalibrated proxy of historical mean yields).
-Third, neither growing season specification tested in GGCMI Phase 2 (A0 and A1) accounts for a major potential adaptation pathway under climate change, shifts to earlier or later planting dates \mbox{%DIFAUXCMD
+Third, neither growing season specification tested in GGCMI Phase 2 (A0 and A1) accounts for a major potential adaptation pathway under climate change, a shift to earlier or later planting dates \mbox{%DIFAUXCMD
 \citep{waha2012,minoli2019modeling}}\hspace{0pt}%DIFAUXCMD
 . 
 %DIF > This may be a significant factor, especially in the northern latitudes where agriculture may become viable in the future. More research in needed in this area.
-And finally, the emulator should not be used to predict yearly yields, as the forced climatological mean yield response does not necessarily track with the yield response mean growing season weather in a single year.
+And finally, the emulator should not be used to predict individual yearly yields, as the forced climatological mean yield response will not match the response to mean growing season weather in a single year. The emulator cannot provide a measure of changing yield variance, and should not be used to evaluate extremes.
 %DIF > in the near term, as the yield response to a 6K warmer year will not be the same as the 6K warmer climatological mean.
 %DIF > While we acknowledge that the omission of addressing year-to-year variability in our emulators limits their applicability to some assessments of climate change impacts (e.g. analyses of extreme events), changes in average conditions can be well reproduced by the emulators. 
-}\DIFaddend 
+}
 
-\DIFaddbegin \DIFadd{In summary, }\DIFaddend The GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend dataset and emulators invite a broad range of potential future avenues of analysis.
+\DIFadd{In summary, the GGCMI Phase~2 }\DIFaddend dataset and emulators invite a broad range of potential future avenues of analysis.
 %DIF <  -- XX --- OLD Potential future studies could include a detailed examination of interaction terms, robust quantification of model sensitivities to input drivers, exploration of yield responses to extremes or interannual variability, and evaluation of geographic shifts in optimal growing regions.  Studies of yield responses to changes in growing-season variability would require new simulations, but the GGCMI Phase II emulators provide a ready means of testing the null hypothesis that such effects are small. Similar structured training sets could be constructed to directly study responses to variability changes: see e.g.\ \citet{poppick2016, Haugen2018} for methods of constructing synthetic climate timeseries with altered variability.  The GGCMI Phase II dataset also enables studies of emulation itself, including more systematic evaluation of statistical model specifications or machine learning methods.  In general, the GGCMI Phase II experiment demonstrates the promise and utility of systematic parameters sweeps for improving understanding of the factors driving crop responses and for evaluating and improving process-based crop models.
 Future studies using the emulators described here could include a detailed examination of interaction terms, robust quantification of model sensitivities to input drivers, and evaluation of geographic shifts in optimal growing regions. 
-\DIFaddbegin \DIFadd{The large suite of crop models emulated lends itself particularly well to model comparison efforts, including identifying locations of model consensus (or lack thereof) and identifying causes of model differences.
+\DIFaddbegin \DIFadd{The large suite of crop models emulated lends itself particularly well to model comparison efforts, including identifying locations of model consensus (or lack thereof) and causes of model differences.
 }\DIFaddend Studies of yield responses to changes in growing-season variability would require new simulations, but the emulators presented here provide a ready means of testing the null hypothesis that such effects are small.
 Similar structured training sets could be constructed to directly study responses to variability changes: see e.g.\ \citet{poppick2016, Haugen2018} for methods of constructing synthetic climate timeseries with altered variability. 
 The GGCMI Phase\DIFdelbegin \DIFdel{II }\DIFdelend \DIFaddbegin \DIFadd{~2 }\DIFaddend dataset can be used as a testbed for examining the ability of statistical models using more detailed within-season regressors to capture both year-over-year and climatological changes, and for more systematic studies of emulation itself, including evaluation of alternate \DIFaddbegin \DIFadd{statistical }\DIFaddend specifications or machine learning methods.
