@@ -715,6 +715,8 @@ Specific findings of this work include that:
     \item Emulators trained on the GGCMI Phase~2 dataset, which samples over uniform climate perturbations, can effectively reproduce the behavior of crop models driven by realistic future projections of future T and P changes. This result suggests that any projected changes in weather distributions (temperature and precipitation variability) have relatively little effect on crop model yield responses relative to changes in means, at least on the regionally aggregated level. %  the higher-order moments of the weather distribution matter very little compared to the change in the mean
 	    %While emulators based on the GGCMI Phase~2 protocol of uniform perturbations to historical climate will not reproduce any effects of changing variability in future climate projections (any temperature variability changes or precipitation variability changes other than multiplicative mean shifts), in practice these effects appear to be small, at least on the regionally aggregated level. 
 
+    \item 
+
  	 %5
 	\item The GGCMI emulators should provide a powerful tools for both model comparison and impacts assessments. The emulators can be used to develop standalone damage functions at any geographic scale larger that 0.5 degrees, or can be integrated directly into a larger integrated assessment model (IAM) framework. Emulators can also be used to study differences across crop models in responses to individual drivers of yield changes, making them useful for model comparison and improvement.
 
@@ -724,7 +726,7 @@ Specific findings of this work include that:
 
 %XX --- UTILITY --- XX
  
-The emulators presented here capture the responses of process-based crop models in a lightweight form. While an emulator will never be more \textit{accurate} then its parent model, it can have multiple advantages over a computationally intensive numerical simulation. 
+While an emulator that captures the response of a process-based crop models in a lightweight form  will never be more \textit{accurate} then its parent model, it can have multiple advantages over a numerical simulation. 
 Emulation over the systematic sampling of the GGCMI Phase 2 experiment provides information on the influence of multiple interacting factors in a way that individual, more realistic process-based model runs cannot. 
 Because we use a parametric statistical model, fitted parameter values can be physical interpreted to help understand differences between crop models. 
 The flexibility and low computational requirements of emulators also make them particularly suitable for applications in integrated climate change impact assessments and projections of land-use change \citep[e.g.][]{nelson2014}.
@@ -748,7 +750,7 @@ And finally, the emulator should not be used to predict individual yearly yields
 %in the near term, as the yield response to a 6K warmer year will not be the same as the 6K warmer climatological mean.
 %While we acknowledge that the omission of addressing year-to-year variability in our emulators limits their applicability to some assessments of climate change impacts (e.g. analyses of extreme events), changes in average conditions can be well reproduced by the emulators. 
 
-In summary, The GGCMI Phase~2 dataset and emulators invite a broad range of potential future avenues of analysis.
+In summary, the GGCMI Phase~2 dataset and emulators invite a broad range of potential future avenues of analysis.
 Future studies using the emulators described here could include a detailed examination of interaction terms, robust quantification of model sensitivities to input drivers, and evaluation of geographic shifts in optimal growing regions. 
 The large suite of crop models emulated lends itself particularly well to model comparison efforts, including identifying locations of model consensus (or lack thereof) and identifying causes of model differences.
 Studies of yield responses to changes in growing-season variability would require new simulations, but the emulators presented here provide a ready means of testing the null hypothesis that such effects are small.
