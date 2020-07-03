@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: diff.aux
 The style file: copernicus.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "RayXX"
 You've used 93 entries,
             2811 wiz_defined-function locations,
-            1677 strings with 41198 characters,
-and the built_in function-call counts, 134946 in all, are:
-= -- 13502
-> -- 8815
+            1680 strings with 41388 characters,
+and the built_in function-call counts, 133110 in all, are:
+= -- 13355
+> -- 8599
 < -- 17
-+ -- 3479
-- -- 2850
-* -- 9798
-:= -- 14902
++ -- 3402
+- -- 2778
+* -- 9638
+:= -- 14668
 add.period$ -- 93
 call.type$ -- 93
-change.case$ -- 1133
-chr.to.int$ -- 88
+change.case$ -- 1109
+chr.to.int$ -- 89
 cite$ -- 279
-duplicate$ -- 11501
-empty$ -- 5619
-format.name$ -- 3141
-if$ -- 26406
-int.to.chr$ -- 6
+duplicate$ -- 11399
+empty$ -- 5584
+format.name$ -- 3069
+if$ -- 26058
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 1590
+missing$ -- 1566
 newline$ -- 288
 num.names$ -- 372
-pop$ -- 5805
+pop$ -- 5739
 preamble$ -- 1
-purify$ -- 1133
+purify$ -- 1109
 quote$ -- 0
-skip$ -- 6758
+skip$ -- 6671
 stack$ -- 0
-substring$ -- 4501
-swap$ -- 10324
+substring$ -- 4464
+swap$ -- 10214
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 834
 warning$ -- 0
-while$ -- 486
+while$ -- 485
 width$ -- 0
 write$ -- 1128
-(There was 1 warning)

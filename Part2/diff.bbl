@@ -87,11 +87,10 @@ Folberth, C., Gaiser, T., Abbaspour, K.~C., Schulin, R., and Yang, H.:
   Agriculture, Ecosystems \& Environment, 151, 21 -- 33,
   \doi{10.1016/j.agee.2012.01.026}, 2012.
 
-\bibitem[{Franke et~al.(2020{\natexlab{a}})Franke, M\"uller, Elliott, Ruane,
-  J\"agermeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Fran\c{c}ois, Hank,
-  Hoffmann, Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin,
-  Phillips, Pugh, Reddy, Wang, Williams, Zabel, and
-  Moyer}]{franke2019ctwnexperiment}
+\bibitem[{Franke et~al.(2020)Franke, M\"uller, Elliott, Ruane, J\"agermeyr,
+  Balkovic, Ciais, Dury, Falloon, Folberth, Fran\c{c}ois, Hank, Hoffmann,
+  Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin, Phillips, Pugh,
+  Reddy, Wang, Williams, Zabel, and Moyer}]{franke2020ctwnexperiment}
 Franke, J.~A., M\"uller, C., Elliott, J., Ruane, A.~C., J\"agermeyr, J.,
   Balkovic, J., Ciais, P., Dury, M., Falloon, P.~D., Folberth, C.,
   Fran\c{c}ois, L., Hank, T., Hoffmann, M., Izaurralde, R.~C., Jacquemin, I.,
@@ -101,25 +100,7 @@ Franke, J.~A., M\"uller, C., Elliott, J., Ruane, A.~C., J\"agermeyr, J.,
   under uniform changes in \chem{CO_2}, temperature, water, and nitrogen levels
   (protocol version 1.0), Geoscientific Model Development, 13, 2315--2336,
   \doi{10.5194/gmd-13-2315-2020},
-  \urlprefix\url{https://gmd.copernicus.org/articles/13/2315/2020/},
-  2020{\natexlab{a}}.
-
-\bibitem[{Franke et~al.(2020{\natexlab{b}})Franke, M\"uller, Elliott, Ruane,
-  J\"agermeyr, Balkovic, Ciais, Dury, Falloon, Folberth, Fran\c{c}ois, Hank,
-  Hoffmann, Izaurralde, Jacquemin, Jones, Khabarov, Koch, Li, Liu, Olin,
-  Phillips, Pugh, Reddy, Wang, Williams, Zabel, and
-  Moyer}]{franke2020ctwnexperiment}
-Franke, J.~A., M\"uller, C., Elliott, J., Ruane, A.~C., J\"agermeyr, J.,
-  Balkovic, J., Ciais, P., Dury, M., Falloon, P.~D., Folberth, C.,
-  Fran\c{c}ois, L., Hank, T., Hoffmann, M., Izaurralde, R.~C., Jacquemin, I.,
-  Jones, C., Khabarov, N., Koch, M., Li, M., Liu, W., Olin, S., Phillips, M.,
-  Pugh, T. A.~M., Reddy, A., Wang, X., Williams, K., Zabel, F., and Moyer,
-  E.~J.: The GGCMI Phase 2 experiment: global gridded crop model simulations
-  under uniform changes in \chem{CO_2}, temperature, water, and nitrogen levels
-  (protocol version 1.0), Geoscientific Model Development, 13, 2315--2336,
-  \doi{10.5194/gmd-13-2315-2020},
-  \urlprefix\url{https://gmd.copernicus.org/articles/13/2315/2020/},
-  2020{\natexlab{b}}.
+  \urlprefix\url{https://gmd.copernicus.org/articles/13/2315/2020/}, 2020.
 
 \bibitem[{Frieler et~al.(2017)Frieler, Lange, Piontek, Reyer, Schewe,
   Warszawski, Zhao, Chini, Denvil, Emanuel, Geiger, Halladay, Hurtt, Mengel,
@@ -556,6 +537,12 @@ Ratto, M., Castelletti, A., and Pagano, A.: Emulation techniques for the
   reduction and sensitivity analysis of complex environmental models,
   Environmental Modelling \& Software, 34, 1 -- 4,
   \doi{10.1016/j.envsoft.2011.11.003}, 2012.
+
+\bibitem[{Ray et~al.(2015)Ray, Gerber, MacDonald, and West}]{ray_climate_2015}
+Ray, D.~K., Gerber, J.~S., MacDonald, G.~K., and West, P.~C.: Climate variation
+  explains a third of global crop yield variability, Nature Communications, 6,
+  5989, \doi{10.1038/ncomms6989},
+  \urlprefix\url{http://www.nature.com/articles/ncomms6989}, 2015.
 
 \bibitem[{Razavi et~al.(2012)Razavi, Tolson, and Burn}]{Razavi2012}
 Razavi, S., Tolson, B.~A., and Burn, D.~H.: Review of surrogate modeling in

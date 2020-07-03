@@ -74,12 +74,8 @@ Statistical emulation allows combining advantageous features of statistical and 
 We describe here the development of emulators for nine process-based crop models and five crops using output from the Global Gridded Model Intercomparison Project (GGCMI) Phase~2. 
 The GGCMI Phase~2 experiment is designed with the explicit goal of producing a structured training dataset for emulator development that samples across four dimensions relevant to crop yields: atmospheric carbon dioxide (CO$_2$) concentrations, temperature, water supply, and nitrogen inputs (CTWN). 
 Simulations are run under two different adaptation assumptions: that growing seasons shorten in warmer climates, and that cultivar choice allows growing seasons to remain fixed.  
-The dataset allows emulating the climatological mean yield response of all models with a simple polynomial in mean growing-season values. %  of all models in nearly all locations.
-Climatological mean yields are a central metric in climate change impact analysis; we show here that they can be captured without relying on interannual variations. %, which are quantitatively different.
-	%and relevant in many analyses of effects of climate change impacts, such as in integrated climate change impact assessments.
-%OLD The dataset allows emulating the climatological mean yield response without relying on interannual variations; we show that these are quantitatively different.
-%Climatological mean yields are a central metric in climate change impact analysis 
-	%and relevant in many analyses of effects of climate change impacts, such as in integrated climate change impact assessments.  Climatological mean yield responses can be readily captured with a simple polynomial in nearly all locations, with errors significant only in some marginal lands where crops are not currently grown. 
+The dataset allows emulating the climatological mean yield response of all models with a simple polynomial in mean growing-season values.
+Climatological mean yields are a central metric in climate change impact analysis; we show here that they can be captured without relying on interannual variations.
 In general, emulation errors are negligible relative to differences across crop models or even across climate model scenarios; errors become significant only in some marginal lands where crops are not currently grown.  We demonstrate that the resulting GGCMI emulators can reproduce yields under realistic future climate simulations, even though the GGCMI Phase~2 dataset is constructed with uniform CTWN offsets, suggesting that the effects of changes in temperature and precipitation distributions are small relative to those of changing means. 
 The resulting emulators therefore capture relevant crop model responses in a lightweight, computationally tractable form, providing a tool that can facilitate model comparison, diagnosis of interacting factors affecting yields, and integrated assessment of climate impacts.
 \end{abstract}
@@ -559,7 +555,7 @@ See Supplemental Material Section 9 for maps of cross validation RMSE for each c
 \begin{table*}[ht]
     \caption{
     RMSE of emulator replication of simulated yields of rainfed crops, stated as a percentage of simulated yield change.
-    Values are the mean grid cell error as a percentage of simulated yield change, over all currently cultivated grid cells weighted by cultivation area, for selected major regions (NA: North America, SA: South America). For comparison, global mean values are show in parentheses. 
+    Values are the mean grid cell error as a percentage of simulated yield change, over all currently cultivated grid cells weighted by cultivation area, for selected major regions (NA: North America, SA: South America). For comparison, global mean values are shown in parentheses. 
     Errors are calculated using the 90-10 cross validation scheme described in text, with the model trained on 90\% of the data and validated on the held-out 10\% (repeated twice). All fits are made with the Bayesian Ridge method; 
     for context we mark with * those cases where the Bayesian Ridge is required because the OLS linear model fails (e.g.\ PEPIC, which has the lowest number of samples at n=121).
     } 
