@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  2 JUL 2020 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  3 JUL 2020 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2926,108 +2926,108 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 86.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 82.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 86.
+(Font)              scaled to size 8.54997pt on input line 82.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (4.05501pt too wide) in paragraph at lines 154--154
+Overfull \hbox (4.05501pt too wide) in paragraph at lines 150--150
 []|\T1/ptm/b/n/9 Soybean| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 []|\T1/ptm/b/n/9 Winter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 []|\T1/ptm/b/n/9 Spring
  []
 
 [4] [5]
-<figures/phase_II_em_figure_1.png, id=294, 589.5626pt x 407.6028pt>
+<figures/phase_II_em_figure_1.png, id=302, 589.5626pt x 407.6028pt>
 File: figures/phase_II_em_figure_1.png Graphic file (type png)
 <use figures/phase_II_em_figure_1.png>
-Package pdftex.def Info: figures/phase_II_em_figure_1.png  used on input line 225.
+Package pdftex.def Info: figures/phase_II_em_figure_1.png  used on input line 222.
 (pdftex.def)             Requested size: 426.79134pt x 295.07841pt.
  [6] [7 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/phase_II_em_figure_1.png>]
-<figures/hist_year_t.png, id=339, 326.4998pt x 328.1058pt>
+<figures/hist_year_t.png, id=344, 326.4998pt x 328.1058pt>
 File: figures/hist_year_t.png Graphic file (type png)
 <use figures/hist_year_t.png>
-Package pdftex.def Info: figures/hist_year_t.png  used on input line 259.
+Package pdftex.def Info: figures/hist_year_t.png  used on input line 256.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
-<figures/hist_year_pr.png, id=340, 326.4998pt x 328.1058pt>
+<figures/hist_year_pr.png, id=345, 326.4998pt x 328.1058pt>
 File: figures/hist_year_pr.png Graphic file (type png)
 <use figures/hist_year_pr.png>
-Package pdftex.def Info: figures/hist_year_pr.png  used on input line 259.
+Package pdftex.def Info: figures/hist_year_pr.png  used on input line 256.
 (pdftex.def)             Requested size: 199.16928pt x 200.15425pt.
  [8 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/hist_year_t.png> </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/hist_year_pr.png>] [9] [10]
-<figures/model_select_maize_rice.png, id=404, 703.1068pt x 525.965pt>
+<figures/model_select_maize_rice.png, id=409, 703.1068pt x 525.965pt>
 File: figures/model_select_maize_rice.png Graphic file (type png)
 <use figures/model_select_maize_rice.png>
-Package pdftex.def Info: figures/model_select_maize_rice.png  used on input line 327.
+Package pdftex.def Info: figures/model_select_maize_rice.png  used on input line 323.
 (pdftex.def)             Requested size: 426.79134pt x 319.26515pt.
  [11 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/model_select_maize_rice.png>] [12]
-<figures/lpjml_maize.png, id=433, 504.01099pt x 353.25575pt>
+<figures/lpjml_maize.png, id=438, 504.01099pt x 353.25575pt>
 File: figures/lpjml_maize.png Graphic file (type png)
 <use figures/lpjml_maize.png>
-Package pdftex.def Info: figures/lpjml_maize.png  used on input line 405.
+Package pdftex.def Info: figures/lpjml_maize.png  used on input line 399.
 (pdftex.def)             Requested size: 455.24408pt x 319.08075pt.
-<figures/regression_example.png, id=435, 594.0594pt x 176.48334pt>
+<figures/regression_example.png, id=440, 594.0594pt x 176.48334pt>
 File: figures/regression_example.png Graphic file (type png)
 <use figures/regression_example.png>
-Package pdftex.def Info: figures/regression_example.png  used on input line 422.
+Package pdftex.def Info: figures/regression_example.png  used on input line 416.
 (pdftex.def)             Requested size: 463.78pt x 137.78569pt.
  [13] [14 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/lpjml_maize.png>]
-<figures/regression_example_2.png, id=454, 594.20393pt x 176.48334pt>
+<figures/regression_example_2.png, id=459, 594.20393pt x 176.48334pt>
 File: figures/regression_example_2.png Graphic file (type png)
 <use figures/regression_example_2.png>
-Package pdftex.def Info: figures/regression_example_2.png  used on input line 452.
+Package pdftex.def Info: figures/regression_example_2.png  used on input line 446.
 (pdftex.def)             Requested size: 463.78pt x 137.748pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [15 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/regression_example.png>]
-<figures/error_grid_new.png, id=467, 590.30136pt x 237.0456pt>
+<figures/error_grid_new.png, id=471, 590.30136pt x 237.0456pt>
 File: figures/error_grid_new.png Graphic file (type png)
 <use figures/error_grid_new.png>
-Package pdftex.def Info: figures/error_grid_new.png  used on input line 476.
+Package pdftex.def Info: figures/error_grid_new.png  used on input line 470.
 (pdftex.def)             Requested size: 463.78pt x 186.24396pt.
-<figures/CARAIB_spatial_error.png, id=469, 504.01099pt x 321.6015pt>
+<figures/CARAIB_spatial_error.png, id=473, 504.01099pt x 321.6015pt>
 File: figures/CARAIB_spatial_error.png Graphic file (type png)
 <use figures/CARAIB_spatial_error.png>
-Package pdftex.def Info: figures/CARAIB_spatial_error.png  used on input line 491.
+Package pdftex.def Info: figures/CARAIB_spatial_error.png  used on input line 485.
 (pdftex.def)             Requested size: 463.78pt x 295.93585pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/regression_example_2.png>] [17 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/error_grid_new.png>] [18 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/CARAIB_spatial_error.png>] [19] [20]
-<figures/LPJMLRCP85comp.png, id=534, 585.96516pt x 170.70174pt>
+<figures/LPJMLRCP85comp.png, id=538, 585.96516pt x 170.70174pt>
 File: figures/LPJMLRCP85comp.png Graphic file (type png)
 <use figures/LPJMLRCP85comp.png>
-Package pdftex.def Info: figures/LPJMLRCP85comp.png  used on input line 610.
+Package pdftex.def Info: figures/LPJMLRCP85comp.png  used on input line 603.
 (pdftex.def)             Requested size: 463.78pt x 135.11075pt.
  [21 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/LPJMLRCP85comp.png>]
-<figures/em_CTWN_all_crops.png, id=542, 562.2606pt x 432.60822pt>
+<figures/em_CTWN_all_crops.png, id=547, 562.2606pt x 432.60822pt>
 File: figures/em_CTWN_all_crops.png Graphic file (type png)
 <use figures/em_CTWN_all_crops.png>
-Package pdftex.def Info: figures/em_CTWN_all_crops.png  used on input line 644.
+Package pdftex.def Info: figures/em_CTWN_all_crops.png  used on input line 637.
 (pdftex.def)             Requested size: 463.78pt x 356.84016pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/global_em_maize.png, id=549, 532.19627pt x 212.18472pt>
+<figures/global_em_maize.png, id=554, 532.19627pt x 212.18472pt>
 File: figures/global_em_maize.png Graphic file (type png)
 <use figures/global_em_maize.png>
-Package pdftex.def Info: figures/global_em_maize.png  used on input line 674.
+Package pdftex.def Info: figures/global_em_maize.png  used on input line 667.
 (pdftex.def)             Requested size: 463.78pt x 184.90678pt.
 [22] [23 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/em_CTWN_all_crops.png>] [24 </Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/figures/global_em_maize.png>] [25] [26] [27] (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.bbl [28]
 Underfull \hbox (badness 2253) in paragraph at lines 71--75
@@ -3090,26 +3090,26 @@ Underfull \hbox (badness 2707) in paragraph at lines 697--701
  []
 
 [35]) [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 802.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 802.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 794.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 794.
  (/Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 802.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 802.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 802.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 794.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 794.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 794.
  ) 
 Here is how much of TeX's memory you used:
  17404 strings out of 481242
  263553 string characters out of 5918005
- 614814 words of memory out of 5000000
+ 615267 words of memory out of 5000000
  32195 multiletter control sequences out of 15000+600000
  577428 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,10n,46p,2712b,671s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,46p,2717b,671s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf (36 pages, 7875564 bytes).
+Output written on /Users/jamesfranke/Documents/GitHub/PhaseIIPaper/Part2/main2.pdf (36 pages, 7875657 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 776 compressed objects within 8 object streams
+ 870 PDF objects out of 1000 (max. 8388607)
+ 783 compressed objects within 8 object streams
  171 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
